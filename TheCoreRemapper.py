@@ -322,6 +322,7 @@ race_dict = {"P": 0,
 
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
+Seed_files_folder = settings_parser.get("Filenames", "Seed_files_folder")
 races = ["P", "T", "R", "Z"]
 layouts = ["RM"]
 layoutIndices = {"LMM": 0,
@@ -331,8 +332,8 @@ righty_index = {0: False,
                 1: True,
                 2: True}
 
-def verify_file(filename):
-    hotkeys_file = open(filename, 'r')
+def verify_file(filepath):
+    hotkeys_file = open(filepath, 'r')
     dict = {}
     for line in hotkeys_file:
         line = line.strip()
@@ -350,7 +351,7 @@ def verify_file(filename):
         verify_parser = SafeConfigParser()
         verify_parser.optionxform=str
         dup_dict = {}
-        verify_parser.read(filename)
+        verify_parser.read(filepath)
         gen_items = verify_parser.items('Hotkeys')
         for pair in gen_items:
             if pair[1] in dup_dict:
@@ -361,6 +362,7 @@ def verify_file(filename):
             array = dup_dict[key]
             if len(array) > 1:
                 print("============================")
+                print("file: " + filepath)
                 print(key + "    DUPLICATES")
                 for a in array:
                     print(a)
@@ -372,6 +374,8 @@ def verify_file(filename):
             if not dict[item][1] == value:
                 mismatched = True
         if mismatched:
+            print("============================")
+            print("file: " + filepath)
             print("---- Mismatched values ----")
             for item in same_set:
                 print(item + " = " + dict[item][1])
@@ -388,6 +392,7 @@ def verify_file(filename):
                 count_hotkeys[key] = count_hotkeys[key] + 1
         for count in count_hotkeys:
             if count_hotkeys[count] > 1:
+                print("file: " + filepath)
                 print("---- Conflict of hotkeys ----")
                 for item in conflict_set:
                     key = dict[item][1]
@@ -428,7 +433,8 @@ def parse_pair(parser, key, values, map_name, index, altgr):
     return parsed
 
 def generate_layout(filename, race, layout, layoutIndex):
-    hotkeys_file = open(filename, 'r')
+    filepath = Seed_files_folder + "/" + filename
+    hotkeys_file = open(filepath, 'r')
     output = ""
     for line in hotkeys_file:
         line = line.strip()
@@ -473,15 +479,17 @@ def generate_layout(filename, race, layout, layoutIndex):
         output += "\n"
     hotkeys_file.close()
     newfilename = filename.replace("LM", layout)
-    fileio = open(newfilename, 'w')
+    newfilepath = Seed_files_folder + "/" + newfilename
+    fileio = open(newfilepath, 'w')
     fileio.write(output)
     fileio.close()
     if VERIFY_ALL:
-        verify_file(newfilename)
+        verify_file(newfilepath)
     return newfilename
 
 def shift_hand_size(filename, shift_right, hand_size, is_righty):
-    hotkeys_file = open(filename, 'r')
+    filepath = Seed_files_folder + "/" + filename
+    hotkeys_file = open(filepath, 'r')
     output = ""
     if is_righty:
         map_prefix = "R"
@@ -510,22 +518,24 @@ def shift_hand_size(filename, shift_right, hand_size, is_righty):
         newfilename = filename.replace("MM ", hand_size + "M ")
     else:
         newfilename = filename.replace("M ", hand_size + " ")
-    fileio = open(newfilename, 'w')
+    newfilepath = Seed_files_folder + "/" + newfilename
+    fileio = open(newfilepath, 'w')
     fileio.write(output)
     fileio.close()
     if VERIFY_ALL:
-        verify_file(newfilename)
+        verify_file(newfilepath)
     return newfilename
 
 def translate_file(filename, is_righty):
     if not TRANSLATE:
         return
+    seed_filepath = Seed_files_folder + "/" + filename
     layouts = I18N_parser.sections()
-    for l in layouts:
-        hotkeys_file = open(filename, 'r')
+    for layout_name in layouts:
+        hotkeys_file = open(seed_filepath, 'r')
         output = ""
         if is_righty:
-            altgr = int(I18N_parser.get(l, "AltGr"))
+            altgr = int(I18N_parser.get(layout_name, "AltGr"))
         else:
             altgr = 0
     
@@ -539,14 +549,14 @@ def translate_file(filename, is_righty):
             values = pair[1].split(",")
             output += key + "="
             
-            output += parse_pair(I18N_parser, key, values, l, GLOBAL, altgr)        
+            output += parse_pair(I18N_parser, key, values, layout_name, GLOBAL, altgr)        
             output += "\n"
 
         hotkeys_file.close()
-        newfilename = l + "/" + filename
-        if not os.path.isdir(l):
-            os.makedirs(l)
-        fileio = open(newfilename, 'w')
+        filepath = layout_name + "/" + filename
+        if not os.path.isdir(layout_name):
+            os.makedirs(layout_name)
+        fileio = open(filepath, 'w')
         fileio.write(output)
         fileio.close()
     
@@ -587,7 +597,8 @@ def generate_seed_files():
     i = 0
     for r in races:
         filename = prefix + " " + r + "LM " + suffix
-        fileio = open(filename, 'w')
+        filepath = Seed_files_folder + "/" + filename
+        fileio = open(filepath, 'w')
         fileio.write(outputs[i])
         fileio.close()
         i += 1
@@ -595,7 +606,8 @@ def generate_seed_files():
 def generate_other_files():
     for race in races:    
         filename = prefix + " " + race + "LM " + suffix
-        verify_file(filename)
+        filepath = Seed_files_folder + "/" + filename
+        verify_file(filepath)
         translate_file(filename, False)
         translate_file(shift_hand_size(filename, True, "L", False), False)
         translate_file(shift_hand_size(filename, False, "S", False), False)
