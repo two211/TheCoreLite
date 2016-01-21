@@ -20,6 +20,7 @@ settings_parser.read('MapDefinitions.ini')
 
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
+Seed_files_folder = settings_parser.get("Filenames", "Seed_files_folder")
 races = ["P","T","Z","R"]
 
 class Hotkey:
@@ -80,7 +81,7 @@ def ImportChanges():
     for r in races:
         hotkeyfile_parser = SafeConfigParser()
         hotkeyfile_parser.optionxform=str
-        hotkeyfile_parser.read(prefix + " " + r + "LM " + suffix)
+        hotkeyfile_parser.read(Seed_files_folder + "/" + prefix + " " + r + "LM " + suffix)
         parsers[r] = hotkeyfile_parser
     
     hotkeys = []
