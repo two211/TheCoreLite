@@ -10,17 +10,19 @@
 from configparser import SafeConfigParser
 import os
 
+ADD_MISSING = False
+
 seed_parser = SafeConfigParser()
-seed_parser.optionxform=str
+seed_parser.optionxform = str
 seed_parser.read('TheCoreSeed.ini')
 
 settings_parser = SafeConfigParser()
-settings_parser.optionxform=str
+settings_parser.optionxform = str
 settings_parser.read('MapDefinitions.ini')
 
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
-races = ["P","T","Z","R"]
+races = ["P", "T", "Z", "R"]
 
 class Hotkey:
     def __init__(self, name, P="", T="", Z="", R="", default="", copyOf=None):
@@ -51,11 +53,11 @@ def SaveSeedFile(hotkeys, commands):
         seed_file.write(str(command) + "\n")
     seed_file.close()
     
-def get_hotkey(pair, type):
+def get_hotkey(pair):
     values = pair[1].split("|")
     length = len(values)
     P = T = Z = R = default = ""
-    if length == 1: # this is a copy
+    if length == 1:  # this is a copy
         hotkey = Hotkey(name=pair[0], copyOf=values[0])
         return hotkey
     if length == 2:
@@ -72,37 +74,78 @@ def get_hotkey(pair, type):
         default = values[4]
     else:
         raise Exception("Problem with " + pair[0] + " in TheCoreSeed.ini")
-    hotkey = Hotkey(name=pair[0],P=P,T=T,Z=Z,R=R,default=default)
+    hotkey = Hotkey(name=pair[0], P=P, T=T, Z=Z, R=R, default=default)
     return hotkey
+
+def fill_hotkey(parsers, hotkey, section):
+    for r in races:
+        value = hotkey.default
+        if parsers[r].has_option(section, hotkey.name):
+            value = parsers[r].get(section, hotkey.name)
+        setattr(hotkey, r, value)
+    return hotkey
+
+def get_hotkeys(parsers, section):
+    new_defaults_parser = parsers['defaults'] 
+    array = [] 
+    for item_pair in seed_parser.items(section):
+        hotkey = get_hotkey(item_pair)
+        hotkey = fill_hotkey(parsers, hotkey, section)
+        array.append(hotkey)
+
+    files_hotkeys = [] 
+    for r in races:
+        for item_pair in parsers[r].items(section):
+            has_hotkey = False
+            for hotkey in array:
+                if hotkey.name == item_pair[0]:
+                    has_hotkey = True
+            for hotkey in files_hotkeys:
+                if hotkey.name == item_pair[0]:
+                    has_hotkey = True
+            if not has_hotkey:
+                hotkey = Hotkey(name=item_pair[0])
+                if new_defaults_parser.has_option(section, hotkey.name):
+                    hotkey.default = new_defaults_parser.get(section, hotkey.name)
+                hotkey = fill_hotkey(parsers, hotkey, section)
+                files_hotkeys.append(hotkey)
+                if ADD_MISSING:
+                    if hotkey.default != "":
+                        array.append(hotkey)
+                
+    
+    if not ADD_MISSING:
+        print('--- missing ' + section + ' (in hotkey file/s but not in TheCoreSeed.ini) ---');
+    else:
+        print('--- add missing ' + section + ' (in hotkey file/s but not in TheCoreSeed.ini) ---')    
+    print('--- no defauls found ---')
+    for hotkey in files_hotkeys:
+        if hotkey.default == "":
+            print(hotkey.name+'=') 
+            #print(str(hotkey))  
+    print()  
+    print('--- missing defauls found ---')
+    for hotkey in files_hotkeys:
+        if hotkey.default != "":
+            #print(hotkey.name+'=') 
+            print(str(hotkey))  
+    print()        
+    return array
 
 def ImportChanges():
     parsers = {}
     for r in races:
         hotkeyfile_parser = SafeConfigParser()
-        hotkeyfile_parser.optionxform=str
+        hotkeyfile_parser.optionxform = str
         hotkeyfile_parser.read(prefix + " " + r + "LM " + suffix)
         parsers[r] = hotkeyfile_parser
+    new_defaults_parser = SafeConfigParser()
+    new_defaults_parser.optionxform = str
+    new_defaults_parser.read('NewDefaults.ini')
+    parsers['defaults'] = new_defaults_parser
     
-    hotkeys = []
-    for item_pair in seed_parser.items("Hotkeys"):
-        hotkey = get_hotkey(item_pair, "Hotkeys")
-        for r in races:
-            value = hotkey.default
-            if parsers[r].has_option("Hotkeys", hotkey.name):
-                value = parsers[r].get("Hotkeys", hotkey.name)
-            setattr(hotkey, r, value)
-        hotkeys.append(hotkey)
-    
-    commands = []
-    for item_pair in seed_parser.items("Commands"):
-        hotkey = get_hotkey(item_pair, "Commands")
-        for r in races:
-            value = hotkey.default
-            if parsers[r].has_option("Commands", hotkey.name):
-                value = parsers[r].get("Commands", hotkey.name)
-            setattr(hotkey, r, value)
-        commands.append(hotkey)
-    
+    hotkeys = get_hotkeys(parsers, "Hotkeys")    
+    commands = get_hotkeys(parsers, "Commands")
     SaveSeedFile(hotkeys, commands)
         
 ImportChanges()
