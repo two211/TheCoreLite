@@ -10,7 +10,7 @@
 from configparser import SafeConfigParser
 import os
 
-ADD_MISSING = False
+ADD_MISSING = True
 
 seed_parser = SafeConfigParser()
 seed_parser.optionxform = str
