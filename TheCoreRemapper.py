@@ -209,7 +209,7 @@ CONFLICT_CHECKS = [['Cancel','Stop','Rally','Probe/Nexus','TimeWarp/Nexus','Moth
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','Heal/Medivac','MedivacSpeedBoost/Medivac','BunkerLoad','BunkerUnloadAll'],#Medivac
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','AutoTurret/Raven','PointDefenseDrone/Raven','HunterSeekerMissile/Raven'],#Raven
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','D8Charge/Reaper'],#Reaper
-				   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','KD8Charge/Reaper']#Reaper LotV
+				   ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','KD8Charge/Reaper'],#Reaper LotV
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','NanoRepair/ScienceVessel','Irradiate/ScienceVessel'],#Science Vessel
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','SiegeMode','Unsiege'],#Siege Tank
                    ['Move','Stop','MoveHoldPosition','MovePatrol','Attack','RogueGhostCloak/Spectre','CloakOff','Obliterate/Spectre','UltrasonicPulse/Spectre','SpectreNukeCalldown/Spectre','SpectreHoldFire/Spectre'],#Spectre
