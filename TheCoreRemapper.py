@@ -28,7 +28,7 @@ CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'Came
 
 # ZERG_CONTROL_GROUP_SPECIAL = ['ControlGroupAssign7']
 
-CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGroupAppend2', 'ControlGroupAppend3', 'ControlGroupAppend4', 'ControlGroupAppend5',                      'ControlGroupAppend6', 'ControlGroupAppend7', 'ControlGroupAppend8', 'ControlGroupAppend9',
+CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGroupAppend2', 'ControlGroupAppend3', 'ControlGroupAppend4', 'ControlGroupAppend5', 'ControlGroupAppend6', 'ControlGroupAppend7', 'ControlGroupAppend8', 'ControlGroupAppend9',
                       'ControlGroupAssign0', 'ControlGroupAssign1', 'ControlGroupAssign2', 'ControlGroupAssign3', 'ControlGroupAssign4', 'ControlGroupAssign5', 'ControlGroupAssign6', 'ControlGroupAssign7', 'ControlGroupAssign8', 'ControlGroupAssign9',
                       'ControlGroupRecall0', 'ControlGroupRecall1', 'ControlGroupRecall2', 'ControlGroupRecall3', 'ControlGroupRecall4', 'ControlGroupRecall5', 'ControlGroupRecall6', 'ControlGroupRecall7', 'ControlGroupRecall8', 'ControlGroupRecall9',
                       'ControlGroupAppendAndSteal0', 'ControlGroupAppendAndSteal1', 'ControlGroupAppendAndSteal2', 'ControlGroupAppendAndSteal3', 'ControlGroupAppendAndSteal4', 'ControlGroupAppendAndSteal5', 'ControlGroupAppendAndSteal6', 'ControlGroupAppendAndSteal7', 'ControlGroupAppendAndSteal8', 'ControlGroupAppendAndSteal9',
@@ -36,7 +36,7 @@ CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGrou
 
 
 # Add to this please.
-GENERAL_KEYS = ['FPS','Music', 'Sound', 'PTT', 'DialogDismiss', 'MenuAchievements', 'MenuGame', 'MenuMessages', 'MenuSocial',
+GENERAL_KEYS = ['FPS', 'Music', 'Sound', 'PTT', 'DialogDismiss', 'MenuAchievements', 'MenuGame', 'MenuMessages', 'MenuSocial',
                 'LeaderResources', 'LeaderIncome', 'LeaderSpending', 'LeaderUnits', 'LeaderUnitsLost', 'LeaderProduction', 'LeaderArmy',
                 'LeaderAPM', 'LeaderCPM', 'ObserveAllPlayers', 'ObserveAutoCamera', 'ObserveClearSelection', 'ObservePlayer0', 'ObservePlayer1',
                 'ObservePlayer2', 'ObservePlayer3', 'ObservePlayer4', 'ObservePlayer5', 'ObservePlayer6', 'ObservePlayer7', 'ObservePlayer8',
@@ -608,6 +608,74 @@ def generate_seed_files():
         fileio.close()
         i += 1
 
+def veryfy_seed_with_generate():
+    print("-------------------------")
+    print(" Start Comparing Seeds Files with Generated Files")
+    
+    for race in races:    
+        
+        filepath_seed = prefix + " " + race + "LM " + suffix
+        filepath_gen = Seed_files_folder + "/" + filepath_seed
+        
+        parser_seed = SafeConfigParser()
+        parser_seed.optionxform = str
+        parser_seed.read(filepath_seed)
+        
+        parser_gen = SafeConfigParser()
+        parser_gen.optionxform = str
+        parser_gen.read(filepath_gen)
+        
+        theseed_parser = SafeConfigParser()
+        theseed_parser.optionxform = str
+        theseed_parser.read('TheCoreSeed.ini')
+        
+        print("Race: " + race)
+        print()
+        
+        print("In Seed not in Gen")
+        for section in theseed_parser.sections():
+            for gen_item in parser_seed.items(section):
+                key = gen_item[0]
+                if not parser_gen.has_option(section, key):
+                    print(key)
+        print()
+        print("In Seed diffrent in Gen")
+        for section in theseed_parser.sections():
+            for gen_item in parser_seed.items(section):
+                key = gen_item[0]
+                value_seed = gen_item[1]
+                if parser_gen.has_option(section, key):
+                    value_gen = parser_gen.get(section, key)
+                    value_seed = gen_item[1]
+                    if value_seed != value_gen:
+                        print(key + " seed: " + value_seed + " gen: " + value_gen)
+        print()
+        print("In Gen not in Seed (defaults filtered)")
+        for section in theseed_parser.sections():
+            for gen_item in parser_gen.items(section):
+                key = gen_item[0]
+                if not parser_seed.has_option(section, key):
+                    value_gen = gen_item[1]
+                    value_seedini = theseed_parser.get(section, key)
+                    values = value_seedini.split("|")
+                    length = len(values)
+                    isdefault = False
+                    iscopy = False
+                    if length == 1:  # this is a copy
+                        iscopy = True
+                    elif length == 2:
+                        isdefault = value_gen == values[1]
+                    elif length == 5:
+                        isdefault = value_gen == values[4]
+                    else:
+                        print("Problem with " + key + " in TheCoreSeed.ini")
+                        raise Exception("Problem with " + key + " in TheCoreSeed.ini")
+                    
+                    if not isdefault:
+                        print(key + " gen: " + value_gen + " seed: " + value_seed + " is copy: " + str(iscopy))
+        print()
+    print("-------------------------")
+        
 def generate_other_files():
     for race in races:    
         filename = prefix + " " + race + "LM " + suffix
@@ -628,6 +696,7 @@ def generate_other_files():
                 translate_file(shift_hand_size(layout_filename, False, "S", False), False)
 
 generate_seed_files()
+veryfy_seed_with_generate()
 if not ONLY_SEED:
     generate_other_files()
 
