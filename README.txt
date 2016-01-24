@@ -39,7 +39,8 @@ The generated layouts get put in a separate folder with the name of the Keyboard
    b. Load up SC2 and edit the layouts in game.
    c. Copy and paste the edited files back into TheCoreConverter directory, overwriting the existing ones.
    d. Run python InGameGUIImport.
-   e. Verify that the changes made to TheCoreSeed.ini are accurate.
+   e. Check the log if any hotkeys or commands are missing in the TheCoreSeed.ini and add the ones to the NewDefaults.ini with the default value from sc2 go to d.
+   f. Verify that the changes made to TheCoreSeed.ini are accurate.
    
 The important thing to note about editing files with the in-game editor is that any overlaps between the edited files and the SC2 Standard hotkey layout will be stripped from the file.
 This is why TheCoreSeed.ini stores the default Standard layout hotkeys, so that it can fill these back in when you run the InGameGUIImport.
