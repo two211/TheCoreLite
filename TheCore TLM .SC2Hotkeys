@@ -2,6 +2,7 @@
 AllowSetConflicts = 1
 
 [Hotkeys]
+FPS = Control+Shift+Alt+F12
 Music = F8
 Sound = F7
 PTT = Control+BracketClose
@@ -117,6 +118,8 @@ AdeptResearchPiercingUpgrade/TwilightCouncil = 3
 Aggressive/LurkerMPBurrowed = F
 AnionPulseCrystals/FleetBeacon = E
 Apocalypse/K5Kerrigan = X
+Arbiter/Stargate = 4
+Arbiter/StargateWarp = 4
 ArchonHallucination/Nexus = Z
 ArchonHallucination/Sentry = 3
 ArchonHallucination/Voranor = Z
@@ -916,6 +919,7 @@ WidowMineBurrow/WidowMine = R,D
 WidowMineUnburrow/WidowMine = 4
 WildMutation/K5Kerrigan = Z
 WildMutation/K5KerriganBurrowed = O
+WildMutation/KerriganVoidBurrowed = O
 WormholeTransit/Predator = R
 Wraith/Starport = J
 WraithCloak/StarportTechLab = P

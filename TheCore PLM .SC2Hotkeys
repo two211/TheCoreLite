@@ -2,7 +2,7 @@
 AllowSetConflicts = 1
 
 [Hotkeys]
-FPS = Control+Shift+Alt+F10
+FPS = Control+Shift+Alt+F12
 Music = F8
 Sound = F7
 PTT = Control+BracketClose
@@ -117,8 +117,8 @@ AdeptResearchPiercingUpgrade/TwilightCouncil = 4
 Aggressive/LurkerMPBurrowed = F
 AnionPulseCrystals/FleetBeacon = G
 Apocalypse/K5Kerrigan = X
-Arbiter/Stargate = 
-Arbiter/StargateWarp = 
+Arbiter/Stargate = 4
+Arbiter/StargateWarp = 4
 ArbiterMPRecall/ArbiterMP = D
 ArbiterMPStasisField/ArbiterMP = E
 ArchonAdvancedMergeSelection = 
@@ -785,7 +785,7 @@ SJHyperionBlink/Battlecruiser = R
 SJHyperionBlink/SJHyperion = D
 SJHyperionFighters/SJHyperion = V
 SJHyperionFightersRecall/SJHyperion = Z
-SJHyperionLightningStorm/SJHyperion = 
+SJHyperionLightningStorm/SJHyperion = B
 SJHyperionYamato/SJHyperion = E,4
 SOAMothershipBlink/SOAMothershipv4 = V
 SOAMothershipLineAttack/SOAMothershipv4 = D
@@ -1103,4 +1103,4 @@ WarpInReaverChampion/TwilightCouncil = O
 WarpInVulcanChampion/TwilightCouncil = P
 LiberatorAAMode/Liberator = 4
 LiberatorAGMode/Liberator = D
-
+WildMutation/KerriganVoidBurrowed = O
