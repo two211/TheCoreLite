@@ -661,7 +661,7 @@ def veryfy_seed_with_generate():
                             iscopy = True
                             origninal = values[0]
                         if iscopy:
-                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copied of " + origninal)
+                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + origninal)
                         else:
                             print(key + " seed: " + value_seed + " gen: " + value_gen)
         print()
@@ -697,11 +697,13 @@ def veryfy_seed_with_generate():
                                       + " - No Default found - Add a default value to the NewDefaults.ini and the check will be more acurate")
                             else:
                                 default = new_defaults_parser.get(section, key)
-                                if default:
-                                    print(key + " gen: " + value_gen + " seed default: " + default + " hint: copied of " + origninal)
-                                else:
-                                    print(key + " gen: " + value_gen + " copied from " + origninal 
-                                      + " - No Value entered for this in the NewDefaults.ini - change that and the check will be more acurate")
+                                isdefault = value_gen == default
+                                if not isdefault:
+                                    if default:
+                                        print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + origninal)
+                                    else:
+                                        print(key + " gen: " + value_gen + " copied from " + origninal 
+                                              + " - No Value entered for this in the NewDefaults.ini - change that and the check will be more acurate")
                         else:
                             print(key + " gen: " + value_gen + " seed default: " + default)
         print()
