@@ -648,7 +648,18 @@ def veryfy_seed_with_generate():
                     value_gen = parser_gen.get(section, key)
                     value_seed = gen_item[1]
                     if value_seed != value_gen:
-                        print(key + " seed: " + value_seed + " gen: " + value_gen)
+                        value_seedini = theseed_parser.get(section, key)
+                        values = value_seedini.split("|")
+                        length = len(values)
+                        iscopy = False
+                        origninal = ""
+                        if length == 1:  # this is a copy
+                            iscopy = True
+                            origninal = values[0]
+                        if iscopy:
+                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + origninal)
+                        else:
+                            print(key + " seed: " + value_seed + " gen: " + value_gen)
         print()
         print("In Gen not in Seed (defaults filtered)")
         for section in theseed_parser.sections():
