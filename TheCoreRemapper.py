@@ -628,7 +628,11 @@ def veryfy_seed_with_generate():
         theseed_parser = SafeConfigParser()
         theseed_parser.optionxform = str
         theseed_parser.read('TheCoreSeed.ini')
-        
+
+        new_defaults_parser = SafeConfigParser()
+        new_defaults_parser.optionxform = str
+        new_defaults_parser.read('NewDefaults.ini')
+
         print("Race: " + race)
         print()
         
@@ -657,7 +661,7 @@ def veryfy_seed_with_generate():
                             iscopy = True
                             origninal = values[0]
                         if iscopy:
-                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + origninal)
+                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copied of " + origninal)
                         else:
                             print(key + " seed: " + value_seed + " gen: " + value_gen)
         print()
@@ -688,7 +692,16 @@ def veryfy_seed_with_generate():
                     
                     if not isdefault:
                         if iscopy:
-                            print(key + " gen: " + value_gen + " copied from " + origninal)
+                            if not new_defaults_parser.has_option(section, key):
+                                print(key + " gen: " + value_gen + " copied from " + origninal 
+                                      + " - No Default found - Add a default value to the NewDefaults.ini and the check will be more acurate")
+                            else:
+                                default = new_defaults_parser.get(section, key)
+                                if default:
+                                    print(key + " gen: " + value_gen + " seed default: " + default + " hint: copied of " + origninal)
+                                else:
+                                    print(key + " gen: " + value_gen + " copied from " + origninal 
+                                      + " - No Value entered for this in the NewDefaults.ini - change that and the check will be more acurate")
                         else:
                             print(key + " gen: " + value_gen + " seed default: " + default)
         print()
