@@ -661,18 +661,25 @@ def veryfy_seed_with_generate():
                     length = len(values)
                     isdefault = False
                     iscopy = False
+                    origninal = default = ""
                     if length == 1:  # this is a copy
                         iscopy = True
+                        origninal = values[0]
                     elif length == 2:
-                        isdefault = value_gen == values[1]
+                        default = values[1]
+                        isdefault = value_gen == default
                     elif length == 5:
-                        isdefault = value_gen == values[4]
+                        default = values[4]
+                        isdefault = value_gen == default
                     else:
                         print("Problem with " + key + " in TheCoreSeed.ini")
                         raise Exception("Problem with " + key + " in TheCoreSeed.ini")
                     
                     if not isdefault:
-                        print(key + " gen: " + value_gen + " seed: " + value_seed + " is copy: " + str(iscopy))
+                        if iscopy:
+                            print(key + " gen: " + value_gen + " copied from " + origninal)
+                        else:
+                            print(key + " gen: " + value_gen + " seed default: " + default)
         print()
     print("-------------------------")
         
