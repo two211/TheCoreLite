@@ -628,7 +628,11 @@ def veryfy_seed_with_generate():
         theseed_parser = SafeConfigParser()
         theseed_parser.optionxform = str
         theseed_parser.read('TheCoreSeed.ini')
-        
+
+        new_defaults_parser = SafeConfigParser()
+        new_defaults_parser.optionxform = str
+        new_defaults_parser.read('NewDefaults.ini')
+
         print("Race: " + race)
         print()
         
@@ -648,7 +652,18 @@ def veryfy_seed_with_generate():
                     value_gen = parser_gen.get(section, key)
                     value_seed = gen_item[1]
                     if value_seed != value_gen:
-                        print(key + " seed: " + value_seed + " gen: " + value_gen)
+                        value_seedini = theseed_parser.get(section, key)
+                        values = value_seedini.split("|")
+                        length = len(values)
+                        iscopy = False
+                        origninal = ""
+                        if length == 1:  # this is a copy
+                            iscopy = True
+                            origninal = values[0]
+                        if iscopy:
+                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + origninal)
+                        else:
+                            print(key + " seed: " + value_seed + " gen: " + value_gen)
         print()
         print("In Gen not in Seed (defaults filtered)")
         for section in theseed_parser.sections():
@@ -677,7 +692,18 @@ def veryfy_seed_with_generate():
                     
                     if not isdefault:
                         if iscopy:
-                            print(key + " gen: " + value_gen + " copied from " + origninal)
+                            if not new_defaults_parser.has_option(section, key):
+                                print(key + " gen: " + value_gen + " copied from " + origninal 
+                                      + " - No Default found - Add a default value to the NewDefaults.ini and the check will be more acurate")
+                            else:
+                                default = new_defaults_parser.get(section, key)
+                                isdefault = value_gen == default
+                                if not isdefault:
+                                    if default:
+                                        print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + origninal)
+                                    else:
+                                        print(key + " gen: " + value_gen + " copied from " + origninal 
+                                              + " - No Value entered for this in the NewDefaults.ini - change that and the check will be more acurate")
                         else:
                             print(key + " gen: " + value_gen + " seed default: " + default)
         print()
