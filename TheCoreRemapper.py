@@ -152,7 +152,7 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['SwarmQueenRaptor/HugeSwarmQueen', 'SwarmQueenRaptor/LargeSwarmQueen', 'SwarmQueenRaptor/SwarmQueen', 'SwarmQueenSwarmling/HugeSwarmQueen', 'SwarmQueenSwarmling/LargeSwarmQueen', 'SwarmQueenSwarmling/SwarmQueen', 'SwarmQueenZergling/HugeSwarmQueen', 'SwarmQueenZergling/LargeSwarmQueen', 'SwarmQueenZergling/SwarmQueen', 'SwarmQueenZergling/SwarmQueenEgg'],
                ['GreaterSpire/Spire', 'GreaterSpireBroodlord/Spire'],
                ['RespawnZergling/Hatchery', 'RespawnZergling/Hive', 'RespawnZergling/Lair']]
-               # ['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
+                # ['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
                
 CONFLICT_CHECKS = [['Cancel', 'Stop', 'Rally', 'Probe/Nexus', 'TimeWarp/Nexus', 'Mothership/Nexus'],
                    ['Cancel', 'Stop', 'Attack', 'Rally', 'Probe/Nexus', 'TimeWarp/Nexus', 'MothershipCore/Nexus'],  # Nexus HotS
@@ -331,6 +331,38 @@ layoutIndices = {"LMM": 0,
 righty_index = {0: False,
                 1: True,
                 2: True}
+
+
+class Hotkey:
+    def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
+        self.name = name
+        self.section = section
+        self.P = P
+        self.T = T
+        self.Z = Z
+        self.R = R
+        self.default = default
+        self.copyOf = copyOf
+        
+    def set_value(self, race, value):
+        if race == "P":
+            self.P = value
+        elif race == "R":
+            self.R = value
+        elif race == "T":
+            self.T = value
+        elif race == "Z":
+            self.Z = value
+            
+    def get_value(self, race):
+        if race == "P":
+            return self.P
+        elif race == "R":
+            return self.R
+        elif race == "T":
+            return self.T
+        elif race == "Z":
+            return self.Z
 
 def verify_file(filepath):
     print("verify file: " + filepath)
@@ -610,55 +642,46 @@ def order(filepath):
     write_parser.write(file)
     file.close()
     remove_spaces(filepath)
+    
 
 # NEW - Generate the file from TheCoreSeed.ini
-def generate_seed_files():
+def generate_seed_files(model):
     theseed_parser = SafeConfigParser()
     theseed_parser.optionxform = str
     theseed_parser.read('TheCoreSeed.ini')
-    
-    theseed = open("TheCoreSeed.ini", 'r')
-    outputs = ["", "", "", ""]
-    for line in theseed:
-        line = line.strip()
-        if len(line) == 0 or line[0] == "[":
-            for i in range(4):
-                outputs[i] += line + "\n"
-            continue    
-
-        pair = line.split("=")
-        key = pair[0]
-        values = pair[1].split("|")
-        numvals = len(values)
-        if numvals == 1:
-            # it is a copy of another value
-            if theseed_parser.has_option("Hotkeys", values[0]):
-                values = theseed_parser.get("Hotkeys", values[0]).split("|")
-            elif theseed_parser.has_option("Commands", values[0]):
-                values = theseed_parser.get("Commands", values[0]).split("|")
-            else:
-                values = [values[0], values[0], values[0], values[0]]
-            numvals = len(values)
-        if numvals == 2:
-            values = [values[0], values[0], values[0], values[0]]  # all layouts are the same
-        for i in range(4):
-            outputs[i] += key + "=" + values[i] + "\n"
-    i = 0
-    for r in races:
-        filename = prefix + " " + r + "LM " + suffix
+        
+    for race in races:
+        filename = prefix + " " + race + "LM " + suffix
         filepath = Seed_files_folder + "/" + filename
-        fileio = open(filepath, 'w')
-        fileio.write(outputs[i])
-        fileio.close()
+        open(filepath, 'w').close()
+        hotkeyfile_parser = SafeConfigParser()
+        hotkeyfile_parser.optionxform = str
+        
+        for key in model.keys():
+            hotkey = model[key]
+            section = hotkey.section
+            value = None
+            while True:
+                if hotkey.copyOf:
+                    hotkey = model[hotkey.copyOf]
+                else:
+                    value = hotkey.get_value(race)
+                    if value is None:
+                        value = hotkey.default
+                    break
+            if not hotkeyfile_parser.has_section(section):
+                hotkeyfile_parser.add_section(section)
+            hotkeyfile_parser.set(section, key, value)
+        hotkeyfile = open(filepath, 'w')
+        hotkeyfile_parser.write(hotkeyfile)
+        hotkeyfile.close()
         order(filepath)
-        i += 1
 
 def veryfy_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
     
     for race in races:    
-        
         filepath_seed = prefix + " " + race + "LM " + suffix
         filepath_gen = Seed_files_folder + "/" + filepath_seed
         
@@ -773,8 +796,48 @@ def generate_other_files():
                 translate_file(shift_hand_size(layout_filename, True, "L", False), False)
                 translate_file(shift_hand_size(layout_filename, False, "S", False), False)
 
-generate_seed_files()
-veryfy_seed_with_generate()
+
+def create_model():
+    theseed_parser = SafeConfigParser()
+    theseed_parser.optionxform = str
+    theseed_parser.read('TheCoreSeed.ini')
+    
+    default_parser = SafeConfigParser()
+    default_parser.optionxform = str
+    default_parser.read('NewDefaults.ini')
+    
+    parsers = {}
+    for race in races:
+        filepath = prefix + " " + race + "LM " + suffix
+        seed_hotkeyfile_parser = SafeConfigParser()
+        seed_hotkeyfile_parser.optionxform = str
+        seed_hotkeyfile_parser.read(filepath)
+        parsers[race] = seed_hotkeyfile_parser
+        
+    model = {}
+    for section in default_parser.sections():
+        for item in default_parser.items(section):
+            key = item[0]
+            hotkey = Hotkey(key, section)
+            
+            default = item[1]
+            hotkey.default = default
+            
+            for race in races:
+                if parsers[race].has_option(section, key):
+                    value = parsers[race].get(section, key)  #
+                    hotkey.set_value(race, value)
+                    
+            if theseed_parser.has_option(section, key):
+                copyof = theseed_parser.get(section, key)
+                hotkey.copyOf = copyof
+            model[key] = hotkey
+    
+    return model
+            
+model = create_model()
+generate_seed_files(model)
+# veryfy_seed_with_generate()
 if not ONLY_SEED:
     generate_other_files()
 
