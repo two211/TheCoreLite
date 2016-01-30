@@ -861,7 +861,138 @@ def check_defaults():
                         print("[WARN] no default " + key )
                     else:
                         print("[ERROR] no default " + key )
+
+def suggest_inherit():
+    print("------------------------------")
+    print("suggest inherit")
+    default_filepath = 'NewDefaults.ini'
+    default_parser = SafeConfigParser()
+    default_parser.optionxform = str
+    default_parser.read(default_filepath)
+    
+    theseed_parser = SafeConfigParser()
+    theseed_parser.optionxform = str
+    theseed_parser.read('TheCoreSeed.ini')
+    
+    parsers = {}
+    for r in races:
+        hotkeyfile_parser = SafeConfigParser()
+        hotkeyfile_parser.optionxform = str
+        hotkeyfile_parser.read(prefix + " " + r + "LM " + suffix)
+        parsers[r] = hotkeyfile_parser
+
+    dict = {}
+    for section in default_parser.sections():
+        for item in default_parser.items(section):
+            key = item[0]
+            values = {}
+            for race in races:
+                if parsers[r].has_option(section, key):
+                    values[races.index(race)] = parsers[r].get(section, key)
+                else:
+                    values[races.index(race)] = None
+            dict[key] = values
+            
+    outputdict = {}
+    for item in dict.items():
+        for item2 in dict.items():
+            if item[0] == item2[0]:
+                continue
+            
+            equal = True
+            for race in races:
+                values = item[1]
+                values2 = item2[1]
+                if values[races.index(race)] != values2[races.index(race)]:
+                    equal = False
+                    break
+                    
+            if equal:
+                key = ""
+                for race in races:
+                    key = key + race + ":" + str(values[races.index(race)]) + " "
                 
+                if not key in outputdict:
+                    outputdict[key] = []
+                if not item[0] in outputdict[key]:
+                    outputdict[key].append(item[0])
+                
+    for item in outputdict.items():
+        values = item[0]
+        print(values)
+        item[1].sort()
+        for key in item[1]:
+            
+            copyofstr = ""
+            for section in theseed_parser.sections():
+                if theseed_parser.has_option(section, key):
+                    seedini_value = theseed_parser.get(section, key)
+                    copyofstr = " copy of " + seedini_value
+                    break
+            print("\t" + key + " " + copyofstr)
+    print()
+
+def wrong_inherit():
+    print("------------------------------")
+    print("Wrong inherit")
+    default_filepath = 'NewDefaults.ini'
+    default_parser = SafeConfigParser()
+    default_parser.optionxform = str
+    default_parser.read(default_filepath)
+    
+    theseed_parser = SafeConfigParser()
+    theseed_parser.optionxform = str
+    theseed_parser.read('TheCoreSeed.ini')
+    parsers = {}
+    for r in races:
+        hotkeyfile_parser = SafeConfigParser()
+        hotkeyfile_parser.optionxform = str
+        hotkeyfile_parser.read(prefix + " " + r + "LM " + suffix)
+        parsers[r] = hotkeyfile_parser
+
+    dict = {}
+    for section in default_parser.sections():
+        for item in default_parser.items(section):
+            key = item[0]
+            values = {}
+            for race in races:
+                if parsers[r].has_option(section, key):
+                    values[races.index(race)] = parsers[r].get(section, key)
+                else:
+                    values[races.index(race)] = ""
+            dict[key] = values
+    
+    for section in theseed_parser.sections():
+        for item in theseed_parser.items(section):
+            key = item[0]
+            copyofkey = item[1]
+            values = dict.get(key)
+            copyofvalues = dict.get(copyofkey)
+
+            equal = True
+            for race in races:
+                index = races.index(race)
+                value = values[index]
+                copyofvalue = copyofvalues[index]
+                if value != copyofvalue:
+                    equal = False
+            if not equal:
+                print(key + " != " + copyofkey)
+            
+                print("\t" , end="")
+                for race in races:
+                    print(race + ": " + str(values[races.index(race)]), end=" ")
+                print("= " + key)
+            
+                print("\t" , end="")
+                for race in races:
+                    print(race + ": " + str(copyofvalues[races.index(race)]), end=" ")
+                print("= " + copyofkey)
+        
+    print()
+
+suggest_inherit()
+wrong_inherit()     
 #check sections
 new_keys_from_seed_hotkeys()
 check_defaults()
