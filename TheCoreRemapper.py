@@ -630,7 +630,6 @@ def order(filepath):
     write_parser.add_section("Hotkeys")
     write_parser.add_section("Commands")
     
-    
     for section in dict.keys():
         if not write_parser.has_section(section):
             write_parser.add_section(section)
@@ -705,73 +704,38 @@ def veryfy_seed_with_generate():
         print()
         
         print("In Seed not in Gen")
-        for section in theseed_parser.sections():
-            for gen_item in parser_seed.items(section):
-                key = gen_item[0]
+        for section in parser_seed.sections():
+            for seed_item in parser_seed.items(section):
+                key = seed_item[0]
                 if not parser_gen.has_option(section, key):
                     print(key)
         print()
         print("In Seed diffrent in Gen")
-        for section in theseed_parser.sections():
-            for gen_item in parser_seed.items(section):
-                key = gen_item[0]
-                value_seed = gen_item[1]
-                if parser_gen.has_option(section, key):
+        for section in new_defaults_parser.sections():
+            for item in new_defaults_parser.items(section):
+                key = item[0]
+                if parser_gen.has_option(section, key) and parser_seed.has_option(section, key):
                     value_gen = parser_gen.get(section, key)
-                    value_seed = gen_item[1]
+                    value_seed = parser_seed.get(section, key)
                     if value_seed != value_gen:
-                        value_seedini = theseed_parser.get(section, key)
-                        values = value_seedini.split("|")
-                        length = len(values)
-                        iscopy = False
-                        origninal = ""
-                        if length == 1:  # this is a copy
-                            iscopy = True
-                            origninal = values[0]
-                        if iscopy:
-                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + origninal)
+                        if theseed_parser.has_option(section, key):
+                            original = theseed_parser.get(section, key)
+                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + original)
                         else:
                             print(key + " seed: " + value_seed + " gen: " + value_gen)
+                            
         print()
         print("In Gen not in Seed (defaults filtered)")
-        for section in theseed_parser.sections():
+        for section in parser_gen.sections():
             for gen_item in parser_gen.items(section):
                 key = gen_item[0]
+                value_gen = gen_item[1]
                 if not parser_seed.has_option(section, key):
-                    value_gen = gen_item[1]
-                    value_seedini = theseed_parser.get(section, key)
-                    values = value_seedini.split("|")
-                    length = len(values)
-                    isdefault = False
-                    iscopy = False
-                    origninal = default = ""
-                    if length == 1:  # this is a copy
-                        iscopy = True
-                        origninal = values[0]
-                    elif length == 2:
-                        default = values[1]
-                        isdefault = value_gen == default
-                    elif length == 5:
-                        default = values[4]
-                        isdefault = value_gen == default
-                    else:
-                        print("Problem with " + key + " in TheCoreSeed.ini")
-                        raise Exception("Problem with " + key + " in TheCoreSeed.ini")
-                    
-                    if not isdefault:
-                        if iscopy:
-                            if not new_defaults_parser.has_option(section, key):
-                                print(key + " gen: " + value_gen + " copied from " + origninal 
-                                      + " - No Default found - Add a default value to the NewDefaults.ini and the check will be more acurate")
-                            else:
-                                default = new_defaults_parser.get(section, key)
-                                isdefault = value_gen == default
-                                if not isdefault:
-                                    if default:
-                                        print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + origninal)
-                                    else:
-                                        print(key + " gen: " + value_gen + " copied from " + origninal 
-                                              + " - No Value entered for this in the NewDefaults.ini - change that and the check will be more acurate")
+                    default = new_defaults_parser.get(section, key)                 
+                    if value_gen != default:
+                        if theseed_parser.has_option(section, key):
+                            original = theseed_parser.get(section, key)
+                            print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + original)
                         else:
                             print(key + " gen: " + value_gen + " seed default: " + default)
         print()
@@ -837,7 +801,7 @@ def create_model():
             
 model = create_model()
 generate_seed_files(model)
-# veryfy_seed_with_generate()
+veryfy_seed_with_generate()
 if not ONLY_SEED:
     generate_other_files()
 
