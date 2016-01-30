@@ -7,7 +7,7 @@
 #   9/25/12 - Created
 #   9/26/12 - Finished initial functionality
 #
-################################################## 
+##################################################
 from configparser import SafeConfigParser
 import os, sys
 
@@ -153,7 +153,7 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['GreaterSpire/Spire', 'GreaterSpireBroodlord/Spire'],
                ['RespawnZergling/Hatchery', 'RespawnZergling/Hive', 'RespawnZergling/Lair']]
                 # ['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
-               
+
 CONFLICT_CHECKS = [['Cancel', 'Stop', 'Rally', 'Probe/Nexus', 'TimeWarp/Nexus', 'Mothership/Nexus'],
                    ['Cancel', 'Stop', 'Attack', 'Rally', 'Probe/Nexus', 'TimeWarp/Nexus', 'MothershipCore/Nexus'],  # Nexus HotS
                    ['SelectBuilder', 'Cancel', 'Lift', 'Rally', 'CommandCenterLoad', 'CommandCenterUnloadAll', 'SCV', 'OrbitalCommand/CommandCenter', 'UpgradeToPlanetaryFortress/CommandCenter'],  # CC
@@ -217,7 +217,7 @@ CONFLICT_CHECKS = [['Cancel', 'Stop', 'Rally', 'Probe/Nexus', 'TimeWarp/Nexus', 
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ExplosiveMode', 'ArmorpiercingMode'],  # Thor HotS
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AssaultMode', 'FighterMode'],  # Viking
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SpiderMine/Vulture', 'SpiderMineReplenish/Vulture'],  # Vulture
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'WidowMineBurrow/WidowMine', 'WidowMineUnburrow/WidowMine'],  # Widow Mine                   
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'WidowMineBurrow/WidowMine', 'WidowMineUnburrow/WidowMine'],  # Widow Mine
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'WraithCloakOn/Wraith', 'WraithCloakOff/Wraith'],  # Wraith
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Cancel', 'NovaSnipe/Nova', 'Domination/Nova', 'ReleaseMinion/Nova', 'HeroNukeCalldown/Nova'],  # __Heroes__ #Nova
                    ['SJHyperionBlink/SJHyperion', 'SJHyperionFighters/SJHyperion', 'SJHyperionFightersRecall/SJHyperion', 'SJHyperionLightningStorm/SJHyperion', 'SJHyperionYamato/SJHyperion'],  # Hyperion HotS
@@ -343,7 +343,7 @@ class Hotkey:
         self.R = R
         self.default = default
         self.copyOf = copyOf
-        
+
     def set_value(self, race, value):
         if race == "P":
             self.P = value
@@ -353,7 +353,7 @@ class Hotkey:
             self.T = value
         elif race == "Z":
             self.Z = value
-            
+
     def get_value(self, race):
         if race == "P":
             return self.P
@@ -463,7 +463,7 @@ def parse_pair(parser, key, values, map_name, index, altgr):
         #        parsed += "+".join(bits)
         if not bits[len(bits) - 1] == "":
             parsed += "+".join(bits)
-            
+
         first = False
     return parsed
 
@@ -480,7 +480,7 @@ def generate_layout(filename, race, layout, layoutIndex):
         key = pair[0]
         values = pair[1].split(",")
         output += key + "="
-        
+
         # No need to distinguish between map types anymore. Just use GlobalMaps
         if key in EXCLUDE_MAPPING:
             output += pair[1]
@@ -489,7 +489,7 @@ def generate_layout(filename, race, layout, layoutIndex):
                 output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
             except:
                 output += pair[1]
-            
+
         # if key in CAMERA_KEYS:
             # if "R" in layout:
                 # output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
@@ -539,13 +539,13 @@ def shift_hand_size(filename, shift_right, hand_size, is_righty):
         key = pair[0]
         values = pair[1].split(",")
         output += key + "="
-        
+
         if key in EXCLUDE_MAPPING:
             output += pair[1]
         elif shift_right:
             output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftRightMaps', GLOBAL, 0)
         else:
-            output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftLeftMaps', GLOBAL, 0)        
+            output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftLeftMaps', GLOBAL, 0)
         output += "\n"
     hotkeys_file.close()
     newfilename = ""
@@ -573,7 +573,7 @@ def translate_file(filename, is_righty):
             altgr = int(I18N_parser.get(layout_name, "AltGr"))
         else:
             altgr = 0
-    
+
         for line in hotkeys_file:
             line = line.strip()
             if len(line) == 0 or line[0] == "[":
@@ -583,8 +583,8 @@ def translate_file(filename, is_righty):
             key = pair[0]
             values = pair[1].split(",")
             output += key + "="
-            
-            output += parse_pair(I18N_parser, key, values, layout_name, GLOBAL, altgr)        
+
+            output += parse_pair(I18N_parser, key, values, layout_name, GLOBAL, altgr)
             output += "\n"
 
         hotkeys_file.close()
@@ -596,7 +596,7 @@ def translate_file(filename, is_righty):
         fileio.close()
         if VERIFY_ALL:
             verify_file(filepath)
-    
+
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
 
 def remove_spaces(filepath):
@@ -608,12 +608,12 @@ def remove_spaces(filepath):
     with open(filepath, 'w') as outfile:
         for line in lines:
             outfile.write(line)
-            
+
 def order(filepath):
     read_parser = SafeConfigParser()
     read_parser.optionxform = str
     read_parser.read(filepath)
-    
+
     dict = {}
     for section in read_parser.sections():
         items = read_parser.items(section)
@@ -621,41 +621,41 @@ def order(filepath):
         dict[section] = items
 
     open(filepath, 'w').close()  # clear file
-    
+
     write_parser = SafeConfigParser()  # on other parser just for the safty
     write_parser.optionxform = str
     write_parser.read(filepath)
-    
+
     write_parser.add_section("Settings")
     write_parser.add_section("Hotkeys")
     write_parser.add_section("Commands")
-    
+
     for section in dict.keys():
         if not write_parser.has_section(section):
             write_parser.add_section(section)
         items = dict.get(section)
         for item in items:
             write_parser.set(section, item[0], item[1])
-        
+
     file = open(filepath, 'w')
     write_parser.write(file)
     file.close()
     remove_spaces(filepath)
-    
+
 
 # NEW - Generate the file from TheCoreSeed.ini
 def generate_seed_files(model):
     theseed_parser = SafeConfigParser()
     theseed_parser.optionxform = str
     theseed_parser.read('TheCoreSeed.ini')
-        
+
     for race in races:
         filename = prefix + " " + race + "LM " + suffix
         filepath = Seed_files_folder + "/" + filename
         open(filepath, 'w').close()
         hotkeyfile_parser = SafeConfigParser()
         hotkeyfile_parser.optionxform = str
-        
+
         for key in model.keys():
             hotkey = model[key]
             section = hotkey.section
@@ -679,19 +679,19 @@ def generate_seed_files(model):
 def veryfy_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
-    
-    for race in races:    
+
+    for race in races:
         filepath_seed = prefix + " " + race + "LM " + suffix
         filepath_gen = Seed_files_folder + "/" + filepath_seed
-        
+
         parser_seed = SafeConfigParser()
         parser_seed.optionxform = str
         parser_seed.read(filepath_seed)
-        
+
         parser_gen = SafeConfigParser()
         parser_gen.optionxform = str
         parser_gen.read(filepath_gen)
-        
+
         theseed_parser = SafeConfigParser()
         theseed_parser.optionxform = str
         theseed_parser.read('TheCoreSeed.ini')
@@ -702,7 +702,7 @@ def veryfy_seed_with_generate():
 
         print("Race: " + race)
         print()
-        
+
         print("In Seed not in Gen")
         for section in parser_seed.sections():
             for seed_item in parser_seed.items(section):
@@ -723,7 +723,7 @@ def veryfy_seed_with_generate():
                             print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + original)
                         else:
                             print(key + " seed: " + value_seed + " gen: " + value_gen)
-                            
+
         print()
         print("In Gen not in Seed (defaults filtered)")
         for section in parser_gen.sections():
@@ -731,7 +731,7 @@ def veryfy_seed_with_generate():
                 key = gen_item[0]
                 value_gen = gen_item[1]
                 if not parser_seed.has_option(section, key):
-                    default = new_defaults_parser.get(section, key)                 
+                    default = new_defaults_parser.get(section, key)
                     if value_gen != default:
                         if theseed_parser.has_option(section, key):
                             original = theseed_parser.get(section, key)
@@ -740,9 +740,9 @@ def veryfy_seed_with_generate():
                             print(key + " gen: " + value_gen + " seed default: " + default)
         print()
     print("-------------------------")
-        
+
 def generate_other_files():
-    for race in races:    
+    for race in races:
         filename = prefix + " " + race + "LM " + suffix
         filepath = Seed_files_folder + "/" + filename
         verify_file(filepath)
@@ -765,10 +765,72 @@ def create_model():
     theseed_parser = SafeConfigParser()
     theseed_parser.optionxform = str
     theseed_parser.read('TheCoreSeed.ini')
-    
+
     default_parser = SafeConfigParser()
     default_parser.optionxform = str
     default_parser.read('NewDefaults.ini')
+
+    parsers = {}
+    for race in races:
+        filepath = prefix + " " + race + "LM " + suffix
+        seed_hotkeyfile_parser = SafeConfigParser()
+        seed_hotkeyfile_parser.optionxform = str
+        seed_hotkeyfile_parser.read(filepath)
+        parsers[race] = seed_hotkeyfile_parser
+
+    model = {}
+    for section in default_parser.sections():
+        for item in default_parser.items(section):
+            key = item[0]
+            hotkey = Hotkey(key, section)
+
+            default = item[1]
+            hotkey.default = default
+
+            for race in races:
+                if parsers[race].has_option(section, key):
+                    value = parsers[race].get(section, key)  #
+                    hotkey.set_value(race, value)
+
+            if theseed_parser.has_option(section, key):
+                copyof = theseed_parser.get(section, key)
+                hotkey.copyOf = copyof
+            model[key] = hotkey
+
+    return model
+
+def new_keys_from_seed_hotkeys():
+    default_filepath = 'NewDefaults.ini'
+    default_parser = SafeConfigParser()
+    default_parser.optionxform = str
+    default_parser.read(default_filepath)
+
+    for race in races:
+        filepath = prefix + " " + race + "LM " + suffix
+        seed_hotkeyfile_parser = SafeConfigParser()
+        seed_hotkeyfile_parser.optionxform = str
+        seed_hotkeyfile_parser.read(filepath)
+
+        for section in seed_hotkeyfile_parser.sections():
+            for item in seed_hotkeyfile_parser.items(section):
+                key = item[0]
+                if not default_parser.has_option(section, key):
+                    default_parser.set(section, key, "")
+
+    file = open(default_filepath, 'w')
+    default_parser.write(file)
+    file.close()
+    order(default_filepath)
+
+def check_defaults():
+    default_filepath = 'NewDefaults.ini'
+    default_parser = SafeConfigParser()
+    default_parser.optionxform = str
+    default_parser.read(default_filepath)
+    
+    theseed_parser = SafeConfigParser()
+    theseed_parser.optionxform = str
+    theseed_parser.read('TheCoreSeed.ini')
     
     parsers = {}
     for race in races:
@@ -777,28 +839,32 @@ def create_model():
         seed_hotkeyfile_parser.optionxform = str
         seed_hotkeyfile_parser.read(filepath)
         parsers[race] = seed_hotkeyfile_parser
-        
-    model = {}
+
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
-            hotkey = Hotkey(key, section)
-            
             default = item[1]
-            hotkey.default = default
-            
-            for race in races:
-                if parsers[race].has_option(section, key):
-                    value = parsers[race].get(section, key)  #
-                    hotkey.set_value(race, value)
-                    
-            if theseed_parser.has_option(section, key):
-                copyof = theseed_parser.get(section, key)
-                hotkey.copyOf = copyof
-            model[key] = hotkey
-    
-    return model
-            
+            multidefault = default.count(",") > 0
+            if not default or multidefault:
+                seedhas = True
+                for race in races:
+                    if not parsers[race].has_option(section, key):
+                        seedhas = False
+                inherit = theseed_parser.has_option(section, key)
+                
+                if multidefault:
+                    if not seedhas and not inherit:
+                        print("[ERROR] multidefault not set in all seed layouts " + key )
+                
+                if not default:
+                    if seedhas or inherit:
+                        print("[WARN] no default " + key )
+                    else:
+                        print("[ERROR] no default " + key )
+                
+#check sections
+new_keys_from_seed_hotkeys()
+check_defaults()
 model = create_model()
 generate_seed_files(model)
 veryfy_seed_with_generate()
