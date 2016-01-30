@@ -828,6 +828,11 @@ def check_defaults():
     default_parser.optionxform = str
     default_parser.read(default_filepath)
     
+    ddefault_filepath = 'different_default.ini'
+    ddefault_parser = SafeConfigParser()
+    ddefault_parser.optionxform = str
+    ddefault_parser.read(ddefault_filepath)
+    
     theseed_parser = SafeConfigParser()
     theseed_parser.optionxform = str
     theseed_parser.read('TheCoreSeed.ini')
@@ -844,7 +849,7 @@ def check_defaults():
         for item in default_parser.items(section):
             key = item[0]
             default = item[1]
-            multidefault = default.count(",") > 0
+            multidefault = ddefault_parser.has_option(section, key)
             if not default or multidefault:
                 seedhas = True
                 for race in races:
