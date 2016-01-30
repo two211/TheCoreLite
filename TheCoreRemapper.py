@@ -567,6 +567,50 @@ def translate_file(filename, is_righty):
     
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
 
+def remove_spaces(filepath):
+    lines = []
+    with open(filepath) as infile:
+        for line in infile:
+            line = line.replace(" ", "")
+            lines.append(line)
+    with open(filepath, 'w') as outfile:
+        for line in lines:
+            outfile.write(line)
+            
+def order(filepath):
+    read_parser = SafeConfigParser()
+    read_parser.optionxform = str
+    read_parser.read(filepath)
+    
+    dict = {}
+    for section in read_parser.sections():
+        items = read_parser.items(section)
+        items.sort()
+        dict[section] = items
+
+    open(filepath, 'w').close()  # clear file
+    
+    write_parser = SafeConfigParser()  # on other parser just for the safty
+    write_parser.optionxform = str
+    write_parser.read(filepath)
+    
+    write_parser.add_section("Settings")
+    write_parser.add_section("Hotkeys")
+    write_parser.add_section("Commands")
+    
+    
+    for section in dict.keys():
+        if not write_parser.has_section(section):
+            write_parser.add_section(section)
+        items = dict.get(section)
+        for item in items:
+            write_parser.set(section, item[0], item[1])
+        
+    file = open(filepath, 'w')
+    write_parser.write(file)
+    file.close()
+    remove_spaces(filepath)
+
 # NEW - Generate the file from TheCoreSeed.ini
 def generate_seed_files():
     theseed_parser = SafeConfigParser()
@@ -606,6 +650,7 @@ def generate_seed_files():
         fileio = open(filepath, 'w')
         fileio.write(outputs[i])
         fileio.close()
+        order(filepath)
         i += 1
 
 def veryfy_seed_with_generate():
