@@ -151,7 +151,7 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['SwarmQueenCorpser/LargeSwarmQueen', 'SwarmQueenCorpser/HugeSwarmQueen', 'SwarmQueenCorpser/SwarmQueen', 'SwarmQueenRoach/HugeSwarmQueen', 'SwarmQueenRoach/LargeSwarmQueen', 'SwarmQueenRoach/SwarmQueenEgg', 'SwarmQueenVile/HugeSwarmQueen', 'SwarmQueenVile/LargeSwarmQueen', 'SwarmQueenVile/SwarmQueen'],
                ['SwarmQueenRaptor/HugeSwarmQueen', 'SwarmQueenRaptor/LargeSwarmQueen', 'SwarmQueenRaptor/SwarmQueen', 'SwarmQueenSwarmling/HugeSwarmQueen', 'SwarmQueenSwarmling/LargeSwarmQueen', 'SwarmQueenSwarmling/SwarmQueen', 'SwarmQueenZergling/HugeSwarmQueen', 'SwarmQueenZergling/LargeSwarmQueen', 'SwarmQueenZergling/SwarmQueen', 'SwarmQueenZergling/SwarmQueenEgg'],
                ['GreaterSpire/Spire', 'GreaterSpireBroodlord/Spire'],
-               ['RespawnZergling/Hatchery', 'RespawnZergling/Hive', 'RespawnZergling/Lair']]
+               ['RespawnZergling/Hatchery', 'RespawnZergling/Hive', 'RespawnZergling/Lair'],
                # ['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
                ['VoidSentryShieldRepair/Sentry','VoidSentryShieldRepairDouble/SentryAiur'],
                ['UpgradeToWarpGate/Gateway','UpgradeToRoboticsFacilityWarp/RoboticsFacility','UpgradeToStargateWarp/Stargate'],
@@ -182,7 +182,7 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['Transfusion/QueenCoop','Transfusion/QueenCoop'],
                ['Immortal/RoboticsFacility','Immortal/RoboticsFacilityWarp'],
                ['Colossus/RoboticsFacility','Colossus/RoboticsFacilityWarp'],
-               ['Observer/RoboticsFacility','Observer/RoboticsFacilityWarp']
+               ['Observer/RoboticsFacility','Observer/RoboticsFacilityWarp']]
 			   
 CONFLICT_CHECKS = [['Cancel', 'Stop', 'Rally', 'Probe/Nexus', 'TimeWarp/Nexus', 'Mothership/Nexus'],
                    ['Cancel', 'Stop', 'Attack', 'Rally', 'Probe/Nexus', 'TimeWarp/Nexus', 'MothershipCore/Nexus'],  # Nexus HotS
