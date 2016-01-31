@@ -159,10 +159,9 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['Vortex/Mothership','Vortex/Artanis','VoidSentryBlackHole/SOAMothershipv4','TemporalField/Mothership','TemporalField/MothershipCore'],
                ['250mmStrikeCannons/Thor','250mmStrikeCannons/ThorWreckageSwann'],
                ['SelfRepair/Thor','SelfRepair/ThorWreckageSwann'],
-               ['StopPlanetaryFortress/PlanetaryFortress','Stop'],
                ['Salvage/Bunker','Salvage/MissileTurret','Salvage/KelMorianGrenadeTurret','Salvage/PerditionTurret','Salvage/KelMorianMissileTurret'],
                ['Hyperjump/Battlecruiser','HyperionVoidCoopHyperjump/HyperionVoidCoop','HyperjumpHercules/Hercules'],
-               ['Charge/Zealot','Charge/ZealotAiur','Charge/ZealotPurifier','VoidZealotShadowCharge/ZealotShakuras'],
+               ['Charge/Zealot','Charge/ZealotAiur','Charge/ZealotPurifier','VoidZealotShadowCharge/ZealotShakuras','Charge/ShadowOfTheVoidZealot'],
                ['ResearchIncineratorGauntlets/BarracksTechLab','ResearchIncineratorGauntlets/BarracksTechReactor'],
                ['ResearchJuggernautPlating/BarracksTechLab','ResearchJuggernautPlating/BarracksTechReactor'],['ResearchStabilizerMedpacks/BarracksTechLab','ResearchStabilizerMedpacks/BarracksTechReactor'],
                ['ResearchHellbatHellArmor/FactoryTechLab','ResearchHellbatHellArmor/FactoryTechReactor'],
@@ -179,7 +178,7 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['Queen','QueenCoop'],
                ['BuildCreepTumor/Queen','BuildCreepTumor/QueenCoop'],
                ['MorphMorphalisk/Queen','MorphMorphalisk/QueenCoop'],
-               ['Transfusion/QueenCoop','Transfusion/QueenCoop'],
+               ['Transfusion/Queen','Transfusion/QueenCoop'],
                ['Immortal/RoboticsFacility','Immortal/RoboticsFacilityWarp'],
                ['Colossus/RoboticsFacility','Colossus/RoboticsFacilityWarp'],
                ['Observer/RoboticsFacility','Observer/RoboticsFacilityWarp']]
@@ -226,7 +225,6 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['ResearchHighCapacityFuelTanks/StarportTechLab', 'ResearchExplosiveShrapnelShells/StarportTechLab', 'ResearchRavenEnergyUpgrade/StarportTechLab', 'ResearchBansheeCloak/StarportTechLab', 'BansheeSpeed/StarportTechLab', 'ResearchBallisticRange/StarportTechLab', 'Cancel'], #LotV Multiplayer/Terran/Structures/Tech Lab/Attached to Starport
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CloakOnBanshee', 'CloakOff', 'GhostHoldFire/Ghost', 'WeaponsFree/Ghost', 'ChannelSnipe/Ghost', 'EMP/Ghost', 'NukeCalldown/Ghost', 'Cancel'], #LotV Multiplayer/Terran/Units/Ghost
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LiberatorAGMode/Liberator', 'LiberatorAAMode/Liberator'], #LotV Multiplayer/Terran/Units/Liberator
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim'], #LotV Multiplayer/Terran/Units/Marine
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Heal/Medivac', 'MedivacSpeedBoost/Medivac', 'BunkerLoad', 'BunkerUnloadAll'], #LotV Multiplayer/Terran/Units/Medivac
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AutoTurret/Raven', 'PointDefenseDrone/Raven', 'HunterSeekerMissile/Raven'], #LotV Multiplayer/Terran/Units/Raven
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'KD8Charge/Reaper'], #LotV Multiplayer/Terran/Units/Reaper
@@ -343,7 +341,7 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToHellion/Hellion', 'MorphToHellionTank/Hellion', 'SwannCommanderRebuild'], #Coop/Terran/Units/Hellion (Swann Commander)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LiberatorAGMode/Liberator', 'IgniteAfterburners/Liberator'], #Coop/Terran/Units/Liberator
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AutoTurret/Raven', 'PointDefenseDrone/Raven', 'InstantHunterSeekerMissile/Raven'], #Coop/Terran/Units/Raven
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'D8Charge/Reaper'], #Coop/Terran/Units/Reaper (WoL Campaign?)
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'D8Charge/Reaper'], #Coop/Terran/Units/Reaper (WoL Campaign)
                    ['GhostAcademy/SCV', 'MercCompound/SCV', 'Factory/SCV', 'Armory/SCV', 'Starport/SCV', 'FusionCore/SCV', 'Cancel'], #Coop/Terran/Units/SCV/Advanced Structures
                    ['CommandCenter/SCV', 'Refinery/SCV', 'SupplyDepot/SCV', 'Barracks/SCV', 'EngineeringBay/SCV', 'Bunker/SCV', 'MissileTurret/SCV', 'BuildKelMorianRocketTurret/SCV', 'HiveMindEmulator/SCV', 'Cancel'], #Coop/Terran/Units/SCV/Basic Structures
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SiegeMode', 'Unsiege', 'IgniteAfterburners/SiegeTank'], #Coop/Terran/Units/Siege Tank/General (Raynor Commander)
@@ -358,8 +356,6 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['zergflyerattack1', 'zergflyerarmor1', 'EvolveScourgeSplashDamage/ScourgeNest', 'EvolveScourgeGasCostReduction/ScourgeNest'], #Coop/Zerg Story/Structures/Scourge Nest
                    ['Attack', 'Explode/HotSSplitterlingBigBurrowed', 'BurrowUp', 'Attack', 'Explode/HotSHunterBurrowed', 'BurrowUp'], #Coop/Zerg Story/Units/Baneling/Burrowed
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSHunter', 'EnableBuildingAttack/HotSHunter', 'BurrowDown'], #Coop/Zerg Story/Units/Baneling/Hunter Strain
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DetonateScourge/Scourge', 'DisableBuildingAttackScourge/Scourge'], #Coop/Zerg Story/Units/Building Attack Enabled
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DetonateScourge/Scourge', 'EnableBuildingAttackScourge/Scourge'], #Coop/Zerg Story/Units/General
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Impaler/HydraliskImpaler', 'HydraliskFrenzy/HydraliskImpaler', 'BurrowDown'], #Coop/Zerg Story/Units/Hydralisk (Impaler Strain)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Lurker/HydraliskLurker', 'HydraliskFrenzy/HydraliskLurker', 'BurrowDown'], #Coop/Zerg Story/Units/Hydralisk (Lurker Strain)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBolt/K5KerriganBurrowed', 'PsionicLift/K5KerriganBurrowed', 'KerriganVoidCoopEconDrop/K5KerriganBurrowed', 'KerriganVoidCoopCrushingGripWave/K5KerriganBurrowed', 'BurrowUp'], #Coop/Zerg Story/Units/Kerrigan/Burrowed
@@ -367,6 +363,8 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['Stop', 'Attack', 'LurkerHoldFire/LurkerBurrowed', 'LurkerCancelHoldFire/LurkerBurrowed', 'LurkerBurrowUp'], #Coop/Zerg Story/Units/Lurker (Burrowed)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BroodLord/MutaliskBroodlord'], #Coop/Zerg Story/Units/Mutalisk (Brood Lord Strain)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Viper/MutaliskViper'], #Coop/Zerg Story/Units/Mutalisk (Viper Strain)
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DetonateScourge/Scourge', 'DisableBuildingAttackScourge/Scourge'], #Coop/Zerg Story/Units/Scourge/Building Attack Enabled
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DetonateScourge/Scourge', 'EnableBuildingAttackScourge/Scourge'], #Coop/Zerg Story/Units/Scourge/General
                    ['Stop', 'Attack', 'LocustLaunch/SwarmHostBurrowed', 'SwarmHostUprootUnburrow', 'Stop', 'Attack', 'LocustFlyingLaunch/SwarmHostSplitABurrowed', 'SwarmHostUprootUnburrow', 'Stop', 'Attack', 'LocustLaunchCreeper/SwarmHostSplitBBurrowed', 'SwarmHostDeepBurrow/SwarmHostSplitBBurrowed', 'SwarmHostUprootUnburrow'], #Coop/Zerg Story/Units/Swarm Host/Burrowed
                    ['Stop', 'Attack', 'LocustLaunch/SwarmHostRooted', 'SwarmHostUproot', 'Stop', 'Attack', 'LocustFlyingLaunch/SwarmHostSplitARooted', 'SwarmHostUproot', 'Stop', 'Attack', 'LocustLaunchCreeper/SwarmHostSplitBRooted', 'SwarmHostDeepBurrow/SwarmHostSplitBRooted', 'SwarmHostUproot'], #Coop/Zerg Story/Units/Swarm Host/Rooted
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'PoisonNova/HotSNoxious', 'BurrowChargeCampaignNoxious/HotSNoxious', 'BurrowDown'], #Coop/Zerg Story/Units/Ultralisk (Noxious Strain)
@@ -450,7 +448,6 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmQueenParasiticInvasion/LargeSwarmQueen', 'SwarmQueenZergling/LargeSwarmQueen', 'SwarmQueenRoach/LargeSwarmQueen', 'GrowHugeQueen/LargeSwarmQueen', 'BurrowDown'], #LotV Campaign/Zerg Story/Units/Niadra/Stage 2
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmQueenParasiticInvasion/HugeSwarmQueen', 'SwarmQueenZergling/HugeSwarmQueen', 'SwarmQueenRoach/HugeSwarmQueen', 'SwarmQueenHydralisk/HugeSwarmQueen', 'BurrowDown'], #LotV Campaign/Zerg Story/Units/Niadra/Stage 3
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'QueenClassicParasite/QueenClassic', 'QueenMPEnsnare/QueenClassic', 'QueenMPSpawnBroodlings/QueenClassic', 'CreepTumor/QueenClassic'], #LotV Campaign/Zerg Story/Units/Queen
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BurrowChargeCampaign/HotSTorrasque', 'BurrowDown'], #LotV Campaign/Zerg Story/Units/Ultralisk (Torrasque)
                    ['Larva', 'Queen', 'ResearchBurrow', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Lair/Hatchery', 'Cancel'], #LotV Campaign/Zerg/Structures/Hatchery
                    ['Larva', 'Queen', 'RespawnZergling/Hive', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Cancel'], #LotV Campaign/Zerg/Structures/Hive
                    ['hydraliskspeed/HydraliskDen', 'LurkerDen/HydraliskDen', 'Cancel'], #LotV Campaign/Zerg/Structures/Hydralisk Den
@@ -484,6 +481,8 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['VikingFighter/Starport', 'Medivac/Starport', 'Raven/Starport', 'Banshee/Starport', 'Battlecruiser/Starport', 'CampaignVehicles', 'MengskUnits/Starport', 'Rally', 'TechLabStarport/Starport', 'Reactor/Starport', 'TechReactorAI/Starport', 'Lift', 'Cancel'], #HotS Campaign/Terran/Structures/Starport/General (non-constructing)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Consume/GiantYeti', 'GiantYetiLeap/GiantYeti'], #HotS Campaign/Zerg Story/Units/Giant Ursadon (Enemy Within Mission)
                    ['Stop', 'Consume/Lyote'], #HotS Campaign/Zerg Story/Units/Lyote (Enemy Within Mission)
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSSplitterlingBig', 'DisableBuildingAttackSplitterling/HotSSplitterlingBig', 'BurrowDown'], #HotS Campaign/Zerg/Units/Baneling (Splitter Strain,split)/Enabled Building Attack
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSSplitterlingBig', 'EnableBuildingAttackSplitterling/HotSSplitterlingBig', 'BurrowDown'], #HotS Campaign/Zerg/Units/Baneling (Splitter Strain,split)/General
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'FungalGrowth/Infestor', 'NPSwarm/Infestor', 'InfestorConsumption/Infestor', 'BurrowDown'], #HotS Campaign/Zerg/Units/Infestor
                    ['Stop', 'Attack', 'LocustFlyingLaunch/SwarmHostSplitABurrowed', 'RapidIncubation/SwarmHostSplitBBurrowed', 'SwarmHostUprootUnburrow'], #HotS Campaign/Zerg/Units/Swarm Host (Carrion Strain)/Burrowed
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RapidIncubation/SwarmHostSplitA', 'SwarmHostRootBurrow'], #HotS Campaign/Zerg/Units/Swarm Host (Carrion Strain)/General (Burrow)
@@ -497,6 +496,8 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RapidIncubation/SwarmHost', 'SwarmHostRootBurrow'], #HotS Campaign/Zerg/Units/Swarm Host/General (Burrow)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RapidIncubation/SwarmHost', 'SwarmHostRoot'], #HotS Campaign/Zerg/Units/Swarm Host/General (Rapid Incubation)
                    ['Stop', 'Attack', 'LocustLaunch/SwarmHostRooted', 'RapidIncubation/SwarmHostRooted', 'SwarmHostUproot'], #HotS Campaign/Zerg/Units/Swarm Host/Rooted (Rapid Incubation)
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'TorrasqueChrysalis/HotSTorrasqueBurrowed', 'BurrowUp'], #HotS Campaign/Zerg/Units/Ultralisk (Torrasque)/Burrowed
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BurrowChargeCampaign/HotSTorrasque', 'TorrasqueChrysalis/HotSTorrasque', 'BurrowDown'], #HotS Campaign/Zerg/Units/Ultralisk (Torrasque)/General
                    ['ResearchVoidRaySpeedUpgrade/FleetBeacon', 'ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon', 'Cancel'], #WoL Campaign/Protoss/Structues/Fleet Beacon
                    ['HireKelmorianMiners/MercCompound', 'HireDevilDogs/MercCompound', 'HireHammerSecurities/MercCompound', 'HireSpartanCompany/MercCompound', 'HireSiegeBreakers/MercCompound', 'HireHelsAngels/MercCompound', 'HireDuskWing/MercCompound', 'SelectBuilder', 'Rally', 'HireDukesRevenge/MercCompound', 'Halt', 'Cancel'], #WoL Campaign/Terran Story/Structues/Merc Compound
                    ['SelectBuilder', 'SpectreNukeArm/GhostAcademy', 'Halt', 'Cancel'], #WoL Campaign/Terran Story/Structues/Shadow Ops
@@ -511,15 +512,15 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 3/1
                    ['TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 3/2
                    ['TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 3/3
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/1
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/2
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/3
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/1
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/2
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/3
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/1
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/2
-                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/3
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/1
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/2
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/3
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/1
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/2
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/3
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/1
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/2
+                   ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/3
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'TechReactor/BarracksFlying', 'Land'], #WoL Campaign/Terran/Structures/Barracks/Flying (Tech Reactor)
                    ['SCV', 'UpgradeToPlanetaryFortress/CommandCenter', 'Scan/CommandCenter', 'CalldownMULE/CommandCenter', 'SelectBuilder', 'Rally', 'CommandCenterLoad', 'CommandCenterUnloadAll', 'Lift', 'Cancel'], #WoL Campaign/Terran/Structures/Command Center/General (Orbital Relay)
                    ['TerranInfantryWeaponsUltraCapacitorsLevel1/EngineeringBay', 'TerranInfantryArmorLevel1/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'], #WoL Campaign/Terran/Structures/Engineering Bay/Ultra Capacitors level 1
@@ -544,11 +545,13 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['EvolveInfestorEnergyUpgrade/InfestationPit', 'ResearchNeuralParasite/InfestationPit', 'EvolveFlyingLocusts/InfestationPit', 'Cancel'], #HotS Multiplayer/Zerg/Structures/Infestation Pit
                    ['ResearchMedic/ScienceFacility', 'ResearchFirebat/ScienceFacility', 'ResearchReaper/ScienceFacility', 'ResearchHellion/ScienceFacility', 'ResearchGoliath/ScienceFacility', 'ResearchSiegeTank/ScienceFacility', 'ResearchBunkerUpgrade/ScienceFacility', 'ResearchPerditionTurret/ScienceFacility', 'ResearchFireSuppression/ScienceFacility', 'ResearchTechReactor/ScienceFacility'], #Left2Die/Terran Story/Structures/Science Facility
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'D8Charge/MercReaper'], #Left2Die/Terran Story/Units/Death Head (Reaper Merc)
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'StimFirebat/DevilDog'], #Left2Die/Terran Story/Units/Devil Dog (Firebat Merc)
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'StimFirebat/Firebat'], #Left2Die/Terran Story/Units/Firebat
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'IncineratorNozzles/DevilDog', 'StimFirebat/DevilDog'], #Left2Die/Terran Story/Units/Devil Dog (Firebat Merc)
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'IncineratorNozzles/Firebat', 'StimFirebat/Firebat'], #Left2Die/Terran Story/Units/Firebat
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/HammerSecurity'], #Left2Die/Terran Story/Units/Hammer Securities (Marauder Merc)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MercMedicHeal/MercMedic'], #Left2Die/Terran Story/Units/Skibi's Angels (Merc Medic)
                    ['Stimpack/BarracksTechLab', 'ResearchJackhammerConcussionGrenade/BarracksTechLab', 'ResearchStabilizerMedPacks/BarracksTechLab', 'ResearchIncineratorNozzles/BarracksTechLab', 'ResearchG4Charge/BarracksTechLab', 'Cancel'], #Left2Die/Terran/Structures/Tech Lab/Attached to Barracks
-                   ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel']] #Left2Die/Terran/Structures/Tech Lab/Attached to Factory
+                   ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel'], #Left2Die/Terran/Structures/Tech Lab/Attached to Factory
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/Marauder']] #Left2Die/Terran/Units/Marauder
 
 
 # Read the settings
@@ -921,7 +924,7 @@ def generate_seed_files(model):
         hotkeyfile.close()
         order(filepath)
 
-def veryfy_seed_with_generate():
+def verify_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
 
@@ -1248,13 +1251,13 @@ def wrong_inherit():
 
 
 #suggest_inherit()
-wrong_inherit()     
+#wrong_inherit()     
 # check sections
 new_keys_from_seed_hotkeys()
-check_defaults()
+#check_defaults()
 model = create_model()
 generate_seed_files(model)
-veryfy_seed_with_generate()
+verify_seed_with_generate()
 if not ONLY_SEED:
     generate_other_files()
 
