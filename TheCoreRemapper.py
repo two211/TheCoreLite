@@ -1071,6 +1071,7 @@ def new_keys_from_seed_hotkeys():
     order(default_filepath)
 
 def check_defaults():
+    warn = False
     default_filepath = 'NewDefaults.ini'
     default_parser = SafeConfigParser()
     default_parser.optionxform = str
@@ -1111,7 +1112,8 @@ def check_defaults():
                 
                 if not default:
                     if seedhas or inherit:
-                        print("[WARN] no default " + key)
+                        if warn:
+                            print("[WARN] no default " + key)
                     else:
                         print("[ERROR] no default " + key)
 
