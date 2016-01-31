@@ -859,13 +859,13 @@ def check_defaults():
                 
                 if multidefault:
                     if not seedhas and not inherit:
-                        print("[ERROR] multidefault not set in all seed layouts " + key )
+                        print("[ERROR] multidefault not set in all seed layouts " + key)
                 
                 if not default:
                     if seedhas or inherit:
-                        print("[WARN] no default " + key )
+                        print("[WARN] no default " + key)
                     else:
-                        print("[ERROR] no default " + key )
+                        print("[ERROR] no default " + key)
 
 def suggest_inherit():
     print("------------------------------")
@@ -880,54 +880,57 @@ def suggest_inherit():
     theseed_parser.read('TheCoreSeed.ini')
     
     parsers = {}
-    for r in races:
+    for race in races:
         hotkeyfile_parser = SafeConfigParser()
         hotkeyfile_parser.optionxform = str
-        hotkeyfile_parser.read(prefix + " " + r + "LM " + suffix)
-        parsers[r] = hotkeyfile_parser
+        hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
+        parsers[race] = hotkeyfile_parser
 
     dict = {}
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
+            default = item[1]
             values = {}
             for race in races:
-                if parsers[r].has_option(section, key):
-                    values[races.index(race)] = parsers[r].get(section, key)
+                if parsers[race].has_option(section, key):
+                    value = parsers[race].get(section, key)
                 else:
-                    values[races.index(race)] = None
+                    value = default
+                values[race.index(race)] = value
             dict[key] = values
             
     outputdict = {}
-    for item in dict.items():
-        for item2 in dict.items():
-            if item[0] == item2[0]:
+    for key, values in dict.items():
+        for key2, values2 in dict.items():
+            if key == key2:
                 continue
             
             equal = True
             for race in races:
-                values = item[1]
-                values2 = item2[1]
-                if values[races.index(race)] != values2[races.index(race)]:
+                index = races.index(race)
+                value = values.get(index)
+                value2 = values2.get(index)
+                if value != value2:
                     equal = False
                     break
                     
             if equal:
                 key = ""
                 for race in races:
-                    key = key + race + ":" + str(values[races.index(race)]) + " "
+                    index = races.index(race)
+                    value = values.get(index)
+                    key = key + race + ":" + str(value) + " "
                 
                 if not key in outputdict:
                     outputdict[key] = []
                 if not item[0] in outputdict[key]:
                     outputdict[key].append(item[0])
                 
-    for item in outputdict.items():
-        values = item[0]
+    for values, listkeys in outputdict.items():
         print(values)
-        item[1].sort()
-        for key in item[1]:
-            
+        listkeys.sort()
+        for key in listkeys:
             copyofstr = ""
             for section in theseed_parser.sections():
                 if theseed_parser.has_option(section, key):
@@ -949,11 +952,11 @@ def wrong_inherit():
     theseed_parser.optionxform = str
     theseed_parser.read('TheCoreSeed.ini')
     parsers = {}
-    for r in races:
+    for race in races:
         hotkeyfile_parser = SafeConfigParser()
         hotkeyfile_parser.optionxform = str
-        hotkeyfile_parser.read(prefix + " " + r + "LM " + suffix)
-        parsers[r] = hotkeyfile_parser
+        hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
+        parsers[race] = hotkeyfile_parser
 
     dict = {}
     for section in default_parser.sections():
@@ -961,18 +964,20 @@ def wrong_inherit():
             key = item[0]
             values = {}
             for race in races:
-                if parsers[r].has_option(section, key):
-                    values[races.index(race)] = parsers[r].get(section, key)
+                index = races.index(race)
+                if parsers[race].has_option(section, key):
+                    value = parsers[race].get(section, key)
+                    values[index] = value
                 else:
-                    values[races.index(race)] = ""
+                    values[index] = ""
             dict[key] = values
     
     for section in theseed_parser.sections():
         for item in theseed_parser.items(section):
             key = item[0]
             copyofkey = item[1]
-            values = dict.get(key)
-            copyofvalues = dict.get(copyofkey)
+            values = dict[key]
+            copyofvalues = dict[copyofkey]
 
             equal = True
             for race in races:
@@ -996,9 +1001,10 @@ def wrong_inherit():
         
     print()
 
-suggest_inherit()
+
+#suggest_inherit()
 wrong_inherit()     
-#check sections
+# check sections
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
