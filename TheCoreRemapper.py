@@ -1254,7 +1254,7 @@ def wrong_inherit():
 #wrong_inherit()     
 # check sections
 new_keys_from_seed_hotkeys()
-#check_defaults()
+check_defaults()
 model = create_model()
 generate_seed_files(model)
 verify_seed_with_generate()
