@@ -1071,6 +1071,7 @@ def new_keys_from_seed_hotkeys():
     order(default_filepath)
 
 def check_defaults():
+    warn = False
     default_filepath = 'NewDefaults.ini'
     default_parser = SafeConfigParser()
     default_parser.optionxform = str
@@ -1111,7 +1112,8 @@ def check_defaults():
                 
                 if not default:
                     if seedhas or inherit:
-                        print("[WARN] no default " + key)
+                        if warn:
+                            print("[WARN] no default " + key)
                     else:
                         print("[ERROR] no default " + key)
 
@@ -1254,10 +1256,10 @@ def wrong_inherit():
 #wrong_inherit()     
 # check sections
 new_keys_from_seed_hotkeys()
-#check_defaults()
+check_defaults()
 model = create_model()
 generate_seed_files(model)
-#verify_seed_with_generate()
+verify_seed_with_generate()
 if not ONLY_SEED:
     generate_other_files()
 
