@@ -548,7 +548,7 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'StimFirebat/Firebat'], #Left2Die/Terran Story/Units/Firebat
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MercMedicHeal/MercMedic'], #Left2Die/Terran Story/Units/Skibi's Angels (Merc Medic)
                    ['Stimpack/BarracksTechLab', 'ResearchJackhammerConcussionGrenade/BarracksTechLab', 'ResearchStabilizerMedPacks/BarracksTechLab', 'ResearchIncineratorNozzles/BarracksTechLab', 'ResearchG4Charge/BarracksTechLab', 'Cancel'], #Left2Die/Terran/Structures/Tech Lab/Attached to Barracks
-                   ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel'], #Left2Die/Terran/Structures/Tech Lab/Attached to Factory
+                   ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel']] #Left2Die/Terran/Structures/Tech Lab/Attached to Factory
 
 
 # Read the settings
