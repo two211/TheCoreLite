@@ -159,10 +159,9 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['Vortex/Mothership','Vortex/Artanis','VoidSentryBlackHole/SOAMothershipv4','TemporalField/Mothership','TemporalField/MothershipCore'],
                ['250mmStrikeCannons/Thor','250mmStrikeCannons/ThorWreckageSwann'],
                ['SelfRepair/Thor','SelfRepair/ThorWreckageSwann'],
-               ['StopPlanetaryFortress/PlanetaryFortress','Stop'],
                ['Salvage/Bunker','Salvage/MissileTurret','Salvage/KelMorianGrenadeTurret','Salvage/PerditionTurret','Salvage/KelMorianMissileTurret'],
                ['Hyperjump/Battlecruiser','HyperionVoidCoopHyperjump/HyperionVoidCoop','HyperjumpHercules/Hercules'],
-               ['Charge/Zealot','Charge/ZealotAiur','Charge/ZealotPurifier','VoidZealotShadowCharge/ZealotShakuras'],
+               ['Charge/Zealot','Charge/ZealotAiur','Charge/ZealotPurifier','VoidZealotShadowCharge/ZealotShakuras','Charge/ShadowOfTheVoidZealot'],
                ['ResearchIncineratorGauntlets/BarracksTechLab','ResearchIncineratorGauntlets/BarracksTechReactor'],
                ['ResearchJuggernautPlating/BarracksTechLab','ResearchJuggernautPlating/BarracksTechReactor'],['ResearchStabilizerMedpacks/BarracksTechLab','ResearchStabilizerMedpacks/BarracksTechReactor'],
                ['ResearchHellbatHellArmor/FactoryTechLab','ResearchHellbatHellArmor/FactoryTechReactor'],
@@ -179,7 +178,7 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['Queen','QueenCoop'],
                ['BuildCreepTumor/Queen','BuildCreepTumor/QueenCoop'],
                ['MorphMorphalisk/Queen','MorphMorphalisk/QueenCoop'],
-               ['Transfusion/QueenCoop','Transfusion/QueenCoop'],
+               ['Transfusion/Queen','Transfusion/QueenCoop'],
                ['Immortal/RoboticsFacility','Immortal/RoboticsFacilityWarp'],
                ['Colossus/RoboticsFacility','Colossus/RoboticsFacilityWarp'],
                ['Observer/RoboticsFacility','Observer/RoboticsFacilityWarp']]
@@ -226,7 +225,6 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['ResearchHighCapacityFuelTanks/StarportTechLab', 'ResearchExplosiveShrapnelShells/StarportTechLab', 'ResearchRavenEnergyUpgrade/StarportTechLab', 'ResearchBansheeCloak/StarportTechLab', 'BansheeSpeed/StarportTechLab', 'ResearchBallisticRange/StarportTechLab', 'Cancel'], #LotV Multiplayer/Terran/Structures/Tech Lab/Attached to Starport
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CloakOnBanshee', 'CloakOff', 'GhostHoldFire/Ghost', 'WeaponsFree/Ghost', 'ChannelSnipe/Ghost', 'EMP/Ghost', 'NukeCalldown/Ghost', 'Cancel'], #LotV Multiplayer/Terran/Units/Ghost
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LiberatorAGMode/Liberator', 'LiberatorAAMode/Liberator'], #LotV Multiplayer/Terran/Units/Liberator
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim'], #LotV Multiplayer/Terran/Units/Marine
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Heal/Medivac', 'MedivacSpeedBoost/Medivac', 'BunkerLoad', 'BunkerUnloadAll'], #LotV Multiplayer/Terran/Units/Medivac
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AutoTurret/Raven', 'PointDefenseDrone/Raven', 'HunterSeekerMissile/Raven'], #LotV Multiplayer/Terran/Units/Raven
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'KD8Charge/Reaper'], #LotV Multiplayer/Terran/Units/Reaper
@@ -547,11 +545,13 @@ CONFLICT_CHECKS = [['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunch
                    ['EvolveInfestorEnergyUpgrade/InfestationPit', 'ResearchNeuralParasite/InfestationPit', 'EvolveFlyingLocusts/InfestationPit', 'Cancel'], #HotS Multiplayer/Zerg/Structures/Infestation Pit
                    ['ResearchMedic/ScienceFacility', 'ResearchFirebat/ScienceFacility', 'ResearchReaper/ScienceFacility', 'ResearchHellion/ScienceFacility', 'ResearchGoliath/ScienceFacility', 'ResearchSiegeTank/ScienceFacility', 'ResearchBunkerUpgrade/ScienceFacility', 'ResearchPerditionTurret/ScienceFacility', 'ResearchFireSuppression/ScienceFacility', 'ResearchTechReactor/ScienceFacility'], #Left2Die/Terran Story/Structures/Science Facility
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'D8Charge/MercReaper'], #Left2Die/Terran Story/Units/Death Head (Reaper Merc)
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'StimFirebat/DevilDog'], #Left2Die/Terran Story/Units/Devil Dog (Firebat Merc)
-                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'StimFirebat/Firebat'], #Left2Die/Terran Story/Units/Firebat
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'IncineratorNozzles/DevilDog', 'StimFirebat/DevilDog'], #Left2Die/Terran Story/Units/Devil Dog (Firebat Merc)
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'IncineratorNozzles/Firebat', 'StimFirebat/Firebat'], #Left2Die/Terran Story/Units/Firebat
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/HammerSecurity'], #Left2Die/Terran Story/Units/Hammer Securities (Marauder Merc)
                    ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MercMedicHeal/MercMedic'], #Left2Die/Terran Story/Units/Skibi's Angels (Merc Medic)
                    ['Stimpack/BarracksTechLab', 'ResearchJackhammerConcussionGrenade/BarracksTechLab', 'ResearchStabilizerMedPacks/BarracksTechLab', 'ResearchIncineratorNozzles/BarracksTechLab', 'ResearchG4Charge/BarracksTechLab', 'Cancel'], #Left2Die/Terran/Structures/Tech Lab/Attached to Barracks
-                   ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel']] #Left2Die/Terran/Structures/Tech Lab/Attached to Factory
+                   ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel'], #Left2Die/Terran/Structures/Tech Lab/Attached to Factory
+                   ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/Marauder']] #Left2Die/Terran/Units/Marauder
 
 
 # Read the settings
@@ -924,7 +924,7 @@ def generate_seed_files(model):
         hotkeyfile.close()
         order(filepath)
 
-def veryfy_seed_with_generate():
+def verify_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
 
@@ -1251,13 +1251,13 @@ def wrong_inherit():
 
 
 #suggest_inherit()
-wrong_inherit()     
+#wrong_inherit()     
 # check sections
 new_keys_from_seed_hotkeys()
-check_defaults()
+#check_defaults()
 model = create_model()
 generate_seed_files(model)
-veryfy_seed_with_generate()
+#verify_seed_with_generate()
 if not ONLY_SEED:
     generate_other_files()
 
