@@ -1226,8 +1226,6 @@ def wrong_inherit():
             key = item[0]
             default = item[1]
             values = {}
-            if key == 'ResearchBansheeCloak/StarportTechReactor':
-                print()
             for race in races:
                 index = races.index(race)
                 if parsers[race].has_option(section, key):
@@ -1258,9 +1256,15 @@ def wrong_inherit():
                     index = races.index(race)
                     value = values[index]
                     copyofvalue = copyofvalues[index]
+                    if not value:
+                        value = " "
                     print(race + ": " + str(value) + "\t" + str(copyofvalue))
                 default = default_parser.get(section, key)
+                if not default:
+                    default = " "
                 copyofdefault = default_parser.get(section, copyofkey)
+                if not copyofdefault:
+                    copyofdefault = " "
                 print("D: " + str(default) + "\t" + str(copyofdefault) + " (default)")
                 print()
         
