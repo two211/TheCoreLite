@@ -1,7 +1,7 @@
 ##################################################
 #
 # Filename: TheCoreRemapper.py
-# Author: Jonny Weiss
+# Author: Jonny Weiss, Mark Rösler
 # Description: Script to take the LM layouts of TheCore and generate the other 44 layouts.
 # Change Log:
 #   9/25/12 - Created
@@ -965,7 +965,9 @@ def verify_seed_with_generate():
                 if parser_gen.has_option(section, key) and parser_seed.has_option(section, key):
                     value_gen = parser_gen.get(section, key)
                     value_seed = parser_seed.get(section, key)
-                    if value_seed != value_gen:
+                    seed_value_set = set(str(value_seed).split(","))
+                    gen_value_set = set(str(value_gen).split(","))
+                    if seed_value_set != gen_value_set:
                         if theseed_parser.has_option(section, key):
                             original = theseed_parser.get(section, key)
                             print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + original)
@@ -980,7 +982,9 @@ def verify_seed_with_generate():
                 value_gen = gen_item[1]
                 if not parser_seed.has_option(section, key):
                     default = new_defaults_parser.get(section, key)
-                    if value_gen != default:
+                    default_value_set = set(str(default).split(","))
+                    gen_value_set = set(str(value_gen).split(","))
+                    if gen_value_set != default_value_set:
                         if theseed_parser.has_option(section, key):
                             original = theseed_parser.get(section, key)
                             print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + original)
@@ -1108,7 +1112,7 @@ def check_defaults():
                 
                 if multidefault:
                     if not seedhas and not inherit:
-                        print("[ERROR] multidefault not set in all seed layouts " + key)
+                        print("[ERROR] key has multiple diffrent defaults: set in all seed layouts value for this key (or unbound) " + key)
                 
                 if not default:
                     if seedhas or inherit:
@@ -1120,6 +1124,7 @@ def check_defaults():
 def suggest_inherit():
     print("------------------------------")
     print("suggest inherit")
+    print("------------")
     default_filepath = 'NewDefaults.ini'
     default_parser = SafeConfigParser()
     default_parser.optionxform = str
@@ -1137,17 +1142,19 @@ def suggest_inherit():
         parsers[race] = hotkeyfile_parser
 
     dict = {}
+    defaults = {}
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
             default = item[1]
+            defaults[key] = default
             values = {}
             for race in races:
                 if parsers[race].has_option(section, key):
                     value = parsers[race].get(section, key)
                 else:
                     value = default
-                values[race.index(race)] = value
+                values[races.index(race)] = value
             dict[key] = values
             
     outputdict = {}
@@ -1161,33 +1168,38 @@ def suggest_inherit():
                 index = races.index(race)
                 value = values.get(index)
                 value2 = values2.get(index)
-                if value != value2:
+                value_set = set(str(value).split(","))
+                value2_set = set(str(value2).split(","))
+                if value_set != value2_set:
                     equal = False
                     break
                     
             if equal:
-                key = ""
+                output_key = ""
                 for race in races:
                     index = races.index(race)
                     value = values.get(index)
-                    key = key + race + ":" + str(value) + " "
+                    output_key = output_key + race + ": " + str(value) + "\n"
                 
-                if not key in outputdict:
-                    outputdict[key] = []
-                if not item[0] in outputdict[key]:
-                    outputdict[key].append(item[0])
+                if not output_key in outputdict:
+                    outputdict[output_key] = []
+                if not key in outputdict[output_key]:
+                    outputdict[output_key].append(key)
                 
     for values, listkeys in outputdict.items():
-        print(values)
+        print(values, end="")
         listkeys.sort()
         for key in listkeys:
             copyofstr = ""
+            default = defaults[key]
             for section in theseed_parser.sections():
                 if theseed_parser.has_option(section, key):
                     seedini_value = theseed_parser.get(section, key)
-                    copyofstr = " copy of " + seedini_value
+                    copyofstr = " default: " + default + " copy of " + seedini_value
+                    default = defaults[seedini_value]
                     break
-            print("\t" + key + " " + copyofstr)
+            print("\t" + key + " " + copyofstr + " default: " + default)
+        print("------------")
     print()
 
 def wrong_inherit():
@@ -1212,14 +1224,17 @@ def wrong_inherit():
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
+            default = item[1]
             values = {}
+            if key == 'ResearchBansheeCloak/StarportTechReactor':
+                print()
             for race in races:
                 index = races.index(race)
                 if parsers[race].has_option(section, key):
                     value = parsers[race].get(section, key)
                     values[index] = value
                 else:
-                    values[index] = ""
+                    values[index] = default
             dict[key] = values
     
     for section in theseed_parser.sections():
@@ -1228,40 +1243,41 @@ def wrong_inherit():
             copyofkey = item[1]
             values = dict[key]
             copyofvalues = dict[copyofkey]
-
             equal = True
             for race in races:
                 index = races.index(race)
                 value = values[index]
                 copyofvalue = copyofvalues[index]
-                if value != copyofvalue:
+                value_set = set(str(value).split(","))
+                copyofvalue_set = set(str(copyofvalue).split(","))
+                if value_set != copyofvalue_set:
                     equal = False
             if not equal:
                 print(key + " != " + copyofkey)
-            
-                print("\t" , end="")
                 for race in races:
-                    print(race + ": " + str(values[races.index(race)]), end=" ")
-                print("= " + key)
-            
-                print("\t" , end="")
-                for race in races:
-                    print(race + ": " + str(copyofvalues[races.index(race)]), end=" ")
-                print("= " + copyofkey)
+                    index = races.index(race)
+                    value = values[index]
+                    copyofvalue = copyofvalues[index]
+                    print(race + ": " + str(value) + "\t" + str(copyofvalue))
+                default = default_parser.get(section, key)
+                copyofdefault = default_parser.get(section, copyofkey)
+                print("D: " + str(default) + "\t" + str(copyofdefault) + " (default)")
+                print()
         
     print()
 
 
-# suggest_inherit()
-# wrong_inherit()     
+
 # check sections
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
 generate_seed_files(model)
-verify_seed_with_generate()
 if not ONLY_SEED:
     generate_other_files()
+wrong_inherit()
+verify_seed_with_generate()
+#suggest_inherit()
 
 # Quick test to see if 4 seed files are error free
 #     Todo:    expand this to every single file in every directory
