@@ -555,6 +555,9 @@ CONFLICT_CHECKS = {'LotV Multiplayer/Protoss/Structures/Fleet Beacon' : ['AnionP
 
 
 # Read the settings
+
+races = ["P", "T", "R", "Z"]
+
 settings_parser = SafeConfigParser()
 settings_parser.optionxform = str
 settings_parser.read('MapDefinitions.ini')
@@ -563,23 +566,9 @@ I18N_parser = SafeConfigParser()
 I18N_parser.optionxform = str
 I18N_parser.read('KeyboardLayouts.ini')
 
-race_dict = {"P": 0,
-             "T": 1,
-             "Z": 2,
-             "R": 3}
-
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
 Seed_files_folder = settings_parser.get("Filenames", "Seed_files_folder")
-races = ["P", "T", "R", "Z"]
-layouts = ["RM"]
-layoutIndices = {"LMM": 0,
-                 "RMM": 1,
-                 "RM": 2}
-righty_index = {0: False,
-                1: True,
-                2: True}
-
 
 class Hotkey:
     def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
@@ -715,7 +704,7 @@ def parse_pair(parser, key, values, map_name, index, altgr):
         first = False
     return parsed
 
-def generate_layout(filename, race, layout, layoutIndex):
+def generate_layout(filename, race, layout):
     filepath = Seed_files_folder + "/" + filename
     hotkeys_file = open(filepath, 'r')
     output = ""
@@ -737,28 +726,6 @@ def generate_layout(filename, race, layout, layoutIndex):
                 output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
             except:
                 output += pair[1]
-
-        # if key in CAMERA_KEYS:
-            # if "R" in layout:
-                # output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
-            # else:
-                # output += pair[1]
-        # #elif race == "Z" and "MM" in layout and key in ZERG_CONTROL_GROUP_SPECIAL:
-        # #    output += parse_pair(settings_parser, key, values, race + 'SCGMaps', layoutIndex, 0)
-        # elif key in CONTROL_GROUP_KEYS:
-            # output += parse_pair(settings_parser, key, values, race + 'CGMaps', layoutIndex, 0)
-        # elif key in GENERAL_KEYS:
-            # if "R" in layout:
-                # output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
-            # else:
-                # output += pair[1]
-        # else:
-            # try:
-                # #maptypes = settings_parser.get("MappingTypes", key).split(",")
-                # maptypes = ["A","A","A","A"] # Only use ability maps
-                # output += parse_pair(settings_parser, key, values, race + maptypes[race_dict[race]] + "Maps", layoutIndex, 0)
-            # except:
-                # output += pair[1]
         output += "\n"
     hotkeys_file.close()
     newfilename = filename.replace("LM", layout)
@@ -998,20 +965,22 @@ def generate_other_files():
         filename = prefix + " " + race + "LM " + suffix
         filepath = Seed_files_folder + "/" + filename
         verify_file(filepath)
+        
+        # xLM Translate
         translate_file(filename, False)
+        # xLL Shift and Translate
         translate_file(shift_hand_size(filename, True, "L", False), False)
+        # xLS Shift and Translate
         translate_file(shift_hand_size(filename, False, "S", False), False)
-        for layout in layouts:
-            index = layoutIndices[layout]
-            layout_filename = generate_layout(filename, race, layout, index)
-            translate_file(layout_filename, righty_index[index])
-            if righty_index[index]:
-                translate_file(shift_hand_size(layout_filename, True, "S", True), True)
-                translate_file(shift_hand_size(layout_filename, False, "L", True), True)
-            else:
-                translate_file(shift_hand_size(layout_filename, True, "L", False), False)
-                translate_file(shift_hand_size(layout_filename, False, "S", False), False)
-
+        
+        # xRM create
+        layout_filename = generate_layout(filename, race, "RM")
+        # xRM Translate
+        translate_file(layout_filename, True)
+        # xLL Shift and Translate
+        translate_file(shift_hand_size(layout_filename, False, "L", True), True)
+        # xLS Shift and Translate
+        translate_file(shift_hand_size(layout_filename, True, "S", True), True)
 
 def create_model():
     theseed_parser = SafeConfigParser()
