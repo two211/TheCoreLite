@@ -15,9 +15,6 @@ TRANSLATE = not "US" in sys.argv
 ONLY_SEED = "LM" in sys.argv
 
 GLOBAL = -1
-LMM = 0
-RMM = 1
-RM = 2
 
 SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
@@ -604,17 +601,17 @@ class Hotkey:
 def verify_file(filepath):
     print("verify file: " + filepath)
     hotkeys_file = open(filepath, 'r')
-    dict = {}
+    dicti = {}
     for line in hotkeys_file:
         line = line.strip()
         if len(line) == 0 or line[0] == "[":
             continue
         pair = line.split("=")
         key = pair[0]
-        if key in dict:
-            dict[key] = [True, pair[1], key, dict[key][3]]
+        if key in dicti:
+            dicti[key] = [True, pair[1], key, dicti[key][3]]
         else:
-            dict[key] = [True, pair[1], key, ""]
+            dicti[key] = [True, pair[1], key, ""]
 
     # Check for duplicates
     if SHOW_DUPLICATES:
@@ -638,24 +635,24 @@ def verify_file(filepath):
 
     for same_set in SAME_CHECKS:
         mismatched = False
-        value = dict[same_set[0]][1]
+        value = dicti[same_set[0]][1]
         for item in same_set:
-            if not dict[item][1] == value:
+            if not dicti[item][1] == value:
                 mismatched = True
         if mismatched:
             print("============================")
             print("---- Mismatched values ----")
             for item in same_set:
-                print(item + " = " + dict[item][1])
+                print(item + " = " + dicti[item][1])
 
     for commandcard, conflict_set in CONFLICT_CHECKS.items():
         hotkeys = []
         count_hotkeys = {}
         for item in conflict_set:
-            if not dict.__contains__(item):
+            if not dicti.__contains__(item):
                 print('WARNING: ' + item + ' does not exist in HotKey-file')
             else :
-                append = dict[item][1]
+                append = dicti[item][1]
                 hotkeys.append(append)
         for key in hotkeys:
             if not key in count_hotkeys:
@@ -667,7 +664,7 @@ def verify_file(filepath):
                 print("============================")
                 print("---- Conflict of hotkeys in " + commandcard + " ----")
                 for item in conflict_set:
-                    key = dict[item][1]
+                    key = dicti[item][1]
                     if count_hotkeys[key] > 1:
                         print(item + " = " + key)
                 # print(conflict_set)
@@ -829,11 +826,11 @@ def order(filepath):
     read_parser.optionxform = str
     read_parser.read(filepath)
 
-    dict = {}
+    dicti = {}
     for section in read_parser.sections():
         items = read_parser.items(section)
         items.sort()
-        dict[section] = items
+        dicti[section] = items
 
     open(filepath, 'w').close()  # clear file
 
@@ -845,10 +842,10 @@ def order(filepath):
     write_parser.add_section("Hotkeys")
     write_parser.add_section("Commands")
 
-    for section in dict.keys():
+    for section in dicti.keys():
         if not write_parser.has_section(section):
             write_parser.add_section(section)
-        items = dict.get(section)
+        items = dicti.get(section)
         for item in items:
             write_parser.set(section, item[0], item[1])
 
@@ -1110,7 +1107,7 @@ def suggest_inherit():
         hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
         parsers[race] = hotkeyfile_parser
 
-    dict = {}
+    dicti = {}
     defaults = {}
     for section in default_parser.sections():
         for item in default_parser.items(section):
@@ -1124,11 +1121,11 @@ def suggest_inherit():
                 else:
                     value = default
                 values[races.index(race)] = value
-            dict[key] = values
+            dicti[key] = values
             
     outputdict = {}
-    for key, values in dict.items():
-        for key2, values2 in dict.items():
+    for key, values in dicti.items():
+        for key2, values2 in dicti.items():
             if key == key2:
                 continue
             
@@ -1189,7 +1186,7 @@ def wrong_inherit():
         hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
         parsers[race] = hotkeyfile_parser
 
-    dict = {}
+    dicti = {}
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
@@ -1202,14 +1199,14 @@ def wrong_inherit():
                     values[index] = value
                 else:
                     values[index] = default
-            dict[key] = values
+            dicti[key] = values
     
     for section in theseed_parser.sections():
         for item in theseed_parser.items(section):
             key = item[0]
             copyofkey = item[1]
-            values = dict[key]
-            copyofvalues = dict[copyofkey]
+            values = dicti[key]
+            copyofvalues = dicti[copyofkey]
             equal = True
             for race in races:
                 index = races.index(race)
