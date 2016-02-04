@@ -727,39 +727,35 @@ def generate_layout(filename, race, layout):
     return newfilename
 
 def shift_hand_size(filename, shift_right, hand_size, is_righty):
-    filepath = Seed_files_folder + "/" + filename
-    hotkeys_file = open(filepath, 'r')
-    output = ""
     if is_righty:
         map_prefix = "R"
     else:
         map_prefix = "L"
-    for line in hotkeys_file:
-        line = line.strip()
-        if len(line) == 0 or line[0] == "[":
-            output += line + "\n"
-            continue
-        pair = line.split("=")
-        key = pair[0]
-        values = pair[1].split(",")
-        output += key + "="
-
-        if key in EXCLUDE_MAPPING:
-            output += pair[1]
-        elif shift_right:
-            output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftRightMaps', GLOBAL, 0)
-        else:
-            output += parse_pair(settings_parser, key, values, map_prefix + 'ShiftLeftMaps', GLOBAL, 0)
-        output += "\n"
-    hotkeys_file.close()
-    newfilename = ""
-    if "MM " in filename:
-        newfilename = filename.replace("MM ", hand_size + "M ")
-    else:
-        newfilename = filename.replace("M ", hand_size + " ")
+        
+    seed_filepath = Seed_files_folder + "/" + filename
+    seed_hotkeyfile_parser = SafeConfigParser()
+    seed_hotkeyfile_parser.optionxform = str
+    seed_hotkeyfile_parser.read(seed_filepath)
+    
+    hotkeyfile_parser = SafeConfigParser()
+    hotkeyfile_parser.optionxform = str
+    
+    for section in seed_hotkeyfile_parser.sections():
+        hotkeyfile_parser.add_section(section)
+        for key, raw_values in seed_hotkeyfile_parser.items(section):
+            values = raw_values.split(",")
+            if key in EXCLUDE_MAPPING:
+                value = raw_values
+            elif shift_right:
+                value = parse_pair(settings_parser, key, values, map_prefix + 'ShiftRightMaps', GLOBAL, 0)
+            else:
+                value = parse_pair(settings_parser, key, values, map_prefix + 'ShiftLeftMaps', GLOBAL, 0)
+            hotkeyfile_parser.set(section, key, value)    
+    
+    newfilename = filename.replace("M ", hand_size + " ")
     newfilepath = Seed_files_folder + "/" + newfilename
     fileio = open(newfilepath, 'w')
-    fileio.write(output)
+    hotkeyfile_parser.write(fileio, space_around_delimiters=False)
     fileio.close()
     if VERIFY_ALL:
         verify_file(newfilepath)
