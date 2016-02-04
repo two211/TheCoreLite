@@ -687,14 +687,6 @@ def parse_pair(parser, key, values, map_name, index, altgr):
                 bits[len(bits) - 1] = parser.get(map_name, last_bit).split(",")[index]
         except:
             last_bit = last_bit  # Do nothing
-        # if is_rl_shift and "|" in bits[len(bits)-1]:
-        #    try:
-        #        unused = parser.get("MappingTypes", key).split(",")
-        #        bits[len(bits)-1] = bits[len(bits)-1].split("|")[0]
-        #    except:
-        #        bits[len(bits)-1] = bits[len(bits)-1].split("|")[1]
-        #    if not bits[len(bits)-1] == "":
-        #        parsed += "+".join(bits)
         if not bits[len(bits) - 1] == "":
             parsed += "+".join(bits)
 
@@ -779,47 +771,34 @@ def translate_file(filename, is_righty):
     seed_filepath = Seed_files_folder + "/" + filename
     layouts = I18N_parser.sections()
     for layout_name in layouts:
-        hotkeys_file = open(seed_filepath, 'r')
-        output = ""
         if is_righty:
             altgr = int(I18N_parser.get(layout_name, "AltGr"))
         else:
             altgr = 0
+            
+        seed_hotkeyfile_parser = SafeConfigParser()
+        seed_hotkeyfile_parser.optionxform = str
+        seed_hotkeyfile_parser.read(seed_filepath)
+        
+        hotkeyfile_parser = SafeConfigParser()
+        hotkeyfile_parser.optionxform = str
 
-        for line in hotkeys_file:
-            line = line.strip()
-            if len(line) == 0 or line[0] == "[":
-                output += line + "\n"
-                continue
-            pair = line.split("=")
-            key = pair[0]
-            values = pair[1].split(",")
-            output += key + "="
-
-            output += parse_pair(I18N_parser, key, values, layout_name, GLOBAL, altgr)
-            output += "\n"
-
-        hotkeys_file.close()
+        for section in seed_hotkeyfile_parser.sections():
+            hotkeyfile_parser.add_section(section)
+            for key, raw_values in seed_hotkeyfile_parser.items(section):
+                values = raw_values.split(",")
+                value = parse_pair(I18N_parser, key, values, layout_name, GLOBAL, altgr)
+                hotkeyfile_parser.set(section, key, value)
         filepath = layout_name + "/" + filename
         if not os.path.isdir(layout_name):
             os.makedirs(layout_name)
         fileio = open(filepath, 'w')
-        fileio.write(output)
+        hotkeyfile_parser.write(fileio, space_around_delimiters=False)
         fileio.close()
         if VERIFY_ALL:
             verify_file(filepath)
 
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
-
-def remove_spaces(filepath):
-    lines = []
-    with open(filepath) as infile:
-        for line in infile:
-            line = line.replace(" ", "")
-            lines.append(line)
-    with open(filepath, 'w') as outfile:
-        for line in lines:
-            outfile.write(line)
 
 def order(filepath):
     read_parser = SafeConfigParser()
@@ -850,10 +829,8 @@ def order(filepath):
             write_parser.set(section, item[0], item[1])
 
     file = open(filepath, 'w')
-    write_parser.write(file)
+    write_parser.write(file, space_around_delimiters=False)
     file.close()
-    remove_spaces(filepath)
-
 
 # NEW - Generate the file from TheCoreSeed.ini
 def generate_seed_files(model):
@@ -883,8 +860,10 @@ def generate_seed_files(model):
             if not hotkeyfile_parser.has_section(section):
                 hotkeyfile_parser.add_section(section)
             hotkeyfile_parser.set(section, key, value)
+        if not os.path.isdir(Seed_files_folder):
+            os.makedirs(Seed_files_folder)
         hotkeyfile = open(filepath, 'w')
-        hotkeyfile_parser.write(hotkeyfile)
+        hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
         hotkeyfile.close()
         order(filepath)
 
@@ -1036,7 +1015,7 @@ def new_keys_from_seed_hotkeys():
                     default_parser.set(section, key, "")
 
     file = open(default_filepath, 'w')
-    default_parser.write(file)
+    default_parser.write(file, space_around_delimiters=False)
     file.close()
     order(default_filepath)
 
@@ -1247,7 +1226,7 @@ if not ONLY_SEED:
     generate_other_files()
 wrong_inherit()
 verify_seed_with_generate()
-#suggest_inherit()
+# suggest_inherit()
 
 # Quick test to see if 4 seed files are error free
 #     Todo:    expand this to every single file in every directory
