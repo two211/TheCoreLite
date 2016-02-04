@@ -554,6 +554,8 @@ CONFLICT_CHECKS = {'LotV Multiplayer/Protoss/Structures/Fleet Beacon' : ['AnionP
 # Read the settings
 
 races = ["P", "T", "R", "Z"]
+sides = ["L", "R"]
+sizes = ["S", "M", "L"]
 
 settings_parser = SafeConfigParser()
 settings_parser.optionxform = str
@@ -670,6 +672,133 @@ def verify_file(filepath):
                 # print(conflict_set)
     print("")
 
+def translate(layout, values):
+    alternates = values.split(",")
+    newalternates = []
+    for alternate in alternates:
+        keys = alternate.split("+")
+        newkeys = []
+        for key in keys:
+            if I18N_parser.has_option(layout, key):
+                newkey = I18N_parser.get(layout, key)
+            else:
+                newkey = key
+            newkeys.append(newkey)
+        newalternate = ""
+        first = True
+        for newkey in newkeys:
+            if not first:
+                newalternate = newalternate + "+"
+            else:
+                first = False
+            newalternate = newalternate + newkey
+        newalternates.append(newalternate)
+    first = True
+    newvalues = ""
+    for newalternate in newalternates:
+        if not first:
+            newvalues = newvalues + ","
+        else:
+            first = False
+        newvalues = newvalues + newalternate
+    return newvalues
+
+def convert_side(side, layout, values):
+    if side == "L":
+        return values
+    if side == "R":
+        altgr = int(I18N_parser.get(layout, "AltGr"))
+        alternates = values.split(",")
+        newalternates = []
+        for alternate in alternates:
+            keys = alternate.split("+")
+            newkeys = []
+            if keys.count("Alt") == 1 and altgr == 1:
+                # filter shift only because to make sure it is the same output as the old script
+                if keys.count("Control") == 0 and keys.count("Shift") == 0:
+                    newkeys.append("Control")
+            for key in keys:
+                if settings_parser.has_option('GlobalMaps', key):
+                    newkey = settings_parser.get('GlobalMaps', key)
+                else:
+                    newkey = key
+                newkeys.append(newkey)
+            newalternate = ""
+            first = True
+            for newkey in newkeys:
+                if not first:
+                    newalternate = newalternate + "+"
+                else:
+                    first = False
+                newalternate = newalternate + newkey
+            newalternates.append(newalternate)
+        first = True
+        newvalues = ""
+        for newalternate in newalternates:
+            if not first:
+                newvalues = newvalues + ","
+            else:
+                first = False
+            newvalues = newvalues + newalternate
+    return newvalues
+
+def shift(side, size, values):
+    if size == "M":  
+        return values
+    
+    if side == "L":
+        isright = False
+        map_prefix = "L"
+    elif side == "R":
+        isright = True
+        map_prefix = "R"
+    
+    if size == "S":
+        if isright:
+            shift_section = map_prefix + 'ShiftRightMaps' 
+        else:
+            shift_section = map_prefix + 'ShiftLeftMaps'
+    elif size == "L":  
+        if isright:
+            shift_section = map_prefix + 'ShiftLeftMaps'
+        else:
+            shift_section = map_prefix + 'ShiftRightMaps' 
+    
+    alternates = values.split(",")
+    newalternates = []
+    for alternate in alternates:
+        keys = alternate.split("+")
+        newkeys = []
+        for key in keys:
+            if settings_parser.has_option(shift_section, key):
+                newkey = settings_parser.get(shift_section, key)
+            else:
+                newkey = key
+            newkeys.append(newkey)
+        newalternate = ""
+        first = True
+        for newkey in newkeys:
+            if not first:
+                newalternate = newalternate + "+"
+            else:
+                first = False
+            if not newkey:
+                newalternate = ""
+            else:
+                newalternate = newalternate + newkey
+        newalternates.append(newalternate)
+    first = True
+    newvalues = ""
+    for newalternate in newalternates:
+        if not newalternate:
+            continue
+        if not first:
+            newvalues = newvalues + ","
+        else:
+            first = False
+        newvalues = newvalues + newalternate
+    return newvalues
+    
 def parse_pair(parser, key, values, map_name, index, altgr):
     parsed = ""
     first = True
@@ -796,6 +925,13 @@ def translate_file(filename, is_righty):
 
 # Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
 
+def create_filepath(race, side, size, path=""):
+    filename = prefix + " " + race + side + size + " " + suffix
+    filepath = filename
+    if path:
+        filepath = path + "/" + filename
+    return filepath
+
 def order(filepath):
     read_parser = SafeConfigParser()
     read_parser.optionxform = str
@@ -828,40 +964,52 @@ def order(filepath):
     write_parser.write(file, space_around_delimiters=False)
     file.close()
 
-# NEW - Generate the file from TheCoreSeed.ini
-def generate_seed_files(model):
-    theseed_parser = SafeConfigParser()
-    theseed_parser.optionxform = str
-    theseed_parser.read('TheCoreSeed.ini')
 
+def generate(model):
+    layouts = I18N_parser.sections()
     for race in races:
-        filename = prefix + " " + race + "LM " + suffix
-        filepath = Seed_files_folder + "/" + filename
-        open(filepath, 'w').close()
-        hotkeyfile_parser = SafeConfigParser()
-        hotkeyfile_parser.optionxform = str
-        
-        for section in model.keys():
-            for key, hotkey in model[section].items():
-                value = None
-                while True:
-                    if hotkey.copyOf:
-                        hotkey = model[section][hotkey.copyOf]
-                    else:
-                        value = hotkey.get_value(race)
-                        if value is None:
-                            value = hotkey.default
-                        break
-                if not hotkeyfile_parser.has_section(section):
-                    hotkeyfile_parser.add_section(section)
-                hotkeyfile_parser.set(section, key, value)
-            if not os.path.isdir(Seed_files_folder):
-                os.makedirs(Seed_files_folder)
-            hotkeyfile = open(filepath, 'w')
-            hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
-            hotkeyfile.close()
-            order(filepath)
+        for side in sides:
+            for size in sizes:
+                for layout in layouts:
+                    generate_seed_files(model, race, side, size, layout)
 
+# NEW - Generate the file from TheCoreSeed.ini
+def generate_seed_files(model, race, side, size, layout):
+    hotkeyfile_parser = SafeConfigParser()
+    hotkeyfile_parser.optionxform = str
+    for section in model.keys():
+        if not hotkeyfile_parser.has_section(section):
+                hotkeyfile_parser.add_section(section)
+        for key, hotkey in model[section].items():
+            if section == "Settings":
+                value = hotkey.get_value(race)
+            else:
+                value = resolve_copyof(model, section, hotkey, race)
+                value = convert_side(side, layout, value)
+                value = shift(side, size, value)
+                value = translate(layout, value)
+            hotkeyfile_parser.set(section, key, value)
+    if not os.path.isdir(layout):
+        os.makedirs(layout)
+    filepath = create_filepath(race, side, size, layout)
+    hotkeyfile = open(filepath, 'w')
+    hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
+    hotkeyfile.close()
+    order(filepath)
+    # verify_file(filepath)
+
+def resolve_copyof(model, section, hotkey, race):
+    value = None
+    while True:
+        if hotkey.copyOf:
+            hotkey = model[section][hotkey.copyOf]
+        else:
+            value = hotkey.get_value(race)
+            if value is None:
+                value = hotkey.default
+            break
+    return value
+    
 def verify_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
@@ -1214,14 +1362,14 @@ def wrong_inherit():
 
 
 # check sections
-new_keys_from_seed_hotkeys()
-check_defaults()
+# new_keys_from_seed_hotkeys()
+# check_defaults()
 model = create_model()
-generate_seed_files(model)
-if not ONLY_SEED:
-    generate_other_files()
-wrong_inherit()
-verify_seed_with_generate()
+generate(model)
+# if not ONLY_SEED:
+#    generate_other_files()
+# wrong_inherit()
+# verify_seed_with_generate()
 # suggest_inherit()
 
 # Quick test to see if 4 seed files are error free
