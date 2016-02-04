@@ -844,28 +844,27 @@ def generate_seed_files(model):
         open(filepath, 'w').close()
         hotkeyfile_parser = SafeConfigParser()
         hotkeyfile_parser.optionxform = str
-
-        for key in model.keys():
-            hotkey = model[key]
-            section = hotkey.section
-            value = None
-            while True:
-                if hotkey.copyOf:
-                    hotkey = model[hotkey.copyOf]
-                else:
-                    value = hotkey.get_value(race)
-                    if value is None:
-                        value = hotkey.default
-                    break
-            if not hotkeyfile_parser.has_section(section):
-                hotkeyfile_parser.add_section(section)
-            hotkeyfile_parser.set(section, key, value)
-        if not os.path.isdir(Seed_files_folder):
-            os.makedirs(Seed_files_folder)
-        hotkeyfile = open(filepath, 'w')
-        hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
-        hotkeyfile.close()
-        order(filepath)
+        
+        for section in model.keys():
+            for key, hotkey in model[section].items():
+                value = None
+                while True:
+                    if hotkey.copyOf:
+                        hotkey = model[section][hotkey.copyOf]
+                    else:
+                        value = hotkey.get_value(race)
+                        if value is None:
+                            value = hotkey.default
+                        break
+                if not hotkeyfile_parser.has_section(section):
+                    hotkeyfile_parser.add_section(section)
+                hotkeyfile_parser.set(section, key, value)
+            if not os.path.isdir(Seed_files_folder):
+                os.makedirs(Seed_files_folder)
+            hotkeyfile = open(filepath, 'w')
+            hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
+            hotkeyfile.close()
+            order(filepath)
 
 def verify_seed_with_generate():
     print("-------------------------")
@@ -977,6 +976,7 @@ def create_model():
 
     model = {}
     for section in default_parser.sections():
+        section_dict = {}
         for item in default_parser.items(section):
             key = item[0]
             hotkey = Hotkey(key, section)
@@ -992,8 +992,8 @@ def create_model():
             if theseed_parser.has_option(section, key):
                 copyof = theseed_parser.get(section, key)
                 hotkey.copyOf = copyof
-            model[key] = hotkey
-
+            section_dict[key] = hotkey
+        model[section] = section_dict
     return model
 
 def new_keys_from_seed_hotkeys():
