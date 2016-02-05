@@ -561,13 +561,13 @@ settings_parser = SafeConfigParser()
 settings_parser.optionxform = str
 settings_parser.read('MapDefinitions.ini')
 
-I18N_parser = SafeConfigParser()
-I18N_parser.optionxform = str
-I18N_parser.read('KeyboardLayouts.ini')
+layout_parser = SafeConfigParser()
+layout_parser.optionxform = str
+layout_parser.read('KeyboardLayouts.ini')
 
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
-Seed_files_folder = settings_parser.get("Filenames", "Seed_files_folder")
+seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
 
 class Hotkey:
     def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
@@ -671,260 +671,7 @@ def verify_file(filepath):
                         print(item + " = " + key)
                 # print(conflict_set)
     print("")
-
-def translate(layout, values):
-    alternates = values.split(",")
-    newalternates = []
-    for alternate in alternates:
-        keys = alternate.split("+")
-        newkeys = []
-        for key in keys:
-            if I18N_parser.has_option(layout, key):
-                newkey = I18N_parser.get(layout, key)
-            else:
-                newkey = key
-            newkeys.append(newkey)
-        newalternate = ""
-        first = True
-        for newkey in newkeys:
-            if not first:
-                newalternate = newalternate + "+"
-            else:
-                first = False
-            newalternate = newalternate + newkey
-        newalternates.append(newalternate)
-    first = True
-    newvalues = ""
-    for newalternate in newalternates:
-        if not first:
-            newvalues = newvalues + ","
-        else:
-            first = False
-        newvalues = newvalues + newalternate
-    return newvalues
-
-def convert_side(side, layout, values):
-    if side == "L":
-        return values
-    if side == "R":
-        altgr = int(I18N_parser.get(layout, "AltGr"))
-        alternates = values.split(",")
-        newalternates = []
-        for alternate in alternates:
-            keys = alternate.split("+")
-            newkeys = []
-            if keys.count("Alt") == 1 and altgr == 1:
-                # filter shift only because to make sure it is the same output as the old script
-                if keys.count("Control") == 0 and keys.count("Shift") == 0:
-                    newkeys.append("Control")
-            for key in keys:
-                if settings_parser.has_option('GlobalMaps', key):
-                    newkey = settings_parser.get('GlobalMaps', key)
-                else:
-                    newkey = key
-                newkeys.append(newkey)
-            newalternate = ""
-            first = True
-            for newkey in newkeys:
-                if not first:
-                    newalternate = newalternate + "+"
-                else:
-                    first = False
-                newalternate = newalternate + newkey
-            newalternates.append(newalternate)
-        first = True
-        newvalues = ""
-        for newalternate in newalternates:
-            if not first:
-                newvalues = newvalues + ","
-            else:
-                first = False
-            newvalues = newvalues + newalternate
-    return newvalues
-
-def shift(side, size, values):
-    if size == "M":  
-        return values
     
-    if side == "L":
-        isright = False
-        map_prefix = "L"
-    elif side == "R":
-        isright = True
-        map_prefix = "R"
-    
-    if size == "S":
-        if isright:
-            shift_section = map_prefix + 'ShiftRightMaps' 
-        else:
-            shift_section = map_prefix + 'ShiftLeftMaps'
-    elif size == "L":  
-        if isright:
-            shift_section = map_prefix + 'ShiftLeftMaps'
-        else:
-            shift_section = map_prefix + 'ShiftRightMaps' 
-    
-    alternates = values.split(",")
-    newalternates = []
-    for alternate in alternates:
-        keys = alternate.split("+")
-        newkeys = []
-        for key in keys:
-            if settings_parser.has_option(shift_section, key):
-                newkey = settings_parser.get(shift_section, key)
-            else:
-                newkey = key
-            newkeys.append(newkey)
-        newalternate = ""
-        first = True
-        for newkey in newkeys:
-            if not first:
-                newalternate = newalternate + "+"
-            else:
-                first = False
-            if not newkey:
-                newalternate = ""
-            else:
-                newalternate = newalternate + newkey
-        newalternates.append(newalternate)
-    first = True
-    newvalues = ""
-    for newalternate in newalternates:
-        if not newalternate:
-            continue
-        if not first:
-            newvalues = newvalues + ","
-        else:
-            first = False
-        newvalues = newvalues + newalternate
-    return newvalues
-    
-def parse_pair(parser, key, values, map_name, index, altgr):
-    parsed = ""
-    first = True
-    for value in values:
-        bits = value.split("+")
-        if not first:
-            parsed += ","
-        if bits[0] == "Alt" and altgr == 1:
-            bits[0] = "Control+Alt"
-        last_bit = bits[len(bits) - 1]
-        try:
-            if index < 0:
-                bits[len(bits) - 1] = parser.get(map_name, last_bit)
-            else:
-                bits[len(bits) - 1] = parser.get(map_name, last_bit).split(",")[index]
-        except:
-            last_bit = last_bit  # Do nothing
-        if not bits[len(bits) - 1] == "":
-            parsed += "+".join(bits)
-
-        first = False
-    return parsed
-
-def generate_layout(filename, race, layout):
-    filepath = Seed_files_folder + "/" + filename
-    hotkeys_file = open(filepath, 'r')
-    output = ""
-    for line in hotkeys_file:
-        line = line.strip()
-        if len(line) == 0 or line[0] == "[":
-            output += line + "\n"
-            continue
-        pair = line.split("=")
-        key = pair[0]
-        values = pair[1].split(",")
-        output += key + "="
-
-        # No need to distinguish between map types anymore. Just use GlobalMaps
-        if key in EXCLUDE_MAPPING:
-            output += pair[1]
-        else:
-            try:
-                output += parse_pair(settings_parser, key, values, 'GlobalMaps', GLOBAL, 0)
-            except:
-                output += pair[1]
-        output += "\n"
-    hotkeys_file.close()
-    newfilename = filename.replace("LM", layout)
-    newfilepath = Seed_files_folder + "/" + newfilename
-    fileio = open(newfilepath, 'w')
-    fileio.write(output)
-    fileio.close()
-    if VERIFY_ALL:
-        verify_file(newfilepath)
-    return newfilename
-
-def shift_hand_size(filename, shift_right, hand_size, is_righty):
-    if is_righty:
-        map_prefix = "R"
-    else:
-        map_prefix = "L"
-        
-    seed_filepath = Seed_files_folder + "/" + filename
-    seed_hotkeyfile_parser = SafeConfigParser()
-    seed_hotkeyfile_parser.optionxform = str
-    seed_hotkeyfile_parser.read(seed_filepath)
-    
-    hotkeyfile_parser = SafeConfigParser()
-    hotkeyfile_parser.optionxform = str
-    
-    for section in seed_hotkeyfile_parser.sections():
-        hotkeyfile_parser.add_section(section)
-        for key, raw_values in seed_hotkeyfile_parser.items(section):
-            values = raw_values.split(",")
-            if key in EXCLUDE_MAPPING:
-                value = raw_values
-            elif shift_right:
-                value = parse_pair(settings_parser, key, values, map_prefix + 'ShiftRightMaps', GLOBAL, 0)
-            else:
-                value = parse_pair(settings_parser, key, values, map_prefix + 'ShiftLeftMaps', GLOBAL, 0)
-            hotkeyfile_parser.set(section, key, value)    
-    
-    newfilename = filename.replace("M ", hand_size + " ")
-    newfilepath = Seed_files_folder + "/" + newfilename
-    fileio = open(newfilepath, 'w')
-    hotkeyfile_parser.write(fileio, space_around_delimiters=False)
-    fileio.close()
-    if VERIFY_ALL:
-        verify_file(newfilepath)
-    return newfilename
-
-def translate_file(filename, is_righty):
-    if not TRANSLATE:
-        return
-    seed_filepath = Seed_files_folder + "/" + filename
-    layouts = I18N_parser.sections()
-    for layout_name in layouts:
-        if is_righty:
-            altgr = int(I18N_parser.get(layout_name, "AltGr"))
-        else:
-            altgr = 0
-            
-        seed_hotkeyfile_parser = SafeConfigParser()
-        seed_hotkeyfile_parser.optionxform = str
-        seed_hotkeyfile_parser.read(seed_filepath)
-        
-        hotkeyfile_parser = SafeConfigParser()
-        hotkeyfile_parser.optionxform = str
-
-        for section in seed_hotkeyfile_parser.sections():
-            hotkeyfile_parser.add_section(section)
-            for key, raw_values in seed_hotkeyfile_parser.items(section):
-                values = raw_values.split(",")
-                value = parse_pair(I18N_parser, key, values, layout_name, GLOBAL, altgr)
-                hotkeyfile_parser.set(section, key, value)
-        filepath = layout_name + "/" + filename
-        if not os.path.isdir(layout_name):
-            os.makedirs(layout_name)
-        fileio = open(filepath, 'w')
-        hotkeyfile_parser.write(fileio, space_around_delimiters=False)
-        fileio.close()
-        if VERIFY_ALL:
-            verify_file(filepath)
-
-# Main part of the script. For each race, generate each layout, and translate that layout for large and small hands.
-
 def create_filepath(race, side, size, path=""):
     filename = prefix + " " + race + side + size + " " + suffix
     filepath = filename
@@ -965,29 +712,127 @@ def order(filepath):
     file.close()
 
 
-def generate(model):
-    layouts = I18N_parser.sections()
+def generate(seed_model):
+    models = {}
+    for race in races:
+        models[race] = {}
+        for side in sides:
+            models[race][side] = {}
+            for size in sizes:
+                models[race][side][size] = {}
+    
+    for race in races:
+        models[race]["L"]["M"][seed_layout] = extract_race(seed_model, race)
+        models[race]["R"]["M"][seed_layout] = convert_side(models[race]["L"]["M"][seed_layout])
+        models[race]["L"]["S"][seed_layout] = shift_left(models[race]["L"]["M"][seed_layout], "L")
+        models[race]["R"]["S"][seed_layout] = shift_right(models[race]["R"]["M"][seed_layout], "R")
+        models[race]["L"]["L"][seed_layout] = shift_right(models[race]["L"]["M"][seed_layout], "L")
+        models[race]["R"]["L"][seed_layout] = shift_left(models[race]["R"]["M"][seed_layout], "R")
+    
+    layouts = layout_parser.sections()
     for race in races:
         for side in sides:
             for size in sizes:
                 for layout in layouts:
-                    generate_seed_files(model, race, side, size, layout)
+                    if layout != seed_layout:
+                        models[race][side][size][layout] = translate(models[race][side][size][seed_layout], layout, side)
+    for race in races:
+        for side in sides:
+            for size in sizes:
+                for layout in layouts:
+                    create_file(models[race][side][size][layout], race, side, size, layout)
+    # verify_file(filepath)
+    
 
-# NEW - Generate the file from TheCoreSeed.ini
-def generate_seed_files(model, race, side, size, layout):
+def extract_race(seed_model, race):
+    model_dict = {}
+    for section in seed_model:
+        model_dict[section] = {}
+        for key, hotkey in seed_model[section].items():
+            value = resolve_copyof(seed_model, section, hotkey, race)
+            model_dict[section][key] = value
+    return model_dict
+
+def modify_model(seed_model, parser, parser_section, check_altgr=False):
+    model_dict = {}
+    for section in seed_model:
+        model_dict[section] = {}
+        for key, value in seed_model[section].items():
+            if section == "Settings":
+                newvalue = value
+            else:
+                newvalue = modify_value(value, parser, parser_section, check_altgr)
+            model_dict[section][key] = newvalue
+    return model_dict
+
+def convert_side(seed_model):
+    return modify_model(seed_model, settings_parser, 'GlobalMaps')
+
+def shift_right(seed_model, side):
+    shift_section = side + 'ShiftRightMaps'
+    return shift(seed_model, shift_section)
+
+def shift_left(seed_model, side):
+    shift_section = side + 'ShiftLeftMaps'
+    return shift(seed_model, shift_section)
+            
+def shift(seed_model, shift_section):
+    return modify_model(seed_model, settings_parser, shift_section)
+
+def translate(seed_model, layout, side):
+    check_altgr=False
+    if side == "R":
+        check_altgr=True
+    return modify_model(seed_model, layout_parser, layout, check_altgr)
+
+def modify_value(org_value, parser, section, check_altgr):
+    if check_altgr:
+        altgr = layout_parser.get(section, "AltGr")
+
+    newalternates = []
+    for alternate in org_value.split(","):
+        keys = alternate.split("+")
+        newkeys = []
+        # filter "Shift" only to make sure it is the same output as the old script
+        if check_altgr and altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
+            newkeys.append("Control")
+        for key in keys:
+            if parser.has_option(section, key):
+                newkey = parser.get(section, key)
+            else:
+                newkey = key
+            newkeys.append(newkey)
+        newalternate = ""
+        first = True
+        for newkey in newkeys:
+            if not first:
+                newalternate = newalternate + "+"
+            else:
+                first = False
+            if not newkey:
+                newalternate = ""
+            else:
+                newalternate = newalternate + newkey
+        newalternates.append(newalternate)
+    first = True
+    newvalues = ""
+    for newalternate in newalternates:
+        if not newalternate:
+            continue
+        if not first:
+            newvalues = newvalues + ","
+        else:
+            first = False
+        newvalues = newvalues + newalternate
+    return newvalues
+
+def create_file(model, race, side, size, layout):
     hotkeyfile_parser = SafeConfigParser()
     hotkeyfile_parser.optionxform = str
-    for section in model.keys():
+    for section in model:
         if not hotkeyfile_parser.has_section(section):
                 hotkeyfile_parser.add_section(section)
-        for key, hotkey in model[section].items():
-            if section == "Settings":
-                value = hotkey.get_value(race)
-            else:
-                value = resolve_copyof(model, section, hotkey, race)
-                value = convert_side(side, layout, value)
-                value = shift(side, size, value)
-                value = translate(layout, value)
+        for key, value in model[section].items():
             hotkeyfile_parser.set(section, key, value)
     if not os.path.isdir(layout):
         os.makedirs(layout)
@@ -996,7 +841,6 @@ def generate_seed_files(model, race, side, size, layout):
     hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
     hotkeyfile.close()
     order(filepath)
-    # verify_file(filepath)
 
 def resolve_copyof(model, section, hotkey, race):
     value = None
@@ -1016,7 +860,7 @@ def verify_seed_with_generate():
 
     for race in races:
         filepath_seed = prefix + " " + race + "LM " + suffix
-        filepath_gen = Seed_files_folder + "/" + filepath_seed
+        filepath_gen = seed_layout + "/" + filepath_seed
 
         parser_seed = SafeConfigParser()
         parser_seed.optionxform = str
@@ -1078,28 +922,6 @@ def verify_seed_with_generate():
                             print(key + " gen: " + value_gen + " seed default: " + default)
         print()
     print("-------------------------")
-
-def generate_other_files():
-    for race in races:
-        filename = prefix + " " + race + "LM " + suffix
-        filepath = Seed_files_folder + "/" + filename
-        verify_file(filepath)
-        
-        # xLM Translate
-        translate_file(filename, False)
-        # xLL Shift and Translate
-        translate_file(shift_hand_size(filename, True, "L", False), False)
-        # xLS Shift and Translate
-        translate_file(shift_hand_size(filename, False, "S", False), False)
-        
-        # xRM create
-        layout_filename = generate_layout(filename, race, "RM")
-        # xRM Translate
-        translate_file(layout_filename, True)
-        # xLL Shift and Translate
-        translate_file(shift_hand_size(layout_filename, False, "L", True), True)
-        # xLS Shift and Translate
-        translate_file(shift_hand_size(layout_filename, True, "S", True), True)
 
 def create_model():
     theseed_parser = SafeConfigParser()
