@@ -8,7 +8,8 @@
 #   9/26/12 - Finished initial functionality
 #
 ##################################################
-from configparser import SafeConfigParser
+
+import configparser
 import os, sys
 
 TRANSLATE = not "US" in sys.argv
@@ -554,13 +555,17 @@ CONFLICT_CHECKS = {'LotV Multiplayer/Protoss/Structures/Fleet Beacon' : ['AnionP
                    'Left2Die/Terran/Units/Marauder' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/Marauder']}
 
 
+class ConfigParser(configparser.ConfigParser):
+    """Case-sensitive ConfigParser."""
+
+    def optionxform(self, opt):
+        return opt
+
 # Read the settings
-settings_parser = SafeConfigParser()
-settings_parser.optionxform = str
+settings_parser = ConfigParser()
 settings_parser.read('MapDefinitions.ini')
 
-I18N_parser = SafeConfigParser()
-I18N_parser.optionxform = str
+I18N_parser = ConfigParser()
 I18N_parser.read('KeyboardLayouts.ini')
 
 race_dict = {"P": 0,
@@ -629,8 +634,7 @@ def verify_file(filepath):
 
     # Check for duplicates
     if SHOW_DUPLICATES:
-        verify_parser = SafeConfigParser()
-        verify_parser.optionxform = str
+        verify_parser = ConfigParser()
         dup_dict = {}
         verify_parser.read(filepath)
         gen_items = verify_parser.items('Hotkeys')
@@ -858,8 +862,7 @@ def remove_spaces(filepath):
             outfile.write(line)
 
 def order(filepath):
-    read_parser = SafeConfigParser()
-    read_parser.optionxform = str
+    read_parser = ConfigParser()
     read_parser.read(filepath)
 
     dict = {}
@@ -870,8 +873,7 @@ def order(filepath):
 
     open(filepath, 'w').close()  # clear file
 
-    write_parser = SafeConfigParser()  # on other parser just for the safty
-    write_parser.optionxform = str
+    write_parser = ConfigParser()  # on other parser just for the safty
     write_parser.read(filepath)
 
     write_parser.add_section("Settings")
@@ -893,16 +895,14 @@ def order(filepath):
 
 # NEW - Generate the file from TheCoreSeed.ini
 def generate_seed_files(model):
-    theseed_parser = SafeConfigParser()
-    theseed_parser.optionxform = str
+    theseed_parser = ConfigParser()
     theseed_parser.read('TheCoreSeed.ini')
 
     for race in races:
         filename = prefix + " " + race + "LM " + suffix
         filepath = Seed_files_folder + "/" + filename
         open(filepath, 'w').close()
-        hotkeyfile_parser = SafeConfigParser()
-        hotkeyfile_parser.optionxform = str
+        hotkeyfile_parser = ConfigParser()
 
         for key in model.keys():
             hotkey = model[key]
@@ -932,20 +932,18 @@ def verify_seed_with_generate():
         filepath_seed = prefix + " " + race + "LM " + suffix
         filepath_gen = Seed_files_folder + "/" + filepath_seed
 
-        parser_seed = SafeConfigParser()
+        parser_seed = ConfigParser()
         parser_seed.optionxform = str
         parser_seed.read(filepath_seed)
 
-        parser_gen = SafeConfigParser()
+        parser_gen = ConfigParser()
         parser_gen.optionxform = str
         parser_gen.read(filepath_gen)
 
-        theseed_parser = SafeConfigParser()
-        theseed_parser.optionxform = str
+        theseed_parser = ConfigParser()
         theseed_parser.read('TheCoreSeed.ini')
 
-        new_defaults_parser = SafeConfigParser()
-        new_defaults_parser.optionxform = str
+        new_defaults_parser = ConfigParser()
         new_defaults_parser.read('NewDefaults.ini')
 
         print("Race: " + race)
@@ -1010,19 +1008,16 @@ def generate_other_files():
 
 
 def create_model():
-    theseed_parser = SafeConfigParser()
-    theseed_parser.optionxform = str
+    theseed_parser = ConfigParser()
     theseed_parser.read('TheCoreSeed.ini')
 
-    default_parser = SafeConfigParser()
-    default_parser.optionxform = str
+    default_parser = ConfigParser()
     default_parser.read('NewDefaults.ini')
 
     parsers = {}
     for race in races:
         filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = SafeConfigParser()
-        seed_hotkeyfile_parser.optionxform = str
+        seed_hotkeyfile_parser = ConfigParser()
         seed_hotkeyfile_parser.read(filepath)
         parsers[race] = seed_hotkeyfile_parser
 
@@ -1049,14 +1044,12 @@ def create_model():
 
 def new_keys_from_seed_hotkeys():
     default_filepath = 'NewDefaults.ini'
-    default_parser = SafeConfigParser()
-    default_parser.optionxform = str
+    default_parser = ConfigParser()
     default_parser.read(default_filepath)
 
     for race in races:
         filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = SafeConfigParser()
-        seed_hotkeyfile_parser.optionxform = str
+        seed_hotkeyfile_parser = ConfigParser()
         seed_hotkeyfile_parser.read(filepath)
 
         for section in seed_hotkeyfile_parser.sections():
@@ -1073,24 +1066,20 @@ def new_keys_from_seed_hotkeys():
 def check_defaults():
     warn = False
     default_filepath = 'NewDefaults.ini'
-    default_parser = SafeConfigParser()
-    default_parser.optionxform = str
+    default_parser = ConfigParser()
     default_parser.read(default_filepath)
     
     ddefault_filepath = 'different_default.ini'
-    ddefault_parser = SafeConfigParser()
-    ddefault_parser.optionxform = str
+    ddefault_parser = ConfigParser()
     ddefault_parser.read(ddefault_filepath)
     
-    theseed_parser = SafeConfigParser()
-    theseed_parser.optionxform = str
+    theseed_parser = ConfigParser()
     theseed_parser.read('TheCoreSeed.ini')
     
     parsers = {}
     for race in races:
         filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = SafeConfigParser()
-        seed_hotkeyfile_parser.optionxform = str
+        seed_hotkeyfile_parser = ConfigParser()
         seed_hotkeyfile_parser.read(filepath)
         parsers[race] = seed_hotkeyfile_parser
 
@@ -1121,18 +1110,15 @@ def suggest_inherit():
     print("------------------------------")
     print("suggest inherit")
     default_filepath = 'NewDefaults.ini'
-    default_parser = SafeConfigParser()
-    default_parser.optionxform = str
+    default_parser = ConfigParser()
     default_parser.read(default_filepath)
     
-    theseed_parser = SafeConfigParser()
-    theseed_parser.optionxform = str
+    theseed_parser = ConfigParser()
     theseed_parser.read('TheCoreSeed.ini')
     
     parsers = {}
     for race in races:
-        hotkeyfile_parser = SafeConfigParser()
-        hotkeyfile_parser.optionxform = str
+        hotkeyfile_parser = ConfigParser()
         hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
         parsers[race] = hotkeyfile_parser
 
@@ -1194,17 +1180,14 @@ def wrong_inherit():
     print("------------------------------")
     print("Wrong inherit")
     default_filepath = 'NewDefaults.ini'
-    default_parser = SafeConfigParser()
-    default_parser.optionxform = str
+    default_parser = ConfigParser()
     default_parser.read(default_filepath)
     
-    theseed_parser = SafeConfigParser()
-    theseed_parser.optionxform = str
+    theseed_parser = ConfigParser()
     theseed_parser.read('TheCoreSeed.ini')
     parsers = {}
     for race in races:
-        hotkeyfile_parser = SafeConfigParser()
-        hotkeyfile_parser.optionxform = str
+        hotkeyfile_parser = ConfigParser()
         hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
         parsers[race] = hotkeyfile_parser
 
