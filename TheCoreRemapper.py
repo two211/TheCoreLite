@@ -9,10 +9,8 @@
 #
 ##################################################
 import configparser
-import os, sys
-
-TRANSLATE = not "US" in sys.argv
-ONLY_SEED = "LM" in sys.argv
+import os
+from tkinter.constants import RIGHT
 
 GLOBAL = -1
 
@@ -22,8 +20,6 @@ VERIFY_ALL = False
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
-
-# ZERG_CONTROL_GROUP_SPECIAL = ['ControlGroupAssign7']
 
 CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGroupAppend2', 'ControlGroupAppend3', 'ControlGroupAppend4', 'ControlGroupAppend5', 'ControlGroupAppend6', 'ControlGroupAppend7', 'ControlGroupAppend8', 'ControlGroupAppend9',
                       'ControlGroupAssign0', 'ControlGroupAssign1', 'ControlGroupAssign2', 'ControlGroupAssign3', 'ControlGroupAssign4', 'ControlGroupAssign5', 'ControlGroupAssign6', 'ControlGroupAssign7', 'ControlGroupAssign8', 'ControlGroupAssign9',
@@ -558,12 +554,23 @@ class ConfigParser(configparser.ConfigParser):
         return opt
  
 
+
+PROTOSS = "P"
+TERRAN = "T"
+RANDOM = "R"
+ZERG = "Z"
+races = [PROTOSS, TERRAN, RANDOM, ZERG]
+
+RIGHT = "R"
+LEFT = "L"
+sides = [LEFT, RIGHT]
+
+SMALL = "S"
+MEDIUM = "M"
+LARGE = "L"
+sizes = [SMALL, MEDIUM, LARGE]
+
 # Read the settings
-
-races = ["P", "T", "R", "Z"]
-sides = ["L", "R"]
-sizes = ["S", "M", "L"]
-
 settings_parser = ConfigParser()
 settings_parser.read('MapDefinitions.ini')
 
@@ -586,23 +593,23 @@ class Hotkey:
         self.copyOf = copyOf
 
     def set_value(self, race, value):
-        if race == "P":
+        if race == PROTOSS:
             self.P = value
-        elif race == "R":
+        elif race == RANDOM:
             self.R = value
-        elif race == "T":
+        elif race == TERRAN:
             self.T = value
-        elif race == "Z":
+        elif race == ZERG:
             self.Z = value
 
     def get_value(self, race):
-        if race == "P":
+        if race == PROTOSS:
             return self.P
-        elif race == "R":
+        elif race == RANDOM:
             return self.R
-        elif race == "T":
+        elif race == TERRAN:
             return self.T
-        elif race == "Z":
+        elif race == ZERG:
             return self.Z
 
 def verify_file(filepath):
@@ -713,38 +720,36 @@ def order(filepath):
     write_parser.write(file, space_around_delimiters=False)
     file.close()
 
-
 def generate(seed_model):
+    seed_models = init_models()
+    for race in races:
+        seed_models[race][LEFT][MEDIUM] = extract_race(seed_model, race)
+        seed_models[race][RIGHT][MEDIUM] = convert_side(seed_models[race][LEFT][MEDIUM], RIGHT)
+        seed_models[race][LEFT][SMALL] = shift_left(seed_models[race][LEFT][MEDIUM], LEFT)
+        seed_models[race][RIGHT][SMALL] = shift_right(seed_models[race][RIGHT][MEDIUM], RIGHT)
+        seed_models[race][LEFT][LARGE] = shift_right(seed_models[race][LEFT][MEDIUM], LEFT)
+        seed_models[race][RIGHT][LARGE] = shift_left(seed_models[race][RIGHT][MEDIUM], RIGHT)
+    translate_and_create_files(seed_models)
+
+def init_models():
     models = {}
     for race in races:
         models[race] = {}
         for side in sides:
             models[race][side] = {}
-            for size in sizes:
-                models[race][side][size] = {}
-    
-    for race in races:
-        models[race]["L"]["M"][seed_layout] = extract_race(seed_model, race)
-        models[race]["R"]["M"][seed_layout] = convert_side(models[race]["L"]["M"][seed_layout])
-        models[race]["L"]["S"][seed_layout] = shift_left(models[race]["L"]["M"][seed_layout], "L")
-        models[race]["R"]["S"][seed_layout] = shift_right(models[race]["R"]["M"][seed_layout], "R")
-        models[race]["L"]["L"][seed_layout] = shift_right(models[race]["L"]["M"][seed_layout], "L")
-        models[race]["R"]["L"][seed_layout] = shift_left(models[race]["R"]["M"][seed_layout], "R")
-    
+    return models
+
+def translate_and_create_files(models):
     layouts = layout_parser.sections()
     for race in races:
         for side in sides:
             for size in sizes:
                 for layout in layouts:
                     if layout != seed_layout:
-                        models[race][side][size][layout] = translate(models[race][side][size][seed_layout], layout, side)
-    for race in races:
-        for side in sides:
-            for size in sizes:
-                for layout in layouts:
-                    create_file(models[race][side][size][layout], race, side, size, layout)
-    # verify_file(filepath)
-    
+                        model = translate(models[race][side][size], layout, side)
+                    else:
+                        model = models[race][side][size]
+                    create_file(model, race, side, size, layout)
 
 def extract_race(seed_model, race):
     model_dict = {}
@@ -755,7 +760,7 @@ def extract_race(seed_model, race):
             model_dict[section][key] = value
     return model_dict
 
-def modify_model(seed_model, parser, parser_section, check_altgr=False):
+def modify_model(seed_model, parser, parser_section, side):
     model_dict = {}
     for section in seed_model:
         model_dict[section] = {}
@@ -763,32 +768,30 @@ def modify_model(seed_model, parser, parser_section, check_altgr=False):
             if section == "Settings":
                 newvalue = value
             else:
-                newvalue = modify_value(value, parser, parser_section, check_altgr)
+                newvalue = modify_value(value, parser, parser_section, side)
             model_dict[section][key] = newvalue
     return model_dict
 
-def convert_side(seed_model):
-    return modify_model(seed_model, settings_parser, 'GlobalMaps')
+def convert_side(seed_model, side):
+    return modify_model(seed_model, settings_parser, 'GlobalMaps', side)
 
 def shift_right(seed_model, side):
     shift_section = side + 'ShiftRightMaps'
-    return shift(seed_model, shift_section)
+    return shift(seed_model, shift_section, side)
 
 def shift_left(seed_model, side):
     shift_section = side + 'ShiftLeftMaps'
-    return shift(seed_model, shift_section)
+    return shift(seed_model, shift_section, side)
             
-def shift(seed_model, shift_section):
-    return modify_model(seed_model, settings_parser, shift_section)
+def shift(seed_model, shift_section, side):
+    return modify_model(seed_model, settings_parser, shift_section, side)
 
 def translate(seed_model, layout, side):
-    check_altgr = False
-    if side == "R":
-        check_altgr = True
-    return modify_model(seed_model, layout_parser, layout, check_altgr)
+    return modify_model(seed_model, layout_parser, layout, side)
 
-def modify_value(org_value, parser, section, check_altgr):
-    if check_altgr:
+def modify_value(org_value, parser, section, side):
+    altgr = "0"
+    if parser == layout_parser and side == RIGHT:
         altgr = layout_parser.get(section, "AltGr")
 
     newalternates = []
@@ -796,7 +799,7 @@ def modify_value(org_value, parser, section, check_altgr):
         keys = alternate.split("+")
         newkeys = []
         # filter "Shift" only to make sure it is the same output as the old script
-        if check_altgr and altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
+        if altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
             newkeys.append("Control")
         for key in keys:
             if parser.has_option(section, key):
