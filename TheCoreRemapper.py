@@ -10,11 +10,9 @@
 ##################################################
 import configparser
 import os
-from tkinter.constants import RIGHT
 
 GLOBAL = -1
 
-SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
 VERIFY_ALL = False
 
@@ -546,14 +544,11 @@ CONFLICT_CHECKS = {'LotV Multiplayer/Protoss/Structures/Fleet Beacon' : ['AnionP
                    'Left2Die/Terran/Structures/Tech Lab/Attached to Factory' : ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel'],
                    'Left2Die/Terran/Units/Marauder' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/Marauder']}
 
-
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
  
     def optionxform(self, opt):
         return opt
- 
-
 
 PROTOSS = "P"
 TERRAN = "T"
@@ -577,9 +572,23 @@ settings_parser.read('MapDefinitions.ini')
 layout_parser = ConfigParser()
 layout_parser.read('KeyboardLayouts.ini')
 
+default_filepath = 'NewDefaults.ini'
+default_parser = ConfigParser()
+default_parser.read(default_filepath)
+
+ddefault_filepath = 'different_default.ini'
+ddefault_parser = ConfigParser()
+ddefault_parser.read(ddefault_filepath)
+
+inherit_filepath = 'TheCoreSeed.ini'
+inherit_parser = ConfigParser()
+inherit_parser.read(inherit_filepath)
+    
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
 seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
+
+hotkeyfile_parsers = {}
 
 class Hotkey:
     def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
@@ -749,14 +758,15 @@ def translate_and_create_files(models):
                         model = translate(models[race][side][size], layout, side)
                     else:
                         model = models[race][side][size]
-                    create_file(model, race, side, size, layout)
+                    filepath = create_file(model, race, side, size, layout)
+                    verify_file(filepath)
 
 def extract_race(seed_model, race):
     model_dict = {}
     for section in seed_model:
         model_dict[section] = {}
         for key, hotkey in seed_model[section].items():
-            value = resolve_copyof(seed_model, section, hotkey, race)
+            value = resolve_inherit(seed_model, section, hotkey, race)
             model_dict[section][key] = value
     return model_dict
 
@@ -845,61 +855,53 @@ def create_file(model, race, side, size, layout):
     hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
     hotkeyfile.close()
     order(filepath)
+    return filepath
 
-def resolve_copyof(model, section, hotkey, race):
-    value = None
+def resolve_inherit(model, section, hotkey, race):
+    hotkey = resolve_copyof(model, section, hotkey)
+    value = hotkey.get_value(race)
+    if value is None:
+        value = hotkey.default
+    return value
+
+def resolve_copyof(model, section, hotkey):
     while True:
         if hotkey.copyOf:
             hotkey = model[section][hotkey.copyOf]
         else:
-            value = hotkey.get_value(race)
-            if value is None:
-                value = hotkey.default
-            break
-    return value
+            return hotkey
     
 def verify_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
 
     for race in races:
-        filepath_seed = prefix + " " + race + "LM " + suffix
-        filepath_gen = seed_layout + "/" + filepath_seed
-
-        parser_seed = ConfigParser()
-        parser_seed.read(filepath_seed)
-
+        filepath_gen = create_filepath(race, LEFT, MEDIUM, seed_layout)
         parser_gen = ConfigParser()
         parser_gen.read(filepath_gen)
-
-        theseed_parser = ConfigParser()
-        theseed_parser.read('TheCoreSeed.ini')
-
-        new_defaults_parser = ConfigParser()
-        new_defaults_parser.read('NewDefaults.ini')
 
         print("Race: " + race)
         print()
 
         print("In Seed not in Gen")
-        for section in parser_seed.sections():
-            for seed_item in parser_seed.items(section):
+        for section in hotkeyfile_parsers[race].sections():
+            for seed_item in hotkeyfile_parsers[race].items(section):
                 key = seed_item[0]
                 if not parser_gen.has_option(section, key):
                     print(key)
         print()
         print("In Seed diffrent in Gen")
-        for section in new_defaults_parser.sections():
-            for item in new_defaults_parser.items(section):
+        for section in default_parser.sections():
+            for item in default_parser.items(section):
                 key = item[0]
-                if parser_gen.has_option(section, key) and parser_seed.has_option(section, key):
+                if parser_gen.has_option(section, key) and hotkeyfile_parsers[race].has_option(section, key):
                     value_gen = parser_gen.get(section, key)
-                    value_seed = parser_seed.get(section, key)
+                    value_seed = hotkeyfile_parsers[race].get(section, key)
                     seed_value_set = set(str(value_seed).split(","))
                     gen_value_set = set(str(value_gen).split(","))
                     if seed_value_set != gen_value_set:
-                        if theseed_parser.has_option(section, key):
-                            original = theseed_parser.get(section, key)
+                        if inherit_parser.has_option(section, key):
+                            original = inherit_parser.get(section, key)
                             print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + original)
                         else:
                             print(key + " seed: " + value_seed + " gen: " + value_gen)
@@ -910,13 +912,13 @@ def verify_seed_with_generate():
             for gen_item in parser_gen.items(section):
                 key = gen_item[0]
                 value_gen = gen_item[1]
-                if not parser_seed.has_option(section, key):
-                    default = new_defaults_parser.get(section, key)
+                if not hotkeyfile_parsers[race].has_option(section, key):
+                    default = default_parser.get(section, key)
                     default_value_set = set(str(default).split(","))
                     gen_value_set = set(str(value_gen).split(","))
                     if gen_value_set != default_value_set:
-                        if theseed_parser.has_option(section, key):
-                            original = theseed_parser.get(section, key)
+                        if inherit_parser.has_option(section, key):
+                            original = inherit_parser.get(section, key)
                             print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + original)
                         else:
                             print(key + " gen: " + value_gen + " seed default: " + default)
@@ -924,19 +926,6 @@ def verify_seed_with_generate():
     print("-------------------------")
 
 def create_model():
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-
-    default_parser = ConfigParser()
-    default_parser.read('NewDefaults.ini')
-
-    parsers = {}
-    for race in races:
-        filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = ConfigParser()
-        seed_hotkeyfile_parser.read(filepath)
-        parsers[race] = seed_hotkeyfile_parser
-
     model = {}
     for section in default_parser.sections():
         section_dict = {}
@@ -948,29 +937,21 @@ def create_model():
             hotkey.default = default
 
             for race in races:
-                if parsers[race].has_option(section, key):
-                    value = parsers[race].get(section, key)  #
+                if hotkeyfile_parsers[race].has_option(section, key):
+                    value = hotkeyfile_parsers[race].get(section, key)  #
                     hotkey.set_value(race, value)
 
-            if theseed_parser.has_option(section, key):
-                copyof = theseed_parser.get(section, key)
+            if inherit_parser.has_option(section, key):
+                copyof = inherit_parser.get(section, key)
                 hotkey.copyOf = copyof
             section_dict[key] = hotkey
         model[section] = section_dict
     return model
 
 def new_keys_from_seed_hotkeys():
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-
     for race in races:
-        filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = ConfigParser()
-        seed_hotkeyfile_parser.read(filepath)
-
-        for section in seed_hotkeyfile_parser.sections():
-            for item in seed_hotkeyfile_parser.items(section):
+        for section in hotkeyfile_parsers[race].sections():
+            for item in hotkeyfile_parsers[race].items(section):
                 key = item[0]
                 if not default_parser.has_option(section, key):
                     default_parser.set(section, key, "")
@@ -979,20 +960,10 @@ def new_keys_from_seed_hotkeys():
     default_parser.write(file, space_around_delimiters=False)
     file.close()
     order(default_filepath)
+    default_parser.read(default_filepath)
 
 def check_defaults():
     warn = False
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-    
-    ddefault_filepath = 'different_default.ini'
-    ddefault_parser = ConfigParser()
-    ddefault_parser.read(ddefault_filepath)
-    
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-    
     parsers = {}
     for race in races:
         filepath = prefix + " " + race + "LM " + suffix
@@ -1010,7 +981,7 @@ def check_defaults():
                 for race in races:
                     if not parsers[race].has_option(section, key):
                         seedhas = False
-                inherit = theseed_parser.has_option(section, key)
+                inherit = inherit_parser.has_option(section, key)
                 
                 if multidefault:
                     if not seedhas and not inherit:
@@ -1027,13 +998,6 @@ def suggest_inherit():
     print("------------------------------")
     print("suggest inherit")
     print("------------")
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-    
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-    
     parsers = {}
     for race in races:
         hotkeyfile_parser = ConfigParser()
@@ -1091,9 +1055,9 @@ def suggest_inherit():
         for key in listkeys:
             copyofstr = ""
             default = defaults[key]
-            for section in theseed_parser.sections():
-                if theseed_parser.has_option(section, key):
-                    seedini_value = theseed_parser.get(section, key)
+            for section in inherit_parser.sections():
+                if inherit_parser.has_option(section, key):
+                    seedini_value = inherit_parser.get(section, key)
                     copyofstr = " default: " + default + " copy of " + seedini_value
                     default = defaults[seedini_value]
                     break
@@ -1104,18 +1068,6 @@ def suggest_inherit():
 def wrong_inherit():
     print("------------------------------")
     print("Wrong inherit")
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-    
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-    parsers = {}
-    for race in races:
-        hotkeyfile_parser = ConfigParser()
-        hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
-        parsers[race] = hotkeyfile_parser
-
     dicti = {}
     for section in default_parser.sections():
         for item in default_parser.items(section):
@@ -1124,15 +1076,15 @@ def wrong_inherit():
             values = {}
             for race in races:
                 index = races.index(race)
-                if parsers[race].has_option(section, key):
-                    value = parsers[race].get(section, key)
+                if hotkeyfile_parsers[race].has_option(section, key):
+                    value = hotkeyfile_parsers[race].get(section, key)
                     values[index] = value
                 else:
                     values[index] = default
             dicti[key] = values
     
-    for section in theseed_parser.sections():
-        for item in theseed_parser.items(section):
+    for section in inherit_parser.sections():
+        for item in inherit_parser.items(section):
             key = item[0]
             copyofkey = item[1]
             values = dicti[key]
@@ -1163,19 +1115,31 @@ def wrong_inherit():
                     copyofdefault = " "
                 print("D: " + str(default) + "\t" + str(copyofdefault) + " (default)")
                 print()
-        
     print()
 
 
 
+def init_seed_hotkeyfile_parser():
+    for race in races:
+        hotkeyfile_parser = ConfigParser()
+        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM)
+        hotkeyfile_parser.read(hotkeyfilepath)
+        hotkeyfile_parsers[race] = hotkeyfile_parser
+
+def analyse(model):
+    verify_seed_with_generate()
+    wrong_inherit()
+    suggest_inherit()
+
+
 # check sections
+init_seed_hotkeyfile_parser()
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
 generate(model)
-wrong_inherit()
-verify_seed_with_generate()
-suggest_inherit()
+analyse(model)
+
 
 # Quick test to see if 4 seed files are error free
 #     Todo:    expand this to every single file in every directory
