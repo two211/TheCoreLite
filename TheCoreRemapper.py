@@ -267,7 +267,6 @@ def translate_and_create_files(models):
                     else:
                         model = models[race][side][size]
                     filepath = create_file(model, race, side, size, layout)
-                    verify_file(filepath)
 
 def extract_race(seed_model, race):
     model_dict = {}
@@ -634,10 +633,16 @@ def init_seed_hotkeyfile_parser():
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[race] = hotkeyfile_parser
 
+def conflict_and_same_checkts():
+    for race in races:
+        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM, seed_layout)
+        verify_file(hotkeyfilepath)
+
 def analyse(model):
     verify_seed_with_generate()
     wrong_inherit()
-    suggest_inherit()
+    #suggest_inherit()
+    conflict_and_same_checkts()
 
 
 # check sections
