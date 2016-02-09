@@ -9,28 +9,31 @@
 #
 ##################################################
 import configparser
-import os, sys
+import os
 
-TRANSLATE = not "US" in sys.argv
-ONLY_SEED = "LM" in sys.argv
+from conflict_checks import *  # @UnresolvedImport
+from same_checks import *  # @UnresolvedImport
 
 GLOBAL = -1
 
-SHOW_HOTS_MISSING = True
 SHOW_DUPLICATES = False
 VERIFY_ALL = False
 
 CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
                'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
 
-# ZERG_CONTROL_GROUP_SPECIAL = ['ControlGroupAssign7']
-
-CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGroupAppend2', 'ControlGroupAppend3', 'ControlGroupAppend4', 'ControlGroupAppend5', 'ControlGroupAppend6', 'ControlGroupAppend7', 'ControlGroupAppend8', 'ControlGroupAppend9',
-                      'ControlGroupAssign0', 'ControlGroupAssign1', 'ControlGroupAssign2', 'ControlGroupAssign3', 'ControlGroupAssign4', 'ControlGroupAssign5', 'ControlGroupAssign6', 'ControlGroupAssign7', 'ControlGroupAssign8', 'ControlGroupAssign9',
-                      'ControlGroupRecall0', 'ControlGroupRecall1', 'ControlGroupRecall2', 'ControlGroupRecall3', 'ControlGroupRecall4', 'ControlGroupRecall5', 'ControlGroupRecall6', 'ControlGroupRecall7', 'ControlGroupRecall8', 'ControlGroupRecall9',
-                      'ControlGroupAppendAndSteal0', 'ControlGroupAppendAndSteal1', 'ControlGroupAppendAndSteal2', 'ControlGroupAppendAndSteal3', 'ControlGroupAppendAndSteal4', 'ControlGroupAppendAndSteal5', 'ControlGroupAppendAndSteal6', 'ControlGroupAppendAndSteal7', 'ControlGroupAppendAndSteal8', 'ControlGroupAppendAndSteal9',
-                      'ControlGroupAssignAndSteal0', 'ControlGroupAssignAndSteal1', 'ControlGroupAssignAndSteal2', 'ControlGroupAssignAndSteal3', 'ControlGroupAssignAndSteal4', 'ControlGroupAssignAndSteal5', 'ControlGroupAssignAndSteal6', 'ControlGroupAssignAndSteal7', 'ControlGroupAssignAndSteal8', 'ControlGroupAssignAndSteal9', ]
-
+CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGroupAppend2', 'ControlGroupAppend3', 'ControlGroupAppend4',
+                      'ControlGroupAppend5', 'ControlGroupAppend6', 'ControlGroupAppend7', 'ControlGroupAppend8', 'ControlGroupAppend9',
+                      'ControlGroupAssign0', 'ControlGroupAssign1', 'ControlGroupAssign2', 'ControlGroupAssign3', 'ControlGroupAssign4',
+                      'ControlGroupAssign5', 'ControlGroupAssign6', 'ControlGroupAssign7', 'ControlGroupAssign8', 'ControlGroupAssign9',
+                      'ControlGroupRecall0', 'ControlGroupRecall1', 'ControlGroupRecall2', 'ControlGroupRecall3', 'ControlGroupRecall4',
+                      'ControlGroupRecall5', 'ControlGroupRecall6', 'ControlGroupRecall7', 'ControlGroupRecall8', 'ControlGroupRecall9',
+                      'ControlGroupAppendAndSteal0', 'ControlGroupAppendAndSteal1', 'ControlGroupAppendAndSteal2', 'ControlGroupAppendAndSteal3',
+                      'ControlGroupAppendAndSteal4', 'ControlGroupAppendAndSteal5', 'ControlGroupAppendAndSteal6', 'ControlGroupAppendAndSteal7',
+                      'ControlGroupAppendAndSteal8', 'ControlGroupAppendAndSteal9',
+                      'ControlGroupAssignAndSteal0', 'ControlGroupAssignAndSteal1', 'ControlGroupAssignAndSteal2', 'ControlGroupAssignAndSteal3',
+                      'ControlGroupAssignAndSteal4', 'ControlGroupAssignAndSteal5', 'ControlGroupAssignAndSteal6', 'ControlGroupAssignAndSteal7',
+                      'ControlGroupAssignAndSteal8', 'ControlGroupAssignAndSteal9', ]
 
 # Add to this please.
 GENERAL_KEYS = ['FPS', 'Music', 'Sound', 'PTT', 'DialogDismiss', 'MenuAchievements', 'MenuGame', 'MenuMessages', 'MenuSocial',
@@ -38,541 +41,62 @@ GENERAL_KEYS = ['FPS', 'Music', 'Sound', 'PTT', 'DialogDismiss', 'MenuAchievemen
                 'LeaderAPM', 'LeaderCPM', 'ObserveAllPlayers', 'ObserveAutoCamera', 'ObserveClearSelection', 'ObservePlayer0', 'ObservePlayer1',
                 'ObservePlayer2', 'ObservePlayer3', 'ObservePlayer4', 'ObservePlayer5', 'ObservePlayer6', 'ObservePlayer7', 'ObservePlayer8',
                 'ObservePlayer9', 'ObservePlayer10', 'ObservePlayer11', 'ObservePlayer12', 'ObservePlayer13', 'ObservePlayer14', 'ObservePlayer15',
-                'ObserveSelected', 'ObservePreview', 'ObserveStatusBars', 'StatPanelResources', 'StatPanelArmySupply', 'StatPanelUnitsLost', 'StatPanelAPM', 'StatPanelCPM',
-                'ToggleWorldPanel', 'CinematicSkip', 'AlertRecall', 'CameraFollow', 'GameTooltipsOn', 'IdleWorker', 'MinimapColors', 'MinimapPing',
-                'MinimapTerrain', 'PauseGame', 'QuickPing', 'QuickSave', 'ReplayPlayPause', 'ReplayRestart', 'ReplaySkipBack', 'ReplaySkipNext', 'ReplaySpeedDec',
-                'ReplaySpeedInc', 'ReplayStop', 'ReplayHide', 'SelectionCancelDrag', 'SubgroupNext', 'SubgroupPrev', 'TeamResources', 'TownCamera', 'WarpIn',
-                'Cancel', 'CancelCocoon', 'CancelMutateMorph', 'CancelUpgradeMorph', 'ChatCancel',
-                'ChatAll', 'ChatDefault', 'ChatIndividual', 'ChatRecipient', 'ChatAllies',
-                'CameraTurnLeft', 'CameraTurnRight', 'CameraCenter',
-                'StatusAll', 'StatusOwner', 'StatusEnemy', 'StatusAlly', 'MenuHelp', 'NamePanel', 'ArmySelect', 'SelectBuilder', 'ToggleVersusModeSides']
+                'ObserveSelected', 'ObservePreview', 'ObserveStatusBars', 'StatPanelResources', 'StatPanelArmySupply', 'StatPanelUnitsLost',
+                'StatPanelAPM', 'StatPanelCPM', 'ToggleWorldPanel', 'CinematicSkip', 'AlertRecall', 'CameraFollow', 'GameTooltipsOn', 'IdleWorker',
+                'MinimapColors', 'MinimapPing', 'MinimapTerrain', 'PauseGame', 'QuickPing', 'QuickSave', 'ReplayPlayPause', 'ReplayRestart',
+                'ReplaySkipBack', 'ReplaySkipNext', 'ReplaySpeedDec', 'ReplaySpeedInc', 'ReplayStop', 'ReplayHide', 'SelectionCancelDrag',
+                'SubgroupNext', 'SubgroupPrev', 'TeamResources', 'TownCamera', 'WarpIn', 'Cancel', 'CancelCocoon', 'CancelMutateMorph',
+                'CancelUpgradeMorph', 'ChatCancel', 'ChatAll', 'ChatDefault', 'ChatIndividual', 'ChatRecipient', 'ChatAllies', 'CameraTurnLeft',
+                'CameraTurnRight', 'CameraCenter', 'StatusAll', 'StatusOwner', 'StatusEnemy', 'StatusAlly', 'MenuHelp', 'NamePanel', 'ArmySelect',
+                'SelectBuilder', 'ToggleVersusModeSides']
 
 EXCLUDE_MAPPING = ['AllowSetConflicts']
-
-SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
-               ['Assimilator/Probe', 'Extractor/Drone', 'Refinery/SCV', 'AutomatedRefinery/SCV', 'AutomatedExtractor/Drone'],
-               ['Gateway/Probe', 'Barracks/SCV'],
-               ['Nexus/Probe', 'Hatchery/Drone', 'CommandCenter/SCV', 'CommandCenterOrbRelay/SCV'],
-               ['Forge/Probe', 'EvolutionChamber/Drone', 'EngineeringBay/SCV'],
-               ['RoboticsFacility/Probe', 'Factory/SCV'],
-               ['Stargate/Probe', 'Spire/Drone', 'Starport/SCV'],
-               ['TwilightCouncil/Probe', 'Armory/SCV'],
-               ['FleetBeacon/Probe', 'FusionCore/SCV'],
-               ['ProtossGroundWeaponsLevel1/Forge', 'TerranInfantryWeaponsLevel1/EngineeringBay', 'TerranInfantryWeaponsUltraCapacitorsLevel1/EngineeringBay', 'TerranInfantryWeaponsUltraCapacitorsLevel2/EngineeringBay', 'TerranInfantryWeaponsUltraCapacitorsLevel3/EngineeringBay'],
-               ['ProtossGroundArmorLevel1/Forge', 'TerranInfantryArmorLevel1/EngineeringBay', 'zerggroundarmor1/EvolutionChamber', 'TerranInfantryArmorVanadiumPlatingLevel1/EngineeringBay', 'TerranInfantryArmorVanadiumPlatingLevel2/EngineeringBay', 'TerranInfantryArmorVanadiumPlatingLevel3/EngineeringBay'],
-               ['ProtossAirWeaponsLevel1/CyberneticsCore', 'TerranShipWeaponsLevel1/Armory', 'zergflyerattack1'],
-               ['TerranShipWeaponsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory'],
-               ['ProtossAirArmorLevel1/CyberneticsCore', 'TerranShipPlatingLevel1/Armory', 'zergflyerarmor1'],
-               ['TerranShipPlatingLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel2/Armory', 'TerranShipPlatingVanadiumPlatingLevel3/Armory'],
-               ['Stim', 'StimFirebat/Firebat', 'StimFirebat/DevilDog'],
-               ['Heal/Medivac', 'BonesHeal/Stetmann', 'NanoRepair/ScienceVessel', 'MedicHeal/Medic', 'MercMedicHeal/MercMedic'],
-               ['CloakOnBanshee', 'RogueGhostCloak/Spectre', 'WraithCloakOn/Wraith'],
-               ['CloakOff', 'WraithCloakOff/Wraith'],
-#               ['WeaponsFree/Ghost','SpectreWeaponsFree/Spectre'], thanks to HotS Spectre key now unbinds if set to same as HoldFire, Ghost HoldFire & weapons free toggle works correctly
-               ['GhostHoldFire/Ghost', 'SpectreHoldFire/Spectre'],
-               ['NukeArm/GhostAcademy', 'SpectreNukeArm/GhostAcademy'],
-               ['NukeCalldown/Ghost', 'SpectreNukeCalldown/Spectre', 'HeroNukeCalldown/Nova', 'HeroNukeCalldown/Tosh', 'OdinNukeCalldown/Odin'],
-               ['BunkerLoad', 'HerculesLoad/Hercules'],
-               ['BunkerUnloadAll', 'HerculesUnloadAll/Hercules'],
-               ['Reactor/Barracks', 'Reactor/BarracksFlying', 'Reactor/Factory', 'Reactor/FactoryFlying', 'Reactor/Starport', 'Reactor/StarportFlying'],
-               ['TechLabBarracks/Barracks', 'TechLabBarracks/BarracksFlying', 'TechReactor/Barracks', 'TechReactor/BarracksFlying', 'TechLabFactory/Factory', 'BuildTechLabFactory/FactoryFlying', 'TechReactor/Factory', 'TechReactor/FactoryFlying', 'TechLabStarport/Starport', 'BuildTechLabStarport/StarportFlying', 'TechReactor/Starport', 'TechReactor/StarportFlying'],
-#               ['Ghost/Barracks','Spectre/Barracks'], thanks to HotS campaign these can no longer be on the same key
-               ['Raven/Starport', 'BuildScienceVessel/Starport'],
-               ['EMP/Ghost', 'UltrasonicPulse/Spectre'],
-               ['Snipe/Ghost', 'NovaSnipe/Nova', 'Obliterate/Spectre'],
-               ['Lair/Hatchery', 'Hive/Lair', 'LurkerDen/HydraliskDen', 'ImpalerDen/HydraliskDen'],
-               ['MassRecall/Mothership', 'MassRecall/Artanis', 'MothershipMassRecall/Mothership', 'MothershipCoreMassRecall/MothershipCore'],
-               ['Vortex/Mothership', 'Vortex/Artanis'],
-               ['Mothership/Nexus', 'MothershipCore/Nexus'],
-               ['AutoTurret/Raven', 'BuildAutoTurret/Raven'],
-               ['PointDefenseDrone/Raven', 'BuildPointDefenseDrone/Raven'],
-               ['ResearchShieldWall/BarracksTechLab', 'ResearchShieldWall/BarracksTechReactor'],
-               ['Stimpack/BarracksTechLab', 'Stimpack/BarracksTechReactor'],
-               ['ResearchPunisherGrenades/BarracksTechLab', 'ResearchPunisherGrenades/BarracksTechReactor', 'ResearchJackhammerConcussionGrenade/BarracksTechLab', 'ResearchJackhammerConcussionGrenade/BarracksTechReactor'],
-               ['ReaperSpeed/BarracksTechLab', 'ReaperSpeed/BarracksTechReactor', 'ResearchG4Charge/BarracksTechLab', 'ResearchG4Charge/BarracksTechReactor'],
-               ['ResearchIncineratorNozzles/BarracksTechLab', 'ResearchIncineratorNozzles/BarracksTechReactor'],
-               ['ResearchStabilizerMedPacks/BarracksTechLab', 'ResearchStabilizerMedPacks/BarracksTechReactor'],
-               ['ResearchCerberusMines/FactoryTechLab', 'ResearchCerberusMines/FactoryTechReactor'],
-               ['ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechReactor'],
-               ['ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechReactor'],
-               ['ResearchRegenerativeBioSteel/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechReactor'],
-               ['ResearchStrikeCannons/FactoryTechLab', 'ResearchStrikeCannons/FactoryTechReactor'],
-               ['ResearchSiegeTech/FactoryTechLab', 'ResearchSiegeTech/FactoryTechReactor', 'ResearchShapedBlast/FactoryTechLab', 'ResearchShapedBlast/FactoryTechReactor'],
-               ['ResearchMedivacEnergyUpgrade/StarportTechLab', 'ResearchMedivacEnergyUpgrade/StarportTechReactor'],
-               ['ResearchBansheeCloak/StarportTechLab', 'ResearchBansheeCloak/StarportTechReactor'],
-               ['ResearchDurableMaterials/StarportTechLab', 'ResearchDurableMaterials/StarportTechReactor'],
-               ['ResearchSeekerMissile/StarportTechLab', 'ResearchSeekerMissile/StarportTechReactor'],
-               ['ResearchRavenEnergyUpgrade/StarportTechLab', 'ResearchRavenEnergyUpgrade/StarportTechReactor'],
-               ['WraithCloak/StarportTechLab', 'WraithCloak/StarportTechReactor'],
-               ['Baneling/Zergling', 'Baneling/Zergling2', 'Baneling/HotSRaptor', 'Baneling/HotSSwarmling', 'MorphtoHunter/HotSRaptor', 'MorphtoHunter/HotSSwarmling', 'MorphtoSplitterling/HotSRaptor', 'MorphtoSplitterling/HotSSwarmling'],
-               ['DisableBuildingAttack/Baneling', 'DisableBuildingAttack/baneling', 'DisableBuildingAttack/baneling2', 'DisableBuildingAttack/HotSHunter', 'DisableBuildingAttack/HotSSplitterlingBig'],
-               ['EnableBuildingAttack/Baneling', 'EnableBuildingAttack/baneling', 'EnableBuildingAttack/baneling2', 'EnableBuildingAttack/HotSHunter', 'EnableBuildingAttack/HotSSplitterlingBig'],
-               ['Explode/Baneling', 'Explode/BanelingBurrowed', 'Explode/baneling', 'Explode/baneling2', 'Explode/HotSSplitterlingBig', 'Explode/HotSSplitterlingBigBurrowed', 'Explode/HotSHunter', 'Explode/HotSHunterBurrowed'],
-               ['ForceField/Sentry', 'ForceField2/Sentry2'],
-               ['FungalGrowth/Infestor', 'FungalGrowth/Infestor2'],
-               ['GuardianShield/Sentry', 'GuardianShield/Sentry2'],
-               ['Hallucination/Sentry', 'Hallucination/Sentry2'],
-               ['Heal/Medivac', 'Heal/Medivac2'],
-               ['InfestedTerrans/Infestor', 'InfestedTerrans/Infestor2'],
-               ['NeuralParasite/Infestor', 'NeuralParasite/Infestor2', 'NPSwarm/Infestor'],
-               ['Baneling/Zergling', 'Baneling/Zergling2', 'Baneling/HotSRaptor', 'Baneling/HotSSwarmling'],
-               ['Apocalypse/K5Kerrigan', 'K5DropPods/K5Kerrigan', 'K5Leviathan/K5Kerrigan'],
-               ['MindBolt/K5Kerrigan', 'MindBolt/KerriganGhostLab', 'PrimalSlash/K5Kerrigan'],
-               ['PrimalHeal/K5Kerrigan', 'SpawnBanelings/K5Kerrigan', 'WildMutation/K5Kerrigan'],
-               ['PsiStrike/K5Kerrigan', 'PsionicLift/K5Kerrigan', 'PsionicLift/KerriganGhostLab'],
-               ['YamatoGun', 'SJHyperionYamato/SJHyperion', 'HyperionVoidCoopYamatoCannon/HyperionVoidCoop'],
-               ['Hydralisk/Larva', 'MorphToHydraliskImpaler/Larva', 'MorphToHydraliskLurker/Larva'],
-               ['Infestor/Larva', 'MorphtoDefiler/Larva'],
-               ['Mutalisk/Larva', 'MorphToMutaliskBroodlord/Larva', 'MorphToMutaliskViper/Larva'],
-               ['Roach/Larva', 'MorphToVile/Larva', 'MorphToCorpser/Larva'],
-               ['SwarmHostMP/Larva', 'MorphToSwarmHostSplitA/Larva', 'MorphToSwarmHostSplitB/Larva'],
-               ['Ultralisk/Larva', 'MorphToHotSNoxious/Larva', 'MorphToHotSTorrasque/Larva'],
-               ['Viper/Larva', 'Aberration/Larva'],
-               ['Zergling/Larva', 'MorphToSwarmling/Larva', 'MorphToRaptor/Larva'],
-               ['LocustLaunch/SwarmHostBurrowed', 'LocustFlyingLaunch/SwarmHostSplitABurrowed', 'LocustFlyingLaunch/SwarmHostSplitARooted', 'LocustLaunch/SwarmHostRooted', 'LocustLaunchCreeper/SwarmHostSplitBBurrowed', 'LocustLaunchCreeper/SwarmHostSplitBRooted'],
-               ['BurrowDown', 'BurrowHydraliskImpalerDown', 'BurrowHydraliskLurkerDown', 'ImpalerBurrowDown', 'LurkerBurrowDown'],
-               ['BurrowUp', 'BurrowHydraliskImpalerUp', 'BurrowHydraliskLurkerUp', 'ImpalerBurrowUp', 'LurkerBurrowUp'],  # 'SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'
-               ['SwarmHostDeepBurrow/SwarmHostSplitB', 'SwarmHostDeepBurrow/SwarmHostSplitBBurrowed', 'SwarmHostDeepBurrow/SwarmHostSplitBRooted'],
-               ['SwarmHostRoot/SwarmHost', 'SwarmHostRoot/SwarmHostSplitA', 'SwarmHostRoot/SwarmHostSplitB'],
-               ['SwarmHostUproot/SwarmHostRooted', 'SwarmHostUproot/SwarmHostSplitARooted', 'SwarmHostUproot/SwarmHostSplitBRooted'],
-               ['HydraliskFrenzy/Hydralisk', 'HydraliskFrenzy/HydraliskImpaler', 'HydraliskFrenzy/HydraliskLurker'],
-               ['Impaler/HydraliskImpaler', 'Lurker/HydraliskLurker'],
-               ['BroodLord/Corruptor', 'BroodLord/MutaliskBroodlord', 'Viper/MutaliskViper'],
-               ['BlindingCloud/Viper', 'DisablingCloud/Viper'],
-               ['ViperConsume/Viper', 'ViperConsumption/Viper'],
-               ['BurrowChargeMP/Ultralisk', 'BurrowChargeCampaign/Ultralisk', 'BurrowChargeCampaign/HotSTorrasque', 'BurrowChargeCampaignNoxious/HotSNoxious'],
-               ['Transfusion/Queen', 'Transfusion/Queen2', 'QueenBurstHeal/Queen'],
-               ['GrowHugeQueen/LargeSwarmQueen', 'GrowLargeQueen/SwarmQueen', 'GrowSwarmQueen/LarvalQueen'],
-               ['SwarmQueenHydralisk/HugeSwarmQueen', 'SwarmQueenHydralisk/SwarmQueenEgg', 'SwarmQueenHydraliskImpaler/HugeSwarmQueen', 'SwarmQueenHydraliskImpaler/LargeSwarmQueen', 'SwarmQueenHydraliskImpaler/SwarmQueen', 'SwarmQueenHydraliskLurker/HugeSwarmQueen', 'SwarmQueenHydraliskLurker/LargeSwarmQueen', 'SwarmQueenHydraliskLurker/SwarmQueen'],
-               ['ParasiticInvasion/LarvalQueen', 'SwarmQueenParasiticInvasion/HugeSwarmQueen', 'SwarmQueenParasiticInvasion/LargeSwarmQueen', 'SwarmQueenParasiticInvasion/SwarmQueen'],
-               ['SwarmQueenCorpser/LargeSwarmQueen', 'SwarmQueenCorpser/HugeSwarmQueen', 'SwarmQueenCorpser/SwarmQueen', 'SwarmQueenRoach/HugeSwarmQueen', 'SwarmQueenRoach/LargeSwarmQueen', 'SwarmQueenRoach/SwarmQueenEgg', 'SwarmQueenVile/HugeSwarmQueen', 'SwarmQueenVile/LargeSwarmQueen', 'SwarmQueenVile/SwarmQueen'],
-               ['SwarmQueenRaptor/HugeSwarmQueen', 'SwarmQueenRaptor/LargeSwarmQueen', 'SwarmQueenRaptor/SwarmQueen', 'SwarmQueenSwarmling/HugeSwarmQueen', 'SwarmQueenSwarmling/LargeSwarmQueen', 'SwarmQueenSwarmling/SwarmQueen', 'SwarmQueenZergling/HugeSwarmQueen', 'SwarmQueenZergling/LargeSwarmQueen', 'SwarmQueenZergling/SwarmQueen', 'SwarmQueenZergling/SwarmQueenEgg'],
-               ['GreaterSpire/Spire', 'GreaterSpireBroodlord/Spire'],
-               ['RespawnZergling/Hatchery', 'RespawnZergling/Hive', 'RespawnZergling/Lair'],
-               # ['GenerateCreep/Overlord','StopGenerateCreep/Overlord']]
-               ['VoidSentryShieldRepair/Sentry', 'VoidSentryShieldRepairDouble/SentryAiur'],
-               ['UpgradeToWarpGate/Gateway', 'UpgradeToRoboticsFacilityWarp/RoboticsFacility', 'UpgradeToStargateWarp/Stargate'],
-               ['MorphBackToGateway/WarpGate', 'MorphBackToRoboticsFacility/RoboticsFacilityWarp', ],
-               ['Vortex/Mothership', 'Vortex/Artanis', 'VoidSentryBlackHole/SOAMothershipv4', 'TemporalField/Mothership', 'TemporalField/MothershipCore'],
-               ['250mmStrikeCannons/Thor', '250mmStrikeCannons/ThorWreckageSwann'],
-               ['SelfRepair/Thor', 'SelfRepair/ThorWreckageSwann'],
-               ['Salvage/Bunker', 'Salvage/MissileTurret', 'Salvage/KelMorianGrenadeTurret', 'Salvage/PerditionTurret', 'Salvage/KelMorianMissileTurret'],
-               ['Hyperjump/Battlecruiser', 'HyperionVoidCoopHyperjump/HyperionVoidCoop', 'HyperjumpHercules/Hercules'],
-               ['Charge/Zealot', 'Charge/ZealotAiur', 'Charge/ZealotPurifier', 'VoidZealotShadowCharge/ZealotShakuras', 'Charge/ShadowOfTheVoidZealot'],
-               ['ResearchIncineratorGauntlets/BarracksTechLab', 'ResearchIncineratorGauntlets/BarracksTechReactor'],
-               ['ResearchJuggernautPlating/BarracksTechLab', 'ResearchJuggernautPlating/BarracksTechReactor'], ['ResearchStabilizerMedpacks/BarracksTechLab', 'ResearchStabilizerMedpacks/BarracksTechReactor'],
-               ['ResearchHellbatHellArmor/FactoryTechLab', 'ResearchHellbatHellArmor/FactoryTechReactor'],
-               ['ResearchAresClassTargetingSystem/FactoryTechLab', 'ResearchAresClassTargetingSystem/FactoryTechReactor'],
-               ['ResearchMultiLockWeaponsSystem/FactoryTechLab', 'ResearchMultiLockWeaponsSystem/FactoryTechReactor'],
-               ['ResearchMaelstromRounds/FactoryTechLab', 'ResearchMaelstromRounds/FactoryTechReactor'],
-               ['ResearchLockOnRangeUpgrade/FactoryTechLab', 'ResearchLockOnRangeUpgrade/FactoryTechReactor'],
-               ['ResearchCycloneLockOnDamageUpgrade/FactoryTechLab', 'ResearchCycloneLockOnDamageUpgrade/FactoryTechReactor'],
-               ['Research330mmBarrageCannon/FactoryTechLab', 'Research330mmBarrageCannon/FactoryTechReactor'],
-               ['ResearchShockwaveMissileBattery/StarportTechLab', 'ResearchShockwaveMissileBattery/StarportTechReactor'],
-               ['ResearchPhobosClassWeaponsSystem/StarportTechLab', 'ResearchPhobosClassWeaponsSystem/StarportTechReactor'],
-               ['ResearchRipwaveMissiles/StarportTechLab', 'ResearchRipwaveMissiles/StarportTechReactor'],
-               ['SummonNydusWorm/NydusNetwork', 'ZagaraVoidCoopNydusWorm/NydusNetwork'],
-               ['Queen', 'QueenCoop'],
-               ['BuildCreepTumor/Queen', 'BuildCreepTumor/QueenCoop'],
-               ['MorphMorphalisk/Queen', 'MorphMorphalisk/QueenCoop'],
-               ['Transfusion/Queen', 'Transfusion/QueenCoop'],
-               ['Immortal/RoboticsFacility', 'Immortal/RoboticsFacilityWarp'],
-               ['Colossus/RoboticsFacility', 'Colossus/RoboticsFacilityWarp'],
-               ['Observer/RoboticsFacility', 'Observer/RoboticsFacilityWarp']]
-
-CONFLICT_CHECKS = {'LotV Multiplayer/Protoss/Structures/Fleet Beacon' : ['AnionPulseCrystals/FleetBeacon', 'ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Structures/Gateway/General' : ['Zealot', 'Sentry', 'Stalker', 'WarpInAdept/Gateway', 'HighTemplar', 'DarkTemplar', 'Rally', 'UpgradeToWarpGate/Gateway', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Structures/Gateway/Warp Gate' : ['Zealot', 'Sentry', 'Stalker', 'WarpInAdept/WarpGate', 'HighTemplar', 'DarkTemplar', 'Rally', 'MorphBackToGateway/WarpGate'],
-                   'LotV Multiplayer/Protoss/Structures/Nexus' : ['Probe/Nexus', 'MothershipCore/Nexus', 'Stop', 'Attack', 'Rally', 'TimeWarp/Nexus', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Structures/Robotics Bay' : ['ResearchGraviticBooster/RoboticsBay', 'ResearchGraviticDrive/RoboticsBay', 'ResearchExtendedThermalLance/RoboticsBay', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Structures/Robotics Facility' : ['Observer/RoboticsFacility', 'WarpPrism/RoboticsFacility', 'Immortal/RoboticsFacility', 'Colossus/RoboticsFacility', 'WarpinDisruptor/RoboticsFacility', 'Rally', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Structures/Twilight Council' : ['ResearchCharge/TwilightCouncil', 'ResearchStalkerTeleport/TwilightCouncil', 'AdeptResearchPiercingUpgrade/TwilightCouncil', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Units/Adept' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AdeptPhaseShift/Adept', 'Rally'],
-                   'LotV Multiplayer/Protoss/Units/Carrier' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Interceptor/Carrier', 'ReleaseInterceptors/Carrier', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Units/Disruptor' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'PurificationNovaTargeted/Disruptor', 'Rally'],
-                   'LotV Multiplayer/Protoss/Units/High Templar' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Feedback/HighTemplar', 'PsiStorm/HighTemplar', 'AWrp', 'Rally'],
-                   'LotV Multiplayer/Protoss/Units/Immortal' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ImmortalOverload/Immortal'],
-                   'LotV Multiplayer/Protoss/Units/Mothership' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MothershipCoreWeapon/Mothership', 'MothershipMassRecall/Mothership', 'TemporalField/Mothership'],
-                   'LotV Multiplayer/Protoss/Units/Mothership Core' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToMothership/MothershipCore', 'MothershipCoreWeapon/MothershipCore', 'MothershipCoreMassRecall/MothershipCore', 'TemporalField/MothershipCore', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Units/Oracle' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'OracleAttack', 'OracleRevelation/Oracle', 'OracleBuildStasisTrap/Oracle', 'OracleWeaponOn/Oracle', 'OracleWeaponOff/Oracle', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Units/Phoenix' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'GravitonBeam/Phoenix', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Units/Probe/ProbeAdvanced Structures' : ['TwilightCouncil/Probe', 'Stargate/Probe', 'RoboticsFacility/Probe', 'TemplarArchive/Probe', 'FleetBeacon/Probe', 'RoboticsBay/Probe', 'DarkShrine/Probe', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Units/Sentry/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'GuardianShield/Sentry', 'ForceField/Sentry', 'Hallucination/Sentry', 'Rally'],
-                   'LotV Multiplayer/Protoss/Units/Sentry/Hallucinations' : ['ProbeHallucination/Sentry', 'ZealotHallucination/Sentry', 'AdeptHallucination/Sentry', 'StalkerHallucination/Sentry', 'ImmortalHallucination/Sentry', 'HighTemplarHallucination/Sentry', 'ArchonHallucination/Sentry', 'VoidRayHallucination/Sentry', 'PhoenixHallucination/Sentry', 'WarpPrismHallucination/Sentry', 'OracleHallucination/Sentry', 'ColossusHallucination/Sentry', 'DisruptorHallucination/Sentry', 'Cancel'],
-                   'LotV Multiplayer/Protoss/Units/Stalker' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Blink/Stalker', 'Rally'],
-                   'LotV Multiplayer/Protoss/Units/Void Ray' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidRaySwarmDamageBoost/VoidRay'],
-                   'LotV Multiplayer/Protoss/Units/Warp Prism' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'PhasingMode/WarpPrism', 'TransportMode/WarpPrism', 'BunkerLoad', 'BunkerUnloadAll'],
-                   'LotV Multiplayer/Protoss/Units/Zealot' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Charge/Zealot', 'Rally'],
-                   'LotV Multiplayer/Terran/Structures/Armory' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehicleAndShipPlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Barracks/Engineering BayGeneral' : ['TerranInfantryWeaponsLevel1/EngineeringBay', 'TerranInfantryArmorLevel1/EngineeringBay', 'ResearchHiSecAutoTracking/EngineeringBay', 'ResearchNeosteelFrame/EngineeringBay', 'UpgradeBuildingArmorLevel1/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Barracks/Flying' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'TechLabBarracks/BarracksFlying', 'Reactor/BarracksFlying', 'Land'],
-                   'LotV Multiplayer/Terran/Structures/Barracks/General' : ['Marine/Barracks', 'Reaper/Barracks', 'Marauder/Barracks', 'Ghost/Barracks', 'SelectBuilder', 'Rally', 'TechLabBarracks/Barracks', 'Reactor/Barracks', 'Lift', 'Halt', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Bunker/Construction' : ['SelectBuilder', 'SetBunkerRallyPoint/Bunker', 'Halt', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Bunker/General' : ['Stop', 'Attack', 'SelectBuilder', 'SetBunkerRallyPoint/Bunker', 'Stim', 'BunkerLoad', 'BunkerUnloadAll', 'Salvage/Bunker', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Command Center/Flying' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'CommandCenterLoad', 'CommandCenterUnloadAll', 'Land'],
-                   'LotV Multiplayer/Terran/Structures/Command Center/General' : ['SCV', 'OrbitalCommand/CommandCenter', 'UpgradeToPlanetaryFortress/CommandCenter', 'SelectBuilder', 'Rally', 'CommandCenterLoad', 'CommandCenterUnloadAll', 'Lift', 'Halt', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Factory/Flying' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'BuildTechLabFactory/FactoryFlying', 'Reactor/FactoryFlying', 'Land'],
-                   'LotV Multiplayer/Terran/Structures/Factory/General' : ['Hellion/Factory', 'WidowMine/Factory', 'SiegeTank/Factory', 'BuildCyclone/Factory', 'HellionTank/Factory', 'Thor/Factory', 'SelectBuilder', 'Rally', 'TechLabFactory/Factory', 'Reactor/Factory', 'Lift', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Fusion Core' : ['ResearchBattlecruiserSpecializations/FusionCore', 'ResearchBattlecruiserEnergyUpgrade/FusionCore', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Orbital Command' : ['SCV', 'Rally', 'CalldownMULE/OrbitalCommand', 'SupplyDrop/OrbitalCommand', 'Scan/OrbitalCommand', 'Lift', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Starport/Flying' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'BuildTechLabStarport/StarportFlying', 'Reactor/StarportFlying', 'Land'],
-                   'LotV Multiplayer/Terran/Structures/Starport/General' : ['VikingFighter/Starport', 'Medivac/Starport', 'Liberator/Starport', 'Raven/Starport', 'Banshee/Starport', 'Battlecruiser/Starport', 'SelectBuilder', 'Rally', 'TechLabStarport/Starport', 'Reactor/Starport', 'Lift', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Supply Depot/General' : ['SelectBuilder', 'Lower/SupplyDepot', 'Halt', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Supply Depot/Lowered' : ['Raise/SupplyDepotLowered'],
-                   'LotV Multiplayer/Terran/Structures/Tech Lab/Attached to Factory' : ['ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchDrillClaws/FactoryTechLab', 'CycloneResearchLockOnDamageUpgrade/FactoryTechLab', 'Cancel'],
-                   'LotV Multiplayer/Terran/Structures/Tech Lab/Attached to Starport' : ['ResearchHighCapacityFuelTanks/StarportTechLab', 'ResearchExplosiveShrapnelShells/StarportTechLab', 'ResearchRavenEnergyUpgrade/StarportTechLab', 'ResearchBansheeCloak/StarportTechLab', 'BansheeSpeed/StarportTechLab', 'ResearchBallisticRange/StarportTechLab', 'Cancel'],
-                   'LotV Multiplayer/Terran/Units/Ghost' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CloakOnBanshee', 'CloakOff', 'GhostHoldFire/Ghost', 'WeaponsFree/Ghost', 'ChannelSnipe/Ghost', 'EMP/Ghost', 'NukeCalldown/Ghost', 'Cancel'],
-                   'LotV Multiplayer/Terran/Units/Liberator' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LiberatorAGMode/Liberator', 'LiberatorAAMode/Liberator'],
-                   'LotV Multiplayer/Terran/Units/Medivac' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Heal/Medivac', 'MedivacSpeedBoost/Medivac', 'BunkerLoad', 'BunkerUnloadAll'],
-                   'LotV Multiplayer/Terran/Units/Raven' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AutoTurret/Raven', 'PointDefenseDrone/Raven', 'HunterSeekerMissile/Raven'],
-                   'LotV Multiplayer/Terran/Units/Reaper' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'KD8Charge/Reaper'],
-                   'LotV Multiplayer/Terran/Units/SCV/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'GatherProt', 'ReturnCargo', 'TerranBuild/SCV', 'TerranBuildAdvanced/SCV', 'Repair', 'Halt'],
-                   'LotV Multiplayer/Terran/Units/Widow Mine' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'WidowMineBurrow/WidowMine', 'WidowMineUnburrow/WidowMine'],
-                   'LotV Multiplayer/Zerg/Structures/Creep Tumor' : ['BuildCreepTumorPropagate/CreepTumorBurrowed', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Hydralisk Den' : ['hydraliskspeed/HydraliskDen', 'MutateintoLurkerDen/HydraliskDen', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Lurker Den' : ['hydraliskspeed/LurkerDenMP', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Nydus Network' : ['Stop', 'SummonNydusWorm/NydusNetwork', 'Rally', 'BunkerLoad', 'BunkerUnloadAll', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Spine Crawler/General' : ['Stop', 'Attack', 'SpineCrawlerUproot/SpineCrawler', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Spine Crawler/Uprooted' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SpineCrawlerRoot/SpineCrawlerUprooted', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Spire' : ['zergflyerattack1', 'zergflyerarmor1', 'GreaterSpire/Spire', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Spore Crawler/General' : ['Stop', 'Attack', 'SporeCrawlerUproot/SporeCrawler', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Structures/Spore Crawler/Uprooted' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SporeCrawlerRoot/SporeCrawlerUprooted', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Units/Baneling/Burrowed' : ['Attack', 'Explode/BanelingBurrowed', 'BurrowUp'],
-                   'LotV Multiplayer/Zerg/Units/Baneling/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/Baneling', 'EnableBuildingAttack/Baneling', 'DisableBuildingAttack/Baneling', 'BurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Corruptor' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CausticSpray/Corruptor', 'BroodLord/Corruptor', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Units/Drone/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'GatherProt', 'ReturnCargo', 'ZergBuild/Drone', 'ZergBuildAdvanced/Drone', 'BurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Droplord/Creeping' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToOverseer/Overlord', 'StopGenerateCreep', 'BunkerLoad', 'BunkerUnloadAll', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Units/Droplord/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToOverseer/Overlord', 'GenerateCreep/Overlord', 'BunkerLoad', 'BunkerUnloadAll', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Units/Hydralisk' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LurkerMP/Hydralisk', 'BurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Infestor/Burrowed' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'InfestedTerrans/InfestorBurrowed', 'BurrowUp'],
-                   'LotV Multiplayer/Zerg/Units/Infestor/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'InfestedTerrans/Infestor', 'FungalGrowth/Infestor', 'NeuralParasite/Infestor', 'Cancel', 'BurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Larva/General' : ['Drone/Larva', 'Overlord/Larva', 'Zergling/Larva', 'Roach/Larva', 'Hydralisk/Larva', 'Mutalisk/Larva', 'Corruptor/Larva', 'Infestor/Larva', 'SwarmHostMP/Larva', 'Viper/Larva', 'Ultralisk/Larva', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Units/Locust (Flying)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LocustMPFlyingSwoop/LocustMPFlying'],
-                   'LotV Multiplayer/Zerg/Units/Lurker/Burrowed' : ['Stop', 'Attack', 'LurkerHoldFire/LurkerMPBurrowed', 'LurkerCancelHoldFire/LurkerMPBurrowed', 'LurkerBurrowUp'],
-                   'LotV Multiplayer/Zerg/Units/Lurker/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BurrowLurkerMP'],
-                   'LotV Multiplayer/Zerg/Units/Overlord/Creeping (BunkerUnloadAll shouldn\'t be here)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToOverseer/Overlord', 'StopGenerateCreep', 'MorphtoOverlordTransport/Overlord', 'BunkerUnloadAll', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Units/Overlord/General (BunkerUnloadAll shouldn\'t be here)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToOverseer/Overlord', 'GenerateCreep/Overlord', 'MorphtoOverlordTransport/Overlord', 'BunkerUnloadAll', 'Cancel'],
-                   'LotV Multiplayer/Zerg/Units/Overseer' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SpawnChangeling/Overseer', 'Contaminate/Overseer'],
-                   'LotV Multiplayer/Zerg/Units/Queen' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BuildCreepTumor/Queen', 'MorphMorphalisk/Queen', 'Transfusion/Queen', 'BurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Ravager' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RavagerCorrosiveBile/Ravager', 'BurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Roach' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Ravager/Roach', 'BurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Swarm Host/Burrowed' : ['Attack', 'VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP', 'SwarmHostBurrowUp'],
-                   'LotV Multiplayer/Zerg/Units/Swarm Host/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmHost/SwarmHostMP', 'SwarmHostBurrowDown'],
-                   'LotV Multiplayer/Zerg/Units/Viper' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ViperConsume/Viper', 'FaceEmbrace/Viper', 'BlindingCloud/Viper', 'ParasiticBomb/Viper'],
-                   'LotV Multiplayer/Zerg/Units/Zergling' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Baneling/Zergling', 'BurrowDown'],
-                   'Coop/Protoss Story/Structures/Dark Pylon' : ['Stop', 'Attack', 'DarkPylonRecall/DarkPylon', 'Cancel'],
-                   'Coop/Protoss Story/Structures/Shield Battery' : ['ShieldBatteryRecharge/ShieldBattery', 'ShieldBatteryStructureBarrier/ShieldBattery', 'Cancel'],
-                   'Coop/Protoss Story/Structures/Solar Forge (Karax Commander)/General' : ['ResearchSolarEfficiencyLevel1/SolarForge', 'ResearchSOARepairBeamExtraTarget/SolarForge', 'ResearchSOAOrbitalStrikeUpgrade/SolarForge', 'ResearchSOASolarLanceUpgrade/SolarForge', 'Cancel'],
-                   'Coop/Protoss Story/Structures/Solar Forge (Karax Commander)/General (Broken)' : ['BrokenSolarForge/SolarForge'],
-                   'Coop/Protoss Story/Structures/Warp Robotics Facility' : ['Immortal/RoboticsFacilityWarp', 'Colossus/RoboticsFacilityWarp', 'Observer/RoboticsFacilityWarp', 'MorphBackToRoboticsFacility/RoboticsFacilityWarp', 'Cancel'],
-                   'Coop/Protoss Story/Structures/Warp Stargate' : ['Phoenix/StargateWarp', 'VoidRay/StargateWarp', 'Oracle/StargateWarp', 'Arbiter/StargateWarp', 'MorphBackToStargate/StargateWarp', 'Cancel'],
-                   'Coop/Protoss Story/Units/Annihilator' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ImmortalShakurasShadowCannon/ImmortalShakuras'],
-                   'Coop/Protoss Story/Units/Ascendant' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidHighTemplarPsiOrb/HighTemplarTaldarim', 'VoidHighTemplarMindBlast/HighTemplarTaldarim', 'AscendantSacrifice/HighTemplarTaldarim', 'Rally'],
-                   'Coop/Protoss Story/Units/Blood Hunter' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidStasis/DarkTemplarTaldarim', 'Rally'],
-                   'Coop/Protoss Story/Units/Carrier' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Interceptor/CarrierAiur', 'Cancel'],
-                   'Coop/Protoss Story/Units/Centurion (Vorazun Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidZealotShadowCharge/ZealotShakuras', 'VoidZealotShadowChargeStun/ZealotShakuras', 'Rally'],
-                   'Coop/Protoss Story/Units/Corsair' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CorsairMPDisruptionWeb/CorsairMP', 'Rally'],
-                   'Coop/Protoss Story/Units/Dark Templar (Vorazun Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidDarkTemplarShadowFury/DarkTemplarShakuras', 'DarkTemplarShadowDash/DarkTemplarShakuras', 'VoidStasis/DarkTemplarShakuras', 'Rally'],
-                   'Coop/Protoss Story/Units/Energizer (Karax Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidSentryChronoBeam/SentryPurifier', 'EnergizerReclamation/SentryPurifier', 'VoidSentryPhasingMode/SentryPurifier', 'VoidSentryMobileMode/SentryPurifier', 'Rally'],
-                   'Coop/Protoss Story/Units/Havoc' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'TargetLock/Monitor', 'SentryTaldarimForceField/Monitor', 'Rally'],
-                   'Coop/Protoss Story/Units/High Templar' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Feedback/HighArchonTemplar', 'HighArchonPsiStorm/HighArchonTemplar', 'ArchonAdvancedMergeSelection', 'Rally'],
-                   'Coop/Protoss Story/Units/Immortal' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ImmortalOverload/ImmortalAiur', 'ImmortalShakurasShadowCannon/ImmortalAiur'],
-                   'Coop/Protoss Story/Units/Mirage' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'GravitonBeamVoidCampaign/PhoenixPurifier', 'Cancel'],
-                   'Coop/Protoss Story/Units/Mothership' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidSentryBlackHole/SOAMothershipv4', 'SOAMothershipLineAttack/SOAMothershipv4', 'SOAMothershipBlink/SOAMothershipv4'],
-                   'Coop/Protoss Story/Units/Sentinel (Karax Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Charge/ZealotPurifier', 'Rally'],
-                   'Coop/Protoss Story/Units/Sentry' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidSentryShieldRepairDouble/SentryAiur', 'GuardianShield/SentryAiur', 'Rally'],
-                   'Coop/Protoss Story/Units/Shadow Guard' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidShadowGuardShadowFury/VorazunShadowGuard', 'ShadowGuardBlink/VorazunShadowGuard', 'VoidStasis/VorazunShadowGuard'],
-                   'Coop/Protoss Story/Units/Stalker' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'StalkerBlinkShieldRestoreBase/StalkerShakuras', 'Rally'],
-                   'Coop/Protoss Story/Units/Tempest' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LightningBomb/TempestPurifier', 'Rally'],
-                   'Coop/Protoss Story/Units/Zealot (Artanis Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Charge/ZealotAiur', 'VoidZealotWhirlwind/ZealotAiur', 'Rally'],
-                   'Coop/Protoss/Structures/Dark Shrine (Vorazun Commander)' : ['ResearchShadowFury/DarkShrine', 'ResearchShadowDash/DarkShrine', 'ResearchVoidStasis/DarkShrine', 'ResearchDarkArchonFullStartingEnergy/DarkShrine', 'ResearchDarkArchonMindControl/DarkShrine', 'Cancel'],
-                   'Coop/Protoss/Structures/Fleet Beacon (Artanis+Vorazun Commander)' : ['AnionPulseCrystals/FleetBeacon', 'ResearchDoubleGravitonBeam/FleetBeacon', 'ResearchTempestDisintegration/FleetBeacon', 'ResearchOracleStasisWardUpgrade/FleetBeacon', 'Cancel'],
-                   'Coop/Protoss/Structures/Forge (Karax Commander)' : ['ProtossGroundWeaponsLevel1/Forge', 'ProtossGroundArmorLevel1/Forge', 'ProtossShieldsLevel1/Forge', 'ResearchKaraxTurretRange/Forge', 'ResearchKaraxTurretAttackSpeed/Forge', 'ResearchStructureBarrier/Forge', 'Cancel'],
-                   'Coop/Protoss/Structures/Gateway/General (Gateway)' : ['Zealot', 'Sentry', 'Stalker', 'HighTemplar', 'DarkTemplar', 'DarkArchon/Gateway', 'Rally', 'UpgradeToWarpGate/Gateway', 'Cancel'],
-                   'Coop/Protoss/Structures/Gateway/Warp Gate' : ['Zealot', 'Sentry', 'Stalker', 'HighTemplar', 'DarkTemplar', 'DarkArchon/WarpGate', 'Rally', 'MorphBackToGateway/WarpGate', 'Cancel'],
-                   'Coop/Protoss/Structures/Nexus' : ['Probe/Nexus', 'Mothership/Nexus', 'Stop', 'Attack', 'Rally', 'TimeWarp/Nexus', 'Cancel'],
-                   'Coop/Protoss/Structures/Robotics Bay (Artanis Commander)' : ['ResearchGraviticBooster/RoboticsBay', 'ResearchBarrier/RoboticsBay', 'ResearchReaverIncreasedScarabCount/RoboticsBay', 'ResearchReaverIncreasedScarabSplashRadius/RoboticsBay', 'Cancel'],
-                   'Coop/Protoss/Structures/Robotics Bay (Karax Commander)(not tested)' : ['ResearchGraviticBooster/RoboticsBay', 'ResearchExtendedThermalLance/RoboticsBay', 'ResearchReaverIncreasedScarabSplashRadius/RoboticsBay', 'ResearchBarrier/RoboticsBay', 'Cancel'],
-                   'Coop/Protoss/Structures/Robotics Facility' : ['Immortal/RoboticsFacility', 'Colossus/RoboticsFacility', 'Observer/RoboticsFacility', 'Rally', 'UpgradeToRoboticsFacilityWarp/RoboticsFacility', 'Cancel'],
-                   'Coop/Protoss/Structures/Stargate' : ['Phoenix/Stargate', 'VoidRay/Stargate', 'Oracle/Stargate', 'Arbiter/Stargate', 'Rally', 'UpgradeToStargateWarp/Stargate', 'Cancel'],
-                   'Coop/Protoss/Structures/Templar Archives (Artanis Commander)' : ['ResearchPsiStorm/TemplarArchive', 'ResearchHighTemplarEnergyUpgrade/TemplarArchive', 'ResearchHealingPsionicStorm/TemplarArchive', 'Cancel'],
-                   'Coop/Protoss/Structures/Twilight Council (Artanis commander)' : ['ResearchCharge/TwilightCouncil', 'ResearchDragoonRange/TwilightCouncil', 'ResearchWhirlwind/TwilightCouncil', 'ResearchDragoonChassis/TwilightCouncil', 'Cancel'],
-                   'Coop/Protoss/Units/Arbiter' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ArbiterMPStasisField/ArbiterMP', 'ArbiterMPRecall/ArbiterMP', 'Rally'],
-                   'Coop/Protoss/Units/Archon' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Feedback/Archon', 'PsiStorm/Archon', 'Rally'],
-                   'Coop/Protoss/Units/Dark Archon' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DarkArchonConfusion/DarkArchon', 'DarkArchonMindControl/DarkArchon', 'Rally'],
-                   'Coop/Protoss/Units/Observer' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphtoObserverSiege/Observer', 'MorphtoObserver/Observer'],
-                   'Coop/Protoss/Units/Probe/Basic Structures' : ['Nexus/Probe', 'Assimilator/Probe', 'Pylon/Probe', 'Gateway/Probe', 'Forge/Probe', 'ShieldBattery/Probe', 'CyberneticsCore/Probe', 'PhotonCannon/Probe', 'KhaydarinMonolith/Probe', 'Cancel'],
-                   'Coop/Protoss/Units/Reaver' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ReaverScarabs/Reaver', 'Rally'],
-                   'Coop/Protoss/Units/Sentry/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidSentryShieldRepair/Sentry', 'GuardianShield/Sentry', 'ForceField/Sentry', 'Rally'],
-                   'Coop/Protoss/Units/TempestGeneral' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LightningBomb/Tempest', 'Rally'],
-                   'Coop/Terran Story/Structures/Devastation Turret (Swann Commander)' : ['Stop', 'Attack', 'SelectBuilder', 'Salvage/KelMorianGrenadeTurret', 'Halt', 'Cancel'],
-                   'Coop/Terran Story/Structures/Drakken Laser Drill' : ['Attack', 'ResearchDrakkenLaserDrillBFG/DrakkenLaserDrillCoop', 'Cancel'],
-                   'Coop/Terran Story/Structures/Perdition Turret' : ['Stop', 'Attack', 'SelectBuilder', 'Salvage/PerditionTurret', 'Halt', 'Cancel'],
-                   'Coop/Terran Story/Structures/Spinning Dizzy' : ['Stop', 'Attack', 'SelectBuilder', 'Salvage/KelMorianMissileTurret', 'Halt', 'Cancel'],
-                   'Coop/Terran Story/Structures/Tech Reactor/Attached to Barracks (Raynor Commander, notAvailable)' : ['ResearchShieldWall/BarracksTechReactor', 'Stimpack/BarracksTechReactor', 'ResearchPunisherGrenades/BarracksTechReactor', 'ResearchIncineratorGauntlets/BarracksTechReactor', 'ResearchJuggernautPlating/BarracksTechReactor', 'ResearchStabilizerMedpacks/BarracksTechReactor', 'Cancel'],
-                   'Coop/Terran Story/Structures/Tech Reactor/Attached to Factory (Swann Commander)' : ['ResearchHighCapacityBarrels/FactoryTechReactor', 'ResearchHellbatHellArmor/FactoryTechReactor', 'ResearchAresClassTargetingSystem/FactoryTechReactor', 'ResearchMultiLockWeaponsSystem/FactoryTechReactor', 'ResearchMaelstromRounds/FactoryTechReactor', 'ResearchLockOnRangeUpgrade/FactoryTechReactor', 'ResearchCycloneLockOnDamageUpgrade/FactoryTechReactor', 'Research330mmBarrageCannon/FactoryTechReactor', 'Cancel'],
-                   'Coop/Terran Story/Structures/Tech Reactor/Attached to Starport (Raynor(+Swann) Commander)' : ['ResearchBansheeCloak/StarportTechReactor', 'ResearchShockwaveMissileBattery/StarportTechReactor', 'ResearchPhobosClassWeaponsSystem/StarportTechReactor', 'ResearchRipwaveMissiles/StarportTechReactor', 'Cancel'],
-                   'Coop/Terran Story/Units/Hercules (Swann Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'HerculesLoad/Hercules', 'HerculesUnloadAll/Hercules', 'HyperjumpHercules/Hercules'],
-                   'Coop/Terran Story/Units/Hyperion (Raynor Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'HyperionVoidCoopHyperjump/HyperionVoidCoop', 'HyperionVoidCoopYamatoCannon/HyperionVoidCoop', 'HyperionAdvancedPDD/HyperionVoidCoop'],
-                   'Coop/Terran Story/Units/Medic' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MedicHeal/Medic'],
-                   'Coop/Terran Story/Units/Science Vessel (Swann Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'NanoRepair/ScienceVessel', 'Irradiate/ScienceVessel', 'DefensiveMatrixTarget/ScienceVessel'],
-                   'Coop/Terran Story/Units/Spectre (Tosh framework, AI)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SpectreHoldFire/Spectre', 'SpectreWeaponsFree/Spectre', 'MindBlast/Spectre', 'VoodooShield/Spectre', 'SpectreDomination/Spectre', 'NukeCalldown/Spectre', 'Cancel'],
-                   'Coop/Terran Story/Units/Vulture (Raynor Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SpiderMine/Vulture', 'SpiderMineReplenish/Vulture', 'IgniteAfterburners/Vulture', 'Cancel'],
-                   'Coop/Terran Story/Units/Wraith (Swann Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'WraithCloakOn/Wraith', 'WraithCloakOff/Wraith'],
-                   'Coop/Terran/Structures/Armory' : ['TerranVehicleAndShipWeaponsLevel1/Armory', 'TerranVehicleAndShipPlatingLevel1/Armory', 'ResearchVehicleWeaponRange/Armory', 'ResearchRegenerativeBioSteel/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'Coop/Terran/Structures/Barracks (kinda Raynor Commander)/General (AI)' : ['Marine/Barracks', 'Marauder/Barracks', 'Reaper/Barracks', 'Firebat/Barracks', 'Medic/Barracks', 'HireKelmorianMiners/Barracks', 'HireHammerSecurities/Barracks', 'HireDevilDogs/Barracks', 'MercReaper/Barracks', 'MercMedic/Barracks', 'Cancel'],
-                   'Coop/Terran/Structures/Command Center/General' : ['SCV', 'VespeneDrone/CommandCenter', 'OrbitalCommand/CommandCenter', 'SelectBuilder', 'Rally', 'CommandCenterLoad', 'CommandCenterUnloadAll', 'Lift', 'Cancel'],
-                   'Coop/Terran/Structures/Engineering Bay (Raynor Commander)' : ['TerranInfantryWeaponsLevel1/EngineeringBay', 'TerranInfantryArmorLevel1/EngineeringBay', 'ResearchNeosteelFrame/EngineeringBay', 'UpgradeBuildingArmorLevel1/EngineeringBay', 'SelectBuilder', 'ResearchFireSuppressionSystems/EngineeringBay', 'ResearchImprovedTurretAttackSpeed/EngineeringBay', 'Halt', 'Cancel'],
-                   'Coop/Terran/Structures/Factory/General (kinda Swann Commander)' : ['HellionTank/Factory', 'Goliath/Factory', 'SiegeTank/Factory', 'BuildCyclone/Factory', 'Thor/Factory', 'SelectBuilder', 'Rally', 'TechLabFactory/Factory', 'Reactor/Factory', 'Lift', 'Cancel'],
-                   'Coop/Terran/Structures/Factory/General3' : ['HellionTank/Factory', 'Goliath/Factory', 'SiegeTank/Factory', 'WidowMine/Factory', 'Thor/Factory', 'MercHellion/Factory', 'HireSpartanCompany/Factory', 'HireSiegeBreakers/Factory', 'Cancel'],
-                   'Coop/Terran/Structures/Ghost Academy' : ['ResearchPersonalCloaking/GhostAcademy', 'ResearchGhostEnergyUpgrade/GhostAcademy', 'SelectBuilder', 'NukeArm/GhostAcademy', 'Halt', 'Cancel'],
-                   'Coop/Terran/Structures/Missile Turret' : ['Stop', 'Attack', 'SelectBuilder', 'Salvage/MissileTurret', 'Halt', 'Cancel'],
-                   'Coop/Terran/Structures/Planetary Fortress' : ['SCV', 'VespeneDrone/PlanetaryFortress', 'StopPlanetaryFortress/PlanetaryFortress', 'Attack', 'Rally', 'CommandCenterLoad', 'CommandCenterUnloadAll', 'Cancel'],
-                   'Coop/Terran/Structures/Starport/General3' : ['VikingFighter/Starport', 'Banshee/Starport', 'Wraith/Starport', 'Battlecruiser/Starport', 'HireDuskWing/Starport', 'HireHelsAngels/Starport', 'HireDukesRevenge/Starport', 'Cancel'],
-                   'Coop/Terran/Structures/Tech Lab/Attached to Barracks (Raynor Commander)' : ['ResearchShieldWall/BarracksTechLab', 'Stimpack/BarracksTechLab', 'ResearchPunisherGrenades/BarracksTechLab', 'ResearchIncineratorGauntlets/BarracksTechLab', 'ResearchJuggernautPlating/BarracksTechLab', 'ResearchStabilizerMedpacks/BarracksTechLab', 'Cancel'],
-                   'Coop/Terran/Structures/Tech Lab/Attached to Factory (Swann(+Raynor) Commander)' : ['ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchHellbatHellArmor/FactoryTechLab', 'ResearchAresClassTargetingSystem/FactoryTechLab', 'ResearchMultiLockWeaponsSystem/FactoryTechLab', 'ResearchMaelstromRounds/FactoryTechLab', 'ResearchLockOnRangeUpgrade/FactoryTechLab', 'ResearchCycloneLockOnDamageUpgrade/FactoryTechLab', 'Research330mmBarrageCannon/FactoryTechLab', 'Cancel'],
-                   'Coop/Terran/Structures/Tech Lab/Attached to Starport (Raynor(+Swann) Commander)' : ['ResearchBansheeCloak/StarportTechLab', 'ResearchShockwaveMissileBattery/StarportTechLab', 'ResearchPhobosClassWeaponsSystem/StarportTechLab', 'ResearchRipwaveMissiles/StarportTechLab', 'Cancel'],
-                   'Coop/Terran/Units/Banshee (Raynor Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CloakOnBanshee', 'CloakOff', 'IgniteAfterburners/Banshee'],
-                   'Coop/Terran/Units/Battlecruiser (Raynor Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'YamatoGun', 'Hyperjump/Battlecruiser', 'IgniteAfterburners/Battlecruiser'],
-                   'Coop/Terran/Units/Cyclone' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LockOn/Cyclone', 'SwannCommanderRebuild', 'Cancel'],
-                   'Coop/Terran/Units/Ghost' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CloakOnBanshee', 'CloakOff', 'GhostHoldFire/Ghost', 'WeaponsFree/Ghost', 'Snipe/Ghost', 'EMP/Ghost', 'NukeCalldown/Ghost', 'Cancel'],
-                   'Coop/Terran/Units/Hellion (Swann Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToHellion/Hellion', 'MorphToHellionTank/Hellion', 'SwannCommanderRebuild'],
-                   'Coop/Terran/Units/Liberator' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'LiberatorAGMode/Liberator', 'IgniteAfterburners/Liberator'],
-                   'Coop/Terran/Units/Raven' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AutoTurret/Raven', 'PointDefenseDrone/Raven', 'InstantHunterSeekerMissile/Raven'],
-                   'Coop/Terran/Units/Reaper (WoL Campaign)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'D8Charge/Reaper'],
-                   'Coop/Terran/Units/SCV/Advanced Structures' : ['GhostAcademy/SCV', 'MercCompound/SCV', 'Factory/SCV', 'Armory/SCV', 'Starport/SCV', 'FusionCore/SCV', 'Cancel'],
-                   'Coop/Terran/Units/SCV/Basic Structures' : ['CommandCenter/SCV', 'Refinery/SCV', 'SupplyDepot/SCV', 'Barracks/SCV', 'EngineeringBay/SCV', 'Bunker/SCV', 'MissileTurret/SCV', 'BuildKelMorianRocketTurret/SCV', 'HiveMindEmulator/SCV', 'Cancel'],
-                   'Coop/Terran/Units/Siege Tank/General (Raynor Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SiegeMode', 'Unsiege', 'IgniteAfterburners/SiegeTank'],
-                   'Coop/Terran/Units/Siege Tank/General (Wreckage,Swann Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SiegeMode', 'SwannCommanderRebuild'],
-                   'Coop/Terran/Units/Thor (Swann Commander)/Front 01' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', '250mmStrikeCannons/Thor', 'ThorDefensiveMatrix/Thor', 'SelfRepair/Thor', 'Cancel'],
-                   'Coop/Terran/Units/Thor (Swann Commander)/Front 02' : ['ImmortalityProtocol/ThorWreckage', 'Cancel'],
-                   'Coop/Terran/Units/Thor (Swann Commander)/Front 03' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', '250mmStrikeCannons/ThorWreckageSwann', 'ThorDefensiveMatrix/ThorWreckageSwann', 'SelfRepair/ThorWreckageSwann', 'Cancel'],
-                   'Coop/Terran/Units/Viking (Raynor Commander)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'FighterMode', 'AssaultMode', 'IgniteAfterburners/VikingAssault'],
-                   'Coop/Zerg Story/Structures/Bile Launcher (Zagara Commander)' : ['BileLauncherBombardment/BileLauncherZagara', 'Cancel'],
-                   'Coop/Zerg Story/Structures/Impaler Den' : ['EvolveMuscularAugments/ImpalerDen', 'EvolveAncillaryCarapace/ImpalerDen', 'EvolveFrenzy/ImpalerDen', 'Cancel'],
-                   'Coop/Zerg Story/Structures/Lurker Den' : ['EvolveMuscularAugments/LurkerDen', 'EvolveAncillaryCarapace/LurkerDen', 'EvolveFrenzy/LurkerDen', 'ResearchLurkerRange/LurkerDen', 'Cancel'],
-                   'Coop/Zerg Story/Structures/Scourge Nest' : ['zergflyerattack1', 'zergflyerarmor1', 'EvolveScourgeSplashDamage/ScourgeNest', 'EvolveScourgeGasCostReduction/ScourgeNest'],
-                   'Coop/Zerg Story/Units/Hydralisk (Impaler Strain)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Impaler/HydraliskImpaler', 'HydraliskFrenzy/HydraliskImpaler', 'BurrowDown'],
-                   'Coop/Zerg Story/Units/Hydralisk (Lurker Strain)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Lurker/HydraliskLurker', 'HydraliskFrenzy/HydraliskLurker', 'BurrowDown'],
-                   'Coop/Zerg Story/Units/Kerrigan/Burrowed' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBolt/K5KerriganBurrowed', 'PsionicLift/K5KerriganBurrowed', 'KerriganVoidCoopEconDrop/K5KerriganBurrowed', 'KerriganVoidCoopCrushingGripWave/K5KerriganBurrowed', 'BurrowUp'],
-                   'Coop/Zerg Story/Units/Kerrigan/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBolt/K5Kerrigan', 'PsionicLift/K5Kerrigan', 'KerriganVoidCoopEconDrop/K5Kerrigan', 'KerriganVoidCoopCrushingGripWave/K5Kerrigan', 'BurrowDown'],
-                   'Coop/Zerg Story/Units/Lurker (Burrowed)' : ['Stop', 'Attack', 'LurkerHoldFire/LurkerBurrowed', 'LurkerCancelHoldFire/LurkerBurrowed', 'LurkerBurrowUp'],
-                   'Coop/Zerg Story/Units/Mutalisk (Brood Lord Strain)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BroodLord/MutaliskBroodlord'],
-                   'Coop/Zerg Story/Units/Mutalisk (Viper Strain)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Viper/MutaliskViper'],
-                   'Coop/Zerg Story/Units/Scourge/Building Attack Enabled' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DetonateScourge/Scourge', 'DisableBuildingAttackScourge/Scourge'],
-                   'Coop/Zerg Story/Units/Scourge/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DetonateScourge/Scourge', 'EnableBuildingAttackScourge/Scourge'],
-                   'Coop/Zerg Story/Units/Ultralisk (Noxious Strain)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'PoisonNova/HotSNoxious', 'BurrowChargeCampaignNoxious/HotSNoxious', 'BurrowDown'],
-                   'Coop/Zerg Story/Units/Zagara/Burrowed' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ZagaraVoidCoopBanelingBarrage/ZagaraVoidCoopBurrowed', 'ZagaraVoidCoopSpawnHunterKillers/ZagaraVoidCoopBurrowed', 'ZagaraVoidCoopMassFrenzy/ZagaraVoidCoopBurrowed', 'MassRoachDrop/ZagaraVoidCoopBurrowed', 'BurrowUp'],
-                   'Coop/Zerg Story/Units/Zagara/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ZagaraVoidCoopBanelingBarrage/ZagaraVoidCoop', 'ZagaraVoidCoopSpawnHunterKillers/ZagaraVoidCoop', 'ZagaraVoidCoopMassFrenzy/ZagaraVoidCoop', 'MassRoachDrop/ZagaraVoidCoop', 'BurrowDown'],
-                   'Coop/Zerg/Structures/Baneling Nest (Zagara Commander)' : ['EvolveCentrificalHooks/BanelingNest', 'EvolveBanelingCorrosiveBile/BanelingNest', 'EvolveBanelingRupture/BanelingNest', 'EvolveBanelingHeal/BanelingNest', 'Rally', 'ZagaraVoidCoopBanelingSpawner/BanelingNest', 'Cancel'],
-                   'Coop/Zerg/Structures/Evolution Chamber (Kerrigan+Zagara Commander)' : ['zergmeleeweapons1/EvolutionChamber', 'zergmissileweapons1/EvolutionChamber', 'zerggroundarmor1/EvolutionChamber', 'EvolveKerriganHeroicFortitude/EvolutionChamber', 'EvolveK5ChainLightning/EvolutionChamber', 'EvolveK5Cooldowns/EvolutionChamber', 'Cancel'],
-                   'Coop/Zerg/Structures/Greater Spire' : ['zergflyerattack1', 'zergflyerarmor1', 'EvolveMutaliskRapidRegeneration/GreaterSpire', 'EvolveViciousGlaive/GreaterSpire', 'EvolveSunderingGlave/GreaterSpire', 'EvolveBroodLordSpeed/GreaterSpire', 'Cancel'],
-                   'Coop/Zerg/Structures/Hatchery' : ['Larva', 'QueenCoop', 'RespawnZergling/Hatchery', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Lair/Hatchery', 'Cancel'],
-                   'Coop/Zerg/Structures/Hive' : ['Larva', 'QueenCoop', 'RespawnZergling/Hive', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Cancel'],
-                   'Coop/Zerg/Structures/Hydralisk Den (Kerrigan Commander)' : ['EvolveMuscularAugments/HydraliskDen', 'EvolveAncillaryCarapace/HydraliskDen', 'EvolveFrenzy/HydraliskDen', 'ResearchLurkerRange/HydraliskDen', 'LurkerDen/HydraliskDen', 'Cancel'],
-                   'Coop/Zerg/Structures/Infestation Pit' : ['EvolveInfestorEnergyUpgrade/InfestationPit', 'RapidIncubation/InfestationPit', 'HotSPressurizedGlands/InfestationPit', 'Cancel'],
-                   'Coop/Zerg/Structures/Lair' : ['Larva', 'QueenCoop', 'RespawnZergling/Lair', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Hive/Lair', 'Cancel'],
-                   'Coop/Zerg/Structures/Nydus Network (Kerrigan Commander)' : ['Stop', 'ZagaraVoidCoopNydusWorm/NydusNetwork', 'Rally', 'BunkerLoad', 'BunkerUnloadAll', 'Cancel'],
-                   'Coop/Zerg/Structures/Roach Warren (Kerrigan Commander)' : ['EvolveGlialRegeneration/RoachWarren', 'EvolveTunnelingClaws/RoachWarren', 'EvolveHydriodicBile/RoachWarren', 'EvolveAdaptivePlating/RoachWarren', 'Cancel'],
-                   'Coop/Zerg/Structures/Spawning Pool (Zagara Commander)' : ['zerglingmovementspeed/SpawningPool', 'EvolveHardenedCarapace/SpawningPool', 'zerglingattackspeed/SpawningPool', 'EvolveZerglingArmorShred/SpawningPool', 'EvolveBileLauncherIncreasedRange/SpawningPool', 'EvolveBileLauncherBombardmentCooldown/SpawningPool', 'Cancel'],
-                   'Coop/Zerg/Structures/Spire' : ['zergflyerattack1', 'zergflyerarmor1', 'EvolveMutaliskRapidRegeneration/Spire', 'EvolveViciousGlaive/Spire', 'EvolveSunderingGlave/Spire', 'EvolveBroodLordSpeed/Spire', 'GreaterSpireBroodlord/Spire', 'Cancel'],
-                   'Coop/Zerg/Structures/Ultralisk Cavern (Kerrigan Commander)' : ['EvolveChitinousPlating/UltraliskCavern', 'EvolveBurrowCharge/UltraliskCavern', 'EvolveTissueAssimilation/UltraliskCavern', 'Cancel'],
-                   'Coop/Zerg/Units/Corruptor' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'CorruptionAbility/Corruptor', 'BroodLord/Corruptor', 'Cancel'],
-                   'Coop/Zerg/Units/Drone/Advanced Structures (Zagara+Kerrigan Commander)' : ['HydraliskDen/Drone', 'InfestationPit/Drone', 'Spire/Drone', 'NydusNetwork/Drone', 'UltraliskCavern/Drone', 'ScourgeNest/Drone', 'Cancel'],
-                   'Coop/Zerg/Units/Drone/Basic Structures (Zagara+Kerrigan Commander)' : ['Hatchery/Drone', 'Extractor/Drone', 'SpawningPool/Drone', 'EvolutionChamber/Drone', 'BanelingNest/Drone', 'RoachWarren/Drone', 'SpineCrawler/Drone', 'SporeCrawler/Drone', 'ZagaraBileLauncher/Drone', 'Cancel'],
-                   'Coop/Zerg/Units/Hydralisk' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'HydraliskFrenzy/Hydralisk', 'BurrowDown'],
-                   'Coop/Zerg/Units/Larva/General' : ['Drone/Larva', 'Overlord/Larva', 'Zergling/Larva', 'Aberration/Larva', 'Roach/Larva', 'Hydralisk/Larva', 'Infestor/Larva', 'Ultralisk/Larva', 'SwarmHostMP/Larva', 'Mutalisk/Larva', 'Brutalisk/Larva', 'Cancel'],
-                   'Coop/Zerg/Units/Larva/Swarm Queen Egg' : ['SwarmQueenZergling/SwarmQueenEgg', 'SwarmQueenRoach/SwarmQueenEgg', 'SwarmQueenHydralisk/SwarmQueenEgg', 'Cancel'],
-                   'Coop/Zerg/Units/Overlord/General (Creeping)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphToOverseer/Overlord', 'StopGenerateCreep/Overlord', 'BunkerLoad', 'BunkerUnloadAll', 'Cancel'],
-                   'Coop/Zerg/Units/Overseer' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MorphtoOverseerSiege/Overseer', 'MorphtoOverseer/Overseer'],
-                   'Coop/Zerg/Units/Queen' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BuildCreepTumor/QueenCoop', 'MorphMorphalisk/QueenCoop', 'Transfusion/QueenCoop', 'BurrowDown'],
-                   'Coop/Zerg/Units/Swarm Host/Burrowed' : ['Attack', 'SetRallyPointSwarmHost/SwarmHostBurrowedMP', 'SwarmHost/SwarmHostBurrowedMP', 'SwarmHostBurrowUp'],
-                   'Coop/Zerg/Units/Ultralisk' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BurrowChargeCampaign/Ultralisk', 'BurrowDown'],
-                   'Coop/Zerg/Units/Viper' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'FaceEmbrace/Viper', 'DisablingCloud/Viper', 'ViperConsumption/Viper'],
-                   'LotV Campaign/Protoss Story/Structures/Warp Stargate' : ['Phoenix/StargateWarp', 'VoidRay/StargateWarp', 'Carrier/StargateWarp', 'MorphBackToStargate/StargateWarp', 'Cancel'],
-                   'LotV Campaign/Protoss Story/Units/Alarak' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'AlarakKnockback/AlarakChampion', 'AlarakDeadlyCharge/AlarakChampion', 'Rally'],
-                   'LotV Campaign/Protoss Story/Units/Artanis/Extra' : ['ArtanisChannel/ArtanisVoid', 'ArtanisChannelOff/ArtanisVoid'],
-                   'LotV Campaign/Protoss Story/Units/Artanis/Hero Zealot' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ArtanisLightningDash/ArtanisVoid', 'ArtanisAstralWind/ArtanisVoid', 'Rally'],
-                   'LotV Campaign/Protoss Story/Units/Artanis/Mothership' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MassRecall/Artanis', 'Vortex/Artanis'],
-                   'LotV Campaign/Protoss Story/Units/Fenix/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'FenixSOACharge/FenixChampion', 'FenixWhirlwind/FenixChampion', 'VoidShieldCapacitor/FenixChampion', 'Rally'],
-                   'LotV Campaign/Protoss Story/Units/Fenix/SOA Calldown' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'FenixSOACharge/FenixSOA', 'FenixWhirlwind/FenixSOA', 'Rally'],
-                   'LotV Campaign/Protoss Story/Units/Karax' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Reclamation/KaraxChampion', 'PhaseCannon/KaraxChampion', 'Rally'],
-                   'LotV Campaign/Protoss Story/Units/Vorazun' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VorazunBlink/VorazunChampion', 'MohandarOmnislash/VorazunChampion', 'Rally'],
-                   'LotV Campaign/Protoss Story/Units/Zeratul/Aiur 01' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ZeratulBlink/ZeratulVoidAiur01', 'PrologueVoidArmor/ZeratulVoidAiur01', 'ShadowBlade/ZeratulVoidAiur01', 'Rally'],
-                   'LotV Campaign/Protoss Story/Units/Zeratul/Void' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ZeratulBlink/ZeratulVoid', 'ZeratulStun/ZeratulVoid', 'Rally'],
-                   'LotV Campaign/Protoss/Structues/Cybernetics Core' : ['ProtossAirWeaponsLevel1/CyberneticsCore', 'ProtossAirArmorLevel1/CyberneticsCore', 'ResearchHallucination/CyberneticsCore', 'ResearchWarpGate/CyberneticsCore', 'Cancel'],
-                   'LotV Campaign/Protoss/Structues/Stargate' : ['Phoenix/Stargate', 'VoidRay/Stargate', 'Carrier/Stargate', 'Rally', 'UpgradeToStargateWarp/Stargate', 'Cancel'],
-                   'LotV Campaign/Protoss/Structues/Twilight Council' : ['ResearchCharge/TwilightCouncil', 'ResearchStalkerTeleport/TwilightCouncil', 'WarpInVulcanChampion/TwilightCouncil', 'WarpInReaverChampion/TwilightCouncil', 'WarpInFenixChampion/TwilightCouncil', 'WarpInDarkArchonChampion/TwilightCouncil'],
-                   'LotV Campaign/Terran Story/Units/Egon Stetmann' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BonesHeal/Stetmann'],
-                   'LotV Campaign/Terran Story/Units/Gabriel Tosh' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBlast/Tosh', 'VoodooShield/Tosh', 'Consumption/Tosh', 'HeroNukeCalldown/Tosh'],
-                   'LotV Campaign/Terran Story/Units/Hive Mind Emulator' : ['MindControl/HiveMindEmulator', 'Cancel'],
-                   'LotV Campaign/Terran Story/Units/Hyperion' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SJHyperionFightersRecall/SJHyperion', 'SJHyperionBlink/SJHyperion', 'SJHyperionFighters/SJHyperion', 'SJHyperionYamato/SJHyperion', 'SJHyperionLightningStorm/SJHyperion'],
-                   'LotV Campaign/Terran Story/Units/Jim Raynor/Castanar' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'PlantC4Charge/Raynor', 'TossGrenade/Raynor', 'ExperimentalPlasmaGun/Raynor', 'TheMorosDevice/Raynor'],
-                   'LotV Campaign/Terran Story/Units/Jim Raynor/Char' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RaynorSnipe/RaynorCommando'],
-                   'LotV Campaign/Terran Story/Units/Nova' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'NovaSnipe/Nova', 'Domination/Nova', 'ReleaseMinion/Nova', 'HeroNukeCalldown/Nova', 'Cancel'],
-                   'LotV Campaign/Terran Story/Units/Rory Swann' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'DutchPlaceTurret/Swann'],
-                   'LotV Campaign/Terran Story/Units/Spectre/Cloaked' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SpectreHoldFire/Spectre', 'SpectreWeaponsFree/Spectre', 'UltrasonicPulse/Spectre', 'Obliterate/Spectre', 'CloakOff', 'SpectreNukeCalldown/Spectre', 'Cancel'],
-                   'LotV Campaign/Terran Story/Units/Spectre/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SpectreHoldFire/Spectre', 'SpectreWeaponsFree/Spectre', 'UltrasonicPulse/Spectre', 'Obliterate/Spectre', 'CloakOnBanshee', 'SpectreNukeCalldown/Spectre', 'Cancel'],
-                   'LotV Campaign/Terran Story/Units/Tech Reactor/Attached to Barracks' : ['ResearchShieldWall/BarracksTechReactor', 'Stimpack/BarracksTechReactor', 'ReaperSpeed/BarracksTechReactor', 'Cancel'],
-                   'LotV Campaign/Terran Story/Units/Tech Reactor/Attached to Factory' : ['ResearchHighCapacityBarrels/FactoryTechReactor', 'ResearchSiegeTech/FactoryTechReactor', 'Cancel'],
-                   'LotV Campaign/Terran Story/Units/Tech Reactor/Attached to Starport' : ['ResearchMedivacEnergyUpgrade/StarportTechReactor', 'ResearchBansheeCloak/StarportTechReactor', 'ResearchRavenEnergyUpgrade/StarportTechReactor', 'WraithCloak/StarportTechReactor', 'ResearchDurableMaterials/StarportTechReactor', 'ResearchSeekerMissile/StarportTechReactor', 'Cancel'],
-                   'LotV Campaign/Terran Story/Units/Tychus Findlay' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'TossGrenadeTychus/TychusCommando'],
-                   'LotV Campaign/Terran/Structures/Factory/AI Mess 02' : ['Hellion/Factory', 'Goliath/Factory', 'SiegeTank/Factory', 'Diamondback/Factory', 'Thor/Factory', 'MercHellion/Factory', 'HireSpartanCompany/Factory', 'HireSiegeBreakers/Factory', 'Cancel'],
-                   'LotV Campaign/Terran/Structures/Factory/General' : ['Vulture/Factory', 'Hellion/Factory', 'SiegeTank/Factory', 'Diamondback/Factory', 'Goliath/Factory', 'Thor/Factory', 'CampaignVehicles/Factory', 'SelectBuilder', 'Rally', 'TechLabFactory/Factory', 'Reactor/Factory', 'Lift', 'Cancel'],
-                   'LotV Campaign/Terran/Structures/Tech Lab/Attached to Factory' : ['ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchSiegeTech/FactoryTechLab', 'ResearchStrikeCannons/FactoryTechLab', 'Cancel'],
-                   'LotV Campaign/Terran/Structures/Tech Lab/Attached to Starport' : ['ResearchMedivacEnergyUpgrade/StarportTechLab', 'ResearchDurableMaterials/StarportTechLab', 'ResearchSeekerMissile/StarportTechLab', 'ResearchRavenEnergyUpgrade/StarportTechLab', 'ResearchBansheeCloak/StarportTechLab', 'Cancel'],
-                   'LotV Campaign/Zerg Story/Units/Alexei Stukov' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'StukovBossBlast/InfestedStukov', 'DevastatingShot/InfestedStukov', 'StukovInfestedTerrans/InfestedStukov', 'StukovCrystalChannel/InfestedStukov'],
-                   'LotV Campaign/Zerg Story/Units/Dehaka' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Drag/Dehaka', 'DehakaMirrorImage/Dehaka', 'DehakaHeal/Dehaka', 'BurrowDown'],
-                   'LotV Campaign/Zerg Story/Units/Dehaka Spawn' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Drag/DehakaMirrorImage', 'BurrowDown'],
-                   'LotV Campaign/Zerg Story/Units/Impaler/Burrowed' : ['Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ImpalerBurrowUp'],
-                   'LotV Campaign/Zerg Story/Units/Impaler/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ImpalerBurrowDown'],
-                   'LotV Campaign/Zerg Story/Units/Kerrigan/Burrowed' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBolt/K5KerriganBurrowed', 'PsionicLift/K5KerriganBurrowed', 'WildMutation/K5KerriganBurrowed', 'K5Leviathan/K5KerriganBurrowed', 'BurrowUp'],
-                   'LotV Campaign/Zerg Story/Units/Kerrigan/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBolt/K5Kerrigan', 'PsionicLift/K5Kerrigan', 'WildMutation/K5Kerrigan', 'K5Leviathan/K5Kerrigan', 'BurrowDown'],
-                   'LotV Campaign/Zerg Story/Units/Kerrigan/Kerrigan - Empowered' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'KerriganEpilogue03QuantumRay/KerriganEpilogue03', 'KerriganEpilogue03Heal/KerriganEpilogue03', 'KerriganEpilogue03CreepTeleport/KerriganEpilogue03', 'KerriganEpilogue03Extinction/KerriganEpilogue03', 'Cancel'],
-                   'LotV Campaign/Zerg Story/Units/Kerrigan/Kerrigan - Ulnar' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'KerriganVoidKineticBlast/KerriganVoidUlnar02', 'KerriganVoidSpawnBanelings/KerriganVoidUlnar02', 'KerriganVoidApocalypse/KerriganVoidUlnar02'],
-                   'LotV Campaign/Zerg Story/Units/Kerrigan/Kerrigan - Void' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBolt/KerriganVoid', 'PsionicLift/KerriganVoid', 'WildMutation/KerriganVoid', 'K5Leviathan/KerriganVoid', 'Cancel'],
-                   'LotV Campaign/Zerg Story/Units/Kerrigan/Kerrigan - Void - Burrowed' : ['MindBolt/KerriganVoidBurrowed', 'PsionicLift/KerriganVoidBurrowed', 'WildMutation/KerriganVoidBurrowed', 'K5Leviathan/KerriganVoidBurrowed', 'BurrowUp'],
-                   'LotV Campaign/Zerg Story/Units/Kerrigan/Umoja Missions' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MindBolt/KerriganGhostLab', 'PsionicLift/KerriganGhostLab'],
-                   'LotV Campaign/Zerg Story/Units/Niadra/Larva' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ParasiticInvasion/LarvalQueen', 'GrowSwarmQueen/LarvalQueen'],
-                   'LotV Campaign/Zerg Story/Units/Niadra/Stage 1' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmQueenParasiticInvasion/SwarmQueen', 'SwarmQueenZergling/SwarmQueen', 'GrowLargeQueen/SwarmQueen', 'BurrowDown'],
-                   'LotV Campaign/Zerg Story/Units/Niadra/Stage 2' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmQueenParasiticInvasion/LargeSwarmQueen', 'SwarmQueenZergling/LargeSwarmQueen', 'SwarmQueenRoach/LargeSwarmQueen', 'GrowHugeQueen/LargeSwarmQueen', 'BurrowDown'],
-                   'LotV Campaign/Zerg Story/Units/Niadra/Stage 3' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmQueenParasiticInvasion/HugeSwarmQueen', 'SwarmQueenZergling/HugeSwarmQueen', 'SwarmQueenRoach/HugeSwarmQueen', 'SwarmQueenHydralisk/HugeSwarmQueen', 'BurrowDown'],
-                   'LotV Campaign/Zerg Story/Units/Queen' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'QueenClassicParasite/QueenClassic', 'QueenMPEnsnare/QueenClassic', 'QueenMPSpawnBroodlings/QueenClassic', 'CreepTumor/QueenClassic'],
-                   'LotV Campaign/Zerg/Structures/Hatchery' : ['Larva', 'Queen', 'ResearchBurrow', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Lair/Hatchery', 'Cancel'],
-                   'LotV Campaign/Zerg/Structures/Hive' : ['Larva', 'Queen', 'RespawnZergling/Hive', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Cancel'],
-                   'LotV Campaign/Zerg/Structures/Hydralisk Den' : ['hydraliskspeed/HydraliskDen', 'LurkerDen/HydraliskDen', 'Cancel'],
-                   'LotV Campaign/Zerg/Structures/Lair' : ['Larva', 'Queen', 'ResearchBurrow', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Hive/Lair', 'Cancel'],
-                   'LotV Campaign/Zerg/Units/Infestor/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'FungalGrowth/Infestor', 'InfestedTerrans/Infestor', 'InfestorConsumption/Infestor', 'Cancel', 'BurrowDown'],
-                   'LotV Campaign/Zerg/Units/Queen' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BuildCreepTumor/Queen', 'QueenBurstHeal/Queen', 'MorphMorphalisk/Queen', 'DeepTunnel/Queen', 'BurrowDown'],
-                   'LotV Prologue/Protoss Story/Units/Selendis (WoL Protoss Missions)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Interceptor/Selendis', 'Cancel'],
-                   'LotV Prologue/Protoss Story/Units/Urun (WoL Protoss Missions)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'GravitonBeam/Urun', 'Rally'],
-                   'LotV Prologue/Protoss Story/Units/Zeratul (LotV Prologue)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ZeratulBlink/PrologueZeratul', 'PrologueVoidArmor/PrologueZeratul', 'ShadowBlade/PrologueZeratul', 'Rally'],
-                   'LotV Prologue/Protoss Story/Units/Zeratul (WoL Protoss Missions)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ZeratulBlink/Zeratul', 'ZeratulStun/Zeratul', 'Rally'],
-                   'LotV Prologue/Protoss/Units/Mothership' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MassRecall/Mothership', 'Vortex/Mothership'],
-                   'LotV Prologue/Protoss/Units/Oracle' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'VoidSiphon/Oracle', 'OracleRevelation/Oracle', 'ResourceStun/Oracle', 'Cancel'],
-                   'LotV Prologue/Protoss/Units/Probe/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'GatherProt', 'ReturnCargo', 'GasCanisterGather/Probe', 'ProtossBuild/Probe', 'ProtossBuildAdvanced/Probe'],
-                   'LotV Prologue/Protoss/Units/Shadow of the Void (Stalker)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Blink/ShadowOfTheVoidStalker', 'Rally'],
-                   'LotV Prologue/Protoss/Units/Shadow of the Void (Zealot)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Charge/ShadowOfTheVoidZealot', 'Rally'],
-                   'LotV Prologue/Terran Story/Units/Merc Compound' : ['HireKelmorianMiners/MercCompound', 'HireDevilDogs/MercCompound', 'HireHammerSecurities/MercCompound', 'HireSpartanCompany/MercCompound', 'HireSiegeBreakers/MercCompound', 'HireHelsAngels/MercCompound', 'HireDuskWing/MercCompound', 'HireDukesRevenge/MercCompound', 'MercMedic/MercCompound', 'ReaperSpeed/MercCompound', 'MercHellion/MercCompound', 'MercReaper/MercCompound', 'Rally', 'Halt', 'Cancel'],
-                   'LotV Prologue/Terran/Structures/Armory' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'LotV Prologue/Terran/Structures/Barracks/General' : ['Marine/Barracks', 'Marauder/Barracks', 'Reaper/Barracks', 'Ghost/Barracks', 'Medic/Barracks', 'Firebat/Barracks', 'Spectre/Barracks', 'SelectBuilder', 'Rally', 'TechLabBarracks/Barracks', 'Reactor/Barracks', 'TechReactorAI/Barracks', 'Lift', 'Cancel'],
-                   'LotV Prologue/Terran/Structures/Factory/AI Mess 01' : ['Vulture/Factory', 'Predator/Factory', 'Diamondback/Factory', 'Goliath/Factory', 'MicroBot/Factory', 'Thor/Factory', 'Hellion/Factory', 'Cancel'],
-                   'LotV Prologue/Terran/Structures/Factory/General' : ['Hellion/Factory', 'SiegeTank/Factory', 'WarHound/Factory', 'CampaignVehicles/Factory', 'SelectBuilder', 'Rally', 'TechLabFactory/Factory', 'Reactor/Factory', 'TechReactorAI/Factory', 'Lift', 'Cancel'],
-                   'LotV Prologue/Terran/Structures/Starport/General' : ['VikingFighter/Starport', 'Medivac/Starport', 'Raven/Starport', 'Banshee/Starport', 'Battlecruiser/Starport', 'CampaignVehicles/Starport', 'SelectBuilder', 'Rally', 'TechLabStarport/Starport', 'Reactor/Starport', 'TechReactorAI/Starport', 'Lift', 'Cancel'],
-                   'LotV Prologue/Terran/Structures/Tech Lab/Attached to Barracks' : ['ResearchShieldWall/BarracksTechLab', 'Stimpack/BarracksTechLab', 'ResearchPunisherGrenades/BarracksTechLab', 'ReaperSpeed/BarracksTechLab', 'Cancel'],
-                   'LotV Prologue/Terran/Units/Warhound' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'TornadoMissile/WarHound'],
-                   'LotV Prologue/Zerg/Structures/Hatchery' : ['Larva', 'Queen', 'RespawnZergling/Hatchery', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Lair/Hatchery', 'Cancel'],
-                   'LotV Prologue/Zerg/Structures/Lair' : ['Larva', 'Queen', 'RespawnZergling/Lair', 'overlordspeed', 'EvolveVentralSacks', 'RallyEgg', 'Rally', 'Hive/Lair', 'Cancel'],
-                   'HotS Campaign/Protoss/Units/Fleet Beacon' : ['ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon', 'OracleEnergyUpgrade/FleetBeacon', 'TempestRangeUpgrade/FleetBeacon', 'Cancel'],
-                   'HotS Campaign/Protoss/Units/Stargate' : ['Phoenix/Stargate', 'VoidRay/Stargate', 'Carrier/Stargate', 'Oracle/Stargate', 'Tempest/Stargate', 'WarpInScout/Stargate', 'Rally', 'Cancel'],
-                   'HotS Campaign/Terran/Structures/Barracks/General (non-constructing)' : ['Marine/Barracks', 'Marauder/Barracks', 'Reaper/Barracks', 'Ghost/Barracks', 'Medic/Barracks', 'Firebat/Barracks', 'Spectre/Barracks', 'MengskUnits/Barracks', 'Rally', 'TechLabBarracks/Barracks', 'Reactor/Barracks', 'TechReactorAI/Barracks', 'Lift', 'Cancel'],
-                   'HotS Campaign/Terran/Structures/Factory/General (non-constructing)' : ['Hellion/Factory', 'SiegeTank/Factory', 'WarHound/Factory', 'CampaignVehicles/Factory', 'MengskUnits/Factory', 'Rally', 'TechLabFactory/Factory', 'Reactor/Factory', 'TechReactorAI/Factory', 'Lift', 'Cancel'],
-                   'HotS Campaign/Terran/Structures/Starport/General' : ['VikingFighter/Starport', 'Medivac/Starport', 'Raven/Starport', 'Banshee/Starport', 'Battlecruiser/Starport', 'CampaignVehicles', 'SelectBuilder', 'Rally', 'TechLabStarport/Starport', 'Reactor/Starport', 'TechReactorAI/Starport', 'Lift', 'Cancel'],
-                   'HotS Campaign/Terran/Structures/Starport/General (non-constructing)' : ['VikingFighter/Starport', 'Medivac/Starport', 'Raven/Starport', 'Banshee/Starport', 'Battlecruiser/Starport', 'CampaignVehicles', 'MengskUnits/Starport', 'Rally', 'TechLabStarport/Starport', 'Reactor/Starport', 'TechReactorAI/Starport', 'Lift', 'Cancel'],
-                   'HotS Campaign/Zerg Story/Units/Giant Ursadon (Enemy Within Mission)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Consume/GiantYeti', 'GiantYetiLeap/GiantYeti'],
-                   'HotS Campaign/Zerg Story/Units/Lyote (Enemy Within Mission)' : ['Stop', 'Consume/Lyote'],
-                   'HotS Campaign/Zerg/Units/Baneling (Hunter Strain)/Burrowed' : ['Explode/HotSHunterBurrowed', 'BurrowUp'],
-                   'HotS Campaign/Zerg/Units/Baneling (Hunter Strain)/Enabled Building Attack' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSHunter', 'DisableBuildingAttack/HotSHunter', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Baneling (Hunter Strain)/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSHunter', 'EnableBuildingAttack/HotSHunter', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Baneling (Splitter Strain)/Enabled Building Attack' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSSplitterlingBig', 'DisableBuildingAttack/HotSSplitterlingBig', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Baneling (Splitter Strain)/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSSplitterlingBig', 'EnableBuildingAttack/HotSSplitterlingBig', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Baneling (Splitter Strain,split)/Enabled Building Attack' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSSplitterlingBig', 'DisableBuildingAttackSplitterling/HotSSplitterlingBig', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Baneling (Splitter Strain,split)/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Explode/HotSSplitterlingBig', 'EnableBuildingAttackSplitterling/HotSSplitterlingBig', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Infestor' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'FungalGrowth/Infestor', 'NPSwarm/Infestor', 'InfestorConsumption/Infestor', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Carrion Strain)/Burrowed' : ['Stop', 'Attack', 'LocustFlyingLaunch/SwarmHostSplitABurrowed', 'RapidIncubation/SwarmHostSplitBBurrowed', 'SwarmHostUprootUnburrow'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Carrion Strain)/General (Burrow)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RapidIncubation/SwarmHostSplitA', 'SwarmHostRootBurrow'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Carrion Strain)/General (Rapid Incubation)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RapidIncubation/SwarmHostSplitA', 'SwarmHostRoot'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Carrion Strain)/Rooted (Rapid Incubation)' : ['Stop', 'Attack', 'LocustFlyingLaunch/SwarmHostSplitARooted', 'RapidIncubation/SwarmHostSplitARooted', 'SwarmHostUproot'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Creeper Strain)/Burrowed' : ['Stop', 'Attack', 'LocustLaunchCreeper/SwarmHostSplitBBurrowed', 'SwarmHostDeepBurrow/SwarmHostSplitBBurrowed', 'RapidIncubation/SwarmHostSplitBBurrowed', 'SwarmHostUprootUnburrow'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Creeper Strain)/General (Burrow)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmHostDeepBurrow/SwarmHostSplitB', 'RapidIncubation/SwarmHostSplitB', 'SwarmHostRootBurrow'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Creeper Strain)/General (Rapid Incubation)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'SwarmHostDeepBurrow/SwarmHostSplitB', 'RapidIncubation/SwarmHostSplitB', 'SwarmHostRoot'],
-                   'HotS Campaign/Zerg/Units/Swarm Host (Creeper Strain)/Rooted (Rapid Incubation)' : ['Stop', 'Attack', 'LocustLaunchCreeper/SwarmHostSplitBRooted', 'SwarmHostDeepBurrow/SwarmHostSplitBRooted', 'RapidIncubation/SwarmHostSplitBRooted', 'SwarmHostUproot'],
-                   'HotS Campaign/Zerg/Units/Swarm Host/Burrowed' : ['Stop', 'Attack', 'LocustLaunch/SwarmHostBurrowed', 'RapidIncubation/SwarmHostBurrowed', 'SwarmHostUprootUnburrow'],
-                   'HotS Campaign/Zerg/Units/Swarm Host/General (Burrow)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RapidIncubation/SwarmHost', 'SwarmHostRootBurrow'],
-                   'HotS Campaign/Zerg/Units/Swarm Host/General (Rapid Incubation)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'RapidIncubation/SwarmHost', 'SwarmHostRoot'],
-                   'HotS Campaign/Zerg/Units/Swarm Host/Rooted (Rapid Incubation)' : ['Stop', 'Attack', 'LocustLaunch/SwarmHostRooted', 'RapidIncubation/SwarmHostRooted', 'SwarmHostUproot'],
-                   'HotS Campaign/Zerg/Units/Ultralisk (Torrasque)/Burrowed' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'TorrasqueChrysalis/HotSTorrasqueBurrowed', 'BurrowUp'],
-                   'HotS Campaign/Zerg/Units/Ultralisk (Torrasque)/General' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'BurrowChargeCampaign/HotSTorrasque', 'TorrasqueChrysalis/HotSTorrasque', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Zergling (Raptor Strain)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Baneling/HotSRaptor', 'BurrowDown'],
-                   'HotS Campaign/Zerg/Units/Zergling (Swarmling Strain)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Baneling/HotSSwarmling', 'BurrowDown'],
-                   'WoL Campaign/Protoss/Structues/Fleet Beacon' : ['ResearchVoidRaySpeedUpgrade/FleetBeacon', 'ResearchInterceptorLaunchSpeedUpgrade/FleetBeacon', 'Cancel'],
-                   'WoL Campaign/Terran Story/Structues/Merc Compound' : ['HireKelmorianMiners/MercCompound', 'HireDevilDogs/MercCompound', 'HireHammerSecurities/MercCompound', 'HireSpartanCompany/MercCompound', 'HireSiegeBreakers/MercCompound', 'HireHelsAngels/MercCompound', 'HireDuskWing/MercCompound', 'SelectBuilder', 'Rally', 'HireDukesRevenge/MercCompound', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran Story/Structues/Shadow Ops' : ['SelectBuilder', 'SpectreNukeArm/GhostAcademy', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran Story/Units/Jackson\'s Revenge' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'YamatoGun', 'MissilePods/DukesRevenge', 'DefensiveMatrix/DukesRevenge'],
-                   'WoL Campaign/Terran Story/Units/Odin' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'OdinBarrage/Odin', 'OdinNukeCalldown/Odin', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 1/1' : ['TerranVehicleWeaponsUltraCapacitorsLevel1/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 1/2' : ['TerranVehicleWeaponsUltraCapacitorsLevel1/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 1/3' : ['TerranVehicleWeaponsUltraCapacitorsLevel1/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 2/1' : ['TerranVehicleWeaponsUltraCapacitorsLevel2/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 2/2' : ['TerranVehicleWeaponsUltraCapacitorsLevel2/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 2/3' : ['TerranVehicleWeaponsUltraCapacitorsLevel2/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 3/1' : ['TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel1/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 3/2' : ['TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel2/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Ultra Capacitors, Vehicle/Ship: 3/3' : ['TerranVehicleWeaponsUltraCapacitorsLevel3/Armory', 'TerranVehiclePlatingLevel1/Armory', 'TerranShipWeaponsUltraCapacitorsLevel3/Armory', 'TerranShipPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/1' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/2' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 1/3' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel1/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/1' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/2' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 2/3' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel2/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/1' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel1/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/2' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel2/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Armory/Vanadium Plating, Vehicle/Ship: 3/3' : ['TerranVehicleWeaponsLevel1/Armory', 'TerranVehiclePlatingVanadiumPlatingLevel3/Armory', 'TerranShipWeaponsLevel1/Armory', 'TerranShipPlatingVanadiumPlatingLevel3/Armory', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Barracks/Flying (Tech Reactor)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'TechReactor/BarracksFlying', 'Land'],
-                   'WoL Campaign/Terran/Structures/Command Center/General (Orbital Relay)' : ['SCV', 'UpgradeToPlanetaryFortress/CommandCenter', 'Scan/CommandCenter', 'CalldownMULE/CommandCenter', 'SelectBuilder', 'Rally', 'CommandCenterLoad', 'CommandCenterUnloadAll', 'Lift', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Engineering Bay/Ultra Capacitors level 1' : ['TerranInfantryWeaponsUltraCapacitorsLevel1/EngineeringBay', 'TerranInfantryArmorLevel1/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Engineering Bay/Ultra Capacitors level 2' : ['TerranInfantryWeaponsUltraCapacitorsLevel2/EngineeringBay', 'TerranInfantryArmorLevel1/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Engineering Bay/Ultra Capacitors level 3' : ['TerranInfantryWeaponsUltraCapacitorsLevel3/EngineeringBay', 'TerranInfantryArmorLevel1/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Engineering Bay/Vanadium Plating level 1' : ['TerranInfantryWeaponsLevel1/EngineeringBay', 'TerranInfantryArmorVanadiumPlatingLevel1/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Engineering Bay/Vanadium Plating level 2' : ['TerranInfantryWeaponsLevel1/EngineeringBay', 'TerranInfantryArmorVanadiumPlatingLevel2/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Engineering Bay/Vanadium Plating level 3' : ['TerranInfantryWeaponsLevel1/EngineeringBay', 'TerranInfantryArmorVanadiumPlatingLevel3/EngineeringBay', 'SelectBuilder', 'Halt', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Factory/Flying (Tech Reactor)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'TechReactor/FactoryFlying', 'Land'],
-                   'WoL Campaign/Terran/Structures/Factory/General' : ['Hellion/Factory', 'SiegeTank/Factory', 'Thor/Factory', 'Predator/Factory', 'Vulture/Factory', 'Diamondback/Factory', 'Goliath/Factory', 'SelectBuilder', 'Rally', 'TechLabFactory/Factory', 'Reactor/Factory', 'TechReactorAI/Factory', 'Lift', 'Cancel'],
-                   'WoL Campaign/Terran/Structures/Starport/Flying (Tech Reactor)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'TechReactor/StarportFlying', 'Land'],
-                   'WoL Campaign/Terran/Structures/Starport/General' : ['VikingFighter/Starport', 'Medivac/Starport', 'Raven/Starport', 'Banshee/Starport', 'Battlecruiser/Starport', 'Wraith/Starport', 'BuildHercules/Starport', 'SelectBuilder', 'Rally', 'TechLabStarport/Starport', 'Reactor/Starport', 'TechReactorAI/Starport', 'Lift', 'Cancel'],
-                   'WoL Campaign/Terran/Units/Battlecruiser' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'YamatoGun', 'MissilePods/Battlecruiser', 'DefensiveMatrix/Battlecruiser'],
-                   'WoL Campaign/Terran/Units/SCV/Basic Structures' : ['CommandCenter/SCV', 'Refinery/SCV', 'SupplyDepot/SCV', 'Barracks/SCV', 'EngineeringBay/SCV', 'PerditionTurret/SCV', 'Bunker/SCV', 'MissileTurret/SCV', 'SensorTower/SCV', 'HiveMindEmulator/SCV', 'Cancel'],
-                   'WoL Campaign/Terran/Units/SCV/Basic Structures (Orbital Relay purchased)' : ['CommandCenterOrbRelay/SCV', 'Refinery/SCV', 'SupplyDepot/SCV', 'Barracks/SCV', 'EngineeringBay/SCV', 'PerditionTurret/SCV', 'Bunker/SCV', 'MissileTurret/SCV', 'SensorTower/SCV', 'HiveMindEmulator/SCV', 'Cancel'],
-                   'WoL Campaign/Zerg/Structures/Infestation Pit' : ['EvolvePeristalsis/InfestationPit', 'EvolveInfestorEnergyUpgrade/InfestationPit', 'Cancel'],
-                   'WoL Campaign/Zerg/Structures/Ultralisk Cavern' : ['EvolveAnabolicSynthesis2/UltraliskCavern', 'EvolveChitinousPlating/UltraliskCavern', 'Cancel'],
-                   'WoL Campaign/Zerg/Units/Larva/General' : ['Drone/Larva', 'Overlord/Larva', 'Zergling/Larva', 'Roach/Larva', 'Hydralisk/Larva', 'Infestor/Larva', 'Scourge/Larva', 'Ultralisk/Larva', 'SwarmHostMP/Larva', 'Mutalisk/Larva', 'Cancel'],
-                   'HotS Multiplayer/Protoss/Units/Oracle' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'OracleRevelation/Oracle', 'LightofAiur/Oracle', 'OracleWeaponOn/Oracle', 'OracleWeaponOff/Oracle', 'Cancel'],
-                   'HotS Multiplayer/Terran/Units/Thor' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ArmorpiercingMode', 'ExplosiveMode', 'Cancel'],
-                   'HotS Multiplayer/Zerg/Structures/Hydralisk Den' : ['hydraliskspeed/HydraliskDen', 'MuscularAugments/HydraliskDen', 'Cancel'],
-                   'HotS Multiplayer/Zerg/Structures/Infestation Pit' : ['EvolveInfestorEnergyUpgrade/InfestationPit', 'ResearchNeuralParasite/InfestationPit', 'EvolveFlyingLocusts/InfestationPit', 'Cancel'],
-                   'Left2Die/Terran Story/Structures/Science Facility' : ['ResearchMedic/ScienceFacility', 'ResearchFirebat/ScienceFacility', 'ResearchReaper/ScienceFacility', 'ResearchHellion/ScienceFacility', 'ResearchGoliath/ScienceFacility', 'ResearchSiegeTank/ScienceFacility', 'ResearchBunkerUpgrade/ScienceFacility', 'ResearchPerditionTurret/ScienceFacility', 'ResearchFireSuppression/ScienceFacility', 'ResearchTechReactor/ScienceFacility'],
-                   'Left2Die/Terran Story/Units/Death Head (Reaper Merc)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'D8Charge/MercReaper'],
-                   'Left2Die/Terran Story/Units/Devil Dog (Firebat Merc)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'IncineratorNozzles/DevilDog', 'StimFirebat/DevilDog'],
-                   'Left2Die/Terran Story/Units/Firebat' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'IncineratorNozzles/Firebat', 'StimFirebat/Firebat'],
-                   'Left2Die/Terran Story/Units/Hammer Securities (Marauder Merc)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/HammerSecurity'],
-                   'Left2Die/Terran Story/Units/Skibi\'s Angels (Merc Medic)' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'MercMedicHeal/MercMedic'],
-                   'Left2Die/Terran/Structures/Tech Lab/Attached to Barracks' : ['Stimpack/BarracksTechLab', 'ResearchJackhammerConcussionGrenade/BarracksTechLab', 'ResearchStabilizerMedPacks/BarracksTechLab', 'ResearchIncineratorNozzles/BarracksTechLab', 'ResearchG4Charge/BarracksTechLab', 'Cancel'],
-                   'Left2Die/Terran/Structures/Tech Lab/Attached to Factory' : ['ResearchCerberusMines/FactoryTechLab', 'ResearchHighCapacityBarrels/FactoryTechLab', 'ResearchMultiLockTargetingSystem/FactoryTechLab', 'ResearchShapedBlast/FactoryTechLab', 'ResearchRegenerativeBioSteel/FactoryTechLab', 'Cancel'],
-                   'Left2Die/Terran/Units/Marauder' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'Stim', 'JackhammerConcussionGrenade/Marauder']}
-
 
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
  
     def optionxform(self, opt):
         return opt
- 
+
+PROTOSS = "P"
+TERRAN = "T"
+RANDOM = "R"
+ZERG = "Z"
+races = [PROTOSS, TERRAN, RANDOM, ZERG]
+
+RIGHT = "R"
+LEFT = "L"
+sides = [LEFT, RIGHT]
+
+SMALL = "S"
+MEDIUM = "M"
+LARGE = "L"
+sizes = [SMALL, MEDIUM, LARGE]
 
 # Read the settings
-
-races = ["P", "T", "R", "Z"]
-sides = ["L", "R"]
-sizes = ["S", "M", "L"]
-
 settings_parser = ConfigParser()
 settings_parser.read('MapDefinitions.ini')
 
 layout_parser = ConfigParser()
 layout_parser.read('KeyboardLayouts.ini')
 
+default_filepath = 'NewDefaults.ini'
+default_parser = ConfigParser()
+default_parser.read(default_filepath)
+
+ddefault_filepath = 'different_default.ini'
+ddefault_parser = ConfigParser()
+ddefault_parser.read(ddefault_filepath)
+
+inherit_filepath = 'TheCoreSeed.ini'
+inherit_parser = ConfigParser()
+inherit_parser.read(inherit_filepath)
+    
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
 seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
+
+hotkeyfile_parsers = {}
 
 class Hotkey:
     def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
@@ -586,23 +110,23 @@ class Hotkey:
         self.copyOf = copyOf
 
     def set_value(self, race, value):
-        if race == "P":
+        if race == PROTOSS:
             self.P = value
-        elif race == "R":
+        elif race == RANDOM:
             self.R = value
-        elif race == "T":
+        elif race == TERRAN:
             self.T = value
-        elif race == "Z":
+        elif race == ZERG:
             self.Z = value
 
     def get_value(self, race):
-        if race == "P":
+        if race == PROTOSS:
             return self.P
-        elif race == "R":
+        elif race == RANDOM:
             return self.R
-        elif race == "T":
+        elif race == TERRAN:
             return self.T
-        elif race == "Z":
+        elif race == ZERG:
             return self.Z
 
 def verify_file(filepath):
@@ -713,49 +237,47 @@ def order(filepath):
     write_parser.write(file, space_around_delimiters=False)
     file.close()
 
-
 def generate(seed_model):
+    seed_models = init_models()
+    for race in races:
+        seed_models[race][LEFT][MEDIUM] = extract_race(seed_model, race)
+        seed_models[race][RIGHT][MEDIUM] = convert_side(seed_models[race][LEFT][MEDIUM], RIGHT)
+        seed_models[race][LEFT][SMALL] = shift_left(seed_models[race][LEFT][MEDIUM], LEFT)
+        seed_models[race][RIGHT][SMALL] = shift_right(seed_models[race][RIGHT][MEDIUM], RIGHT)
+        seed_models[race][LEFT][LARGE] = shift_right(seed_models[race][LEFT][MEDIUM], LEFT)
+        seed_models[race][RIGHT][LARGE] = shift_left(seed_models[race][RIGHT][MEDIUM], RIGHT)
+    translate_and_create_files(seed_models)
+
+def init_models():
     models = {}
     for race in races:
         models[race] = {}
         for side in sides:
             models[race][side] = {}
-            for size in sizes:
-                models[race][side][size] = {}
-    
-    for race in races:
-        models[race]["L"]["M"][seed_layout] = extract_race(seed_model, race)
-        models[race]["R"]["M"][seed_layout] = convert_side(models[race]["L"]["M"][seed_layout])
-        models[race]["L"]["S"][seed_layout] = shift_left(models[race]["L"]["M"][seed_layout], "L")
-        models[race]["R"]["S"][seed_layout] = shift_right(models[race]["R"]["M"][seed_layout], "R")
-        models[race]["L"]["L"][seed_layout] = shift_right(models[race]["L"]["M"][seed_layout], "L")
-        models[race]["R"]["L"][seed_layout] = shift_left(models[race]["R"]["M"][seed_layout], "R")
-    
+    return models
+
+def translate_and_create_files(models):
     layouts = layout_parser.sections()
     for race in races:
         for side in sides:
             for size in sizes:
                 for layout in layouts:
                     if layout != seed_layout:
-                        models[race][side][size][layout] = translate(models[race][side][size][seed_layout], layout, side)
-    for race in races:
-        for side in sides:
-            for size in sizes:
-                for layout in layouts:
-                    create_file(models[race][side][size][layout], race, side, size, layout)
-    # verify_file(filepath)
-    
+                        model = translate(models[race][side][size], layout, side)
+                    else:
+                        model = models[race][side][size]
+                    filepath = create_file(model, race, side, size, layout)
 
 def extract_race(seed_model, race):
     model_dict = {}
     for section in seed_model:
         model_dict[section] = {}
         for key, hotkey in seed_model[section].items():
-            value = resolve_copyof(seed_model, section, hotkey, race)
+            value = resolve_inherit(seed_model, section, hotkey, race)
             model_dict[section][key] = value
     return model_dict
 
-def modify_model(seed_model, parser, parser_section, check_altgr=False):
+def modify_model(seed_model, parser, parser_section, side):
     model_dict = {}
     for section in seed_model:
         model_dict[section] = {}
@@ -763,32 +285,30 @@ def modify_model(seed_model, parser, parser_section, check_altgr=False):
             if section == "Settings":
                 newvalue = value
             else:
-                newvalue = modify_value(value, parser, parser_section, check_altgr)
+                newvalue = modify_value(value, parser, parser_section, side)
             model_dict[section][key] = newvalue
     return model_dict
 
-def convert_side(seed_model):
-    return modify_model(seed_model, settings_parser, 'GlobalMaps')
+def convert_side(seed_model, side):
+    return modify_model(seed_model, settings_parser, 'GlobalMaps', side)
 
 def shift_right(seed_model, side):
     shift_section = side + 'ShiftRightMaps'
-    return shift(seed_model, shift_section)
+    return shift(seed_model, shift_section, side)
 
 def shift_left(seed_model, side):
     shift_section = side + 'ShiftLeftMaps'
-    return shift(seed_model, shift_section)
+    return shift(seed_model, shift_section, side)
             
-def shift(seed_model, shift_section):
-    return modify_model(seed_model, settings_parser, shift_section)
+def shift(seed_model, shift_section, side):
+    return modify_model(seed_model, settings_parser, shift_section, side)
 
 def translate(seed_model, layout, side):
-    check_altgr = False
-    if side == "R":
-        check_altgr = True
-    return modify_model(seed_model, layout_parser, layout, check_altgr)
+    return modify_model(seed_model, layout_parser, layout, side)
 
-def modify_value(org_value, parser, section, check_altgr):
-    if check_altgr:
+def modify_value(org_value, parser, section, side):
+    altgr = "0"
+    if parser == layout_parser and side == RIGHT:
         altgr = layout_parser.get(section, "AltGr")
 
     newalternates = []
@@ -796,7 +316,7 @@ def modify_value(org_value, parser, section, check_altgr):
         keys = alternate.split("+")
         newkeys = []
         # filter "Shift" only to make sure it is the same output as the old script
-        if check_altgr and altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
+        if altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
             newkeys.append("Control")
         for key in keys:
             if parser.has_option(section, key):
@@ -842,61 +362,53 @@ def create_file(model, race, side, size, layout):
     hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
     hotkeyfile.close()
     order(filepath)
+    return filepath
 
-def resolve_copyof(model, section, hotkey, race):
-    value = None
+def resolve_inherit(model, section, hotkey, race):
+    hotkey = resolve_copyof(model, section, hotkey)
+    value = hotkey.get_value(race)
+    if value is None:
+        value = hotkey.default
+    return value
+
+def resolve_copyof(model, section, hotkey):
     while True:
         if hotkey.copyOf:
             hotkey = model[section][hotkey.copyOf]
         else:
-            value = hotkey.get_value(race)
-            if value is None:
-                value = hotkey.default
-            break
-    return value
+            return hotkey
     
 def verify_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
 
     for race in races:
-        filepath_seed = prefix + " " + race + "LM " + suffix
-        filepath_gen = seed_layout + "/" + filepath_seed
-
-        parser_seed = ConfigParser()
-        parser_seed.read(filepath_seed)
-
+        filepath_gen = create_filepath(race, LEFT, MEDIUM, seed_layout)
         parser_gen = ConfigParser()
         parser_gen.read(filepath_gen)
-
-        theseed_parser = ConfigParser()
-        theseed_parser.read('TheCoreSeed.ini')
-
-        new_defaults_parser = ConfigParser()
-        new_defaults_parser.read('NewDefaults.ini')
 
         print("Race: " + race)
         print()
 
         print("In Seed not in Gen")
-        for section in parser_seed.sections():
-            for seed_item in parser_seed.items(section):
+        for section in hotkeyfile_parsers[race].sections():
+            for seed_item in hotkeyfile_parsers[race].items(section):
                 key = seed_item[0]
                 if not parser_gen.has_option(section, key):
                     print(key)
         print()
         print("In Seed diffrent in Gen")
-        for section in new_defaults_parser.sections():
-            for item in new_defaults_parser.items(section):
+        for section in default_parser.sections():
+            for item in default_parser.items(section):
                 key = item[0]
-                if parser_gen.has_option(section, key) and parser_seed.has_option(section, key):
+                if parser_gen.has_option(section, key) and hotkeyfile_parsers[race].has_option(section, key):
                     value_gen = parser_gen.get(section, key)
-                    value_seed = parser_seed.get(section, key)
+                    value_seed = hotkeyfile_parsers[race].get(section, key)
                     seed_value_set = set(str(value_seed).split(","))
                     gen_value_set = set(str(value_gen).split(","))
                     if seed_value_set != gen_value_set:
-                        if theseed_parser.has_option(section, key):
-                            original = theseed_parser.get(section, key)
+                        if inherit_parser.has_option(section, key):
+                            original = inherit_parser.get(section, key)
                             print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + original)
                         else:
                             print(key + " seed: " + value_seed + " gen: " + value_gen)
@@ -907,13 +419,13 @@ def verify_seed_with_generate():
             for gen_item in parser_gen.items(section):
                 key = gen_item[0]
                 value_gen = gen_item[1]
-                if not parser_seed.has_option(section, key):
-                    default = new_defaults_parser.get(section, key)
+                if not hotkeyfile_parsers[race].has_option(section, key):
+                    default = default_parser.get(section, key)
                     default_value_set = set(str(default).split(","))
                     gen_value_set = set(str(value_gen).split(","))
                     if gen_value_set != default_value_set:
-                        if theseed_parser.has_option(section, key):
-                            original = theseed_parser.get(section, key)
+                        if inherit_parser.has_option(section, key):
+                            original = inherit_parser.get(section, key)
                             print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + original)
                         else:
                             print(key + " gen: " + value_gen + " seed default: " + default)
@@ -921,19 +433,6 @@ def verify_seed_with_generate():
     print("-------------------------")
 
 def create_model():
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-
-    default_parser = ConfigParser()
-    default_parser.read('NewDefaults.ini')
-
-    parsers = {}
-    for race in races:
-        filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = ConfigParser()
-        seed_hotkeyfile_parser.read(filepath)
-        parsers[race] = seed_hotkeyfile_parser
-
     model = {}
     for section in default_parser.sections():
         section_dict = {}
@@ -945,29 +444,21 @@ def create_model():
             hotkey.default = default
 
             for race in races:
-                if parsers[race].has_option(section, key):
-                    value = parsers[race].get(section, key)  #
+                if hotkeyfile_parsers[race].has_option(section, key):
+                    value = hotkeyfile_parsers[race].get(section, key)  #
                     hotkey.set_value(race, value)
 
-            if theseed_parser.has_option(section, key):
-                copyof = theseed_parser.get(section, key)
+            if inherit_parser.has_option(section, key):
+                copyof = inherit_parser.get(section, key)
                 hotkey.copyOf = copyof
             section_dict[key] = hotkey
         model[section] = section_dict
     return model
 
 def new_keys_from_seed_hotkeys():
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-
     for race in races:
-        filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = ConfigParser()
-        seed_hotkeyfile_parser.read(filepath)
-
-        for section in seed_hotkeyfile_parser.sections():
-            for item in seed_hotkeyfile_parser.items(section):
+        for section in hotkeyfile_parsers[race].sections():
+            for item in hotkeyfile_parsers[race].items(section):
                 key = item[0]
                 if not default_parser.has_option(section, key):
                     default_parser.set(section, key, "")
@@ -976,20 +467,10 @@ def new_keys_from_seed_hotkeys():
     default_parser.write(file, space_around_delimiters=False)
     file.close()
     order(default_filepath)
+    default_parser.read(default_filepath)
 
 def check_defaults():
     warn = False
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-    
-    ddefault_filepath = 'different_default.ini'
-    ddefault_parser = ConfigParser()
-    ddefault_parser.read(ddefault_filepath)
-    
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-    
     parsers = {}
     for race in races:
         filepath = prefix + " " + race + "LM " + suffix
@@ -1007,7 +488,7 @@ def check_defaults():
                 for race in races:
                     if not parsers[race].has_option(section, key):
                         seedhas = False
-                inherit = theseed_parser.has_option(section, key)
+                inherit = inherit_parser.has_option(section, key)
                 
                 if multidefault:
                     if not seedhas and not inherit:
@@ -1024,13 +505,6 @@ def suggest_inherit():
     print("------------------------------")
     print("suggest inherit")
     print("------------")
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-    
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-    
     parsers = {}
     for race in races:
         hotkeyfile_parser = ConfigParser()
@@ -1088,9 +562,9 @@ def suggest_inherit():
         for key in listkeys:
             copyofstr = ""
             default = defaults[key]
-            for section in theseed_parser.sections():
-                if theseed_parser.has_option(section, key):
-                    seedini_value = theseed_parser.get(section, key)
+            for section in inherit_parser.sections():
+                if inherit_parser.has_option(section, key):
+                    seedini_value = inherit_parser.get(section, key)
                     copyofstr = " default: " + default + " copy of " + seedini_value
                     default = defaults[seedini_value]
                     break
@@ -1101,18 +575,6 @@ def suggest_inherit():
 def wrong_inherit():
     print("------------------------------")
     print("Wrong inherit")
-    default_filepath = 'NewDefaults.ini'
-    default_parser = ConfigParser()
-    default_parser.read(default_filepath)
-    
-    theseed_parser = ConfigParser()
-    theseed_parser.read('TheCoreSeed.ini')
-    parsers = {}
-    for race in races:
-        hotkeyfile_parser = ConfigParser()
-        hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
-        parsers[race] = hotkeyfile_parser
-
     dicti = {}
     for section in default_parser.sections():
         for item in default_parser.items(section):
@@ -1121,15 +583,15 @@ def wrong_inherit():
             values = {}
             for race in races:
                 index = races.index(race)
-                if parsers[race].has_option(section, key):
-                    value = parsers[race].get(section, key)
+                if hotkeyfile_parsers[race].has_option(section, key):
+                    value = hotkeyfile_parsers[race].get(section, key)
                     values[index] = value
                 else:
                     values[index] = default
             dicti[key] = values
     
-    for section in theseed_parser.sections():
-        for item in theseed_parser.items(section):
+    for section in inherit_parser.sections():
+        for item in inherit_parser.items(section):
             key = item[0]
             copyofkey = item[1]
             values = dicti[key]
@@ -1160,19 +622,37 @@ def wrong_inherit():
                     copyofdefault = " "
                 print("D: " + str(default) + "\t" + str(copyofdefault) + " (default)")
                 print()
-        
     print()
 
 
 
+def init_seed_hotkeyfile_parser():
+    for race in races:
+        hotkeyfile_parser = ConfigParser()
+        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM)
+        hotkeyfile_parser.read(hotkeyfilepath)
+        hotkeyfile_parsers[race] = hotkeyfile_parser
+
+def conflict_and_same_checkts():
+    for race in races:
+        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM, seed_layout)
+        verify_file(hotkeyfilepath)
+
+def analyse(model):
+    verify_seed_with_generate()
+    wrong_inherit()
+    #suggest_inherit()
+    conflict_and_same_checkts()
+
+
 # check sections
+init_seed_hotkeyfile_parser()
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
 generate(model)
-wrong_inherit()
-verify_seed_with_generate()
-suggest_inherit()
+analyse(model)
+
 
 # Quick test to see if 4 seed files are error free
 #     Todo:    expand this to every single file in every directory
