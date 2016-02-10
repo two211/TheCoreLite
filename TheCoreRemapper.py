@@ -14,49 +14,17 @@ import os
 from conflict_checks import *  # @UnresolvedImport
 from same_checks import *  # @UnresolvedImport
 
-GLOBAL = -1
-
 SHOW_DUPLICATES = False
 VERIFY_ALL = False
-
-CAMERA_KEYS = ['CameraSave0', 'CameraSave1', 'CameraSave2', 'CameraSave3', 'CameraSave4', 'CameraSave5', 'CameraSave6', 'CameraSave7',
-               'CameraView0', 'CameraView1', 'CameraView2', 'CameraView3', 'CameraView4', 'CameraView5', 'CameraView6', 'CameraView7']
-
-CONTROL_GROUP_KEYS = ['ControlGroupAppend0', 'ControlGroupAppend1', 'ControlGroupAppend2', 'ControlGroupAppend3', 'ControlGroupAppend4',
-                      'ControlGroupAppend5', 'ControlGroupAppend6', 'ControlGroupAppend7', 'ControlGroupAppend8', 'ControlGroupAppend9',
-                      'ControlGroupAssign0', 'ControlGroupAssign1', 'ControlGroupAssign2', 'ControlGroupAssign3', 'ControlGroupAssign4',
-                      'ControlGroupAssign5', 'ControlGroupAssign6', 'ControlGroupAssign7', 'ControlGroupAssign8', 'ControlGroupAssign9',
-                      'ControlGroupRecall0', 'ControlGroupRecall1', 'ControlGroupRecall2', 'ControlGroupRecall3', 'ControlGroupRecall4',
-                      'ControlGroupRecall5', 'ControlGroupRecall6', 'ControlGroupRecall7', 'ControlGroupRecall8', 'ControlGroupRecall9',
-                      'ControlGroupAppendAndSteal0', 'ControlGroupAppendAndSteal1', 'ControlGroupAppendAndSteal2', 'ControlGroupAppendAndSteal3',
-                      'ControlGroupAppendAndSteal4', 'ControlGroupAppendAndSteal5', 'ControlGroupAppendAndSteal6', 'ControlGroupAppendAndSteal7',
-                      'ControlGroupAppendAndSteal8', 'ControlGroupAppendAndSteal9',
-                      'ControlGroupAssignAndSteal0', 'ControlGroupAssignAndSteal1', 'ControlGroupAssignAndSteal2', 'ControlGroupAssignAndSteal3',
-                      'ControlGroupAssignAndSteal4', 'ControlGroupAssignAndSteal5', 'ControlGroupAssignAndSteal6', 'ControlGroupAssignAndSteal7',
-                      'ControlGroupAssignAndSteal8', 'ControlGroupAssignAndSteal9', ]
-
-# Add to this please.
-GENERAL_KEYS = ['FPS', 'Music', 'Sound', 'PTT', 'DialogDismiss', 'MenuAchievements', 'MenuGame', 'MenuMessages', 'MenuSocial',
-                'LeaderResources', 'LeaderIncome', 'LeaderSpending', 'LeaderUnits', 'LeaderUnitsLost', 'LeaderProduction', 'LeaderArmy',
-                'LeaderAPM', 'LeaderCPM', 'ObserveAllPlayers', 'ObserveAutoCamera', 'ObserveClearSelection', 'ObservePlayer0', 'ObservePlayer1',
-                'ObservePlayer2', 'ObservePlayer3', 'ObservePlayer4', 'ObservePlayer5', 'ObservePlayer6', 'ObservePlayer7', 'ObservePlayer8',
-                'ObservePlayer9', 'ObservePlayer10', 'ObservePlayer11', 'ObservePlayer12', 'ObservePlayer13', 'ObservePlayer14', 'ObservePlayer15',
-                'ObserveSelected', 'ObservePreview', 'ObserveStatusBars', 'StatPanelResources', 'StatPanelArmySupply', 'StatPanelUnitsLost',
-                'StatPanelAPM', 'StatPanelCPM', 'ToggleWorldPanel', 'CinematicSkip', 'AlertRecall', 'CameraFollow', 'GameTooltipsOn', 'IdleWorker',
-                'MinimapColors', 'MinimapPing', 'MinimapTerrain', 'PauseGame', 'QuickPing', 'QuickSave', 'ReplayPlayPause', 'ReplayRestart',
-                'ReplaySkipBack', 'ReplaySkipNext', 'ReplaySpeedDec', 'ReplaySpeedInc', 'ReplayStop', 'ReplayHide', 'SelectionCancelDrag',
-                'SubgroupNext', 'SubgroupPrev', 'TeamResources', 'TownCamera', 'WarpIn', 'Cancel', 'CancelCocoon', 'CancelMutateMorph',
-                'CancelUpgradeMorph', 'ChatCancel', 'ChatAll', 'ChatDefault', 'ChatIndividual', 'ChatRecipient', 'ChatAllies', 'CameraTurnLeft',
-                'CameraTurnRight', 'CameraCenter', 'StatusAll', 'StatusOwner', 'StatusEnemy', 'StatusAlly', 'MenuHelp', 'NamePanel', 'ArmySelect',
-                'SelectBuilder', 'ToggleVersusModeSides']
-
-EXCLUDE_MAPPING = ['AllowSetConflicts']
 
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
  
     def optionxform(self, opt):
         return opt
+    
+    def write(self, file):
+        return super().write(file, space_around_delimiters=False)
 
 PROTOSS = "P"
 TERRAN = "T"
@@ -129,6 +97,271 @@ class Hotkey:
         elif race == ZERG:
             return self.Z
 
+def init_seed_hotkeyfile_parser():
+    for race in races:
+        hotkeyfile_parser = ConfigParser()
+        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM)
+        hotkeyfile_parser.read(hotkeyfilepath)
+        hotkeyfile_parsers[race] = hotkeyfile_parser
+
+def create_filepath(race, side, size, path=""):
+    filename = prefix + " " + race + side + size + " " + suffix
+    filepath = filename
+    if path:
+        filepath = path + "/" + filename
+    return filepath
+
+def new_keys_from_seed_hotkeys():
+    for race in races:
+        for section in hotkeyfile_parsers[race].sections():
+            for item in hotkeyfile_parsers[race].items(section):
+                key = item[0]
+                if not default_parser.has_option(section, key):
+                    default_parser.set(section, key, "")
+
+    file = open(default_filepath, 'w')
+    default_parser.write(file)
+    file.close()
+    order(default_filepath)
+    default_parser.read(default_filepath)
+
+def order(filepath):
+    read_parser = ConfigParser()
+    read_parser.read(filepath)
+
+    dicti = {}
+    for section in read_parser.sections():
+        items = read_parser.items(section)
+        items.sort()
+        dicti[section] = items
+
+    open(filepath, 'w').close()  # clear file
+
+    write_parser = ConfigParser()  # on other parser just for the safty
+    write_parser.read(filepath)
+
+    write_parser.add_section("Settings")
+    write_parser.add_section("Hotkeys")
+    write_parser.add_section("Commands")
+
+    for section in dicti.keys():
+        if not write_parser.has_section(section):
+            write_parser.add_section(section)
+        items = dicti.get(section)
+        for item in items:
+            write_parser.set(section, item[0], item[1])
+
+    file = open(filepath, 'w')
+    write_parser.write(file)
+    file.close()
+
+def check_defaults():
+    warn = False
+    parsers = {}
+    for race in races:
+        filepath = prefix + " " + race + "LM " + suffix
+        seed_hotkeyfile_parser = ConfigParser()
+        seed_hotkeyfile_parser.read(filepath)
+        parsers[race] = seed_hotkeyfile_parser
+
+    for section in default_parser.sections():
+        for item in default_parser.items(section):
+            key = item[0]
+            default = item[1]
+            multidefault = ddefault_parser.has_option(section, key)
+            if not default or multidefault:
+                seedhas = True
+                for race in races:
+                    if not parsers[race].has_option(section, key):
+                        seedhas = False
+                inherit = inherit_parser.has_option(section, key)
+                
+                if multidefault:
+                    if not seedhas and not inherit:
+                        print("[ERROR] key has multiple diffrent defaults: set in all seed layouts value for this key (or unbound) " + key)
+                
+                if not default:
+                    if seedhas or inherit:
+                        if warn:
+                            print("[WARN] no default " + key)
+                    else:
+                        print("[ERROR] no default " + key)
+
+def create_model():
+    model = {}
+    for section in default_parser.sections():
+        section_dict = {}
+        for item in default_parser.items(section):
+            key = item[0]
+            hotkey = Hotkey(key, section)
+
+            default = item[1]
+            hotkey.default = default
+
+            for race in races:
+                if hotkeyfile_parsers[race].has_option(section, key):
+                    value = hotkeyfile_parsers[race].get(section, key)  #
+                    hotkey.set_value(race, value)
+
+            if inherit_parser.has_option(section, key):
+                copyof = inherit_parser.get(section, key)
+                hotkey.copyOf = copyof
+            section_dict[key] = hotkey
+        model[section] = section_dict
+    return model
+
+def generate(seed_model):
+    seed_models = init_models()
+    for race in races:
+        seed_models[race][LEFT][MEDIUM] = extract_race(seed_model, race)
+        seed_models[race][RIGHT][MEDIUM] = convert_side(seed_models[race][LEFT][MEDIUM], RIGHT)
+        seed_models[race][LEFT][SMALL] = shift_left(seed_models[race][LEFT][MEDIUM], LEFT)
+        seed_models[race][RIGHT][SMALL] = shift_right(seed_models[race][RIGHT][MEDIUM], RIGHT)
+        seed_models[race][LEFT][LARGE] = shift_right(seed_models[race][LEFT][MEDIUM], LEFT)
+        seed_models[race][RIGHT][LARGE] = shift_left(seed_models[race][RIGHT][MEDIUM], RIGHT)
+    translate_and_create_files(seed_models)
+
+def init_models():
+    models = {}
+    for race in races:
+        models[race] = {}
+        for side in sides:
+            models[race][side] = {}
+    return models
+
+def extract_race(seed_model, race):
+    model_dict = {}
+    for section in seed_model:
+        model_dict[section] = {}
+        for key, hotkey in seed_model[section].items():
+            value = resolve_inherit(seed_model, section, hotkey, race)
+            model_dict[section][key] = value
+    return model_dict
+
+def resolve_inherit(model, section, hotkey, race):
+    hotkey = resolve_copyof(model, section, hotkey)
+    value = hotkey.get_value(race)
+    if value is None:
+        value = hotkey.default
+    return value
+
+def resolve_copyof(model, section, hotkey):
+    while True:
+        if hotkey.copyOf:
+            hotkey = model[section][hotkey.copyOf]
+        else:
+            return hotkey
+
+def convert_side(seed_model, side):
+    return modify_model(seed_model, settings_parser, 'GlobalMaps', side)
+
+def modify_model(seed_model, parser, parser_section, side):
+    model_dict = {}
+    for section in seed_model:
+        model_dict[section] = {}
+        for key, value in seed_model[section].items():
+            if section == "Settings":
+                newvalue = value
+            else:
+                newvalue = modify_value(value, parser, parser_section, side)
+            model_dict[section][key] = newvalue
+    return model_dict
+
+def modify_value(org_value, parser, section, side):
+    altgr = "0"
+    if parser == layout_parser and side == RIGHT:
+        altgr = layout_parser.get(section, "AltGr")
+
+    newalternates = []
+    for alternate in org_value.split(","):
+        keys = alternate.split("+")
+        newkeys = []
+        # filter "Shift" only to make sure it is the same output as the old script
+        if altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
+            newkeys.append("Control")
+        for key in keys:
+            if parser.has_option(section, key):
+                newkey = parser.get(section, key)
+            else:
+                newkey = key
+            newkeys.append(newkey)
+        newalternate = ""
+        first = True
+        for newkey in newkeys:
+            if not first:
+                newalternate = newalternate + "+"
+            else:
+                first = False
+            if not newkey:
+                newalternate = ""
+            else:
+                newalternate = newalternate + newkey
+        newalternates.append(newalternate)
+    first = True
+    newvalues = ""
+    for newalternate in newalternates:
+        if not newalternate:
+            continue
+        if not first:
+            newvalues = newvalues + ","
+        else:
+            first = False
+        newvalues = newvalues + newalternate
+    return newvalues
+
+def shift_left(seed_model, side):
+    shift_section = side + 'ShiftLeftMaps'
+    return shift(seed_model, shift_section, side)
+
+def shift_right(seed_model, side):
+    shift_section = side + 'ShiftRightMaps'
+    return shift(seed_model, shift_section, side)
+            
+def shift(seed_model, shift_section, side):
+    return modify_model(seed_model, settings_parser, shift_section, side)
+
+def translate_and_create_files(models):
+    layouts = layout_parser.sections()
+    for race in races:
+        for side in sides:
+            for size in sizes:
+                for layout in layouts:
+                    if layout != seed_layout:
+                        model = translate(models[race][side][size], layout, side)
+                    else:
+                        model = models[race][side][size]
+                    create_file(model, race, side, size, layout)
+
+def translate(seed_model, layout, side):
+    return modify_model(seed_model, layout_parser, layout, side)
+
+def create_file(model, race, side, size, layout):
+    hotkeyfile_parser = ConfigParser()
+    for section in model:
+        if not hotkeyfile_parser.has_section(section):
+                hotkeyfile_parser.add_section(section)
+        for key, value in model[section].items():
+            hotkeyfile_parser.set(section, key, value)
+    if not os.path.isdir(layout):
+        os.makedirs(layout)
+    filepath = create_filepath(race, side, size, layout)
+    hotkeyfile = open(filepath, 'w')
+    hotkeyfile_parser.write(hotkeyfile)
+    hotkeyfile.close()
+    order(filepath)
+    return filepath
+
+def analyse(model):
+    conflict_and_same_checkts()
+    verify_seed_with_generate()
+    wrong_inherit()
+    # suggest_inherit()
+
+def conflict_and_same_checkts():
+    for race in races:
+        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM, seed_layout)
+        verify_file(hotkeyfilepath)
+
 def verify_file(filepath):
     print("verify file: " + filepath)
     hotkeys_file = open(filepath, 'r')
@@ -199,185 +432,7 @@ def verify_file(filepath):
                         print(item + " = " + key)
                 # print(conflict_set)
     print("")
-    
-def create_filepath(race, side, size, path=""):
-    filename = prefix + " " + race + side + size + " " + suffix
-    filepath = filename
-    if path:
-        filepath = path + "/" + filename
-    return filepath
 
-def order(filepath):
-    read_parser = ConfigParser()
-    read_parser.read(filepath)
-
-    dicti = {}
-    for section in read_parser.sections():
-        items = read_parser.items(section)
-        items.sort()
-        dicti[section] = items
-
-    open(filepath, 'w').close()  # clear file
-
-    write_parser = ConfigParser()  # on other parser just for the safty
-    write_parser.read(filepath)
-
-    write_parser.add_section("Settings")
-    write_parser.add_section("Hotkeys")
-    write_parser.add_section("Commands")
-
-    for section in dicti.keys():
-        if not write_parser.has_section(section):
-            write_parser.add_section(section)
-        items = dicti.get(section)
-        for item in items:
-            write_parser.set(section, item[0], item[1])
-
-    file = open(filepath, 'w')
-    write_parser.write(file, space_around_delimiters=False)
-    file.close()
-
-def generate(seed_model):
-    seed_models = init_models()
-    for race in races:
-        seed_models[race][LEFT][MEDIUM] = extract_race(seed_model, race)
-        seed_models[race][RIGHT][MEDIUM] = convert_side(seed_models[race][LEFT][MEDIUM], RIGHT)
-        seed_models[race][LEFT][SMALL] = shift_left(seed_models[race][LEFT][MEDIUM], LEFT)
-        seed_models[race][RIGHT][SMALL] = shift_right(seed_models[race][RIGHT][MEDIUM], RIGHT)
-        seed_models[race][LEFT][LARGE] = shift_right(seed_models[race][LEFT][MEDIUM], LEFT)
-        seed_models[race][RIGHT][LARGE] = shift_left(seed_models[race][RIGHT][MEDIUM], RIGHT)
-    translate_and_create_files(seed_models)
-
-def init_models():
-    models = {}
-    for race in races:
-        models[race] = {}
-        for side in sides:
-            models[race][side] = {}
-    return models
-
-def translate_and_create_files(models):
-    layouts = layout_parser.sections()
-    for race in races:
-        for side in sides:
-            for size in sizes:
-                for layout in layouts:
-                    if layout != seed_layout:
-                        model = translate(models[race][side][size], layout, side)
-                    else:
-                        model = models[race][side][size]
-                    filepath = create_file(model, race, side, size, layout)
-
-def extract_race(seed_model, race):
-    model_dict = {}
-    for section in seed_model:
-        model_dict[section] = {}
-        for key, hotkey in seed_model[section].items():
-            value = resolve_inherit(seed_model, section, hotkey, race)
-            model_dict[section][key] = value
-    return model_dict
-
-def modify_model(seed_model, parser, parser_section, side):
-    model_dict = {}
-    for section in seed_model:
-        model_dict[section] = {}
-        for key, value in seed_model[section].items():
-            if section == "Settings":
-                newvalue = value
-            else:
-                newvalue = modify_value(value, parser, parser_section, side)
-            model_dict[section][key] = newvalue
-    return model_dict
-
-def convert_side(seed_model, side):
-    return modify_model(seed_model, settings_parser, 'GlobalMaps', side)
-
-def shift_right(seed_model, side):
-    shift_section = side + 'ShiftRightMaps'
-    return shift(seed_model, shift_section, side)
-
-def shift_left(seed_model, side):
-    shift_section = side + 'ShiftLeftMaps'
-    return shift(seed_model, shift_section, side)
-            
-def shift(seed_model, shift_section, side):
-    return modify_model(seed_model, settings_parser, shift_section, side)
-
-def translate(seed_model, layout, side):
-    return modify_model(seed_model, layout_parser, layout, side)
-
-def modify_value(org_value, parser, section, side):
-    altgr = "0"
-    if parser == layout_parser and side == RIGHT:
-        altgr = layout_parser.get(section, "AltGr")
-
-    newalternates = []
-    for alternate in org_value.split(","):
-        keys = alternate.split("+")
-        newkeys = []
-        # filter "Shift" only to make sure it is the same output as the old script
-        if altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
-            newkeys.append("Control")
-        for key in keys:
-            if parser.has_option(section, key):
-                newkey = parser.get(section, key)
-            else:
-                newkey = key
-            newkeys.append(newkey)
-        newalternate = ""
-        first = True
-        for newkey in newkeys:
-            if not first:
-                newalternate = newalternate + "+"
-            else:
-                first = False
-            if not newkey:
-                newalternate = ""
-            else:
-                newalternate = newalternate + newkey
-        newalternates.append(newalternate)
-    first = True
-    newvalues = ""
-    for newalternate in newalternates:
-        if not newalternate:
-            continue
-        if not first:
-            newvalues = newvalues + ","
-        else:
-            first = False
-        newvalues = newvalues + newalternate
-    return newvalues
-
-def create_file(model, race, side, size, layout):
-    hotkeyfile_parser = ConfigParser()
-    for section in model:
-        if not hotkeyfile_parser.has_section(section):
-                hotkeyfile_parser.add_section(section)
-        for key, value in model[section].items():
-            hotkeyfile_parser.set(section, key, value)
-    if not os.path.isdir(layout):
-        os.makedirs(layout)
-    filepath = create_filepath(race, side, size, layout)
-    hotkeyfile = open(filepath, 'w')
-    hotkeyfile_parser.write(hotkeyfile, space_around_delimiters=False)
-    hotkeyfile.close()
-    order(filepath)
-    return filepath
-
-def resolve_inherit(model, section, hotkey, race):
-    hotkey = resolve_copyof(model, section, hotkey)
-    value = hotkey.get_value(race)
-    if value is None:
-        value = hotkey.default
-    return value
-
-def resolve_copyof(model, section, hotkey):
-    while True:
-        if hotkey.copyOf:
-            hotkey = model[section][hotkey.copyOf]
-        else:
-            return hotkey
-    
 def verify_seed_with_generate():
     print("-------------------------")
     print(" Start Comparing Seeds Files with Generated Files")
@@ -431,75 +486,6 @@ def verify_seed_with_generate():
                             print(key + " gen: " + value_gen + " seed default: " + default)
         print()
     print("-------------------------")
-
-def create_model():
-    model = {}
-    for section in default_parser.sections():
-        section_dict = {}
-        for item in default_parser.items(section):
-            key = item[0]
-            hotkey = Hotkey(key, section)
-
-            default = item[1]
-            hotkey.default = default
-
-            for race in races:
-                if hotkeyfile_parsers[race].has_option(section, key):
-                    value = hotkeyfile_parsers[race].get(section, key)  #
-                    hotkey.set_value(race, value)
-
-            if inherit_parser.has_option(section, key):
-                copyof = inherit_parser.get(section, key)
-                hotkey.copyOf = copyof
-            section_dict[key] = hotkey
-        model[section] = section_dict
-    return model
-
-def new_keys_from_seed_hotkeys():
-    for race in races:
-        for section in hotkeyfile_parsers[race].sections():
-            for item in hotkeyfile_parsers[race].items(section):
-                key = item[0]
-                if not default_parser.has_option(section, key):
-                    default_parser.set(section, key, "")
-
-    file = open(default_filepath, 'w')
-    default_parser.write(file, space_around_delimiters=False)
-    file.close()
-    order(default_filepath)
-    default_parser.read(default_filepath)
-
-def check_defaults():
-    warn = False
-    parsers = {}
-    for race in races:
-        filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = ConfigParser()
-        seed_hotkeyfile_parser.read(filepath)
-        parsers[race] = seed_hotkeyfile_parser
-
-    for section in default_parser.sections():
-        for item in default_parser.items(section):
-            key = item[0]
-            default = item[1]
-            multidefault = ddefault_parser.has_option(section, key)
-            if not default or multidefault:
-                seedhas = True
-                for race in races:
-                    if not parsers[race].has_option(section, key):
-                        seedhas = False
-                inherit = inherit_parser.has_option(section, key)
-                
-                if multidefault:
-                    if not seedhas and not inherit:
-                        print("[ERROR] key has multiple diffrent defaults: set in all seed layouts value for this key (or unbound) " + key)
-                
-                if not default:
-                    if seedhas or inherit:
-                        if warn:
-                            print("[WARN] no default " + key)
-                    else:
-                        print("[ERROR] no default " + key)
 
 def suggest_inherit():
     print("------------------------------")
@@ -625,26 +611,6 @@ def wrong_inherit():
     print()
 
 
-
-def init_seed_hotkeyfile_parser():
-    for race in races:
-        hotkeyfile_parser = ConfigParser()
-        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM)
-        hotkeyfile_parser.read(hotkeyfilepath)
-        hotkeyfile_parsers[race] = hotkeyfile_parser
-
-def conflict_and_same_checkts():
-    for race in races:
-        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM, seed_layout)
-        verify_file(hotkeyfilepath)
-
-def analyse(model):
-    verify_seed_with_generate()
-    wrong_inherit()
-    #suggest_inherit()
-    conflict_and_same_checkts()
-
-
 # check sections
 init_seed_hotkeyfile_parser()
 new_keys_from_seed_hotkeys()
@@ -657,7 +623,3 @@ analyse(model)
 # Quick test to see if 4 seed files are error free
 #     Todo:    expand this to every single file in every directory
 #             expand both SAME_CHECKS and CONFLICT_CHECKS
-# for race in races:
-#    filename = prefix + " " + race + "LM " + suffix
-#    verify_file(filename)
-
