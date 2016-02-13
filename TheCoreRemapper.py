@@ -8,6 +8,7 @@
 #   9/26/12 - Finished initial functionality
 #
 ##################################################
+import collections
 import configparser
 import os
 
@@ -67,6 +68,7 @@ seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
 hotkeyfile_parsers = {}
 
 class Hotkey:
+    
     def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
         self.name = name
         self.section = section
@@ -86,8 +88,13 @@ class Hotkey:
             self.T = value
         elif race == ZERG:
             self.Z = value
-
-    def get_value(self, race):
+    
+    def default_instead_of_none_value(self, value):
+        if value is None:
+            value = self.default
+        return value
+    
+    def get_raw_value(self, race):
         if race == PROTOSS:
             return self.P
         elif race == RANDOM:
@@ -96,7 +103,26 @@ class Hotkey:
             return self.T
         elif race == ZERG:
             return self.Z
-
+    
+    def get_value(self, race):
+        return self.default_instead_of_none_value(self.get_raw_value(race))
+    
+    def get_values_id(self):
+        values = ""
+        for race in races:
+            value = self.get_value(race)
+            first = True
+            alternates = value.split(",")
+            alternates.sort()
+            for alternate in alternates:
+                if first:
+                    value = alternate
+                    first = False
+                else:
+                    value = value + "," + alternate 
+            values = values + race + ":" + value + "\n"
+        return values
+        
 def init_seed_hotkeyfile_parser():
     for race in races:
         hotkeyfile_parser = ConfigParser()
@@ -241,8 +267,6 @@ def extract_race(seed_model, race):
 def resolve_inherit(model, section, hotkey, race):
     hotkey = resolve_copyof(model, section, hotkey)
     value = hotkey.get_value(race)
-    if value is None:
-        value = hotkey.default
     return value
 
 def resolve_copyof(model, section, hotkey):
@@ -354,8 +378,8 @@ def create_file(model, race, side, size, layout):
 def analyse(model):
     conflict_and_same_checkts()
     verify_seed_with_generate()
-    wrong_inherit()
-    # suggest_inherit()
+    wrong_inherit(model)
+    suggest_inherit(model)
 
 def conflict_and_same_checkts():
     for race in races:
@@ -396,7 +420,7 @@ def verify_file(filepath):
                 for a in array:
                     print(a)
 
-    for same_set in SAME_CHECKS:
+    for same_set in SAME_CHECKS:  # @UndefinedVariable
         mismatched = False
         value = dicti[same_set[0]][1]
         for item in same_set:
@@ -408,7 +432,7 @@ def verify_file(filepath):
             for item in same_set:
                 print(item + " = " + dicti[item][1])
 
-    for commandcard, conflict_set in CONFLICT_CHECKS.items():
+    for commandcard, conflict_set in CONFLICT_CHECKS.items():  # @UndefinedVariable
         hotkeys = []
         count_hotkeys = {}
         for item in conflict_set:
@@ -487,123 +511,84 @@ def verify_seed_with_generate():
         print()
     print("-------------------------")
 
-def suggest_inherit():
+def suggest_inherit(model):
     print("------------------------------")
     print("suggest inherit")
     print("------------")
-    parsers = {}
-    for race in races:
-        hotkeyfile_parser = ConfigParser()
-        hotkeyfile_parser.read(prefix + " " + race + "LM " + suffix)
-        parsers[race] = hotkeyfile_parser
-
-    dicti = {}
-    defaults = {}
-    for section in default_parser.sections():
-        for item in default_parser.items(section):
-            key = item[0]
-            default = item[1]
-            defaults[key] = default
-            values = {}
-            for race in races:
-                if parsers[race].has_option(section, key):
-                    value = parsers[race].get(section, key)
-                else:
-                    value = default
-                values[races.index(race)] = value
-            dicti[key] = values
-            
     outputdict = {}
-    for key, values in dicti.items():
-        for key2, values2 in dicti.items():
-            if key == key2:
-                continue
-            
-            equal = True
-            for race in races:
-                index = races.index(race)
-                value = values.get(index)
-                value2 = values2.get(index)
-                value_set = set(str(value).split(","))
-                value2_set = set(str(value2).split(","))
-                if value_set != value2_set:
-                    equal = False
-                    break
-                    
-            if equal:
-                output_key = ""
+    for section in model:
+        outputdict[section] = {}
+        for hotkey1 in model[section].values():
+            values_id = hotkey1.get_values_id()
+            for hotkey2 in model[section].values():
+                if hotkey1.name == hotkey2.name:
+                    continue
+                equal = True
                 for race in races:
-                    index = races.index(race)
-                    value = values.get(index)
-                    output_key = output_key + race + ": " + str(value) + "\n"
+                    value = hotkey1.get_value(race)
+                    value2 = hotkey2.get_value(race)
+                    value_set = set(str(value).split(","))
+                    value2_set = set(str(value2).split(","))
+                    if value_set != value2_set:
+                        equal = False
+                        break
+                if equal:
+                    if not values_id in outputdict[section]:
+                        outputdict[section][values_id] = {}
+                    if not hotkey1.name in outputdict[section][values_id]:
+                        outputdict[section][values_id][hotkey1.name] = hotkey1
+                    if not hotkey2.name in outputdict[section][values_id]:
+                        outputdict[section][values_id][hotkey2.name] = hotkey2
+    
+    for section in outputdict:
+        for values_id in collections.OrderedDict(sorted(outputdict[section].items())):
+            hotkeys = outputdict[section][values_id] 
+            first = True
+            for hotkey in collections.OrderedDict(sorted(hotkeys.items())).values():
+                if first:
+                    for race in races:
+                        value = hotkey.get_value(race)
+                        print(race + ": " + str(value))
+                    first = False
                 
-                if not output_key in outputdict:
-                    outputdict[output_key] = []
-                if not key in outputdict[output_key]:
-                    outputdict[output_key].append(key)
-                
-    for values, listkeys in outputdict.items():
-        print(values, end="")
-        listkeys.sort()
-        for key in listkeys:
-            copyofstr = ""
-            default = defaults[key]
-            for section in inherit_parser.sections():
-                if inherit_parser.has_option(section, key):
-                    seedini_value = inherit_parser.get(section, key)
-                    copyofstr = " default: " + default + " copy of " + seedini_value
-                    default = defaults[seedini_value]
-                    break
-            print("\t" + key + " " + copyofstr + " default: " + default)
-        print("------------")
+                print("\t" + hotkey.name + " default: " + hotkey.default, end="")
+                if hotkey.copyOf:
+                    hotkeycopyof = model[section][hotkey.copyOf]
+                    print(" copyof: " + hotkeycopyof.name + " default: " + hotkeycopyof.default, end="")
+                print()
+            print("------------")
     print()
 
-def wrong_inherit():
+def wrong_inherit(model):
     print("------------------------------")
     print("Wrong inherit")
-    dicti = {}
-    for section in default_parser.sections():
-        for item in default_parser.items(section):
-            key = item[0]
-            default = item[1]
-            values = {}
-            for race in races:
-                index = races.index(race)
-                if hotkeyfile_parsers[race].has_option(section, key):
-                    value = hotkeyfile_parsers[race].get(section, key)
-                    values[index] = value
-                else:
-                    values[index] = default
-            dicti[key] = values
-    
-    for section in inherit_parser.sections():
-        for item in inherit_parser.items(section):
-            key = item[0]
-            copyofkey = item[1]
-            values = dicti[key]
-            copyofvalues = dicti[copyofkey]
+    for section in model:
+        for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
+            if not hotkey.copyOf:
+                continue
+            hotkeycopyof = resolve_copyof(model, section, hotkey)
             equal = True
             for race in races:
-                index = races.index(race)
-                value = values[index]
-                copyofvalue = copyofvalues[index]
+                value = hotkey.get_value(race)
+                copyofvalue = hotkeycopyof.get_value(race)
                 value_set = set(str(value).split(","))
                 copyofvalue_set = set(str(copyofvalue).split(","))
                 if value_set != copyofvalue_set:
                     equal = False
             if not equal:
-                print(key + " != " + copyofkey)
+                print(hotkey.name + " != " + hotkeycopyof.name)
                 for race in races:
-                    index = races.index(race)
-                    value = values[index]
-                    copyofvalue = copyofvalues[index]
+                    value = hotkey.get_raw_value(race)
+                    copyofvalue = hotkeycopyof.get_value(race)
                     if not value:
                         value = " "
+                    if not copyofvalue:
+                        copyofvalue = " "
                     print(race + ": " + str(value) + "\t" + str(copyofvalue))
-                default = default_parser.get(section, key)
+                default = hotkey.default
                 if not default:
                     default = " "
-                copyofdefault = default_parser.get(section, copyofkey)
+                copyofdefault = hotkeycopyof.default
                 if not copyofdefault:
                     copyofdefault = " "
                 print("D: " + str(default) + "\t" + str(copyofdefault) + " (default)")
