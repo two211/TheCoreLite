@@ -601,7 +601,7 @@ init_seed_hotkeyfile_parser()
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
-# generate(model)
+generate(model)
 analyse(model)
 
 
