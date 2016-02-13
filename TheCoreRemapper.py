@@ -566,7 +566,7 @@ def wrong_inherit(model):
         for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
             if not hotkey.copyOf:
                 continue
-            hotkeycopyof = model[section][hotkey.copyOf]
+            hotkeycopyof = resolve_copyof(model, section, hotkey)
             equal = True
             for race in races:
                 value = hotkey.get_value(race)
