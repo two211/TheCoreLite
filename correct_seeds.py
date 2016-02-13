@@ -1,11 +1,8 @@
 ##################################################
 #
-# Filename: TheCoreRemapper.py
-# Author: Jonny Weiss, Mark Rösler
-# Description: Script to take the LM layouts of TheCore and generate the other 44 layouts.
-# Change Log:
-#   9/25/12 - Created
-#   9/26/12 - Finished initial functionality
+# Filename: correct_seeds.py
+# Author: Mark Rösler
+# Description: Script to correct the seed layouts if all wrong inhertis are fixed
 #
 ##################################################
 import collections
@@ -220,12 +217,6 @@ def resolve_copyof(model, section, hotkey):
             return hotkey
 
 
-# check sections
 init_seed_hotkeyfile_parser()
 model = create_model()
 correct_seeds(model)
-
-
-# Quick test to see if 4 seed files are error free
-#     Todo:    expand this to every single file in every directory
-#             expand both SAME_CHECKS and CONFLICT_CHECKS
