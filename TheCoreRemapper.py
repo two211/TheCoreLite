@@ -63,9 +63,11 @@ class LogLevel(Enum):
     Error = "ERROR"
     
 class Logger:
-    def __init__(self, title, filepath=None):
+    def __init__(self, title, filepath=None, log_file=[LogLevel.Warn, LogLevel.Error], log_consol=[LogLevel.Info, LogLevel.Error]):
         self.title = title
         self.filepath = filepath
+        self.log_file = log_file
+        self.log_consol = log_consol
         self.messages = {}
         self.messages[LogLevel.Info] = []
         self.messages[LogLevel.Warn] = []
@@ -82,23 +84,23 @@ class Logger:
     def log(self, log_level, msg):
         msg_str = self.get_message_str(log_level, msg)
         self.messages[log_level].append(msg_str)
-        if log_level == LogLevel.Info or log_level == LogLevel.Error:
+        if log_level in self.log_consol:
             print(msg_str)
         
     def finish(self):
         output = "----------------------------\n"
         output = output + "Finished (" + self.title + ") - "
-        output = output + "Warns: " + str(len(self.messages[LogLevel.Warn])) + " "
-        output = output + "Errors: " + str(len(self.messages[LogLevel.Error])) + "\n"
+        for log_level_file in self.log_file:
+            output = output + log_level_file.value + "s: " + str(len(self.messages[log_level_file])) + " "
+        output = output + "\n"
         output = output + "============================"
         print(output)
         if not self.filepath is None:
             with open(self.filepath, 'w') as file:
-                file.write(self.get_start_str())
-                for line in self.messages[LogLevel.Error]:
-                    file.write(line)
-                for line in self.messages[LogLevel.Warn]:
-                    file.write(line)
+                file.write(self.get_start_str() + "\n")
+                for log_level_file in self.log_file:
+                    for line in self.messages[log_level_file]:
+                        file.write(line)
                 file.write(output)
         
     def get_message_str(self, log_level, msg):
@@ -201,18 +203,21 @@ def create_filepath(race, side, size, path=""):
     return filepath
 
 def new_keys_from_seed_hotkeys():
+    logger = Logger("Search for new Keys in seed layouts", log_consol=[LogLevel.Info], log_file=[])
     for race in races:
         for section in hotkeyfile_parsers[race].sections():
             for item in hotkeyfile_parsers[race].items(section):
                 key = item[0]
                 if not default_parser.has_option(section, key):
                     default_parser.set(section, key, "")
+                    logger.log(LogLevel.Info, "New key found " + key + " added to " + default_filepath + " please add a default value")
 
     file = open(default_filepath, 'w')
     default_parser.write(file)
     file.close()
     order(default_filepath)
     default_parser.read(default_filepath)
+    logger.finish()
 
 def order(filepath):
     read_parser = ConfigParser()
@@ -245,14 +250,7 @@ def order(filepath):
     file.close()
 
 def check_defaults():
-    warn = False
-    parsers = {}
-    for race in races:
-        filepath = prefix + " " + race + "LM " + suffix
-        seed_hotkeyfile_parser = ConfigParser()
-        seed_hotkeyfile_parser.read(filepath)
-        parsers[race] = seed_hotkeyfile_parser
-
+    logger = Logger("Check defaults", "defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
@@ -261,20 +259,19 @@ def check_defaults():
             if not default or multidefault:
                 seedhas = True
                 for race in races:
-                    if not parsers[race].has_option(section, key):
+                    if not hotkeyfile_parsers[race].has_option(section, key):
                         seedhas = False
                 inherit = inherit_parser.has_option(section, key)
 
                 if multidefault:
                     if not seedhas and not inherit:
-                        print("[ERROR] key has multiple diffrent defaults: set in all seed layouts value for this key (or unbound) " + key)
-
+                        logger.log(LogLevel.Error, "key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) " + key)
                 if not default:
                     if seedhas or inherit:
-                        if warn:
-                            print("[WARN] no default " + key)
+                        logger.log(LogLevel.Warn, "[WARN] no default " + key)
                     else:
-                        print("[ERROR] no default " + key)
+                        logger.log(LogLevel.Warn, "[ERROR] no default " + key)
+    logger.finish()
 
 def create_model():
     model = {}
@@ -300,7 +297,7 @@ def create_model():
     return model
 
 def generate(seed_model):
-    logger = Logger("Generation")
+    logger = Logger("Generation", log_consol=[LogLevel.Info], log_file=[])
     seed_models = init_models()
     for race in races:
         logger.log(LogLevel.Info, "generate model for race: " + race + " side: L size: M keyboardlayout: " + seed_layout)
@@ -456,6 +453,7 @@ def analyse(model):
 
 
 def same_check(model):
+    logger = Logger("same check", "same_check.log", log_consol=[], log_file=[LogLevel.Error])
     for race in races:
         for same_set in SAME_CHECKS:  # @UndefinedVariable
             same_set.sort()
@@ -469,12 +467,14 @@ def same_check(model):
                     if not model[section][key].get_value(race) == value:
                         mismatched = True
                 if mismatched:
-                    print("============================")
-                    print("---- Mismatched values in " + race + " ----")
+                    log_msg = "Mismatched values in race: " + race
                     for key in same_set:
-                        print(key + " = " + model[section][key].get_value(race))
+                        log_msg = log_msg + "\n\t" + key + " = " + model[section][key].get_value(race)
+                    logger.log(LogLevel.Error, log_msg)
+    logger.finish()
 
 def conflict_check(model):
+    logger = Logger("conflict check", "conflict_check.log", log_consol=[], log_file=[LogLevel.Error])
     for race in races:
         for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
             conflict_set.sort()
@@ -494,8 +494,7 @@ def conflict_check(model):
             
             for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
                 if count > 1:
-                    print("============================")
-                    print("---- Conflict of hotkeys in " + race + " " + commandcard_key + " ----")
+                    log_msg = "Conflict of hotkeys in race: " + race + " commandcard: " + commandcard_key
                     for key in conflict_set:
                         for section in collections.OrderedDict(sorted(model.items())):
                             if not key in model[section]:
@@ -508,12 +507,12 @@ def conflict_check(model):
                                 if issue_value == value:
                                     issue = True
                             if issue:        
-                                print(key + " = " + raw_values)
-
+                                log_msg + log_msg + "\n\t" + key + " = " + raw_values
+                    logger.log(LogLevel.Error, log_msg)
+    logger.finish()
+                
 def suggest_inherit(model):
-    print("------------------------------")
-    print("suggest inherit")
-    print("------------")
+    logger = Logger("suggest inherit", "suggest_inherit.log", log_consol=[], log_file=[LogLevel.Info])
     outputdict = {}
     for section in model:
         outputdict[section] = {}
@@ -543,24 +542,24 @@ def suggest_inherit(model):
         for values_id in collections.OrderedDict(sorted(outputdict[section].items())):
             hotkeys = outputdict[section][values_id]
             first = True
+            log_msg = ""
             for hotkey in collections.OrderedDict(sorted(hotkeys.items())).values():
                 if first:
                     for race in races:
                         value = hotkey.get_value(race)
-                        print(race + ": " + str(value))
+                        log_msg = log_msg + race + ": " + str(value) + "   "
                     first = False
-
-                print("\t" + hotkey.name + " default: " + hotkey.default, end="")
+                    log_msg = log_msg + "\n"
+                log_msg = log_msg + "\t" + hotkey.name + " default: " + hotkey.default
                 if hotkey.copyOf:
                     hotkeycopyof = model[section][hotkey.copyOf]
-                    print(" copyof: " + hotkeycopyof.name + " default: " + hotkeycopyof.default, end="")
-                print()
-            print("------------")
-    print()
+                    log_msg = log_msg + " copyof: " + hotkeycopyof.name + " default: " + hotkeycopyof.default
+                log_msg = log_msg + "\n"
+            logger.log(LogLevel.Info, log_msg)
+    logger.finish()
 
 def wrong_inherit(model):
-    print("------------------------------")
-    print("Wrong inherit")
+    logger = Logger("wrong inherit", "wrong_inherit.log", log_consol=[], log_file=[LogLevel.Error])
     for section in collections.OrderedDict(sorted(model.items())):
         for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
             if not hotkey.copyOf:
@@ -575,7 +574,7 @@ def wrong_inherit(model):
                 if value_set != copyofvalue_set:
                     equal = False
             if not equal:
-                print(hotkey.name + " != " + hotkeycopyof.name)
+                log_msg = hotkey.name + " != " + hotkeycopyof.name + "\n"
                 for race in races:
                     value = hotkey.get_raw_value(race)
                     copyofvalue = hotkeycopyof.get_value(race)
@@ -583,23 +582,23 @@ def wrong_inherit(model):
                         value = " "
                     if not copyofvalue:
                         copyofvalue = " "
-                    print(race + ": " + str(value) + "\t" + str(copyofvalue))
+                    log_msg = log_msg + "\t" + race + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
                 default = hotkey.default
                 if not default:
                     default = " "
                 copyofdefault = hotkeycopyof.default
                 if not copyofdefault:
                     copyofdefault = " "
-                print("D: " + str(default) + "\t" + str(copyofdefault) + " (default)")
-                print()
-    print()
+                log_msg = log_msg + "\tD: " + str(default) + "\t" + str(copyofdefault) + " (default)"
+                logger.log(LogLevel.Error, log_msg)
+    logger.finish()
 
 
-print("___________.__           _________                      _________                                   __                " + "\n" +
-    "\\__    ___/|  |__   ____ \\_   ___ \\  ___________   ____ \\_   ___ \\  ____   _______  __ ____________/  |_  ___________ " + "\n" +
-    "  |    |   |  |  \\_/ __ \\/    \\  \\/ /  _ \\_  __ \\_/ __ \\/    \\  \\/ /  _ \\ /    \\  \\/ // __ \\_  __ \\   __\\/ __ \\_  __ \\" + "\n" +
-    "  |    |   |   Y  \\  ___/\\     \\___(  <_> )  | \\/\\  ___/\\     \\___(  <_> )   |  \   /\\  ___/|  | \\/|  | \\  ___/|  | \\/" + "\n" +
-    "  |____|   |___|  /\\___  >\\______  /\\____/|__|    \\___  >\\______  /\\____/|___|  /\\_/  \\___  >__|   |__|  \\___  >__|   " + "\n" +
+print("___________.__           _________                      _________                                   __                " + "\n" + 
+    "\\__    ___/|  |__   ____ \\_   ___ \\  ___________   ____ \\_   ___ \\  ____   _______  __ ____________/  |_  ___________ " + "\n" + 
+    "  |    |   |  |  \\_/ __ \\/    \\  \\/ /  _ \\_  __ \\_/ __ \\/    \\  \\/ /  _ \\ /    \\  \\/ // __ \\_  __ \\   __\\/ __ \\_  __ \\" + "\n" + 
+    "  |    |   |   Y  \\  ___/\\     \\___(  <_> )  | \\/\\  ___/\\     \\___(  <_> )   |  \   /\\  ___/|  | \\/|  | \\  ___/|  | \\/" + "\n" + 
+    "  |____|   |___|  /\\___  >\\______  /\\____/|__|    \\___  >\\______  /\\____/|___|  /\\_/  \\___  >__|   |__|  \\___  >__|   " + "\n" + 
     "                \\/     \\/        \\/                   \\/        \\/            \\/          \\/                 \\/       " + "\n\n\n")
 
 init_seed_hotkeyfile_parser()
