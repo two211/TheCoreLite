@@ -1,4 +1,4 @@
-Pre-Requisites: You must have Python 3.0+ installed to run this script.
+Pre-Requisites: You must have Python 3.5.1+ installed to run this script.
 
 Brief Overview of Important Files:
 

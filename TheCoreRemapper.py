@@ -8,12 +8,13 @@
 #   9/26/12 - Finished initial functionality
 #
 ##################################################
-import collections
+from enum import Enum
+import collections  # @UnusedImport
 import configparser
-import os
+import os  # @UnusedImport
 
-from conflict_checks import *  # @UnresolvedImport
-from same_checks import *  # @UnresolvedImport
+from conflict_checks import *  # @UnresolvedImport @UnusedWildImport
+from same_checks import *  # @UnresolvedImport @UnusedWildImport
 
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
@@ -24,20 +25,87 @@ class ConfigParser(configparser.ConfigParser):
     def write(self, file):
         return super().write(file, space_around_delimiters=False)
 
+
+class Races(Enum):
+    Protoss = "P"
+    Terran = "T"
+    Random = "R"
+    Zerg = "Z"
+
 PROTOSS = "P"
 TERRAN = "T"
 RANDOM = "R"
 ZERG = "Z"
 races = [PROTOSS, TERRAN, RANDOM, ZERG]
 
+class Sides(Enum):
+    Right = "R"
+    Left = "L"
+
 RIGHT = "R"
 LEFT = "L"
 sides = [LEFT, RIGHT]
+
+class Sizes (Enum):
+    Small = "S"
+    Medium = "M"
+    Large = "L"
 
 SMALL = "S"
 MEDIUM = "M"
 LARGE = "L"
 sizes = [SMALL, MEDIUM, LARGE]
+
+
+class LogLevel(Enum):
+    Info = "INFO"
+    Warn = "WARN"
+    Error = "ERROR"
+    
+class Logger:
+    def __init__(self, title, filepath=None):
+        self.title = title
+        self.filepath = filepath
+        self.messages = {}
+        self.messages[LogLevel.Info] = []
+        self.messages[LogLevel.Warn] = []
+        self.messages[LogLevel.Error] = []
+        print(self.get_start_str())
+
+    
+    def get_start_str(self):
+        output = "============================\n" 
+        output = output + "Start " + self.title + "\n"
+        output = output + "----------------------------"
+        return output
+    
+    def log(self, log_level, msg):
+        msg_str = self.get_message_str(log_level, msg)
+        self.messages[log_level].append(msg_str)
+        if log_level == LogLevel.Info or log_level == LogLevel.Error:
+            print(msg_str)
+        
+    def finish(self):
+        output = "----------------------------\n"
+        output = output + "Finished (" + self.title + ") - "
+        output = output + "Warns: " + str(len(self.messages[LogLevel.Warn])) + " "
+        output = output + "Errors: " + str(len(self.messages[LogLevel.Error])) + "\n"
+        output = output + "============================"
+        print(output)
+        if not self.filepath is None:
+            with open(self.filepath, 'w') as file:
+                file.write(self.get_start_str())
+                for line in self.messages[LogLevel.Error]:
+                    file.write(line)
+                for line in self.messages[LogLevel.Warn]:
+                    file.write(line)
+                file.write(output)
+        
+    def get_message_str(self, log_level, msg):
+        msg_str = "[" + log_level.value + "]: " + msg
+        if msg.count('\n') > 0:
+            msg_str = msg_str + "\n" 
+        return msg_str
 
 # Read the settings
 settings_parser = ConfigParser()
@@ -232,15 +300,23 @@ def create_model():
     return model
 
 def generate(seed_model):
+    logger = Logger("Generation")
     seed_models = init_models()
     for race in races:
+        logger.log(LogLevel.Info, "generate model for race: " + race + " side: L size: M keyboardlayout: " + seed_layout)
         seed_models[race][LEFT][MEDIUM] = extract_race(seed_model, race)
+        logger.log(LogLevel.Info, "generate model for race: " + race + " side: R size: M keyboardlayout: " + seed_layout)
         seed_models[race][RIGHT][MEDIUM] = convert_side(seed_models[race][LEFT][MEDIUM], RIGHT)
+        logger.log(LogLevel.Info, "generate model for race: " + race + " side: L size: S keyboardlayout: " + seed_layout)
         seed_models[race][LEFT][SMALL] = shift_left(seed_models[race][LEFT][MEDIUM], LEFT)
+        logger.log(LogLevel.Info, "generate model for race: " + race + " side: R size: S keyboardlayout: " + seed_layout)
         seed_models[race][RIGHT][SMALL] = shift_right(seed_models[race][RIGHT][MEDIUM], RIGHT)
+        logger.log(LogLevel.Info, "generate model for race: " + race + " side: L size: L keyboardlayout: " + seed_layout)
         seed_models[race][LEFT][LARGE] = shift_right(seed_models[race][LEFT][MEDIUM], LEFT)
+        logger.log(LogLevel.Info, "generate model for race: " + race + " side: R size: L keyboardlayout: " + seed_layout)
         seed_models[race][RIGHT][LARGE] = shift_left(seed_models[race][RIGHT][MEDIUM], RIGHT)
-    translate_and_create_files(seed_models)
+    translate_and_create_files(seed_models, logger)
+    logger.finish()
 
 def init_models():
     models = {}
@@ -339,22 +415,23 @@ def shift_right(seed_model, side):
 def shift(seed_model, shift_section, side):
     return modify_model(seed_model, settings_parser, shift_section, side)
 
-def translate_and_create_files(models):
+def translate_and_create_files(models, logger):
     layouts = layout_parser.sections()
     for race in races:
         for side in sides:
             for size in sizes:
                 for layout in layouts:
                     if layout != seed_layout:
+                        logger.log(LogLevel.Info, "translate race: " + race + " side: R size: L keyboardlayout: " + layout)
                         model = translate(models[race][side][size], layout, side)
                     else:
                         model = models[race][side][size]
-                    create_file(model, race, side, size, layout)
+                    create_file(model, race, side, size, layout, logger)
 
 def translate(seed_model, layout, side):
     return modify_model(seed_model, layout_parser, layout, side)
 
-def create_file(model, race, side, size, layout):
+def create_file(model, race, side, size, layout, logger):
     hotkeyfile_parser = ConfigParser()
     for section in model:
         if not hotkeyfile_parser.has_section(section):
@@ -368,6 +445,7 @@ def create_file(model, race, side, size, layout):
     hotkeyfile_parser.write(hotkeyfile)
     hotkeyfile.close()
     order(filepath)
+    logger.log(LogLevel.Info, filepath + " created")
     return filepath
 
 def analyse(model):
@@ -516,6 +594,13 @@ def wrong_inherit(model):
                 print()
     print()
 
+
+print("___________.__           _________                      _________                                   __                " + "\n" +
+    "\\__    ___/|  |__   ____ \\_   ___ \\  ___________   ____ \\_   ___ \\  ____   _______  __ ____________/  |_  ___________ " + "\n" +
+    "  |    |   |  |  \\_/ __ \\/    \\  \\/ /  _ \\_  __ \\_/ __ \\/    \\  \\/ /  _ \\ /    \\  \\/ // __ \\_  __ \\   __\\/ __ \\_  __ \\" + "\n" +
+    "  |    |   |   Y  \\  ___/\\     \\___(  <_> )  | \\/\\  ___/\\     \\___(  <_> )   |  \   /\\  ___/|  | \\/|  | \\  ___/|  | \\/" + "\n" +
+    "  |____|   |___|  /\\___  >\\______  /\\____/|__|    \\___  >\\______  /\\____/|___|  /\\_/  \\___  >__|   |__|  \\___  >__|   " + "\n" +
+    "                \\/     \\/        \\/                   \\/        \\/            \\/          \\/                 \\/       " + "\n\n\n")
 
 init_seed_hotkeyfile_parser()
 # check sections
