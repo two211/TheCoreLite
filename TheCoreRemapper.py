@@ -15,15 +15,12 @@ import os
 from conflict_checks import *  # @UnresolvedImport
 from same_checks import *  # @UnresolvedImport
 
-SHOW_DUPLICATES = False
-VERIFY_ALL = False
-
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
- 
+
     def optionxform(self, opt):
         return opt
-    
+
     def write(self, file):
         return super().write(file, space_around_delimiters=False)
 
@@ -60,7 +57,7 @@ ddefault_parser.read(ddefault_filepath)
 inherit_filepath = 'TheCoreSeed.ini'
 inherit_parser = ConfigParser()
 inherit_parser.read(inherit_filepath)
-    
+
 prefix = settings_parser.get("Filenames", "Prefix")
 suffix = settings_parser.get("Filenames", "Suffix")
 seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
@@ -68,7 +65,7 @@ seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
 hotkeyfile_parsers = {}
 
 class Hotkey:
-    
+
     def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
         self.name = name
         self.section = section
@@ -88,12 +85,7 @@ class Hotkey:
             self.T = value
         elif race == ZERG:
             self.Z = value
-    
-    def default_instead_of_none_value(self, value):
-        if value is None:
-            value = self.default
-        return value
-    
+
     def get_raw_value(self, race):
         if race == PROTOSS:
             return self.P
@@ -103,10 +95,13 @@ class Hotkey:
             return self.T
         elif race == ZERG:
             return self.Z
-    
+
     def get_value(self, race):
-        return self.default_instead_of_none_value(self.get_raw_value(race))
-    
+        value = self.get_raw_value(race)
+        if value is None:
+            value = self.default
+        return value
+
     def get_values_id(self):
         values = ""
         for race in races:
@@ -119,10 +114,10 @@ class Hotkey:
                     value = alternate
                     first = False
                 else:
-                    value = value + "," + alternate 
+                    value = value + "," + alternate
             values = values + race + ":" + value + "\n"
         return values
-        
+
 def init_seed_hotkeyfile_parser():
     for race in races:
         hotkeyfile_parser = ConfigParser()
@@ -201,11 +196,11 @@ def check_defaults():
                     if not parsers[race].has_option(section, key):
                         seedhas = False
                 inherit = inherit_parser.has_option(section, key)
-                
+
                 if multidefault:
                     if not seedhas and not inherit:
                         print("[ERROR] key has multiple diffrent defaults: set in all seed layouts value for this key (or unbound) " + key)
-                
+
                 if not default:
                     if seedhas or inherit:
                         if warn:
@@ -340,7 +335,7 @@ def shift_left(seed_model, side):
 def shift_right(seed_model, side):
     shift_section = side + 'ShiftRightMaps'
     return shift(seed_model, shift_section, side)
-            
+
 def shift(seed_model, shift_section, side):
     return modify_model(seed_model, settings_parser, shift_section, side)
 
@@ -376,140 +371,66 @@ def create_file(model, race, side, size, layout):
     return filepath
 
 def analyse(model):
-    conflict_and_same_checkts()
-    verify_seed_with_generate()
+    same_check(model)
+    conflict_check(model)
     wrong_inherit(model)
     suggest_inherit(model)
 
-def conflict_and_same_checkts():
+
+def same_check(model):
     for race in races:
-        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM, seed_layout)
-        verify_file(hotkeyfilepath)
+        for same_set in SAME_CHECKS:  # @UndefinedVariable
+            same_set.sort()
+            first_key = same_set[0]
+            for section in collections.OrderedDict(sorted(model.items())):
+                if not first_key in model[section]:
+                    continue
+                mismatched = False
+                value = model[section][first_key].get_value(race)
+                for key in same_set:
+                    if not model[section][key].get_value(race) == value:
+                        mismatched = True
+                if mismatched:
+                    print("============================")
+                    print("---- Mismatched values in " + race + " ----")
+                    for key in same_set:
+                        print(key + " = " + model[section][key].get_value(race))
 
-def verify_file(filepath):
-    print("verify file: " + filepath)
-    hotkeys_file = open(filepath, 'r')
-    dicti = {}
-    for line in hotkeys_file:
-        line = line.strip()
-        if len(line) == 0 or line[0] == "[":
-            continue
-        pair = line.split("=")
-        key = pair[0]
-        if key in dicti:
-            dicti[key] = [True, pair[1], key, dicti[key][3]]
-        else:
-            dicti[key] = [True, pair[1], key, ""]
-
-    # Check for duplicates
-    if SHOW_DUPLICATES:
-        verify_parser = ConfigParser()
-        dup_dict = {}
-        verify_parser.read(filepath)
-        gen_items = verify_parser.items('Hotkeys')
-        for pair in gen_items:
-            if pair[1] in dup_dict:
-                dup_dict[pair[1]].append(pair[0])
-            else:
-                dup_dict[pair[1]] = [pair[0]]
-        for key in dup_dict:
-            array = dup_dict[key]
-            if len(array) > 1:
-                print("============================")
-                print(key + "    DUPLICATES")
-                for a in array:
-                    print(a)
-
-    for same_set in SAME_CHECKS:  # @UndefinedVariable
-        mismatched = False
-        value = dicti[same_set[0]][1]
-        for item in same_set:
-            if not dicti[item][1] == value:
-                mismatched = True
-        if mismatched:
-            print("============================")
-            print("---- Mismatched values ----")
-            for item in same_set:
-                print(item + " = " + dicti[item][1])
-
-    for commandcard, conflict_set in CONFLICT_CHECKS.items():  # @UndefinedVariable
-        hotkeys = []
-        count_hotkeys = {}
-        for item in conflict_set:
-            if not dicti.__contains__(item):
-                print('WARNING: ' + item + ' does not exist in HotKey-file')
-            else :
-                append = dicti[item][1]
-                hotkeys.append(append)
-        for key in hotkeys:
-            if not key in count_hotkeys:
-                count_hotkeys[key] = 1
-            else:
-                count_hotkeys[key] = count_hotkeys[key] + 1
-        for count in count_hotkeys:
-            if count_hotkeys[count] > 1:
-                print("============================")
-                print("---- Conflict of hotkeys in " + commandcard + " ----")
-                for item in conflict_set:
-                    key = dicti[item][1]
-                    if count_hotkeys[key] > 1:
-                        print(item + " = " + key)
-                # print(conflict_set)
-    print("")
-
-def verify_seed_with_generate():
-    print("-------------------------")
-    print(" Start Comparing Seeds Files with Generated Files")
-
+def conflict_check(model):
     for race in races:
-        filepath_gen = create_filepath(race, LEFT, MEDIUM, seed_layout)
-        parser_gen = ConfigParser()
-        parser_gen.read(filepath_gen)
-
-        print("Race: " + race)
-        print()
-
-        print("In Seed not in Gen")
-        for section in hotkeyfile_parsers[race].sections():
-            for seed_item in hotkeyfile_parsers[race].items(section):
-                key = seed_item[0]
-                if not parser_gen.has_option(section, key):
-                    print(key)
-        print()
-        print("In Seed diffrent in Gen")
-        for section in default_parser.sections():
-            for item in default_parser.items(section):
-                key = item[0]
-                if parser_gen.has_option(section, key) and hotkeyfile_parsers[race].has_option(section, key):
-                    value_gen = parser_gen.get(section, key)
-                    value_seed = hotkeyfile_parsers[race].get(section, key)
-                    seed_value_set = set(str(value_seed).split(","))
-                    gen_value_set = set(str(value_gen).split(","))
-                    if seed_value_set != gen_value_set:
-                        if inherit_parser.has_option(section, key):
-                            original = inherit_parser.get(section, key)
-                            print(key + " seed: " + value_seed + " gen: " + value_gen + " hint: copy of " + original)
-                        else:
-                            print(key + " seed: " + value_seed + " gen: " + value_gen)
-
-        print()
-        print("In Gen not in Seed (defaults filtered)")
-        for section in parser_gen.sections():
-            for gen_item in parser_gen.items(section):
-                key = gen_item[0]
-                value_gen = gen_item[1]
-                if not hotkeyfile_parsers[race].has_option(section, key):
-                    default = default_parser.get(section, key)
-                    default_value_set = set(str(default).split(","))
-                    gen_value_set = set(str(value_gen).split(","))
-                    if gen_value_set != default_value_set:
-                        if inherit_parser.has_option(section, key):
-                            original = inherit_parser.get(section, key)
-                            print(key + " gen: " + value_gen + " seed default: " + default + " hint: copy of " + original)
-                        else:
-                            print(key + " gen: " + value_gen + " seed default: " + default)
-        print()
-    print("-------------------------")
+        for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
+            conflict_set.sort()
+            count_hotkeys = {}
+            for section in model:
+                for key, hotkey in model[section].items():
+                    if key in conflict_set:
+                        values = hotkey.get_value(race).split(",")
+                        for value in values:
+                            if not value:
+                                continue
+                            if not value in count_hotkeys:
+                                count_hotkeys[value] = 1
+                            else:
+                                count_hotkeys[value] = count_hotkeys[value] + 1
+            
+            
+            for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
+                if count > 1:
+                    print("============================")
+                    print("---- Conflict of hotkeys in " + race + " " + commandcard_key + " ----")
+                    for key in conflict_set:
+                        for section in collections.OrderedDict(sorted(model.items())):
+                            if not key in model[section]:
+                                continue
+                            raw_values = model[section][key].get_value(race)
+                            values = raw_values.split(",")
+                            values.sort()
+                            issue = False
+                            for issue_value in values:
+                                if issue_value == value:
+                                    issue = True
+                            if issue:        
+                                print(key + " = " + raw_values)
 
 def suggest_inherit(model):
     print("------------------------------")
@@ -539,10 +460,10 @@ def suggest_inherit(model):
                         outputdict[section][values_id][hotkey1.name] = hotkey1
                     if not hotkey2.name in outputdict[section][values_id]:
                         outputdict[section][values_id][hotkey2.name] = hotkey2
-    
-    for section in outputdict:
+
+    for section in collections.OrderedDict(sorted(outputdict.items())):
         for values_id in collections.OrderedDict(sorted(outputdict[section].items())):
-            hotkeys = outputdict[section][values_id] 
+            hotkeys = outputdict[section][values_id]
             first = True
             for hotkey in collections.OrderedDict(sorted(hotkeys.items())).values():
                 if first:
@@ -550,7 +471,7 @@ def suggest_inherit(model):
                         value = hotkey.get_value(race)
                         print(race + ": " + str(value))
                     first = False
-                
+
                 print("\t" + hotkey.name + " default: " + hotkey.default, end="")
                 if hotkey.copyOf:
                     hotkeycopyof = model[section][hotkey.copyOf]
@@ -562,7 +483,7 @@ def suggest_inherit(model):
 def wrong_inherit(model):
     print("------------------------------")
     print("Wrong inherit")
-    for section in model:
+    for section in collections.OrderedDict(sorted(model.items())):
         for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
             if not hotkey.copyOf:
                 continue
@@ -596,15 +517,10 @@ def wrong_inherit(model):
     print()
 
 
-# check sections
 init_seed_hotkeyfile_parser()
+# check sections
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
 generate(model)
 analyse(model)
-
-
-# Quick test to see if 4 seed files are error free
-#     Todo:    expand this to every single file in every directory
-#             expand both SAME_CHECKS and CONFLICT_CHECKS
