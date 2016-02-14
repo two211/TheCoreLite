@@ -25,37 +25,20 @@ class ConfigParser(configparser.ConfigParser):
     def write(self, file):
         return super().write(file, space_around_delimiters=False)
 
-
 class Races(Enum):
     Protoss = "P"
     Terran = "T"
     Random = "R"
     Zerg = "Z"
 
-PROTOSS = "P"
-TERRAN = "T"
-RANDOM = "R"
-ZERG = "Z"
-races = [PROTOSS, TERRAN, RANDOM, ZERG]
-
 class Sides(Enum):
     Right = "R"
     Left = "L"
-
-RIGHT = "R"
-LEFT = "L"
-sides = [LEFT, RIGHT]
 
 class Sizes (Enum):
     Small = "S"
     Medium = "M"
     Large = "L"
-
-SMALL = "S"
-MEDIUM = "M"
-LARGE = "L"
-sizes = [SMALL, MEDIUM, LARGE]
-
 
 class LogLevel(Enum):
     Info = "INFO"
@@ -147,23 +130,23 @@ class Hotkey:
         self.copyOf = copyOf
 
     def set_value(self, race, value):
-        if race == PROTOSS:
+        if race == Races.Protoss:
             self.P = value
-        elif race == RANDOM:
+        elif race == Races.Random:
             self.R = value
-        elif race == TERRAN:
+        elif race == Races.Terran:
             self.T = value
-        elif race == ZERG:
+        elif race == Races.Zerg:
             self.Z = value
 
     def get_raw_value(self, race):
-        if race == PROTOSS:
+        if race == Races.Protoss:
             return self.P
-        elif race == RANDOM:
+        elif race == Races.Random:
             return self.R
-        elif race == TERRAN:
+        elif race == Races.Terran:
             return self.T
-        elif race == ZERG:
+        elif race == Races.Zerg:
             return self.Z
 
     def get_value(self, race):
@@ -174,7 +157,7 @@ class Hotkey:
 
     def get_values_id(self):
         values = ""
-        for race in races:
+        for race in Races:
             value = self.get_value(race)
             first = True
             alternates = value.split(",")
@@ -185,18 +168,18 @@ class Hotkey:
                     first = False
                 else:
                     value = value + "," + alternate
-            values = values + race + ":" + value + "\n"
+            values = values + race.value + ":" + value + "\n"
         return values
 
 def init_seed_hotkeyfile_parser():
-    for race in races:
+    for race in Races:
         hotkeyfile_parser = ConfigParser()
-        hotkeyfilepath = create_filepath(race, LEFT, MEDIUM)
+        hotkeyfilepath = create_filepath(race, Sides.Left, Sizes.Medium)
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[race] = hotkeyfile_parser
 
 def create_filepath(race, side, size, path=""):
-    filename = prefix + " " + race + side + size + " " + suffix
+    filename = prefix + " " + race.value + side.value + size.value + " " + suffix
     filepath = filename
     if path:
         filepath = path + "/" + filename
@@ -204,7 +187,7 @@ def create_filepath(race, side, size, path=""):
 
 def new_keys_from_seed_hotkeys():
     logger = Logger("Search for new Keys in seed layouts", log_consol=[LogLevel.Info], log_file=[])
-    for race in races:
+    for race in Races:
         for section in hotkeyfile_parsers[race].sections():
             for item in hotkeyfile_parsers[race].items(section):
                 key = item[0]
@@ -258,7 +241,7 @@ def check_defaults():
             multidefault = ddefault_parser.has_option(section, key)
             if not default or multidefault:
                 seedhas = True
-                for race in races:
+                for race in Races:
                     if not hotkeyfile_parsers[race].has_option(section, key):
                         seedhas = False
                 inherit = inherit_parser.has_option(section, key)
@@ -284,7 +267,7 @@ def create_model():
             default = item[1]
             hotkey.default = default
 
-            for race in races:
+            for race in Races:
                 if hotkeyfile_parsers[race].has_option(section, key):
                     value = hotkeyfile_parsers[race].get(section, key)  #
                     hotkey.set_value(race, value)
@@ -299,27 +282,27 @@ def create_model():
 def generate(seed_model):
     logger = Logger("Generation", log_consol=[LogLevel.Info], log_file=[])
     seed_models = init_models()
-    for race in races:
-        logger.log(LogLevel.Info, "generate model for race: " + race + " side: L size: M keyboardlayout: " + seed_layout)
-        seed_models[race][LEFT][MEDIUM] = extract_race(seed_model, race)
-        logger.log(LogLevel.Info, "generate model for race: " + race + " side: R size: M keyboardlayout: " + seed_layout)
-        seed_models[race][RIGHT][MEDIUM] = convert_side(seed_models[race][LEFT][MEDIUM], RIGHT)
-        logger.log(LogLevel.Info, "generate model for race: " + race + " side: L size: S keyboardlayout: " + seed_layout)
-        seed_models[race][LEFT][SMALL] = shift_left(seed_models[race][LEFT][MEDIUM], LEFT)
-        logger.log(LogLevel.Info, "generate model for race: " + race + " side: R size: S keyboardlayout: " + seed_layout)
-        seed_models[race][RIGHT][SMALL] = shift_right(seed_models[race][RIGHT][MEDIUM], RIGHT)
-        logger.log(LogLevel.Info, "generate model for race: " + race + " side: L size: L keyboardlayout: " + seed_layout)
-        seed_models[race][LEFT][LARGE] = shift_right(seed_models[race][LEFT][MEDIUM], LEFT)
-        logger.log(LogLevel.Info, "generate model for race: " + race + " side: R size: L keyboardlayout: " + seed_layout)
-        seed_models[race][RIGHT][LARGE] = shift_left(seed_models[race][RIGHT][MEDIUM], RIGHT)
+    for race in Races:
+        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: L size: M keyboardlayout: " + seed_layout)
+        seed_models[race][Sides.Left][Sizes.Medium] = extract_race(seed_model, race)
+        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: R size: M keyboardlayout: " + seed_layout)
+        seed_models[race][Sides.Right][Sizes.Medium] = convert_side(seed_models[race][Sides.Left][Sizes.Medium], Sides.Right)
+        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: L size: S keyboardlayout: " + seed_layout)
+        seed_models[race][Sides.Left][Sizes.Small] = shift_left(seed_models[race][Sides.Left][Sizes.Medium], Sides.Left)
+        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: R size: S keyboardlayout: " + seed_layout)
+        seed_models[race][Sides.Right][Sizes.Small] = shift_right(seed_models[race][Sides.Right][Sizes.Medium], Sides.Right)
+        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: L size: L keyboardlayout: " + seed_layout)
+        seed_models[race][Sides.Left][Sizes.Large] = shift_right(seed_models[race][Sides.Left][Sizes.Medium], Sides.Left)
+        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: R size: L keyboardlayout: " + seed_layout)
+        seed_models[race][Sides.Right][Sizes.Large] = shift_left(seed_models[race][Sides.Right][Sizes.Medium], Sides.Right)
     translate_and_create_files(seed_models, logger)
     logger.finish()
 
 def init_models():
     models = {}
-    for race in races:
+    for race in Races:
         models[race] = {}
-        for side in sides:
+        for side in Sides:
             models[race][side] = {}
     return models
 
@@ -361,7 +344,7 @@ def modify_model(seed_model, parser, parser_section, side):
 
 def modify_value(org_value, parser, section, side):
     altgr = "0"
-    if parser == layout_parser and side == RIGHT:
+    if parser == layout_parser and side == Sides.Right:
         altgr = layout_parser.get(section, "AltGr")
 
     newalternates = []
@@ -402,11 +385,11 @@ def modify_value(org_value, parser, section, side):
     return newvalues
 
 def shift_left(seed_model, side):
-    shift_section = side + 'ShiftLeftMaps'
+    shift_section = side.value + 'ShiftLeftMaps'
     return shift(seed_model, shift_section, side)
 
 def shift_right(seed_model, side):
-    shift_section = side + 'ShiftRightMaps'
+    shift_section = side.value + 'ShiftRightMaps'
     return shift(seed_model, shift_section, side)
 
 def shift(seed_model, shift_section, side):
@@ -414,12 +397,12 @@ def shift(seed_model, shift_section, side):
 
 def translate_and_create_files(models, logger):
     layouts = layout_parser.sections()
-    for race in races:
-        for side in sides:
-            for size in sizes:
+    for race in Races:
+        for side in Sides:
+            for size in Sizes:
                 for layout in layouts:
                     if layout != seed_layout:
-                        logger.log(LogLevel.Info, "translate race: " + race + " side: R size: L keyboardlayout: " + layout)
+                        logger.log(LogLevel.Info, "translate race: " + race.value + " side: " + side.value + " size: " + size.value + " keyboardlayout: " + layout)
                         model = translate(models[race][side][size], layout, side)
                     else:
                         model = models[race][side][size]
@@ -454,7 +437,7 @@ def analyse(model):
 
 def same_check(model):
     logger = Logger("same check", "same_check.log", log_consol=[], log_file=[LogLevel.Error])
-    for race in races:
+    for race in Races:
         for same_set in SAME_CHECKS:  # @UndefinedVariable
             same_set.sort()
             first_key = same_set[0]
@@ -467,7 +450,7 @@ def same_check(model):
                     if not model[section][key].get_value(race) == value:
                         mismatched = True
                 if mismatched:
-                    log_msg = "Mismatched values in race: " + race
+                    log_msg = "Mismatched values in race: " + race.value
                     for key in same_set:
                         log_msg = log_msg + "\n\t" + key + " = " + model[section][key].get_value(race)
                     logger.log(LogLevel.Error, log_msg)
@@ -475,7 +458,7 @@ def same_check(model):
 
 def conflict_check(model):
     logger = Logger("conflict check", "conflict_check.log", log_consol=[], log_file=[LogLevel.Error])
-    for race in races:
+    for race in Races:
         for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
             conflict_set.sort()
             count_hotkeys = {}
@@ -494,7 +477,7 @@ def conflict_check(model):
             
             for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
                 if count > 1:
-                    log_msg = "Conflict of hotkeys in race: " + race + " commandcard: " + commandcard_key
+                    log_msg = "Conflict of hotkeys in race: " + race.value + " commandcard: " + commandcard_key
                     for key in conflict_set:
                         for section in collections.OrderedDict(sorted(model.items())):
                             if not key in model[section]:
@@ -522,7 +505,7 @@ def suggest_inherit(model):
                 if hotkey1.name == hotkey2.name:
                     continue
                 equal = True
-                for race in races:
+                for race in Races:
                     value = hotkey1.get_value(race)
                     value2 = hotkey2.get_value(race)
                     value_set = set(str(value).split(","))
@@ -545,9 +528,9 @@ def suggest_inherit(model):
             log_msg = ""
             for hotkey in collections.OrderedDict(sorted(hotkeys.items())).values():
                 if first:
-                    for race in races:
+                    for race in Races:
                         value = hotkey.get_value(race)
-                        log_msg = log_msg + race + ": " + str(value) + "   "
+                        log_msg = log_msg + race.value + ": " + str(value) + "   "
                     first = False
                     log_msg = log_msg + "\n"
                 log_msg = log_msg + "\t" + hotkey.name + " default: " + hotkey.default
@@ -566,7 +549,7 @@ def wrong_inherit(model):
                 continue
             hotkeycopyof = resolve_copyof(model, section, hotkey)
             equal = True
-            for race in races:
+            for race in Races:
                 value = hotkey.get_value(race)
                 copyofvalue = hotkeycopyof.get_value(race)
                 value_set = set(str(value).split(","))
@@ -575,14 +558,14 @@ def wrong_inherit(model):
                     equal = False
             if not equal:
                 log_msg = hotkey.name + " != " + hotkeycopyof.name + "\n"
-                for race in races:
+                for race in Races:
                     value = hotkey.get_raw_value(race)
                     copyofvalue = hotkeycopyof.get_value(race)
                     if not value:
                         value = " "
                     if not copyofvalue:
                         copyofvalue = " "
-                    log_msg = log_msg + "\t" + race + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
+                    log_msg = log_msg + "\t" + race.value + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
                 default = hotkey.default
                 if not default:
                     default = " "
