@@ -99,7 +99,7 @@ settings_parser.read('MapDefinitions.ini')
 layout_parser = ConfigParser()
 layout_parser.read('KeyboardLayouts.ini')
 
-default_filepath = 'NewDefaults.ini'
+default_filepath = 'Defaults.ini'
 default_parser = ConfigParser()
 default_parser.read(default_filepath)
 
