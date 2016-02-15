@@ -1,5 +1,5 @@
 ============================
-Start conflict check
+Start conflict check (log file: ConflictCheck.log)
 ----------------------------
 [ERROR]: Conflict of hotkeys in race: P commandcard: Coop/Protoss Story/Structures/Warp Stargate
 [ERROR]: Conflict of hotkeys in race: P commandcard: Coop/Protoss/Structures/Forge (Karax Commander)

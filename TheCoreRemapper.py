@@ -13,8 +13,8 @@ import collections  # @UnusedImport
 import configparser
 import os  # @UnusedImport
 
-from conflict_checks import *  # @UnresolvedImport @UnusedWildImport
-from same_checks import *  # @UnresolvedImport @UnusedWildImport
+from ConflictChecks import *  # @UnresolvedImport @UnusedWildImport
+from SameChecks import *  # @UnresolvedImport @UnusedWildImport
 
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
@@ -60,7 +60,10 @@ class Logger:
     
     def get_start_str(self):
         output = "============================\n" 
-        output = output + "Start " + self.title + "\n"
+        output = output + "Start " + self.title
+        if not self.filepath is None:
+            output = output + " (log file: " + self.filepath + ")"
+        output = output + "\n"
         output = output + "----------------------------"
         return output
     
@@ -99,15 +102,15 @@ settings_parser.read('MapDefinitions.ini')
 layout_parser = ConfigParser()
 layout_parser.read('KeyboardLayouts.ini')
 
-default_filepath = 'NewDefaults.ini'
+default_filepath = 'Defaults.ini'
 default_parser = ConfigParser()
 default_parser.read(default_filepath)
 
-ddefault_filepath = 'different_default.ini'
+ddefault_filepath = 'DifferentDefault.ini'
 ddefault_parser = ConfigParser()
 ddefault_parser.read(ddefault_filepath)
 
-inherit_filepath = 'TheCoreSeed.ini'
+inherit_filepath = 'Inheritance.ini'
 inherit_parser = ConfigParser()
 inherit_parser.read(inherit_filepath)
 
@@ -233,7 +236,7 @@ def order(filepath):
     file.close()
 
 def check_defaults():
-    logger = Logger("Check defaults", "defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
+    logger = Logger("Check defaults", "Defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
@@ -435,7 +438,7 @@ def analyse(model):
     suggest_inherit(model)
 
 def same_check(model):
-    logger = Logger("same check", "same_check.log", log_consol=[], log_file=[LogLevel.Error])
+    logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
     for race in Races:
         for same_set in SAME_CHECKS:  # @UndefinedVariable
             same_set.sort()
@@ -456,7 +459,7 @@ def same_check(model):
     logger.finish()
 
 def conflict_check(model):
-    logger = Logger("conflict check", "conflict_check.log", log_consol=[], log_file=[LogLevel.Error])
+    logger = Logger("conflict check", "ConflictCheck.log", log_consol=[], log_file=[LogLevel.Error])
     for race in Races:
         for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
             conflict_set.sort()
@@ -494,7 +497,7 @@ def conflict_check(model):
     logger.finish()
                 
 def suggest_inherit(model):
-    logger = Logger("suggest inherit", "suggest_inherit.log", log_consol=[], log_file=[LogLevel.Info])
+    logger = Logger("suggest inherit", "SuggestInheritance.log", log_consol=[], log_file=[LogLevel.Info])
     outputdict = {}
     for section in model:
         outputdict[section] = {}
@@ -539,7 +542,7 @@ def suggest_inherit(model):
     logger.finish()
 
 def wrong_inherit(model):
-    logger = Logger("wrong inherit", "wrong_inherit.log", log_consol=[], log_file=[LogLevel.Error])
+    logger = Logger("wrong inherit", "WrongInheritance.log", log_consol=[], log_file=[LogLevel.Error])
     for section in collections.OrderedDict(sorted(model.items())):
         for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
             if not hotkey.copyOf:
@@ -574,12 +577,17 @@ def wrong_inherit(model):
     logger.finish()
 
 
-print("___________.__           _________                      _________                                   __                " + "\n" + 
-    "\\__    ___/|  |__   ____ \\_   ___ \\  ___________   ____ \\_   ___ \\  ____   _______  __ ____________/  |_  ___________ " + "\n" + 
-    "  |    |   |  |  \\_/ __ \\/    \\  \\/ /  _ \\_  __ \\_/ __ \\/    \\  \\/ /  _ \\ /    \\  \\/ // __ \\_  __ \\   __\\/ __ \\_  __ \\" + "\n" + 
-    "  |    |   |   Y  \\  ___/\\     \\___(  <_> )  | \\/\\  ___/\\     \\___(  <_> )   |  \   /\\  ___/|  | \\/|  | \\  ___/|  | \\/" + "\n" + 
-    "  |____|   |___|  /\\___  >\\______  /\\____/|__|    \\___  >\\______  /\\____/|___|  /\\_/  \\___  >__|   |__|  \\___  >__|   " + "\n" + 
-    "                \\/     \\/        \\/                   \\/        \\/            \\/          \\/                 \\/       " + "\n\n\n")
+print("  ________         ______              " + "\n"
+    " /_  __/ /_  ___  / ____/___  ________ " + "\n"
+    "  / / / __ \\/ _ \\/ /   / __ \\/ ___/ _ \\" + "\n"
+    " / / / / / /  __/ /___/ /_/ / /  /  __/" + "\n"
+    "/_/ /_/ /_/\\___/\\____/\\____/_/   \\___/ " + "\n"
+    "   ______                           __           " + "\n"
+    "  / ____/___  ____ _   _____  _____/ /____  _____" + "\n"
+    " / /   / __ \\/ __ \\ | / / _ \\/ ___/ __/ _ \\/ ___/" + "\n"
+    "/ /___/ /_/ / / / / |/ /  __/ /  / /_/  __/ /    " + "\n"
+    "\\____/\\____/_/ /_/|___/\\___/_/   \\__/\\___/_/     " + "\n"
+    "                                                 " + "\n\n")
 
 init_seed_hotkeyfile_parser()
 # check sections

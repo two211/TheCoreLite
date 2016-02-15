@@ -39,15 +39,15 @@ settings_parser.read('MapDefinitions.ini')
 layout_parser = ConfigParser()
 layout_parser.read('KeyboardLayouts.ini')
 
-default_filepath = 'NewDefaults.ini'
+default_filepath = 'Defaults.ini'
 default_parser = ConfigParser()
 default_parser.read(default_filepath)
 
-ddefault_filepath = 'different_default.ini'
+ddefault_filepath = 'DifferentDefault.ini'
 ddefault_parser = ConfigParser()
 ddefault_parser.read(ddefault_filepath)
 
-inherit_filepath = 'TheCoreSeed.ini'
+inherit_filepath = 'Inheritance.ini'
 inherit_parser = ConfigParser()
 inherit_parser.read(inherit_filepath)
     

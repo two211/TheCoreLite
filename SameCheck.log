@@ -1,5 +1,5 @@
 ============================
-Start same check
+Start same check (log file: SameCheck.log)
 ----------------------------
 [ERROR]: Mismatched values in race: P
 	ProtossAirWeaponsLevel1/CyberneticsCore = G

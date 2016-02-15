@@ -1,5 +1,5 @@
 ============================
-Start wrong inherit
+Start wrong inherit (log file: WrongInheritance.log)
 ----------------------------
 [ERROR]: ArbiterMPRecall/ArbiterMP != MothershipCoreMassRecall/MothershipCore
 	P: D	4
