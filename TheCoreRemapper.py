@@ -13,8 +13,8 @@ import collections  # @UnusedImport
 import configparser
 import os  # @UnusedImport
 
-from conflict_checks import *  # @UnresolvedImport @UnusedWildImport
-from same_checks import *  # @UnresolvedImport @UnusedWildImport
+from ConflictChecks import *  # @UnresolvedImport @UnusedWildImport
+from SameChecks import *  # @UnresolvedImport @UnusedWildImport
 
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
@@ -103,11 +103,11 @@ default_filepath = 'Defaults.ini'
 default_parser = ConfigParser()
 default_parser.read(default_filepath)
 
-ddefault_filepath = 'different_default.ini'
+ddefault_filepath = 'DifferentDefault.ini'
 ddefault_parser = ConfigParser()
 ddefault_parser.read(ddefault_filepath)
 
-inherit_filepath = 'inheritance.ini'
+inherit_filepath = 'Inheritance.ini'
 inherit_parser = ConfigParser()
 inherit_parser.read(inherit_filepath)
 
@@ -233,7 +233,7 @@ def order(filepath):
     file.close()
 
 def check_defaults():
-    logger = Logger("Check defaults", "defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
+    logger = Logger("Check defaults", "Defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
     for section in default_parser.sections():
         for item in default_parser.items(section):
             key = item[0]
@@ -435,7 +435,7 @@ def analyse(model):
     suggest_inherit(model)
 
 def same_check(model):
-    logger = Logger("same check", "same_check.log", log_consol=[], log_file=[LogLevel.Error])
+    logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
     for race in Races:
         for same_set in SAME_CHECKS:  # @UndefinedVariable
             same_set.sort()
@@ -456,7 +456,7 @@ def same_check(model):
     logger.finish()
 
 def conflict_check(model):
-    logger = Logger("conflict check", "conflict_check.log", log_consol=[], log_file=[LogLevel.Error])
+    logger = Logger("conflict check", "ConflictCheck.log", log_consol=[], log_file=[LogLevel.Error])
     for race in Races:
         for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
             conflict_set.sort()
@@ -494,7 +494,7 @@ def conflict_check(model):
     logger.finish()
                 
 def suggest_inherit(model):
-    logger = Logger("suggest inherit", "suggest_inherit.log", log_consol=[], log_file=[LogLevel.Info])
+    logger = Logger("suggest inherit", "SuggestInheritance.log", log_consol=[], log_file=[LogLevel.Info])
     outputdict = {}
     for section in model:
         outputdict[section] = {}
@@ -539,7 +539,7 @@ def suggest_inherit(model):
     logger.finish()
 
 def wrong_inherit(model):
-    logger = Logger("wrong inherit", "wrong_inherit.log", log_consol=[], log_file=[LogLevel.Error])
+    logger = Logger("wrong inherit", "WrongInheritance.log", log_consol=[], log_file=[LogLevel.Error])
     for section in collections.OrderedDict(sorted(model.items())):
         for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
             if not hotkey.copyOf:
