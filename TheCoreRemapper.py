@@ -83,7 +83,7 @@ class Logger:
                 file.write(self.get_start_str() + "\n")
                 for log_level_file in self.log_file:
                     for line in self.messages[log_level_file]:
-                        file.write(line)
+                        file.write(line + "\n")
                 file.write(output)
         
     def get_message_str(self, log_level, msg):
@@ -251,9 +251,9 @@ def check_defaults():
                         logger.log(LogLevel.Error, "key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) " + key)
                 if not default:
                     if seedhas or inherit:
-                        logger.log(LogLevel.Warn, "[WARN] no default " + key)
+                        logger.log(LogLevel.Warn, "no default " + key)
                     else:
-                        logger.log(LogLevel.Warn, "[ERROR] no default " + key)
+                        logger.log(LogLevel.Error, "no default " + key)
     logger.finish()
 
 def create_model():
@@ -434,7 +434,6 @@ def analyse(model):
     wrong_inherit(model)
     suggest_inherit(model)
 
-
 def same_check(model):
     logger = Logger("same check", "same_check.log", log_consol=[], log_file=[LogLevel.Error])
     for race in Races:
@@ -532,12 +531,10 @@ def suggest_inherit(model):
                         value = hotkey.get_value(race)
                         log_msg = log_msg + race.value + ": " + str(value) + "   "
                     first = False
-                    log_msg = log_msg + "\n"
-                log_msg = log_msg + "\t" + hotkey.name + " default: " + hotkey.default
+                log_msg = log_msg + "\n\t" + hotkey.name + " default: " + hotkey.default
                 if hotkey.copyOf:
                     hotkeycopyof = model[section][hotkey.copyOf]
                     log_msg = log_msg + " copyof: " + hotkeycopyof.name + " default: " + hotkeycopyof.default
-                log_msg = log_msg + "\n"
             logger.log(LogLevel.Info, log_msg)
     logger.finish()
 
