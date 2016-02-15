@@ -107,7 +107,7 @@ ddefault_filepath = 'different_default.ini'
 ddefault_parser = ConfigParser()
 ddefault_parser.read(ddefault_filepath)
 
-inherit_filepath = 'TheCoreSeed.ini'
+inherit_filepath = 'inheritance.ini'
 inherit_parser = ConfigParser()
 inherit_parser.read(inherit_filepath)
 
