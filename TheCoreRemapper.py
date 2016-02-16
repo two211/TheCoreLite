@@ -46,6 +46,10 @@ class LogLevel(Enum):
     Warn = "WARN"
     Error = "ERROR"
 
+####################################################################################
+## Support for other seeds than the pure TheCore
+####################################################################################
+
 ## Class OtherSeeds refers too all non-pure TheCore
 ##    usually those seeds are multiracial
 # ?Enhancement : could reuse Sides class in the future; default = Sides.Left at the moment
@@ -53,16 +57,19 @@ class LogLevel(Enum):
 class OtherSeeds(Enum):
     Lite = "Lite"
 
+# Empty class is a dirty hack to work around create_filepath
 class Empty(Enum):
     Null = ""
 
 ## List allSeeds to browse all hotkey seed
-# ideal goal would be te remove any further reference to OtherSeeds
 allSeeds = []
 for race in Races:
     allSeeds.append(race)
 for seed in OtherSeeds:
     allSeeds.append(seed)
+
+####################################################################################
+
 
 class Logger:
     def __init__(self, title, filepath=None, log_file=[LogLevel.Warn, LogLevel.Error], log_consol=[LogLevel.Info, LogLevel.Error]):
@@ -139,18 +146,18 @@ seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
 
 hotkeyfile_parsers = {}
 
-## class Hotkey modified : object structure does not allow OtherSeeds
+## class Hotkey modified : object structure now allows OtherSeeds
 class Hotkey:
+    seedTuple=tuple(allSeeds)
 
-    def __init__(self, name, section, default=None, copyOf=None, allSeeds=allSeeds):
+    def __init__(self, name, section, default=None, copyOf=None):
         self.name = name
         self.section = section
         self.key = {}
         self.default = default
-        self.seedList = allSeeds
         self.copyOf = copyOf
         # init to None for all seed
-        for seed in allSeeds:
+        for seed in self.seedTuple:
             self.key[seed] = None
 
     def set_value(self, race, value):
@@ -167,7 +174,7 @@ class Hotkey:
 
     def get_values_id(self):
         values = ""
-        for race in self.seedList:
+        for race in self.seedTuple:
             value = self.get_value(race)
             first = True
             alternates = value.split(",")
@@ -192,7 +199,6 @@ def init_seed_hotkeyfile_parser():
         hotkeyfilepath = create_filepath(seed, Empty.Null, Empty.Null)
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[seed] = hotkeyfile_parser
-
 
 def create_filepath(race, side, size, path=""):
     filename = prefix + " " + race.value + side.value + size.value + " " + suffix
@@ -427,7 +433,6 @@ def translate_and_create_files(models, logger):
                         create_file(model, race, side, size, layout, logger)
         for seed in OtherSeeds:
             if layout != seed_layout:
-#                logger.log(LogLevel.Info, "translate seed: " + seed.value + " side: " + side.value + " keyboardlayout: " + layout)
                 logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
                 model = translate(models[seed], layout, Sides.Left)
             else:
