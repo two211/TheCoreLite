@@ -467,7 +467,7 @@ def analyse(model):
 
 def same_check(model):
     logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
-    for race in Races:
+    for seed in allSeeds:
         for same_set in SAME_CHECKS:  # @UndefinedVariable
             same_set.sort()
             first_key = same_set[0]
@@ -475,27 +475,27 @@ def same_check(model):
                 if not first_key in model[section]:
                     continue
                 mismatched = False
-                value = model[section][first_key].get_value(race)
+                value = model[section][first_key].get_value(seed)
                 for key in same_set:
-                    if not model[section][key].get_value(race) == value:
+                    if not model[section][key].get_value(seed) == value:
                         mismatched = True
                 if mismatched:
-                    log_msg = "Mismatched values in race: " + race.value
+                    log_msg = "Mismatched values in race: " + seed.value
                     for key in same_set:
-                        log_msg = log_msg + "\n\t" + key + " = " + model[section][key].get_value(race)
+                        log_msg = log_msg + "\n\t" + key + " = " + model[section][key].get_value(seed)
                     logger.log(LogLevel.Error, log_msg)
     logger.finish()
 
 def conflict_check(model):
     logger = Logger("conflict check", "ConflictCheck.log", log_consol=[], log_file=[LogLevel.Error])
-    for race in Races:
+    for seed in allSeeds:
         for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
             conflict_set.sort()
             count_hotkeys = {}
             for section in model:
                 for key, hotkey in model[section].items():
                     if key in conflict_set:
-                        values = hotkey.get_value(race).split(",")
+                        values = hotkey.get_value(seed).split(",")
                         for value in values:
                             if not value:
                                 continue
@@ -507,12 +507,12 @@ def conflict_check(model):
             
             for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
                 if count > 1:
-                    log_msg = "Conflict of hotkeys in race: " + race.value + " commandcard: " + commandcard_key
+                    log_msg = "Conflict of hotkeys in race: " + seed.value + " commandcard: " + commandcard_key
                     for key in conflict_set:
                         for section in collections.OrderedDict(sorted(model.items())):
                             if not key in model[section]:
                                 continue
-                            raw_values = model[section][key].get_value(race)
+                            raw_values = model[section][key].get_value(seed)
                             values = raw_values.split(",")
                             values.sort()
                             issue = False
@@ -535,9 +535,9 @@ def suggest_inherit(model):
                 if hotkey1.name == hotkey2.name:
                     continue
                 equal = True
-                for race in Races:
-                    value = hotkey1.get_value(race)
-                    value2 = hotkey2.get_value(race)
+                for seed in allSeeds:
+                    value = hotkey1.get_value(seed)
+                    value2 = hotkey2.get_value(seed)
                     value_set = set(str(value).split(","))
                     value2_set = set(str(value2).split(","))
                     if value_set != value2_set:
@@ -558,9 +558,9 @@ def suggest_inherit(model):
             log_msg = ""
             for hotkey in collections.OrderedDict(sorted(hotkeys.items())).values():
                 if first:
-                    for race in Races:
-                        value = hotkey.get_value(race)
-                        log_msg = log_msg + race.value + ": " + str(value) + "   "
+                    for seed in allSeeds:
+                        value = hotkey.get_value(seed)
+                        log_msg = log_msg + seed.value + ": " + str(value) + "   "
                     first = False
                 log_msg = log_msg + "\n\t" + hotkey.name + " default: " + hotkey.default
                 if hotkey.copyOf:
@@ -577,23 +577,23 @@ def wrong_inherit(model):
                 continue
             hotkeycopyof = resolve_copyof(model, section, hotkey)
             equal = True
-            for race in Races:
-                value = hotkey.get_value(race)
-                copyofvalue = hotkeycopyof.get_value(race)
+            for seed in allSeeds:
+                value = hotkey.get_value(seed)
+                copyofvalue = hotkeycopyof.get_value(seed)
                 value_set = set(str(value).split(","))
                 copyofvalue_set = set(str(copyofvalue).split(","))
                 if value_set != copyofvalue_set:
                     equal = False
             if not equal:
                 log_msg = hotkey.name + " != " + hotkeycopyof.name + "\n"
-                for race in Races:
-                    value = hotkey.get_raw_value(race)
-                    copyofvalue = hotkeycopyof.get_value(race)
+                for seed in allSeeds:
+                    value = hotkey.get_raw_value(seed)
+                    copyofvalue = hotkeycopyof.get_value(seed)
                     if not value:
                         value = " "
                     if not copyofvalue:
                         copyofvalue = " "
-                    log_msg = log_msg + "\t" + race.value + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
+                    log_msg = log_msg + "\t" + seed.value + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
                 default = hotkey.default
                 if not default:
                     default = " "
