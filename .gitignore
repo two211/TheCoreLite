@@ -28,9 +28,9 @@ local.properties
 # PDT-specific
 .buildpath
 
-# log and personal notes 
-Defaults.log
+# personal notes and clean script
 NOTES.txt
+clean.sh
 
 #################
 ## Visual Studio
