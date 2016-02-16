@@ -209,9 +209,9 @@ def create_filepath(race, side, size, path=""):
 
 def new_keys_from_seed_hotkeys():
     logger = Logger("Search for new Keys in seed layouts", log_consol=[LogLevel.Info], log_file=[])
-    for race in allSeeds:
-        for section in hotkeyfile_parsers[race].sections():
-            for item in hotkeyfile_parsers[race].items(section):
+    for seed in allSeeds:
+        for section in hotkeyfile_parsers[seed].sections():
+            for item in hotkeyfile_parsers[seed].items(section):
                 key = item[0]
                 if not default_parser.has_option(section, key):
                     default_parser.set(section, key, "")
@@ -289,10 +289,10 @@ def create_model():
             default = item[1]
             hotkey.default = default
 
-            for race in allSeeds:
-                if hotkeyfile_parsers[race].has_option(section, key):
-                    value = hotkeyfile_parsers[race].get(section, key)  #
-                    hotkey.set_value(race, value)
+            for seed in allSeeds:
+                if hotkeyfile_parsers[seed].has_option(section, key):
+                    value = hotkeyfile_parsers[seed].get(section, key)  #
+                    hotkey.set_value(seed, value)
 
             if inherit_parser.has_option(section, key):
                 copyof = inherit_parser.get(section, key)
@@ -480,7 +480,7 @@ def same_check(model):
                     if not model[section][key].get_value(seed) == value:
                         mismatched = True
                 if mismatched:
-                    log_msg = "Mismatched values in race: " + seed.value
+                    log_msg = "Mismatched values in seed: " + seed.value
                     for key in same_set:
                         log_msg = log_msg + "\n\t" + key + " = " + model[section][key].get_value(seed)
                     logger.log(LogLevel.Error, log_msg)
@@ -507,7 +507,7 @@ def conflict_check(model):
             
             for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
                 if count > 1:
-                    log_msg = "Conflict of hotkeys in race: " + seed.value + " commandcard: " + commandcard_key
+                    log_msg = "Conflict of hotkeys in seed: " + seed.value + " commandcard: " + commandcard_key
                     for key in conflict_set:
                         for section in collections.OrderedDict(sorted(model.items())):
                             if not key in model[section]:
