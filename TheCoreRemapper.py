@@ -45,7 +45,25 @@ class LogLevel(Enum):
     Info = "INFO"
     Warn = "WARN"
     Error = "ERROR"
-    
+
+## Class OtherSeeds refers too all non-pure TheCore
+##    usually those seeds are multiracial
+# ?Enhancement : could reuse Sides class in the future; default = Sides.Left at the moment
+# ?Doubt       : not sure that Enum class is the most suitable datatype (trade-off with consistency)
+class OtherSeeds(Enum):
+    Lite = "Lite"
+
+class Empty(Enum):
+    Null = ""
+
+## List allSeeds to browse all hotkey seed
+# ideal goal would be te remove any further reference to OtherSeeds
+allSeeds = []
+for race in Races:
+    allSeeds.append(race)
+for seed in OtherSeeds:
+    allSeeds.append(seed)
+
 class Logger:
     def __init__(self, title, filepath=None, log_file=[LogLevel.Warn, LogLevel.Error], log_consol=[LogLevel.Info, LogLevel.Error]):
         self.title = title
@@ -121,37 +139,25 @@ seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
 
 hotkeyfile_parsers = {}
 
+## class Hotkey modified : object structure does not allow OtherSeeds
 class Hotkey:
 
-    def __init__(self, name, section, P=None, T=None, Z=None, R=None, default=None, copyOf=None):
+    def __init__(self, name, section, default=None, copyOf=None, allSeeds=allSeeds):
         self.name = name
         self.section = section
-        self.P = P
-        self.T = T
-        self.Z = Z
-        self.R = R
+        self.key = {}
         self.default = default
+        self.seedList = allSeeds
         self.copyOf = copyOf
+        # init to None for all seed
+        for seed in allSeeds:
+            self.key[seed] = None
 
     def set_value(self, race, value):
-        if race == Races.Protoss:
-            self.P = value
-        elif race == Races.Random:
-            self.R = value
-        elif race == Races.Terran:
-            self.T = value
-        elif race == Races.Zerg:
-            self.Z = value
+        self.key[race] = value
 
     def get_raw_value(self, race):
-        if race == Races.Protoss:
-            return self.P
-        elif race == Races.Random:
-            return self.R
-        elif race == Races.Terran:
-            return self.T
-        elif race == Races.Zerg:
-            return self.Z
+        return self.key[race]
 
     def get_value(self, race):
         value = self.get_raw_value(race)
@@ -161,7 +167,7 @@ class Hotkey:
 
     def get_values_id(self):
         values = ""
-        for race in Races:
+        for race in self.seedList:
             value = self.get_value(race)
             first = True
             alternates = value.split(",")
@@ -181,6 +187,12 @@ def init_seed_hotkeyfile_parser():
         hotkeyfilepath = create_filepath(race, Sides.Left, Sizes.Medium)
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[race] = hotkeyfile_parser
+    for seed in OtherSeeds:
+        hotkeyfile_parser = ConfigParser()
+        hotkeyfilepath = create_filepath(seed, Empty.Null, Empty.Null)
+        hotkeyfile_parser.read(hotkeyfilepath)
+        hotkeyfile_parsers[seed] = hotkeyfile_parser
+
 
 def create_filepath(race, side, size, path=""):
     filename = prefix + " " + race.value + side.value + size.value + " " + suffix
@@ -191,7 +203,7 @@ def create_filepath(race, side, size, path=""):
 
 def new_keys_from_seed_hotkeys():
     logger = Logger("Search for new Keys in seed layouts", log_consol=[LogLevel.Info], log_file=[])
-    for race in Races:
+    for race in allSeeds:
         for section in hotkeyfile_parsers[race].sections():
             for item in hotkeyfile_parsers[race].items(section):
                 key = item[0]
@@ -271,7 +283,7 @@ def create_model():
             default = item[1]
             hotkey.default = default
 
-            for race in Races:
+            for race in allSeeds:
                 if hotkeyfile_parsers[race].has_option(section, key):
                     value = hotkeyfile_parsers[race].get(section, key)  #
                     hotkey.set_value(race, value)
@@ -299,6 +311,8 @@ def generate(seed_model):
         seed_models[race][Sides.Left][Sizes.Large] = shift_right(seed_models[race][Sides.Left][Sizes.Medium], Sides.Left)
         logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: R size: L keyboardlayout: " + seed_layout)
         seed_models[race][Sides.Right][Sizes.Large] = shift_left(seed_models[race][Sides.Right][Sizes.Medium], Sides.Right)
+    for seed in OtherSeeds:
+        seed_models[seed] = extract_race(seed_model, seed)
     translate_and_create_files(seed_models, logger)
     logger.finish()
 
@@ -401,16 +415,24 @@ def shift(seed_model, shift_section, side):
 
 def translate_and_create_files(models, logger):
     layouts = layout_parser.sections()
-    for race in Races:
-        for side in Sides:
-            for size in Sizes:
-                for layout in layouts:
-                    if layout != seed_layout:
-                        logger.log(LogLevel.Info, "translate race: " + race.value + " side: " + side.value + " size: " + size.value + " keyboardlayout: " + layout)
-                        model = translate(models[race][side][size], layout, side)
-                    else:
-                        model = models[race][side][size]
-                    create_file(model, race, side, size, layout, logger)
+    for layout in layouts:
+        for race in Races:
+            for side in Sides:
+                for size in Sizes:
+                        if layout != seed_layout:
+                            logger.log(LogLevel.Info, "translate race: " + race.value + " side: " + side.value + " size: " + size.value + " keyboardlayout: " + layout)
+                            model = translate(models[race][side][size], layout, side)
+                        else:
+                            model = models[race][side][size]
+                        create_file(model, race, side, size, layout, logger)
+        for seed in OtherSeeds:
+            if layout != seed_layout:
+#                logger.log(LogLevel.Info, "translate seed: " + seed.value + " side: " + side.value + " keyboardlayout: " + layout)
+                logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
+                model = translate(models[seed], layout, Sides.Left)
+            else:
+                model = models[seed]
+            create_file(model, seed, Empty.Null, Empty.Null, layout, logger)
 
 def translate(seed_model, layout, side):
     return modify_model(seed_model, layout_parser, layout, side)
