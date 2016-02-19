@@ -31,6 +31,7 @@ local.properties
 # personal notes and clean script
 NOTES.txt
 clean.sh
+tmp*
 
 #################
 ## Visual Studio
