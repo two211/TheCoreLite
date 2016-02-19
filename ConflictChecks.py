@@ -355,7 +355,7 @@ CONFLICT_CHECKS = {'LotV Multiplayer/Protoss/Structures/Fleet Beacon' : ['AnionP
                    'WoL Campaign/Terran/Units/SCV/Basic Structures (Orbital Relay purchased)' : ['CommandCenterOrbRelay/SCV', 'Refinery/SCV', 'SupplyDepot/SCV', 'Barracks/SCV', 'EngineeringBay/SCV', 'PerditionTurret/SCV', 'Bunker/SCV', 'MissileTurret/SCV', 'SensorTower/SCV', 'HiveMindEmulator/SCV', 'Cancel'],
                    'WoL Campaign/Zerg/Structures/Infestation Pit' : ['EvolvePeristalsis/InfestationPit', 'EvolveInfestorEnergyUpgrade/InfestationPit', 'Cancel'],
                    'WoL Campaign/Zerg/Structures/Ultralisk Cavern' : ['EvolveAnabolicSynthesis2/UltraliskCavern', 'EvolveChitinousPlating/UltraliskCavern', 'Cancel'],
-                   'WoL Campaign/Zerg/Units/Larva/General' : ['Drone/Larva', 'Overlord/Larva', 'Zergling/Larva', 'Roach/Larva', 'Hydralisk/Larva', 'Infestor/Larva', 'Scourge/Larva', 'Ultralisk/Larva', 'SwarmHostMP/Larva', 'Mutalisk/Larva', 'Cancel'],
+                   'WoL Campaign/Zerg/Units/Larva/General' : ['Drone/Larva', 'Overlord/Larva', 'Zergling/Larva', 'Roach/Larva', 'Hydralisk/Larva', 'Infestor/Larva', 'Scourge/Larva', 'Ultralisk/Larva', 'Mutalisk/Larva', 'Cancel'],
                    'HotS Multiplayer/Protoss/Units/Oracle' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'OracleRevelation/Oracle', 'LightofAiur/Oracle', 'OracleWeaponOn/Oracle', 'OracleWeaponOff/Oracle', 'Cancel'],
                    'HotS Multiplayer/Terran/Units/Thor' : ['Move', 'Stop', 'MoveHoldPosition', 'MovePatrol', 'Attack', 'ArmorpiercingMode', 'ExplosiveMode', 'Cancel'],
                    'HotS Multiplayer/Zerg/Structures/Hydralisk Den' : ['hydraliskspeed/HydraliskDen', 'MuscularAugments/HydraliskDen', 'Cancel'],
