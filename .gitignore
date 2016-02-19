@@ -32,6 +32,7 @@ local.properties
 NOTES.txt
 clean.sh
 tmp*
+ref*
 
 #################
 ## Visual Studio
