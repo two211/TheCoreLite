@@ -9,6 +9,14 @@ Start wrong inherit (log file: WrongInheritance.log)
 	Lite: R	R
 	D: R	R (default)
 
+[ERROR]: ArchonAdvancedMergeSelection != AWrp
+	P:  	4
+	T:  	D
+	R: 2	2
+	Z:  	S
+	Lite: R	R
+	D: C	C (default)
+
 [ERROR]: ArchonHallucination/Nexus != ArchonHallucination/Sentry
 	P: B	D
 	T: Z	3
@@ -970,5 +978,5 @@ Start wrong inherit (log file: WrongInheritance.log)
 	D: V	V (default)
 
 ----------------------------
-Finished (wrong inherit) - ERRORs: 121 
+Finished (wrong inherit) - ERRORs: 122 
 ============================

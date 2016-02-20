@@ -113,18 +113,6 @@ Start conflict check (log file: ConflictCheck.log)
 [ERROR]: Conflict of hotkeys in seed: Z commandcard: LotV Prologue/Protoss Story/Units/Zeratul (LotV Prologue)
 [ERROR]: Conflict of hotkeys in seed: Z commandcard: LotV Prologue/Protoss/Units/Probe/General
 [ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Protoss Story/Units/Centurion (Vorazun Commander)
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Protoss Story/Units/High Templar
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Protoss/Structures/Forge (Karax Commander)
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Protoss/Structures/Stargate
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Protoss/Units/Observer
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Terran Story/Structures/Tech Reactor/Attached to Factory (Swann Commander)
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Terran/Structures/Engineering Bay (Raynor Commander)
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Terran/Structures/Factory/General (kinda Swann Commander)
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Terran/Structures/Tech Lab/Attached to Factory (Swann(+Raynor) Commander)
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Zerg Story/Structures/Scourge Nest
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Zerg/Structures/Hydralisk Den (Kerrigan Commander)
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Zerg/Structures/Spire
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Zerg/Units/Overseer
 ----------------------------
-Finished (conflict check) - ERRORs: 124 
+Finished (conflict check) - ERRORs: 112 
 ============================
