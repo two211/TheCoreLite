@@ -17,6 +17,12 @@ import os  # @UnusedImport
 from ConflictChecks import *  # @UnresolvedImport @UnusedWildImport
 from SameChecks import *  # @UnresolvedImport @UnusedWildImport
 
+mode = 0
+## mode = 0 : normal mode
+## mode = 1 : no generation, run for all seed
+## mode = 2 : no generation, only run for target seed list
+## mode = 3 : no generation, only run for target seed list, verbose log (under dev)
+
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
 
@@ -61,12 +67,26 @@ class OtherSeeds(Enum):
 class Empty(Enum):
     Null = ""
 
+
+####################################################################################
+## Seed list to be considered
+####################################################################################
+
 ## List allSeeds to browse all hotkey seed
 allSeeds = []
-for race in Races:
-    allSeeds.append(race)
-for seed in OtherSeeds:
-    allSeeds.append(seed)
+if mode < 2:
+    for race in Races:
+        allSeeds.append(race)
+    for seed in OtherSeeds:
+        allSeeds.append(seed)
+else:
+    debug_filepath = 'Debug.ini'
+    debug_parser = ConfigParser()
+    debug_parser.read(debug_filepath)
+    for item in debug_parser.items('Races'):
+        allSeeds.append(Races[item[0]])
+    for item in debug_parser.items('OtherSeeds'):
+        allSeeds.append(OtherSeeds[item[0]])
 
 ####################################################################################
 
@@ -464,6 +484,7 @@ def analyse(model):
     conflict_check(model)
     wrong_inherit(model)
     suggest_inherit(model)
+    hotkey_command_check(model)
 
 def same_check(model):
     logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
@@ -620,7 +641,7 @@ def hotkey_command_check(model):
 	for seed in allSeeds:
 		## For all seeds, collect hotkeys
 		hotkey_list = []
-		for hotkeys in hotkeyfile_parsers[OtherSeeds.Lite].items('Hotkeys'):
+		for hotkeys in hotkeyfile_parsers[seed].items('Hotkeys'):
 			if not hotkeys[0] in ['TargetChoose']:
 				for hotkey in hotkeys[1].split(','):
 					if hotkey != '' and hotkey.count('+') == 0 and not(hotkey in hotkey_list):
@@ -651,5 +672,6 @@ init_seed_hotkeyfile_parser()
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
-generate(model)
+if mode == 0:
+    generate(model)
 analyse(model)

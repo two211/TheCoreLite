@@ -170,3 +170,8 @@ pip-log.txt
 # My crap
 output.txt
 New Hotkeys.SC2Hotkeys
+
+#############
+## Debug
+#############
+Debug.ini
