@@ -604,6 +604,35 @@ def wrong_inherit(model):
                 logger.log(LogLevel.Error, log_msg)
     logger.finish()
 
+def hotkey_command_check(model):
+	logger = Logger("command conflict with hotkeys", "HotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
+	## Generate a context database out of CONFLICT_CHECKS
+	context_dict = {}
+	for conflict in CONFLICT_CHECKS:
+		context = conflict.split("/")[0]
+		for command in CONFLICT_CHECKS[conflict]:
+			try:
+				if not(command in context_dict[context]):
+					context_dict[context].append(command)
+			except KeyError:
+				context_dict[context] = []
+				context_dict[context].append(command)
+	for seed in allSeeds:
+		## For all seeds, collect hotkeys
+		hotkey_list = []
+		for hotkeys in hotkeyfile_parsers[OtherSeeds.Lite].items('Hotkeys'):
+			if not hotkeys[0] in ['TargetChoose']:
+				for hotkey in hotkeys[1].split(','):
+					if hotkey != '' and hotkey.count('+') == 0 and not(hotkey in hotkey_list):
+						hotkey_list.append(hotkey)
+		## Find&Report context command overlap on hotkeys
+		for context in context_dict:
+			for command in context_dict[context]:
+				for key in model['Commands'][command].get_value(seed).split(','):
+					if key in hotkey_list:
+						log_msg = context + ' : ' + key + " used for command "+ command +", in seed " + seed.value
+						logger.log(LogLevel.Error, log_msg)
+	logger.finish()
 
 print("  ________         ______              " + "\n"
     " /_  __/ /_  ___  / ____/___  ________ " + "\n"
