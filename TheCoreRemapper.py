@@ -29,7 +29,7 @@ class ConfigParser(configparser.ConfigParser):
 debug=False
 ## If debug==True, the config file "Debug.ini" is loaded and modify the script behavior
 ## An example is available, under the name "Debug_example.ini"
-#debug=True
+debug=True
 
 debug_parser = ConfigParser()
 if debug:
@@ -547,8 +547,10 @@ def conflict_check(model):
                             for issue_value in values:
                                 if issue_value == value:
                                     issue = True
-                            if issue:        
+                            if issue:
                                 log_msg + log_msg + "\n\t" + key + " = " + raw_values
+                                if debug_parser.getboolean("Settings","verbose",fallback=False):
+                                    log_msg += remapHint(key, seed, log=True)
                     logger.log(LogLevel.Error, log_msg)
     logger.finish()
                 
@@ -711,13 +713,12 @@ def remapHint(command, seed, log=False):
 			if debug_parser.getboolean("Settings","verydetail",fallback=not(log)):
 				hint += "-CONFLICT- " + conflict + '\n'
 			for otherCommand in sorted(CONFLICT_CHECKS[conflict]):
-				if otherCommand != command:
-					keys = model['Commands'][otherCommand].get_value(seed)
-					if debug_parser.getboolean("Settings","verydetail",fallback=not(log)):
-						hint += keys + "\t" + otherCommand + '\n'
-					for key in keys.split(','):
-						if not(key in listForbiddenKeys):
-							listForbiddenKeys.append(key)
+				keys = model['Commands'][otherCommand].get_value(seed)
+				if debug_parser.getboolean("Settings","verydetail",fallback=not(log)):
+					hint += keys + "\t" + otherCommand + '\n'
+				for key in keys.split(','):
+					if not(key in listForbiddenKeys):
+						listForbiddenKeys.append(key)
 	hint += 'List of forbidden keys:\n'
 	hint += str(listForbiddenKeys)
 	if log:
