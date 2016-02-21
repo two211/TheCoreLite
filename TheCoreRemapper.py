@@ -481,10 +481,15 @@ def create_file(model, race, side, size, layout, logger):
     return filepath
 
 def analyse(model):
+    ## default checks
     same_check(model)
     conflict_check(model)
     wrong_inherit(model)
-    hotkey_command_check(model)
+    ## context dependent checks
+    known_hotkey_command_check(model,context_dict)
+    known_unbound_command_check(model,context_dict)
+    unknown_hotkey_command_check(model,context_dict)
+    ## optional checks
     if debug_parser.getboolean("Settings","allchecks",fallback=True):
         suggest_inherit(model)
 
@@ -627,39 +632,75 @@ def wrong_inherit(model):
                 logger.log(LogLevel.Error, log_msg)
     logger.finish()
 
-def hotkey_command_check(model):
-	logger = Logger("command conflict with hotkeys", "HotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
-	## Generate a context database out of CONFLICT_CHECKS
-	context_dict = {}
-	for conflict in CONFLICT_CHECKS:
-		context = conflict.split("/")[0]
-		for command in CONFLICT_CHECKS[conflict]:
-			try:
-				if not(command in context_dict[context]):
-					context_dict[context].append(command)
-			except KeyError:
-				context_dict[context] = []
-				context_dict[context].append(command)
+def known_hotkey_command_check(model,context_dict):
+	logger = Logger("command conflicts with hotkeys, within identified conflicts", "KnownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
-		## For all seeds, collect hotkeys
-		hotkey_list = []
-		for hotkeys in hotkeyfile_parsers[seed].items('Hotkeys'):
-			if not hotkeys[0] in ['TargetChoose']:
-				for hotkey in hotkeys[1].split(','):
-					if hotkey != '' and hotkey.count('+') == 0 and not(hotkey in hotkey_list):
-						hotkey_list.append(hotkey)
-		## Find&Report context command overlap on hotkeys
-		for context in context_dict:
-			for command in context_dict[context]:
+		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
+		## Find&Report context command overlap on hotkeys within CONFLICT_CHECKS
+		for context in context_dict['Context']:
+			for command in context_dict['Context'][context]:
 				for key in model['Commands'][command].get_value(seed).split(','):
 					if key in hotkey_list:
 						log_msg = context + ' : ' + key + " used for command "+ command +", in seed " + seed.value
 						if debug_parser.getboolean("Settings","verbose",fallback=False):
-							 log_msg += remap_hint(command, seed, log=True)
+							 log_msg += remapHint(command, seed, log=True)
 						logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
-def remap_hint(command, seed, log=False):
+def unknown_hotkey_command_check(model,context_dict):
+	logger = Logger("command conflicts with hotkeys, out of identified conflicts", "UnknownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
+	for seed in allSeeds:
+		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
+		## Find&Report context command overlap on hotkeys out of CONFLICT_CHECKS
+		for command in hotkeyfile_parsers[seed].options('Commands'):
+			if not command in context_dict['KnownCommands']:
+				for key in model['Commands'][command].get_value(seed).split(','):
+					if key in hotkey_list:
+						log_msg = key + " used for command "+ command +", in seed " + seed.value
+						logger.log(LogLevel.Error, log_msg)
+	logger.finish()
+
+def known_unbound_command_check(model,context_dict):
+	logger = Logger("unbound commands, within identified conflicts", "KnownUnboundCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
+	for seed in allSeeds:
+		## Find&Report context unbound command within CONFLICT_CHECKS
+		for context in context_dict['Context']:
+			for command in context_dict['Context'][context]:
+				for key in model['Commands'][command].get_value(seed).split(','):
+					if key == '':
+						log_msg = context + ' : unbound command ' + command +", in seed " + seed.value
+						if debug_parser.getboolean("Settings","verbose",fallback=False):
+							 log_msg += remapHint(command, seed, log=True)
+						logger.log(LogLevel.Error, log_msg)
+	logger.finish()
+
+def getCommandByContextDict():
+	context_dict = {}
+	context_dict['Context'] = {}
+	context_dict['KnownCommands'] = []
+	for conflict in CONFLICT_CHECKS:
+		context = conflict.split("/")[0]
+		for command in CONFLICT_CHECKS[conflict]:
+			if not(command in context_dict['KnownCommands']):
+				context_dict['KnownCommands'].append(command)
+			try:
+				if not(command in context_dict['Context'][context]):
+					context_dict['Context'][context].append(command)
+			except KeyError:
+				context_dict['Context'][context] = []
+				context_dict['Context'][context].append(command)
+	return context_dict
+
+def getHotkeyList(seed,section,ignoredCommands=[]):
+	hotkey_list = []
+	for command in hotkeyfile_parsers[seed].options(section):
+		if not command in ignoredCommands:
+			for hotkey in  hotkeyfile_parsers[seed].get(section,command).split(','):
+				if hotkey != '' and hotkey.count('+') == 0 and not(hotkey in hotkey_list):
+					hotkey_list.append(hotkey)
+	return hotkey_list
+
+def remapHint(command, seed, log=False):
 	hint = 'Remap hints for command: ' + command + '\n'
 	listForbiddenKeys = []
 	for conflict in CONFLICT_CHECKS:
@@ -698,4 +739,5 @@ check_defaults()
 model = create_model()
 if debug_parser.getboolean("Settings","generate",fallback=True):
     generate(model)
+context_dict =  getCommandByContextDict()
 analyse(model)
