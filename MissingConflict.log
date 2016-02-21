@@ -1,0 +1,2040 @@
+============================
+Start commands with no attached conflict (log file: MissingConflict.log)
+----------------------------
+[ERROR]: ActivateIbikisCannon/PlanetaryFortress not related to a conflict
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =
+
+[ERROR]: Aggressive/LurkerMPBurrowed not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: BattleRage/Khraxus not related to a conflict
+in seed P, keys =H
+in seed T, keys =H
+in seed R, keys =H
+in seed Z, keys =R
+in seed Lite, keys =B
+
+[ERROR]: BuildScarab/Reaver not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: CreepTumor/Queen not related to a conflict
+in seed P, keys =A
+in seed T, keys =A
+in seed R, keys =A
+in seed Z, keys =A
+in seed Lite, keys =
+
+[ERROR]: DarkSwarm/Infestor not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: DeepTunnel/QueenCoop not related to a conflict
+in seed P, keys =T
+in seed T, keys =T
+in seed R, keys =
+in seed Z, keys =T
+in seed Lite, keys =F
+
+[ERROR]: Detonate/SpiderMine not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =C
+
+[ERROR]: EMP/ScienceVessel not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: EnrageQueen/Queen not related to a conflict
+in seed P, keys =H
+in seed T, keys =H
+in seed R, keys =H
+in seed Z, keys =H
+in seed Lite, keys =
+
+[ERROR]: EvadeObserver/Observer not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: EvolveBurrowCharge/Hatchery not related to a conflict
+in seed P, keys =V
+in seed T, keys =V
+in seed R, keys =V
+in seed Z, keys =V
+in seed Lite, keys =
+
+[ERROR]: EvolveOrganicCarapace/RoachWarren not related to a conflict
+in seed P, keys =O
+in seed T, keys =O
+in seed R, keys =O
+in seed Z, keys =O
+in seed Lite, keys =O
+
+[ERROR]: Glare/Oracle not related to a conflict
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =
+
+[ERROR]: GravitonBeam/PhoenixPurifier not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =R,F
+in seed Z, keys =G
+in seed Lite, keys =G
+
+[ERROR]: Guardian/Mutalisk not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: HellfireThrusters/StarportTechLab not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: HotSBioPlasmidDischarge/HotSLeviathan not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =Q
+
+[ERROR]: HotSBioStasis/HotSLeviathan not related to a conflict
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =E
+in seed Lite, keys =W
+
+[ERROR]: IgniteAfterburner/Medivac not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: Immortal not related to a conflict
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =F
+in seed Z, keys =2
+in seed Lite, keys =
+
+[ERROR]: Immortal/Gateway not related to a conflict
+in seed P, keys =
+in seed T, keys =
+in seed R, keys =
+in seed Z, keys =
+in seed Lite, keys =
+
+[ERROR]: Immortal/WarpGate not related to a conflict
+in seed P, keys =
+in seed T, keys =
+in seed R, keys =
+in seed Z, keys =
+in seed Lite, keys =
+
+[ERROR]: ImmortalityProtocol/Thor not related to a conflict
+in seed P, keys =P
+in seed T, keys =P
+in seed R, keys =P
+in seed Z, keys =P
+in seed Lite, keys =I
+
+[ERROR]: InjectLarva/Queen not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: LaunchNullWard/NullSphere not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: LockdownRound/Ghost not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: Matrix/Medic not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: MorphtoDevourer/Mutalisk not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: MutateintoDefilerMound/Drone not related to a conflict
+in seed P, keys =5
+in seed T, keys =5
+in seed R, keys =5
+in seed Z, keys =5
+in seed Lite, keys =
+
+[ERROR]: NerveJam/ScienceVessel not related to a conflict
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =
+
+[ERROR]: NurturingSwarm/Queen not related to a conflict
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =
+
+[ERROR]: OracleWeaponOff not related to a conflict
+in seed P, keys =4
+in seed T, keys =4
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[ERROR]: OracleWeaponOn not related to a conflict
+in seed P, keys =D
+in seed T, keys =R
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =Space
+
+[ERROR]: Overcharge/OrbitalCommand not related to a conflict
+in seed P, keys =H
+in seed T, keys =H
+in seed R, keys =H
+in seed Z, keys =H
+in seed Lite, keys =
+
+[ERROR]: Passive not related to a conflict
+in seed P, keys =A
+in seed T, keys =A
+in seed R, keys =A
+in seed Z, keys =A
+in seed Lite, keys =
+
+[ERROR]: PhaseMissile/Scout not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: PlaceWard/Oracle not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: Plague/Infestor not related to a conflict
+in seed P, keys =H
+in seed T, keys =H
+in seed R, keys =H
+in seed Z, keys =H
+in seed Lite, keys =
+
+[ERROR]: PrimalConsume/Infestor not related to a conflict
+in seed P, keys =A
+in seed T, keys =A
+in seed R, keys =A
+in seed Z, keys =A
+in seed Lite, keys =
+
+[ERROR]: Probe/KhaydarinNexus not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: PurificationNova/Disruptor not related to a conflict
+in seed P, keys =V
+in seed T, keys =V
+in seed R, keys =R
+in seed Z, keys =V
+in seed Lite, keys =Space
+
+[ERROR]: Recall/Arbiter not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: ResearchBarrelStabilizers/BarracksTechLab not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: ResearchCharonBooster/FactoryTechLab not related to a conflict
+in seed P, keys =5
+in seed T, keys =5
+in seed R, keys =5
+in seed Z, keys =5
+in seed Lite, keys =
+
+[ERROR]: ResearchEMP/StarportTechLab not related to a conflict
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =
+
+[ERROR]: ResearchEngineeredExplosives/BarracksTechLab not related to a conflict
+in seed P, keys =5
+in seed T, keys =5
+in seed R, keys =5
+in seed Z, keys =5
+in seed Lite, keys =
+
+[ERROR]: ResearchEvadeObserver/Observatory not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: ResearchFortifiedBunkers/EngineeringBay not related to a conflict
+in seed P, keys =5
+in seed T, keys =5
+in seed R, keys =5
+in seed Z, keys =5
+in seed Lite, keys =
+
+[ERROR]: ResearchGraviticBooster/Observatory not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: ResearchIonThrusters/FactoryTechLab not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: ResearchIrradiate/StarportTechLab not related to a conflict
+in seed P, keys =H
+in seed T, keys =H
+in seed R, keys =H
+in seed Z, keys =H
+in seed Lite, keys =
+
+[ERROR]: ResearchKhaydarinCore/ArbiterTribunal not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: ResearchKhaydarinGenerator/FleetBeacon not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: ResearchLocustLifetimeIncrease/InfestationPit not related to a conflict
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =4
+
+[ERROR]: ResearchMatrix/BarracksTechLab not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: ResearchPiercingRockets/StarportTechLab not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: ResearchPlasmaCharge/RoboticsBay not related to a conflict
+in seed P, keys =V
+in seed T, keys =V
+in seed R, keys =V
+in seed Z, keys =V
+in seed Lite, keys =
+
+[ERROR]: ResearchRecall/ArbiterTribunal not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: ResearchSingularityCharge2/CyberneticsCore not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: ResearchSpiderMines/FactoryTechLab not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: ResearchTimeWarp/FleetBeacon not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: ResearchTitanReactor/StarportTechLab not related to a conflict
+in seed P, keys =A
+in seed T, keys =A
+in seed R, keys =A
+in seed Z, keys =A
+in seed Lite, keys =
+
+[ERROR]: ResearchTransformationServos/FactoryTechLab not related to a conflict
+in seed P, keys =V
+in seed T, keys =6
+in seed R, keys =5
+in seed Z, keys =S
+in seed Lite, keys =C
+
+[ERROR]: ResearchTurboGripper/StarportTechLab not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: RetributionField/Meliak not related to a conflict
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =R
+in seed Lite, keys =V
+
+[ERROR]: Rift/KhaydarinNexus not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: Rift/Nexus not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: SJHyperionBlink/Battlecruiser not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: SapStructure/Baneling not related to a conflict
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =Z
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[ERROR]: ShapedBlast/SiegeBreakerSieged not related to a conflict
+in seed P, keys =P
+in seed T, keys =P
+in seed R, keys =P
+in seed Z, keys =P
+in seed Lite, keys =B
+
+[ERROR]: ShapedBlast/SiegeTankSieged not related to a conflict
+in seed P, keys =P
+in seed T, keys =P
+in seed R, keys =P
+in seed Z, keys =P
+in seed Lite, keys =B
+
+[ERROR]: SlivanPuke/Devourer not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: StasisField/Arbiter not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: StasisField/ArbiterTribunal not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: TimeWarpSentinel/Oracle not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: UpgradeLIDARTransmitter/EngineeringBay not related to a conflict
+in seed P, keys =F
+in seed T, keys =F
+in seed R, keys =F
+in seed Z, keys =F
+in seed Lite, keys =
+
+[ERROR]: UpgradewithKhaydarinCore/Nexus not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: UseSpiderMine/Vulture not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: WarpInCorsair/Stargate not related to a conflict
+in seed P, keys =G
+in seed T, keys =G
+in seed R, keys =G
+in seed Z, keys =G
+in seed Lite, keys =
+
+[ERROR]: WarpInReaver/RoboticsFacility not related to a conflict
+in seed P, keys =V
+in seed T, keys =V
+in seed R, keys =V
+in seed Z, keys =V
+in seed Lite, keys =
+
+[ERROR]: WarpinArbiterTribunal/Probe not related to a conflict
+in seed P, keys =H
+in seed T, keys =H
+in seed R, keys =H
+in seed Z, keys =H
+in seed Lite, keys =
+
+[ERROR]: WarpinDragoon/Gateway not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =R
+in seed Lite, keys =
+
+[ERROR]: WarpinObservatory/Probe not related to a conflict
+in seed P, keys =C
+in seed T, keys =C
+in seed R, keys =C
+in seed Z, keys =C
+in seed Lite, keys =
+
+[ERROR]: WidowMineAttack/WidowMine not related to a conflict
+in seed P, keys =C
+in seed T, keys =C
+in seed R, keys =C
+in seed Z, keys =V
+in seed Lite, keys =C
+
+[ERROR]: WormholeTransit/Predator not related to a conflict
+in seed P, keys =R
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =E
+in seed Lite, keys =
+
+[ERROR]: XaphanForce/Voranor not related to a conflict
+in seed P, keys =H
+in seed T, keys =H
+in seed R, keys =H
+in seed Z, keys =R
+in seed Lite, keys =X
+
+[WARN]: 330mmBarrageCannons/Thor not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: Apocalypse/K5Kerrigan not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =X
+in seed T, keys =X
+in seed R, keys =A
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: ArchonHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =B
+in seed T, keys =Z
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =CapsLock
+
+[WARN]: ArchonHallucination/Voranor not related to a conflict
+but is inherited
+in seed P, keys =B
+in seed T, keys =Z
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =CapsLock
+
+[WARN]: Assimilator/Harvester not related to a conflict
+but is inherited
+in seed P, keys =H
+in seed T, keys =R
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: AttackAllowsInvulnerable/DrakkenLaserDrill not related to a conflict
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =W
+in seed Lite, keys =D
+
+[WARN]: AttackChampions not related to a conflict
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =W
+in seed Lite, keys =D
+
+[WARN]: AutomatedExtractor/Drone not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =H
+in seed T, keys =R
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: AutomatedRefinery/SCV not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =H
+in seed T, keys =R
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: Baneling/Zergling2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =R
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: BuildAutoTurret/Raven not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D,Z
+in seed R, keys =F,6
+in seed Z, keys =S
+in seed Lite, keys =C,Space
+
+[WARN]: BuildCreepTumor/BroodMother not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =C,CapsLock
+
+[WARN]: BuildCreepTumor/Queen2 not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =C,CapsLock
+
+[WARN]: BuildPointDefenseDrone/Raven not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D,V
+in seed T, keys =4,3
+in seed R, keys =S,2
+in seed Z, keys =Q,2
+in seed Lite, keys =E,CapsLock
+
+[WARN]: BuildScienceVessel/Starport not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =F
+in seed R, keys =Q
+in seed Z, keys =H
+in seed Lite, keys =V
+
+[WARN]: BunkerFortified/SCV not related to a conflict
+but is inherited
+in seed P, keys =3
+in seed T, keys =C
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =G
+
+[WARN]: BurrowChargeMP/Ultralisk not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: BurrowHydraliskImpalerDown not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: BurrowHydraliskImpalerUp not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G,N
+in seed Lite, keys =Space
+
+[WARN]: BurrowHydraliskLurkerDown not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: BurrowHydraliskLurkerUp not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G,N
+in seed Lite, keys =Space
+
+[WARN]: CancelCocoon not related to a conflict
+but is inherited
+in seed P, keys =Z
+in seed T, keys =T
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =Escape
+
+[WARN]: CancelMutateMorph not related to a conflict
+but is inherited
+in seed P, keys =Z
+in seed T, keys =T
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =Escape
+
+[WARN]: CancelUpgradeMorph not related to a conflict
+but is inherited
+in seed P, keys =Z
+in seed T, keys =T
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =Escape
+
+[WARN]: Charge/Khraxus not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =3,R
+in seed R, keys =R
+in seed Z, keys =N,G
+in seed Lite, keys =Space
+
+[WARN]: Charge/Orthos not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =3,R
+in seed R, keys =R
+in seed Z, keys =N,G
+in seed Lite, keys =Space
+
+[WARN]: Charge/Voranor not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =3,R
+in seed R, keys =R
+in seed Z, keys =N,G
+in seed Lite, keys =Space
+
+[WARN]: Charge/ZealotDark not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R,3
+in seed R, keys =R
+in seed Z, keys =N,G
+in seed Lite, keys =Space
+
+[WARN]: ColossusHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =2
+in seed Z, keys =2
+in seed Lite, keys =C
+
+[WARN]: ColossusHallucination/Voranor not related to a conflict
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =2
+in seed Z, keys =2
+in seed Lite, keys =C
+
+[WARN]: CyberneticsCore/Harvester not related to a conflict
+but is inherited
+in seed P, keys =3
+in seed T, keys =C
+in seed R, keys =5
+in seed Z, keys =S
+in seed Lite, keys =G
+
+[WARN]: DarkShrine/Harvester not related to a conflict
+but is inherited
+in seed P, keys =H
+in seed T, keys =D
+in seed R, keys =2
+in seed Z, keys =V
+in seed Lite, keys =F
+
+[WARN]: DisableBuildingAttack/baneling not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =Z
+in seed R, keys =S
+in seed Z, keys =2
+in seed Lite, keys =E
+
+[WARN]: DisableBuildingAttack/baneling2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =Z
+in seed R, keys =S
+in seed Z, keys =2
+in seed Lite, keys =E
+
+[WARN]: EnableBuildingAttack/baneling not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =D
+in seed R, keys =2
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: EnableBuildingAttack/baneling2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =D
+in seed R, keys =2
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: Explode/HotSSplitterlingBigBurrowed not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =S
+in seed Lite, keys =C
+
+[WARN]: Explode/baneling not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =S
+in seed Lite, keys =C
+
+[WARN]: Explode/baneling2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =S
+in seed Lite, keys =C
+
+[WARN]: Feedback/AnAleemController not related to a conflict
+but is inherited
+in seed P, keys =D,V
+in seed T, keys =4,3
+in seed R, keys =S,F
+in seed Z, keys =Q,2
+in seed Lite, keys =C,Space
+
+[WARN]: Feedback/Khiradun not related to a conflict
+but is inherited
+in seed P, keys =D,V
+in seed T, keys =4,3
+in seed R, keys =S,F
+in seed Z, keys =Q,2
+in seed Lite, keys =C,Space
+
+[WARN]: FleetBeacon/Harvester not related to a conflict
+but is inherited
+in seed P, keys =3
+in seed T, keys =5
+in seed R, keys =5
+in seed Z, keys =S
+in seed Lite, keys =G
+
+[WARN]: ForceField2/Sentry2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: Forge/Harvester not related to a conflict
+but is inherited
+in seed P, keys =D
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =2
+in seed Lite, keys =E
+
+[WARN]: Frostbat/Barracks not related to a conflict
+but is inherited
+in seed P, keys =B
+in seed T, keys =J
+in seed R, keys =C
+in seed Z, keys =A
+in seed Lite, keys =C
+
+[WARN]: FungalGrowth/Infestor2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E,J
+in seed T, keys =R,6
+in seed R, keys =R,Tab
+in seed Z, keys =G,B
+in seed Lite, keys =Space
+
+[WARN]: Gateway/Harvester not related to a conflict
+but is inherited
+in seed P, keys =V
+in seed T, keys =4
+in seed R, keys =R
+in seed Z, keys =H
+in seed Lite, keys =CapsLock
+
+[WARN]: GuardianShield/Sentry2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =4
+in seed R, keys =S
+in seed Z, keys =S
+in seed Lite, keys =Space
+
+[WARN]: Hallucination/Sentry2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =Z
+in seed R, keys =F,A
+in seed Z, keys =Q,B
+in seed Lite, keys =CapsLock
+
+[WARN]: Hallucination2/Voranor not related to a conflict
+but is inherited
+in seed P, keys =D
+in seed T, keys =Z
+in seed R, keys =F,A
+in seed Z, keys =Q,B
+in seed Lite, keys =CapsLock
+
+[WARN]: Heal/Medivac2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =6
+in seed R, keys =A
+in seed Z, keys =Y
+in seed Lite, keys =R
+
+[WARN]: HighTemplarHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =V
+in seed T, keys =5
+in seed R, keys =Q
+in seed Z, keys =H
+in seed Lite, keys =Space
+
+[WARN]: HighTemplarHallucination/Voranor not related to a conflict
+but is inherited
+in seed P, keys =V
+in seed T, keys =5
+in seed R, keys =Q
+in seed Z, keys =H
+in seed Lite, keys =Space
+
+[WARN]: ImmortalBarrierBase/Immortal not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: ImmortalHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =F
+in seed R, keys =S
+in seed Z, keys =S
+in seed Lite, keys =R
+
+[WARN]: ImpalerDen/HydraliskDen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =B
+in seed T, keys =Z
+in seed R, keys =C
+in seed Z, keys =Y
+in seed Lite, keys =E
+
+[WARN]: InfestedTerrans/Infestor2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =D
+in seed R, keys =2
+in seed Z, keys =S
+in seed Lite, keys =F
+
+[WARN]: K5DropPods/K5Kerrigan not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =X
+in seed T, keys =X
+in seed R, keys =A
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: KhalaShockwave/Immortal not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: Lurker/Hydralisk not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: LurkerBurrowDown not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: MeliakBlinkBTN/Meliak not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: MorphMorphalisk/BroodMother not related to a conflict
+but is inherited
+in seed P, keys =E,N
+in seed T, keys =R,6
+in seed R, keys =R,2
+in seed Z, keys =2
+in seed Lite, keys =Space
+
+[WARN]: MorphMorphalisk/Queen2 not related to a conflict
+but is inherited
+in seed P, keys =E,N
+in seed T, keys =R,6
+in seed R, keys =R,2
+in seed Z, keys =2
+in seed Lite, keys =Space
+
+[WARN]: MorphToCorpser/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =H
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =S
+in seed Lite, keys =R
+
+[WARN]: MorphToHotSNoxious/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =J
+in seed T, keys =6
+in seed R, keys =C
+in seed Z, keys =Tab
+in seed Lite, keys =G
+
+[WARN]: MorphToHotSTorrasque/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =J
+in seed T, keys =6
+in seed R, keys =C
+in seed Z, keys =Tab
+in seed Lite, keys =G
+
+[WARN]: MorphToHydraliskImpaler/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =D
+in seed R, keys =S
+in seed Z, keys =Q
+in seed Lite, keys =V
+
+[WARN]: MorphToHydraliskLurker/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =D
+in seed R, keys =S
+in seed Z, keys =Q
+in seed Lite, keys =V
+
+[WARN]: MorphToMutaliskBroodlord/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =3
+in seed T, keys =C
+in seed R, keys =5
+in seed Z, keys =V
+in seed Lite, keys =T
+
+[WARN]: MorphToMutaliskViper/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =3
+in seed T, keys =C
+in seed R, keys =5
+in seed Z, keys =V
+in seed Lite, keys =T
+
+[WARN]: MorphToRaptor/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =W
+in seed Lite, keys =D
+
+[WARN]: MorphToSwarmHostSplitA/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =X
+in seed T, keys =X
+in seed R, keys =T
+in seed Z, keys =A
+in seed Lite, keys =4
+
+[WARN]: MorphToSwarmHostSplitB/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =X
+in seed T, keys =X
+in seed R, keys =T
+in seed Z, keys =A
+in seed Lite, keys =4
+
+[WARN]: MorphToSwarmling/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =W
+in seed Lite, keys =D
+
+[WARN]: MorphToVile/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =H
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =S
+in seed Lite, keys =R
+
+[WARN]: MorphtoDefiler/Larva not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =F
+in seed R, keys =Q
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: MorphtoHunter/HotSRaptor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =R
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: MorphtoHunter/HotSSwarmling not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =R
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: MorphtoRoach/Larva not related to a conflict
+but is inherited
+in seed P, keys =H
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =S
+in seed Lite, keys =R
+
+[WARN]: MorphtoSplitterling/HotSRaptor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =R
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: MorphtoSplitterling/HotSSwarmling not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =R
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: MoveChampions not related to a conflict
+but is inherited
+in seed P, keys =Comma
+in seed T, keys =Comma
+in seed R, keys =Comma
+in seed Z, keys =Comma
+in seed Lite, keys =H
+
+[WARN]: NeuralParasite/Infestor2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =Z,3
+in seed R, keys =S,A
+in seed Z, keys =2
+in seed Lite, keys =E
+
+[WARN]: Nexus/Harvester not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =F
+in seed R, keys =Q
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: PhoenixHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =G
+in seed Lite, keys =D
+
+[WARN]: PhotonCannon/Harvester not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =D
+in seed R, keys =2
+in seed Z, keys =W
+in seed Lite, keys =F
+
+[WARN]: PrimalHeal/K5Kerrigan not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =Z
+in seed R, keys =2
+in seed Z, keys =2
+in seed Lite, keys =C
+
+[WARN]: PrimalSlash/K5Kerrigan not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =CapsLock
+
+[WARN]: ProbeHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =N
+in seed T, keys =X
+in seed R, keys =J
+in seed Z, keys =Tab
+in seed Lite, keys =4
+
+[WARN]: ProbeHallucination/Voranor not related to a conflict
+but is inherited
+in seed P, keys =N
+in seed T, keys =X
+in seed R, keys =J
+in seed Z, keys =Tab
+in seed Lite, keys =4
+
+[WARN]: ProtossBuild/Harvester not related to a conflict
+but is inherited
+in seed P, keys =E,V
+in seed T, keys =R,D
+in seed R, keys =R,S
+in seed Z, keys =G,S
+in seed Lite, keys =Space
+
+[WARN]: ProtossBuildAdvanced/Harvester not related to a conflict
+but is inherited
+in seed P, keys =Z
+in seed T, keys =Z
+in seed R, keys =Z
+in seed Z, keys =Z
+in seed Lite, keys =CapsLock
+
+[WARN]: PsiDisruptor/SCV not related to a conflict
+but is inherited
+in seed P, keys =X
+in seed T, keys =6
+in seed R, keys =C
+in seed Z, keys =Y
+in seed Lite, keys =T
+
+[WARN]: PsiStorm/AnAleemController not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: PsiStorm/Khiradun not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: PsiStorm/Telios not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =E
+
+[WARN]: PsiStrike/K5Kerrigan not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =R
+in seed Z, keys =S
+in seed Lite, keys =E,Space
+
+[WARN]: PsionicBolt/Telios not related to a conflict
+but is inherited
+in seed P, keys =D,V
+in seed T, keys =4,3
+in seed R, keys =S,F
+in seed Z, keys =Q,2
+in seed Lite, keys =C,Space
+
+[WARN]: Pylon/Harvester not related to a conflict
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =V
+in seed Lite, keys =D
+
+[WARN]: RapidIncubation/SwarmHostSplitABurrowed not related to a conflict
+but is inherited
+in seed P, keys =P
+in seed T, keys =P
+in seed R, keys =P
+in seed Z, keys =P
+in seed Lite, keys =C
+
+[WARN]: RapidIncubation/SwarmHostSwarmHostBurrowed not related to a conflict
+but is inherited
+in seed P, keys =P
+in seed T, keys =P
+in seed R, keys =P
+in seed Z, keys =P
+in seed Lite, keys =C
+
+[WARN]: RapidIncubation/SwarmHostSwarmHostRooted not related to a conflict
+but is inherited
+in seed P, keys =P
+in seed T, keys =P
+in seed R, keys =P
+in seed Z, keys =P
+in seed Lite, keys =C
+
+[WARN]: ResearchCerberusMines/FactoryTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: ResearchG4Charge/BarracksTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =S
+in seed Z, keys =2
+in seed Lite, keys =C
+
+[WARN]: ResearchIncineratorNozzles/BarracksTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =B
+in seed T, keys =J
+in seed R, keys =C
+in seed Z, keys =A
+in seed Lite, keys =R
+
+[WARN]: ResearchJackhammerConcussionGrenade/BarracksTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =D
+in seed R, keys =R
+in seed Z, keys =S
+in seed Lite, keys =D
+
+[WARN]: ResearchMultiLockTargetingSystem/FactoryTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =5
+in seed R, keys =5
+in seed Z, keys =S
+in seed Lite, keys =E
+
+[WARN]: ResearchRegenerativeBioSteel/FactoryTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =2
+in seed Z, keys =2
+in seed Lite, keys =R
+
+[WARN]: ResearchShapedBlast/FactoryTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: ResearchStabilizerMedPacks/BarracksTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =3
+in seed T, keys =5
+in seed R, keys =5
+in seed Z, keys =V
+in seed Lite, keys =E
+
+[WARN]: ResearchStrikeCannons/FactoryTechReactor not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =4
+in seed R, keys =T
+in seed Z, keys =V
+in seed Lite, keys =C
+
+[WARN]: RoboticsBay/Harvester not related to a conflict
+but is inherited
+in seed P, keys =V
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =C
+
+[WARN]: RoboticsFacility/Harvester not related to a conflict
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =H
+in seed Lite, keys =D
+
+[WARN]: RogueGhostCloak/Spectre not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =C
+
+[WARN]: SpawnBanelings/K5Kerrigan not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =Z
+in seed R, keys =2
+in seed Z, keys =2
+in seed Lite, keys =C
+
+[WARN]: StalkerHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =X
+in seed T, keys =C
+in seed R, keys =C
+in seed Z, keys =B
+in seed Lite, keys =G
+
+[WARN]: Stargate/Harvester not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =R
+
+[WARN]: Summon2DragoonHallucinations/Sentry not related to a conflict
+but is inherited
+in seed P, keys =X
+in seed T, keys =C
+in seed R, keys =C
+in seed Z, keys =B
+in seed Lite, keys =G
+
+[WARN]: Summon2DragoonHallucinations/Voranor not related to a conflict
+but is inherited
+in seed P, keys =X
+in seed T, keys =C
+in seed R, keys =C
+in seed Z, keys =B
+in seed Lite, keys =G
+
+[WARN]: Summon2ScoutHallucinations/Sentry not related to a conflict
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =G
+in seed Lite, keys =D
+
+[WARN]: Summon2ScoutHallucinations/Voranor not related to a conflict
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =G
+in seed Lite, keys =D
+
+[WARN]: SupplyDepotDrop/SCV not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =G
+in seed T, keys =E
+in seed R, keys =W
+in seed Z, keys =V
+in seed Lite, keys =D
+
+[WARN]: SwarmHostRoot/SwarmHost not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: SwarmHostRoot/SwarmHostSplitA not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: SwarmHostRoot/SwarmHostSplitB not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =4
+in seed R, keys =F
+in seed Z, keys =Q
+in seed Lite, keys =R
+
+[WARN]: SwarmHostUproot/SwarmHostRooted not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: SwarmHostUproot/SwarmHostSplitARooted not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: SwarmHostUproot/SwarmHostSplitBRooted not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: SwarmHostUprootUnburrow/SwarmHostBurrowed not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: SwarmHostUprootUnburrow/SwarmHostSplitABurrowed not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =G
+in seed Lite, keys =Space
+
+[WARN]: SwarmQueenCorpser/HugeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =E
+
+[WARN]: SwarmQueenCorpser/LargeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =E
+
+[WARN]: SwarmQueenCorpser/SwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =E
+
+[WARN]: SwarmQueenHydraliskImpaler/HugeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =3
+in seed R, keys =2
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: SwarmQueenHydraliskImpaler/LargeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =3
+in seed R, keys =2
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: SwarmQueenHydraliskImpaler/SwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =3
+in seed R, keys =2
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: SwarmQueenHydraliskLurker/HugeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =3
+in seed R, keys =2
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: SwarmQueenHydraliskLurker/LargeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =3
+in seed R, keys =2
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: SwarmQueenHydraliskLurker/SwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =3
+in seed R, keys =2
+in seed Z, keys =B
+in seed Lite, keys =F
+
+[WARN]: SwarmQueenRaptor/HugeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: SwarmQueenRaptor/LargeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: SwarmQueenRaptor/SwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: SwarmQueenSwarmling/HugeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: SwarmQueenSwarmling/LargeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: SwarmQueenSwarmling/SwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =R
+in seed Z, keys =G
+in seed Lite, keys =C
+
+[WARN]: SwarmQueenVile/HugeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =E
+
+[WARN]: SwarmQueenVile/LargeSwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =E
+
+[WARN]: SwarmQueenVile/SwarmQueen not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =4
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =S
+in seed Lite, keys =E
+
+[WARN]: TechReactor/Barracks not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =D
+in seed R, keys =F
+in seed Z, keys =2
+in seed Lite, keys =CapsLock
+
+[WARN]: TechReactor/Factory not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =D
+in seed R, keys =F
+in seed Z, keys =2
+in seed Lite, keys =CapsLock
+
+[WARN]: TechReactor/Starport not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =D
+in seed T, keys =D
+in seed R, keys =F
+in seed Z, keys =2
+in seed Lite, keys =CapsLock
+
+[WARN]: TemplarArchive/Harvester not related to a conflict
+but is inherited
+in seed P, keys =D
+in seed T, keys =F
+in seed R, keys =Q
+in seed Z, keys =W
+in seed Lite, keys =Space
+
+[WARN]: Transfusion/BroodMother not related to a conflict
+but is inherited
+in seed P, keys =V
+in seed T, keys =3,Z
+in seed R, keys =S,C
+in seed Z, keys =G,B
+in seed Lite, keys =E
+
+[WARN]: Transfusion/Queen2 not related to a conflict
+but is part of same check
+but is inherited
+in seed P, keys =V
+in seed T, keys =3,Z
+in seed R, keys =S,C
+in seed Z, keys =G,B
+in seed Lite, keys =E
+
+[WARN]: TwilightCouncil/Harvester not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =3
+in seed R, keys =S
+in seed Z, keys =2
+in seed Lite, keys =E
+
+[WARN]: VoidRayHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =H
+in seed T, keys =3
+in seed R, keys =T
+in seed Z, keys =V
+in seed Lite, keys =V
+
+[WARN]: VoidRayHallucination/Voranor not related to a conflict
+but is inherited
+in seed P, keys =H
+in seed T, keys =3
+in seed R, keys =T
+in seed Z, keys =V
+in seed Lite, keys =V
+
+[WARN]: VoodooShield/Immortal not related to a conflict
+but is inherited
+in seed P, keys =4
+in seed T, keys =4
+in seed R, keys =S
+in seed Z, keys =S
+in seed Lite, keys =Space
+
+[WARN]: WarpInShuttle/RoboticsFacility not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =R
+in seed R, keys =W
+in seed Z, keys =W
+in seed Lite, keys =F
+
+[WARN]: WarpPrismHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =3
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =A
+in seed Lite, keys =F
+
+[WARN]: WarpPrismHallucination/Voranor not related to a conflict
+but is inherited
+in seed P, keys =3
+in seed T, keys =D
+in seed R, keys =A
+in seed Z, keys =A
+in seed Lite, keys =F
+
+[WARN]: WraithCloak/StarportTechLab not related to a conflict
+but is part of same check
+in seed P, keys =P
+in seed T, keys =P
+in seed R, keys =P
+in seed Z, keys =P
+in seed Lite, keys =E
+
+[WARN]: ZealotHallucination/Nexus not related to a conflict
+but is inherited
+in seed P, keys =J
+in seed T, keys =6
+in seed R, keys =Tab
+in seed Z, keys =Y
+in seed Lite, keys =T
+
+[WARN]: ZealotHallucination/Voranor not related to a conflict
+but is inherited
+in seed P, keys =J
+in seed T, keys =6
+in seed R, keys =Tab
+in seed Z, keys =Y
+in seed Lite, keys =T
+
+[WARN]: hydraliskspeed/LurkerDen not related to a conflict
+but is inherited
+in seed P, keys =E
+in seed T, keys =E
+in seed R, keys =R
+in seed Z, keys =W
+in seed Lite, keys =Space
+
+----------------------------
+Finished (commands with no attached conflict) - ERRORs: 87 WARNs: 167 
+============================

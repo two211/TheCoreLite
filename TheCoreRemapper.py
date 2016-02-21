@@ -486,12 +486,14 @@ def analyse(model):
     conflict_check(model)
     wrong_inherit(model)
     ## context dependent checks
+    context_dict =  getCommandByContextDict()  # a dict based on CONFLICT_CHECKS
     known_hotkey_command_check(model,context_dict)
     known_unbound_command_check(model,context_dict)
     unknown_hotkey_command_check(model,context_dict)
-    ## optional checks
+    ## quality checks
     if debug_parser.getboolean("Settings","allchecks",fallback=True):
         suggest_inherit(model)
+        missing_conflict_check(model,context_dict)
 
 def same_check(model):
     logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
@@ -690,6 +692,28 @@ def outofmap_check(model):
 					logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
+def missing_conflict_check(model,context_dict):
+	logger = Logger("commands with no attached conflict", "MissingConflict.log", log_consol=[], log_file=[LogLevel.Error, LogLevel.Warn])
+	## build a list of commands appearing in SAME_CHECKS
+	sameCommands = []
+	for same in SAME_CHECKS:
+		sameCommands += same
+	## check for missing conflicts, temperate if part of SAME_CHECKS or inheritance.ini
+	for command in default_parser.options('Commands'):
+		if not command in context_dict['KnownCommands']:
+			log_msg = command + " not related to a conflict"
+			level = LogLevel.Error
+			if command in sameCommands:
+				log_msg += "\nbut is part of same check"
+				level = LogLevel.Warn
+			if command in inherit_parser.options('Commands'):
+				log_msg += "\nbut is inherited"
+				level = LogLevel.Warn
+			for seed in allSeeds:
+				log_msg += "\nin seed " + seed.value + ", keys =" + model['Commands'][command].get_value(seed)
+			logger.log(level, log_msg)
+	logger.finish()
+
 def getCommandByContextDict():
 	context_dict = {}
 	context_dict['Context'] = {}
@@ -759,5 +783,4 @@ check_defaults()
 model = create_model()
 if debug_parser.getboolean("Settings","generate",fallback=True):
     generate(model)
-context_dict =  getCommandByContextDict()
 analyse(model)
