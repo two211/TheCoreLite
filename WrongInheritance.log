@@ -6,7 +6,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 4	3
 	R: S,2	S,2
 	Z: Q	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: R	R (default)
 
 [ERROR]: ArchonAdvancedMergeSelection != AWrp
@@ -14,7 +14,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	D
 	R: 2	2
 	Z:  	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: C	C (default)
 
 [ERROR]: ArchonHallucination/Nexus != ArchonHallucination/Sentry
@@ -22,7 +22,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	3
 	R: F	F
 	Z: Q	Q
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D:  	N (default)
 
 [ERROR]: ArchonHallucination/Voranor != ArchonHallucination/Sentry
@@ -30,7 +30,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	3
 	R: F	F
 	Z: Q	Q
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D:  	N (default)
 
 [ERROR]: Baneling/HotSRaptor != Baneling/Zergling
@@ -38,7 +38,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	D
 	R: S	S
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: Baneling/HotSSwarmling != Baneling/Zergling
@@ -46,7 +46,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	D
 	R: S	S
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: Baneling/Zergling2 != Baneling/Zergling
@@ -54,7 +54,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	D
 	R: S	S
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D:  	E (default)
 
 [ERROR]: BonesHeal/Stetmann != Heal/Medivac
@@ -62,7 +62,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: Y	H
-	Lite: R	R
+	TheCore Lite : R	R
 	D: E	E (default)
 
 [ERROR]: BroodLord/MutaliskBroodlord != BroodLord/Corruptor
@@ -70,7 +70,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	R
 	R: S	S
 	Z: S	S
-	Lite: E	E
+	TheCore Lite : E	E
 	D: B	B (default)
 
 [ERROR]: BuildAutoTurret/Raven != AutoTurret/Raven
@@ -78,7 +78,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D,Z	D,T
 	R: F,6	F,6
 	Z: S	S
-	Lite: C,Space	C,Space
+	TheCore Lite : C,Space	C,Space
 	D:  	T (default)
 
 [ERROR]: BuildCreepTumor/QueenCoop != BuildCreepTumor/Queen
@@ -86,7 +86,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	D
 	R: A	A
 	Z:  	S
-	Lite: C,CapsLock	C,CapsLock
+	TheCore Lite : C,CapsLock	C,CapsLock
 	D: C	C (default)
 
 [ERROR]: BuildScienceVessel/Starport != Raven/Starport
@@ -94,7 +94,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: F	5
 	R: Q	Q
 	Z: H	H
-	Lite: V	V
+	TheCore Lite : V	V
 	D: R	R (default)
 
 [ERROR]: BurrowHydraliskImpalerUp != BurrowUp
@@ -102,7 +102,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3	3
 	R: S	S
 	Z: G,N	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	R (default)
 
 [ERROR]: BurrowHydraliskLurkerUp != BurrowUp
@@ -110,7 +110,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3	3
 	R: S	S
 	Z: G,N	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	R (default)
 
 [ERROR]: CancelCocoon != Cancel
@@ -118,7 +118,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: T	Z
 	R: Z	Z
 	Z: Z	Z
-	Lite: Escape	Escape
+	TheCore Lite : Escape	Escape
 	D:  	Escape (default)
 
 [ERROR]: CancelMutateMorph != Cancel
@@ -126,7 +126,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: T	Z
 	R: Z	Z
 	Z: Z	Z
-	Lite: Escape	Escape
+	TheCore Lite : Escape	Escape
 	D:  	Escape (default)
 
 [ERROR]: CancelUpgradeMorph != Cancel
@@ -134,7 +134,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: T	Z
 	R: Z	Z
 	Z: Z	Z
-	Lite: Escape	Escape
+	TheCore Lite : Escape	Escape
 	D:  	Escape (default)
 
 [ERROR]: Charge/Khraxus != Charge/Zealot
@@ -142,7 +142,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,R	R
 	R: R	R
 	Z: N,G	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	C (default)
 
 [ERROR]: Charge/Orthos != Charge/Zealot
@@ -150,7 +150,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,R	R
 	R: R	R
 	Z: N,G	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	C (default)
 
 [ERROR]: Charge/ShadowOfTheVoidZealot != Charge/Zealot
@@ -158,7 +158,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	R
 	R: R	R
 	Z:  	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: C	C (default)
 
 [ERROR]: Charge/Voranor != Charge/Zealot
@@ -166,7 +166,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,R	R
 	R: R	R
 	Z: N,G	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	C (default)
 
 [ERROR]: Charge/ZealotDark != Charge/Zealot
@@ -174,7 +174,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,3	R
 	R: R	R
 	Z: N,G	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	C (default)
 
 [ERROR]: ColossusHallucination/Nexus != ColossusHallucination/Sentry
@@ -182,7 +182,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 4	F
 	R: 2	2
 	Z: 2	A
-	Lite: C	C
+	TheCore Lite : C	C
 	D:  	C (default)
 
 [ERROR]: ColossusHallucination/Voranor != ColossusHallucination/Sentry
@@ -190,7 +190,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 4	F
 	R: 2	2
 	Z: 2	A
-	Lite: C	C
+	TheCore Lite : C	C
 	D:  	C (default)
 
 [ERROR]: Consume/GiantYeti != ParasiticInvasion/LarvalQueen
@@ -198,7 +198,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	Z
 	R: Z	S
 	Z: C	2
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D: W	Q (default)
 
 [ERROR]: Consume/Lyote != ParasiticInvasion/LarvalQueen
@@ -206,7 +206,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	Z
 	R: Z	S
 	Z: C	2
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D: W	Q (default)
 
 [ERROR]: DarkPylonRecall/DarkPylon != MothershipCoreMassRecall/MothershipCore
@@ -214,7 +214,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	3
 	R: S	S,2
 	Z:  	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: R	R (default)
 
 [ERROR]: DarkTemplarShadowDash/DarkTemplarShakuras != Blink/Stalker
@@ -222,7 +222,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	R
 	R: R	R
 	Z:  	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: B	B (default)
 
 [ERROR]: DisableBuildingAttackScourge/Scourge != DisableBuildingAttack/Baneling
@@ -230,7 +230,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	Z
 	R:  	S
 	Z:  	2
-	Lite: E	E
+	TheCore Lite : E	E
 	D: G	G (default)
 
 [ERROR]: DisablingCloud/Viper != BlindingCloud/Viper
@@ -238,7 +238,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 4,6	4
 	R: S	S
 	Z: Q,B	Q,B
-	Lite: C	C
+	TheCore Lite : C	C
 	D: B	B (default)
 
 [ERROR]: DutchPlaceTurret/Swann != AutoTurret/Raven
@@ -246,7 +246,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D,Z	D,T
 	R: F,6	F,6
 	Z: S	S
-	Lite: C,Space	C,Space
+	TheCore Lite : C,Space	C,Space
 	D: T	T (default)
 
 [ERROR]: FungalGrowth/Infestor2 != FungalGrowth/Infestor
@@ -254,7 +254,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,6	R
 	R: R,Tab	R,Tab
 	Z: G,B	G,H
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	F (default)
 
 [ERROR]: GreaterSpireBroodlord/Spire != GreaterSpire/Spire
@@ -262,7 +262,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	D
 	R: S	S
 	Z: S	S
-	Lite: E	E
+	TheCore Lite : E	E
 	D: G	G (default)
 
 [ERROR]: Hallucination/Sentry2 != Hallucination/Sentry
@@ -270,7 +270,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	Z,3
 	R: F,A	F,A
 	Z: Q,B	Q,B
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D:  	C (default)
 
 [ERROR]: Hallucination2/Voranor != Hallucination/Sentry
@@ -278,7 +278,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	Z,3
 	R: F,A	F,A
 	Z: Q,B	Q,B
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D:  	C (default)
 
 [ERROR]: Heal/Medivac2 != Heal/Medivac
@@ -286,7 +286,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: Y	H
-	Lite: R	R
+	TheCore Lite : R	R
 	D:  	E (default)
 
 [ERROR]: HeroNukeCalldown/Nova != NukeCalldown/Ghost
@@ -294,7 +294,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	Lite: 5	5
+	TheCore Lite : 5	5
 	D: N	N (default)
 
 [ERROR]: HeroNukeCalldown/Tosh != NukeCalldown/Ghost
@@ -302,7 +302,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	Lite: 5	5
+	TheCore Lite : 5	5
 	D: N	N (default)
 
 [ERROR]: HighTemplarHallucination/Nexus != HighTemplarHallucination/Sentry
@@ -310,7 +310,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 5	T
 	R: Q	Q
 	Z: H	H
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	T (default)
 
 [ERROR]: HighTemplarHallucination/Voranor != HighTemplarHallucination/Sentry
@@ -318,7 +318,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 5	T
 	R: Q	Q
 	Z: H	H
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	T (default)
 
 [ERROR]: HydraliskFrenzy/Hydralisk != Blink/Stalker
@@ -326,7 +326,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: P	R
 	R: R	R
 	Z: P	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: T	B (default)
 
 [ERROR]: HydraliskFrenzy/HydraliskImpaler != Blink/Stalker
@@ -334,7 +334,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: P	R
 	R: R	R
 	Z: P	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: T	B (default)
 
 [ERROR]: HydraliskFrenzy/HydraliskLurker != Blink/Stalker
@@ -342,7 +342,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: P	R
 	R: R	R
 	Z: P	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: T	B (default)
 
 [ERROR]: HyperionVoidCoopHyperjump/HyperionVoidCoop != Hyperjump/Battlecruiser
@@ -350,7 +350,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	4
 	R: R	R
 	Z:  	2
-	Lite: C	C
+	TheCore Lite : C	C
 	D: Q	T (default)
 
 [ERROR]: HyperionVoidCoopYamatoCannon/HyperionVoidCoop != YamatoGun
@@ -358,7 +358,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	R,D
 	R: S,F	S,F
 	Z:  	S
-	Lite: Space,F	Space,F
+	TheCore Lite : Space,F	Space,F
 	D: Y	Y (default)
 
 [ERROR]: HyperjumpHercules/Hercules != Hyperjump/Battlecruiser
@@ -366,7 +366,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	4
 	R: S	R
 	Z:  	2
-	Lite: C	C
+	TheCore Lite : C	C
 	D: T	T (default)
 
 [ERROR]: ImmortalHallucination/Nexus != ImmortalHallucination/Sentry
@@ -374,7 +374,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: F	4
 	R: S	S
 	Z: S	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D:  	I (default)
 
 [ERROR]: ImpalerBurrowUp != BurrowUp
@@ -382,7 +382,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3	3
 	R: S	S
 	Z: G,N	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: R	R (default)
 
 [ERROR]: ImpalerDen/HydraliskDen != Lair/Hatchery
@@ -390,7 +390,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	T
 	R: C	C
 	Z: Y	Y
-	Lite: E	E
+	TheCore Lite : E	E
 	D:  	L (default)
 
 [ERROR]: Interceptor/Selendis != Interceptor/Carrier
@@ -398,7 +398,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,R	4
 	R: R	R
 	Z: N,G	S
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: I	I (default)
 
 [ERROR]: JackhammerConcussionGrenade/HammerSecurity != JackhammerConcussionGrenade/Marauder
@@ -406,7 +406,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	P
 	R:  	P
 	Z:  	P
-	Lite: C	C
+	TheCore Lite : C	C
 	D: C	C (default)
 
 [ERROR]: MassRecall/Artanis != MothershipCoreMassRecall/MothershipCore
@@ -414,7 +414,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	3
 	R: S,2	S,2
 	Z: S	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: R	R (default)
 
 [ERROR]: MassRecall/Mothership != MothershipCoreMassRecall/MothershipCore
@@ -422,7 +422,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	3
 	R: S,2	S,2
 	Z: S	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: R	R (default)
 
 [ERROR]: MedicHeal/Medic != Heal/Medivac
@@ -430,7 +430,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: Y	H
-	Lite: R	R
+	TheCore Lite : R	R
 	D: E	E (default)
 
 [ERROR]: MercMedicHeal/MercMedic != Heal/Medivac
@@ -438,7 +438,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: Y	H
-	Lite: R	R
+	TheCore Lite : R	R
 	D: E	E (default)
 
 [ERROR]: MorphMorphalisk/BroodMother != MorphMorphalisk/Queen
@@ -446,7 +446,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,6	R,6
 	R: R,2	R,2
 	Z: 2	2
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	V (default)
 
 [ERROR]: MorphMorphalisk/Queen2 != MorphMorphalisk/Queen
@@ -454,7 +454,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,6	R,6
 	R: R,2	R,2
 	Z: 2	2
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	V (default)
 
 [ERROR]: MorphMorphalisk/QueenCoop != MorphMorphalisk/Queen
@@ -462,7 +462,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	R,6
 	R: R,2	R,2
 	Z:  	2
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: V	V (default)
 
 [ERROR]: MorphToHotSNoxious/Larva != Ultralisk/Larva
@@ -470,7 +470,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	X
 	R: C	C
 	Z: Tab	1
-	Lite: G	G
+	TheCore Lite : G	G
 	D: U	U (default)
 
 [ERROR]: MorphToHotSTorrasque/Larva != Ultralisk/Larva
@@ -478,7 +478,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	X
 	R: C	C
 	Z: Tab	1
-	Lite: G	G
+	TheCore Lite : G	G
 	D: U	U (default)
 
 [ERROR]: MorphToSwarmHostSplitA/Larva != SwarmHostMP/Larva
@@ -486,7 +486,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	6
 	R: T	T
 	Z: A	A
-	Lite: 4	4
+	TheCore Lite : 4	4
 	D: A	A (default)
 
 [ERROR]: MorphToSwarmHostSplitB/Larva != SwarmHostMP/Larva
@@ -494,7 +494,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	6
 	R: T	T
 	Z: A	A
-	Lite: 4	4
+	TheCore Lite : 4	4
 	D: A	A (default)
 
 [ERROR]: MorphtoHunter/HotSRaptor != Baneling/Zergling
@@ -502,7 +502,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	D
 	R: S	S
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: MorphtoHunter/HotSSwarmling != Baneling/Zergling
@@ -510,7 +510,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	D
 	R: S	S
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: MorphtoSplitterling/HotSRaptor != Baneling/Zergling
@@ -518,7 +518,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	D
 	R: S	S
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: MorphtoSplitterling/HotSSwarmling != Baneling/Zergling
@@ -526,7 +526,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	D
 	R: S	S
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: Mothership/Nexus != MothershipCore/Nexus
@@ -534,7 +534,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	D
 	R: F	F
 	Z: S	S
-	Lite: E	E
+	TheCore Lite : E	E
 	D: M	M (default)
 
 [ERROR]: NanoRepair/ScienceVessel != Heal/Medivac
@@ -542,7 +542,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: Y	H
-	Lite: R	R
+	TheCore Lite : R	R
 	D: N	E (default)
 
 [ERROR]: NeuralParasite/Infestor2 != NeuralParasite/Infestor
@@ -550,7 +550,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z,3	3,6
 	R: S,A	S,A
 	Z: 2	2
-	Lite: E	E
+	TheCore Lite : E	E
 	D:  	E (default)
 
 [ERROR]: Observer/RoboticsFacilityWarp != Observer/RoboticsFacility
@@ -558,7 +558,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	E
 	R: R	R
 	Z: G	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: B	B (default)
 
 [ERROR]: OdinNukeCalldown/Odin != NukeCalldown/Ghost
@@ -566,7 +566,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	Lite: 5	5
+	TheCore Lite : 5	5
 	D: N	N (default)
 
 [ERROR]: ProbeHallucination/Nexus != ProbeHallucination/Sentry
@@ -574,7 +574,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	J
 	R: J	J
 	Z: Tab	J
-	Lite: 4	4
+	TheCore Lite : 4	4
 	D:  	E (default)
 
 [ERROR]: ProbeHallucination/Voranor != ProbeHallucination/Sentry
@@ -582,7 +582,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	J
 	R: J	J
 	Z: Tab	J
-	Lite: 4	4
+	TheCore Lite : 4	4
 	D:  	E (default)
 
 [ERROR]: ProtossBuild/Harvester != ProtossBuild/Probe
@@ -590,7 +590,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,D	R,D
 	R: R,S	R,S
 	Z: G,S	S
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D:  	B (default)
 
 [ERROR]: PsionicLift/KerriganVoid != PsionicLift/K5Kerrigan
@@ -598,7 +598,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	D
 	R: R	R
 	Z:  	S
-	Lite: E,Space	E,Space
+	TheCore Lite : E,Space	E,Space
 	D: T	T,W (default)
 
 [ERROR]: PsionicLift/KerriganVoidBurrowed != PsionicLift/K5KerriganBurrowed
@@ -606,7 +606,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: J	J
 	R: J	J
 	Z:  	J
-	Lite: E	E
+	TheCore Lite : E	E
 	D: T	T,W (default)
 
 [ERROR]: QueenBurstHeal/Queen != Transfusion/Queen
@@ -614,7 +614,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,Z	3,Z
 	R: S,C	S,C
 	Z: G,B	G,H
-	Lite: E	E
+	TheCore Lite : E	E
 	D: T	T (default)
 
 [ERROR]: QueenCoop != Queen
@@ -622,7 +622,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	F
 	R:  	Q
 	Z:  	B
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D: Q	Q (default)
 
 [ERROR]: ReaverScarabs/Reaver != Interceptor/Carrier
@@ -630,7 +630,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	4
 	R: R	R
 	Z: G	S
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: C	I (default)
 
 [ERROR]: ResearchBansheeCloak/StarportTechReactor != ResearchBansheeCloak/StarportTechLab
@@ -638,7 +638,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 4	3
 	R: F	F
 	Z: Q	Q
-	Lite: C	C
+	TheCore Lite : C	C
 	D: C	C (default)
 
 [ERROR]: ResearchGoliath/ScienceFacility != HellionTank/Factory
@@ -646,7 +646,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 5	C
 	R: 5	5
 	Z: S	A
-	Lite: G	G
+	TheCore Lite : G	G
 	D: G	R (default)
 
 [ERROR]: ResearchShapedBlast/FactoryTechLab != SiegeTank/Factory
@@ -654,7 +654,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: F	4
 	R: S	S
 	Z: H	S
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: B	S (default)
 
 [ERROR]: ResearchSiegeTank/ScienceFacility != SiegeTank/Factory
@@ -662,7 +662,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: F	4
 	R: S	S
 	Z: H	S
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: T	S (default)
 
 [ERROR]: SJHyperionYamato/SJHyperion != YamatoGun
@@ -670,7 +670,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,D	R,D
 	R: S,F	S,F
 	Z: G,S	S
-	Lite: Space,F	Space,F
+	TheCore Lite : Space,F	Space,F
 	D: E	Y (default)
 
 [ERROR]: SOAMothershipBlink/SOAMothershipv4 != Blink/Stalker
@@ -678,7 +678,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3	R
 	R: R	R
 	Z: 2	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: B	B (default)
 
 [ERROR]: Salvage/KelMorianGrenadeTurret != Salvage/Bunker
@@ -686,7 +686,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	5
 	R: S	S
 	Z:  	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: V	V (default)
 
 [ERROR]: Salvage/KelMorianMissileTurret != Salvage/Bunker
@@ -694,7 +694,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	5
 	R: S	S
 	Z:  	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: V	V (default)
 
 [ERROR]: Salvage/MissileTurret != Salvage/Bunker
@@ -702,7 +702,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	5
 	R: S	S
 	Z:  	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: V	V (default)
 
 [ERROR]: Salvage/PerditionTurret != Salvage/Bunker
@@ -710,7 +710,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	5
 	R: S	S
 	Z:  	S
-	Lite: R	R
+	TheCore Lite : R	R
 	D: V	V (default)
 
 [ERROR]: Scourge/Larva != SwarmHostMP/Larva
@@ -718,7 +718,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	6
 	R: T	T
 	Z: A	A
-	Lite: 4	4
+	TheCore Lite : 4	4
 	D: S	A (default)
 
 [ERROR]: ShadowGuardBlink/VorazunShadowGuard != Blink/Stalker
@@ -726,7 +726,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	R
 	R: R	R
 	Z:  	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: B	B (default)
 
 [ERROR]: SpectreHoldFire/Spectre != GhostHoldFire/Ghost
@@ -734,7 +734,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	X
 	R: Tab	Tab
 	Z: Tab	B
-	Lite:  	F
+	TheCore Lite :  	F
 	D: F	F (default)
 
 [ERROR]: SpectreNukeArm/GhostAcademy != NukeArm/GhostAcademy
@@ -742,7 +742,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	R
 	R: A	A
 	Z: G	H
-	Lite: CapsLock	CapsLock
+	TheCore Lite : CapsLock	CapsLock
 	D: N	N (default)
 
 [ERROR]: SpectreNukeCalldown/Spectre != NukeCalldown/Ghost
@@ -750,7 +750,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	Lite: 5	5
+	TheCore Lite : 5	5
 	D: N	N (default)
 
 [ERROR]: StalkerHallucination/Nexus != StalkerHallucination/Sentry
@@ -758,7 +758,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: C	X
 	R: C	C
 	Z: B	1
-	Lite: G	G
+	TheCore Lite : G	G
 	D:  	S (default)
 
 [ERROR]: StopGenerateCreep/Overlord != StopGenerateCreep
@@ -766,7 +766,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	6
 	R: C	C
 	Z: 2	H
-	Lite: C	C
+	TheCore Lite : C	C
 	D: C	C (default)
 
 [ERROR]: Summon2DragoonHallucinations/Sentry != StalkerHallucination/Sentry
@@ -774,7 +774,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: C	X
 	R: C	C
 	Z: B	1
-	Lite: G	G
+	TheCore Lite : G	G
 	D:  	S (default)
 
 [ERROR]: Summon2DragoonHallucinations/Voranor != StalkerHallucination/Sentry
@@ -782,7 +782,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: C	X
 	R: C	C
 	Z: B	1
-	Lite: G	G
+	TheCore Lite : G	G
 	D:  	S (default)
 
 [ERROR]: TerranShipWeaponsUltraCapacitorsLevel1/Armory != TerranShipWeaponsLevel1/Armory
@@ -790,7 +790,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: E	4
 	R: S	S
 	Z: W	S
-	Lite: D	D
+	TheCore Lite : D	D
 	D: S	S (default)
 
 [ERROR]: TerranShipWeaponsUltraCapacitorsLevel2/Armory != TerranShipWeaponsLevel1/Armory
@@ -798,7 +798,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: E	4
 	R: S	S
 	Z: W	S
-	Lite: D	D
+	TheCore Lite : D	D
 	D: S	S (default)
 
 [ERROR]: TerranShipWeaponsUltraCapacitorsLevel3/Armory != TerranShipWeaponsLevel1/Armory
@@ -806,7 +806,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: E	4
 	R: S	S
 	Z: W	S
-	Lite: D	D
+	TheCore Lite : D	D
 	D: S	S (default)
 
 [ERROR]: TerranVehicleWeaponsUltraCapacitorsLevel1/Armory != TerranVehicleWeaponsLevel1/Armory
@@ -814,7 +814,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	E
 	R: W	W
 	Z: S	W
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: TerranVehicleWeaponsUltraCapacitorsLevel2/Armory != TerranVehicleWeaponsLevel1/Armory
@@ -822,7 +822,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	E
 	R: W	W
 	Z: S	W
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: TerranVehicleWeaponsUltraCapacitorsLevel3/Armory != TerranVehicleWeaponsLevel1/Armory
@@ -830,7 +830,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	E
 	R: W	W
 	Z: S	W
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	E (default)
 
 [ERROR]: Transfusion/BroodMother != Transfusion/Queen
@@ -838,7 +838,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,Z	3,Z
 	R: S,C	S,C
 	Z: G,B	G,H
-	Lite: E	E
+	TheCore Lite : E	E
 	D:  	T (default)
 
 [ERROR]: Transfusion/Queen2 != Transfusion/Queen
@@ -846,7 +846,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,Z	3,Z
 	R: S,C	S,C
 	Z: G,B	G,H
-	Lite: E	E
+	TheCore Lite : E	E
 	D:  	T (default)
 
 [ERROR]: Transfusion/QueenCoop != Transfusion/Queen
@@ -854,7 +854,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	3,Z
 	R: S,C	S,C
 	Z:  	G,H
-	Lite: E	E
+	TheCore Lite : E	E
 	D: T	T (default)
 
 [ERROR]: UpgradeToRoboticsFacilityWarp/RoboticsFacility != UpgradeToWarpGate/Gateway
@@ -862,7 +862,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: T	T
 	R: C	S
 	Z: Y	V
-	Lite: E	E
+	TheCore Lite : E	E
 	D: G	G (default)
 
 [ERROR]: UpgradeToStargateWarp/Stargate != UpgradeToWarpGate/Gateway
@@ -870,7 +870,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: T	T
 	R: C	S
 	Z: Y	V
-	Lite: E	E
+	TheCore Lite : E	E
 	D: G	G (default)
 
 [ERROR]: Viper/MutaliskViper != BroodLord/Corruptor
@@ -878,7 +878,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	R
 	R: S	S
 	Z: S	S
-	Lite: E	E
+	TheCore Lite : E	E
 	D: E	B (default)
 
 [ERROR]: ViperConsumption/Viper != ViperConsume/Viper
@@ -886,7 +886,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D,Z	3
 	R: A	A
 	Z: S	H
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: C	C (default)
 
 [ERROR]: VoidRayHallucination/Nexus != VoidRayHallucination/Sentry
@@ -894,7 +894,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3	C
 	R: T	T
 	Z: V	B
-	Lite: V	V
+	TheCore Lite : V	V
 	D:  	V (default)
 
 [ERROR]: VoidRayHallucination/Voranor != VoidRayHallucination/Sentry
@@ -902,7 +902,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3	C
 	R: T	T
 	Z: V	B
-	Lite: V	V
+	TheCore Lite : V	V
 	D:  	V (default)
 
 [ERROR]: VoidZealotShadowChargeStun/ZealotShakuras != Charge/Zealot
@@ -910,7 +910,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 4	R
 	R: S	R
 	Z: Q	G
-	Lite: Space	Space
+	TheCore Lite : Space	Space
 	D: Z	C (default)
 
 [ERROR]: Vortex/Artanis != TemporalField/MothershipCore
@@ -918,7 +918,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	R
 	R: F	R
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: V	T,C (default)
 
 [ERROR]: Vortex/Mothership != TemporalField/MothershipCore
@@ -926,7 +926,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	R
 	R: F	R
 	Z: G	G
-	Lite: E	E
+	TheCore Lite : E	E
 	D: V	T,C (default)
 
 [ERROR]: WarpPrismHallucination/Nexus != WarpPrismHallucination/Sentry
@@ -934,7 +934,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	5
 	R: A	A
 	Z: A	V
-	Lite: F	F
+	TheCore Lite : F	F
 	D:  	R (default)
 
 [ERROR]: WarpPrismHallucination/Voranor != WarpPrismHallucination/Sentry
@@ -942,7 +942,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	5
 	R: A	A
 	Z: A	V
-	Lite: F	F
+	TheCore Lite : F	F
 	D:  	R (default)
 
 [ERROR]: ZagaraVoidCoopNydusWorm/NydusNetwork != SummonNydusWorm/NydusNetwork
@@ -950,7 +950,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	E
 	R: W	W
 	Z:  	W
-	Lite: D	D
+	TheCore Lite : D	D
 	D: R	N (default)
 
 [ERROR]: ZealotHallucination/Nexus != ZealotHallucination/Sentry
@@ -958,7 +958,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	7
 	R: Tab	Tab
 	Z: Y	Tab
-	Lite: T	T
+	TheCore Lite : T	T
 	D:  	Z (default)
 
 [ERROR]: ZealotHallucination/Voranor != ZealotHallucination/Sentry
@@ -966,7 +966,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	7
 	R: Tab	Tab
 	Z: Y	Tab
-	Lite: T	T
+	TheCore Lite : T	T
 	D:  	Z (default)
 
 [ERROR]: ZeratulStun/ZeratulVoid != ZeratulStun/Zeratul
@@ -974,7 +974,7 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	D
 	R: S	S
 	Z: S	S
-	Lite: E	E
+	TheCore Lite : E	E
 	D: V	V (default)
 
 ----------------------------

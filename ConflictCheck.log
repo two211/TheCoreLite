@@ -112,7 +112,7 @@ Start conflict check (log file: ConflictCheck.log)
 [ERROR]: Conflict of hotkeys in seed: Z commandcard: LotV Multiplayer/Terran/Units/Ghost
 [ERROR]: Conflict of hotkeys in seed: Z commandcard: LotV Prologue/Protoss Story/Units/Zeratul (LotV Prologue)
 [ERROR]: Conflict of hotkeys in seed: Z commandcard: LotV Prologue/Protoss/Units/Probe/General
-[ERROR]: Conflict of hotkeys in seed: Lite commandcard: Coop/Protoss Story/Units/Centurion (Vorazun Commander)
+[ERROR]: Conflict of hotkeys in seed: TheCore Lite  commandcard: Coop/Protoss Story/Units/Centurion (Vorazun Commander)
 ----------------------------
 Finished (conflict check) - ERRORs: 112 
 ============================

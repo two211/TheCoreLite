@@ -134,12 +134,12 @@ Start command conflicts with hotkeys, out of identified conflicts (log file: Unk
 [ERROR]: C used for command WarpinObservatory/Probe, in seed Z
 [ERROR]: E used for command WormholeTransit/Predator, in seed Z
 [ERROR]: R used for command XaphanForce/Voranor, in seed Z
-[ERROR]: B used for command BattleRage/Khraxus, in seed Lite
-[ERROR]: Q used for command HotSBioPlasmidDischarge/HotSLeviathan, in seed Lite
-[ERROR]: W used for command HotSBioStasis/HotSLeviathan, in seed Lite
-[ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed Lite
-[ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed Lite
-[ERROR]: X used for command XaphanForce/Voranor, in seed Lite
+[ERROR]: B used for command BattleRage/Khraxus, in seed TheCore Lite 
+[ERROR]: Q used for command HotSBioPlasmidDischarge/HotSLeviathan, in seed TheCore Lite 
+[ERROR]: W used for command HotSBioStasis/HotSLeviathan, in seed TheCore Lite 
+[ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed TheCore Lite 
+[ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed TheCore Lite 
+[ERROR]: X used for command XaphanForce/Voranor, in seed TheCore Lite 
 ----------------------------
 Finished (command conflicts with hotkeys, out of identified conflicts) - ERRORs: 139 
 ============================

@@ -26,16 +26,6 @@ class ConfigParser(configparser.ConfigParser):
     def write(self, file):
         return super().write(file, space_around_delimiters=False)
 
-debug=False
-## If debug==True, the config file "Debug.ini" is loaded and modify the script behavior
-## An example is available, under the name "Debug_example.ini"
-#debug=True
-
-debug_parser = ConfigParser()
-if debug:
-    debug_filepath = 'Debug.ini'
-    debug_parser.read(debug_filepath)
-
 class Races(Enum):
     Protoss = "P"
     Terran = "T"
@@ -57,20 +47,25 @@ class LogLevel(Enum):
     Error = "ERROR"
 
 ####################################################################################
-## Support for other seeds than the pure TheCore
+## Support for other seeds than the pure TheCore, value = filename
+####################################################################################
+class OtherSeeds(Enum):
+    Lite = "TheCore Lite "
+
+####################################################################################
+## Debug infrastructure
 ####################################################################################
 
-## Class OtherSeeds refers too all non-pure TheCore
-##    usually those seeds are multiracial
-# ?Enhancement : could reuse Sides class in the future; default = Sides.Left at the moment
-# ?Doubt       : not sure that Enum class is the most suitable datatype (trade-off with consistency)
-class OtherSeeds(Enum):
-    Lite = "Lite"
+debug=False
+## If debug==True, the config file "Debug.ini" is loaded and modify the script behavior
+## An example is available, under the name "Debug_example.ini"
+## In case of debug=False or wrong loaded init file, default switches are given by Fallback
+#debug=True
 
-# Empty class is a dirty hack to work around create_filepath
-class Empty(Enum):
-    Null = ""
-
+debug_parser = ConfigParser()
+if debug:
+    debug_filepath = 'Debug.ini'
+    debug_parser.read(debug_filepath)
 
 ####################################################################################
 ## Seed list to be considered
@@ -212,17 +207,20 @@ class Hotkey:
 def init_seed_hotkeyfile_parser():
     for race in Races:
         hotkeyfile_parser = ConfigParser()
-        hotkeyfilepath = create_filepath(race, Sides.Left, Sizes.Medium)
+        hotkeyfilepath = create_filepath( prefix + thecore_tag(race, Sides.Left, Sizes.Medium) )
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[race] = hotkeyfile_parser
     for seed in OtherSeeds:
         hotkeyfile_parser = ConfigParser()
-        hotkeyfilepath = create_filepath(seed, Empty.Null, Empty.Null)
+        hotkeyfilepath = create_filepath(seed.value)
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[seed] = hotkeyfile_parser
 
-def create_filepath(race, side, size, path=""):
-    filename = prefix + " " + race.value + side.value + size.value + " " + suffix
+def thecore_tag(race, side, size):
+    return(" " + race.value + side.value + size.value + " ")
+
+def create_filepath(string, path=""):
+    filename = string + suffix
     filepath = filename
     if path:
         filepath = path + "/" + filename
@@ -451,19 +449,20 @@ def translate_and_create_files(models, logger):
                             model = translate(models[race][side][size], layout, side)
                         else:
                             model = models[race][side][size]
-                        create_file(model, race, side, size, layout, logger)
+                        filename = prefix + thecore_tag(race, side, size)
+                        create_file(model, filename, layout, logger)
         for seed in OtherSeeds:
             if layout != seed_layout:
                 logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
                 model = translate(models[seed], layout, Sides.Left)
             else:
                 model = models[seed]
-            create_file(model, seed, Empty.Null, Empty.Null, layout, logger)
+            create_file(model, seed.value, layout, logger)
 
 def translate(seed_model, layout, side):
     return modify_model(seed_model, layout_parser, layout, side)
 
-def create_file(model, race, side, size, layout, logger):
+def create_file(model, filename, layout, logger):
     hotkeyfile_parser = ConfigParser()
     for section in model:
         if not hotkeyfile_parser.has_section(section):
@@ -472,7 +471,7 @@ def create_file(model, race, side, size, layout, logger):
             hotkeyfile_parser.set(section, key, value)
     if not os.path.isdir(layout):
         os.makedirs(layout)
-    filepath = create_filepath(race, side, size, layout)
+    filepath = create_filepath(filename, layout)
     hotkeyfile = open(filepath, 'w')
     hotkeyfile_parser.write(hotkeyfile)
     hotkeyfile.close()
