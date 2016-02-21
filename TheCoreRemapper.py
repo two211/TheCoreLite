@@ -50,7 +50,9 @@ class LogLevel(Enum):
 ## Support for other seeds than the pure TheCore, value = filename
 ####################################################################################
 class OtherSeeds(Enum):
-    Lite = "TheCore Lite "
+    Lite = "TheCore Lite"
+    LiteRehab = "TheCore LiteRehab"
+    LiteRehabPlus = "TheCore LiteRehabPlus"
 
 ####################################################################################
 ## Debug infrastructure

@@ -1,15 +1,15 @@
 ============================
 Start suggest inherit (log file: SuggestInheritance.log)
 ----------------------------
-[INFO]: P:    T:    R:    Z:    TheCore Lite :    
+[INFO]: P:    T:    R:    Z:    TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	Immortal/Gateway default: 
 	Immortal/WarpGate default: 
 
-[INFO]: P:    T: A   R: 5   Z: A   TheCore Lite : V   
+[INFO]: P:    T: A   R: 5   Z: A   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	DarkArchon/Gateway default: A
 	DarkArchon/WarpGate default: A
 
-[INFO]: P:    T: B   R: 2   Z: B   TheCore Lite : E   
+[INFO]: P:    T: B   R: 2   Z: B   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	IgniteAfterburners/Banshee default: B
 	IgniteAfterburners/Battlecruiser default: B
 	IgniteAfterburners/Liberator default: B
@@ -17,113 +17,113 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	IgniteAfterburners/VikingAssault default: B
 	IgniteAfterburners/Vulture default: B
 
-[INFO]: P:    T: B   R: R   Z: B   TheCore Lite : Space   
+[INFO]: P:    T: B   R: R   Z: B   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	DarkTemplarShadowDash/DarkTemplarShakuras default: B copyof: Blink/Stalker default: B
 	MindBlast/Spectre default: B
 	ShadowGuardBlink/VorazunShadowGuard default: B copyof: Blink/Stalker default: B
 
-[INFO]: P:    T: C   R: F   Z: C   TheCore Lite : C   
+[INFO]: P:    T: C   R: F   Z: C   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	EvolveAncillaryCarapace/HydraliskDen default: C
 	EvolveAncillaryCarapace/ImpalerDen default: C
 	EvolveAncillaryCarapace/LurkerDen default: C
 	ScourgeNest/Drone default: C
 
-[INFO]: P:    T: C   R: T   Z: C   TheCore Lite : C   
+[INFO]: P:    T: C   R: T   Z: C   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	Research330mmBarrageCannon/FactoryTechLab default: C
 	Research330mmBarrageCannon/FactoryTechReactor default: C
 
-[INFO]: P:    T: E   R: A   Z: E   TheCore Lite : C   
+[INFO]: P:    T: E   R: A   Z: E   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	EvolveBroodLordSpeed/GreaterSpire default: E copyof: EvolveBroodLordSpeed/Spire default: E
 	EvolveBroodLordSpeed/Spire default: E
 
-[INFO]: P:    T: F   R: R   Z: F   TheCore Lite : F   
+[INFO]: P:    T: F   R: R   Z: F   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	EvolveFrenzy/HydraliskDen default: F
 	EvolveFrenzy/ImpalerDen default: F
 	EvolveFrenzy/LurkerDen default: F
 
-[INFO]: P:    T: R   R: 2   Z: R   TheCore Lite : R   
+[INFO]: P:    T: R   R: 2   Z: R   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ResearchLockOnRangeUpgrade/FactoryTechLab default: R
 	ResearchLockOnRangeUpgrade/FactoryTechReactor default: R
 
-[INFO]: P:    T: R   R: C   Z: R   TheCore Lite : R   
+[INFO]: P:    T: R   R: C   Z: R   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	SelfRepair/Thor default: R
 	SelfRepair/ThorWreckageSwann default: R
 
-[INFO]: P:    T: R   R: F   Z: R   TheCore Lite : E   
+[INFO]: P:    T: R   R: F   Z: R   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	ResearchImprovedTurretAttackSpeed/EngineeringBay default: R
 	ResearchVehicleWeaponRange/Armory default: R
 
-[INFO]: P:    T: R   R: F   Z: R   TheCore Lite : R   
+[INFO]: P:    T: R   R: F   Z: R   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	EvolveMutaliskRapidRegeneration/GreaterSpire default: R
 	EvolveMutaliskRapidRegeneration/Spire default: R
 	EvolveZerglingArmorShred/SpawningPool default: R
 	VespeneDrone/CommandCenter default: R
 	VespeneDrone/PlanetaryFortress default: R
 
-[INFO]: P:    T: R   R: R   Z: R   TheCore Lite : R   
+[INFO]: P:    T: R   R: R   Z: R   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	InstantHunterSeekerMissile/Raven default: R
 	ResearchRipwaveMissiles/StarportTechLab default: R
 	ResearchRipwaveMissiles/StarportTechReactor default: R
 
-[INFO]: P:    T: R   R: S   Z: R   TheCore Lite : R   
+[INFO]: P:    T: R   R: S   Z: R   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	DarkPylonRecall/DarkPylon default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	EvolveBanelingRupture/BanelingNest default: R
 
-[INFO]: P:    T: S   R: 5   Z: S   TheCore Lite : E   
+[INFO]: P:    T: S   R: 5   Z: S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	ResearchShockwaveMissileBattery/StarportTechLab default: S
 	ResearchShockwaveMissileBattery/StarportTechReactor default: S
 
-[INFO]: P:    T: S   R: Q   Z: S   TheCore Lite : F   
+[INFO]: P:    T: S   R: Q   Z: S   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	EvolveSunderingGlave/GreaterSpire default: S
 	EvolveSunderingGlave/Spire default: S
 
-[INFO]: P:    T: T   R: S   Z: T   TheCore Lite : C   
+[INFO]: P:    T: T   R: S   Z: T   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	EvolveTissueAssimilation/UltraliskCavern default: T
 	HyperjumpHercules/Hercules default: T copyof: Hyperjump/Battlecruiser default: T
 
-[INFO]: P: 3   T: 3   R: F   Z: S   TheCore Lite : G   
+[INFO]: P: 3   T: 3   R: F   Z: S   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	WarpInAdept/Gateway default: H
 	WarpInAdept/WarpGate default: H
 
-[INFO]: P: 3   T: 5   R: 5   Z: S   TheCore Lite : G   
+[INFO]: P: 3   T: 5   R: 5   Z: S   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	FleetBeacon/Harvester default:  copyof: FleetBeacon/Probe default: F
 	FleetBeacon/Probe default: F
 
-[INFO]: P: 3   T: 5   R: 5   Z: V   TheCore Lite : E   
+[INFO]: P: 3   T: 5   R: 5   Z: V   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	ResearchStabilizerMedPacks/BarracksTechLab default: S,E
 	ResearchStabilizerMedPacks/BarracksTechReactor default: S,E copyof: ResearchStabilizerMedPacks/BarracksTechLab default: S,E
 
-[INFO]: P: 3   T: 5   R: T   Z: V   TheCore Lite : G   
+[INFO]: P: 3   T: 5   R: T   Z: V   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	Carrier/Stargate default: C
 	Carrier/StargateWarp default: C copyof: Carrier/Stargate default: C
 
-[INFO]: P: 3   T: C   R: 5   Z: S   TheCore Lite : G   
+[INFO]: P: 3   T: C   R: 5   Z: S   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	CyberneticsCore/Harvester default:  copyof: CyberneticsCore/Probe default: Y
 	CyberneticsCore/Probe default: Y
 
-[INFO]: P: 3   T: C   R: 5   Z: V   TheCore Lite : T   
+[INFO]: P: 3   T: C   R: 5   Z: V   TheCore Lite: T   TheCore LiteRehab: T   TheCore LiteRehabPlus: T   
 	MorphToMutaliskBroodlord/Larva default: T copyof: Mutalisk/Larva default: T
 	MorphToMutaliskViper/Larva default: T copyof: Mutalisk/Larva default: T
 	Mutalisk/Larva default: T
 
-[INFO]: P: 3   T: C   R: A   Z: S   TheCore Lite : G   
+[INFO]: P: 3   T: C   R: A   Z: S   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	Bunker/SCV default: U
 	BunkerFortified/SCV default: U copyof: Bunker/SCV default: U
 	SpineCrawler/Drone default: C
 
-[INFO]: P: 3   T: D   R: 2   Z: S   TheCore Lite : F   
+[INFO]: P: 3   T: D   R: 2   Z: S   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	LurkerHoldFire/LurkerBurrowed default: F copyof: LurkerHoldFire/LurkerMPBurrowed default: F
 	LurkerHoldFire/LurkerMPBurrowed default: F
 
-[INFO]: P: 3   T: D   R: A   Z: A   TheCore Lite : F   
+[INFO]: P: 3   T: D   R: A   Z: A   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	WarpPrismHallucination/Nexus default:  copyof: WarpPrismHallucination/Sentry default: R
 	WarpPrismHallucination/Voranor default:  copyof: WarpPrismHallucination/Sentry default: R
 
-[INFO]: P: 3   T: F   R: 2   Z: Q   TheCore Lite : C   
+[INFO]: P: 3   T: F   R: 2   Z: Q   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	Colossus/RoboticsFacility default: C
 	Colossus/RoboticsFacilityWarp default: C copyof: Colossus/RoboticsFacility default: C
 
-[INFO]: P: 4   T: 3   R: 2   Z: Q   TheCore Lite : R   
+[INFO]: P: 4   T: 3   R: 2   Z: Q   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	Reactor/Barracks default: C
 	Reactor/BarracksFlying default: C copyof: Reactor/Barracks default: C
 	Reactor/Factory default: C copyof: Reactor/Barracks default: C
@@ -131,24 +131,24 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Reactor/Starport default: C copyof: Reactor/Barracks default: C
 	Reactor/StarportFlying default: C copyof: Reactor/Barracks default: C
 
-[INFO]: P: 4   T: 3   R: S,2   Z: S   TheCore Lite : R   
+[INFO]: P: 4   T: 3   R: S,2   Z: S   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	MothershipCoreMassRecall/MothershipCore default: R
 	MothershipMassRecall/Mothership default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 
-[INFO]: P: 4   T: 3   R: S,A   Z: G   TheCore Lite : Space   
+[INFO]: P: 4   T: 3   R: S,A   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	SpineCrawlerUproot/SpineCrawler default: R
 	SporeCrawlerUproot/SporeCrawler default: R
 
-[INFO]: P: 4   T: 3   R: S   Z: 2   TheCore Lite : E   
+[INFO]: P: 4   T: 3   R: S   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	Armory/SCV default: A
 	TwilightCouncil/Harvester default:  copyof: TwilightCouncil/Probe default: C
 	TwilightCouncil/Probe default: C
 
-[INFO]: P: 4   T: 3   R: S   Z: 2   TheCore Lite : R   
+[INFO]: P: 4   T: 3   R: S   Z: 2   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	CloakOff default: D
 	WraithCloakOff/Wraith default: D copyof: CloakOff default: D
 
-[INFO]: P: 4   T: 3   R: S   Z: G   TheCore Lite : Space   
+[INFO]: P: 4   T: 3   R: S   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	BurrowUp default: R
 	LurkerBurrowUp default: R copyof: BurrowUp default: R
 	SwarmHostBurrowUp default: R
@@ -160,65 +160,65 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmHostUprootUnburrow/SwarmHostSplitABurrowed default:  copyof: SwarmHostBurrowUp default: R
 	SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed default:  copyof: SwarmHostBurrowUp default: R
 
-[INFO]: P: 4   T: 3   R: S   Z: G,N   TheCore Lite : Space   
+[INFO]: P: 4   T: 3   R: S   Z: G,N   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	BurrowHydraliskImpalerUp default:  copyof: BurrowUp default: R
 	BurrowHydraliskLurkerUp default:  copyof: BurrowUp default: R
 	ImpalerBurrowUp default: R copyof: BurrowUp default: R
 
-[INFO]: P: 4   T: 4   R: R   Z: S   TheCore Lite : Space   
+[INFO]: P: 4   T: 4   R: R   Z: S   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	Interceptor/Carrier default: I
 	Interceptor/CarrierAiur default: I copyof: Interceptor/Carrier default: I
 
-[INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite : C   
+[INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 
-[INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite : R   
+[INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ExplosiveMode default: D
 	LiberatorAAMode/Liberator default: D
 	Unsiege default: D
 	WidowMineUnburrow/WidowMine default: D
 
-[INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite : Space   
+[INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	FighterMode default: E
 	MorphToHellion/Hellion default: E
 	Raise/SupplyDepotLowered default: R
 
-[INFO]: P: 4   T: 4   R: S   Z: S   TheCore Lite : R   
+[INFO]: P: 4   T: 4   R: S   Z: S   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	Immortal/RoboticsFacility default: I
 	Immortal/RoboticsFacilityWarp default: I copyof: Immortal/RoboticsFacility default: I
 	SpiderMineReplenish/Vulture default: R
 
-[INFO]: P: 4   T: 4   R: S   Z: S   TheCore Lite : Space   
+[INFO]: P: 4   T: 4   R: S   Z: S   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	GuardianShield/Sentry default: G
 	GuardianShield/Sentry2 default:  copyof: GuardianShield/Sentry default: G
 	GuardianShield/SentryAiur default: G copyof: GuardianShield/Sentry default: G
 	VoodooShield/Immortal default:  copyof: GuardianShield/Sentry default: G
 
-[INFO]: P: 4   T: 4   R: S   Z: S   TheCore Lite : V   
+[INFO]: P: 4   T: 4   R: S   Z: S   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	VoidRay/Stargate default: V
 	VoidRay/StargateWarp default: V copyof: VoidRay/Stargate default: V
 
-[INFO]: P: 4   T: 4   R: T   Z: V   TheCore Lite : C   
+[INFO]: P: 4   T: 4   R: T   Z: V   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	ResearchStrikeCannons/FactoryTechLab default: C
 	ResearchStrikeCannons/FactoryTechReactor default:  copyof: ResearchStrikeCannons/FactoryTechLab default: C
 
-[INFO]: P: 4   T: D   R: 2   Z: 2   TheCore Lite : R   
+[INFO]: P: 4   T: D   R: 2   Z: 2   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ResearchRegenerativeBioSteel/FactoryTechLab default: R
 	ResearchRegenerativeBioSteel/FactoryTechReactor default: C copyof: ResearchRegenerativeBioSteel/FactoryTechLab default: R
 	Stalker default: S
 
-[INFO]: P: 4   T: D   R: S,2   Z: S   TheCore Lite : R   
+[INFO]: P: 4   T: D   R: S,2   Z: S   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	MassRecall/Artanis default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	MassRecall/Mothership default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 
-[INFO]: P: 4   T: D   R: A   Z: S   TheCore Lite : C,CapsLock   
+[INFO]: P: 4   T: D   R: A   Z: S   TheCore Lite: C,CapsLock   TheCore LiteRehab: C,CapsLock   TheCore LiteRehabPlus: C,CapsLock   
 	BuildCreepTumor/BroodMother default:  copyof: BuildCreepTumor/Queen default: C
 	BuildCreepTumor/Queen default: C
 	BuildCreepTumor/Queen2 default:  copyof: BuildCreepTumor/Queen default: C
 	BuildCreepTumorPropagate/CreepTumorBurrowed default: C
 
-[INFO]: P: 4   T: D   R: A   Z: S   TheCore Lite : E   
+[INFO]: P: 4   T: D   R: A   Z: S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	SwarmQueenCorpser/HugeSwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/LargeSwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
@@ -229,12 +229,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenVile/LargeSwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 
-[INFO]: P: 4   T: D   R: R   Z: S   TheCore Lite : E,Space   
+[INFO]: P: 4   T: D   R: R   Z: S   TheCore Lite: E,Space   TheCore LiteRehab: E,Space   TheCore LiteRehabPlus: E,Space   
 	PsiStrike/K5Kerrigan default:  copyof: PsionicLift/K5Kerrigan default: T,W
 	PsionicLift/K5Kerrigan default: T,W
 	PsionicLift/KerriganGhostLab default: T,W copyof: PsionicLift/K5Kerrigan default: T,W
 
-[INFO]: P: 4   T: D   R: S   Z: G   TheCore Lite : E   
+[INFO]: P: 4   T: D   R: S   Z: G   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	Baneling/Zergling default: E
 	Impaler/HydraliskImpaler default: E copyof: LurkerMP/Hydralisk default: E
 	Lurker/Hydralisk default:  copyof: LurkerMP/Hydralisk default: E
@@ -242,34 +242,34 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LurkerMP/Hydralisk default: E
 	Ravager/Roach default: V
 
-[INFO]: P: 4   T: D   R: S   Z: G   TheCore Lite : V   
+[INFO]: P: 4   T: D   R: S   Z: G   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	ResearchDurableMaterials/StarportTechLab default: D
 	ResearchDurableMaterials/StarportTechReactor default: D copyof: ResearchDurableMaterials/StarportTechLab default: D
 
-[INFO]: P: 4   T: D   R: S   Z: S   TheCore Lite : E   
+[INFO]: P: 4   T: D   R: S   Z: S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	GreaterSpire/Spire default: G
 	ProtossShieldsLevel1/Forge default: S
 	ZeratulStun/Zeratul default: V
 
-[INFO]: P: 4   T: D,Z   R: F,6   Z: S   TheCore Lite : C,Space   
+[INFO]: P: 4   T: D,Z   R: F,6   Z: S   TheCore Lite: C,Space   TheCore LiteRehab: C,Space   TheCore LiteRehabPlus: C,Space   
 	BuildAutoTurret/Raven default:  copyof: AutoTurret/Raven default: T
 	DutchPlaceTurret/Swann default: T copyof: AutoTurret/Raven default: T
 
-[INFO]: P: 4   T: F   R: Q   Z: G   TheCore Lite : C   
+[INFO]: P: 4   T: F   R: Q   Z: G   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	CommandCenter/SCV default: C
 	CommandCenterOrbRelay/SCV default: C copyof: CommandCenter/SCV default: C
 	Hatchery/Drone default: H
 	Nexus/Harvester default:  copyof: Nexus/Probe default: N
 	Nexus/Probe default: N
 
-[INFO]: P: 4   T: R   R: F   Z: G   TheCore Lite : Space   
+[INFO]: P: 4   T: R   R: F   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	Stim default: T
 	StimFirebat/DevilDog default: T copyof: Stim default: T
 	StimFirebat/Firebat default: T copyof: Stim default: T
 	Stimpack/BarracksTechLab default: T
 	Stimpack/BarracksTechReactor default: T copyof: Stimpack/BarracksTechLab default: T
 
-[INFO]: P: 4   T: R   R: S   Z: G   TheCore Lite : E   
+[INFO]: P: 4   T: R   R: S   Z: G   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	Baneling/HotSRaptor default: E copyof: Baneling/Zergling default: E
 	Baneling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
 	Baneling/Zergling2 default:  copyof: Baneling/Zergling default: E
@@ -278,15 +278,15 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoSplitterling/HotSRaptor default: E copyof: Baneling/Zergling default: E
 	MorphtoSplitterling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
 
-[INFO]: P: 4   T: R   R: S   Z: G   TheCore Lite : Space   
+[INFO]: P: 4   T: R   R: S   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	MedivacSpeedBoost/Medivac default: B
 	MorphToOverseer/Overlord default: V
 
-[INFO]: P: 4   T: R   R: S   Z: S   TheCore Lite : E   
+[INFO]: P: 4   T: R   R: S   Z: S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	BroodLord/MutaliskBroodlord default: B copyof: BroodLord/Corruptor default: B
 	Viper/MutaliskViper default: E copyof: BroodLord/Corruptor default: B
 
-[INFO]: P: 4   T: Z   R: S   Z: 2   TheCore Lite : E   
+[INFO]: P: 4   T: Z   R: S   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	DisableBuildingAttack/Baneling default: G
 	DisableBuildingAttack/HotSHunter default: G copyof: DisableBuildingAttack/Baneling default: G
 	DisableBuildingAttack/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
@@ -294,94 +294,94 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DisableBuildingAttack/baneling2 default:  copyof: DisableBuildingAttack/Baneling default: G
 	DisableBuildingAttackSplitterling/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
 
-[INFO]: P: 4,B   T: 3,6   R: S,A   Z: 2   TheCore Lite : E   
+[INFO]: P: 4,B   T: 3,6   R: S,A   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	NPSwarm/Infestor default: E copyof: NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor default: E
 
-[INFO]: P: 4,E   T: R,D   R: F,R   Z: S,G   TheCore Lite : E,Space   
+[INFO]: P: 4,E   T: R,D   R: F,R   Z: S,G   TheCore Lite: E,Space   TheCore LiteRehab: E,Space   TheCore LiteRehabPlus: E,Space   
 	GravitonBeam/Phoenix default: G
 	GravitonBeam/Urun default: G copyof: GravitonBeam/Phoenix default: G
 	GravitonBeamVoidCampaign/PhoenixPurifier default: G copyof: GravitonBeam/Phoenix default: G
 
-[INFO]: P: E,4   T: R,D   R: R,F   Z: G,S   TheCore Lite : Space   
+[INFO]: P: E,4   T: R,D   R: R,F   Z: G,S   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	KD8Charge/Reaper default: D
 	LockOn/Cyclone default: C
 
-[INFO]: P: 5   T: 5   R: 5   Z: 5   TheCore Lite :    
+[INFO]: P: 5   T: 5   R: 5   Z: 5   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	MutateintoDefilerMound/Drone default: 
 	ResearchCharonBooster/FactoryTechLab default: 
 	ResearchEngineeredExplosives/BarracksTechLab default: 
 	ResearchFortifiedBunkers/EngineeringBay default: 
 
-[INFO]: P: A   T: A   R: A   Z: A   TheCore Lite :    
+[INFO]: P: A   T: A   R: A   Z: A   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	CreepTumor/Queen default: 
 	Passive default: 
 	PrimalConsume/Infestor default: 
 	ResearchTitanReactor/StarportTechLab default: 
 
-[INFO]: P: A   T: A   R: A   Z: A   TheCore Lite : C   
+[INFO]: P: A   T: A   R: A   Z: A   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	RapidIncubation/SwarmHostBurrowed default: A
 	RapidIncubation/SwarmHostRooted default: A
 
-[INFO]: P: B   T: 5   R: 5   Z: A   TheCore Lite : V   
+[INFO]: P: B   T: 5   R: 5   Z: A   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	BanelingNest/Drone default: B
 	SensorTower/SCV default: N
 
-[INFO]: P: B   T: B   R: W   Z: B   TheCore Lite : D   
+[INFO]: P: B   T: B   R: W   Z: B   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	EvolveBurrowCharge/UltraliskCavern default: B
 	ResearchPhobosClassWeaponsSystem/StarportTechLab default: B
 	ResearchPhobosClassWeaponsSystem/StarportTechReactor default: B
 
-[INFO]: P: B   T: J   R: C   Z: A   TheCore Lite : C   
+[INFO]: P: B   T: J   R: C   Z: A   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	Firebat/Barracks default: F
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	ResearchFirebat/ScienceFacility default: F copyof: Firebat/Barracks default: F
 
-[INFO]: P: B   T: J   R: C   Z: A   TheCore Lite : R   
+[INFO]: P: B   T: J   R: C   Z: A   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ResearchIncineratorNozzles/BarracksTechLab default: R
 	ResearchIncineratorNozzles/BarracksTechReactor default: R copyof: ResearchIncineratorNozzles/BarracksTechLab default: R
 
-[INFO]: P: B   T: T   R: C   Z: Y   TheCore Lite : E   
+[INFO]: P: B   T: T   R: C   Z: Y   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	Hive/Lair default: H copyof: Lair/Hatchery default: L
 	Lair/Hatchery default: L
 	UpgradeToRoboticsFacilityWarp/RoboticsFacility default: G copyof: UpgradeToWarpGate/Gateway default: G
 	UpgradeToStargateWarp/Stargate default: G copyof: UpgradeToWarpGate/Gateway default: G
 
-[INFO]: P: B   T: Z   R: F   Z: Q   TheCore Lite : CapsLock   
+[INFO]: P: B   T: Z   R: F   Z: Q   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	ArchonHallucination/Nexus default:  copyof: ArchonHallucination/Sentry default: N
 	ArchonHallucination/Voranor default:  copyof: ArchonHallucination/Sentry default: N
 
-[INFO]: P: C   T: C   R: F   Z: C   TheCore Lite : C   
+[INFO]: P: C   T: C   R: F   Z: C   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	ImmortalShakurasShadowCannon/ImmortalAiur default: C
 	ResearchReaverIncreasedScarabCount/RoboticsBay default: C
 
-[INFO]: P: Comma   T: Comma   R: Comma   Z: Comma   TheCore Lite : H   
+[INFO]: P: Comma   T: Comma   R: Comma   Z: Comma   TheCore Lite: H   TheCore LiteRehab: H   TheCore LiteRehabPlus: H   
 	HireHammerSecurities/Barracks default: H
 	Move default: M
 	MoveChampions default:  copyof: Move default: M
 
-[INFO]: P: D   T: 3   R: S   Z: 2   TheCore Lite : E   
+[INFO]: P: D   T: 3   R: S   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	EngineeringBay/SCV default: E
 	EvolutionChamber/Drone default: V
 	Forge/Harvester default:  copyof: Forge/Probe default: F
 	Forge/Probe default: F
 
-[INFO]: P: D   T: 4   R: 2   Z: 2   TheCore Lite : C   
+[INFO]: P: D   T: 4   R: 2   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	ColossusHallucination/Nexus default:  copyof: ColossusHallucination/Sentry default: C
 	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
 
-[INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite : C   
+[INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	CloakOnBanshee default: C
 	ResearchBansheeCloak/StarportTechReactor default: C copyof: ResearchBansheeCloak/StarportTechLab default: C
 	ResearchPersonalCloaking/GhostAcademy default: C
 	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
 	WraithCloakOn/Wraith default: C copyof: CloakOnBanshee default: C
 
-[INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite : E   
+[INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	ResearchHallucination/CyberneticsCore default: H
 	VoidSentryPhasingMode/SentryPurifier default: E
 
-[INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite : R   
+[INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	BurrowDown default: R
 	BurrowHydraliskImpalerDown default:  copyof: BurrowDown default: R
 	BurrowHydraliskLurkerDown default:  copyof: BurrowDown default: R
@@ -396,39 +396,39 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmHostRoot/SwarmHostSplitA default:  copyof: SwarmHostBurrowDown default: R
 	SwarmHostRoot/SwarmHostSplitB default:  copyof: SwarmHostBurrowDown default: R
 
-[INFO]: P: D   T: 4   R: R   Z: 2   TheCore Lite : C   
+[INFO]: P: D   T: 4   R: R   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	Hyperjump/Battlecruiser default: T
 	SJHyperionBlink/SJHyperion default: Q
 
-[INFO]: P: D   T: 4   R: S   Z: 2   TheCore Lite : C   
+[INFO]: P: D   T: 4   R: S   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	ReaperSpeed/BarracksTechLab default: N
 	ReaperSpeed/BarracksTechReactor default: N copyof: ReaperSpeed/BarracksTechLab default: N
 	ResearchG4Charge/BarracksTechLab default: G copyof: ReaperSpeed/BarracksTechLab default: N
 	ResearchG4Charge/BarracksTechReactor default: G copyof: ReaperSpeed/BarracksTechLab default: N
 
-[INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite : C   
+[INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	PrologueVoidArmor/ZeratulVoidAiur01 default: V
 	TimeWarp/Nexus default: C
 
-[INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite : E   
+[INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	FenixWhirlwind/FenixChampion default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
 	FenixWhirlwind/FenixSOA default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
 	MohandarOmnislash/VorazunChampion default: E
 	PhaseCannon/KaraxChampion default: E
 	VoidZealotWhirlwind/ZealotAiur default: E
 
-[INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite : Space   
+[INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	SwarmHostUprootUnburrow default: R
 	VoidZealotShadowChargeStun/ZealotShakuras default: Z copyof: Charge/Zealot default: C
 
-[INFO]: P: D   T: 6   R: A   Z: Y   TheCore Lite : R   
+[INFO]: P: D   T: 6   R: A   Z: Y   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	BonesHeal/Stetmann default: E copyof: Heal/Medivac default: E
 	Heal/Medivac2 default:  copyof: Heal/Medivac default: E
 	MedicHeal/Medic default: E copyof: Heal/Medivac default: E
 	MercMedicHeal/MercMedic default: E copyof: Heal/Medivac default: E
 	NanoRepair/ScienceVessel default: N copyof: Heal/Medivac default: E
 
-[INFO]: P: D   T: D   R: F   Z: 2   TheCore Lite : CapsLock   
+[INFO]: P: D   T: D   R: F   Z: 2   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	BuildTechLabFactory/FactoryFlying default: X copyof: TechLabBarracks/Barracks default: X
 	BuildTechLabStarport/StarportFlying default: X copyof: TechLabBarracks/Barracks default: X
 	MorphtoOverlordTransport/Overlord default: T
@@ -444,134 +444,134 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TechReactor/Starport default:  copyof: TechLabBarracks/Barracks default: X
 	TechReactor/StarportFlying default: Z copyof: TechLabBarracks/Barracks default: X
 
-[INFO]: P: D   T: D   R: R   Z: D   TheCore Lite : Space   
+[INFO]: P: D   T: D   R: R   Z: D   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	LightningBomb/Tempest default: D
 	ResearchDrakkenLaserDrillBFG/DrakkenLaserDrillCoop default: D
 
-[INFO]: P: D   T: D   R: S   Z: D   TheCore Lite : E   
+[INFO]: P: D   T: D   R: S   Z: D   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	ThorDefensiveMatrix/Thor default: D
 	ThorDefensiveMatrix/ThorWreckageSwann default: D
 
-[INFO]: P: D   T: D   R: S   Z: Q   TheCore Lite : V   
+[INFO]: P: D   T: D   R: S   Z: Q   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	Hydralisk/Larva default: H
 	MorphToHydraliskImpaler/Larva default: H copyof: Hydralisk/Larva default: H
 	MorphToHydraliskLurker/Larva default: H copyof: Hydralisk/Larva default: H
 
-[INFO]: P: D   T: F   R: Q   Z: W   TheCore Lite : Space   
+[INFO]: P: D   T: F   R: Q   Z: W   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	GhostAcademy/SCV default: G
 	InfestationPit/Drone default: I
 	TemplarArchive/Harvester default:  copyof: TemplarArchive/Probe default: T
 	TemplarArchive/Probe default: T
 
-[INFO]: P: D   T: F   R: R   Z: V   TheCore Lite : V   
+[INFO]: P: D   T: F   R: R   Z: V   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	TerranVehiclePlatingLevel1/Armory default: V
 	TerranVehiclePlatingVanadiumPlatingLevel1/Armory default: V copyof: TerranVehiclePlatingLevel1/Armory default: V
 	TerranVehiclePlatingVanadiumPlatingLevel2/Armory default: V copyof: TerranVehiclePlatingLevel1/Armory default: V
 	TerranVehiclePlatingVanadiumPlatingLevel3/Armory default: V copyof: TerranVehiclePlatingLevel1/Armory default: V
 
-[INFO]: P: D   T: R   R: F   Z: Q   TheCore Lite : R   
+[INFO]: P: D   T: R   R: F   Z: Q   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	AssaultMode default: D
 	MorphToHellionTank/Hellion default: D
 
-[INFO]: P: D   T: R   R: F   Z: Q   TheCore Lite : Space   
+[INFO]: P: D   T: R   R: F   Z: Q   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	ArmorpiercingMode default: E
 	OracleWeaponOn default: C
 	OracleWeaponOn/Oracle default: C copyof: OracleWeaponOn default: C
 	SiegeMode default: E
 
-[INFO]: P: D   T: Z   R: 2   Z: Q   TheCore Lite : R   
+[INFO]: P: D   T: Z   R: 2   Z: Q   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	DefensiveMatrix/Battlecruiser default: D
 	DefensiveMatrix/DukesRevenge default: D copyof: DefensiveMatrix/Battlecruiser default: D
 
-[INFO]: P: D   T: Z   R: F,A   Z: Q,B   TheCore Lite : CapsLock   
+[INFO]: P: D   T: Z   R: F,A   Z: Q,B   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	Hallucination/Sentry2 default:  copyof: Hallucination/Sentry default: C
 	Hallucination2/Voranor default:  copyof: Hallucination/Sentry default: C
 
-[INFO]: P: D,V   T: 4,3   R: S,2   Z: Q,2   TheCore Lite : E,CapsLock   
+[INFO]: P: D,V   T: 4,3   R: S,2   Z: Q,2   TheCore Lite: E,CapsLock   TheCore LiteRehab: E,CapsLock   TheCore LiteRehabPlus: E,CapsLock   
 	BuildPointDefenseDrone/Raven default:  copyof: PointDefenseDrone/Raven default: D
 	PointDefenseDrone/Raven default: D
 
-[INFO]: P: D,V   T: 4,3   R: S,F   Z: Q,2   TheCore Lite : C,Space   
+[INFO]: P: D,V   T: 4,3   R: S,F   Z: Q,2   TheCore Lite: C,Space   TheCore LiteRehab: C,Space   TheCore LiteRehabPlus: C,Space   
 	Feedback/AnAleemController default:  copyof: Feedback/HighTemplar default: F
 	Feedback/HighArchonTemplar default: F copyof: Feedback/HighTemplar default: F
 	Feedback/HighTemplar default: F
 	Feedback/Khiradun default:  copyof: Feedback/HighTemplar default: F
 	PsionicBolt/Telios default:  copyof: Feedback/HighTemplar default: F
 
-[INFO]: P: D,V   T: D   R: F   Z: 2   TheCore Lite : C   
+[INFO]: P: D,V   T: D   R: F   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	MothershipCoreWeapon/Mothership default: F copyof: MothershipCoreWeapon/MothershipCore default: F
 	MothershipCoreWeapon/MothershipCore default: F
 
-[INFO]: P: E   T: R,3   R: R,2   Z: G,2   TheCore Lite : Space   
+[INFO]: P: E   T: R,3   R: R,2   Z: G,2   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	Drag/Dehaka default: Q
 	Drag/DehakaMirrorImage default: Q copyof: Drag/Dehaka default: Q
 
-[INFO]: P: E   T: 3,R   R: R   Z: N,G   TheCore Lite : Space   
+[INFO]: P: E   T: 3,R   R: R   Z: N,G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	Charge/Khraxus default:  copyof: Charge/Zealot default: C
 	Charge/Orthos default:  copyof: Charge/Zealot default: C
 	Charge/Voranor default:  copyof: Charge/Zealot default: C
 	Charge/ZealotDark default:  copyof: Charge/Zealot default: C
 	Interceptor/Selendis default: I copyof: Interceptor/Carrier default: I
 
-[INFO]: P: E   T: 4   R: R   Z: Q   TheCore Lite : E   
+[INFO]: P: E   T: 4   R: R   Z: Q   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	BunkerUnloadAll default: D
 	HerculesUnloadAll/Hercules default: D copyof: BunkerUnloadAll default: D
 
-[INFO]: P: E   T: D   R: 2   Z: 2   TheCore Lite : CapsLock   
+[INFO]: P: E   T: D   R: 2   Z: 2   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	SwarmHostDeepBurrow/SwarmHostSplitB default: D
 	SwarmHostDeepBurrow/SwarmHostSplitBBurrowed default: D copyof: SwarmHostDeepBurrow/SwarmHostSplitB default: D
 	SwarmHostDeepBurrow/SwarmHostSplitBRooted default: D copyof: SwarmHostDeepBurrow/SwarmHostSplitB default: D
 
-[INFO]: P: E   T: D   R: 2   Z: W   TheCore Lite : F   
+[INFO]: P: E   T: D   R: 2   Z: W   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	MissileTurret/SCV default: T
 	PhotonCannon/Harvester default:  copyof: PhotonCannon/Probe default: C
 	PhotonCannon/Probe default: C
 	SporeCrawler/Drone default: A
 
-[INFO]: P: E   T: D   R: R   Z: S   TheCore Lite : D   
+[INFO]: P: E   T: D   R: R   Z: S   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	ResearchJackhammerConcussionGrenade/BarracksTechLab default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchJackhammerConcussionGrenade/BarracksTechReactor default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchPunisherGrenades/BarracksTechReactor default: G copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 
-[INFO]: P: E   T: E   R: F   Z: E   TheCore Lite : E   
+[INFO]: P: E   T: E   R: F   Z: E   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	EvolveBanelingHeal/BanelingNest default: E
 	ResearchAresClassTargetingSystem/FactoryTechLab default: E
 	ResearchAresClassTargetingSystem/FactoryTechReactor default: E
 
-[INFO]: P: E   T: E   R: R   Z: W   TheCore Lite : Space   
+[INFO]: P: E   T: E   R: R   Z: W   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	hydraliskspeed/HydraliskDen default: G
 	hydraliskspeed/LurkerDen default:  copyof: hydraliskspeed/LurkerDenMP default: G
 	hydraliskspeed/LurkerDenMP default: G
 
-[INFO]: P: E   T: E   R: S   Z: E   TheCore Lite : E   
+[INFO]: P: E   T: E   R: S   Z: E   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	VoidShadowGuardShadowFury/VorazunShadowGuard default: E
 	VoodooShield/Spectre default: E
 
-[INFO]: P: E   T: E   R: W   Z: E   TheCore Lite : E   
+[INFO]: P: E   T: E   R: W   Z: E   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	ResearchDarkArchonFullStartingEnergy/DarkShrine default: E
 	ResearchSolarEfficiencyLevel1/SolarForge default: E
 
-[INFO]: P: E   T: R   R: F   Z: G   TheCore Lite : C   
+[INFO]: P: E   T: R   R: F   Z: G   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	ImmortalShakurasShadowCannon/ImmortalShakuras default: C
 	VoidStasis/DarkTemplarTaldarim default: V
 
-[INFO]: P: E   T: R   R: F   Z: G   TheCore Lite : E   
+[INFO]: P: E   T: R   R: F   Z: G   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	VoidSentryBlackHole/SOAMothershipv4 default: E
 	Vortex/Artanis default: V copyof: TemporalField/MothershipCore default: T,C
 	Vortex/Mothership default: V copyof: TemporalField/MothershipCore default: T,C
 
-[INFO]: P: E   T: R   R: F   Z: G   TheCore Lite : Space   
+[INFO]: P: E   T: R   R: F   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	TerranShipPlatingLevel1/Armory default: P
 	TerranShipPlatingVanadiumPlatingLevel1/Armory default: P copyof: TerranShipPlatingLevel1/Armory default: P
 	TerranShipPlatingVanadiumPlatingLevel2/Armory default: P copyof: TerranShipPlatingLevel1/Armory default: P
 	TerranShipPlatingVanadiumPlatingLevel3/Armory default: P copyof: TerranShipPlatingLevel1/Armory default: P
 
-[INFO]: P: E   T: R   R: R   Z: 2   TheCore Lite : G   
+[INFO]: P: E   T: R   R: R   Z: 2   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	LurkerCancelHoldFire/LurkerBurrowed default: G copyof: LurkerCancelHoldFire/LurkerMPBurrowed default: G
 	LurkerCancelHoldFire/LurkerMPBurrowed default: G
 
-[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite : C   
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	250mmStrikeCannons/Thor default: C
 	330mmBarrageCannons/Thor default: C copyof: 250mmStrikeCannons/Thor default: C
 	OdinBarrage/Odin default: B copyof: 250mmStrikeCannons/Thor default: C
@@ -590,12 +590,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidHighTemplarPsiOrb/HighTemplarTaldarim default: T
 	VoidSentryChronoBeam/SentryPurifier default: C
 
-[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite : D   
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	Marauder/Barracks default: D
 	Medivac/Starport default: D
 	ResearchDrillClaws/FactoryTechLab default: C
 
-[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite : E   
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	EMP/Ghost default: E
 	EvolveChitinousPlating/UltraliskCavern default: C
 	ForceField/Sentry default: F
@@ -613,18 +613,18 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TossGrenade/Raynor default: T
 	UltrasonicPulse/Spectre default: U copyof: EMP/Ghost default: E
 
-[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite : F   
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	ArbiterMPStasisField/ArbiterMP default: F
 	DarkArchonConfusion/DarkArchon default: F
 
-[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite : R   
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ArtanisLightningDash/ArtanisVoid default: Q
 	ResearchStalkerTeleport/TwilightCouncil default: B
 	Stargate/Harvester default:  copyof: Stargate/Probe default: S
 	Stargate/Probe default: S
 	Starport/SCV default: S
 
-[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite : Space   
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	AdeptPhaseShift/Adept default: F
 	Blink/ShadowOfTheVoidStalker default: B copyof: Blink/Stalker default: B
 	Blink/Stalker default: B
@@ -671,7 +671,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	zergflyerarmor1 default: C
 	zerggroundarmor1/EvolutionChamber default: C
 
-[INFO]: P: E   T: R   R: R   Z: S   TheCore Lite : C   
+[INFO]: P: E   T: R   R: R   Z: S   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	Explode/Baneling default: X
 	Explode/BanelingBurrowed default: X
 	Explode/HotSHunter default: X copyof: Explode/Baneling default: X
@@ -681,53 +681,53 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Explode/baneling default:  copyof: Explode/Baneling default: X
 	Explode/baneling2 default:  copyof: Explode/Baneling default: X
 
-[INFO]: P: E   T: R   R: R   Z: S   TheCore Lite : C,CapsLock   
+[INFO]: P: E   T: R   R: R   Z: S   TheCore Lite: C,CapsLock   TheCore LiteRehab: C,CapsLock   TheCore LiteRehabPlus: C,CapsLock   
 	SwarmHost/SwarmHostMP default: C
 	VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP default: C
 
-[INFO]: P: E   T: R   R: R   Z: S   TheCore Lite : D   
+[INFO]: P: E   T: R   R: R   Z: S   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	ResearchMedivacEnergyUpgrade/StarportTechLab default: A
 	ResearchMedivacEnergyUpgrade/StarportTechReactor default: A copyof: ResearchMedivacEnergyUpgrade/StarportTechLab default: A
 
-[INFO]: P: E   T: R   R: R   Z: W   TheCore Lite : R   
+[INFO]: P: E   T: R   R: R   Z: W   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	EvolveTunnelingClaws/RoachWarren default: T
 	Oracle/Stargate default: E
 
-[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite : CapsLock   
+[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	MindBolt/K5Kerrigan default: Q
 	MindBolt/KerriganGhostLab default: Q copyof: MindBolt/K5Kerrigan default: Q
 	MindBolt/KerriganVoid default: Q copyof: MindBolt/K5Kerrigan default: Q
 	PrimalSlash/K5Kerrigan default:  copyof: MindBolt/K5Kerrigan default: Q
 
-[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite : E   
+[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	Domination/Nova default: D
 	VoidDarkTemplarShadowFury/DarkTemplarShakuras default: Q,E
 
-[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite : R   
+[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	AlarakKnockback/AlarakChampion default: Q
 	ReleaseInterceptors/Carrier default: R
 	Spire/Drone default: S
 
-[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite : Space   
+[INFO]: P: E   T: R   R: S   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	ResearchShapedBlast/FactoryTechReactor default: B copyof: ResearchSiegeTech/FactoryTechLab default: S
 	ResearchSiegeTech/FactoryTechLab default: S
 	ResearchSiegeTech/FactoryTechReactor default: S copyof: ResearchSiegeTech/FactoryTechLab default: S
 	TargetLock/Monitor default: T
 
-[INFO]: P: E   T: R   R: W   Z: W   TheCore Lite : F   
+[INFO]: P: E   T: R   R: W   Z: W   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	WarpInShuttle/RoboticsFacility default:  copyof: WarpPrism/RoboticsFacility default: A
 	WarpPrism/RoboticsFacility default: A
 
-[INFO]: P: E,N   T: R,6   R: R,2   Z: 2   TheCore Lite : Space   
+[INFO]: P: E,N   T: R,6   R: R,2   Z: 2   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	MorphMorphalisk/BroodMother default:  copyof: MorphMorphalisk/Queen default: V
 	MorphMorphalisk/Queen2 default:  copyof: MorphMorphalisk/Queen default: V
 
-[INFO]: P: E,V   T: R,D   R: R,S   Z: S   TheCore Lite : Space   
+[INFO]: P: E,V   T: R,D   R: R,S   Z: S   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	ProtossBuild/Probe default: B
 	TerranBuild/SCV default: B
 	ZergBuild/Drone default: B
 
-[INFO]: P: F   T: F   R: F   Z: F   TheCore Lite :    
+[INFO]: P: F   T: F   R: F   Z: F   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	Aggressive/LurkerMPBurrowed default: 
 	IgniteAfterburner/Medivac default: 
 	MorphtoDevourer/Mutalisk default: 
@@ -740,26 +740,26 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TimeWarpSentinel/Oracle default: 
 	UpgradeLIDARTransmitter/EngineeringBay default: 
 
-[INFO]: P: G   T: C   R: W   Z: W   TheCore Lite : Space   
+[INFO]: P: G   T: C   R: W   Z: W   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	ResearchRavenEnergyUpgrade/StarportTechLab default: T
 	ResearchRavenEnergyUpgrade/StarportTechReactor default: T copyof: ResearchRavenEnergyUpgrade/StarportTechLab default: T
 
-[INFO]: P: G   T: E   R: R   Z: G   TheCore Lite : Space   
+[INFO]: P: G   T: E   R: R   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	Observer/RoboticsFacility default: B
 	ResearchGraviticBooster/RoboticsBay default: B
 
-[INFO]: P: G   T: E   R: S   Z: W   TheCore Lite : D   
+[INFO]: P: G   T: E   R: S   Z: W   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	TerranShipWeaponsUltraCapacitorsLevel1/Armory default: S copyof: TerranShipWeaponsLevel1/Armory default: S
 	TerranShipWeaponsUltraCapacitorsLevel2/Armory default: S copyof: TerranShipWeaponsLevel1/Armory default: S
 	TerranShipWeaponsUltraCapacitorsLevel3/Armory default: S copyof: TerranShipWeaponsLevel1/Armory default: S
 
-[INFO]: P: G   T: E   R: W   Z: G   TheCore Lite : C   
+[INFO]: P: G   T: E   R: W   Z: G   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	EvolveCentrificalHooks/BanelingNest default: C
 	EvolveGlialRegeneration/RoachWarren default: G
 	MuscularAugments/HydraliskDen default: A
 	zerglingmovementspeed/SpawningPool default: M
 
-[INFO]: P: G   T: E   R: W   Z: G   TheCore Lite : D   
+[INFO]: P: G   T: E   R: W   Z: G   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	AnionPulseCrystals/FleetBeacon default: R
 	Phoenix/Stargate default: X
 	Phoenix/StargateWarp default: X copyof: Phoenix/Stargate default: X
@@ -768,23 +768,23 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Summon2ScoutHallucinations/Sentry default:  copyof: PhoenixHallucination/Sentry default: X
 	Summon2ScoutHallucinations/Voranor default:  copyof: PhoenixHallucination/Sentry default: X
 
-[INFO]: P: G   T: E   R: W   Z: H   TheCore Lite : D   
+[INFO]: P: G   T: E   R: W   Z: H   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	Factory/SCV default: F
 	RoboticsFacility/Harvester default:  copyof: RoboticsFacility/Probe default: R
 	RoboticsFacility/Probe default: R
 
-[INFO]: P: G   T: E   R: W   Z: V   TheCore Lite : D   
+[INFO]: P: G   T: E   R: W   Z: V   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	Pylon/Harvester default:  copyof: Pylon/Probe default: E
 	Pylon/Probe default: E
 	SpawningPool/Drone default: S
 	SupplyDepot/SCV default: S
 	SupplyDepotDrop/SCV default:  copyof: SupplyDepot/SCV default: S
 
-[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite : C   
+[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	CalldownMULE/CommandCenter default: E copyof: CalldownMULE/OrbitalCommand default: E
 	CalldownMULE/OrbitalCommand default: E
 
-[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite : D   
+[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	Attack default: A
 	AttackAllowsInvulnerable/DrakkenLaserDrill default:  copyof: Attack default: A
 	AttackChampions default:  copyof: Attack default: A
@@ -806,28 +806,28 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Zergling/Larva default: Z
 	zergflyerattack1 default: A
 
-[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite : E   
+[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	Hellion/Factory default: E
 	Marine/Barracks default: A
 	ResearchHellion/ScienceFacility default: H copyof: Hellion/Factory default: E
 	TerranVehicleWeaponsLevel1/Armory default: E
 
-[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite : R   
+[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ResearchShieldWall/BarracksTechLab default: C
 	ResearchShieldWall/BarracksTechReactor default: C copyof: ResearchShieldWall/BarracksTechLab default: C
 	zergmissileweapons1/EvolutionChamber default: A
 
-[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite : Space   
+[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	EvolveInfestorEnergyUpgrade/InfestationPit default: G
 	ResearchBattlecruiserEnergyUpgrade/FusionCore default: B
 	ResearchGhostEnergyUpgrade/GhostAcademy default: M
 	VikingFighter/Starport default: V
 
-[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite : V   
+[INFO]: P: G   T: E   R: W   Z: W   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	ResearchHighCapacityBarrels/FactoryTechLab default: I
 	ResearchHighCapacityBarrels/FactoryTechReactor default: I copyof: ResearchHighCapacityBarrels/FactoryTechLab default: I
 
-[INFO]: P: G   T: G   R: G   Z: G   TheCore Lite :    
+[INFO]: P: G   T: G   R: G   Z: G   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	HellfireThrusters/StarportTechLab default: 
 	ResearchBarrelStabilizers/BarracksTechLab default: 
 	ResearchEvadeObserver/Observatory default: 
@@ -837,41 +837,41 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	UpgradewithKhaydarinCore/Nexus default: 
 	WarpInCorsair/Stargate default: 
 
-[INFO]: P: G   T: G   R: W   Z: G   TheCore Lite : R   
+[INFO]: P: G   T: G   R: W   Z: G   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	EvolveMuscularAugments/HydraliskDen default: A
 	EvolveMuscularAugments/LurkerDen default: A
 
-[INFO]: P: H   T: 3   R: T   Z: V   TheCore Lite : V   
+[INFO]: P: H   T: 3   R: T   Z: V   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	VoidRayHallucination/Nexus default:  copyof: VoidRayHallucination/Sentry default: V
 	VoidRayHallucination/Voranor default:  copyof: VoidRayHallucination/Sentry default: V
 
-[INFO]: P: H   T: 4   R: F   Z: S   TheCore Lite : R   
+[INFO]: P: H   T: 4   R: F   Z: S   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	MorphToCorpser/Larva default: R copyof: Roach/Larva default: R
 	MorphToVile/Larva default: R copyof: Roach/Larva default: R
 	MorphtoRoach/Larva default:  copyof: Roach/Larva default: R
 	Roach/Larva default: R
 
-[INFO]: P: H   T: D   R: 2   Z: V   TheCore Lite : F   
+[INFO]: P: H   T: D   R: 2   Z: V   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	DarkShrine/Harvester default:  copyof: DarkShrine/Probe default: D
 	DarkShrine/Probe default: D
 	NydusNetwork/Drone default: N
 
-[INFO]: P: H   T: F   R: S   Z: H   TheCore Lite : Space   
+[INFO]: P: H   T: F   R: S   Z: H   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	ResearchShapedBlast/FactoryTechLab default: B copyof: SiegeTank/Factory default: S
 	ResearchSiegeTank/ScienceFacility default: T copyof: SiegeTank/Factory default: S
 
-[INFO]: P: H   T: H   R: 5   Z: H   TheCore Lite : H   
+[INFO]: P: H   T: H   R: 5   Z: H   TheCore Lite: H   TheCore LiteRehab: H   TheCore LiteRehabPlus: H   
 	ResearchHellbatHellArmor/FactoryTechLab default: H
 	ResearchHellbatHellArmor/FactoryTechReactor default: H
 
-[INFO]: P: H   T: H   R: H   Z: H   TheCore Lite :    
+[INFO]: P: H   T: H   R: H   Z: H   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	EnrageQueen/Queen default: 
 	Overcharge/OrbitalCommand default: 
 	Plague/Infestor default: 
 	ResearchIrradiate/StarportTechLab default: 
 	WarpinArbiterTribunal/Probe default: 
 
-[INFO]: P: H   T: R   R: F   Z: Q   TheCore Lite : R   
+[INFO]: P: H   T: R   R: F   Z: Q   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	Assimilator/Harvester default:  copyof: Assimilator/Probe default: A
 	Assimilator/Probe default: A
 	AutomatedExtractor/Drone default: E copyof: Extractor/Drone default: E
@@ -879,78 +879,78 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Extractor/Drone default: E
 	Refinery/SCV default: R
 
-[INFO]: P: I   T: I   R: I   Z: I   TheCore Lite : CapsLock   
+[INFO]: P: I   T: I   R: I   Z: I   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	MindBolt/K5KerriganBurrowed default: Q
 	MindBolt/KerriganVoidBurrowed default: Q copyof: MindBolt/K5KerriganBurrowed default: Q
 
-[INFO]: P: J   T: 6   R: A   Z: B   TheCore Lite : 5   
+[INFO]: P: J   T: 6   R: A   Z: B   TheCore Lite: 5   TheCore LiteRehab: 5   TheCore LiteRehabPlus: 5   
 	HeroNukeCalldown/Nova default: N copyof: NukeCalldown/Ghost default: N
 	HeroNukeCalldown/Tosh default: N copyof: NukeCalldown/Ghost default: N
 	OdinNukeCalldown/Odin default: N copyof: NukeCalldown/Ghost default: N
 	SpectreNukeCalldown/Spectre default: N copyof: NukeCalldown/Ghost default: N
 
-[INFO]: P: J   T: 6   R: C   Z: Tab   TheCore Lite : G   
+[INFO]: P: J   T: 6   R: C   Z: Tab   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 
-[INFO]: P: J   T: 6   R: Tab   Z: Y   TheCore Lite : T   
+[INFO]: P: J   T: 6   R: Tab   Z: Y   TheCore Lite: T   TheCore LiteRehab: T   TheCore LiteRehabPlus: T   
 	ZealotHallucination/Nexus default:  copyof: ZealotHallucination/Sentry default: Z
 	ZealotHallucination/Voranor default:  copyof: ZealotHallucination/Sentry default: Z
 
-[INFO]: P: J   T: J   R: J   Z: J   TheCore Lite : J   
+[INFO]: P: J   T: J   R: J   Z: J   TheCore Lite: J   TheCore LiteRehab: J   TheCore LiteRehabPlus: J   
 	ArtanisChannel/ArtanisVoid default: J
 	ResearchJuggernautPlating/BarracksTechReactor default: J
 
-[INFO]: P: L   T: L   R: L   Z: L   TheCore Lite : D   
+[INFO]: P: L   T: L   R: L   Z: L   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	EvolveFlyingLocusts/InfestationPit default: L
 	HireHelsAngels/Starport default: A
 
-[INFO]: P: L   T: L   R: R   Z: L   TheCore Lite : L   
+[INFO]: P: L   T: L   R: R   Z: L   TheCore Lite: L   TheCore LiteRehab: L   TheCore LiteRehabPlus: L   
 	ResearchMultiLockWeaponsSystem/FactoryTechLab default: L
 	ResearchMultiLockWeaponsSystem/FactoryTechReactor default: L
 
-[INFO]: P: L   T: Period   R: L   Z: K   TheCore Lite : N   
+[INFO]: P: L   T: Period   R: L   Z: K   TheCore Lite: N   TheCore LiteRehab: N   TheCore LiteRehabPlus: N   
 	MorphBackToGateway/WarpGate default: M
 	MorphBackToRoboticsFacility/RoboticsFacilityWarp default: M copyof: MorphBackToGateway/WarpGate default: M
 	MorphBackToStargate/StargateWarp default: M copyof: MorphBackToGateway/WarpGate default: M
 
-[INFO]: P: M   T: M   R: M   Z: M   TheCore Lite : M   
+[INFO]: P: M   T: M   R: M   Z: M   TheCore Lite: M   TheCore LiteRehab: M   TheCore LiteRehabPlus: M   
 	MengskUnits/Factory default: M
 	MengskUnits/Starport default: M
 
-[INFO]: P: M   T: M   R: S   Z: M   TheCore Lite : M   
+[INFO]: P: M   T: M   R: S   Z: M   TheCore Lite: M   TheCore LiteRehab: M   TheCore LiteRehabPlus: M   
 	ResearchMaelstromRounds/FactoryTechLab default: M
 	ResearchMaelstromRounds/FactoryTechReactor default: M
 
-[INFO]: P: N   T: X   R: J   Z: Tab   TheCore Lite : 4   
+[INFO]: P: N   T: X   R: J   Z: Tab   TheCore Lite: 4   TheCore LiteRehab: 4   TheCore LiteRehabPlus: 4   
 	ProbeHallucination/Nexus default:  copyof: ProbeHallucination/Sentry default: E
 	ProbeHallucination/Voranor default:  copyof: ProbeHallucination/Sentry default: E
 
-[INFO]: P: O   T: O   R: O   Z: O   TheCore Lite : C   
+[INFO]: P: O   T: O   R: O   Z: O   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	StukovBossBlast/InfestedStukov default: B
 	WarpInScout/Stargate default: S
 	WildMutation/K5KerriganBurrowed default: E
 	WildMutation/KerriganVoidBurrowed default: E copyof: WildMutation/K5KerriganBurrowed default: E
 
-[INFO]: P: O   T: O   R: O   Z: O   TheCore Lite : E   
+[INFO]: P: O   T: O   R: O   Z: O   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	OracleEnergyUpgrade/FleetBeacon default: A
 	WarpInReaverChampion/TwilightCouncil default: E
 
-[INFO]: P: O   T: O   R: Q   Z: O   TheCore Lite : O   
+[INFO]: P: O   T: O   R: Q   Z: O   TheCore Lite: O   TheCore LiteRehab: O   TheCore LiteRehabPlus: O   
 	ResearchCycloneLockOnDamageUpgrade/FactoryTechLab default: O
 	ResearchCycloneLockOnDamageUpgrade/FactoryTechReactor default: O
 
-[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite : 4   
+[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite: 4   TheCore LiteRehab: 4   TheCore LiteRehabPlus: 4   
 	SpectreWeaponsFree/Spectre default: G
 	TechReactorAI/Barracks default: Z
 	TechReactorAI/Factory default: Z copyof: TechReactorAI/Barracks default: Z
 	TechReactorAI/Starport default: Z copyof: TechReactorAI/Barracks default: Z
 
-[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite : B   
+[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite: B   TheCore LiteRehab: B   TheCore LiteRehabPlus: B   
 	ShapedBlast/SiegeBreakerSieged default: B
 	ShapedBlast/SiegeTankSieged default: B
 
-[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite : C   
+[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	JackhammerConcussionGrenade/Marauder default: C
 	RapidIncubation/SwarmHost default: A
 	RapidIncubation/SwarmHostSplitA default: A copyof: RapidIncubation/SwarmHost default: A
@@ -964,44 +964,44 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TorrasqueChrysalis/HotSTorrasque default: Q
 	TorrasqueChrysalis/HotSTorrasqueBurrowed default: Q copyof: TorrasqueChrysalis/HotSTorrasque default: Q
 
-[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite : D   
+[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
 	RespawnZergling/Hatchery default: Z
 	RespawnZergling/Hive default: Z copyof: RespawnZergling/Hatchery default: Z
 	RespawnZergling/Lair default: Z copyof: RespawnZergling/Hatchery default: Z
 	TempestRangeUpgrade/FleetBeacon default: S
 
-[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite : E   
+[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	StukovCrystalChannel/InfestedStukov default: Period
 	WraithCloak/StarportTechLab default: L
 	WraithCloak/StarportTechReactor default: L copyof: WraithCloak/StarportTechLab default: L
 
-[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite : F   
+[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	DeepTunnel/Queen default: D
 	K5Leviathan/K5KerriganBurrowed default: D
 	K5Leviathan/KerriganVoidBurrowed default: D copyof: K5Leviathan/K5KerriganBurrowed default: D
 
-[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite : R   
+[INFO]: P: P   T: P   R: P   Z: P   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	IncineratorNozzles/DevilDog default:  copyof: IncineratorNozzles/Firebat default: R
 	IncineratorNozzles/Firebat default: R
 
-[INFO]: P: P   T: P   R: R   Z: P   TheCore Lite : Space   
+[INFO]: P: P   T: P   R: R   Z: P   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	HydraliskFrenzy/Hydralisk default: T copyof: Blink/Stalker default: B
 	HydraliskFrenzy/HydraliskImpaler default: T copyof: Blink/Stalker default: B
 	HydraliskFrenzy/HydraliskLurker default: T copyof: Blink/Stalker default: B
 
-[INFO]: P: P   T: P   R: S   Z: P   TheCore Lite : R   
+[INFO]: P: P   T: P   R: S   Z: P   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	HotSPressurizedGlands/InfestationPit default: P
 	QueenClassicParasite/QueenClassic default: R
 
-[INFO]: P: Period   T: Period   R: Period   Z: Period   TheCore Lite : J   
+[INFO]: P: Period   T: Period   R: Period   Z: Period   TheCore Lite: J   TheCore LiteRehab: J   TheCore LiteRehabPlus: J   
 	MercReaper/Barracks default: J
 	MercReaper/MercCompound default: J
 
-[INFO]: P: R   T: R   R: 2   Z: R   TheCore Lite : R   
+[INFO]: P: R   T: R   R: 2   Z: R   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	EnergizerReclamation/SentryPurifier default: R
 	HyperionAdvancedPDD/HyperionVoidCoop default: R
 
-[INFO]: P: R   T: R   R: R   Z: R   TheCore Lite :    
+[INFO]: P: R   T: R   R: R   Z: R   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	BuildScarab/Reaver default: 
 	DarkSwarm/Infestor default: 
 	EMP/ScienceVessel default: 
@@ -1026,23 +1026,23 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	UseSpiderMine/Vulture default: 
 	WarpinDragoon/Gateway default: 
 
-[INFO]: P: R   T: R   R: R   Z: R   TheCore Lite : R   
+[INFO]: P: R   T: R   R: R   Z: R   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ResearchSOARepairBeamExtraTarget/SolarForge default: R
 	SwarmHostRootBurrow default: R
 
-[INFO]: P: SemiColon   T: SemiColon   R: SemiColon   Z: SemiColon   TheCore Lite : 5   
+[INFO]: P: SemiColon   T: SemiColon   R: SemiColon   Z: SemiColon   TheCore Lite: 5   TheCore LiteRehab: 5   TheCore LiteRehabPlus: 5   
 	CampaignVehicles/Factory default: A
 	CampaignVehicles/Starport default: A
 
-[INFO]: P: V   T: 3   R: 2   Z: 2   TheCore Lite : E   
+[INFO]: P: V   T: 3   R: 2   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	OracleBuildStasisTrap/Oracle default: T
 	ShadowBlade/ZeratulVoidAiur01 default: E
 
-[INFO]: P: V   T: 3   R: 2   Z: B   TheCore Lite : 4   
+[INFO]: P: V   T: 3   R: 2   Z: B   TheCore Lite: 4   TheCore LiteRehab: 4   TheCore LiteRehabPlus: 4   
 	BunkerLoad default: L
 	HerculesLoad/Hercules default: L copyof: BunkerLoad default: L
 
-[INFO]: P: V   T: 3   R: 2   Z: B   TheCore Lite : F   
+[INFO]: P: V   T: 3   R: 2   Z: B   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	SwarmQueenHydralisk/HugeSwarmQueen default: D
 	SwarmQueenHydralisk/SwarmQueenEgg default: D copyof: SwarmQueenHydralisk/HugeSwarmQueen default: D
 	SwarmQueenHydraliskImpaler/HugeSwarmQueen default:  copyof: SwarmQueenHydralisk/HugeSwarmQueen default: D
@@ -1052,43 +1052,43 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenHydraliskLurker/LargeSwarmQueen default:  copyof: SwarmQueenHydralisk/HugeSwarmQueen default: D
 	SwarmQueenHydraliskLurker/SwarmQueen default:  copyof: SwarmQueenHydralisk/HugeSwarmQueen default: D
 
-[INFO]: P: V   T: 3   R: 2   Z: Z   TheCore Lite : F   
+[INFO]: P: V   T: 3   R: 2   Z: Z   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	GrowHugeQueen/LargeSwarmQueen default: G copyof: GrowSwarmQueen/LarvalQueen default: G
 	GrowLargeQueen/SwarmQueen default: G copyof: GrowSwarmQueen/LarvalQueen default: G
 	GrowSwarmQueen/LarvalQueen default: G
 
-[INFO]: P: V   T: 3,Z   R: S,C   Z: G,B   TheCore Lite : E   
+[INFO]: P: V   T: 3,Z   R: S,C   Z: G,B   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	QueenBurstHeal/Queen default: T copyof: Transfusion/Queen default: T
 	Transfusion/BroodMother default:  copyof: Transfusion/Queen default: T
 	Transfusion/Queen2 default:  copyof: Transfusion/Queen default: T
 
-[INFO]: P: V   T: 4   R: F   Z: Q   TheCore Lite : C   
+[INFO]: P: V   T: 4   R: F   Z: Q   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	RoboticsBay/Harvester default:  copyof: RoboticsBay/Probe default: B
 	RoboticsBay/Probe default: B
 
-[INFO]: P: V   T: 4   R: R   Z: 2   TheCore Lite : E   
+[INFO]: P: V   T: 4   R: R   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	MissilePods/Battlecruiser default: E
 	MissilePods/DukesRevenge default: E copyof: MissilePods/Battlecruiser default: E
 
-[INFO]: P: V   T: 4   R: R   Z: H   TheCore Lite : CapsLock   
+[INFO]: P: V   T: 4   R: R   Z: H   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	Barracks/SCV default: B
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
 	RoachWarren/Drone default: R
 
-[INFO]: P: V   T: 5   R: 2   Z: 2   TheCore Lite : R   
+[INFO]: P: V   T: 5   R: 2   Z: 2   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	ResearchSeekerMissile/StarportTechLab default: R
 	ResearchSeekerMissile/StarportTechReactor default: R copyof: ResearchSeekerMissile/StarportTechLab default: R
 
-[INFO]: P: V   T: 5   R: 5   Z: S   TheCore Lite : E   
+[INFO]: P: V   T: 5   R: 5   Z: S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	ResearchMultiLockTargetingSystem/FactoryTechLab default: W
 	ResearchMultiLockTargetingSystem/FactoryTechReactor default: W copyof: ResearchMultiLockTargetingSystem/FactoryTechLab default: W
 
-[INFO]: P: V   T: 5   R: Q   Z: H   TheCore Lite : Space   
+[INFO]: P: V   T: 5   R: Q   Z: H   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	HighTemplarHallucination/Nexus default:  copyof: HighTemplarHallucination/Sentry default: T
 	HighTemplarHallucination/Voranor default:  copyof: HighTemplarHallucination/Sentry default: T
 
-[INFO]: P: V   T: 6,R   R: R   Z: N,S   TheCore Lite : E   
+[INFO]: P: V   T: 6,R   R: R   Z: N,S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	LocustFlyingLaunch/SwarmHostSplitABurrowed default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustFlyingLaunch/SwarmHostSplitARooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustLaunch/SwarmHostBurrowed default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
@@ -1097,7 +1097,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LocustLaunchCreeper/SwarmHostSplitBRooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	SwarmHost/SwarmHostBurrowedMP default: C
 
-[INFO]: P: V   T: D   R: 2   Z: G   TheCore Lite : Space   
+[INFO]: P: V   T: D   R: 2   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttack/HotSHunter default: F copyof: EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttack/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
@@ -1105,107 +1105,107 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EnableBuildingAttack/baneling2 default:  copyof: EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttackSplitterling/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
 
-[INFO]: P: V   T: D   R: 2   Z: S   TheCore Lite : F   
+[INFO]: P: V   T: D   R: 2   Z: S   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	InfestedTerrans/Infestor default: T
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
 	StukovInfestedTerrans/InfestedStukov default: T,W copyof: InfestedTerrans/Infestor default: T
 
-[INFO]: P: V   T: D   R: 2,6   Z: S   TheCore Lite : Space   
+[INFO]: P: V   T: D   R: 2,6   Z: S   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	NovaSnipe/Nova default: R copyof: Snipe/Ghost default: R
 	Snipe/Ghost default: R
 
-[INFO]: P: V   T: D   R: W   Z: S   TheCore Lite : E   
+[INFO]: P: V   T: D   R: W   Z: S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	TerranVehicleWeaponsUltraCapacitorsLevel1/Armory default: E copyof: TerranVehicleWeaponsLevel1/Armory default: E
 	TerranVehicleWeaponsUltraCapacitorsLevel2/Armory default: E copyof: TerranVehicleWeaponsLevel1/Armory default: E
 	TerranVehicleWeaponsUltraCapacitorsLevel3/Armory default: E copyof: TerranVehicleWeaponsLevel1/Armory default: E
 
-[INFO]: P: V   T: F   R: Q   Z: B   TheCore Lite : F   
+[INFO]: P: V   T: F   R: Q   Z: B   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	Infestor/Larva default: F
 	MorphtoDefiler/Larva default:  copyof: Infestor/Larva default: F
 
-[INFO]: P: V   T: F   R: Q   Z: H   TheCore Lite : Space   
+[INFO]: P: V   T: F   R: Q   Z: H   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
 	Ghost/Barracks default: G
 	HighTemplar default: T
 
-[INFO]: P: V   T: V   R: 2   Z: V   TheCore Lite : V   
+[INFO]: P: V   T: V   R: 2   Z: V   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteRehabPlus: V   
 	EvolveViciousGlaive/GreaterSpire default: V
 	EvolveViciousGlaive/Spire default: V
 
-[INFO]: P: V   T: V   R: F   Z: V   TheCore Lite : C   
+[INFO]: P: V   T: V   R: F   Z: V   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	VoidStasis/DarkTemplarShakuras default: V
 	VoidStasis/VorazunShadowGuard default: V
 
-[INFO]: P: V   T: V   R: S   Z: V   TheCore Lite : R   
+[INFO]: P: V   T: V   R: S   Z: V   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteRehabPlus: R   
 	Salvage/KelMorianGrenadeTurret default: V copyof: Salvage/Bunker default: V
 	Salvage/KelMorianMissileTurret default: V copyof: Salvage/Bunker default: V
 	Salvage/MissileTurret default: V copyof: Salvage/Bunker default: V
 	Salvage/PerditionTurret default: V copyof: Salvage/Bunker default: V
 
-[INFO]: P: V   T: V   R: V   Z: V   TheCore Lite :    
+[INFO]: P: V   T: V   R: V   Z: V   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	EvolveBurrowCharge/Hatchery default: 
 	ResearchPlasmaCharge/RoboticsBay default: 
 	WarpInReaver/RoboticsFacility default: 
 
-[INFO]: P: V   T: Z   R: 2   Z: 2   TheCore Lite : C   
+[INFO]: P: V   T: Z   R: 2   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	PrimalHeal/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
 	SpawnBanelings/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
 	WildMutation/K5Kerrigan default: E
 	WildMutation/KerriganVoid default: E copyof: WildMutation/K5Kerrigan default: E
 
-[INFO]: P: X   T: 6   R: C   Z: Y   TheCore Lite : T   
+[INFO]: P: X   T: 6   R: C   Z: Y   TheCore Lite: T   TheCore LiteRehab: T   TheCore LiteRehabPlus: T   
 	HiveMindEmulator/SCV default: I
 	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
 
-[INFO]: P: X   T: C   R: C   Z: B   TheCore Lite : G   
+[INFO]: P: X   T: C   R: C   Z: B   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteRehabPlus: G   
 	StalkerHallucination/Nexus default:  copyof: StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Voranor default:  copyof: StalkerHallucination/Sentry default: S
 
-[INFO]: P: X   T: T   R: A   Z: B   TheCore Lite : F   
+[INFO]: P: X   T: T   R: A   Z: B   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	Land default: L
 	Lift default: L
 
-[INFO]: P: X   T: X   R: A   Z: B   TheCore Lite : F   
+[INFO]: P: X   T: X   R: A   Z: B   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	Apocalypse/K5Kerrigan default:  copyof: K5Leviathan/K5Kerrigan default: D
 	K5DropPods/K5Kerrigan default: D copyof: K5Leviathan/K5Kerrigan default: D
 	K5Leviathan/K5Kerrigan default: D
 	K5Leviathan/KerriganVoid default: D copyof: K5Leviathan/K5Kerrigan default: D
 
-[INFO]: P: X   T: X   R: T   Z: A   TheCore Lite : 4   
+[INFO]: P: X   T: X   R: T   Z: A   TheCore Lite: 4   TheCore LiteRehab: 4   TheCore LiteRehabPlus: 4   
 	MorphToSwarmHostSplitA/Larva default: A copyof: SwarmHostMP/Larva default: A
 	MorphToSwarmHostSplitB/Larva default: A copyof: SwarmHostMP/Larva default: A
 	Scourge/Larva default: S copyof: SwarmHostMP/Larva default: A
 
-[INFO]: P: Z   T: T   R: Z   Z: Z   TheCore Lite : Escape   
+[INFO]: P: Z   T: T   R: Z   Z: Z   TheCore Lite: Escape   TheCore LiteRehab: Escape   TheCore LiteRehabPlus: Escape   
 	CancelCocoon default:  copyof: Cancel default: Escape
 	CancelMutateMorph default:  copyof: Cancel default: Escape
 	CancelUpgradeMorph default:  copyof: Cancel default: Escape
 
-[INFO]: P: Z   T: Z   R: S   Z: 2   TheCore Lite : CapsLock   
+[INFO]: P: Z   T: Z   R: S   Z: 2   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	ParasiticInvasion/LarvalQueen default: Q
 	SwarmQueenParasiticInvasion/HugeSwarmQueen default: Q copyof: ParasiticInvasion/LarvalQueen default: Q
 	SwarmQueenParasiticInvasion/LargeSwarmQueen default: Q copyof: ParasiticInvasion/LarvalQueen default: Q
 	SwarmQueenParasiticInvasion/SwarmQueen default: Q copyof: ParasiticInvasion/LarvalQueen default: Q
 
-[INFO]: P: Z   T: Z   R: Z   Z: C   TheCore Lite : CapsLock   
+[INFO]: P: Z   T: Z   R: Z   Z: C   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	Consume/GiantYeti default: W copyof: ParasiticInvasion/LarvalQueen default: Q
 	Consume/Lyote default: W copyof: ParasiticInvasion/LarvalQueen default: Q
 
-[INFO]: P: Z   T: Z   R: Z   Z: Z   TheCore Lite :    
+[INFO]: P: Z   T: Z   R: Z   Z: Z   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	ActivateIbikisCannon/PlanetaryFortress default: 
 	Glare/Oracle default: 
 	NerveJam/ScienceVessel default: 
 	NurturingSwarm/Queen default: 
 	ResearchEMP/StarportTechLab default: 
 
-[INFO]: P: Z   T: Z   R: Z   Z: Z   TheCore Lite : CapsLock   
+[INFO]: P: Z   T: Z   R: Z   Z: Z   TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LiteRehabPlus: CapsLock   
 	ProtossBuildAdvanced/Harvester default:  copyof: ProtossBuildAdvanced/Probe default: V
 	ProtossBuildAdvanced/Probe default: V
 	TerranBuildAdvanced/SCV default: V
 	ZergBuildAdvanced/Drone default: V
 
-[INFO]: P: Escape   T: Escape   R: Escape   Z: Escape   TheCore Lite : Escape   
+[INFO]: P: Escape   T: Escape   R: Escape   Z: Escape   TheCore Lite: Escape   TheCore LiteRehab: Escape   TheCore LiteRehabPlus: Escape   
 	ChatCancel default: Escape
 	CinematicSkip default: Escape
 	ObserveClearSelection default: Escape
