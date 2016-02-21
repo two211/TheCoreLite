@@ -17,12 +17,6 @@ import os  # @UnusedImport
 from ConflictChecks import *  # @UnresolvedImport @UnusedWildImport
 from SameChecks import *  # @UnresolvedImport @UnusedWildImport
 
-mode = 0
-## mode = 0 : normal mode
-## mode = 1 : no generation, run for all seed
-## mode = 2 : no generation, only run for target seed list
-## mode = 3 : no generation, only run for target seed list, verbose log (under dev)
-
 class ConfigParser(configparser.ConfigParser):
     """Case-sensitive ConfigParser."""
 
@@ -31,6 +25,15 @@ class ConfigParser(configparser.ConfigParser):
 
     def write(self, file):
         return super().write(file, space_around_delimiters=False)
+
+debug=False
+## If debug==True, the config file Debug.ini is loaded and modify the script behavior
+#debug=True
+
+debug_parser = ConfigParser()
+if debug:
+    debug_filepath = 'Debug.ini'
+    debug_parser.read(debug_filepath)
 
 class Races(Enum):
     Protoss = "P"
@@ -74,19 +77,16 @@ class Empty(Enum):
 
 ## List allSeeds to browse all hotkey seed
 allSeeds = []
-if mode < 2:
+if debug_parser.getboolean("Settings","allseeds",fallback=True):
     for race in Races:
         allSeeds.append(race)
     for seed in OtherSeeds:
         allSeeds.append(seed)
 else:
-    debug_filepath = 'Debug.ini'
-    debug_parser = ConfigParser()
-    debug_parser.read(debug_filepath)
-    for item in debug_parser.items('Races'):
-        allSeeds.append(Races[item[0]])
-    for item in debug_parser.items('OtherSeeds'):
-        allSeeds.append(OtherSeeds[item[0]])
+    for race in debug_parser.options("Races"):
+        allSeeds.append(Races[race])
+    for seed in debug_parser.options("OtherSeeds"):
+        allSeeds.append(OtherSeeds[seed])
 
 ####################################################################################
 
@@ -483,8 +483,9 @@ def analyse(model):
     same_check(model)
     conflict_check(model)
     wrong_inherit(model)
-    suggest_inherit(model)
     hotkey_command_check(model)
+    if debug_parser.getboolean("Settings","allchecks",fallback=True):
+        suggest_inherit(model)
 
 def same_check(model):
     logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
@@ -672,6 +673,6 @@ init_seed_hotkeyfile_parser()
 new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
-if mode == 0:
+if debug_parser.getboolean("Settings","generate",fallback=True):
     generate(model)
 analyse(model)
