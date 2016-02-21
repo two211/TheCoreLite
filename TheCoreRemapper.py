@@ -637,8 +637,8 @@ def known_hotkey_command_check(model,context_dict):
 	for seed in allSeeds:
 		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
 		## Find&Report context command overlap on hotkeys within CONFLICT_CHECKS
-		for context in context_dict['Context']:
-			for command in context_dict['Context'][context]:
+		for context in sorted(context_dict['Context']):
+			for command in sorted(context_dict['Context'][context]):
 				for key in model['Commands'][command].get_value(seed).split(','):
 					if key in hotkey_list:
 						log_msg = context + ' : ' + key + " used for command "+ command +", in seed " + seed.value
@@ -652,7 +652,7 @@ def unknown_hotkey_command_check(model,context_dict):
 	for seed in allSeeds:
 		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
 		## Find&Report context command overlap on hotkeys out of CONFLICT_CHECKS
-		for command in hotkeyfile_parsers[seed].options('Commands'):
+		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
 			if not command in context_dict['KnownCommands']:
 				for key in model['Commands'][command].get_value(seed).split(','):
 					if key in hotkey_list:
@@ -664,8 +664,8 @@ def known_unbound_command_check(model,context_dict):
 	logger = Logger("unbound commands, within identified conflicts", "KnownUnboundCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
 		## Find&Report context unbound command within CONFLICT_CHECKS
-		for context in context_dict['Context']:
-			for command in context_dict['Context'][context]:
+		for context in sorted(context_dict['Context']):
+			for command in sorted(context_dict['Context'][context]):
 				for key in model['Commands'][command].get_value(seed).split(','):
 					if key == '':
 						log_msg = context + ' : unbound command ' + command +", in seed " + seed.value
