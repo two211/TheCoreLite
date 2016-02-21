@@ -701,19 +701,24 @@ def getHotkeyList(seed,section,ignoredCommands=[]):
 	return hotkey_list
 
 def remapHint(command, seed, log=False):
-	hint = 'Remap hints for command: ' + command + '\n'
+	if debug_parser.getboolean("Settings","verydetail",fallback=not(log)):
+		hint = 'Remap hints for command: ' + command + '\n'
+	else:
+		hint = ''
 	listForbiddenKeys = []
-	for conflict in CONFLICT_CHECKS:
-		if command in CONFLICT_CHECKS[conflict]:
-			hint += "-CONFLICT- " + conflict + '\n'
-			for otherCommand in CONFLICT_CHECKS[conflict]:
+	for conflict in sorted(CONFLICT_CHECKS):
+		if command in sorted(CONFLICT_CHECKS[conflict]):
+			if debug_parser.getboolean("Settings","verydetail",fallback=not(log)):
+				hint += "-CONFLICT- " + conflict + '\n'
+			for otherCommand in sorted(CONFLICT_CHECKS[conflict]):
 				if otherCommand != command:
 					keys = model['Commands'][otherCommand].get_value(seed)
-					hint += keys + "\t" + otherCommand + '\n'
+					if debug_parser.getboolean("Settings","verydetail",fallback=not(log)):
+						hint += keys + "\t" + otherCommand + '\n'
 					for key in keys.split(','):
 						if not(key in listForbiddenKeys):
 							listForbiddenKeys.append(key)
-	hint += 'Summary (list of forbidden keys):\n'
+	hint += 'List of forbidden keys:\n'
 	hint += str(listForbiddenKeys)
 	if log:
 		return("\n"+hint)
