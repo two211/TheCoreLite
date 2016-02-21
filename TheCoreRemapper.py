@@ -538,6 +538,7 @@ def conflict_check(model):
             for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
                 if count > 1:
                     log_msg = "Conflict of hotkeys in seed: " + seed.value + " commandcard: " + commandcard_key
+                    issue_keys = []
                     for key in conflict_set:
                         for section in collections.OrderedDict(sorted(model.items())):
                             if not key in model[section]:
@@ -549,10 +550,18 @@ def conflict_check(model):
                             for issue_value in values:
                                 if issue_value == value:
                                     issue = True
+                                    issue_keys.append(key)
                             if issue:
                                 log_msg + log_msg + "\n\t" + key + " = " + raw_values
-                                if debug_parser.getboolean("Settings","verbose",fallback=False):
-                                    log_msg += remapHint(key, seed, log=True)
+                    if debug_parser.getboolean("Settings","verbose",fallback=False):
+                        log_msg += "\nCommand in conflict :"
+                        hint=""
+                        for issue_key in issue_keys:
+                            log_msg += "\n- " + issue_key
+                            tmp_hint = remapHint(issue_key, seed, log=True)
+                            if hint=="" or tmp_hint.count("\n")<hint.count("\n"):
+                                hint=tmp_hint
+                        log_msg += hint
                     logger.log(LogLevel.Error, log_msg)
     logger.finish()
                 
