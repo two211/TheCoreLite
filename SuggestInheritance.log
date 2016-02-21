@@ -1205,7 +1205,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranBuildAdvanced/SCV default: V
 	ZergBuildAdvanced/Drone default: V
 
-[INFO]: P: Alt+X   T: Alt+X   R: Alt+X   Z: Alt+X   TheCore Lite: Alt+X   TheCore LiteRehab: Alt+B   TheCore LiteRehabPlus: Alt+B   
+[INFO]: P: Alt+X   T: Alt+X   R: Alt+X   Z: Alt+X   TheCore Lite: Alt+X   TheCore LiteRehab: Alt+V   TheCore LiteRehabPlus: Alt+V   
 	AIClearAll default: Alt+X
 	AIDelete default: Alt+X
 
