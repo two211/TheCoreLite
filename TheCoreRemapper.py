@@ -27,7 +27,8 @@ class ConfigParser(configparser.ConfigParser):
         return super().write(file, space_around_delimiters=False)
 
 debug=False
-## If debug==True, the config file Debug.ini is loaded and modify the script behavior
+## If debug==True, the config file "Debug.ini" is loaded and modify the script behavior
+## An example is available, under the name "Debug_example.ini"
 #debug=True
 
 debug_parser = ConfigParser()
@@ -653,8 +654,30 @@ def hotkey_command_check(model):
 				for key in model['Commands'][command].get_value(seed).split(','):
 					if key in hotkey_list:
 						log_msg = context + ' : ' + key + " used for command "+ command +", in seed " + seed.value
+						if debug_parser.getboolean("Settings","verbose",fallback=False):
+							 log_msg += remap_hint(command, seed, log=True)
 						logger.log(LogLevel.Error, log_msg)
 	logger.finish()
+
+def remap_hint(command, seed, log=False):
+	hint = 'Remap hints for command: ' + command + '\n'
+	listForbiddenKeys = []
+	for conflict in CONFLICT_CHECKS:
+		if command in CONFLICT_CHECKS[conflict]:
+			hint += "-CONFLICT- " + conflict + '\n'
+			for otherCommand in CONFLICT_CHECKS[conflict]:
+				if otherCommand != command:
+					keys = model['Commands'][otherCommand].get_value(seed)
+					hint += keys + "\t" + otherCommand + '\n'
+					for key in keys.split(','):
+						if not(key in listForbiddenKeys):
+							listForbiddenKeys.append(key)
+	hint += 'Summary (list of forbidden keys):\n'
+	hint += str(listForbiddenKeys)
+	if log:
+		return("\n"+hint)
+	else:
+		print(hint)
 
 print("  ________         ______              " + "\n"
     " /_  __/ /_  ___  / ____/___  ________ " + "\n"
