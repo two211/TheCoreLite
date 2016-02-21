@@ -29,7 +29,7 @@ class ConfigParser(configparser.ConfigParser):
 debug=False
 ## If debug==True, the config file "Debug.ini" is loaded and modify the script behavior
 ## An example is available, under the name "Debug_example.ini"
-debug=True
+#debug=True
 
 debug_parser = ConfigParser()
 if debug:
