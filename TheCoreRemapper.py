@@ -676,6 +676,20 @@ def known_unbound_command_check(model,context_dict):
 						logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
+def outofmap_check(model):
+	logger = Logger("hotkeys and commands out of GlobalMap", "OutOfMapCheck.log", log_consol=[], log_file=[LogLevel.Error])
+	for seed in allSeeds:
+		## Find&Report command that are out of map
+		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
+			for key in model['Commands'][command].get_value(seed).split(','):
+				## Ignore unbound key, as well as Space and Escape that are not part of the GlobalMaps
+				if key in ['Space','','Escape']:
+					continue
+				if not key in settings_parser.options('GlobalMaps'):
+					log_msg = key + " used for command "+ command +", in seed " + seed.value
+					logger.log(LogLevel.Error, log_msg)
+	logger.finish()
+
 def getCommandByContextDict():
 	context_dict = {}
 	context_dict['Context'] = {}
