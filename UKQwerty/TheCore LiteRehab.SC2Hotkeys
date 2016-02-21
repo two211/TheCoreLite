@@ -2,6 +2,13 @@
 AllowSetConflicts=1
 
 [Hotkeys]
+AIArmy=Alt+D
+AIBuild=Alt+G
+AIClearAll=Alt+B
+AIDelete=Alt+B
+AIDetect=Alt+F
+AIExpand=Alt+V
+AIScout=Alt+T
 AlertRecall=F3
 ArmySelect=F7
 CameraCenter=MiddleMouseButton
@@ -133,7 +140,7 @@ ObserveSelected=W
 ObserveStatusBars=H
 ObserveZoomCameraLevel1=Control+K
 ObserveZoomCameraLevel2=Shift+K
-PTT=Alt+Shift
+PTT=OEM8
 PauseGame=Pause
 QuickPing=Control+Alt+LeftMouseButton
 QuickSave=Control+Shift+Alt+S
