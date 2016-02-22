@@ -520,6 +520,8 @@ def conflict_check(model):
     logger = Logger("conflict check", "ConflictCheck.log", log_consol=[], log_file=[LogLevel.Error])
     for seed in allSeeds:
         for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
+            if not(commandcard_key in constraints['ToCheck']['Conflicts']):
+                continue
             conflict_set.sort()
             count_hotkeys = {}
             for section in model:
