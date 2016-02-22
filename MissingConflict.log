@@ -8,7 +8,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Aggressive/LurkerMPBurrowed not related to a conflict
 in seed P, keys =F
@@ -17,7 +17,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: BattleRage/Khraxus not related to a conflict
 in seed P, keys =H
@@ -26,7 +26,7 @@ in seed R, keys =H
 in seed Z, keys =R
 in seed TheCore Lite, keys =B
 in seed TheCore LiteRehab, keys =B
-in seed TheCore LiteRehabPlus, keys =B
+in seed TheCore LiteMonitor, keys =B
 
 [ERROR]: BuildScarab/Reaver not related to a conflict
 in seed P, keys =R
@@ -35,7 +35,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: CreepTumor/Queen not related to a conflict
 in seed P, keys =A
@@ -44,7 +44,7 @@ in seed R, keys =A
 in seed Z, keys =A
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: DarkSwarm/Infestor not related to a conflict
 in seed P, keys =R
@@ -53,7 +53,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: DeepTunnel/QueenCoop not related to a conflict
 in seed P, keys =T
@@ -62,7 +62,7 @@ in seed R, keys =
 in seed Z, keys =T
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [ERROR]: Detonate/SpiderMine not related to a conflict
 in seed P, keys =R
@@ -71,7 +71,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [ERROR]: EMP/ScienceVessel not related to a conflict
 in seed P, keys =R
@@ -80,7 +80,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: EnrageQueen/Queen not related to a conflict
 in seed P, keys =H
@@ -89,7 +89,7 @@ in seed R, keys =H
 in seed Z, keys =H
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: EvadeObserver/Observer not related to a conflict
 in seed P, keys =R
@@ -98,7 +98,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: EvolveBurrowCharge/Hatchery not related to a conflict
 in seed P, keys =V
@@ -107,7 +107,7 @@ in seed R, keys =V
 in seed Z, keys =V
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: EvolveOrganicCarapace/RoachWarren not related to a conflict
 in seed P, keys =O
@@ -116,7 +116,7 @@ in seed R, keys =O
 in seed Z, keys =O
 in seed TheCore Lite, keys =O
 in seed TheCore LiteRehab, keys =O
-in seed TheCore LiteRehabPlus, keys =O
+in seed TheCore LiteMonitor, keys =O
 
 [ERROR]: Glare/Oracle not related to a conflict
 in seed P, keys =Z
@@ -125,7 +125,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: GravitonBeam/PhoenixPurifier not related to a conflict
 in seed P, keys =G
@@ -134,7 +134,7 @@ in seed R, keys =R,F
 in seed Z, keys =G
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [ERROR]: Guardian/Mutalisk not related to a conflict
 in seed P, keys =R
@@ -143,7 +143,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: HellfireThrusters/StarportTechLab not related to a conflict
 in seed P, keys =G
@@ -152,7 +152,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: HotSBioPlasmidDischarge/HotSLeviathan not related to a conflict
 in seed P, keys =R
@@ -161,7 +161,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =Q
 in seed TheCore LiteRehab, keys =Q
-in seed TheCore LiteRehabPlus, keys =Q
+in seed TheCore LiteMonitor, keys =Q
 
 [ERROR]: HotSBioStasis/HotSLeviathan not related to a conflict
 in seed P, keys =Z
@@ -170,7 +170,7 @@ in seed R, keys =Z
 in seed Z, keys =E
 in seed TheCore Lite, keys =W
 in seed TheCore LiteRehab, keys =W
-in seed TheCore LiteRehabPlus, keys =W
+in seed TheCore LiteMonitor, keys =W
 
 [ERROR]: IgniteAfterburner/Medivac not related to a conflict
 in seed P, keys =F
@@ -179,7 +179,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =F,Space
 in seed TheCore LiteRehab, keys =F,Space
-in seed TheCore LiteRehabPlus, keys =F,Space
+in seed TheCore LiteMonitor, keys =F,Space
 
 [ERROR]: Immortal not related to a conflict
 in seed P, keys =4
@@ -188,7 +188,7 @@ in seed R, keys =F
 in seed Z, keys =2
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Immortal/Gateway not related to a conflict
 in seed P, keys =
@@ -197,7 +197,7 @@ in seed R, keys =
 in seed Z, keys =
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Immortal/WarpGate not related to a conflict
 in seed P, keys =
@@ -206,7 +206,7 @@ in seed R, keys =
 in seed Z, keys =
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ImmortalityProtocol/Thor not related to a conflict
 in seed P, keys =P
@@ -215,7 +215,7 @@ in seed R, keys =P
 in seed Z, keys =P
 in seed TheCore Lite, keys =I
 in seed TheCore LiteRehab, keys =I
-in seed TheCore LiteRehabPlus, keys =I
+in seed TheCore LiteMonitor, keys =I
 
 [ERROR]: InjectLarva/Queen not related to a conflict
 in seed P, keys =R
@@ -224,7 +224,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: LaunchNullWard/NullSphere not related to a conflict
 in seed P, keys =R
@@ -233,7 +233,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: LockdownRound/Ghost not related to a conflict
 in seed P, keys =R
@@ -242,7 +242,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Matrix/Medic not related to a conflict
 in seed P, keys =R
@@ -251,7 +251,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: MorphtoDevourer/Mutalisk not related to a conflict
 in seed P, keys =F
@@ -260,7 +260,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: MutateintoDefilerMound/Drone not related to a conflict
 in seed P, keys =5
@@ -269,7 +269,7 @@ in seed R, keys =5
 in seed Z, keys =5
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: NerveJam/ScienceVessel not related to a conflict
 in seed P, keys =Z
@@ -278,7 +278,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: NurturingSwarm/Queen not related to a conflict
 in seed P, keys =Z
@@ -287,7 +287,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: OracleWeaponOff not related to a conflict
 in seed P, keys =4
@@ -296,7 +296,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [ERROR]: OracleWeaponOn not related to a conflict
 in seed P, keys =D
@@ -305,7 +305,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [ERROR]: Overcharge/OrbitalCommand not related to a conflict
 in seed P, keys =H
@@ -314,7 +314,7 @@ in seed R, keys =H
 in seed Z, keys =H
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Passive not related to a conflict
 in seed P, keys =A
@@ -323,7 +323,7 @@ in seed R, keys =A
 in seed Z, keys =A
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: PhaseMissile/Scout not related to a conflict
 in seed P, keys =R
@@ -332,7 +332,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: PlaceWard/Oracle not related to a conflict
 in seed P, keys =R
@@ -341,7 +341,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Plague/Infestor not related to a conflict
 in seed P, keys =H
@@ -350,7 +350,7 @@ in seed R, keys =H
 in seed Z, keys =H
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: PrimalConsume/Infestor not related to a conflict
 in seed P, keys =A
@@ -359,7 +359,7 @@ in seed R, keys =A
 in seed Z, keys =A
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Probe/KhaydarinNexus not related to a conflict
 in seed P, keys =R
@@ -368,7 +368,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: PurificationNova/Disruptor not related to a conflict
 in seed P, keys =V
@@ -377,7 +377,7 @@ in seed R, keys =R
 in seed Z, keys =V
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [ERROR]: Recall/Arbiter not related to a conflict
 in seed P, keys =F
@@ -386,7 +386,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchBarrelStabilizers/BarracksTechLab not related to a conflict
 in seed P, keys =G
@@ -395,7 +395,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchCharonBooster/FactoryTechLab not related to a conflict
 in seed P, keys =5
@@ -404,7 +404,7 @@ in seed R, keys =5
 in seed Z, keys =5
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchEMP/StarportTechLab not related to a conflict
 in seed P, keys =Z
@@ -413,7 +413,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchEngineeredExplosives/BarracksTechLab not related to a conflict
 in seed P, keys =5
@@ -422,7 +422,7 @@ in seed R, keys =5
 in seed Z, keys =5
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchEvadeObserver/Observatory not related to a conflict
 in seed P, keys =G
@@ -431,7 +431,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchFortifiedBunkers/EngineeringBay not related to a conflict
 in seed P, keys =5
@@ -440,7 +440,7 @@ in seed R, keys =5
 in seed Z, keys =5
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchGraviticBooster/Observatory not related to a conflict
 in seed P, keys =R
@@ -449,7 +449,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchIonThrusters/FactoryTechLab not related to a conflict
 in seed P, keys =G
@@ -458,7 +458,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchIrradiate/StarportTechLab not related to a conflict
 in seed P, keys =H
@@ -467,7 +467,7 @@ in seed R, keys =H
 in seed Z, keys =H
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchKhaydarinCore/ArbiterTribunal not related to a conflict
 in seed P, keys =G
@@ -476,7 +476,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchKhaydarinGenerator/FleetBeacon not related to a conflict
 in seed P, keys =G
@@ -485,7 +485,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchLocustLifetimeIncrease/InfestationPit not related to a conflict
 in seed P, keys =E
@@ -494,7 +494,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =4
 in seed TheCore LiteRehab, keys =4
-in seed TheCore LiteRehabPlus, keys =4
+in seed TheCore LiteMonitor, keys =4
 
 [ERROR]: ResearchMatrix/BarracksTechLab not related to a conflict
 in seed P, keys =R
@@ -503,7 +503,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchPiercingRockets/StarportTechLab not related to a conflict
 in seed P, keys =F
@@ -512,7 +512,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchPlasmaCharge/RoboticsBay not related to a conflict
 in seed P, keys =V
@@ -521,7 +521,7 @@ in seed R, keys =V
 in seed Z, keys =V
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchRecall/ArbiterTribunal not related to a conflict
 in seed P, keys =F
@@ -530,7 +530,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchSingularityCharge2/CyberneticsCore not related to a conflict
 in seed P, keys =F
@@ -539,7 +539,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchSpiderMines/FactoryTechLab not related to a conflict
 in seed P, keys =R
@@ -548,7 +548,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchTimeWarp/FleetBeacon not related to a conflict
 in seed P, keys =R
@@ -557,7 +557,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchTitanReactor/StarportTechLab not related to a conflict
 in seed P, keys =A
@@ -566,7 +566,7 @@ in seed R, keys =A
 in seed Z, keys =A
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: ResearchTransformationServos/FactoryTechLab not related to a conflict
 in seed P, keys =V
@@ -575,7 +575,7 @@ in seed R, keys =5
 in seed Z, keys =S
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [ERROR]: ResearchTurboGripper/StarportTechLab not related to a conflict
 in seed P, keys =R
@@ -584,7 +584,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: RetributionField/Meliak not related to a conflict
 in seed P, keys =Z
@@ -593,7 +593,7 @@ in seed R, keys =Z
 in seed Z, keys =R
 in seed TheCore Lite, keys =V
 in seed TheCore LiteRehab, keys =V
-in seed TheCore LiteRehabPlus, keys =V
+in seed TheCore LiteMonitor, keys =V
 
 [ERROR]: Rift/KhaydarinNexus not related to a conflict
 in seed P, keys =F
@@ -602,7 +602,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: Rift/Nexus not related to a conflict
 in seed P, keys =F
@@ -611,7 +611,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: SJHyperionBlink/Battlecruiser not related to a conflict
 in seed P, keys =R
@@ -620,7 +620,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: SapStructure/Baneling not related to a conflict
 in seed P, keys =4
@@ -629,7 +629,7 @@ in seed R, keys =Z
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [ERROR]: ShapedBlast/SiegeBreakerSieged not related to a conflict
 in seed P, keys =P
@@ -638,7 +638,7 @@ in seed R, keys =P
 in seed Z, keys =P
 in seed TheCore Lite, keys =B
 in seed TheCore LiteRehab, keys =B
-in seed TheCore LiteRehabPlus, keys =B
+in seed TheCore LiteMonitor, keys =B
 
 [ERROR]: ShapedBlast/SiegeTankSieged not related to a conflict
 in seed P, keys =P
@@ -647,7 +647,7 @@ in seed R, keys =P
 in seed Z, keys =P
 in seed TheCore Lite, keys =B
 in seed TheCore LiteRehab, keys =B
-in seed TheCore LiteRehabPlus, keys =B
+in seed TheCore LiteMonitor, keys =B
 
 [ERROR]: SlivanPuke/Devourer not related to a conflict
 in seed P, keys =R
@@ -656,7 +656,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: StasisField/Arbiter not related to a conflict
 in seed P, keys =R
@@ -665,7 +665,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: StasisField/ArbiterTribunal not related to a conflict
 in seed P, keys =R
@@ -674,7 +674,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: TimeWarpSentinel/Oracle not related to a conflict
 in seed P, keys =F
@@ -683,7 +683,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: UpgradeLIDARTransmitter/EngineeringBay not related to a conflict
 in seed P, keys =F
@@ -692,7 +692,7 @@ in seed R, keys =F
 in seed Z, keys =F
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: UpgradewithKhaydarinCore/Nexus not related to a conflict
 in seed P, keys =G
@@ -701,7 +701,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: UseSpiderMine/Vulture not related to a conflict
 in seed P, keys =R
@@ -710,7 +710,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: WarpInCorsair/Stargate not related to a conflict
 in seed P, keys =G
@@ -719,7 +719,7 @@ in seed R, keys =G
 in seed Z, keys =G
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: WarpInReaver/RoboticsFacility not related to a conflict
 in seed P, keys =V
@@ -728,7 +728,7 @@ in seed R, keys =V
 in seed Z, keys =V
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: WarpinArbiterTribunal/Probe not related to a conflict
 in seed P, keys =H
@@ -737,7 +737,7 @@ in seed R, keys =H
 in seed Z, keys =H
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: WarpinDragoon/Gateway not related to a conflict
 in seed P, keys =R
@@ -746,7 +746,7 @@ in seed R, keys =R
 in seed Z, keys =R
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: WarpinObservatory/Probe not related to a conflict
 in seed P, keys =C
@@ -755,7 +755,7 @@ in seed R, keys =C
 in seed Z, keys =C
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: WidowMineAttack/WidowMine not related to a conflict
 in seed P, keys =C
@@ -764,7 +764,7 @@ in seed R, keys =C
 in seed Z, keys =V
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [ERROR]: WormholeTransit/Predator not related to a conflict
 in seed P, keys =R
@@ -773,7 +773,7 @@ in seed R, keys =R
 in seed Z, keys =E
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore LiteMonitor, keys =
 
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed P, keys =H
@@ -782,7 +782,7 @@ in seed R, keys =H
 in seed Z, keys =R
 in seed TheCore Lite, keys =X
 in seed TheCore LiteRehab, keys =X
-in seed TheCore LiteRehabPlus, keys =X
+in seed TheCore LiteMonitor, keys =X
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
@@ -792,7 +792,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: Apocalypse/K5Kerrigan not related to a conflict
 but is part of same check
@@ -803,7 +803,7 @@ in seed R, keys =A
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: ArchonHallucination/Nexus not related to a conflict
 but is inherited
@@ -813,7 +813,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: ArchonHallucination/Voranor not related to a conflict
 but is inherited
@@ -823,7 +823,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: Assimilator/Harvester not related to a conflict
 but is inherited
@@ -833,7 +833,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: AttackAllowsInvulnerable/DrakkenLaserDrill not related to a conflict
 but is inherited
@@ -843,7 +843,7 @@ in seed R, keys =W
 in seed Z, keys =W
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: AttackChampions not related to a conflict
 but is inherited
@@ -853,7 +853,7 @@ in seed R, keys =W
 in seed Z, keys =W
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: AutomatedExtractor/Drone not related to a conflict
 but is part of same check
@@ -864,7 +864,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: AutomatedRefinery/SCV not related to a conflict
 but is part of same check
@@ -875,7 +875,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: Baneling/Zergling2 not related to a conflict
 but is part of same check
@@ -886,7 +886,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: BuildAutoTurret/Raven not related to a conflict
 but is part of same check
@@ -897,7 +897,7 @@ in seed R, keys =F,6
 in seed Z, keys =S
 in seed TheCore Lite, keys =C,Space
 in seed TheCore LiteRehab, keys =C,Space
-in seed TheCore LiteRehabPlus, keys =C,Space
+in seed TheCore LiteMonitor, keys =C,Space
 
 [WARN]: BuildCreepTumor/BroodMother not related to a conflict
 but is inherited
@@ -907,7 +907,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =C,CapsLock
 in seed TheCore LiteRehab, keys =C,CapsLock
-in seed TheCore LiteRehabPlus, keys =C,CapsLock
+in seed TheCore LiteMonitor, keys =C,CapsLock
 
 [WARN]: BuildCreepTumor/Queen2 not related to a conflict
 but is inherited
@@ -917,7 +917,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =C,CapsLock
 in seed TheCore LiteRehab, keys =C,CapsLock
-in seed TheCore LiteRehabPlus, keys =C,CapsLock
+in seed TheCore LiteMonitor, keys =C,CapsLock
 
 [WARN]: BuildPointDefenseDrone/Raven not related to a conflict
 but is part of same check
@@ -928,7 +928,7 @@ in seed R, keys =S,2
 in seed Z, keys =Q,2
 in seed TheCore Lite, keys =E,CapsLock
 in seed TheCore LiteRehab, keys =E,CapsLock
-in seed TheCore LiteRehabPlus, keys =E,CapsLock
+in seed TheCore LiteMonitor, keys =E,CapsLock
 
 [WARN]: BuildScienceVessel/Starport not related to a conflict
 but is part of same check
@@ -939,7 +939,7 @@ in seed R, keys =Q
 in seed Z, keys =H
 in seed TheCore Lite, keys =V
 in seed TheCore LiteRehab, keys =V
-in seed TheCore LiteRehabPlus, keys =V
+in seed TheCore LiteMonitor, keys =V
 
 [WARN]: BunkerFortified/SCV not related to a conflict
 but is inherited
@@ -949,7 +949,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: BurrowChargeMP/Ultralisk not related to a conflict
 but is part of same check
@@ -960,7 +960,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: BurrowHydraliskImpalerDown not related to a conflict
 but is part of same check
@@ -971,7 +971,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: BurrowHydraliskImpalerUp not related to a conflict
 but is part of same check
@@ -982,7 +982,7 @@ in seed R, keys =S
 in seed Z, keys =G,N
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: BurrowHydraliskLurkerDown not related to a conflict
 but is part of same check
@@ -993,7 +993,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: BurrowHydraliskLurkerUp not related to a conflict
 but is part of same check
@@ -1004,7 +1004,7 @@ in seed R, keys =S
 in seed Z, keys =G,N
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: CancelCocoon not related to a conflict
 but is inherited
@@ -1014,7 +1014,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =Escape
 in seed TheCore LiteRehab, keys =Escape
-in seed TheCore LiteRehabPlus, keys =Escape
+in seed TheCore LiteMonitor, keys =Escape
 
 [WARN]: CancelMutateMorph not related to a conflict
 but is inherited
@@ -1024,7 +1024,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =Escape
 in seed TheCore LiteRehab, keys =Escape
-in seed TheCore LiteRehabPlus, keys =Escape
+in seed TheCore LiteMonitor, keys =Escape
 
 [WARN]: CancelUpgradeMorph not related to a conflict
 but is inherited
@@ -1034,7 +1034,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =Escape
 in seed TheCore LiteRehab, keys =Escape
-in seed TheCore LiteRehabPlus, keys =Escape
+in seed TheCore LiteMonitor, keys =Escape
 
 [WARN]: Charge/Khraxus not related to a conflict
 but is inherited
@@ -1044,7 +1044,7 @@ in seed R, keys =R
 in seed Z, keys =N,G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: Charge/Orthos not related to a conflict
 but is inherited
@@ -1054,7 +1054,7 @@ in seed R, keys =R
 in seed Z, keys =N,G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: Charge/Voranor not related to a conflict
 but is inherited
@@ -1064,7 +1064,7 @@ in seed R, keys =R
 in seed Z, keys =N,G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: Charge/ZealotDark not related to a conflict
 but is inherited
@@ -1074,7 +1074,7 @@ in seed R, keys =R
 in seed Z, keys =N,G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: ColossusHallucination/Nexus not related to a conflict
 but is inherited
@@ -1084,7 +1084,7 @@ in seed R, keys =2
 in seed Z, keys =2
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: ColossusHallucination/Voranor not related to a conflict
 but is inherited
@@ -1094,7 +1094,7 @@ in seed R, keys =2
 in seed Z, keys =2
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: CyberneticsCore/Harvester not related to a conflict
 but is inherited
@@ -1104,7 +1104,7 @@ in seed R, keys =5
 in seed Z, keys =S
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: DarkShrine/Harvester not related to a conflict
 but is inherited
@@ -1114,7 +1114,7 @@ in seed R, keys =2
 in seed Z, keys =V
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: DisableBuildingAttack/baneling not related to a conflict
 but is part of same check
@@ -1125,7 +1125,7 @@ in seed R, keys =S
 in seed Z, keys =2
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: DisableBuildingAttack/baneling2 not related to a conflict
 but is part of same check
@@ -1136,7 +1136,7 @@ in seed R, keys =S
 in seed Z, keys =2
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: EnableBuildingAttack/baneling not related to a conflict
 but is part of same check
@@ -1147,7 +1147,7 @@ in seed R, keys =2
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: EnableBuildingAttack/baneling2 not related to a conflict
 but is part of same check
@@ -1158,7 +1158,7 @@ in seed R, keys =2
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: Explode/HotSSplitterlingBigBurrowed not related to a conflict
 but is part of same check
@@ -1169,7 +1169,7 @@ in seed R, keys =R
 in seed Z, keys =S
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: Explode/baneling not related to a conflict
 but is part of same check
@@ -1180,7 +1180,7 @@ in seed R, keys =R
 in seed Z, keys =S
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: Explode/baneling2 not related to a conflict
 but is part of same check
@@ -1191,7 +1191,7 @@ in seed R, keys =R
 in seed Z, keys =S
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: Feedback/AnAleemController not related to a conflict
 but is inherited
@@ -1201,7 +1201,7 @@ in seed R, keys =S,F
 in seed Z, keys =Q,2
 in seed TheCore Lite, keys =C,Space
 in seed TheCore LiteRehab, keys =C,Space
-in seed TheCore LiteRehabPlus, keys =C,Space
+in seed TheCore LiteMonitor, keys =C,Space
 
 [WARN]: Feedback/Khiradun not related to a conflict
 but is inherited
@@ -1211,7 +1211,7 @@ in seed R, keys =S,F
 in seed Z, keys =Q,2
 in seed TheCore Lite, keys =C,Space
 in seed TheCore LiteRehab, keys =C,Space
-in seed TheCore LiteRehabPlus, keys =C,Space
+in seed TheCore LiteMonitor, keys =C,Space
 
 [WARN]: FleetBeacon/Harvester not related to a conflict
 but is inherited
@@ -1221,7 +1221,7 @@ in seed R, keys =5
 in seed Z, keys =S
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: ForceField2/Sentry2 not related to a conflict
 but is part of same check
@@ -1232,7 +1232,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: Forge/Harvester not related to a conflict
 but is inherited
@@ -1242,7 +1242,7 @@ in seed R, keys =S
 in seed Z, keys =2
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: Frostbat/Barracks not related to a conflict
 but is inherited
@@ -1252,7 +1252,7 @@ in seed R, keys =C
 in seed Z, keys =A
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: FungalGrowth/Infestor2 not related to a conflict
 but is part of same check
@@ -1263,7 +1263,7 @@ in seed R, keys =R,Tab
 in seed Z, keys =G,B
 in seed TheCore Lite, keys =E,Space
 in seed TheCore LiteRehab, keys =E,Space
-in seed TheCore LiteRehabPlus, keys =E,Space
+in seed TheCore LiteMonitor, keys =E,Space
 
 [WARN]: Gateway/Harvester not related to a conflict
 but is inherited
@@ -1273,7 +1273,7 @@ in seed R, keys =R
 in seed Z, keys =H
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: GuardianShield/Sentry2 not related to a conflict
 but is part of same check
@@ -1284,7 +1284,7 @@ in seed R, keys =S
 in seed Z, keys =S
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: Hallucination/Sentry2 not related to a conflict
 but is part of same check
@@ -1295,7 +1295,7 @@ in seed R, keys =F,A
 in seed Z, keys =Q,B
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: Hallucination2/Voranor not related to a conflict
 but is inherited
@@ -1305,7 +1305,7 @@ in seed R, keys =F,A
 in seed Z, keys =Q,B
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: Heal/Medivac2 not related to a conflict
 but is part of same check
@@ -1316,7 +1316,7 @@ in seed R, keys =A
 in seed Z, keys =Y
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: HighTemplarHallucination/Nexus not related to a conflict
 but is inherited
@@ -1326,7 +1326,7 @@ in seed R, keys =Q
 in seed Z, keys =H
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: HighTemplarHallucination/Voranor not related to a conflict
 but is inherited
@@ -1336,7 +1336,7 @@ in seed R, keys =Q
 in seed Z, keys =H
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: ImmortalBarrierBase/Immortal not related to a conflict
 but is inherited
@@ -1346,7 +1346,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: ImmortalHallucination/Nexus not related to a conflict
 but is inherited
@@ -1356,7 +1356,7 @@ in seed R, keys =S
 in seed Z, keys =S
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: ImpalerDen/HydraliskDen not related to a conflict
 but is part of same check
@@ -1367,7 +1367,7 @@ in seed R, keys =C
 in seed Z, keys =Y
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: InfestedTerrans/Infestor2 not related to a conflict
 but is part of same check
@@ -1378,7 +1378,7 @@ in seed R, keys =2
 in seed Z, keys =S
 in seed TheCore Lite, keys =F,CapsLock
 in seed TheCore LiteRehab, keys =F,CapsLock
-in seed TheCore LiteRehabPlus, keys =F,CapsLock
+in seed TheCore LiteMonitor, keys =F,CapsLock
 
 [WARN]: K5DropPods/K5Kerrigan not related to a conflict
 but is part of same check
@@ -1389,7 +1389,7 @@ in seed R, keys =A
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: KhalaShockwave/Immortal not related to a conflict
 but is inherited
@@ -1399,7 +1399,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: Lurker/Hydralisk not related to a conflict
 but is inherited
@@ -1409,7 +1409,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: LurkerBurrowDown not related to a conflict
 but is part of same check
@@ -1420,7 +1420,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: MeliakBlinkBTN/Meliak not related to a conflict
 but is inherited
@@ -1430,7 +1430,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: MorphMorphalisk/BroodMother not related to a conflict
 but is inherited
@@ -1440,7 +1440,7 @@ in seed R, keys =R,2
 in seed Z, keys =2
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: MorphMorphalisk/Queen2 not related to a conflict
 but is inherited
@@ -1450,7 +1450,7 @@ in seed R, keys =R,2
 in seed Z, keys =2
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: MorphToCorpser/Larva not related to a conflict
 but is part of same check
@@ -1461,7 +1461,7 @@ in seed R, keys =F
 in seed Z, keys =S
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: MorphToHotSNoxious/Larva not related to a conflict
 but is part of same check
@@ -1472,7 +1472,7 @@ in seed R, keys =C
 in seed Z, keys =Tab
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: MorphToHotSTorrasque/Larva not related to a conflict
 but is part of same check
@@ -1483,7 +1483,7 @@ in seed R, keys =C
 in seed Z, keys =Tab
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: MorphToHydraliskImpaler/Larva not related to a conflict
 but is part of same check
@@ -1494,7 +1494,7 @@ in seed R, keys =S
 in seed Z, keys =Q
 in seed TheCore Lite, keys =V
 in seed TheCore LiteRehab, keys =V
-in seed TheCore LiteRehabPlus, keys =V
+in seed TheCore LiteMonitor, keys =V
 
 [WARN]: MorphToHydraliskLurker/Larva not related to a conflict
 but is part of same check
@@ -1505,7 +1505,7 @@ in seed R, keys =S
 in seed Z, keys =Q
 in seed TheCore Lite, keys =V
 in seed TheCore LiteRehab, keys =V
-in seed TheCore LiteRehabPlus, keys =V
+in seed TheCore LiteMonitor, keys =V
 
 [WARN]: MorphToMutaliskBroodlord/Larva not related to a conflict
 but is part of same check
@@ -1516,7 +1516,7 @@ in seed R, keys =5
 in seed Z, keys =V
 in seed TheCore Lite, keys =T
 in seed TheCore LiteRehab, keys =T
-in seed TheCore LiteRehabPlus, keys =T
+in seed TheCore LiteMonitor, keys =T
 
 [WARN]: MorphToMutaliskViper/Larva not related to a conflict
 but is part of same check
@@ -1527,7 +1527,7 @@ in seed R, keys =5
 in seed Z, keys =V
 in seed TheCore Lite, keys =T
 in seed TheCore LiteRehab, keys =T
-in seed TheCore LiteRehabPlus, keys =T
+in seed TheCore LiteMonitor, keys =T
 
 [WARN]: MorphToRaptor/Larva not related to a conflict
 but is part of same check
@@ -1538,7 +1538,7 @@ in seed R, keys =W
 in seed Z, keys =W
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: MorphToSwarmHostSplitA/Larva not related to a conflict
 but is part of same check
@@ -1549,7 +1549,7 @@ in seed R, keys =T
 in seed Z, keys =A
 in seed TheCore Lite, keys =4
 in seed TheCore LiteRehab, keys =4
-in seed TheCore LiteRehabPlus, keys =4
+in seed TheCore LiteMonitor, keys =4
 
 [WARN]: MorphToSwarmHostSplitB/Larva not related to a conflict
 but is part of same check
@@ -1560,7 +1560,7 @@ in seed R, keys =T
 in seed Z, keys =A
 in seed TheCore Lite, keys =4
 in seed TheCore LiteRehab, keys =4
-in seed TheCore LiteRehabPlus, keys =4
+in seed TheCore LiteMonitor, keys =4
 
 [WARN]: MorphToSwarmling/Larva not related to a conflict
 but is part of same check
@@ -1571,7 +1571,7 @@ in seed R, keys =W
 in seed Z, keys =W
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: MorphToVile/Larva not related to a conflict
 but is part of same check
@@ -1582,7 +1582,7 @@ in seed R, keys =F
 in seed Z, keys =S
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: MorphtoDefiler/Larva not related to a conflict
 but is part of same check
@@ -1593,7 +1593,7 @@ in seed R, keys =Q
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: MorphtoHunter/HotSRaptor not related to a conflict
 but is part of same check
@@ -1604,7 +1604,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: MorphtoHunter/HotSSwarmling not related to a conflict
 but is part of same check
@@ -1615,7 +1615,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: MorphtoRoach/Larva not related to a conflict
 but is inherited
@@ -1625,7 +1625,7 @@ in seed R, keys =F
 in seed Z, keys =S
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: MorphtoSplitterling/HotSRaptor not related to a conflict
 but is part of same check
@@ -1636,7 +1636,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: MorphtoSplitterling/HotSSwarmling not related to a conflict
 but is part of same check
@@ -1647,7 +1647,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: MoveChampions not related to a conflict
 but is inherited
@@ -1657,7 +1657,7 @@ in seed R, keys =Comma
 in seed Z, keys =Comma
 in seed TheCore Lite, keys =H
 in seed TheCore LiteRehab, keys =H
-in seed TheCore LiteRehabPlus, keys =H
+in seed TheCore LiteMonitor, keys =H
 
 [WARN]: NeuralParasite/Infestor2 not related to a conflict
 but is part of same check
@@ -1668,7 +1668,7 @@ in seed R, keys =S,A
 in seed Z, keys =2
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: Nexus/Harvester not related to a conflict
 but is inherited
@@ -1678,7 +1678,7 @@ in seed R, keys =Q
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: PhoenixHallucination/Nexus not related to a conflict
 but is inherited
@@ -1688,7 +1688,7 @@ in seed R, keys =W
 in seed Z, keys =G
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: PhotonCannon/Harvester not related to a conflict
 but is inherited
@@ -1698,7 +1698,7 @@ in seed R, keys =2
 in seed Z, keys =W
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: PrimalHeal/K5Kerrigan not related to a conflict
 but is part of same check
@@ -1709,7 +1709,7 @@ in seed R, keys =2
 in seed Z, keys =2
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: PrimalSlash/K5Kerrigan not related to a conflict
 but is part of same check
@@ -1720,7 +1720,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: ProbeHallucination/Nexus not related to a conflict
 but is inherited
@@ -1730,7 +1730,7 @@ in seed R, keys =J
 in seed Z, keys =Tab
 in seed TheCore Lite, keys =4
 in seed TheCore LiteRehab, keys =4
-in seed TheCore LiteRehabPlus, keys =4
+in seed TheCore LiteMonitor, keys =4
 
 [WARN]: ProbeHallucination/Voranor not related to a conflict
 but is inherited
@@ -1740,7 +1740,7 @@ in seed R, keys =J
 in seed Z, keys =Tab
 in seed TheCore Lite, keys =4
 in seed TheCore LiteRehab, keys =4
-in seed TheCore LiteRehabPlus, keys =4
+in seed TheCore LiteMonitor, keys =4
 
 [WARN]: ProtossBuild/Harvester not related to a conflict
 but is inherited
@@ -1750,7 +1750,7 @@ in seed R, keys =R,S
 in seed Z, keys =G,S
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: ProtossBuildAdvanced/Harvester not related to a conflict
 but is inherited
@@ -1760,7 +1760,7 @@ in seed R, keys =Z
 in seed Z, keys =Z
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: PsiDisruptor/SCV not related to a conflict
 but is inherited
@@ -1770,7 +1770,7 @@ in seed R, keys =C
 in seed Z, keys =Y
 in seed TheCore Lite, keys =T
 in seed TheCore LiteRehab, keys =T
-in seed TheCore LiteRehabPlus, keys =T
+in seed TheCore LiteMonitor, keys =T
 
 [WARN]: PsiStorm/AnAleemController not related to a conflict
 but is inherited
@@ -1780,7 +1780,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: PsiStorm/Khiradun not related to a conflict
 but is inherited
@@ -1790,7 +1790,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: PsiStorm/Telios not related to a conflict
 but is inherited
@@ -1800,7 +1800,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: PsiStrike/K5Kerrigan not related to a conflict
 but is part of same check
@@ -1811,7 +1811,7 @@ in seed R, keys =R
 in seed Z, keys =S
 in seed TheCore Lite, keys =E,Space
 in seed TheCore LiteRehab, keys =E,Space
-in seed TheCore LiteRehabPlus, keys =E,Space
+in seed TheCore LiteMonitor, keys =E,Space
 
 [WARN]: PsionicBolt/Telios not related to a conflict
 but is inherited
@@ -1821,7 +1821,7 @@ in seed R, keys =S,F
 in seed Z, keys =Q,2
 in seed TheCore Lite, keys =C,Space
 in seed TheCore LiteRehab, keys =C,Space
-in seed TheCore LiteRehabPlus, keys =C,Space
+in seed TheCore LiteMonitor, keys =C,Space
 
 [WARN]: Pylon/Harvester not related to a conflict
 but is inherited
@@ -1831,7 +1831,7 @@ in seed R, keys =W
 in seed Z, keys =V
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: RapidIncubation/SwarmHostSplitABurrowed not related to a conflict
 but is inherited
@@ -1841,7 +1841,7 @@ in seed R, keys =P
 in seed Z, keys =P
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: RapidIncubation/SwarmHostSwarmHostBurrowed not related to a conflict
 but is inherited
@@ -1851,7 +1851,7 @@ in seed R, keys =P
 in seed Z, keys =P
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: RapidIncubation/SwarmHostSwarmHostRooted not related to a conflict
 but is inherited
@@ -1861,7 +1861,7 @@ in seed R, keys =P
 in seed Z, keys =P
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: ResearchCerberusMines/FactoryTechReactor not related to a conflict
 but is part of same check
@@ -1872,7 +1872,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: ResearchG4Charge/BarracksTechReactor not related to a conflict
 but is part of same check
@@ -1883,7 +1883,7 @@ in seed R, keys =S
 in seed Z, keys =2
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: ResearchIncineratorNozzles/BarracksTechReactor not related to a conflict
 but is part of same check
@@ -1894,7 +1894,7 @@ in seed R, keys =C
 in seed Z, keys =A
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: ResearchJackhammerConcussionGrenade/BarracksTechReactor not related to a conflict
 but is part of same check
@@ -1905,7 +1905,7 @@ in seed R, keys =R
 in seed Z, keys =S
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: ResearchMultiLockTargetingSystem/FactoryTechReactor not related to a conflict
 but is part of same check
@@ -1916,7 +1916,7 @@ in seed R, keys =5
 in seed Z, keys =S
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: ResearchRegenerativeBioSteel/FactoryTechReactor not related to a conflict
 but is part of same check
@@ -1927,7 +1927,7 @@ in seed R, keys =2
 in seed Z, keys =2
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: ResearchShapedBlast/FactoryTechReactor not related to a conflict
 but is part of same check
@@ -1938,7 +1938,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: ResearchStabilizerMedPacks/BarracksTechReactor not related to a conflict
 but is part of same check
@@ -1949,7 +1949,7 @@ in seed R, keys =5
 in seed Z, keys =V
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: ResearchStrikeCannons/FactoryTechReactor not related to a conflict
 but is part of same check
@@ -1960,7 +1960,7 @@ in seed R, keys =T
 in seed Z, keys =V
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: RoboticsBay/Harvester not related to a conflict
 but is inherited
@@ -1970,7 +1970,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: RoboticsFacility/Harvester not related to a conflict
 but is inherited
@@ -1980,7 +1980,7 @@ in seed R, keys =W
 in seed Z, keys =H
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: RogueGhostCloak/Spectre not related to a conflict
 but is part of same check
@@ -1991,7 +1991,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: SpawnBanelings/K5Kerrigan not related to a conflict
 but is part of same check
@@ -2002,7 +2002,7 @@ in seed R, keys =2
 in seed Z, keys =2
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: StalkerHallucination/Nexus not related to a conflict
 but is inherited
@@ -2012,7 +2012,7 @@ in seed R, keys =C
 in seed Z, keys =B
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: Stargate/Harvester not related to a conflict
 but is inherited
@@ -2022,7 +2022,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: Summon2DragoonHallucinations/Sentry not related to a conflict
 but is inherited
@@ -2032,7 +2032,7 @@ in seed R, keys =C
 in seed Z, keys =B
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: Summon2DragoonHallucinations/Voranor not related to a conflict
 but is inherited
@@ -2042,7 +2042,7 @@ in seed R, keys =C
 in seed Z, keys =B
 in seed TheCore Lite, keys =G
 in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteRehabPlus, keys =G
+in seed TheCore LiteMonitor, keys =G
 
 [WARN]: Summon2ScoutHallucinations/Sentry not related to a conflict
 but is inherited
@@ -2052,7 +2052,7 @@ in seed R, keys =W
 in seed Z, keys =G
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: Summon2ScoutHallucinations/Voranor not related to a conflict
 but is inherited
@@ -2062,7 +2062,7 @@ in seed R, keys =W
 in seed Z, keys =G
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: SupplyDepotDrop/SCV not related to a conflict
 but is part of same check
@@ -2073,7 +2073,7 @@ in seed R, keys =W
 in seed Z, keys =V
 in seed TheCore Lite, keys =D
 in seed TheCore LiteRehab, keys =D
-in seed TheCore LiteRehabPlus, keys =D
+in seed TheCore LiteMonitor, keys =D
 
 [WARN]: SwarmHostRoot/SwarmHost not related to a conflict
 but is part of same check
@@ -2084,7 +2084,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: SwarmHostRoot/SwarmHostSplitA not related to a conflict
 but is part of same check
@@ -2095,7 +2095,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: SwarmHostRoot/SwarmHostSplitB not related to a conflict
 but is part of same check
@@ -2106,7 +2106,7 @@ in seed R, keys =F
 in seed Z, keys =Q
 in seed TheCore Lite, keys =R
 in seed TheCore LiteRehab, keys =R
-in seed TheCore LiteRehabPlus, keys =R
+in seed TheCore LiteMonitor, keys =R
 
 [WARN]: SwarmHostUproot/SwarmHostRooted not related to a conflict
 but is part of same check
@@ -2117,7 +2117,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: SwarmHostUproot/SwarmHostSplitARooted not related to a conflict
 but is part of same check
@@ -2128,7 +2128,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: SwarmHostUproot/SwarmHostSplitBRooted not related to a conflict
 but is part of same check
@@ -2139,7 +2139,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: SwarmHostUprootUnburrow/SwarmHostBurrowed not related to a conflict
 but is inherited
@@ -2149,7 +2149,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: SwarmHostUprootUnburrow/SwarmHostSplitABurrowed not related to a conflict
 but is inherited
@@ -2159,7 +2159,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed not related to a conflict
 but is inherited
@@ -2169,7 +2169,7 @@ in seed R, keys =S
 in seed Z, keys =G
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: SwarmQueenCorpser/HugeSwarmQueen not related to a conflict
 but is part of same check
@@ -2180,7 +2180,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: SwarmQueenCorpser/LargeSwarmQueen not related to a conflict
 but is part of same check
@@ -2191,7 +2191,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: SwarmQueenCorpser/SwarmQueen not related to a conflict
 but is part of same check
@@ -2202,7 +2202,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: SwarmQueenHydraliskImpaler/HugeSwarmQueen not related to a conflict
 but is part of same check
@@ -2213,7 +2213,7 @@ in seed R, keys =2
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: SwarmQueenHydraliskImpaler/LargeSwarmQueen not related to a conflict
 but is part of same check
@@ -2224,7 +2224,7 @@ in seed R, keys =2
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: SwarmQueenHydraliskImpaler/SwarmQueen not related to a conflict
 but is part of same check
@@ -2235,7 +2235,7 @@ in seed R, keys =2
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: SwarmQueenHydraliskLurker/HugeSwarmQueen not related to a conflict
 but is part of same check
@@ -2246,7 +2246,7 @@ in seed R, keys =2
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: SwarmQueenHydraliskLurker/LargeSwarmQueen not related to a conflict
 but is part of same check
@@ -2257,7 +2257,7 @@ in seed R, keys =2
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: SwarmQueenHydraliskLurker/SwarmQueen not related to a conflict
 but is part of same check
@@ -2268,7 +2268,7 @@ in seed R, keys =2
 in seed Z, keys =B
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: SwarmQueenRaptor/HugeSwarmQueen not related to a conflict
 but is part of same check
@@ -2279,7 +2279,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: SwarmQueenRaptor/LargeSwarmQueen not related to a conflict
 but is part of same check
@@ -2290,7 +2290,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: SwarmQueenRaptor/SwarmQueen not related to a conflict
 but is part of same check
@@ -2301,7 +2301,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: SwarmQueenSwarmling/HugeSwarmQueen not related to a conflict
 but is part of same check
@@ -2312,7 +2312,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: SwarmQueenSwarmling/LargeSwarmQueen not related to a conflict
 but is part of same check
@@ -2323,7 +2323,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: SwarmQueenSwarmling/SwarmQueen not related to a conflict
 but is part of same check
@@ -2334,7 +2334,7 @@ in seed R, keys =R
 in seed Z, keys =G
 in seed TheCore Lite, keys =C
 in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteRehabPlus, keys =C
+in seed TheCore LiteMonitor, keys =C
 
 [WARN]: SwarmQueenVile/HugeSwarmQueen not related to a conflict
 but is part of same check
@@ -2345,7 +2345,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: SwarmQueenVile/LargeSwarmQueen not related to a conflict
 but is part of same check
@@ -2356,7 +2356,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: SwarmQueenVile/SwarmQueen not related to a conflict
 but is part of same check
@@ -2367,7 +2367,7 @@ in seed R, keys =A
 in seed Z, keys =S
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: TechReactor/Barracks not related to a conflict
 but is part of same check
@@ -2378,7 +2378,7 @@ in seed R, keys =F
 in seed Z, keys =2
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: TechReactor/Factory not related to a conflict
 but is part of same check
@@ -2389,7 +2389,7 @@ in seed R, keys =F
 in seed Z, keys =2
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: TechReactor/Starport not related to a conflict
 but is part of same check
@@ -2400,7 +2400,7 @@ in seed R, keys =F
 in seed Z, keys =2
 in seed TheCore Lite, keys =CapsLock
 in seed TheCore LiteRehab, keys =CapsLock
-in seed TheCore LiteRehabPlus, keys =CapsLock
+in seed TheCore LiteMonitor, keys =CapsLock
 
 [WARN]: TemplarArchive/Harvester not related to a conflict
 but is inherited
@@ -2410,7 +2410,7 @@ in seed R, keys =Q
 in seed Z, keys =W
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: Transfusion/BroodMother not related to a conflict
 but is inherited
@@ -2420,7 +2420,7 @@ in seed R, keys =S,C
 in seed Z, keys =G,B
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: Transfusion/Queen2 not related to a conflict
 but is part of same check
@@ -2431,7 +2431,7 @@ in seed R, keys =S,C
 in seed Z, keys =G,B
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: TwilightCouncil/Harvester not related to a conflict
 but is inherited
@@ -2441,7 +2441,7 @@ in seed R, keys =S
 in seed Z, keys =2
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: VoidRayHallucination/Nexus not related to a conflict
 but is inherited
@@ -2451,7 +2451,7 @@ in seed R, keys =T
 in seed Z, keys =V
 in seed TheCore Lite, keys =V
 in seed TheCore LiteRehab, keys =V
-in seed TheCore LiteRehabPlus, keys =V
+in seed TheCore LiteMonitor, keys =V
 
 [WARN]: VoidRayHallucination/Voranor not related to a conflict
 but is inherited
@@ -2461,7 +2461,7 @@ in seed R, keys =T
 in seed Z, keys =V
 in seed TheCore Lite, keys =V
 in seed TheCore LiteRehab, keys =V
-in seed TheCore LiteRehabPlus, keys =V
+in seed TheCore LiteMonitor, keys =V
 
 [WARN]: VoodooShield/Immortal not related to a conflict
 but is inherited
@@ -2471,7 +2471,7 @@ in seed R, keys =S
 in seed Z, keys =S
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: WarpInShuttle/RoboticsFacility not related to a conflict
 but is inherited
@@ -2481,7 +2481,7 @@ in seed R, keys =W
 in seed Z, keys =W
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: WarpPrismHallucination/Nexus not related to a conflict
 but is inherited
@@ -2491,7 +2491,7 @@ in seed R, keys =A
 in seed Z, keys =A
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: WarpPrismHallucination/Voranor not related to a conflict
 but is inherited
@@ -2501,7 +2501,7 @@ in seed R, keys =A
 in seed Z, keys =A
 in seed TheCore Lite, keys =F
 in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [WARN]: WraithCloak/StarportTechLab not related to a conflict
 but is part of same check
@@ -2511,7 +2511,7 @@ in seed R, keys =P
 in seed Z, keys =P
 in seed TheCore Lite, keys =E
 in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore LiteMonitor, keys =E
 
 [WARN]: ZealotHallucination/Nexus not related to a conflict
 but is inherited
@@ -2521,7 +2521,7 @@ in seed R, keys =Tab
 in seed Z, keys =Y
 in seed TheCore Lite, keys =T
 in seed TheCore LiteRehab, keys =T
-in seed TheCore LiteRehabPlus, keys =T
+in seed TheCore LiteMonitor, keys =T
 
 [WARN]: ZealotHallucination/Voranor not related to a conflict
 but is inherited
@@ -2531,7 +2531,7 @@ in seed R, keys =Tab
 in seed Z, keys =Y
 in seed TheCore Lite, keys =T
 in seed TheCore LiteRehab, keys =T
-in seed TheCore LiteRehabPlus, keys =T
+in seed TheCore LiteMonitor, keys =T
 
 [WARN]: hydraliskspeed/LurkerDen not related to a conflict
 but is inherited
@@ -2541,7 +2541,7 @@ in seed R, keys =R
 in seed Z, keys =W
 in seed TheCore Lite, keys =Space
 in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 ----------------------------
 Finished (commands with no attached conflict) - ERRORs: 87 WARNs: 167 

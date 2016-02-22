@@ -10,8 +10,8 @@ Legacy "TheCore Lite" updated to fix most of TheCore standards:
 
 On top of that, it fits with all new introduced "seed" checks.
 
-Changes:
-* Functions keys have been populated
+**Changes:**
+* Functions keys have been populated, but are classical
 * Far more Fire Keys (all apart "C")
 
 TheCore LiteRehab.SC2Hotkeys
@@ -42,7 +42,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * build on Alt+B
  * clearall on Alt+V
 
-TheCore LiteRehabPlus.SC2Hotkeys
+TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
 
 Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
@@ -58,7 +58,7 @@ The goal is encourage camera keys, having also the useful stuff pressing "shift"
  * wall supply depot
  * whatever other useful group you could think about
 
-*NOTE:* "X" "Z" "`" groups have been chosen due to poor accessibility in TheCore Lite. Regular groups to be used for armies are:
+**NOTE:** "X" "Z" "`" groups have been chosen due to poor accessibility in TheCore Lite. Regular groups to be used for armies are:
 ```
 123 <= steal
  QW <= no steal
@@ -69,7 +69,7 @@ The goal is encourage camera keys, having also the useful stuff pressing "shift"
 * Shift+E is an alternate for Shift+2
 * Shift+R is an alternate for Shift+3
 
-Note: to be used for "creep cameras" or "rally points"
+**Note:** to be used for "creep cameras" or "rally points"
 
 ### More accessible view related features
 * Shift+T is an alternate for "follow selection"
@@ -88,7 +88,7 @@ Note: to be used for "creep cameras" or "rally points"
 * Shift+E = jump to creep camera 1 (for creep push, Alt+E to update camera)
 * Shift+R = jump to creep camera 2 (for creep push, Alt+R to update camera)
 
-*WARNING:* all those "Shift alternates" may disturb your queued command habits.
+**WARNING:** all those "Shift alternates" may disturb your queued command habits.
 A workaround would be to remap those commands on either "Space" or "C".
 
 Changelog for the code

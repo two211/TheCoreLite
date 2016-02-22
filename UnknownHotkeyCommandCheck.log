@@ -146,12 +146,12 @@ Start command conflicts with hotkeys, out of identified conflicts (log file: Unk
 [ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed TheCore LiteRehab
 [ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed TheCore LiteRehab
 [ERROR]: X used for command XaphanForce/Voranor, in seed TheCore LiteRehab
-[ERROR]: B used for command BattleRage/Khraxus, in seed TheCore LiteRehabPlus
-[ERROR]: Q used for command HotSBioPlasmidDischarge/HotSLeviathan, in seed TheCore LiteRehabPlus
-[ERROR]: W used for command HotSBioStasis/HotSLeviathan, in seed TheCore LiteRehabPlus
-[ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed TheCore LiteRehabPlus
-[ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed TheCore LiteRehabPlus
-[ERROR]: X used for command XaphanForce/Voranor, in seed TheCore LiteRehabPlus
+[ERROR]: B used for command BattleRage/Khraxus, in seed TheCore LiteMonitor
+[ERROR]: Q used for command HotSBioPlasmidDischarge/HotSLeviathan, in seed TheCore LiteMonitor
+[ERROR]: W used for command HotSBioStasis/HotSLeviathan, in seed TheCore LiteMonitor
+[ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed TheCore LiteMonitor
+[ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed TheCore LiteMonitor
+[ERROR]: X used for command XaphanForce/Voranor, in seed TheCore LiteMonitor
 ----------------------------
 Finished (command conflicts with hotkeys, out of identified conflicts) - ERRORs: 151 
 ============================
