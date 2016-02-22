@@ -9,7 +9,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DarkArchon/Gateway default: A
 	DarkArchon/WarpGate default: A
 
-[INFO]: P:    T: B   R: 2   Z: B   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
+[INFO]: P:    T: B   R: 2   Z: B   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	IgniteAfterburners/Banshee default: B
 	IgniteAfterburners/Battlecruiser default: B
 	IgniteAfterburners/Liberator default: B
@@ -278,10 +278,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoSplitterling/HotSRaptor default: E copyof: Baneling/Zergling default: E
 	MorphtoSplitterling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
 
-[INFO]: P: 4   T: R   R: S   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteRehabPlus: Space   
-	MedivacSpeedBoost/Medivac default: B
-	MorphToOverseer/Overlord default: V
-
 [INFO]: P: 4   T: R   R: S   Z: S   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	BroodLord/MutaliskBroodlord default: B copyof: BroodLord/Corruptor default: B
 	Viper/MutaliskViper default: E copyof: BroodLord/Corruptor default: B
@@ -294,7 +290,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DisableBuildingAttack/baneling2 default:  copyof: DisableBuildingAttack/Baneling default: G
 	DisableBuildingAttackSplitterling/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
 
-[INFO]: P: 4,B   T: 3,6   R: S,A   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
+[INFO]: P: 4,B   T: 3,6   R: S,A   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	NPSwarm/Infestor default: E copyof: NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor default: E
 
@@ -328,9 +324,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SensorTower/SCV default: N
 
 [INFO]: P: B   T: B   R: W   Z: B   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteRehabPlus: D   
-	EvolveBurrowCharge/UltraliskCavern default: B
 	ResearchPhobosClassWeaponsSystem/StarportTechLab default: B
 	ResearchPhobosClassWeaponsSystem/StarportTechReactor default: B
+
+[INFO]: P: B   T: B   R: W   Z: B   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
+	EvolveBurrowCharge/UltraliskCavern default: B
+	ShieldBatteryStructureBarrier/ShieldBattery default: B
 
 [INFO]: P: B   T: J   R: C   Z: A   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteRehabPlus: C   
 	Firebat/Barracks default: F
@@ -597,7 +596,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
 	EMP/Ghost default: E
-	EvolveChitinousPlating/UltraliskCavern default: C
 	ForceField/Sentry default: F
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
 	HighArchonPsiStorm/HighArchonTemplar default: T copyof: PsiStorm/HighTemplar default: T
@@ -729,7 +727,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: P: F   T: F   R: F   Z: F   TheCore Lite:    TheCore LiteRehab:    TheCore LiteRehabPlus:    
 	Aggressive/LurkerMPBurrowed default: 
-	IgniteAfterburner/Medivac default: 
 	MorphtoDevourer/Mutalisk default: 
 	Recall/Arbiter default: 
 	ResearchPiercingRockets/StarportTechLab default: 
@@ -933,6 +930,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WildMutation/KerriganVoidBurrowed default: E copyof: WildMutation/K5KerriganBurrowed default: E
 
 [INFO]: P: O   T: O   R: O   Z: O   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
+	EvolveAnabolicSynthesis2/UltraliskCavern default: A
 	OracleEnergyUpgrade/FleetBeacon default: A
 	WarpInReaverChampion/TwilightCouncil default: E
 
@@ -1066,7 +1064,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	RoboticsBay/Harvester default:  copyof: RoboticsBay/Probe default: B
 	RoboticsBay/Probe default: B
 
-[INFO]: P: V   T: 4   R: R   Z: 2   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteRehabPlus: E   
+[INFO]: P: V   T: 4   R: R   Z: 2   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
 	MissilePods/Battlecruiser default: E
 	MissilePods/DukesRevenge default: E copyof: MissilePods/Battlecruiser default: E
 
@@ -1105,7 +1103,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EnableBuildingAttack/baneling2 default:  copyof: EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttackSplitterling/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
 
-[INFO]: P: V   T: D   R: 2   Z: S   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteRehabPlus: F   
+[INFO]: P: V   T: D   R: 2   Z: S   TheCore Lite: F,CapsLock   TheCore LiteRehab: F,CapsLock   TheCore LiteRehabPlus: F,CapsLock   
 	InfestedTerrans/Infestor default: T
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T

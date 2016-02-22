@@ -316,9 +316,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,6	R
 	R: R,Tab	R,Tab
 	Z: G,B	G,H
-	TheCore Lite: Space	Space
-	TheCore LiteRehab: Space	Space
-	TheCore LiteRehabPlus: Space	Space
+	TheCore Lite: E,Space	E,Space
+	TheCore LiteRehab: E,Space	E,Space
+	TheCore LiteRehabPlus: E,Space	E,Space
 	D:  	F (default)
 
 [ERROR]: GreaterSpireBroodlord/Spire != GreaterSpire/Spire
@@ -446,9 +446,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	R,D
 	R: S,F	S,F
 	Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TheCore LiteRehab: Space,F	Space,F
-	TheCore LiteRehabPlus: Space,F	Space,F
+	TheCore Lite: E,Space	E,Space
+	TheCore LiteRehab: E,Space	E,Space
+	TheCore LiteRehabPlus: E,Space	E,Space
 	D: Y	Y (default)
 
 [ERROR]: HyperjumpHercules/Hercules != Hyperjump/Battlecruiser
@@ -686,9 +686,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z,3	3,6
 	R: S,A	S,A
 	Z: 2	2
-	TheCore Lite: E	E
-	TheCore LiteRehab: E	E
-	TheCore LiteRehabPlus: E	E
+	TheCore Lite: C	C
+	TheCore LiteRehab: C	C
+	TheCore LiteRehabPlus: C	C
 	D:  	E (default)
 
 [ERROR]: Observer/RoboticsFacilityWarp != Observer/RoboticsFacility
@@ -836,9 +836,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,D	R,D
 	R: S,F	S,F
 	Z: G,S	S
-	TheCore Lite: Space,F	Space,F
-	TheCore LiteRehab: Space,F	Space,F
-	TheCore LiteRehabPlus: Space,F	Space,F
+	TheCore Lite: E,Space	E,Space
+	TheCore LiteRehab: E,Space	E,Space
+	TheCore LiteRehabPlus: E,Space	E,Space
 	D: E	Y (default)
 
 [ERROR]: SOAMothershipBlink/SOAMothershipv4 != Blink/Stalker

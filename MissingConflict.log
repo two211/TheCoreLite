@@ -177,9 +177,9 @@ in seed P, keys =F
 in seed T, keys =F
 in seed R, keys =F
 in seed Z, keys =F
-in seed TheCore Lite, keys =
-in seed TheCore LiteRehab, keys =
-in seed TheCore LiteRehabPlus, keys =
+in seed TheCore Lite, keys =F,Space
+in seed TheCore LiteRehab, keys =F,Space
+in seed TheCore LiteRehabPlus, keys =F,Space
 
 [ERROR]: Immortal not related to a conflict
 in seed P, keys =4
@@ -1261,9 +1261,9 @@ in seed P, keys =E,J
 in seed T, keys =R,6
 in seed R, keys =R,Tab
 in seed Z, keys =G,B
-in seed TheCore Lite, keys =Space
-in seed TheCore LiteRehab, keys =Space
-in seed TheCore LiteRehabPlus, keys =Space
+in seed TheCore Lite, keys =E,Space
+in seed TheCore LiteRehab, keys =E,Space
+in seed TheCore LiteRehabPlus, keys =E,Space
 
 [WARN]: Gateway/Harvester not related to a conflict
 but is inherited
@@ -1376,9 +1376,9 @@ in seed P, keys =V
 in seed T, keys =D
 in seed R, keys =2
 in seed Z, keys =S
-in seed TheCore Lite, keys =F
-in seed TheCore LiteRehab, keys =F
-in seed TheCore LiteRehabPlus, keys =F
+in seed TheCore Lite, keys =F,CapsLock
+in seed TheCore LiteRehab, keys =F,CapsLock
+in seed TheCore LiteRehabPlus, keys =F,CapsLock
 
 [WARN]: K5DropPods/K5Kerrigan not related to a conflict
 but is part of same check
@@ -1666,9 +1666,9 @@ in seed P, keys =4
 in seed T, keys =Z,3
 in seed R, keys =S,A
 in seed Z, keys =2
-in seed TheCore Lite, keys =E
-in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteRehabPlus, keys =E
+in seed TheCore Lite, keys =C
+in seed TheCore LiteRehab, keys =C
+in seed TheCore LiteRehabPlus, keys =C
 
 [WARN]: Nexus/Harvester not related to a conflict
 but is inherited
