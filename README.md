@@ -4,12 +4,16 @@ The Core Lite Variations
 TheCore Lite.SC2Hotkeys
 -----------------------
 
-Legacy "TheCore Lite" updated to fix most of TheCore standards:
+This set fits with the legacy "TheCore Lite" updated to fix most of TheCore standards:
 * keys to be the same, or inherited
 * no keys conflicts (conflicts are only partially described)
 On top of that, it passes most of the new introduced "seed" checks.
 
 **Changes:**
+* Minor command changes for compliance accross:
+ * Multiplayer
+ * Campaigns
+ * Coop
 * Far more Fire Hotkeys (all apart "C")
 * Functions keys have been populated, but are classical
  * F1 IdleWorker
@@ -60,6 +64,7 @@ The goal is encourage camera keys, having also the useful stuff pressing "shift"
  * mothership (core)
  * wall supply depot
  * whatever other useful group you could think about
+
 **Note:** "X" "Z" "`" groups have been chosen due to poor accessibility in TheCore Lite.
 Regular groups to be used for armies are:
 ```
@@ -71,6 +76,7 @@ Regular groups to be used for armies are:
 ### Additionnal views (save camera view with "Alt")
 * Shift+E is an alternate for Shift+2
 * Shift+R is an alternate for Shift+3
+
 **Note:** to be used for "creep cameras" or "rally points"
 
 ### More accessible view related features
@@ -89,6 +95,7 @@ Regular groups to be used for armies are:
 * click = drop creep tumors
 * Shift+E = jump to creep camera 1 (for creep push, Alt+E to update camera)
 * Shift+R = jump to creep camera 2 (for creep push, Alt+R to update camera)
+
 **WARNING:** all those "Shift alternates" may disturb your queued command habits.
 A workaround would be to remap those commands on either "Space" or "C".
 
