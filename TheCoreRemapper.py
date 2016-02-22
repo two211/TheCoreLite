@@ -492,7 +492,7 @@ def analyse(model):
     known_unbound_command_check(model,context_dict)
     unknown_hotkey_command_check(model,context_dict)
     ## quality checks
-    if debug_parser.getboolean("Settings","allchecks",fallback=True):
+    if debug_parser.getboolean("Settings","quality",fallback=True):
         suggest_inherit(model)
         missing_conflict_check(model,context_dict)
 
