@@ -487,14 +487,13 @@ def analyse(model):
     conflict_check(model)
     wrong_inherit(model)
     ## context dependent checks
-    context_dict =  getCommandByContextDict()  # a dict based on CONFLICT_CHECKS
-    known_hotkey_command_check(model,context_dict)
-    known_unbound_command_check(model,context_dict)
-    unknown_hotkey_command_check(model,context_dict)
+    known_hotkey_command_check(model)
+    known_unbound_command_check(model)
+    unknown_hotkey_command_check(model)
     ## quality checks
     if debug_parser.getboolean("Settings","quality",fallback=True):
         suggest_inherit(model)
-        missing_conflict_check(model,context_dict)
+        missing_conflict_check(model)
 
 def same_check(model):
     logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
@@ -646,46 +645,44 @@ def wrong_inherit(model):
                 logger.log(LogLevel.Error, log_msg)
     logger.finish()
 
-def known_hotkey_command_check(model,context_dict):
+def known_hotkey_command_check(model):
 	logger = Logger("command conflicts with hotkeys, within identified conflicts", "KnownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
 		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
 		## Find&Report context command overlap on hotkeys within CONFLICT_CHECKS
-		for context in sorted(context_dict['Context']):
-			for command in sorted(context_dict['Context'][context]):
-				for key in model['Commands'][command].get_value(seed).split(','):
-					if key in hotkey_list:
-						log_msg = context + ' : ' + key + " used for command "+ command +", in seed " + seed.value
-						if debug_parser.getboolean("Settings","verbose",fallback=False):
-							 log_msg += remapHint(command, seed, log=True)
-						logger.log(LogLevel.Error, log_msg)
+		for command in constraints['ToCheck']['Commands']:
+			for key in model['Commands'][command].get_value(seed).split(','):
+				if key in hotkey_list:
+					log_msg = key + " used for command "+ command +", in seed " + seed.value + ' contexts=' + str(constraints['CommandContexts'][command])
+					if debug_parser.getboolean("Settings","verbose",fallback=False):
+						 log_msg += remapHint(command, seed, log=True)
+					logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
-def unknown_hotkey_command_check(model,context_dict):
+def unknown_hotkey_command_check(model):
 	logger = Logger("command conflicts with hotkeys, out of identified conflicts", "UnknownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
 		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
 		## Find&Report context command overlap on hotkeys out of CONFLICT_CHECKS
 		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
-			if not command in context_dict['KnownCommands']:
+			if not(command in constraints['CommandInfo']['HasConflict']):
 				for key in model['Commands'][command].get_value(seed).split(','):
 					if key in hotkey_list:
 						log_msg = key + " used for command "+ command +", in seed " + seed.value
 						logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
-def known_unbound_command_check(model,context_dict):
+def known_unbound_command_check(model):
 	logger = Logger("unbound commands, within identified conflicts", "KnownUnboundCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
 		## Find&Report context unbound command within CONFLICT_CHECKS
-		for context in sorted(context_dict['Context']):
-			for command in sorted(context_dict['Context'][context]):
-				for key in model['Commands'][command].get_value(seed).split(','):
-					if key == '':
-						log_msg = context + ' : unbound command ' + command +", in seed " + seed.value
-						if debug_parser.getboolean("Settings","verbose",fallback=False):
-							 log_msg += remapHint(command, seed, log=True)
-						logger.log(LogLevel.Error, log_msg)
+		for command in constraints['ToCheck']['Commands']:
+			for key in model['Commands'][command].get_value(seed).split(','):
+				if key == '':
+					log_msg = ' unbound command ' + command +", in seed " + seed.value
+					if debug_parser.getboolean("Settings","verbose",fallback=False):
+						 log_msg += remapHint(command, seed, log=True)
+					logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
 def outofmap_check(model):
@@ -702,21 +699,17 @@ def outofmap_check(model):
 					logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
-def missing_conflict_check(model,context_dict):
+def missing_conflict_check(model):
 	logger = Logger("commands with no attached conflict", "MissingConflict.log", log_consol=[], log_file=[LogLevel.Error, LogLevel.Warn])
-	## build a list of commands appearing in SAME_CHECKS
-	sameCommands = []
-	for same in SAME_CHECKS:
-		sameCommands += same
 	## check for missing conflicts, temperate if part of SAME_CHECKS or inheritance.ini
 	for command in default_parser.options('Commands'):
-		if not command in context_dict['KnownCommands']:
+		if not(command in constraints['CommandInfo']['HasConflict']):
 			log_msg = command + " not related to a conflict"
 			level = LogLevel.Error
-			if command in sameCommands:
+			if command in constraints['CommandInfo']['HasSame']:
 				log_msg += "\nbut is part of same check"
 				level = LogLevel.Warn
-			if command in inherit_parser.options('Commands'):
+			if command in constraints['CommandInfo']['HasInherit']:
 				log_msg += "\nbut is inherited"
 				level = LogLevel.Warn
 			for seed in allSeeds:
@@ -724,22 +717,67 @@ def missing_conflict_check(model,context_dict):
 			logger.log(level, log_msg)
 	logger.finish()
 
-def getCommandByContextDict():
-	context_dict = {}
-	context_dict['Context'] = {}
-	context_dict['KnownCommands'] = []
+def getConstraints():
+	## init the constraints dict
+	constraints = {}
+	constraints['CommandInfo'] = {}
+	constraints['ConflictByContexts'] = {}
+	constraints['CommandByContexts'] = {}
+	constraints['CommandConflicts'] = {}
+	constraints['CommandContexts'] = {}
+#	constraints['CommandEquivalence'] = {}	# to be implemented (for a deeper remapHint)
+	constraints['ToCheck'] = {}
+	## sublevels init 
+	constraints['CommandInfo']['HasSame'] = []
+	constraints['CommandInfo']['HasInherit'] = []
+	constraints['CommandInfo']['HasConflict'] = []
+	constraints['ToCheck']['Commands'] = []
+	constraints['ToCheck']['Conflicts'] = []
+	## Add 'HasSame' info
+	for same in SAME_CHECKS:
+		if not same in constraints['CommandInfo']['HasSame']:
+			constraints['CommandInfo']['HasSame'] += same
+	## Add 'HasInherit' info
+	constraints['CommandInfo']['HasInherit'] = inherit_parser.options('Commands')
+	## Create context/command/conflict keys
 	for conflict in CONFLICT_CHECKS:
 		context = conflict.split("/")[0]
+		constraints['CommandByContexts'][context]=[]
+		constraints['ConflictByContexts'][context]=[]
 		for command in CONFLICT_CHECKS[conflict]:
-			if not(command in context_dict['KnownCommands']):
-				context_dict['KnownCommands'].append(command)
-			try:
-				if not(command in context_dict['Context'][context]):
-					context_dict['Context'][context].append(command)
-			except KeyError:
-				context_dict['Context'][context] = []
-				context_dict['Context'][context].append(command)
-	return context_dict
+			constraints['CommandConflicts'][command]=[]
+			constraints['CommandContexts'][command]=[]
+	## Conflict related constraints
+	for conflict in CONFLICT_CHECKS:
+		context = conflict.split("/")[0]
+		if not(conflict in constraints['ConflictByContexts'][context]):
+			constraints['ConflictByContexts'][context].append(conflict)
+		for command in CONFLICT_CHECKS[conflict]:
+			constraints['CommandConflicts'][command].append(conflict)
+			if not(context in constraints['CommandContexts'][command]):
+				constraints['CommandContexts'][command].append(context)
+			if not(command in constraints['CommandInfo']['HasConflict']):
+				constraints['CommandInfo']['HasConflict'].append(command)
+			if not(command in constraints['CommandByContexts'][context]):
+				constraints['CommandByContexts'][context].append(command)
+	## ToCheck generation
+	for context in constraints['CommandByContexts']:
+		if debug:
+			if context in debug_parser.options("IgnoredContexts"):
+				print('INFO: Ignored context : ' + context)
+				continue
+		for command in constraints['CommandByContexts'][context]:
+			if not(command in constraints['ToCheck']['Commands']):
+				constraints['ToCheck']['Commands'].append(command)
+		for conflict in constraints['ConflictByContexts'][context]:
+			if not(conflict in constraints['ToCheck']['Conflicts']):
+				constraints['ToCheck']['Conflicts'].append(conflict)
+	## Sort ToCheck entries + produce info
+	for entry in sorted(constraints['ToCheck']):
+		constraints['ToCheck'][entry].sort()
+		print(entry + ' to check : ' + str(len(constraints['ToCheck'][entry])))
+	## Return constraints dict
+	return constraints
 
 def getHotkeyList(seed,section,ignoredCommands=[]):
 	hotkey_list = []
@@ -793,4 +831,5 @@ check_defaults()
 model = create_model()
 if debug_parser.getboolean("Settings","generate",fallback=True):
     generate(model)
+constraints = getConstraints()
 analyse(model)
