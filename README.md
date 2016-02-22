@@ -106,15 +106,14 @@ Compared to upstream project:
 * TheCoreRemapper.py supporting other seeds than pure TheCore
 * New "seed" checks:
  * check for unbound hotkeys, known from conflicts
- * check for unbound hotkeys, not part from conflicts
  * check to prevent conflicts between Commands and Hotkeys, known from conflicts
  * check to prevent conflicts between Commands and Hotkeys, unknown from conflicts
 * New "quality" checks:
  * check for commands out of known conflicts (warning only in case of inherit/same)
 * Debug mode
  * optional generation
- * optional seed selection (you could run the script for your seed)
- * optional quality checks (to just run "seed" checks)
+ * optional seed selection (you could run the script for the seeds you want)
+ * optional quality checks (otherwise just run "seed" checks)
  * optional hint through a "verbose" and "verydetail" options (including the remapHint function)
- * optional IgnoredContext (such as "WoL Campaign" or "Coop") to filter conflicts and keys only
+ * optional IgnoredContext (such as "WoL Campaign" or "Coop") to filter conflicts and keys
 * Some .ini file fixed to prevent wrong positive
