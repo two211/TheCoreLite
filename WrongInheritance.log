@@ -1131,16 +1131,6 @@ Start wrong inherit (log file: WrongInheritance.log)
 	TheCore LiteMonitor: V	V
 	D:  	V (default)
 
-[ERROR]: VoidZealotShadowChargeStun/ZealotShakuras != Charge/Zealot
-	P: D	E
-	T: 4	R
-	R: S	R
-	Z: Q	G
-	TheCore Lite: Space	Space
-	TheCore LiteRehab: Space	Space
-	TheCore LiteMonitor: Space	Space
-	D: Z	C (default)
-
 [ERROR]: Vortex/Artanis != TemporalField/MothershipCore
 	P: E	E
 	T: R	R
@@ -1222,5 +1212,5 @@ Start wrong inherit (log file: WrongInheritance.log)
 	D: V	V (default)
 
 ----------------------------
-Finished (wrong inherit) - ERRORs: 122 
+Finished (wrong inherit) - ERRORs: 121 
 ============================

@@ -408,6 +408,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteMonitor: C   
 	PrologueVoidArmor/ZeratulVoidAiur01 default: V
 	TimeWarp/Nexus default: C
+	VoidZealotShadowChargeStun/ZealotShakuras default: Z
 
 [INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteMonitor: E   
 	FenixWhirlwind/FenixChampion default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
@@ -415,10 +416,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MohandarOmnislash/VorazunChampion default: E
 	PhaseCannon/KaraxChampion default: E
 	VoidZealotWhirlwind/ZealotAiur default: E
-
-[INFO]: P: D   T: 4   R: S   Z: Q   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space   
-	SwarmHostUprootUnburrow default: R
-	VoidZealotShadowChargeStun/ZealotShakuras default: Z copyof: Charge/Zealot default: C
 
 [INFO]: P: D   T: 6   R: A   Z: Y   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteMonitor: R   
 	BonesHeal/Stetmann default: E copyof: Heal/Medivac default: E
@@ -1214,5 +1211,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 212 
+Finished (suggest inherit) - INFOs: 211 
 ============================

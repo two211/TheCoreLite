@@ -132,9 +132,9 @@ in seed P, keys =G
 in seed T, keys =G
 in seed R, keys =R,F
 in seed Z, keys =G
-in seed TheCore Lite, keys =G
-in seed TheCore LiteRehab, keys =G
-in seed TheCore LiteMonitor, keys =G
+in seed TheCore Lite, keys =E,Space
+in seed TheCore LiteRehab, keys =E,Space
+in seed TheCore LiteMonitor, keys =E,Space
 
 [ERROR]: Guardian/Mutalisk not related to a conflict
 in seed P, keys =R
