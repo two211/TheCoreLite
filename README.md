@@ -96,8 +96,27 @@ Regular groups to be used for armies are:
 * Shift+E = jump to creep camera 1 (for creep push, Alt+E to update camera)
 * Shift+R = jump to creep camera 2 (for creep push, Alt+R to update camera)
 
+### Monitor mode summary
+Accessible keys in "Monitor" mode (pressing Shift)
+```
+QWERT
+ASDFG
+ZXCVB
+Space
+```
+* Camera keys = QWER, AS, ZX
+* Utility groups = DF, V
+* Queuable commands = C, Space
+* Convenient view tuning:
+ * T = follow selection
+ * G = Alert Recall
+ * B = base key
+
 **WARNING:** all those "Shift alternates" may disturb your queued command habits.
 A workaround would be to remap those commands on either "Space" or "C".
+
+**Possible changes:** please report any painful problems, regarding convenient queued commands.
+Commands may be changed to solve them.
 
 Changelog for the code
 ======================
