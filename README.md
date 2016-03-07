@@ -118,15 +118,23 @@ A workaround would be to remap those commands on either "Space" or "C".
 **Possible changes:** please report any painful problems, regarding convenient queued commands.
 Commands may be changed to solve them.
 
+### Dropped ideas due to queuability of commands
+Cameras views (save camera view with "Alt"), to be used for "creep cameras" or "rally points":
+* Shift+E is an alternate for Shift+2
+* Shift+R is an alternate for Shift+3
+
+View related feature
+* Shift+T is an alternate for "follow selection" (easily accessible through F2)
+
 Changelog for the code
 ======================
 
 Compared to upstream project:
 * TheCoreRemapper.py supporting other seeds than pure TheCore
 * New "seed" checks:
- * check for unbound hotkeys, known from conflicts
- * check to prevent conflicts between Commands and Hotkeys, known from conflicts
- * check to prevent conflicts between Commands and Hotkeys, unknown from conflicts
+ * check for unbound comands, known from conflicts
+ * check to prevent conflicts between Hotkeys and Commands, known from conflicts
+ * check to prevent conflicts between Hotkeys and Commands, unknown from conflicts
 * New "quality" checks:
  * check for commands out of known conflicts (warning only in case of inherit/same)
 * Debug mode
