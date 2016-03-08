@@ -8,35 +8,33 @@ This set fits with the legacy "TheCore Lite" updated to fix most of TheCore stan
 * keys to be the same, or inherited
 * no keys conflicts (conflicts are only partially described)
 On top of that, it passes most of the new introduced "seed" checks.
+There are remaining errors in UnknownHotkeyCommandCheck.log
 
 **Changes:**
 * Minor command changes for compliance accross:
  * Multiplayer
  * Campaigns
  * Coop
-* Far more Fire Hotkeys (all apart "C")
+* Far more Fire Hotkeys (all but "E" and "C")
 * Functions keys have been populated, but are classical
  * F1 IdleWorker
- * F2 Select all army (swapped in other variants)
- * F3 Warp (swapped in other variants)
- * F4 Minimap colors (to make it more accessible)
- * F5 Toggle sound (moved to prevent mistyping)
- * F6 Toggle music (could be mapped on Shift+F5 to free space)
- * F7 alternate for camera follow (swapped in other variants)
- * F8 alternate for AlertRecall (swapped in other variants)
+ * F2 Select all army (changed in other variants)
+ * Shift-F2 Minimap colors (to make it more accessible)
+ * Shift-F4 Warp (swapped in other variants)
+ * Shift-F5 Toggle sound (moved to prevent mistyping)
+ * Shift-F6 Toggle music (could be mapped on Shift+F5 to free space)
 
 TheCore LiteRehab.SC2Hotkeys
 ----------------------------
 
 Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Functions keys swap:
- * F2 CameraFollow (no more select all army on this key)
- * F3 AlertRecall (no more Warp on this key)
- * F7 Select all army (made less accessible to prevent over-use)
- * F8 Warp (made less accessible to encourage "production facilities" group)
-* Mouse middle button
- * now used for center camera view (useful for base camera keys)
- * Dragmouse removed (bad habit)
+ * F2 AlertRecall (no more Select all army on this key)
+ * Shift-F3 Select all army (made less accessible to prevent over-use)
+* More accessible views keys
+ * Shift+Grave CameraCenter
+ * Shift+1 CameraFollow
+ * Dragmouse finally kept
 * Group approach
  * all groups behave with steal (for easy split), except "Q" and "W"
  * "Q" and "W" to be used for shared army groups to facilitate retreat/follow front-line
@@ -51,6 +49,10 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
+
+**WARNING** section outdated, 
+data is kept unchanged for reader to get the initial ideas,
+feel free to send feedback
 
 Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
 The principle is to use "shift" as a "monitor mode" modifier.
