@@ -24,6 +24,8 @@ There are remaining errors in UnknownHotkeyCommandCheck.log
  * Shift-F5 Toggle sound (moved to prevent mistyping)
  * Shift-F6 Toggle music (could be mapped on Shift+F5 to free space)
 
+**Notes:** F3 to F8 cannot be used in direct access due to SelectHero
+
 TheCore LiteRehab.SC2Hotkeys
 ----------------------------
 
@@ -34,10 +36,11 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * More accessible views keys
  * Shift+Grave CameraCenter
  * Shift+1 CameraFollow
- * Dragmouse finally kept
+ * Dragmouse finally kept (initial idea was to use it for CameraCenter)
 * Group approach
  * all groups behave with steal (for easy split), except "Q" and "W"
  * "Q" and "W" to be used for shared army groups to facilitate retreat/follow front-line
+ * **Note** TheCore approach is to make all groups behave the same
 * AI keys now supported
  * direct attack on Alt+D
  * direct scout on Alt+T
