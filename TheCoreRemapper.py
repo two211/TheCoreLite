@@ -325,21 +325,22 @@ def create_model():
 def generate(seed_model):
     logger = Logger("Generation", log_consol=[LogLevel.Info], log_file=[])
     seed_models = init_models()
-    for race in Races:
-        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: L size: M keyboardlayout: " + seed_layout)
-        seed_models[race][Sides.Left][Sizes.Medium] = extract_race(seed_model, race)
-        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: R size: M keyboardlayout: " + seed_layout)
-        seed_models[race][Sides.Right][Sizes.Medium] = convert_side(seed_models[race][Sides.Left][Sizes.Medium], Sides.Right)
-        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: L size: S keyboardlayout: " + seed_layout)
-        seed_models[race][Sides.Left][Sizes.Small] = shift_left(seed_models[race][Sides.Left][Sizes.Medium], Sides.Left)
-        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: R size: S keyboardlayout: " + seed_layout)
-        seed_models[race][Sides.Right][Sizes.Small] = shift_right(seed_models[race][Sides.Right][Sizes.Medium], Sides.Right)
-        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: L size: L keyboardlayout: " + seed_layout)
-        seed_models[race][Sides.Left][Sizes.Large] = shift_right(seed_models[race][Sides.Left][Sizes.Medium], Sides.Left)
-        logger.log(LogLevel.Info, "generate model for race: " + race.value + " side: R size: L keyboardlayout: " + seed_layout)
-        seed_models[race][Sides.Right][Sizes.Large] = shift_left(seed_models[race][Sides.Right][Sizes.Medium], Sides.Right)
-    for seed in OtherSeeds:
-        seed_models[seed] = extract_race(seed_model, seed)
+    for seed in allSeeds:
+        if seed in Races:
+            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: M keyboardlayout: " + seed_layout)
+            seed_models[seed][Sides.Left][Sizes.Medium] = extract_race(seed_model, seed)
+            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: M keyboardlayout: " + seed_layout)
+            seed_models[seed][Sides.Right][Sizes.Medium] = convert_side(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Right)
+            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: S keyboardlayout: " + seed_layout)
+            seed_models[seed][Sides.Left][Sizes.Small] = shift_left(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Left)
+            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: S keyboardlayout: " + seed_layout)
+            seed_models[seed][Sides.Right][Sizes.Small] = shift_right(seed_models[seed][Sides.Right][Sizes.Medium], Sides.Right)
+            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: L keyboardlayout: " + seed_layout)
+            seed_models[seed][Sides.Left][Sizes.Large] = shift_right(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Left)
+            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: L keyboardlayout: " + seed_layout)
+            seed_models[seed][Sides.Right][Sizes.Large] = shift_left(seed_models[seed][Sides.Right][Sizes.Medium], Sides.Right)
+        else:
+            seed_models[seed] = extract_race(seed_model, seed)
     translate_and_create_files(seed_models, logger)
     logger.finish()
 
@@ -443,23 +444,24 @@ def shift(seed_model, shift_section, side):
 def translate_and_create_files(models, logger):
     layouts = layout_parser.sections()
     for layout in layouts:
-        for race in Races:
-            for side in Sides:
-                for size in Sizes:
-                        if layout != seed_layout:
-                            logger.log(LogLevel.Info, "translate race: " + race.value + " side: " + side.value + " size: " + size.value + " keyboardlayout: " + layout)
-                            model = translate(models[race][side][size], layout, side)
-                        else:
-                            model = models[race][side][size]
-                        filename = prefix + thecore_tag(race, side, size)
-                        create_file(model, filename, layout, logger)
-        for seed in OtherSeeds:
-            if layout != seed_layout:
-                logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
-                model = translate(models[seed], layout, Sides.Left)
+        for seed in allSeeds:
+            if seed in Races:
+                for side in Sides:
+                    for size in Sizes:
+                            if layout != seed_layout:
+                                logger.log(LogLevel.Info, "translate seed: " + seed.value + " side: " + side.value + " size: " + size.value + " keyboardlayout: " + layout)
+                                model = translate(models[seed][side][size], layout, side)
+                            else:
+                                model = models[seed][side][size]
+                            filename = prefix + thecore_tag(seed, side, size)
+                            create_file(model, filename, layout, logger)
             else:
-                model = models[seed]
-            create_file(model, seed.value, layout, logger)
+                if layout != seed_layout:
+                    logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
+                    model = translate(models[seed], layout, Sides.Left)
+                else:
+                    model = models[seed]
+                create_file(model, seed.value, layout, logger)
 
 def translate(seed_model, layout, side):
     return modify_model(seed_model, layout_parser, layout, side)
