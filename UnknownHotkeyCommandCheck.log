@@ -134,24 +134,6 @@ Start command conflicts with hotkeys, out of identified conflicts (log file: Unk
 [ERROR]: C used for command WarpinObservatory/Probe, in seed Z
 [ERROR]: E used for command WormholeTransit/Predator, in seed Z
 [ERROR]: R used for command XaphanForce/Voranor, in seed Z
-[ERROR]: B used for command BattleRage/Khraxus, in seed TheCore Lite
-[ERROR]: Q used for command HotSBioPlasmidDischarge/HotSLeviathan, in seed TheCore Lite
-[ERROR]: W used for command HotSBioStasis/HotSLeviathan, in seed TheCore Lite
-[ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed TheCore Lite
-[ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed TheCore Lite
-[ERROR]: X used for command XaphanForce/Voranor, in seed TheCore Lite
-[ERROR]: B used for command BattleRage/Khraxus, in seed TheCore LiteRehab
-[ERROR]: Q used for command HotSBioPlasmidDischarge/HotSLeviathan, in seed TheCore LiteRehab
-[ERROR]: W used for command HotSBioStasis/HotSLeviathan, in seed TheCore LiteRehab
-[ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed TheCore LiteRehab
-[ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed TheCore LiteRehab
-[ERROR]: X used for command XaphanForce/Voranor, in seed TheCore LiteRehab
-[ERROR]: B used for command BattleRage/Khraxus, in seed TheCore LiteMonitor
-[ERROR]: Q used for command HotSBioPlasmidDischarge/HotSLeviathan, in seed TheCore LiteMonitor
-[ERROR]: W used for command HotSBioStasis/HotSLeviathan, in seed TheCore LiteMonitor
-[ERROR]: B used for command ShapedBlast/SiegeBreakerSieged, in seed TheCore LiteMonitor
-[ERROR]: B used for command ShapedBlast/SiegeTankSieged, in seed TheCore LiteMonitor
-[ERROR]: X used for command XaphanForce/Voranor, in seed TheCore LiteMonitor
 ----------------------------
-Finished (command conflicts with hotkeys, out of identified conflicts) - ERRORs: 151 
+Finished (command conflicts with hotkeys, out of identified conflicts) - ERRORs: 133 
 ============================

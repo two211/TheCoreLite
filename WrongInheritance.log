@@ -96,9 +96,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D,Z	D,T
 	R: F,6	F,6
 	Z: S	S
-	TheCore Lite: C,Space	C,Space
-	TheCore LiteRehab: C,Space	C,Space
-	TheCore LiteMonitor: C,Space	C,Space
+	TheCore Lite: Space,4	Space,4
+	TheCore LiteRehab: Space,4	Space,4
+	TheCore LiteMonitor: Space,4	Space,4
 	D:  	T (default)
 
 [ERROR]: BuildCreepTumor/QueenCoop != BuildCreepTumor/Queen
@@ -246,9 +246,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	Z
 	R: Z	S
 	Z: C	2
-	TheCore Lite: CapsLock	CapsLock
-	TheCore LiteRehab: CapsLock	CapsLock
-	TheCore LiteMonitor: CapsLock	CapsLock
+	TheCore Lite: C	C
+	TheCore LiteRehab: C	C
+	TheCore LiteMonitor: C	C
 	D: W	Q (default)
 
 [ERROR]: Consume/Lyote != ParasiticInvasion/LarvalQueen
@@ -256,9 +256,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	Z
 	R: Z	S
 	Z: C	2
-	TheCore Lite: CapsLock	CapsLock
-	TheCore LiteRehab: CapsLock	CapsLock
-	TheCore LiteMonitor: CapsLock	CapsLock
+	TheCore Lite: C	C
+	TheCore LiteRehab: C	C
+	TheCore LiteMonitor: C	C
 	D: W	Q (default)
 
 [ERROR]: DarkPylonRecall/DarkPylon != MothershipCoreMassRecall/MothershipCore
@@ -306,9 +306,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D,Z	D,T
 	R: F,6	F,6
 	Z: S	S
-	TheCore Lite: C,Space	C,Space
-	TheCore LiteRehab: C,Space	C,Space
-	TheCore LiteMonitor: C,Space	C,Space
+	TheCore Lite: Space,4	Space,4
+	TheCore LiteRehab: Space,4	Space,4
+	TheCore LiteMonitor: Space,4	Space,4
 	D: T	T (default)
 
 [ERROR]: FungalGrowth/Infestor2 != FungalGrowth/Infestor
@@ -316,9 +316,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,6	R
 	R: R,Tab	R,Tab
 	Z: G,B	G,H
-	TheCore Lite: E,Space	E,Space
-	TheCore LiteRehab: E,Space	E,Space
-	TheCore LiteMonitor: E,Space	E,Space
+	TheCore Lite: E	E
+	TheCore LiteRehab: E	E
+	TheCore LiteMonitor: E	E
 	D:  	F (default)
 
 [ERROR]: GreaterSpireBroodlord/Spire != GreaterSpire/Spire
@@ -366,9 +366,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: 5	5
-	TheCore LiteRehab: 5	5
-	TheCore LiteMonitor: 5	5
+	TheCore Lite: N	N
+	TheCore LiteRehab: N	N
+	TheCore LiteMonitor: N	N
 	D: N	N (default)
 
 [ERROR]: HeroNukeCalldown/Tosh != NukeCalldown/Ghost
@@ -376,9 +376,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: 5	5
-	TheCore LiteRehab: 5	5
-	TheCore LiteMonitor: 5	5
+	TheCore Lite: N	N
+	TheCore LiteRehab: N	N
+	TheCore LiteMonitor: N	N
 	D: N	N (default)
 
 [ERROR]: HighTemplarHallucination/Nexus != HighTemplarHallucination/Sentry
@@ -436,9 +436,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	4
 	R: R	R
 	Z:  	2
-	TheCore Lite: C	C
-	TheCore LiteRehab: C	C
-	TheCore LiteMonitor: C	C
+	TheCore Lite: R	R
+	TheCore LiteRehab: R	R
+	TheCore LiteMonitor: R	R
 	D: Q	T (default)
 
 [ERROR]: HyperionVoidCoopYamatoCannon/HyperionVoidCoop != YamatoGun
@@ -456,9 +456,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	4
 	R: S	R
 	Z:  	2
-	TheCore Lite: C	C
-	TheCore LiteRehab: C	C
-	TheCore LiteMonitor: C	C
+	TheCore Lite: R	R
+	TheCore LiteRehab: R	R
+	TheCore LiteMonitor: R	R
 	D: T	T (default)
 
 [ERROR]: ImmortalHallucination/Nexus != ImmortalHallucination/Sentry
@@ -496,9 +496,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 3,R	4
 	R: R	R
 	Z: N,G	S
-	TheCore Lite: Space	Space
-	TheCore LiteRehab: Space	Space
-	TheCore LiteMonitor: Space	Space
+	TheCore Lite: CapsLock	CapsLock
+	TheCore LiteRehab: CapsLock	CapsLock
+	TheCore LiteMonitor: CapsLock	CapsLock
 	D: I	I (default)
 
 [ERROR]: JackhammerConcussionGrenade/HammerSecurity != JackhammerConcussionGrenade/Marauder
@@ -706,9 +706,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: 5	5
-	TheCore LiteRehab: 5	5
-	TheCore LiteMonitor: 5	5
+	TheCore Lite: N	N
+	TheCore LiteRehab: N	N
+	TheCore LiteMonitor: N	N
 	D: N	N (default)
 
 [ERROR]: ProbeHallucination/Nexus != ProbeHallucination/Sentry
@@ -746,9 +746,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: D	D
 	R: R	R
 	Z:  	S
-	TheCore Lite: E,Space	E,Space
-	TheCore LiteRehab: E,Space	E,Space
-	TheCore LiteMonitor: E,Space	E,Space
+	TheCore Lite: E	E
+	TheCore LiteRehab: E	E
+	TheCore LiteMonitor: E	E
 	D: T	T,W (default)
 
 [ERROR]: PsionicLift/KerriganVoidBurrowed != PsionicLift/K5KerriganBurrowed
@@ -786,9 +786,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R	4
 	R: R	R
 	Z: G	S
-	TheCore Lite: Space	Space
-	TheCore LiteRehab: Space	Space
-	TheCore LiteMonitor: Space	Space
+	TheCore Lite: CapsLock	CapsLock
+	TheCore LiteRehab: CapsLock	CapsLock
+	TheCore LiteMonitor: CapsLock	CapsLock
 	D: C	I (default)
 
 [ERROR]: ResearchBansheeCloak/StarportTechReactor != ResearchBansheeCloak/StarportTechLab
@@ -936,9 +936,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: 5	5
-	TheCore LiteRehab: 5	5
-	TheCore LiteMonitor: 5	5
+	TheCore Lite: N	N
+	TheCore LiteRehab: N	N
+	TheCore LiteMonitor: N	N
 	D: N	N (default)
 
 [ERROR]: StalkerHallucination/Nexus != StalkerHallucination/Sentry
@@ -956,9 +956,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: Z	6
 	R: C	C
 	Z: 2	H
-	TheCore Lite: C	C
-	TheCore LiteRehab: C	C
-	TheCore LiteMonitor: C	C
+	TheCore Lite: R	R
+	TheCore LiteRehab: R	R
+	TheCore LiteMonitor: R	R
 	D: C	C (default)
 
 [ERROR]: Summon2DragoonHallucinations/Sentry != StalkerHallucination/Sentry
