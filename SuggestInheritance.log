@@ -513,7 +513,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Charge/Voranor default:  copyof: Charge/Zealot default: C
 	Charge/ZealotDark default:  copyof: Charge/Zealot default: C
 
-[INFO]: P: E   T: 4   R: R   Z: Q   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteMonitor: E   
+[INFO]: P: E   T: 4   R: R   Z: Q   TheCore Lite: E,CapsLock   TheCore LiteRehab: E,CapsLock   TheCore LiteMonitor: E,CapsLock   
 	BunkerUnloadAll default: D
 	HerculesUnloadAll/Hercules default: D copyof: BunkerUnloadAll default: D
 
