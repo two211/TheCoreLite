@@ -124,7 +124,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpPrismHallucination/Nexus default:  copyof: WarpPrismHallucination/Sentry default: R
 	WarpPrismHallucination/Voranor default:  copyof: WarpPrismHallucination/Sentry default: R
 
-[INFO]: P: 3   T: F   R: 2   Z: Q   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteMonitor: C   
+[INFO]: P: 3   T: F   R: 2   Z: Q   TheCore Lite: C,CapsLock   TheCore LiteRehab: C,CapsLock   TheCore LiteMonitor: C,CapsLock   
 	Colossus/RoboticsFacility default: C
 	Colossus/RoboticsFacilityWarp default: C copyof: Colossus/RoboticsFacility default: C
 
