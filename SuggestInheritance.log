@@ -560,7 +560,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranShipPlatingVanadiumPlatingLevel2/Armory default: P copyof: TerranShipPlatingLevel1/Armory default: P
 	TerranShipPlatingVanadiumPlatingLevel3/Armory default: P copyof: TerranShipPlatingLevel1/Armory default: P
 
-[INFO]: P: E   T: R   R: R   Z: 2   TheCore Lite: G   TheCore LiteRehab: G   TheCore LiteMonitor: G   
+[INFO]: P: E   T: R   R: R   Z: 2   TheCore Lite: 4   TheCore LiteRehab: 4   TheCore LiteMonitor: 4   
 	LurkerCancelHoldFire/LurkerBurrowed default: G copyof: LurkerCancelHoldFire/LurkerMPBurrowed default: G
 	LurkerCancelHoldFire/LurkerMPBurrowed default: G
 
@@ -615,7 +615,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LightningBomb/TempestPurifier default: D
 
 [INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: F   TheCore LiteRehab: F   TheCore LiteMonitor: F   
-	AdeptPhaseShift/Adept default: F
 	ArbiterMPStasisField/ArbiterMP default: F
 	DarkArchonConfusion/DarkArchon default: F
 
@@ -627,6 +626,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Starport/SCV default: S
 
 [INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space   
+	AdeptPhaseShift/Adept default: F
 	Blink/ShadowOfTheVoidStalker default: B copyof: Blink/Stalker default: B
 	Blink/Stalker default: B
 	BurrowChargeCampaign/HotSTorrasque default: C copyof: Blink/Stalker default: B
@@ -650,7 +650,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Probe/Nexus default: E
 	ProtossAirArmorLevel1/CyberneticsCore default: A
 	ProtossGroundArmorLevel1/Forge default: A
-	PurificationNovaTargeted/Disruptor default: V
 	RaynorSnipe/RaynorCommando default: T
 	SCV default: S
 	StalkerBlinkShieldRestoreBase/StalkerShakuras default: B copyof: Blink/Stalker default: B
