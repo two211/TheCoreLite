@@ -171,7 +171,7 @@ TeamResources=Control+F12
 ToggleVersusModeSides=Control+X
 ToggleWorldPanel=Control+Z
 TownCamera=B
-WarpIn=Shift+F4
+WarpIn=Shift+F3
 
 [Commands]
 250mmStrikeCannons/Thor=C
