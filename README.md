@@ -78,15 +78,15 @@ Regular groups to be used for armies are:
  AS <= steal
 ```
 
-### Additionnal views (save camera view with "Alt")
+### Additionnal free cameras (save camera view with "Alt")
 * Shift+E is an alternate for Shift+2
 * Shift+R is an alternate for Shift+3
 
 **Note:** to be used for "creep cameras" or "rally points"
 
 ### More accessible view related features
-* Shift+T is an alternate for "follow selection"
-* Shift+G is an alternate for "alert recall"
+* ~~Shift+T is an alternate for "follow selection"~~
+* ~~Shift+G is an alternate for "alert recall"~~
 * Shift+B has the same effect as "base" key
 
 ### Use case: zerg macro routine
@@ -104,9 +104,9 @@ Regular groups to be used for armies are:
 ### Monitor mode summary
 Accessible keys in "Monitor" mode (pressing Shift)
 ```
-QWERT
-ASDFG
-ZXCVB
+QWER
+ASDF
+ZXCV
 Space
 ```
 * Camera keys = QWER, AS, ZX
