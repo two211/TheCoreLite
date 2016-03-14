@@ -83,7 +83,7 @@ Regular groups to be used for armies are:
  AS <= steal
 ```
 
-### Additionnal free cameras (save camera view with "Alt")
+### Additionnal free cameras (save camera view with "Alt" or "Shift+Alt")
 * Shift+E is an alternate for Shift+2
 * Shift+R is an alternate for Shift+3
 
@@ -107,8 +107,26 @@ follow selection and alert recall have been mapped somewhere else anyway (look a
 * Shift+V = select creep queen
 * Shift+C = queue creep tumor
 * click = drop creep tumors
-* Shift+E = jump to creep camera 1 (for creep push, Alt+E to update camera)
-* Shift+R = jump to creep camera 2 (for creep push, Alt+R to update camera)
+* Shift+E = jump to creep camera 1
+* move mouse on creep Tumor
+* Shift+Forward|Back Mouse Button = select creep tumor
+* double-click to select creep tumors
+* Shift+C = queue creep tumor
+* click = drop creep tumor
+* middle-click = drag camera
+* Shift+Alt+E = update creep camera
+
+Optional second creep camera:
+* Shift+R = jump to creep camera 2
+* move mouse on creep Tumor
+* Shift+Forward|Back Mouse Button = select creep tumor
+* Shift+double-click to select creep tumors
+* Shift+C = queue creep tumor
+* click = drop creep tumor
+* middle-click = drag camera
+* Shift+Alt+R = update creep camera
+
+**NOTE:** Shift+Alt+E|R doesn't center the camera if Alt is pressed after Shift
 
 ### Monitor mode summary
 Accessible keys in "Monitor" mode (pressing Shift)

@@ -152,6 +152,7 @@ ReplaySkipNext=G,MediaNextTrack
 ReplaySpeedDec=BracketClose,NumPadMinus
 ReplaySpeedInc=Backspace,NumPadPlus
 ReplayStop=MediaStop
+Selection=
 SelectionCancelDrag=Escape
 SmartCommand=RightMouseButton,F3
 Sound=F8
