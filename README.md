@@ -19,10 +19,14 @@ There are remaining errors in UnknownHotkeyCommandCheck.log
 * Functions keys have been populated, but are classical
  * F1 IdleWorker
  * F2 Select all army (changed in other variants)
- * Shift-F2 Minimap colors (to make it more accessible)
- * Shift-F4 Warp (swapped in other variants)
- * Shift-F5 Toggle sound (moved to prevent mistyping)
- * Shift-F6 Toggle music (could be mapped on Shift+F5 to free space)
+ * Shift+F2 Minimap colors (to make it more accessible)
+ * Shift+F3 Warp (swapped in other variants)
+ * Shift+F5 Toggle sound (moved to prevent mistyping)
+ * Shift+F6 Toggle music (could be mapped on Shift+F5 to free space)
+* Alternate for camera style
+ * Shift+` center camera
+ * Shift+1 follow selection
+* Back/Forward Mouse Button added to browse between subgroups
 
 **Notes:** F3 to F8 cannot be used in direct access due to SelectHero
 
@@ -30,17 +34,25 @@ TheCore LiteRehab.SC2Hotkeys
 ----------------------------
 
 Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
-* Functions keys swap:
- * F2 AlertRecall (no more Select all army on this key)
- * Shift-F3 Select all army (made less accessible to prevent over-use)
-* More accessible views keys
- * Shift+Grave CameraCenter
- * Shift+1 CameraFollow
- * Dragmouse finally kept (initial idea was to use it for CameraCenter)
+* Function key made less accessible for rehab
+ * Shift+F3 Select all army (to prevent over-use)
+ * Shift+F7 Warp (to encourage production group)
+* Fill Function Key with useful functions
+ * F2 ToggleColors (no more Select all army on this key)
+ * Shift+F2 CameraFollow
+ * Shift+F4 Team Ressources
+* Tab no longer used for subgroup browsing (to encourage mouse usage)
+ * Tab : Alert Jump
+ * Shift+Tab : Rotate Right (help to spot invisible)
+ * Shift+Grave : Rotate Left (help to spot invisible)
+* Support for autocentered cameras
+ * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
+ * Alt+Shift+23QWASZX are alternate to declare the camera
+ * Alt+Space PushToTalk (to free Alt+Shift)
 * Group approach
  * all groups behave with steal (for easy split), except "Q" and "W"
  * "Q" and "W" to be used for shared army groups to facilitate retreat/follow front-line
- * **Note** TheCore approach is to make all groups behave the same
+ * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
 * AI keys now supported
  * direct attack on Alt+D
  * direct scout on Alt+T
@@ -53,10 +65,6 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
 
-**WARNING** section outdated, 
-data is kept unchanged for reader to get the initial ideas,
-feel free to send feedback
-
 Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
 The principle is to use "shift" as a "monitor mode" modifier.
 The goal is encourage camera keys, having also the useful stuff pressing "shift".
@@ -68,6 +76,7 @@ The goal is encourage camera keys, having also the useful stuff pressing "shift"
  * "creep queen"
  * mothership (core)
  * wall supply depot
+ * base defense squad
  * whatever other useful group you could think about
 
 **Note:** "X" "Z" "`" groups have been chosen due to poor accessibility in TheCore Lite.
@@ -87,7 +96,10 @@ Regular groups to be used for armies are:
 ### More accessible view related features
 * ~~Shift+T is an alternate for "follow selection"~~
 * ~~Shift+G is an alternate for "alert recall"~~
-* Shift+B has the same effect as "base" key
+* Shift+B has the same effect as "base" key (still the case)
+
+**Dropped:** Shift+T is definitely useful,
+follow selection and alert recall could be mapped somewhere else anyway
 
 ### Use case: zerg macro routine
 * Shift+F = hatch group + tech (check larva count + researchs on going)
@@ -112,24 +124,12 @@ Space
 * Camera keys = QWER, AS, ZX
 * Utility groups = DF, V
 * Queuable commands = C, Space
-* Convenient view tuning:
- * T = follow selection
- * G = Alert Recall
- * B = base key
 
 **WARNING:** all those "Shift alternates" may disturb your queued command habits.
 A workaround would be to remap those commands on either "Space" or "C".
 
 **Possible changes:** please report any painful problems, regarding convenient queued commands.
 Commands may be changed to solve them.
-
-### Dropped ideas due to queuability of commands
-Cameras views (save camera view with "Alt"), to be used for "creep cameras" or "rally points":
-* Shift+E is an alternate for Shift+2
-* Shift+R is an alternate for Shift+3
-
-View related feature
-* Shift+T is an alternate for "follow selection" (easily accessible through F2)
 
 Changelog for the code
 ======================
