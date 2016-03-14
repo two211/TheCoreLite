@@ -31,13 +31,12 @@ TheCore LiteRehab.SC2Hotkeys
 ----------------------------
 
 Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
-* Function key made less accessible for rehab
- * Shift+F3 Select all army (to prevent over-use)
- * Shift+F7 Warp (to encourage production group)
-* Fill Function Key with useful functions
+* Function key reorganization
  * F2 ToggleColors (no more Select all army on this key)
  * Shift+F2 CameraFollow
+ * Shift+F3 Select all army (moved to prevent over-use)
  * Shift+F4 Team Ressources
+ * Shift+F7 Warp (to encourage production group)
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
  * Shift+Tab : Rotate Right (help to spot invisible)
@@ -88,15 +87,16 @@ Regular groups to be used for armies are:
 * Shift+E is an alternate for Shift+2
 * Shift+R is an alternate for Shift+3
 
-**Note:** to be used for "creep cameras" or "rally points"
+**Note:** to be used for "creep cameras" or "rally points",
+could bother you with queued commands (please report)
 
 ### More accessible view related features
 * ~~Shift+T is an alternate for "follow selection"~~
 * ~~Shift+G is an alternate for "alert recall"~~
-* Shift+B has the same effect as "base" key (still the case)
+* Shift+B has the same effect as "base" key (still true :D)
 
 **Dropped:** Shift+T is definitely useful,
-follow selection and alert recall could be mapped somewhere else anyway
+follow selection and alert recall have been mapped somewhere else anyway (look at TheCore LiteRehab)
 
 ### Use case: zerg macro routine
 * Shift+F = hatch group + tech (check larva count + researchs on going)
@@ -126,7 +126,7 @@ Space
 A workaround would be to remap those commands on either "Space" or "C".
 
 **Possible changes:** please report any painful problems, regarding convenient queued commands.
-Commands may be changed to solve them.
+TheCore LiteMonitor tricks could be dropped or commands may be changed to solve them.
 
 Changelog for the code
 ======================
