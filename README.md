@@ -23,9 +23,6 @@ There are remaining errors in UnknownHotkeyCommandCheck.log
  * Shift+F3 Warp (swapped in other variants)
  * Shift+F5 Toggle sound (moved to prevent mistyping)
  * Shift+F6 Toggle music (could be mapped on Shift+F5 to free space)
-* Alternate for camera style
- * Shift+` center camera
- * Shift+1 follow selection
 * Back/Forward Mouse Button added to browse between subgroups
 
 **Notes:** F3 to F8 cannot be used in direct access due to SelectHero
