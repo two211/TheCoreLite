@@ -129,8 +129,8 @@ ZXCV
 * Utility groups = DF (Alt to select), V (Alt or shift to select)
 
 **Note about history:**
-An "Alt" overlay has been preferred.
-The Alt modifier is under the thumb.
+
+An "Alt" overlay has been preferred as the Alt modifier is under a stronger finger: the thumb.
 Only Shift+V serves for compliance with [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_%28Legacy_of_the_Void%29#The_Core_Method), as nobody would queue Stop.
 
 A former version was based on a "Shift" overlay:
@@ -138,6 +138,7 @@ A former version was based on a "Shift" overlay:
 * it messed up the queued command
 
 **Drawbacks of the "Alt" overlay:**
+
 An alternate is necessary to:
 * produce workers (4)
 * select larva (4)
