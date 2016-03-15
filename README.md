@@ -65,9 +65,9 @@ Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
 The principle is to use "Alt" as a "monitor mode" modifier.
 The goal is encourage camera keys, having also the useful stuff pressing "Alt".
 
-### Additional groups hotkey (create/add work the same Ctrl+Shift/Ctrl):
+### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
 * Alt+F is an alternate for "X" to be used for CC/Nexus+tech or hatches
-* Alt+D is an alternate for "Z" to be used for "production facilities" or "inject queens+ tech"
+* Alt+D is an alternate for "Z" to be used for "production facilities" or "inject queens&tech"
 * Alt+V is an alternate for "`" to be used for utility group
 
 * Shift+V is an alternate for Alt+D for the "inject queens" group (See "zerg macro routine" below)
@@ -86,11 +86,18 @@ Regular groups to be used for armies are:
  AS <= steal
 ```
 
-### Additionnal free cameras (save camera view with "Ctl" or "Shift+Alt")
+### Additionnal cameras alternates (save camera view with "Ctl" or "Shift+Alt")
 * Alt+E is an alternate for Shift+2
 * Alt+R is an alternate for Shift+3
 
-**NOTE:** for creep cameras, select a new tumor an get center view could help
+Camera creation:
+* Ctl+E|R = free camera
+* Alt+Shift+E|R = camera with previous center view
+
+Uses cases:
+* Rally points = free camera
+* Warp Pylon = centered camera
+* Creep Tumor zone = centered or free camera (see "zerg macro routine")
 
 **NOTE:** Shift+Alt+E|R doesn't center the camera if Alt is pressed after Shift
 
