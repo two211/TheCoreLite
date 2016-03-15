@@ -625,6 +625,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Stargate/Probe default: S
 	Starport/SCV default: S
 
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space,4   
+	Drone/Larva default: D
+	Probe/Nexus default: E
+	SCV default: S
+
 [INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space   
 	AdeptPhaseShift/Adept default: F
 	Blink/ShadowOfTheVoidStalker default: B copyof: Blink/Stalker default: B
@@ -638,7 +643,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Charge/ZealotPurifier default: C copyof: Charge/Zealot default: C
 	D8Charge/MercReaper default: G copyof: D8Charge/Reaper default: G
 	D8Charge/Reaper default: G
-	Drone/Larva default: D
 	FenixSOACharge/FenixChampion default: Q copyof: Charge/Zealot default: C
 	FenixSOACharge/FenixSOA default: Q copyof: Charge/Zealot default: C
 	ImmortalBarrierBase/Immortal default:  copyof: ImmortalOverload/Immortal default: B
@@ -647,11 +651,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LocustMPFlyingSwoop/LocustMPFlying default: Z
 	MeliakBlinkBTN/Meliak default:  copyof: Blink/Stalker default: B
 	MindBlast/Tosh default: B
-	Probe/Nexus default: E
 	ProtossAirArmorLevel1/CyberneticsCore default: A
 	ProtossGroundArmorLevel1/Forge default: A
 	RaynorSnipe/RaynorCommando default: T
-	SCV default: S
 	StalkerBlinkShieldRestoreBase/StalkerShakuras default: B copyof: Blink/Stalker default: B
 	TerranInfantryArmorLevel1/EngineeringBay default: A
 	TerranInfantryArmorVanadiumPlatingLevel1/EngineeringBay default: A copyof: TerranInfantryArmorLevel1/EngineeringBay default: A
@@ -1172,7 +1174,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	K5Leviathan/K5Kerrigan default: D
 	K5Leviathan/KerriganVoid default: D copyof: K5Leviathan/K5Kerrigan default: D
 
-[INFO]: P: X   T: X   R: T   Z: A   TheCore Lite: 4   TheCore LiteRehab: 4   TheCore LiteMonitor: 4   
+[INFO]: P: X   T: X   R: T   Z: A   TheCore Lite: 5   TheCore LiteRehab: 5   TheCore LiteMonitor: 5   
 	MorphToSwarmHostSplitA/Larva default: A copyof: SwarmHostMP/Larva default: A
 	MorphToSwarmHostSplitB/Larva default: A copyof: SwarmHostMP/Larva default: A
 	Scourge/Larva default: S copyof: SwarmHostMP/Larva default: A
@@ -1205,7 +1207,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranBuildAdvanced/SCV default: V
 	ZergBuildAdvanced/Drone default: V
 
-[INFO]: P: Alt+X   T: Alt+X   R: Alt+X   Z: Alt+X   TheCore Lite: Alt+X   TheCore LiteRehab: Alt+V   TheCore LiteMonitor: Alt+V   
+[INFO]: P: Alt+X   T: Alt+X   R: Alt+X   Z: Alt+X   TheCore Lite: Alt+X   TheCore LiteRehab: Alt+V   TheCore LiteMonitor: Control+V   
 	AIClearAll default: Alt+X
 	AIDelete default: Alt+X
 
@@ -1216,5 +1218,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 213 
+Finished (suggest inherit) - INFOs: 214 
 ============================

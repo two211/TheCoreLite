@@ -62,14 +62,16 @@ TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
 
 Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
-The principle is to use "shift" as a "monitor mode" modifier.
-The goal is encourage camera keys, having also the useful stuff pressing "shift".
+The principle is to use "Alt" as a "monitor mode" modifier.
+The goal is encourage camera keys, having also the useful stuff pressing "Alt".
 
-### Additional groups (create/add work the same Ctrl+Shift/Ctrl):
-* Shift+F is an alternate for "X" to be used for CC/Nexus/Hatch and tech
-* Shift+D is an alternate for "Z" to be used for "production facilities" or "inject queens"
-* Shift+V is an alternate for "`" to be used for
- * "creep queen"
+### Additional groups hotkey (create/add work the same Ctrl+Shift/Ctrl):
+* Alt+F is an alternate for "X" to be used for CC/Nexus+tech or hatches
+* Alt+D (or Shift+V) is an alternate for "Z" to be used for "production facilities" or "inject queens+ tech"
+* Alt+V is an alternate for "`" to be used for utility group
+
+* Example of utility groups
+ * creep queens
  * mothership (core)
  * wall supply depot
  * base defense squad
@@ -83,68 +85,65 @@ Regular groups to be used for armies are:
  AS <= steal
 ```
 
-### Additionnal free cameras (save camera view with "Alt" or "Shift+Alt")
-* Shift+E is an alternate for Shift+2
-* Shift+R is an alternate for Shift+3
+### Additionnal free cameras (save camera view with "Ctl" or "Shift+Alt")
+* Alt+E is an alternate for Shift+2
+* Alt+R is an alternate for Shift+3
 
-**Note:** to be used for "creep cameras" or "rally points",
-could bother you with queued commands (please report)
-
-### More accessible view related features
-* ~~Shift+T is an alternate for "follow selection"~~
-* ~~Shift+G is an alternate for "alert recall"~~
-* Shift+B has the same effect as "base" key (still true :D)
-
-**Dropped:** Shift+T is definitely useful,
-follow selection and alert recall have been mapped somewhere else anyway (look at TheCore LiteRehab)
-
-### Use case: zerg macro routine
-* Shift+F = hatch group + tech (check larva count + researchs on going)
-* Shift+D = select inject queens
-* Shift+Space = queue inject (prevent queens from walking around)
-* center mouse
-* Shift+Z|X|A|S + click = base camera + inject
-* Shift+V = select creep queen
-* Shift+C = queue creep tumor
-* click = drop creep tumors
-* Shift+E = jump to creep camera 1
-* move mouse on creep Tumor
-* Shift+Forward|Back Mouse Button = select creep tumor
-* double-click to select creep tumors
-* Shift+C = queue creep tumor
-* click = drop creep tumor
-* middle-click = drag camera
-* Shift+Alt+E = update creep camera
-
-Optional second creep camera:
-* Shift+R = jump to creep camera 2
-* move mouse on creep Tumor
-* Shift+Forward|Back Mouse Button = select creep tumor
-* Shift+double-click to select creep tumors
-* Shift+C = queue creep tumor
-* click = drop creep tumor
-* middle-click = drag camera
-* Shift+Alt+R = update creep camera
+**NOTE:** for creep cameras, select a new tumor an get center view could help
 
 **NOTE:** Shift+Alt+E|R doesn't center the camera if Alt is pressed after Shift
+
+### Use case: zerg macro routine
+* Hatch check
+ * Alt+F = hatch group + tech 
+ * try to check supply depot at this step
+* Inject cycle (hold Shift)
+ * Shift+V = select inject queens + tech
+ * Shift+Space = queue inject (prevent queens from walking around)
+ * center mouse
+ * Shift+Z|X|A|S + click = base camera + inject
+* Tech
+ * You had time to check upgrades as they were selected with inject queeens
+ * browse subgroup + add new research 
+* Creep queen
+ * Alt+V = select creep queen
+ * hold C + clicks = drop creep tumors
+* Creep cameras (E or R)
+ * Alt+E|R = jump to creep camera 1
+ * double-click to select creep tumors
+ * hold C + click = queue creep tumor
+ * release C + click = select a creep tumor
+ * Alt+Shift+E|R = update creep camera (with center view)
 
 ### Monitor mode summary
 Accessible keys in "Monitor" mode (pressing Shift)
 ```
+  ?4
 QWER
 ASDF
 ZXCV
-Space
 ```
-* Camera keys = QWER, AS, ZX
-* Utility groups = DF, V
-* Queuable commands = C, Space
+* Camera keys = QW, AS, ZX (Shift to go, Alt to create)
+* Camera keys = ER (Alt to go, Ctl or Shift+Alt to create)
+* Utility groups = DF (Alt to select), V (Alt or shift to select)
 
-**WARNING:** all those "Shift alternates" may disturb your queued command habits.
-A workaround would be to remap those commands on either "Space" or "C".
+**Note about history:**
+An "Alt" overlay has been preferred.
+The Alt modifier is under the thumb.
+Only Shift+V serves for compliance with TheCore inject (as nobody would queue Stop):
+http://wiki.teamliquid.net/starcraft2/Spawn\_Larva\_%28Legacy\_of\_the\_Void%29#The\_Core\_Method
 
-**Possible changes:** please report any painful problems, regarding convenient queued commands.
-TheCore LiteMonitor tricks could be dropped or commands may be changed to solve them.
+A former version was based on a "Shift" overlay:
+* it was tiring for the little finger especially for zerg macro routine.
+* it messed up the queued command
+
+**Drawbacks of the "Alt" overlay:**
+An alternate is necessary to:
+* produce workers (Alt+4)
+* select larva (Alt+4)
+
+AI hotkey modifier has to change from Alt to Control
+
 
 Changelog for the code
 ======================

@@ -1637,9 +1637,9 @@ in seed P, keys =X
 in seed T, keys =X
 in seed R, keys =T
 in seed Z, keys =A
-in seed TheCore Lite, keys =4
-in seed TheCore LiteRehab, keys =4
-in seed TheCore LiteMonitor, keys =4
+in seed TheCore Lite, keys =5
+in seed TheCore LiteRehab, keys =5
+in seed TheCore LiteMonitor, keys =5
 
 [WARN]: MorphToSwarmHostSplitB/Larva not related to a conflict
 but is part of same check
@@ -1648,9 +1648,9 @@ in seed P, keys =X
 in seed T, keys =X
 in seed R, keys =T
 in seed Z, keys =A
-in seed TheCore Lite, keys =4
-in seed TheCore LiteRehab, keys =4
-in seed TheCore LiteMonitor, keys =4
+in seed TheCore Lite, keys =5
+in seed TheCore LiteRehab, keys =5
+in seed TheCore LiteMonitor, keys =5
 
 [WARN]: MorphToSwarmling/Larva not related to a conflict
 but is part of same check

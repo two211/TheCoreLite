@@ -606,9 +606,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	6
 	R: T	T
 	Z: A	A
-	TheCore Lite: 4	4
-	TheCore LiteRehab: 4	4
-	TheCore LiteMonitor: 4	4
+	TheCore Lite: 5	5
+	TheCore LiteRehab: 5	5
+	TheCore LiteMonitor: 5	5
 	D: A	A (default)
 
 [ERROR]: MorphToSwarmHostSplitB/Larva != SwarmHostMP/Larva
@@ -616,9 +616,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	6
 	R: T	T
 	Z: A	A
-	TheCore Lite: 4	4
-	TheCore LiteRehab: 4	4
-	TheCore LiteMonitor: 4	4
+	TheCore Lite: 5	5
+	TheCore LiteRehab: 5	5
+	TheCore LiteMonitor: 5	5
 	D: A	A (default)
 
 [ERROR]: MorphtoHunter/HotSRaptor != Baneling/Zergling
@@ -896,9 +896,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	6
 	R: T	T
 	Z: A	A
-	TheCore Lite: 4	4
-	TheCore LiteRehab: 4	4
-	TheCore LiteMonitor: 4	4
+	TheCore Lite: 5	5
+	TheCore LiteRehab: 5	5
+	TheCore LiteMonitor: 5	5
 	D: S	A (default)
 
 [ERROR]: ShadowGuardBlink/VorazunShadowGuard != Blink/Stalker
