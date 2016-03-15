@@ -66,12 +66,14 @@ The principle is to use "Alt" as a "monitor mode" modifier.
 The goal is encourage camera keys, having also the useful stuff pressing "Alt".
 
 ### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
+
+4 Monitor group alternates:
 * Alt+F is an alternate for "X" to be used for CC/Nexus+tech or hatches
 * Alt+D is an alternate for "Z" to be used for "production facilities" or "inject queens&tech"
 * Alt+V is an alternate for "`" to be used for utility group
+* **NOTE** Shift+V is an alternate for Alt+D for the "inject queens" group (See "zerg macro routine" below)
 
-* Shift+V is an alternate for Alt+D for the "inject queens" group (See "zerg macro routine" below)
-* Examples of utility groups:
+Examples of utility groups:
  * creep queens
  * mothership (core)
  * wall supply depot
