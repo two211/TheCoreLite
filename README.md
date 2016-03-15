@@ -67,18 +67,18 @@ The goal is encourage camera keys, having also the useful stuff pressing "Alt".
 
 ### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
 
-4 Monitor group alternates:
+4 "Monitor" group alternates:
 * Alt+F is an alternate for "X" to be used for CC/Nexus+tech or hatches
 * Alt+D is an alternate for "Z" to be used for "production facilities" or "inject queens&tech"
 * Alt+V is an alternate for "`" to be used for utility group
-* **NOTE** Shift+V is an alternate for Alt+D for the "inject queens" group (See "zerg macro routine" below)
+* **NOTE:** Shift+V is an alternate for Alt+D for the "inject queens" group (See "zerg macro routine" below)
 
 Examples of utility groups:
- * creep queens
- * mothership (core)
- * wall supply depot
- * base defense squad
- * whatever other useful group you could think about
+* creep queens
+* mothership (core)
+* wall supply depot
+* base defense squad
+* whatever other useful group you could think about
 
 **Note:** "X" "Z" "`" groups have been chosen due to poor accessibility in TheCore Lite.
 Regular groups to be used for armies are:
@@ -89,6 +89,7 @@ Regular groups to be used for armies are:
 ```
 
 ### Additionnal cameras alternates (save camera view with "Ctl" or "Shift+Alt")
+2 "Monitor" camera alternates:
 * Alt+E is an alternate for Shift+2
 * Alt+R is an alternate for Shift+3
 
@@ -96,7 +97,7 @@ Camera creation:
 * Ctl+E|R = free camera
 * Alt+Shift+E|R = camera with previous center view
 
-Uses cases:
+Examples of use cases:
 * Rally points = free camera
 * Warp Pylon = centered camera
 * Creep Tumor zone = centered or free camera (see "zerg macro routine")
