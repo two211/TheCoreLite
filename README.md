@@ -67,10 +67,11 @@ The goal is encourage camera keys, having also the useful stuff pressing "Alt".
 
 ### Additional groups hotkey (create/add work the same Ctrl+Shift/Ctrl):
 * Alt+F is an alternate for "X" to be used for CC/Nexus+tech or hatches
-* Alt+D (or Shift+V) is an alternate for "Z" to be used for "production facilities" or "inject queens+ tech"
+* Alt+D is an alternate for "Z" to be used for "production facilities" or "inject queens+ tech"
 * Alt+V is an alternate for "`" to be used for utility group
 
-* Example of utility groups
+* Shift+V is an alternate for Alt+D for the "inject queens" group (See "zerg macro routine" below)
+* Examples of utility groups:
  * creep queens
  * mothership (core)
  * wall supply depot
@@ -102,7 +103,7 @@ Regular groups to be used for armies are:
  * Shift+Space = queue inject (prevent queens from walking around)
  * center mouse
  * Shift+Z|X|A|S + click = base camera + inject
-* Tech
+* Tech check
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research 
 * Creep queen
@@ -118,7 +119,7 @@ Regular groups to be used for armies are:
 ### Monitor mode summary
 Accessible keys in "Monitor" mode (pressing Shift)
 ```
-  ?4
+   4
 QWER
 ASDF
 ZXCV
@@ -130,8 +131,7 @@ ZXCV
 **Note about history:**
 An "Alt" overlay has been preferred.
 The Alt modifier is under the thumb.
-Only Shift+V serves for compliance with TheCore inject (as nobody would queue Stop):
-http://wiki.teamliquid.net/starcraft2/Spawn\_Larva\_%28Legacy\_of\_the\_Void%29#The\_Core\_Method
+Only Shift+V serves for compliance with [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_%28Legacy_of_the_Void%29#The_Core_Method), as nobody would queue Stop.
 
 A former version was based on a "Shift" overlay:
 * it was tiring for the little finger especially for zerg macro routine.
@@ -139,11 +139,10 @@ A former version was based on a "Shift" overlay:
 
 **Drawbacks of the "Alt" overlay:**
 An alternate is necessary to:
-* produce workers (Alt+4)
-* select larva (Alt+4)
-
-AI hotkey modifier has to change from Alt to Control
-
+* produce workers (4)
+* select larva (4)
+* unload command (5)
+* AI hotkey modifier has to change from Alt to Control
 
 Changelog for the code
 ======================
