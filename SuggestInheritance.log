@@ -302,6 +302,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NPSwarm/Infestor default: E copyof: NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor default: E
 
+[INFO]: P: E,4   T: R,D   R: R,F   Z: G,S   TheCore Lite: Space,C   TheCore LiteRehab: Space,C   TheCore LiteMonitor: Space,C   
+	KD8Charge/Reaper default: D
+	LockOn/Cyclone default: C
+
 [INFO]: P: 4,E   T: R,D   R: F,R   Z: S,G   TheCore Lite: E,Space   TheCore LiteRehab: E,Space   TheCore LiteMonitor: E,Space   
 	GravitonBeam/Phoenix default: G
 	GravitonBeam/Urun default: G copyof: GravitonBeam/Phoenix default: G
@@ -498,7 +502,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Feedback/Khiradun default:  copyof: Feedback/HighTemplar default: F
 	PsionicBolt/Telios default:  copyof: Feedback/HighTemplar default: F
 
-[INFO]: P: D,V   T: D   R: F   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteMonitor: C   
+[INFO]: P: D,V   T: D   R: F   Z: 2   TheCore Lite: C,Space   TheCore LiteRehab: C,Space   TheCore LiteMonitor: C,Space   
 	MothershipCoreWeapon/Mothership default: F copyof: MothershipCoreWeapon/MothershipCore default: F
 	MothershipCoreWeapon/MothershipCore default: F
 
@@ -677,6 +681,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Explode/HotSSplitterlingBigBurrowed default: F copyof: Explode/BanelingBurrowed default: X
 	Explode/baneling default:  copyof: Explode/Baneling default: X
 	Explode/baneling2 default:  copyof: Explode/Baneling default: X
+
+[INFO]: P: E   T: R   R: R   Z: S   TheCore Lite: C,E   TheCore LiteRehab: C,E   TheCore LiteMonitor: C,E   
+	SwarmHost/SwarmHostMP default: C
 	VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP default: C
 
 [INFO]: P: E   T: R   R: R   Z: S   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteMonitor: D   
@@ -882,7 +889,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MindBolt/K5KerriganBurrowed default: Q
 	MindBolt/KerriganVoidBurrowed default: Q copyof: MindBolt/K5KerriganBurrowed default: Q
 
-[INFO]: P: J   T: 6   R: A   Z: B   TheCore Lite: N   TheCore LiteRehab: N   TheCore LiteMonitor: N   
+[INFO]: P: J   T: 6   R: A   Z: B   TheCore Lite: 5   TheCore LiteRehab: 5   TheCore LiteMonitor: 5   
 	HeroNukeCalldown/Nova default: N copyof: NukeCalldown/Ghost default: N
 	HeroNukeCalldown/Tosh default: N copyof: NukeCalldown/Ghost default: N
 	OdinNukeCalldown/Odin default: N copyof: NukeCalldown/Ghost default: N
@@ -1217,5 +1224,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 214 
+Finished (suggest inherit) - INFOs: 216 
 ============================

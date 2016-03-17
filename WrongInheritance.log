@@ -366,9 +366,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: N	N
-	TheCore LiteRehab: N	N
-	TheCore LiteMonitor: N	N
+	TheCore Lite: 5	5
+	TheCore LiteRehab: 5	5
+	TheCore LiteMonitor: 5	5
 	D: N	N (default)
 
 [ERROR]: HeroNukeCalldown/Tosh != NukeCalldown/Ghost
@@ -376,9 +376,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: N	N
-	TheCore LiteRehab: N	N
-	TheCore LiteMonitor: N	N
+	TheCore Lite: 5	5
+	TheCore LiteRehab: 5	5
+	TheCore LiteMonitor: 5	5
 	D: N	N (default)
 
 [ERROR]: HighTemplarHallucination/Nexus != HighTemplarHallucination/Sentry
@@ -706,9 +706,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: N	N
-	TheCore LiteRehab: N	N
-	TheCore LiteMonitor: N	N
+	TheCore Lite: 5	5
+	TheCore LiteRehab: 5	5
+	TheCore LiteMonitor: 5	5
 	D: N	N (default)
 
 [ERROR]: ProbeHallucination/Nexus != ProbeHallucination/Sentry
@@ -936,9 +936,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: 6	6
 	R: A	A
 	Z: B	H
-	TheCore Lite: N	N
-	TheCore LiteRehab: N	N
-	TheCore LiteMonitor: N	N
+	TheCore Lite: 5	5
+	TheCore LiteRehab: 5	5
+	TheCore LiteMonitor: 5	5
 	D: N	N (default)
 
 [ERROR]: StalkerHallucination/Nexus != StalkerHallucination/Sentry
