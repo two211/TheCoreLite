@@ -185,7 +185,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space   
 	FighterMode default: E
-	LiberatorAAMode/Liberator default: D
 	MorphToHellion/Hellion default: E
 	Raise/SupplyDepotLowered default: R
 
