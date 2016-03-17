@@ -180,6 +180,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: P: 4   T: 4   R: S   Z: G   TheCore Lite: R   TheCore LiteRehab: R   TheCore LiteMonitor: R   
 	ExplosiveMode default: D
+	LiberatorAAMode/Liberator default: D
 	Unsiege default: D
 	WidowMineUnburrow/WidowMine default: D
 
