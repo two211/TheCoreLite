@@ -95,7 +95,10 @@ Examples:
 Ghost/Raven/Liberator/Cyclone/BattleCruiser,
 Infestor/Viper/Ravager,
 High Templar/Sentry/Phoenix/Disruptor.
-S could also be used for such purpose (ring finger trick).
+It's important for caster groups to be able to select/cast in a raw.
+Same logic could be applied for harass units, which may benefit of it as well.
+
+**NOTE:** S could also be used for such purpose (ring finger trick).
 Utility group Z could also be used (with C usage), as well as group Q (with E usage).
 
 ### Additionnal cameras alternates (save camera view with "Ctl" or "Shift+Alt")
