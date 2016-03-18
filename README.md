@@ -91,7 +91,10 @@ AS <= steal
  X <= steal
 ```
 **NOTE:** W and X could be used for "precision" group, to hold down precision keys (E and C) for precise clicking.
-Examples: Ghost/Raven/Liberator/Cyclone, Infestor/Viper/Ravager, High Templar/Sentry/Phoenix/Disruptor.
+Examples:
+Ghost/Raven/Liberator/Cyclone/BattleCruiser,
+Infestor/Viper/Ravager,
+High Templar/Sentry/Phoenix/Disruptor.
 S could also be used for such purpose (ring finger trick).
 Utility group Z could also be used (with C usage), as well as group Q (with E usage).
 

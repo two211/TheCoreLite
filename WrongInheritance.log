@@ -446,9 +446,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T:  	R,D
 	R: S,F	S,F
 	Z:  	S
-	TheCore Lite: E,Space	E,Space
-	TheCore LiteRehab: E,Space	E,Space
-	TheCore LiteMonitor: E,Space	E,Space
+	TheCore Lite: E,C,Space	E,C,Space
+	TheCore LiteRehab: E,C,Space	E,C,Space
+	TheCore LiteMonitor: E,C,Space	E,C,Space
 	D: Y	Y (default)
 
 [ERROR]: HyperjumpHercules/Hercules != Hyperjump/Battlecruiser
@@ -836,9 +836,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: R,D	R,D
 	R: S,F	S,F
 	Z: G,S	S
-	TheCore Lite: E,Space	E,Space
-	TheCore LiteRehab: E,Space	E,Space
-	TheCore LiteMonitor: E,Space	E,Space
+	TheCore Lite: E,C,Space	E,C,Space
+	TheCore LiteRehab: E,C,Space	E,C,Space
+	TheCore LiteMonitor: E,C,Space	E,C,Space
 	D: E	Y (default)
 
 [ERROR]: SOAMothershipBlink/SOAMothershipv4 != Blink/Stalker

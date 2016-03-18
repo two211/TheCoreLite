@@ -357,9 +357,9 @@ in seed P, keys =4
 in seed T, keys =4
 in seed R, keys =S
 in seed Z, keys =G
-in seed TheCore Lite, keys =C
-in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteMonitor, keys =C
+in seed TheCore Lite, keys =F
+in seed TheCore LiteRehab, keys =F
+in seed TheCore LiteMonitor, keys =F
 
 [ERROR]: OracleWeaponOn not related to a conflict
 in seed P, keys =D
@@ -1320,9 +1320,9 @@ in seed P, keys =E
 in seed T, keys =R
 in seed R, keys =R
 in seed Z, keys =G
-in seed TheCore Lite, keys =E
-in seed TheCore LiteRehab, keys =E
-in seed TheCore LiteMonitor, keys =E
+in seed TheCore Lite, keys =E,C
+in seed TheCore LiteRehab, keys =E,C
+in seed TheCore LiteMonitor, keys =E,C
 
 [WARN]: Forge/Harvester not related to a conflict
 but is inherited
