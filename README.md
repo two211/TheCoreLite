@@ -46,10 +46,11 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Alt+Shift+23QWASZX are alternate to declare the camera
  * Alt+Space PushToTalk (to free Alt+Shift)
 * Group approach
- * all groups behave with steal (for easy split), except "Q" and "W"
+ * all groups behave with steal (for easy split)
+ * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
  * ~~all groups behave with steal (for easy split), except "Q" and "W"~~
  * ~~"Q" and "W" to be used for shared army groups to facilitate retreat/follow front-line~~
- * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
+ * **Note** dropped due difficulties handling 2 different logics
 * AI keys now supported
  * direct attack on Alt+D
  * direct scout on Alt+T
@@ -85,7 +86,7 @@ Examples of utility groups:
 Regular groups to be used for armies are:
 ```
 123 <= steal
- QW <= no steal
+ QW <= steal
  AS <= steal
 ```
 
