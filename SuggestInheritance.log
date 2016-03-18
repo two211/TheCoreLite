@@ -328,10 +328,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	RapidIncubation/SwarmHostBurrowed default: A
 	RapidIncubation/SwarmHostRooted default: A
 
-[INFO]: P: B   T: 5   R: 5   Z: A   TheCore Lite: V   TheCore LiteRehab: V   TheCore LiteMonitor: V   
-	BanelingNest/Drone default: B
-	SensorTower/SCV default: N
-
 [INFO]: P: B   T: B   R: W   Z: B   TheCore Lite: D   TheCore LiteRehab: D   TheCore LiteMonitor: D   
 	ResearchPhobosClassWeaponsSystem/StarportTechLab default: B
 	ResearchPhobosClassWeaponsSystem/StarportTechReactor default: B
@@ -1225,5 +1221,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 216 
+Finished (suggest inherit) - INFOs: 215 
 ============================
