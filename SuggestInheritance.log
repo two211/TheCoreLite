@@ -307,8 +307,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	GravitonBeam/Phoenix default: G
 	GravitonBeam/Urun default: G copyof: GravitonBeam/Phoenix default: G
 	GravitonBeamVoidCampaign/PhoenixPurifier default: G copyof: GravitonBeam/Phoenix default: G
-
-[INFO]: P: E,4   T: R,D   R: R,F   Z: G,S   TheCore Lite: Space,C   TheCore LiteRehab: Space,C   TheCore LiteMonitor: Space,C   
 	KD8Charge/Reaper default: D
 	LockOn/Cyclone default: C
 
@@ -593,7 +591,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ForceField/Sentry default: F
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
 
-[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: C,E,Space   TheCore LiteRehab: C,E,Space   TheCore LiteMonitor: C,E,Space   
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: Space,E,C   TheCore LiteRehab: Space,E,C   TheCore LiteMonitor: Space,E,C   
+	AdeptPhaseShift/Adept default: F
 	PurificationNovaTargeted/Disruptor default: V
 	VoidRaySwarmDamageBoost/VoidRay default: E
 
@@ -640,7 +639,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SCV default: S
 
 [INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space   
-	AdeptPhaseShift/Adept default: F
 	Blink/ShadowOfTheVoidStalker default: B copyof: Blink/Stalker default: B
 	Blink/Stalker default: B
 	BurrowChargeCampaign/HotSTorrasque default: C copyof: Blink/Stalker default: B
@@ -1222,5 +1220,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 216 
+Finished (suggest inherit) - INFOs: 215 
 ============================
