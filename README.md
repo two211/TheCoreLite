@@ -47,7 +47,8 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Alt+Space PushToTalk (to free Alt+Shift)
 * Group approach
  * all groups behave with steal (for easy split), except "Q" and "W"
- * "Q" and "W" to be used for shared army groups to facilitate retreat/follow front-line
+ * ~~all groups behave with steal (for easy split), except "Q" and "W"~~
+ * ~~"Q" and "W" to be used for shared army groups to facilitate retreat/follow front-line~~
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
 * AI keys now supported
  * direct attack on Alt+D
