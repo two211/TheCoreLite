@@ -70,10 +70,10 @@ The goal is encourage camera keys, having also the useful stuff pressing "Alt".
 ### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
 
 4 "Monitor" group alternates:
-* Alt+F is an alternate for "X" to be used for CC/Nexus+tech or hatches
-* Alt+D is an alternate for "Z" to be used for "production facilities" or "inject queens&tech"
-* Alt+V is an alternate for "`" to be used for utility group
-* **NOTE:** Shift+V is an alternate for Alt+D for the "inject queens" group (See "zerg macro routine" below)
+* Alt+F is an alternate for "1" to be used for CC/Nexus+tech or hatches
+* Alt+D is an alternate for "`" to be used for "production facilities" or "inject queens&tech"
+* Alt+V is an alternate for "Z" to be used for utility group
+* **NOTE:** Shift+V is an alternate for selecting the "inject queens" group (See "zerg macro routine" below)
 
 Examples of utility groups:
 * creep queens
@@ -82,13 +82,18 @@ Examples of utility groups:
 * base defense squad
 * whatever other useful group you could think about
 
-**Note:** "X" "Z" "`" groups have been chosen due to poor accessibility in TheCore Lite.
+**Note:** "`" "1" "Z" groups have been chosen due to poor accessibility in TheCore Lite.
 Regular groups to be used for armies are:
 ```
-123 <= steal
- QW <= steal
- AS <= steal
+23 <= steal
+QW <= steal
+AS <= steal
+ X <= steal
 ```
+**NOTE:** W and X could be used for "precision" group, to hold down precision keys (E and C) for precise clicking.
+Examples: Ghost/Raven/Liberator/Cyclone, Infestor/Viper/Ravager, High Templar/Sentry/Phoenix/Disruptor.
+S could also be used for such purpose (ring finger trick).
+Utility group Z could also be used (with C usage), as well as group Q (with E usage).
 
 ### Additionnal cameras alternates (save camera view with "Ctl" or "Shift+Alt")
 2 "Monitor" camera alternates:
@@ -119,13 +124,13 @@ Examples of use cases:
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research 
 * Creep queen
- * Alt+V = select creep queen
+ * Alt+V = select creep queen (or Z as this is on the same row as C)
  * hold C + clicks = drop creep tumors
 * Creep cameras (E or R)
  * Alt+E|R = jump to creep camera 1
  * double-click to select creep tumors
  * hold C + click = queue creep tumor
- * release C + click = select a creep tumor
+ * release C + click = select a new creep tumor
  * Alt+Shift+E|R = update creep camera (with center view)
 
 ### Monitor mode summary
@@ -137,8 +142,9 @@ ASDF
 ZXCV
 ```
 * Camera keys = QW, AS, ZX (Shift to go, Alt to create)
-* Camera keys = ER (Alt to go, Ctl or Shift+Alt to create)
-* Utility groups = DF (Alt to select), V (Alt or shift to select)
+* Monitor Camera keys = ER (Alt to go, Ctl or Shift+Alt to create)
+* Utility groups = DF (Alt to select), Shift+V for safe inject routine
+* Extra utility group = Alt+V or Z
 
 **Note about history:**
 
@@ -155,7 +161,10 @@ An alternate is necessary to:
 * produce workers (4)
 * select larva (4)
 * unload command (5)
+
+Other changes propagated to other variant
 * AI hotkey modifier has to change from Alt to Control
+* Remap of building using "V" for construction, to allow queued build (sensor tower & baneling nest)
 
 Changelog for the code
 ======================
