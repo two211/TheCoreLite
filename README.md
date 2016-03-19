@@ -63,7 +63,13 @@ TheCore LiteMonitor.SC2Hotkeys
 
 Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
 The principle is to use "Alt" as a "monitor mode" modifier.
-The goal is encourage camera keys, having also the useful stuff pressing "Alt".
+
+The goals are:
+* put all useful key on 3 lines
+* get a convenient macro mode key (Alt) : building groups + other utilities groups
+* encourage camera keys for rally points, creep spread and warp pylons
+* allow non-stealing group create|append that could be useful in some contexts
+* do not disturb TheCore Lite key spirit
 
 ### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
 
@@ -80,7 +86,7 @@ Examples of utility groups:
 * base defense squad
 * SCV construction team
 * whatever other useful group you could think about
-* **exception** Z or X group may be better for creep queens (read zerg routine below)
+* **exception** Z or X group may be better for *creep queens* (read zerg routine below)
 
 Army composed of different groups usage ("C" taken as an example):
 ```
