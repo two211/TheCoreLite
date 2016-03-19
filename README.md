@@ -50,13 +50,13 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
  * **Note** TheCore LiteMonitor allow some non-stealing alternates
 * AI keys now supported
- * direct attack on Alt+D
- * direct scout on Alt+T
- * direct detect on Alt+F
- * direct expand on Alt+G
- * open AI communication on Alt+C
- * build on Alt+B
- * clearall on Alt+V
+ * direct attack on Ctl+D
+ * direct scout on Ctl+T
+ * direct detect on Ctl+F
+ * direct expand on Ctl+G
+ * open AI communication on Ctl+C
+ * build on Ctl+B
+ * clearall on Ctl+V
 
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
