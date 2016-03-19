@@ -2079,9 +2079,9 @@ in seed P, keys =D
 in seed T, keys =4
 in seed R, keys =F
 in seed Z, keys =Q
-in seed TheCore Lite, keys =C
-in seed TheCore LiteRehab, keys =C
-in seed TheCore LiteMonitor, keys =C
+in seed TheCore Lite, keys =Space
+in seed TheCore LiteRehab, keys =Space
+in seed TheCore LiteMonitor, keys =Space
 
 [WARN]: SpawnBanelings/K5Kerrigan not related to a conflict
 but is part of same check

@@ -377,11 +377,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
 
 [INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteMonitor: C   
-	CloakOnBanshee default: C
 	ResearchBansheeCloak/StarportTechReactor default: C copyof: ResearchBansheeCloak/StarportTechLab default: C
 	ResearchPersonalCloaking/GhostAcademy default: C
-	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
-	WraithCloakOn/Wraith default: C copyof: CloakOnBanshee default: C
 
 [INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite: E   TheCore LiteRehab: E   TheCore LiteMonitor: E   
 	ResearchHallucination/CyberneticsCore default: H
@@ -401,6 +398,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmHostRoot/SwarmHost default:  copyof: SwarmHostBurrowDown default: R
 	SwarmHostRoot/SwarmHostSplitA default:  copyof: SwarmHostBurrowDown default: R
 	SwarmHostRoot/SwarmHostSplitB default:  copyof: SwarmHostBurrowDown default: R
+
+[INFO]: P: D   T: 4   R: F   Z: Q   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space   
+	CloakOnBanshee default: C
+	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
+	WraithCloakOn/Wraith default: C copyof: CloakOnBanshee default: C
 
 [INFO]: P: D   T: 4   R: S   Z: 2   TheCore Lite: C   TheCore LiteRehab: C   TheCore LiteMonitor: C   
 	ReaperSpeed/BarracksTechLab default: N
@@ -587,6 +589,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchCerberusMines/FactoryTechReactor default: C copyof: ResearchCerberusMines/FactoryTechLab default: C
 	VoidSentryChronoBeam/SentryPurifier default: C
 
+[INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: CapsLock,C   TheCore LiteRehab: CapsLock,C   TheCore LiteMonitor: CapsLock,C   
+	RaynorSnipe/RaynorCommando default: T
+	Sentry default: E
+
 [INFO]: P: E   T: R   R: R   Z: G   TheCore Lite: E,C   TheCore LiteRehab: E,C   TheCore LiteMonitor: E,C   
 	ForceField/Sentry default: F
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
@@ -660,7 +666,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MindBlast/Tosh default: B
 	ProtossAirArmorLevel1/CyberneticsCore default: A
 	ProtossGroundArmorLevel1/Forge default: A
-	RaynorSnipe/RaynorCommando default: T
 	StalkerBlinkShieldRestoreBase/StalkerShakuras default: B copyof: Blink/Stalker default: B
 	TerranInfantryArmorLevel1/EngineeringBay default: A
 	TerranInfantryArmorVanadiumPlatingLevel1/EngineeringBay default: A copyof: TerranInfantryArmorLevel1/EngineeringBay default: A
@@ -1115,7 +1120,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
 	StukovInfestedTerrans/InfestedStukov default: T,W copyof: InfestedTerrans/Infestor default: T
 
-[INFO]: P: V   T: D   R: 2,6   Z: S   TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LiteMonitor: Space   
+[INFO]: P: V   T: D   R: 2,6   Z: S   TheCore Lite: CapsLock,C   TheCore LiteRehab: CapsLock,C   TheCore LiteMonitor: CapsLock,C   
 	NovaSnipe/Nova default: R copyof: Snipe/Ghost default: R
 	Snipe/Ghost default: R
 
@@ -1220,5 +1225,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 215 
+Finished (suggest inherit) - INFOs: 217 
 ============================

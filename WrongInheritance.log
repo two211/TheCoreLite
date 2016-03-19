@@ -916,9 +916,9 @@ Start wrong inherit (log file: WrongInheritance.log)
 	T: X	X
 	R: Tab	Tab
 	Z: Tab	B
-	TheCore Lite: F	F
-	TheCore LiteRehab: F	F
-	TheCore LiteMonitor: F	F
+	TheCore Lite: 4	4
+	TheCore LiteRehab: 4	4
+	TheCore LiteMonitor: 4	4
 	D: F	F (default)
 
 [ERROR]: SpectreNukeArm/GhostAcademy != NukeArm/GhostAcademy
