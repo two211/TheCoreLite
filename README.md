@@ -70,25 +70,35 @@ The goal is encourage camera keys, having also the useful stuff pressing "Alt".
 ### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
 
 4 "Monitor" group alternates:
-* Alt+F is an alternate for "1" to be used for CC/Nexus+tech or hatches
 * Alt+D is an alternate for "`" to be used for "production facilities" or "inject queens&tech"
-* Alt+V is an alternate for "Z" to be used for utility group
+* Alt+F is an alternate for "1" to be used for CC/Nexus+tech or hatches
+* Alt+C is an alternate for "2" to be used for utility group or army composed of different groups (not behave with steal)
+* Alt+V is an alternate for "3" to be used for utility group or army composed of different groups (not behave with steal)
 * **NOTE:** Shift+V is an alternate for selecting the "inject queens" group (See "zerg macro routine" below)
 
 Examples of utility groups:
-* creep queens
 * mothership (core)
 * wall supply depot
 * base defense squad
+* SCV construction team
 * whatever other useful group you could think about
+* *exception* Z or X group may be better for creep queens
 
-**Note:** "`" "1" "Z" groups have been chosen due to poor accessibility in TheCore Lite.
+Army composed of different groups usage ("C" taken as an example):
+```
+Control+?+C => appendSteal selection to group ? then append to group on key "2"
+? , Control+C => select group # then append to group on key "2"
+Control+Shift+C => create group "2" based on selection, without stealing units
+Alt+C , D => select group "2" then attack
+```
+
+**Note:** "`" "1" "2" "3" groups have been chosen due to poor accessibility in TheCore Lite.
 Regular groups to be used for armies are:
 ```
-23 <= steal
-QW <= steal
-AS <= steal
- X <= steal
+steal => 23
+steal => QW
+steal => AS
+steal => ZX|CV <= non-steal (selection with Alt)
 ```
 **NOTE:** W and X could be used for "precision" group, to hold down precision keys (E and C) for precise clicking.
 Examples:
@@ -97,18 +107,21 @@ Infestor/Viper/Ravager,
 High Templar/Sentry/Phoenix/Disruptor.
 It's important for caster groups to be able to select/cast in a raw.
 Same logic could be applied for harass units, which may benefit of it as well.
+Groups keys convenient for fast selection&cast are:
+```
+QW
+AS
+ZX
+```
 
-**NOTE:** S could also be used for such purpose (ring finger trick).
-Utility group Z could also be used (with C usage), as well as group Q (with E usage).
-
-### Additionnal cameras alternates (save camera view with "Ctl" or "Shift+Alt")
+### Additionnal cameras alternates (save camera view with "Ctl" or "Alt+Shift")
 2 "Monitor" camera alternates:
 * Alt+E is an alternate for Shift+2
 * Alt+R is an alternate for Shift+3
 
 Camera creation:
 * Ctl+E|R = free camera
-* Alt+Shift+E|R = camera with previous center view
+* Alt+Shift+E|R = camera creation with preliminary center view with Alt+Shift
 
 Examples of use cases:
 * Rally points = free camera
@@ -130,7 +143,7 @@ Examples of use cases:
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research 
 * Creep queen
- * Alt+V = select creep queen (or Z as this is on the same row as C)
+ * Z = select creep queen (same raw as C for spawn creep tumor)
  * hold C + clicks = drop creep tumors
 * Creep cameras (E or R)
  * Alt+E|R = jump to creep camera 1
@@ -155,7 +168,8 @@ ZXCV
 **Note about history:**
 
 An "Alt" overlay has been preferred as the Alt modifier is under a stronger finger: the thumb.
-Only Shift+V serves for compliance with [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_%28Legacy_of_the_Void%29#The_Core_Method), as nobody would queue Stop.
+Only Shift+V serves for compliance with [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_%28Legacy_of_the_Void%29#The_Core_Method)
+, as nobody would queue Stop.
 
 A former version was based on a "Shift" overlay:
 * it was tiring for the little finger especially for zerg macro routine.
@@ -168,7 +182,9 @@ An alternate is necessary to:
 * select larva (4)
 * unload command (5)
 
-Other changes propagated to other variant
+*Doubt:* is it really necessary ? may be dropped in the future
+
+Other related changes propagated to other variants
 * AI hotkey modifier has to change from Alt to Control
 * Remap of building using "V" for construction, to allow queued build (sensor tower & baneling nest)
 
