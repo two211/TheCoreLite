@@ -48,9 +48,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Group approach
  * all groups behave with steal (for easy split)
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
- * ~~all groups behave with steal (for easy split), except "Q" and "W"~~
- * ~~"Q" and "W" to be used for shared army groups to facilitate retreat/follow front-line~~
- * **Note** dropped due difficulties handling 2 different logics
+ * **Note** TheCore LiteMonitor allow some non-stealing alternates
 * AI keys now supported
  * direct attack on Alt+D
  * direct scout on Alt+T
@@ -98,7 +96,7 @@ Regular groups to be used for armies are:
 steal => 23
 steal => QW
 steal => AS
-steal => ZX|CV <= non-steal (selection with Alt)
+steal => ZX|CV <= non-steal alternate for "23" (selection with Alt)
 ```
 **NOTE:** W and X could be used for "precision" group, to hold down precision keys (E and C) for precise clicking.
 Examples:
@@ -155,7 +153,6 @@ Examples of use cases:
 ### Monitor mode summary
 Accessible keys in "Monitor" mode (pressing Shift)
 ```
-   4
 QWER
 ASDF
 ZXCV
@@ -163,7 +160,7 @@ ZXCV
 * Camera keys = QW, AS, ZX (Shift to go, Alt to create)
 * Monitor Camera keys = ER (Alt to go, Ctl or Shift+Alt to create)
 * Utility groups = DF (Alt to select), Shift+V for safe inject routine
-* Extra utility group = Alt+V or Z
+* Extra utility group = CV (Alt to select), behave with non-steal
 
 **Note about history:**
 
@@ -177,12 +174,11 @@ A former version was based on a "Shift" overlay:
 
 **Drawbacks of the "Alt" overlay:**
 
-An alternate is necessary to:
+Space is not being pressable with Alt, making a couple of action difficult to do.
+~~Following changes could be used:
 * produce workers (4)
 * select larva (4)
-* unload command (5)
-
-*Doubt:* is it really necessary ? may be dropped in the future
+* unload command (5)~~
 
 Other related changes propagated to other variants
 * AI hotkey modifier has to change from Alt to Control
