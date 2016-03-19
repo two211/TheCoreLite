@@ -80,7 +80,7 @@ Examples of utility groups:
 * base defense squad
 * SCV construction team
 * whatever other useful group you could think about
-* *exception* Z or X group may be better for creep queens
+* **exception** Z or X group may be better for creep queens (read zerg routine below)
 
 Army composed of different groups usage ("C" taken as an example):
 ```
@@ -141,7 +141,7 @@ Examples of use cases:
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research 
 * Creep queen
- * Z = select creep queen (same raw as C for spawn creep tumor)
+ * Z = select creep queen (same raw as C for fast spawn creep tumor)
  * hold C + clicks = drop creep tumors
 * Creep cameras (E or R)
  * Alt+E|R = jump to creep camera 1
