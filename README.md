@@ -175,10 +175,10 @@ A former version was based on a "Shift" overlay:
 **Drawbacks of the "Alt" overlay:**
 
 Space is not being pressable with Alt, making a couple of action difficult to do.
-~~Following changes could be used:
-* produce workers (4)
-* select larva (4)
-* unload command (5)~~
+~~Following changes could be used:~~
+* ~~produce workers (4)~~
+* ~~select larva (4)~~
+* ~~unload command (5)~~
 
 Other related changes propagated to other variants
 * AI hotkey modifier has to change from Alt to Control
