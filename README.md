@@ -118,6 +118,22 @@ AS
 ZX
 ```
 
+### Group display
+
+The 2 "macro" groups (` and 1) are positioned in the center to split the remaining groups by 4 keys.
+This facilitates the visual representation of existing groups.
+Unstealable groups (2 and 3) are the 2 first groups displayed.
+
+The 10 groups are displayed in this order (| figures the separation):
+```
+23QW|`1|ASZX <= standard group keys
+CV  |DF|     <=  monitor group keys
+```
+
+**NOTE:** the icon representing the group seems to be the best selectable unit at group creation.
+If you wanted to update the icon, select the group and recreate it.
+You'd better avoid such funny business if you use monitor unstealable groups (CV).
+
 ### Additionnal cameras alternates (save camera view with "Ctl" or "Alt+Shift")
 2 "Monitor" camera alternates:
 * Alt+E is an alternate for Shift+2
