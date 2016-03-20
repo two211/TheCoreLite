@@ -148,13 +148,16 @@ Examples of use cases:
  * browse subgroup + add new research 
 * Creep queen
  * Z = select creep queen (same raw as C for fast spawn creep tumor)
- * hold C + clicks = drop creep tumors
+ * Shift+C + clicks = drop creep tumors (queued)
 * Creep cameras (E or R)
  * Alt+E|R = jump to creep camera 1
  * double-click to select creep tumors
- * hold C + click = queue creep tumor
- * release C + click = select a new creep tumor
+ * Shift+C + click = queue creep tumor
+ * click = select a new creep tumor
  * Alt+Shift+E|R = update creep camera (with center view)
+
+**NOTE:** creep tumor spawn/expand could be perform without queue
+, if you're not careful you would have to cancel the action before selection with click or double-click
 
 ### Monitor mode summary
 Accessible keys in "Monitor" mode (pressing Shift)
