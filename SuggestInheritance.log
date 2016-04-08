@@ -1016,7 +1016,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EMP/ScienceVessel default: 
 	EvadeObserver/Observer default: 
 	Guardian/Mutalisk default: 
-	HotSBioPlasmidDischarge/HotSLeviathan default: Q
 	InjectLarva/Queen default: 
 	LaunchNullWard/NullSphere default: 
 	LockdownRound/Ghost default: 
