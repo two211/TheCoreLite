@@ -33,9 +33,9 @@ TheCore LiteRehab.SC2Hotkeys
 Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Function key reorganization
  * F2 ToggleColors (no more Select all army on this key)
- * Shift+F2 CameraFollow
+ * Shift+F2 Team Ressources
  * Shift+F3 Select all army (moved to prevent over-use)
- * Shift+F4 Team Ressources
+ * Shift+F4 CameraFollow
  * Shift+F7 Warp (to encourage production group)
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
