@@ -48,7 +48,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Group approach
  * all groups behave with steal (for easy split)
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
- * **Note** TheCore LiteMonitor allow some non-stealing alternates
+ * **Note** TheCore LiteMonitor allows some non-stealing alternates
 * AI keys now supported
  * direct attack on Ctl+D
  * direct scout on Ctl+T
@@ -65,7 +65,7 @@ Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
 The principle is to use "Alt" as a "monitor mode" modifier.
 
 The goals are:
-* put all useful key on 3 lines
+* put all useful keys on 3 lines
 * get a convenient macro mode key (Alt) : building groups + other utilities groups
 * encourage camera keys for rally points, creep spread and warp pylons
 * allow non-stealing group create|append that could be useful in some contexts
@@ -90,8 +90,8 @@ Examples of utility groups:
 
 Army composed of different groups usage ("C" taken as an example):
 ```
-Control+?+C => appendSteal selection to group ? then append to group on key "2"
-? , Control+C => select group # then append to group on key "2"
+Control+<group_#>+C => appendSteal selection to group #, then append to group on key "2"
+<group_#>,  Control+C => select group # then, append to group on key "2"
 Control+Shift+C => create group "2" based on selection, without stealing units
 Alt+C , D => select group "2" then attack
 ```
