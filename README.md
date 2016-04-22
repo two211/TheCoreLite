@@ -47,16 +47,16 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Alt+Space PushToTalk (to free Alt+Shift)
 * Group approach
  * all groups behave with steal (for easy split)
+ * Extra Alt modifier enables non-steal behavior
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
- * **Note** TheCore LiteMonitor allows some non-stealing alternates
 * AI keys now supported
- * direct attack on Ctl+D
- * direct scout on Ctl+T
- * direct detect on Ctl+F
- * direct expand on Ctl+G
- * open AI communication on Ctl+C
- * build on Ctl+B
- * clearall on Ctl+V
+ * open AI communication on Ctl+Tab
+ * direct attack on D
+ * direct scout on T
+ * direct detect on F
+ * direct expand on G
+ * build on C 
+ * clearall on V
 
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
@@ -65,7 +65,7 @@ Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
 The principle is to use "Alt" as a "monitor mode" modifier.
 
 The goals are:
-* put all useful keys on 3 lines
+* put all useful group&camera bindkeys over commands
 * get a convenient macro mode key (Alt) : building groups + other utilities groups
 * encourage camera keys for rally points, creep spread and warp pylons
 * allow non-stealing group create|append that could be useful in some contexts
@@ -73,36 +73,19 @@ The goals are:
 
 ### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
 
-4 "Monitor" group alternates:
-* Alt+D is an alternate for "`" to be used for "production facilities" or "inject queens&tech"
-* Alt+F is an alternate for "1" to be used for CC/Nexus+tech or hatches
-* Alt+C is an alternate for "2" to be used for utility group or army composed of different groups (not behave with steal)
-* Alt+V is an alternate for "3" to be used for utility group or army composed of different groups (not behave with steal)
-* **NOTE:** Shift+V is an alternate for selecting the "inject queens" group (See "zerg macro routine" below)
+2 "Monitor" group alternates:
+* Alt+D is an alternate for "`" to be used for CC/Nexus+tech or hatches
+* Alt+V is an alternate for "1" to be used for "production facilities" or "inject queens&tech"
+* Ctl+V is an alternate for "1" to be used for "production facilities" or "inject queens&tech"
+* Shift+V is an alternate for "1" to be used for "production facilities" or "inject queens&tech"
 
-Examples of utility groups:
-* mothership (core)
-* wall supply depot
-* base defense squad
-* SCV construction team
-* whatever other useful group you could think about
-* **exception** Z or X group may be better for *creep queens* (read zerg routine below)
-
-Army composed of different groups usage ("C" taken as an example):
-```
-Control+<group_#>+C => appendSteal selection to group #, then append to group on key "2"
-<group_#>,  Control+C => select group # then, append to group on key "2"
-Control+Shift+C => create group "2" based on selection, without stealing units
-Alt+C , D => select group "2" then attack
-```
-
-**Note:** "`" "1" "2" "3" groups have been chosen due to poor accessibility in TheCore Lite.
+**Note:** "`" "1" groups have been chosen due to poor accessibility in TheCore Lite.
 Regular groups to be used for armies are:
 ```
 steal => 23
 steal => QW
 steal => AS
-steal => ZX|CV <= non-steal alternate for "23" (selection with Alt)
+steal => ZX
 ```
 **NOTE:** W and X could be used for "precision" group, to hold down precision keys (E and C) for precise clicking.
 Examples:
@@ -113,9 +96,9 @@ It's important for caster groups to be able to select/cast in a raw.
 Same logic could be applied for harass units, which may benefit of it as well.
 Groups keys convenient for fast selection&cast are:
 ```
-QW
+QW <= in line with E
 AS
-ZX
+ZX <= in line with C
 ```
 
 ### Group display
@@ -127,87 +110,93 @@ Unstealable groups (2 and 3) are the 2 first groups displayed.
 The 10 groups are displayed in this order (| figures the separation):
 ```
 23QW|`1|ASZX <= standard group keys
-CV  |DF|     <=  monitor group keys
+    |DV|     <=  monitor group keys (Alt+D|V, Control+V)
 ```
 
-**NOTE:** the icon representing the group seems to be the best selectable unit at group creation.
+**NOTE:** the icon representing the group seems to be the best selectable unit at group creation
 If you wanted to update the icon, select the group and recreate it.
-You'd better avoid such funny business if you use monitor unstealable groups (CV).
 
-### Additionnal cameras alternates (save camera view with "Ctl" or "Alt+Shift")
+### Additionnal cameras alternates
 2 "Monitor" camera alternates:
-* Alt+E is an alternate for Shift+2
-* Alt+R is an alternate for Shift+3
+* Control+E is an alternate for Shift+2
+* Control+R is an alternate for Shift+3
 
 Camera creation:
-* Ctl+E|R = free camera
-* Alt+Shift+E|R = camera creation with preliminary center view with Alt+Shift
+* Ctl+R is an alternate for Alt+2
+* Ctl+F is an alternate for Alt+3
+* Ctl+G center camera view (if you want to center a warp pylon, or a creep tumor)
 
-Examples of use cases:
-* Rally points = free camera
-* Warp Pylon = centered camera
-* Creep Tumor zone = centered or free camera (see "zerg macro routine")
+### Nexus/CC/Hatch group
+* Corresponds to group `
+* Alt+D helps select this group
+* Ctl+` append selection to this group (same behavior as standard group)
+* Ctl+Shift+` create group from selection (same behavior as standard group)
 
-**NOTE:** Shift+Alt+E|R doesn't center the camera if Alt is pressed after Shift
+Tip for additional expansion
+* Alt+Tab helps to append base to this group after camera creation
+* Alt+Shift helps to center base at camera creation
+
+### Production group
+* Corresponds to group 1
+* Alt+V helps select this group (for macro monitoring)
+* Ctl+V helps select this group (for warp-in at camera)
+* Shift+V helps select this group (for inject queen to initiate TheCore inject)
+* Ctl+1 appends selection to this group (same behavior as standard group)
+* Ctl+Shift+1 creates group from selection (same behavior as standard group)
+
+### Use case: expansions
+* Select new base
+* Alt+Shift: center view on base
+* Alt(+Shift)+Q|W|A|S|Z|X: make view on associated key
+* Alt+Tab: append expansion to Nexus/CC/Hatch group
+
+### Use case: warp-in
+* Ctl+V: select production facilities (WarpGate have higher selection priority)
+* Ctl+DE: center on warp pylon
+* hold key for warping-in units (rapid fire warp-in)
+* Ctl+click: on a unit, select all units for this type
+* Ctl+2|3|Q|W|A|S|Z|X: add selection to a group
 
 ### Use case: zerg macro routine
 * Hatch check
- * Alt+F = hatch group + tech 
+ * Alt+D = hatch group
  * try to check supply depot at this step
 * Inject cycle (hold Shift)
  * Shift+V = select inject queens + tech
  * Shift+Space = queue inject (prevent queens from walking around)
  * center mouse
- * Shift+Z|X|A|S + click = base camera + inject
+ * Shift+Q|W|A|S|Z|X+click = base camera + inject
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research 
 * Creep queen
  * Z = select creep queen (same raw as C for fast spawn creep tumor)
  * Shift+C + clicks = drop creep tumors (queued)
-* Creep cameras (E or R)
- * Alt+E|R = jump to creep camera 1
- * double-click to select creep tumors
- * Shift+C + click = queue creep tumor
+* Creep cameras (E or D)
+ * Ctl+E|D = jump to creep camera
+ * Ctl+click to select creep tumors
+ * Shift+C then clicks = queued creep tumor spread
  * click = select a new creep tumor
- * Alt+Shift+E|R = update creep camera (with center view)
+ * Ctl+G = center view on selection
+ * Ctl+E|D = update creep camera
 
 **NOTE:** creep tumor spawn/expand could be perform without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
 
 ### Monitor mode summary
-Accessible keys in "Monitor" mode (pressing Shift)
+Accessible keys in "Monitor" mode:
 ```
+23
 QWER
-ASDF
+ASDFG
 ZXCV
 ```
-* Camera keys = QW, AS, ZX (Shift to go, Alt to create)
-* Monitor Camera keys = ER (Alt to go, Ctl or Shift+Alt to create)
-* Utility groups = DF (Alt to select), Shift+V for safe inject routine
-* Extra utility group = CV (Alt to select), behave with non-steal
-
-**Note about history:**
-
-An "Alt" overlay has been preferred as the Alt modifier is under a stronger finger: the thumb.
-Only Shift+V serves for compliance with [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_%28Legacy_of_the_Void%29#The_Core_Method)
-, as nobody would queue Stop.
-
-A former version was based on a "Shift" overlay:
-* it was tiring for the little finger especially for zerg macro routine.
-* it messed up the queued command
-
-**Drawbacks of the "Alt" overlay:**
-
-Space is not being pressable with Alt, making a couple of action difficult to do.
-~~Following changes could be used:~~
-* ~~produce workers (4)~~
-* ~~select larva (4)~~
-* ~~unload command (5)~~
-
-Other related changes propagated to other variants
-* AI hotkey modifier has to change from Alt to Control
-* Remap of building using "V" for construction, to allow queued build (sensor tower & baneling nest)
+* Camera keys = Q|W, A|S, Z|X (Shift to go, Alt to create)
+* Monitor Camera keys jump = Ctl+E|D
+* Monitor Camera keys creation = Ctl+R|F
+* Monitor Camera center = Ctl+G
+* Nexus/CC/Hatch group selection = Alt+D
+* Production group selection = Alt+V Ctl+V Shift+V
 
 Changelog for the code
 ======================
