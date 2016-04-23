@@ -149,6 +149,8 @@ Tip for additional expansion
 * Shift+V helps select this group (for inject queen to initiate TheCore inject)
 * Ctl+1 appends selection to this group (same behavior as standard group)
 * Ctl+Shift+1 creates group from selection (same behavior as standard group)
+* Alt+1 (alternate for Alt+2) save the camera for later building inclusion
+* Shift+1 (alternate for Shift+1) all recall to build zone
 
 ### Use case: expansions
 * Select new base
