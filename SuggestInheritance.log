@@ -1211,10 +1211,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranBuildAdvanced/SCV default: V
 	ZergBuildAdvanced/Drone default: V
 
-[INFO]: P: Alt+X   T: Alt+X   R: Alt+X   Z: Alt+X   TheCore Lite: Alt+X   TheCore LiteRehab: V   TheCore LiteMonitor: V   
-	AIClearAll default: Alt+X
-	AIDelete default: Alt+X
-
 [INFO]: P: Escape   T: Escape   R: Escape   Z: Escape   TheCore Lite: Escape   TheCore LiteRehab: Escape   TheCore LiteMonitor: Escape   
 	ChatCancel default: Escape
 	CinematicSkip default: Escape
@@ -1222,5 +1218,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 216 
+Finished (suggest inherit) - INFOs: 215 
 ============================

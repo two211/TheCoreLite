@@ -2,18 +2,18 @@
 AllowSetConflicts=1
 
 [Hotkeys]
-AIArmy=E
-AIBuild=J
-AIClearAll=K
-AICommunication=Control+Tab
-AIDelete=K
-AIDetect=U
-AIExpand=I
-AIScout=Y
+AIArmy=Control+Alt+E
+AIBuild=Control+Alt+J
+AIClearAll=Control+Alt+Period
+AICommunication=Control+Alt+Tab
+AIDelete=Control+Alt+P
+AIDetect=Control+Alt+U
+AIExpand=Control+Alt+I
+AIScout=Control+Alt+Y
 AlertRecall=Tab
-ArmySelect=Shift+F3
+ArmySelect=Shift+F3,Control+Shift+Tab
 CameraCenter=Alt+Shift
-CameraFollow=Shift+F4
+CameraFollow=Shift+F8
 CameraPush=MiddleMouseButton
 CameraSave0=Alt+2,Shift+Alt+2
 CameraSave1=Alt+3,Shift+Alt+3
@@ -144,7 +144,7 @@ ObserveZoomCameraLevel2=Shift+T
 PTT=Alt+Space
 PauseGame=Pause
 QuickPing=Control+Alt+LeftMouseButton
-QuickSave=Control+Shift+Alt+O
+QuickSave=Shift+F4
 ReplayHide=Control+Y
 ReplayPlayPause=L,MediaPlay,MediaPause,MediaPlayPause
 ReplayRestart=Control+Period
