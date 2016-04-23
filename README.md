@@ -74,7 +74,6 @@ The goals are:
 * put all useful group&camera bindkeys over commands
 * get a convenient macro mode key (Alt) : building groups + other utilities groups
 * encourage camera keys for rally points, creep spread and warp pylons
-* allow non-stealing group create|append that could be useful in some contexts
 * do not disturb TheCore Lite key spirit
 
 ### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
