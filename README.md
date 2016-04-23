@@ -35,8 +35,9 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * F2 ToggleColors (no more Select all army on this key)
  * Shift+F2 Team Ressources
  * Shift+F3 Select all army (moved to prevent over-use)
- * Shift+F4 CameraFollow
+ * Shift+F4 Quick save
  * Shift+F7 Warp (to encourage production group)
+ * Shift+F8 CameraFollow
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
  * Shift+Tab : Rotate Right (help to spot invisible)
@@ -50,13 +51,14 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Extra Alt modifier enables non-steal behavior
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
 * AI keys now supported
- * open AI communication on Ctl+Tab
- * direct attack on D
- * direct scout on T
- * direct detect on F
- * direct expand on G
- * build on C 
- * clearall on V
+ * open AI communication on Ctl+Alt+Tab
+ * direct attack on Ctl+Alt+D
+ * direct scout on Ctl+Alt+T
+ * direct detect on Ctl+Alt+F
+ * direct expand on Ctl+Alt+G
+ * build on Ctl+Alt+C 
+ * clearall on Ctl+Alt+E
+ * delete on Ctl+Alt+R
 
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
