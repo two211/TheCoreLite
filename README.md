@@ -42,6 +42,10 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Tab : Alert Jump
  * Shift+Tab : Rotate Right (help to spot invisible)
  * Shift+Grave : Rotate Left (help to spot invisible)
+* Select all army army alternate : Ctrl+Shift+Tab
+ * More difficult than F2, but makes more sense
+ * Ctrl+Shift+click will remove entire unit type from selection 
+ * Ctrl+Shift+Alt+#group key will create non-steal the group
 * Support for autocentered cameras
  * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
  * Alt+Shift+23QWASZX are alternate to declare the camera
