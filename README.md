@@ -42,10 +42,10 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Tab : Alert Jump
  * Shift+Tab : Rotate Right (help to spot invisible)
  * Shift+Grave : Rotate Left (help to spot invisible)
-* Select all army army alternate : Ctrl+Shift+Tab
+* Select all army army alternate : Ctl+Shift+Tab
  * More difficult than F2, but makes more sense
- * Ctrl+Shift+click will remove entire unit type from selection 
- * Ctrl+Shift+Alt+#group key will create non-steal the group
+ * Ctl+Shift+click will remove entire unit type from selection 
+ * Ctl+Shift+Alt+#group key will create non-steal the group
 * Support for autocentered cameras
  * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
  * Alt+Shift+23QWASZX are alternate to declare the camera
@@ -76,7 +76,7 @@ The goals are:
 * encourage camera keys for rally points, creep spread and warp pylons
 * do not disturb TheCore Lite key spirit
 
-### Additional groups alternates (create/add work the same Ctrl+Shift/Ctrl):
+### Additional groups alternates (create/add work the same Ctl+Shift/Ctl):
 
 2 "Monitor" group alternates:
 * Alt+D is an alternate for "`" to be used for CC/Nexus+tech or hatches
@@ -115,7 +115,7 @@ Unstealable groups (2 and 3) are the 2 first groups displayed.
 The 10 groups are displayed in this order (| figures the separation):
 ```
 23QW|`1|ASZX <= standard group keys
-    |DV|     <=  monitor group keys (Alt+D|V, Control+V)
+    |DV|     <=  monitor group keys (Alt+D|V, Ctl+V)
 ```
 
 **NOTE:** the icon representing the group seems to be the best selectable unit at group creation
@@ -123,13 +123,13 @@ If you wanted to update the icon, select the group and recreate it.
 
 ### Additionnal cameras alternates
 2 "Monitor" camera alternates:
-* Control+E is an alternate for Shift+2
-* Control+R is an alternate for Shift+3
+* Ctl+E is an alternate for Shift+2
+* Ctl+R is an alternate for Shift+3
 
 Camera creation:
 * Ctl+R is an alternate for Alt+2
 * Ctl+F is an alternate for Alt+3
-* Ctl+G center camera view (if you want to center a warp pylon, or a creep tumor)
+* Ctl+Space center camera view (if you want to center a warp pylon, or a creep tumor)
 
 ### Nexus/CC/Hatch group
 * Corresponds to group `
@@ -189,7 +189,7 @@ Tip for additional expansion
  * Ctl+click to select creep tumors
  * Shift+C then clicks = queued creep tumor spread
  * click = select a new creep tumor
- * Ctl+G = center view on selection
+ * Ctl+Space = center view on selection
  * Ctl+R|F = update creep camera
 
 **NOTE:** creep tumor spawn/expand could be perform without queue
@@ -202,11 +202,12 @@ Accessible keys in "Monitor" mode:
 QWER
 ASDF
 ZXCV
+Space
 ```
 * Camera keys = Q|W, A|S, Z|X (Shift to go, Alt to create)
 * Monitor Camera keys jump = Ctl+E|D
 * Monitor Camera keys creation = Ctl+R|F
-* Monitor Camera center = Ctl+C
+* Monitor Camera center = Ctl+Space
 * Nexus/CC/Hatch group selection = Alt+D
 * Production group selection = Alt+V Ctl+V Shift+V
 
