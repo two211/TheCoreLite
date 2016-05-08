@@ -42,10 +42,8 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Tab : Alert Jump
  * Shift+Tab : Rotate Right (help to spot invisible)
  * Shift+Grave : Rotate Left (help to spot invisible)
-* Select all army army alternate : Ctl+Shift+Tab
- * More difficult than F2, but makes more sense
- * Ctl+Shift+click will remove entire unit type from selection 
- * Ctl+Shift+Alt+#group key will create non-steal the group
+ * Ctl+Tab : alternate for "select all army"
+ * Ctl+Shift+Tab : alternate for "select all army"
 * Support for autocentered cameras
  * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
  * Alt+Shift+23QWASZX are alternate to declare the camera
@@ -60,9 +58,17 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * direct scout on Ctl+Alt+T
  * direct detect on Ctl+Alt+F
  * direct expand on Ctl+Alt+G
- * build on Ctl+Alt+C 
+ * build on Ctl+Alt+C
  * clearall on Ctl+Alt+E
  * delete on Ctl+Alt+R
+
+### Select all army Tab alternates
+
+* Ctl+Shift+Tab
+ * Ctl+Shift+click will remove entire unit type from selection
+ * Ctl+Shift+Alt+#group key will create non-steal the group
+* Ctl+Tab
+ * Ctl+click will select only unit of the clicked type
 
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
@@ -124,7 +130,7 @@ If you wanted to update the icon, select the group and recreate it.
 ### Additionnal cameras alternates
 2 "Monitor" camera alternates:
 * Ctl+E is an alternate for Shift+2
-* Ctl+R is an alternate for Shift+3
+* Ctl+D is an alternate for Shift+3
 
 Camera creation:
 * Ctl+R is an alternate for Alt+2
@@ -138,8 +144,8 @@ Camera creation:
 * Ctl+Shift+` create group from selection (same behavior as standard group)
 
 Tip for additional expansion
-* Alt+Tab helps to append base to this group after camera creation
-* Alt+Shift helps to center base at camera creation
+* *Alt+Tab* helps to append base to this group after camera creation
+* *Alt+Shift* helps to center base at camera creation
 
 ### Production group
 * Corresponds to group 1
@@ -180,7 +186,7 @@ Tip for additional expansion
  * Shift+Q|W|A|S|Z|X+click = base camera + inject
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
- * browse subgroup + add new research 
+ * browse subgroup + add new research
 * Creep queen
  * Z = select creep queen (same raw as C for fast spawn creep tumor)
  * Shift+C + clicks = drop creep tumors (queued)

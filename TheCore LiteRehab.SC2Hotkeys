@@ -4,7 +4,7 @@ AllowSetConflicts=1
 [Hotkeys]
 PTT=Alt+Space
 IdleWorker=F1
-ArmySelect=Shift+F3,Control+Shift+Tab
+ArmySelect=Shift+F3,Control+Shift+Tab,Control+Tab
 TeamResources=Shift+F2
 MinimapColors=F2
 WarpIn=Shift+F7
