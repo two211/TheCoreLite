@@ -148,8 +148,6 @@ Tip for additional expansion
 * Shift+V helps select this group (for inject queen to initiate TheCore inject)
 * Ctl+1 appends selection to this group (same behavior as standard group)
 * Ctl+Shift+1 creates group from selection (same behavior as standard group)
-* Alt+1 (alternate for Alt+2) save the camera for later building inclusion
-* Shift+1 (alternate for Shift+1) all recall to build zone
 
 ### Use case: expansions
 * Select new base
@@ -157,12 +155,19 @@ Tip for additional expansion
 * Alt(+Shift)+Q|W|A|S|Z|X: make view on associated key
 * Alt+Tab: append expansion to Nexus/CC/Hatch group
 
-### Use case: warp-in
+### Use case: warp-in pylon (with Ctl layer)
 * Ctl+V: select production facilities (WarpGate have higher selection priority)
 * Ctl+DE: center on warp pylon
 * hold key for warping-in units (rapid fire warp-in)
 * Ctl+click: on a unit, select all units for this type
-* Ctl+2|3|Q|W|A|S|Z|X: add selection to a group
+* Ctl+2|3|Q|W|A|S|Z|X: add selection to an army group
+
+### Use case: warp-in pylon (with usual keys)
+* Shift+1: select production facilities (WarpGate have higher selection priority)
+* Shift+2|3: center on warp pylon
+* hold key for warping-in units (rapid fire warp-in)
+* Ctl+click: on a unit, select all units for this type
+* Ctl+2|3|Q|W|A|S|Z|X: add selection to an army group
 
 ### Use case: zerg macro routine
 * Hatch check
@@ -185,7 +190,7 @@ Tip for additional expansion
  * Shift+C then clicks = queued creep tumor spread
  * click = select a new creep tumor
  * Ctl+G = center view on selection
- * Ctl+E|D = update creep camera
+ * Ctl+R|F = update creep camera
 
 **NOTE:** creep tumor spawn/expand could be perform without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
@@ -195,13 +200,13 @@ Accessible keys in "Monitor" mode:
 ```
 23
 QWER
-ASDFG
+ASDF
 ZXCV
 ```
 * Camera keys = Q|W, A|S, Z|X (Shift to go, Alt to create)
 * Monitor Camera keys jump = Ctl+E|D
 * Monitor Camera keys creation = Ctl+R|F
-* Monitor Camera center = Ctl+G
+* Monitor Camera center = Ctl+C
 * Nexus/CC/Hatch group selection = Alt+D
 * Production group selection = Alt+V Ctl+V Shift+V
 
