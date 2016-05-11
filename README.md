@@ -25,7 +25,25 @@ There are remaining errors in UnknownHotkeyCommandCheck.log
  * Shift+F6 Toggle music (could be mapped on Shift+F5 to free space)
 * Back/Forward Mouse Button added to browse between subgroups
 
-**Notes:** F3 to F8 cannot be used in direct access due to SelectHero
+**Note:** F3 to F8 cannot be used in direct access due to SelectHero
+
+#### Macro groups
+TheCore Lite comes with suggestions of control groups.
+Q is intended for production facilities or inject queens.
+W is intended for CC Nexus Hatcheries.
+
+source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56
+
+#### Use case: expansions cameras
+* Select new base under construction
+* Alt+Shift: center view on base
+* Alt(+Shift)+[camera\_key]: make view on associated key
+* Alt(+Shift)+D: append expansion to Nexus/CC/Hatch group
+
+#### Use case: send worker back to ressources gathering after queued commands
+* press shift to queue all necessary commands
+* Shift+[camera\_key]: jump to base
+* Shift + right click on mineral or gaz; last action of the queue is to go back to work
 
 TheCore LiteRehab.SC2Hotkeys
 ----------------------------
@@ -61,25 +79,39 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * clearall on Ctl+Alt+E
  * delete on Ctl+Alt+R
 
-### Select all army Tab alternates
-
-* Ctl+Shift+Tab
+#### Select all army Tab alternates
+* After Ctl+Shift+Tab
  * Ctl+Shift+click will remove entire unit type from selection
- * Ctl+Shift+Alt+#group key will create non-steal the group
-* Ctl+Tab
+* After Ctl+Tab
  * Ctl+click will select only unit of the clicked type
+* Others actions
+ * Ctl+Shift+Alt+#group key will create non-steal the group
+
+#### Jump to last alert
+If you have some time, it may worth to try push Tab to jump to last alerts.
+It's in line with TheCore Lite suggested macro groups (Q and W)
+
+#### Fight against invisible
+* immobile invisible units can't be seen with static camera
+* camera rotation allows to spot invisible static units
+* Alternate Shift+` and Shift+Tab to rotate the camera and send detection at the right place
 
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
 
-Same as TheCore LiteRehab.SC2Hotkeys with an experimental "monitor" overlay.
-The principle is to use "Alt" as a "monitor mode" modifier.
+Same as TheCore LiteRehab.SC2Hotkeys with an experimental overlay.
+The principle is to use allow easy mechanics with additional capabilities
 
 The goals are:
-* put all useful group&camera bindkeys over commands
-* get a convenient macro mode key (Alt) : building groups + other utilities groups
-* encourage camera keys for rally points, creep spread and warp pylons
-* do not disturb TheCore Lite key spirit
+* allow easy 2-keys-based macro mechanics
+* encourage camera keys for:
+ * rally points
+ * warp pylons
+ * creep spread
+* better see group affection from UI
+* not disturb (too much) TheCore Lite key spirit
+
+**Note:** Z camera has been moved to 1
 
 ### Macro groups
 
@@ -92,8 +124,8 @@ Group content
 * Terran and Protoss should add research facilities to this group
 
 Tip for additional expansion
-* *Alt+D* helps to append base to this group after camera creation
-* *Alt+Shift* helps to center base at camera creation
+* Alt+D helps to append base to this group after camera creation
+* Alt+Shift helps to center base at camera creation
 
 #### Production group (or inject queens)
 
@@ -125,7 +157,7 @@ The 10 groups are displayed in this order (| figures the separation):
 **NOTE:** the icon representing the group seems to be the best selectable unit at group creation
 If you wanted to update the icon, select the group and recreate it.
 
-### Additionnal cameras alternates
+### Additional cameras alternates
 2 "Control" camera alternates:
 * Ctl+D = Shift+1
 * Ctl+C = Shift+2
@@ -138,12 +170,6 @@ Camera creation:
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 ### Examples
-
-#### Use case: expansions
-* Select new base
-* Alt+Shift: center view on base
-* Alt(+Shift)+[any\_camera\_key]: make view on associated key
-* Alt(+Shift)+D: append expansion to Nexus/CC/Hatch group
 
 #### Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
