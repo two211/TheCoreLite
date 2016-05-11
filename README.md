@@ -52,11 +52,11 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Extra Alt modifier enables non-steal behavior
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
 * AI keys now supported
- * open AI communication on Ctl+Alt+Tab
  * direct attack on Ctl+Alt+D
  * direct scout on Ctl+Alt+T
  * direct detect on Ctl+Alt+F
  * direct expand on Ctl+Alt+G
+ * open AI communication on Ctl+Alt+V
  * build on Ctl+Alt+C
  * clearall on Ctl+Alt+E
  * delete on Ctl+Alt+R
@@ -81,95 +81,73 @@ The goals are:
 * encourage camera keys for rally points, creep spread and warp pylons
 * do not disturb TheCore Lite key spirit
 
-### Additional groups alternates (create/add work the same Ctl+Shift/Ctl):
+### Macro groups
 
-2 "Monitor" group alternates:
-* Alt+D is an alternate for "`" to be used for CC/Nexus+tech or hatches
-* Alt+V is an alternate for "1" to be used for "production facilities" or "inject queens&tech"
-* Ctl+V is an alternate for "1" to be used for "production facilities" or "inject queens&tech"
-* Shift+V is an alternate for "1" to be used for "production facilities" or "inject queens&tech"
+#### Nexus/CC/Hatch group
 
-**Note:** "`" "1" groups have been chosen due to poor accessibility in TheCore Lite.
-Regular groups to be used for armies are:
-```
-steal => 23
-steal => QW
-steal => AS
-steal => ZX
-```
-**NOTE:** W and X could be used for "precision" group, to hold down precision keys (E and C) for precise clicking.
-Examples:
-Ghost/Raven/Liberator/Cyclone/BattleCruiser,
-Infestor/Viper/Ravager,
-High Templar/Sentry/Phoenix/Disruptor.
-It's important for caster groups to be able to select/cast in a raw.
-Same logic could be applied for harass units, which may benefit of it as well.
-Groups keys convenient for fast selection&cast are:
-```
-QW <= in line with E
-AS
-ZX <= in line with C
-```
+Group key = X
 
-### Group display
+Group content
+* All Nexus/CC/Hatch
+* Terran and Protoss should add research facilities to this group
 
-The 2 "macro" groups (` and 1) are positioned in the center to split the remaining groups by 4 keys.
+Tip for additional expansion
+* *Alt+D* helps to append base to this group after camera creation
+* *Alt+Shift* helps to center base at camera creation
+
+### Production group
+
+Group key = Z
+
+Group content
+* Terran & Protoss: All army production facilities
+* Zerg: inject queens
+* Zerg should add research facilities to this group
+
+Tip for rally point | warp-in pylon
+* no more camera on Z (moved to 1)
+* X camera being used for rally point | warp-in pylon
+* Shift+Z+X selects production groups
+ * check rally point at army production step
+ * warp-in pylon: keep shift pressed, while holding unit key (queued rapid-fire warp-in) 
+
+Tip for egg inject, please read section dedicated to zerg macro routine
+
+#### Group display
+
+The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
 This facilitates the visual representation of existing groups.
-Unstealable groups (2 and 3) are the 2 first groups displayed.
-
 The 10 groups are displayed in this order (| figures the separation):
 ```
-23QW|`1|ASZX <= standard group keys
-    |DV|     <=  monitor group keys (Alt+D|V, Ctl+V)
+`123|ZX|QWAS <= standard group keys
 ```
 
 **NOTE:** the icon representing the group seems to be the best selectable unit at group creation
 If you wanted to update the icon, select the group and recreate it.
 
 ### Additionnal cameras alternates
-2 "Monitor" camera alternates:
-* Ctl+E is an alternate for Shift+2
-* Ctl+D is an alternate for Shift+3
+2 "Control" camera alternates:
+* Ctl+D = Shift+1
+* Ctl+C = Shift+2
+* Ctl+E = Shift+3
 
 Camera creation:
-* Ctl+R is an alternate for Alt+2
-* Ctl+F is an alternate for Alt+3
-* Ctl+Space center camera view (if you want to center a warp pylon, or a creep tumor)
+* Ctl+F = Alt+1
+* Ctl+V = Alt+2
+* Ctl+R = Alt+3
+* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
-### Nexus/CC/Hatch group
-* Corresponds to group `
-* Alt+D helps select this group
-* Ctl+` append selection to this group (same behavior as standard group)
-* Ctl+Shift+` create group from selection (same behavior as standard group)
+### Examples
 
-Tip for additional expansion
-* *Alt+Tab* helps to append base to this group after camera creation
-* *Alt+Shift* helps to center base at camera creation
-
-### Production group
-* Corresponds to group 1
-* Alt+V helps select this group (for macro monitoring)
-* Ctl+V helps select this group (for warp-in at camera)
-* Shift+V helps select this group (for inject queen to initiate TheCore inject)
-* Ctl+1 appends selection to this group (same behavior as standard group)
-* Ctl+Shift+1 creates group from selection (same behavior as standard group)
-
-### Use case: expansions
+#### Use case: expansions
 * Select new base
 * Alt+Shift: center view on base
-* Alt(+Shift)+Q|W|A|S|Z|X: make view on associated key
-* Alt+Tab: append expansion to Nexus/CC/Hatch group
+* Alt(+Shift)+[any\_camera\_key]: make view on associated key
+* Alt(+Shift)+D: append expansion to Nexus/CC/Hatch group
 
-### Use case: warp-in pylon (with Ctl layer)
+#### Use case: warp-in pylon (with Ctl layer)
 * Ctl+V: select production facilities (WarpGate have higher selection priority)
 * Ctl+DE: center on warp pylon
-* hold key for warping-in units (rapid fire warp-in)
-* Ctl+click: on a unit, select all units for this type
-* Ctl+2|3|Q|W|A|S|Z|X: add selection to an army group
-
-### Use case: warp-in pylon (with usual keys)
-* Shift+1: select production facilities (WarpGate have higher selection priority)
-* Shift+2|3: center on warp pylon
 * hold key for warping-in units (rapid fire warp-in)
 * Ctl+click: on a unit, select all units for this type
 * Ctl+2|3|Q|W|A|S|Z|X: add selection to an army group
@@ -197,24 +175,8 @@ Tip for additional expansion
  * Ctl+Space = center view on selection
  * Ctl+R|F = update creep camera
 
-**NOTE:** creep tumor spawn/expand could be perform without queue
+**NOTE:** creep tumor spawn/expand could be performed without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
-
-### Monitor mode summary
-Accessible keys in "Monitor" mode:
-```
-23
-QWER
-ASDF
-ZXCV
-Space
-```
-* Camera keys = Q|W, A|S, Z|X (Shift to go, Alt to create)
-* Monitor Camera keys jump = Ctl+E|D
-* Monitor Camera keys creation = Ctl+R|F
-* Monitor Camera center = Ctl+Space
-* Nexus/CC/Hatch group selection = Alt+D
-* Production group selection = Alt+V Ctl+V Shift+V
 
 Changelog for the code
 ======================
