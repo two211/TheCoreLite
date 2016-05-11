@@ -95,7 +95,7 @@ Tip for additional expansion
 * *Alt+D* helps to append base to this group after camera creation
 * *Alt+Shift* helps to center base at camera creation
 
-### Production group
+#### Production group (or inject queens)
 
 Group key = Z
 
@@ -163,7 +163,7 @@ Camera creation:
 * right click for rally
 * [army\_group]: attack
 
-### Use case: zerg macro routine
+#### Use case: zerg macro routine
 * Hatch check
  * X: hatch group
  * check supply depot at this step, to produce overlords
