@@ -109,7 +109,7 @@ Tip for rally point | warp-in pylon
 * X camera being used for rally point | warp-in pylon
 * Shift+Z+X selects production groups
  * check rally point at army production step
- * warp-in pylon: keep shift pressed, while holding unit key (queued rapid-fire warp-in) 
+ * warp-in pylon: keep shift pressed, while holding unit key (queued rapid-fire warp-in)
 
 Tip for egg inject, please read section dedicated to zerg macro routine
 
@@ -145,27 +145,40 @@ Camera creation:
 * Alt(+Shift)+[any\_camera\_key]: make view on associated key
 * Alt(+Shift)+D: append expansion to Nexus/CC/Hatch group
 
-#### Use case: warp-in pylon (with Ctl layer)
-* Ctl+V: select production facilities (WarpGate have higher selection priority)
-* Ctl+DE: center on warp pylon
+#### Use case: army production + rally point (optional warp-in pylon)
+* Hold Shift
+* Shift+Z: select production facilities
+* Shift+X: jump to rally point (declared with Alt+X)
+* optional redeclaration of the rally point (in case of new integrated facility)
+* inspect rallied army
+* browse subgroup and launch production
+* select rallied army and add to control groups
+
+#### Use case: warp-in pylon (with Ctl camera)
+* Ctl+C|D|E: center on warp pylon
+* Z: select production facilities (WarpGate have higher selection priority)
 * hold key for warping-in units (rapid fire warp-in)
 * Ctl+click: on a unit, select all units for this type
-* Ctl+2|3|Q|W|A|S|Z|X: add selection to an army group
+* Ctl+[army\_group]: add selection to an army group
+* right click for rally
+* [army\_group]: attack
 
 ### Use case: zerg macro routine
 * Hatch check
- * Alt+D = hatch group
- * try to check supply depot at this step
+ * X: hatch group
+ * check supply depot at this step, to produce overlords
+ * morph other larvaes depending on needs
 * Inject cycle (hold Shift)
- * Shift+V = select inject queens + tech
+ * Shift+Z = select inject queens + tech
+ * Shift+X = jump to main hatch (first hatch)
  * Shift+Space = queue inject (prevent queens from walking around)
- * center mouse
- * Shift+Q|W|A|S|Z|X+click = base camera + inject
+ * center mouse + click
+ * Shift+A|S|Q|W|2+click = base camera + inject
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research
 * Creep queen
- * Z = select creep queen (same raw as C for fast spawn creep tumor)
+ * S x2 = select + jump to creep queen (same raw as C for fast spawn creep tumor)
  * Shift+C + clicks = drop creep tumors (queued)
 * Creep cameras (E or D)
  * Ctl+E|D = jump to creep camera
