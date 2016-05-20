@@ -48,6 +48,16 @@ source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COm
 TheCore LiteRehab.SC2Hotkeys
 ----------------------------
 
+The goals are:
+* get rid of bad habits
+* develop sane mechanics
+* allow easy 2-keys-based macro mechanics
+* encourage camera keys for:
+ * rally points
+ * warp pylons
+ * creep spread
+* no modification of TheCore Lite key basic layout
+
 Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Function key reorganization
  * F2 ToggleColors (no more Select all army on this key - see Tab key)
@@ -57,18 +67,26 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Shift+F8 CameraFollow
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
- * Shift+Tab : Rotate Right (help to spot invisible)
- * Shift+Grave : Rotate Left (help to spot invisible)
+ * Shift+Tab : alternate for "choose target" (see "telegraph inject" below)
  * Ctl+Tab : alternate for "select all army"
  * Ctl+Shift+Tab : alternate for "select all army"
-* Support for autocentered cameras
- * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
- * Alt+Shift+23QWASZX are alternate to declare the camera
- * Alt+Space PushToTalk (to free Alt+Shift)
 * Group approach
  * all groups behave with steal (for easy split)
  * Extra Alt modifier enables non-steal behavior
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
+* Rotate camera (help to spot invisible)
+ * Alt+Grave : Rotate camera Left 
+ * Alt+1 : Rotate camera Right
+* Support for autocentered cameras
+ * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
+ * Alt+Shift+23QWASZX are alternate to declare the camera
+ * Alt+Space PushToTalk (to free Alt+Shift)
+* "Control" Cameras
+ * Suitable for creep spread as an example
+* Support for telegraph inject (a variant of backspace inject)
+ * Shift+` base camera
+ * Shift+Tab target choose
+ * read use case below
 * AI keys now supported
  * direct attack on Ctl+Alt+D
  * direct scout on Ctl+Alt+T
@@ -94,24 +112,32 @@ It's in line with TheCore Lite suggested macro groups (Q and W)
 #### Fight against invisible
 * immobile invisible units can't be seen with static camera
 * camera rotation allows to spot invisible static units
-* Alternate Shift+` and Shift+Tab to rotate the camera and send detection at the right place
+* Alternate Alt+` and Alt+1 to rotate the camera and send detection at the right place
+
+#### Additional cameras alternates
+2 "Control" camera alternates:
+* Ctl+E = Shift+2
+* Ctl+D = Shift+3 <= 1st camera key
+* Ctl+C = Shift+Z
+
+Camera creation:
+* Ctl+R = Alt+2
+* Ctl+F = Alt+3 <= 1st camera key
+* Ctl+V = Alt+Z
+* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 TheCore LiteMonitor.SC2Hotkeys
 --------------------------------
 
-Same as TheCore LiteRehab.SC2Hotkeys with an experimental overlay.
-The principle is to use allow easy mechanics with additional capabilities
+Same as TheCore LiteRehab.SC2Hotkeys with modification to original legacy TheCore Lite.
 
 The goals are:
-* allow easy 2-keys-based macro mechanics
-* encourage camera keys for:
- * rally points
- * warp pylons
- * creep spread
 * better see group affection from UI
 * not disturb (too much) TheCore Lite key spirit
 
-**Note:** Z camera has been moved to 1
+Modifications:
+* ZX are the macro hotkeys
+* Z no longer used for camera (it's camera is control Camera "CV")
 
 ### Macro groups
 
@@ -156,18 +182,6 @@ The 10 groups are displayed in this order (| figures the separation):
 
 **NOTE:** the icon representing the group seems to be the best selectable unit at group creation
 If you wanted to update the icon, select the group and recreate it.
-
-### Additional cameras alternates
-2 "Control" camera alternates:
-* Ctl+D = Shift+1
-* Ctl+C = Shift+2
-* Ctl+E = Shift+3
-
-Camera creation:
-* Ctl+F = Alt+1
-* Ctl+V = Alt+2
-* Ctl+R = Alt+3
-* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 ### Examples
 
@@ -216,6 +230,30 @@ Camera creation:
 
 **NOTE:** creep tumor spawn/expand could be performed without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
+
+#### Use case: telegraph inject
+
+The "telegraph" inject is a variant of the "backspace" inject.
+It relies on:
+* command queuing
+* no mouse click
+* 2 neighbour keys, comfortably pressable with left Shift key hold
+
+Initiate inject cycle (hold Shift)
+* Basic principle
+ * select inject queens
+ * launch inject command
+ * center mouse, center view on a hatch
+* Monitor inject initiate 
+ * Shift+Z = select inject queens + tech
+ * Shift+X = jump to main hatch (first hatch)
+ * Shift+Space = inject
+ * center mouse
+
+Cycle through bases with fingers only
+* move thumb over Shift and hold to start command queuing
+* press Shift+` to cycle base
+* presse Shift+Tab to target hatch if queen is here
 
 Changelog for the code
 ======================
