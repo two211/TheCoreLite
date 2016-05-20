@@ -71,6 +71,12 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * all groups behave with steal (for easy split)
  * Extra Alt modifier enables non-steal behavior
  * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
+* Alt now show Ennemy life bar (useful for quick check of stacked ground/air armies)
+* Moved out of the dense keycard and Function keys
+ * Period: Warp (to encourage production group)
+ * Numpad0: Quick save
+ * Delete: CameraFollow
+* QuickPing now mapped on Alt+LeftClick
 * Rotate camera (help to spot invisible)
  * Alt+Grave : Rotate camera Left 
  * Alt+1 : Rotate camera Right
@@ -78,11 +84,6 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
  * Alt+Shift+23QWASZX are alternate to declare the camera
  * Alt+Space PushToTalk (to free Alt+Shift)
-* Alt now show Ennemy life bar (useful for quick check of stacked ground/air armies)
-* Moved out of the dense keycard
- * Slash: Quick save
- * Period: Warp (to encourage production group)
- * Comma: CameraFollow
 * "Control" Cameras
  * Suitable for creep spread as an example
 * Support for telegraph inject (a variant of backspace inject)
