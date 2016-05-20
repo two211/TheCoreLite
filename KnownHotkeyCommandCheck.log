@@ -199,6 +199,10 @@ Start command conflicts with hotkeys, within identified conflicts (log file: Kno
 [ERROR]: E used for command ZagaraVoidCoopMassFrenzy/ZagaraVoidCoop, in seed Z contexts=['Coop']
 [ERROR]: E used for command ZagaraVoidCoopMassFrenzy/ZagaraVoidCoopBurrowed, in seed Z contexts=['Coop']
 [ERROR]: R used for command ZagaraVoidCoopNydusWorm/NydusNetwork, in seed Z contexts=['Coop']
+[ERROR]: Period used for command GasCanisterGather/Probe, in seed TheCore LiteRehab contexts=['LotV Prologue']
+[ERROR]: Period used for command StukovCrystalChannel/InfestedStukov, in seed TheCore LiteRehab contexts=['LotV Campaign']
+[ERROR]: Period used for command GasCanisterGather/Probe, in seed TheCore LiteMonitor contexts=['LotV Prologue']
+[ERROR]: Period used for command StukovCrystalChannel/InfestedStukov, in seed TheCore LiteMonitor contexts=['LotV Campaign']
 ----------------------------
-Finished (command conflicts with hotkeys, within identified conflicts) - ERRORs: 198 
+Finished (command conflicts with hotkeys, within identified conflicts) - ERRORs: 202 
 ============================

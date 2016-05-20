@@ -202,6 +202,10 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 [WARN]: no default hydraliskspeed/LurkerDen
+[ERROR]: no default CommanderAbility0
+[ERROR]: no default CommanderAbility1
+[ERROR]: no default CommanderAbility2
+[ERROR]: no default CommanderAbility3
 [ERROR]: no default EvolveAdrenalineBoost/EvolutionChamber
 [ERROR]: no default EvolveGlialRegeneration/GreaterRoachWarren
 [ERROR]: no default EvolveHydriodicBile/GreaterRoachWarren
@@ -214,5 +218,5 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default ResearchStabRankOne/EvolutionChamber
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchStabilizerMedpacks/BarracksTechLab
 ----------------------------
-Finished (Check defaults) - WARNs: 201 ERRORs: 11 
+Finished (Check defaults) - WARNs: 201 ERRORs: 15 
 ============================
