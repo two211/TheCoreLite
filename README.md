@@ -1,8 +1,6 @@
 The Core Lite Variations
 ========================
 
-toto
-
 TheCore Lite.SC2Hotkeys
 -----------------------
 
