@@ -62,9 +62,6 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Function key reorganization
  * F2 ToggleColors (no more Select all army on this key - see Tab key)
  * Shift+F2 Team Ressources
- * Shift+F4 Quick save
- * Shift+F7 Warp (to encourage production group)
- * Shift+F8 CameraFollow
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
  * Shift+Tab : alternate for "choose target" (see "telegraph inject" below)
@@ -81,6 +78,11 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
  * Alt+Shift+23QWASZX are alternate to declare the camera
  * Alt+Space PushToTalk (to free Alt+Shift)
+* Alt now show Ennemy life bar (useful for quick check of stacked ground/air armies)
+* Moved out of the dense keycard
+ * Slash: Quick save
+ * Period: Warp (to encourage production group)
+ * Comma: CameraFollow
 * "Control" Cameras
  * Suitable for creep spread as an example
 * Support for telegraph inject (a variant of backspace inject)
