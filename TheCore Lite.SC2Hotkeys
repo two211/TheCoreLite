@@ -88,6 +88,10 @@ CameraView4=Shift+A
 CameraView5=Shift+S
 CameraView6=Shift+Z
 CameraView7=Shift+X
+CommanderAbility0=F3
+CommanderAbility1=F4
+CommanderAbility2=F5
+CommanderAbility3=F6
 
 [Commands]
 250mmStrikeCannons/Thor=C

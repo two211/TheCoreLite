@@ -101,6 +101,10 @@ AIExpand=Control+Alt+G
 AIBuild=Control+Alt+C
 AIClearAll=Control+Alt+E
 AIDelete=Control+Alt+R
+CommanderAbility0=F3
+CommanderAbility1=F4
+CommanderAbility2=F5
+CommanderAbility3=F6
 
 [Commands]
 250mmStrikeCannons/Thor=C
