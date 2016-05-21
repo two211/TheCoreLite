@@ -64,8 +64,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Function key reorganization
  * F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
  * Shift+F2 Team Ressources
- * Shift+F7 Toggle Sound
- * Shift+F8 Toggle Music
+ * Shift+F3 no more used for WarpIn
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
  * Shift+Tab : alternate for "choose target" (see "telegraph inject" below)
