@@ -79,7 +79,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Period: Warp (to encourage production group)
  * Numpad0: Quick save
  * Delete: CameraFollow
-* QuickPing now mapped on Alt+LeftClick
+* QuickPing now mapped on Alt+RightClick
 * Rotate camera (help to spot invisible)
  * Alt+Grave : Rotate camera Left 
  * Alt+1 : Rotate camera Right
