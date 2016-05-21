@@ -21,11 +21,13 @@ There are remaining errors in UnknownHotkeyCommandCheck.log
  * F2 Select all army (changed in other variants)
  * Shift+F2 Minimap colors (to make it more accessible)
  * Shift+F3 Warp (swapped in other variants)
- * Shift+F5 Toggle sound (moved to prevent mistyping)
- * Shift+F6 Toggle music (could be mapped on Shift+F5 to free space)
+ * F3 F4 F5 F6 Commander top bar ability
+ * Shift+F7 Toggle sound (moved to prevent mistyping)
+ * Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
 * Back/Forward Mouse Button added to browse between subgroups
 
-**Note:** F3 to F8 cannot be used in direct access due to SelectHero
+**Note:** F3 to F8 cannot be used in direct access due to SelectHero.
+It should be OK for top bar commander abilities.
 
 #### Macro groups
 TheCore Lite comes with suggestions of control groups.
@@ -60,8 +62,10 @@ The goals are:
 
 Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Function key reorganization
- * F2 ToggleColors (no more Select all army on this key - see Tab key)
+ * F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
  * Shift+F2 Team Ressources
+ * Shift+F7 Toggle Sound
+ * Shift+F8 Toggle Music
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
  * Shift+Tab : alternate for "choose target" (see "telegraph inject" below)
