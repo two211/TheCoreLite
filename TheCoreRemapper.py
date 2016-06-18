@@ -58,16 +58,16 @@ class OtherSeeds(Enum):
 ## Debug infrastructure
 ####################################################################################
 
-debug=False
-## If debug==True, the config file "Debug.ini" is loaded and modify the script behavior
-## An example is available, under the name "Debug_example.ini"
-## In case of debug=False or wrong loaded init file, default switches are given by Fallback
-#debug=True
-
 debug_parser = ConfigParser()
-if debug:
-    debug_filepath = 'Debug.ini'
-    debug_parser.read(debug_filepath)
+debug = False
+try:
+	debug_parser.read('Debug.ini')
+except:
+	print("no Debug.ini file")
+
+debug = debug_parser.getboolean("Settings","debug",fallback=False)
+if not(debug):
+	debug_parser = ConfigParser()
 
 ####################################################################################
 ## Seed list to be considered
