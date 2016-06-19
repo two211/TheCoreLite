@@ -7,13 +7,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ArchonHallucination/Nexus
 [WARN]: no default ArchonHallucination/Voranor
 [WARN]: no default Assimilator/Harvester
-[WARN]: no default AttackAllowsInvulnerable/DrakkenLaserDrill
 [WARN]: no default AttackChampions
 [WARN]: no default Baneling/Zergling2
-[WARN]: no default BuildAutoTurret/Raven
-[WARN]: no default BuildCreepTumor/BroodMother
 [WARN]: no default BuildCreepTumor/Queen2
-[WARN]: no default BuildPointDefenseDrone/Raven
 [WARN]: no default BuildScarab/Reaver
 [WARN]: no default BurrowChargeMP/Ultralisk
 [WARN]: no default BurrowHydraliskImpalerDown
@@ -65,9 +61,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Immortal
 [WARN]: no default Immortal/Gateway
 [WARN]: no default Immortal/WarpGate
-[WARN]: no default ImmortalBarrierBase/Immortal
 [WARN]: no default ImmortalHallucination/Nexus
-[WARN]: no default ImpalerDen/HydraliskDen
 [WARN]: no default IncineratorNozzles/DevilDog
 [WARN]: no default InfestedTerrans/Infestor2
 [WARN]: no default InjectLarva/Queen
@@ -81,7 +75,6 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MorphMorphalisk/BroodMother
 [WARN]: no default MorphMorphalisk/Queen2
 [WARN]: no default MorphtoDefiler/Larva
-[WARN]: no default MorphtoDevourer/Mutalisk
 [WARN]: no default MorphtoRoach/Larva
 [WARN]: no default MoveChampions
 [WARN]: no default MutateintoDefilerMound/Drone
@@ -158,23 +151,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SwarmHostUprootUnburrow/SwarmHostBurrowed
 [WARN]: no default SwarmHostUprootUnburrow/SwarmHostSplitABurrowed
 [WARN]: no default SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed
-[WARN]: no default SwarmQueenCorpser/HugeSwarmQueen
-[WARN]: no default SwarmQueenCorpser/LargeSwarmQueen
 [WARN]: no default SwarmQueenCorpser/SwarmQueen
-[WARN]: no default SwarmQueenHydraliskImpaler/HugeSwarmQueen
 [WARN]: no default SwarmQueenHydraliskImpaler/LargeSwarmQueen
 [WARN]: no default SwarmQueenHydraliskImpaler/SwarmQueen
-[WARN]: no default SwarmQueenHydraliskLurker/HugeSwarmQueen
 [WARN]: no default SwarmQueenHydraliskLurker/LargeSwarmQueen
 [WARN]: no default SwarmQueenHydraliskLurker/SwarmQueen
-[WARN]: no default SwarmQueenRaptor/HugeSwarmQueen
-[WARN]: no default SwarmQueenRaptor/LargeSwarmQueen
-[WARN]: no default SwarmQueenRaptor/SwarmQueen
-[WARN]: no default SwarmQueenSwarmling/HugeSwarmQueen
-[WARN]: no default SwarmQueenSwarmling/LargeSwarmQueen
-[WARN]: no default SwarmQueenSwarmling/SwarmQueen
-[WARN]: no default SwarmQueenVile/HugeSwarmQueen
-[WARN]: no default SwarmQueenVile/LargeSwarmQueen
 [WARN]: no default SwarmQueenVile/SwarmQueen
 [WARN]: no default TechReactor/Barracks
 [WARN]: no default TechReactor/Factory
@@ -201,22 +182,22 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
-[WARN]: no default hydraliskspeed/LurkerDen
 [ERROR]: no default CommanderAbility0
 [ERROR]: no default CommanderAbility1
 [ERROR]: no default CommanderAbility2
 [ERROR]: no default CommanderAbility3
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HeroNukeCalldown/NovaHero
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5KerriganPsiStrike
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRift
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRiftUnselectable
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchLurkerRange/LurkerDenMP
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpawnCorruptor/SpacePlatformVentsUnit
 [ERROR]: no default EvolveAdrenalineBoost/EvolutionChamber
-[ERROR]: no default EvolveGlialRegeneration/GreaterRoachWarren
-[ERROR]: no default EvolveHydriodicBile/GreaterRoachWarren
-[ERROR]: no default EvolveTunnelingClaws/GreaterRoachWarren
 [ERROR]: no default GreaterRoachWarren/RoachWarren
 [ERROR]: no default Lurker/HydraliskImpaler
-[ERROR]: no default MorphToGuardian/Mutalisk
 [ERROR]: no default ResearchLocustNest/EvolutionChamber
 [ERROR]: no default ResearchSpikeBurstRankOne/EvolutionChamber
 [ERROR]: no default ResearchStabRankOne/EvolutionChamber
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchStabilizerMedpacks/BarracksTechLab
 ----------------------------
-Finished (Check defaults) - WARNs: 201 ERRORs: 15 
+Finished (Check defaults) - WARNs: 181 ERRORs: 16 
 ============================
