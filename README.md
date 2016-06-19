@@ -267,9 +267,10 @@ Changelog for the code
 Compared to upstream project:
 * TheCoreRemapper.py supporting other seeds than pure TheCore
 * New "seed" checks:
- * check for unbound comands, known from conflicts
- * check to prevent conflicts between Hotkeys and Commands, known from conflicts
- * check to prevent conflicts between Hotkeys and Commands, unknown from conflicts
+ * check for unbound commands, known from conflicts
+ * check to prevent conflicts between Hotkeys (i.e. directly access such as groups, base camera key) and Commands
+  * known from conflicts
+  * unknown from conflicts
 * New "quality" checks:
  * check for commands out of known conflicts (warning only in case of inherit/same)
 * Debug mode
@@ -278,4 +279,4 @@ Compared to upstream project:
  * optional quality checks (otherwise just run "seed" checks)
  * optional hint through a "verbose" and "verydetail" options (including the remapHint function)
  * optional IgnoredContext (such as "WoL Campaign" or "Coop") to filter conflicts and keys
-* Some .ini file fixed to prevent wrong positive
+* Some .ini file fixed to prevent wrong positives
