@@ -830,7 +830,8 @@ print("  ________         ______              " + "\n"
 
 init_seed_hotkeyfile_parser()
 # check sections
-new_keys_from_seed_hotkeys()
+if debug_parser.getboolean("Settings","update_default",fallback=True):
+	new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
 if debug_parser.getboolean("Settings","generate",fallback=True):
