@@ -132,10 +132,10 @@ Camera creation:
 * Ctl+V = Alt+Z
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
-TheCore LiteMonitor.SC2Hotkeys
+TheCore LitePlus.SC2Hotkeys
 --------------------------------
 
-Same as TheCore LiteRehab.SC2Hotkeys with modification to original legacy TheCore Lite.
+Same as TheCore LiteRehab.SC2Hotkeys with modifications to original legacy TheCore Lite UI hotkeys.
 
 The goals are:
 * better see group affection from UI

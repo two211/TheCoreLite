@@ -52,7 +52,7 @@ class LogLevel(Enum):
 class OtherSeeds(Enum):
     Lite = "TheCore Lite"
     LiteRehab = "TheCore LiteRehab"
-    LiteMonitor = "TheCore LiteMonitor"
+    LitePlus = "TheCore LitePlus"
 
 ####################################################################################
 ## Debug infrastructure
