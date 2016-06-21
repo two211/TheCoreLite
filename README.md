@@ -6,7 +6,12 @@ TheCore Lite.SC2Hotkeys
 
 This set fits with the legacy "TheCore Lite" updated to fix most of TheCore standards:
 * keys to be the same, or inherited
-* no keys conflicts (conflicts are only partially described)
+* no keys conflicts accross support modes
+ * WoL HoTS LoTV multiplayer
+ * Campaign
+ * Coop
+ * Nova
+
 On top of that, it passes most of the new introduced "seed" checks.
 There are remaining errors in UnknownHotkeyCommandCheck.log
 
@@ -50,6 +55,9 @@ source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COm
 TheCore LiteRehab.SC2Hotkeys
 ----------------------------
 
+TheCore LiteRehab shares the same command set as TheCore Lite.
+Only the UI hotkeys has seen some changes.
+
 The goals are:
 * get rid of bad habits
 * develop sane mechanics
@@ -58,7 +66,7 @@ The goals are:
  * rally points
  * warp pylons
  * creep spread
-* no modification of TheCore Lite key basic layout
+* no modification of TheCore Lite basic key layout
 
 Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Function key reorganization
@@ -143,7 +151,7 @@ The goals are:
 
 Modifications:
 * ZX are the macro hotkeys
-* Z no longer used for camera (it's camera is control Camera "CV")
+* Z no longer used for camera (the related camera is now control cam "CV" only)
 
 ### Macro groups
 
