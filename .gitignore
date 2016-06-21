@@ -178,4 +178,5 @@ NOTES.txt
 clean.sh
 tmp*
 ref*
-perso*
+perso
+copy
