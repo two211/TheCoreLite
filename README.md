@@ -175,7 +175,7 @@ Group content
 * Zerg should add research facilities to this group
 
 Tip for rally point | warp-in pylon
-* no more camera on Z (moved to 1)
+* no more camera on Z (this camera is used for control camera Ctrl+C|V)
 * X camera being used for rally point | warp-in pylon
 * Shift+Z+X selects production groups
  * check rally point at army production step
