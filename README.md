@@ -11,9 +11,7 @@ This set fits with the legacy "TheCore Lite" updated to fix most of TheCore stan
  * Campaign
  * Coop
  * Nova
-
-On top of that, it passes most of the new introduced "seed" checks.
-There are remaining errors in UnknownHotkeyCommandCheck.log
+* it passes all the new introduced "seed" checks (there are still some command out of any identified conflict)
 
 **Changes:**
 * Minor command changes for compliance accross:
