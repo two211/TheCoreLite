@@ -155,13 +155,13 @@ The goals are:
 
 Modifications:
 * ZX are the macro hotkeys
-* Z no longer used for camera (the related camera is now control cam "CV" only)
+* X no longer used for camera (the related camera is now 1 or ctrl cam "CV" )
 
 ### Macro groups
 
 #### Nexus/CC/Hatch group
 
-Group key = X
+Group key = Z
 
 Group content
 * All Nexus/CC/Hatch
@@ -173,7 +173,7 @@ Tip for additional expansion
 
 #### Production group (or inject queens)
 
-Group key = Z
+Group key = X
 
 Group content
 * Terran & Protoss: All army production facilities
@@ -181,9 +181,10 @@ Group content
 * Zerg should add research facilities to this group
 
 Tip for rally point | warp-in pylon
-* no more camera on Z: moved on 1
+* no more camera on X: moved on 1
  * this camera is used for control camera Ctrl+C|V
-* X camera being used for rally point | warp-in pylon
+* Z camera being used for rally point
+ * suggestion: S to be used for extra warp-in pylon
 * Shift+Z+X selects production groups
  * check rally point at army production step
  * warp-in pylon: keep shift pressed, while holding unit key (queued rapid-fire warp-in)
@@ -206,8 +207,8 @@ If you wanted to update the icon, select the group and recreate it.
 
 #### Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
-* Shift+Z: select production facilities
-* Shift+X: jump to rally point (declared with Alt+X)
+* Shift+Z: jump to rally point (declared with Alt+X)
+* Shift+X: select production facilities
 * optional redeclaration of the rally point (in case of new integrated facility)
 * inspect rallied army
 * browse subgroup and launch production
@@ -215,7 +216,7 @@ If you wanted to update the icon, select the group and recreate it.
 
 #### Use case: warp-in pylon (with Ctl camera)
 * Ctl+C|D|E: center on warp pylon
-* Z: select production facilities (WarpGate have higher selection priority)
+* X: select production facilities (WarpGate have higher selection priority)
 * hold key for warping-in units (rapid fire warp-in)
 * Ctl+click: on a unit, select all units for this type
 * Ctl+[army\_group]: add selection to an army group
@@ -224,22 +225,18 @@ If you wanted to update the icon, select the group and recreate it.
 
 #### Use case: warp-in pylon (with Shift camera)
 * Hold shift
-* Shift+Z: select production facilities (WarpGate have higher selection priority)
 * Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
-* hold key for warping-in units (rapid fire warp-in)
-* Ctl+click: on a unit, select all units for this type
-* Ctl+[army\_group]: add selection to an army group
-* right click for rally
-* [army\_group]: attack
+* Shift+X: select production facilities (WarpGate have higher selection priority)
+* Shift+key for warping-in units (queued rapid fire warp-in)
 
 #### Use case: zerg macro routine
 * Hatch check
- * X: hatch group
+ * Z: hatch group
  * check supply depot at this step, to produce overlords
  * morph other larvaes depending on needs
 * Inject cycle (hold Shift)
- * Shift+Z = select inject queens + tech
- * Shift+X = jump to main hatch (first hatch)
+ * Shift+Z = jump to main hatch (first hatch)
+ * Shift+X = select inject queens + tech
  * Shift+Space = queue inject (prevent queens from walking around)
  * center mouse + click
  * Shift+A|S|Q|W|2+click = base camera + inject
@@ -249,13 +246,13 @@ If you wanted to update the icon, select the group and recreate it.
 * Creep queen
  * S x2 = select + jump to creep queen (same raw as C for fast spawn creep tumor)
  * Shift+C + clicks = drop creep tumors (queued)
-* Creep cameras (E or D)
- * Ctl+E|D = jump to creep camera
+* Creep cameras (control cameras : ER, DF, CV)
+ * Ctl+E|D|C = jump to creep camera
  * Ctl+click to select creep tumors
  * Shift+C then clicks = queued creep tumor spread
  * click = select a new creep tumor
  * Ctl+Space = center view on selection
- * Ctl+R|F = update creep camera
+ * Ctl+R|F|V = update creep camera
 
 **NOTE:** creep tumor spawn/expand could be performed without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
@@ -274,8 +271,8 @@ Initiate inject cycle (hold Shift)
  * launch inject command
  * center mouse, center view on a hatch
 * Monitor inject initiate
- * Shift+Z = select inject queens + tech
- * Shift+X = jump to main hatch (first hatch)
+ * Shift+Z = jump to main hatch (first hatch)
+ * Shift+X = select inject queens + tech
  * Shift+Space = inject
  * center mouse
 
