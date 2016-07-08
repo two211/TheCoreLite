@@ -8,9 +8,8 @@ This set fits with the legacy "TheCore Lite" updated to fix most of TheCore stan
 * keys to be the same, or inherited
 * no keys conflicts accross support modes
  * WoL HoTS LoTV multiplayer
- * Campaign
+ * Campaigns ( WoL HoTS LoTV Nova)
  * Coop
- * Nova
 * it passes all the new introduced "seed" checks (there are still some command out of any identified conflict)
 
 **Changes:**
@@ -85,10 +84,12 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Period: Warp (to encourage production group)
  * Numpad0: Quick save
  * Delete: CameraFollow
-* QuickPing now mapped on Alt+RightClick
+* Minimap ping
+ * QuickPing now mapped on Alt+RightClick
+ * MinimapPing on Alt+`
 * Rotate camera (help to spot invisible)
- * Alt+Grave : Rotate camera Left 
- * Alt+1 : Rotate camera Right
+ * Alt+T : Rotate camera Left
+ * Alt+G : Rotate camera Right
 * Support for autocentered cameras
  * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
  * Alt+Shift+23QWASZX are alternate to declare the camera
@@ -124,18 +125,23 @@ It's in line with TheCore Lite suggested macro groups (Q and W)
 #### Fight against invisible
 * immobile invisible units can't be seen with static camera
 * camera rotation allows to spot invisible static units
-* Alternate Alt+` and Alt+1 to rotate the camera and send detection at the right place
+* Alternate Alt+T and Alt+G to rotate the camera and send detection at the right place
+
+**Note** T and G have been chosen because:
+* there is no Alt shortcut on them
+* the fingers are more on the command space (than ` and 1)
+* D could not be chosen due to alias to append to macro group
 
 #### Additional cameras alternates
 2 "Control" camera alternates:
-* Ctl+E = Shift+2
-* Ctl+D = Shift+3 <= 1st camera key
-* Ctl+C = Shift+Z
+* Ctl+E = Shift+3
+* Ctl+D = Shift+2
+* Ctl+C = Shift+Z (Shift+1 for TheCore LitePlus)
 
 Camera creation:
-* Ctl+R = Alt+2
-* Ctl+F = Alt+3 <= 1st camera key
-* Ctl+V = Alt+Z
+* Ctl+R = Alt+3
+* Ctl+F = Alt+2
+* Ctl+V = Alt+Z (Alt+1 for TheCore LitePlus)
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 TheCore LitePlus.SC2Hotkeys
@@ -175,7 +181,8 @@ Group content
 * Zerg should add research facilities to this group
 
 Tip for rally point | warp-in pylon
-* no more camera on Z (this camera is used for control camera Ctrl+C|V)
+* no more camera on Z: moved on 1
+ * this camera is used for control camera Ctrl+C|V
 * X camera being used for rally point | warp-in pylon
 * Shift+Z+X selects production groups
  * check rally point at army production step
@@ -209,6 +216,16 @@ If you wanted to update the icon, select the group and recreate it.
 #### Use case: warp-in pylon (with Ctl camera)
 * Ctl+C|D|E: center on warp pylon
 * Z: select production facilities (WarpGate have higher selection priority)
+* hold key for warping-in units (rapid fire warp-in)
+* Ctl+click: on a unit, select all units for this type
+* Ctl+[army\_group]: add selection to an army group
+* right click for rally
+* [army\_group]: attack
+
+#### Use case: warp-in pylon (with Shift camera)
+* Hold shift
+* Shift+Z: select production facilities (WarpGate have higher selection priority)
+* Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
 * hold key for warping-in units (rapid fire warp-in)
 * Ctl+click: on a unit, select all units for this type
 * Ctl+[army\_group]: add selection to an army group
@@ -256,7 +273,7 @@ Initiate inject cycle (hold Shift)
  * select inject queens
  * launch inject command
  * center mouse, center view on a hatch
-* Monitor inject initiate 
+* Monitor inject initiate
  * Shift+Z = select inject queens + tech
  * Shift+X = jump to main hatch (first hatch)
  * Shift+Space = inject
