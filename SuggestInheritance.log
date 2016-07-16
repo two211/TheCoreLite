@@ -131,11 +131,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopBanelingSpawner/ZagaraVoidCoop default: B
 	ZagaraVoidCoopBanelingSpawner/ZagaraVoidCoopBurrowed default: B
 
-[INFO]: TheCore Lite: Space,4   TheCore LiteRehab: Space,4   TheCore LitePlus: Space,4   
-	AutoTurret/Raven default: T
-	BuildAutoTurret/Raven default: T copyof: AutoTurret/Raven default: T
-	DutchPlaceTurret/Swann default: T copyof: AutoTurret/Raven default: T
-
 [INFO]: TheCore Lite: 5   TheCore LiteRehab: 5   TheCore LitePlus: 5   
 	CampaignVehicles default: A
 	CampaignVehicles/Factory default: A
@@ -424,10 +419,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidRaySwarmDamageBoost/VoidRay default: E
 	YamatoGun default: Y
 
-[INFO]: TheCore Lite: C,Space   TheCore LiteRehab: C,Space   TheCore LitePlus: C,Space   
+[INFO]: TheCore Lite: Space,C   TheCore LiteRehab: Space,C   TheCore LitePlus: Space,C   
+	AutoTurret/Raven default: T
+	BuildAutoTurret/Raven default: T copyof: AutoTurret/Raven default: T
 	CausticSpray/Corruptor default: C
 	Contaminate/Overseer default: E
 	CorruptionAbility/Corruptor default: C
+	DutchPlaceTurret/Swann default: T copyof: AutoTurret/Raven default: T
 	Feedback/AnAleemController default:  copyof: Feedback/HighTemplar default: F
 	Feedback/Archon default: F
 	Feedback/HighArchonTemplar default: F copyof: Feedback/HighTemplar default: F
@@ -1264,6 +1262,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Heal/Medivac2 default:  copyof: Heal/Medivac default: E
 	HireSpartanCompany/Factory default: C
 	HireSpartanCompany/MercCompound default: C
+	HunterSeekerMissile/Raven default: R
 	HunterSeekerMissile/SS_Plane default: R
 	HybridFAoEStun/Hybrid default: R
 	HybridFAoEStun/HybridBehemoth default: R
@@ -1765,5 +1764,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 35 
+Finished (suggest inherit) - INFOs: 34 
 ============================
