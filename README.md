@@ -379,7 +379,7 @@ Chosen solution:
  * shift+click on a unit removes a unit from the selection
  * shift+#groupkey overwrite the group with the current selection
  * give new order to that group, the previously selected unit won't be affected
-* **warning** missing to press Alt will overwrite the group associated to #camkey
+* **! WARNING !** missing to press Alt will overwrite the group associated to #camkey
  * For queued commands press Alt with the thumb before pressing the #camkey
  * Same for occasional jump to a base camera
 * Control camera to be preferred for warp pylon
