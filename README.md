@@ -250,9 +250,9 @@ If you wanted to update the icon, select the group and recreate it.
 
 ----------------------------------------------------------------------------------------------------------------------
 
-### Use case scenarii (for TheCore LitePlus)
+## Use case scenarii (for TheCore LitePlus)
 
-#### Use case: army production + rally point (optional warp-in pylon)
+### Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
 * Shift+Z: jump to rally point (declared with Alt+X)
 * Shift+X: select production facilities
@@ -261,7 +261,7 @@ If you wanted to update the icon, select the group and recreate it.
 * browse subgroup and launch production
 * select rallied army and add to control groups
 
-#### Use case: warp-in pylon (with Ctl camera)
+### Use case: warp-in pylon (with Ctl camera)
 * Ctl+C|D|E: center on warp pylon
 * X: select production facilities (WarpGate have higher selection priority)
 * hold key for warping-in units (rapid fire warp-in)
@@ -270,13 +270,13 @@ If you wanted to update the icon, select the group and recreate it.
 * right click for rally
 * [army\_group]: attack
 
-#### Use case: warp-in pylon (with Shift camera)
+### Use case: warp-in pylon (with Shift camera)
 * Hold shift
 * Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
 * Shift+X: select production facilities (WarpGate have higher selection priority)
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
-#### Use case: zerg macro routine
+### Use case: zerg macro routine
 * Hatch check
  * Z: hatch group
  * check supply depot at this step, to produce overlords
@@ -305,6 +305,85 @@ If you wanted to update the icon, select the group and recreate it.
 **Note:** creep tumor spawn/expand could be performed without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
 
+----------------------------------------------------------------------------------------------------------------------
+
+TheCore LiteCloning.SC2Hotkeys
+------------------------------
+
+Experimental version.
+Same as TheCore LitePlus with different group/camera modifier.
+
+The goals are:
+* to enable easy cloning with Shift Create group
+* keep benefits of TheCore LitePlus as much as possible
+* keep TheCore Lite command card
+
+## Camera/Group modifiers
+
+|Usage|Reference|Army|Macro|
+|:==|==|==|==|
+|create camera|Alt|Alt|Alt|
+|jump to camera|Shift|**Shift+Alt**|Shift
+|append to group (steal)|Ctl|Ctl|**Ctl+Alt**|
+|create group (steal)|Ctl+Shift|**Shift**|**Ctl+Shift+Alt**|
+|append to group (non-steal)|Ctl+Alt|Ctl+Alt|**unbound**|
+|create group (non-steal)|Ctl+Shift+Alt|**Shift+Alt**| **unbound**|
+
+* reference is TheCore LitePlus
+* macro groups are Z and X
+ * group X does not have camera
+ * non-steal alternates are disabled for macro groups
+* other groups are army groups
+
+## Discussions
+
+### About camera jump modifier
+
+Benefits of Shift camera jump come with queued commands:
+* sending worker back to work after queued commands
+* perform camera inject
+
+For those application,
+considering the placement of TheCore Lite camera keys,
+it's possible to press Alt during the queue before camera keypress.
+
+**Warning:** 
+Alt+Shift does not behave as Shift+Alt.
+Alt+Shift+#camkey would be consider as Alt and overwrite the camera #camkey.
+For occasional jump to base camera, take care to press Shift+Alt+#camkey.
+For other usage, control cameras are encouraged.
+
+### About macro group modifiers
+
+Consideration about macro groups
+* Shift+Z keeps on being used for camera jump to rally point
+* Shift+S is no longer available for warp pylon
+ * Ctl+X needs to be disabled for better/safe warp pylon usage with control cameras
+
+Chosen solution:
+* Ctl+Alt is used to append to both Z and X groups
+* Ctl+Shift+Alt is used to create both Z and X groups
+* Alt additional modifier is consistent:
+ * extra modifier prevents accidental inclusion of army in macro groups
+ * no risk related to accidental Shift+Alt usage with macro groups
+ * "append" is far more useful than "create" for macro groups
+ * Alt+D|Tab is supposed to be preferred to append new expansions
+
+## Game mechanics changes
+* Shift available for cloning
+ * select a group
+ * move to a location
+ * shift+click on a unit removes a unit from the selection
+ * shift+#groupkey overwrite the group with the current selection
+ * give new order to that group, the previously selected unit won't be affected
+* **warning** missing to press Alt will overwrite the group associated to #camkey
+ * For queued commands press Alt with the thumb before pressing the #camkey
+ * Same for occasional jump to a base camera
+* Control camera to be preferred for warp pylon
+ * Ctl+C to jump to warp pylon
+ * Ctl+X to select prod group (considered as X) 
+ * Ctl+V saves the warp pylon cam
+ * Ctl+Space helps center on a selected warp pylon before camera save
 
 ----------------------------------------------------------------------------------------------------------------------
 
