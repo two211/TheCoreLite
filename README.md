@@ -76,6 +76,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Tab : Alert Jump
  * Ctl+Tab : alternate for "select all army"
  * Ctl+Shift+Tab : alternate for "select all army"
+ * Alt+Tab : add to nexus/CC/hatch group (**warning** could bring back to desktop)
 * Group approach
  * all groups behave with steal (for easy split)
  * Extra Alt modifier enables non-steal behavior
