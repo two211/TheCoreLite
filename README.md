@@ -79,7 +79,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Group approach
  * all groups behave with steal (for easy split)
  * Extra Alt modifier enables non-steal behavior
- * **Note** TheCore approach is to make all groups behave the same, you can adapt on your own
+ * **note** TheCore approach is to make all groups behave the same, you can adapt on your own
 * Alt now show Ennemy life bar (useful for quick check of stacked ground/air armies)
 * Moved out of the dense keycard and Function keys
  * Period: Warp (to encourage production group)
@@ -129,7 +129,7 @@ It's in line with TheCore Lite suggested macro groups (Q and W).
 * camera rotation allows to spot invisible static units
 * Alternate Alt+T and Alt+G to rotate the camera and send detection at the right place
 
-**Note** T and G have been chosen because:
+**Note:** T and G have been chosen because:
 * there is no Alt shortcut on them
 * the fingers are more on the command space (than ` and 1)
 * D could not be chosen due to alias to append to macro group
@@ -167,11 +167,13 @@ Initiate inject cycle (hold Shift)
 Cycle through bases with fingers only
 * center mouse
 * press Shift+V to cycle base
- * depending on comfort preference Shift+B works as well
-* press one of those to target hatch if queen is here (depending on your comfort preference)
+ * depending on habbits/comfort preference Shift+B works as well
+* press one of those to target hatch if queen is there, depending on your comfort preference:
  * Shift+Space
  * Shift+F
  * Shift+D
+
+**Note:** In case of wandering queen, release shift and press V
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -242,7 +244,7 @@ The 10 groups are displayed in this order (| figures the separation):
 `123|ZX|QWAS <= standard group keys
 ```
 
-**NOTE:** the icon representing the group seems to be the best selectable unit at group creation
+**Note:** the icon representing the group seems to be the best selectable unit at group creation
 If you wanted to update the icon, select the group and recreate it.
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -299,7 +301,7 @@ If you wanted to update the icon, select the group and recreate it.
  * Ctl+Space = center view on selection
  * Ctl+R|F|V = update creep camera
 
-**NOTE:** creep tumor spawn/expand could be performed without queue
+**Note:** creep tumor spawn/expand could be performed without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
 
 
