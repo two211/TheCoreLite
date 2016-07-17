@@ -322,9 +322,9 @@ The goals are:
 
 Usage						|Reference	|Army	|Macro
 ----------------------------|:---------:|:-----:|:-----:
-create camera				|A  		|Alt	|Alt
-jump to camera				|S    		|**S+A**|Shift
-append to group (steal)		|C			|Ctl	|**C+A**
+create camera				|A  		|A		|A
+jump to camera				|S    		|**S+A**|S
+append to group (steal)		|C			|C		|**C+A**
 create group (steal)		|C+S		|**S**	|**C+S+A**
 append to group (non-steal)	|C+A		|C+A	|**unbound**
 create group (non-steal)	|C+S+A		|**C+S**|**unbound**
