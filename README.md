@@ -335,6 +335,9 @@ create group (non-steal)	|C+S+A		|**C+S**|**unbound**
  * non-steal alternates are disabled for macro groups
 * other groups are army groups
 
+Other changes:
+* Quick ping is now Ctl+RightClick to prevent issues with queued smart command
+
 ## Discussions
 
 ### About camera jump modifier
