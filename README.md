@@ -1,10 +1,6 @@
 The Core Lite Variations
 ========================
 
-{{TOC}}
-
-----------------------------------------------------------------------------------------------------------------------
-
 TheCore Lite.SC2Hotkeys
 -----------------------
 
@@ -123,8 +119,10 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Ctl+Shift+Alt+#group key will create non-steal the group
 
 #### Jump to last alert
-If you have some time, it may worth to try push Tab to jump to last alerts.
-It's in line with TheCore Lite suggested macro groups (Q and W)
+If you have some spare time, it may worth to try push Tab to jump to last alerts.
+It's in line with TheCore Lite suggested macro groups (Q and W).
+
+**Note:** Depending on your habbits, you may think about dropping this feature to bring back subgroup browsing with Tab/shift+Tab
 
 #### Fight against invisible
 * immobile invisible units can't be seen with static camera
@@ -138,15 +136,42 @@ It's in line with TheCore Lite suggested macro groups (Q and W)
 
 #### Additional cameras alternates
 2 "Control" camera alternates:
-* Ctl+E = Shift+3
-* Ctl+D = Shift+2
 * Ctl+C = Shift+Z (Shift+1 for TheCore LitePlus)
+* Ctl+D = Shift+2
+* Ctl+E = Shift+3
 
 Camera creation:
-* Ctl+R = Alt+3
-* Ctl+F = Alt+2
 * Ctl+V = Alt+Z (Alt+1 for TheCore LitePlus)
+* Ctl+F = Alt+2
+* Ctl+R = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
+
+#### Use case: telegraph inject
+
+The "telegraph" inject is a variant of the "backspace" inject.
+It relies on:
+* command queuing
+* no mouse click
+* 2 neighbour keys, comfortably pressable with left Shift key hold
+
+Initiate inject cycle (hold Shift)
+* Basic principle
+ * select inject queens
+ * launch inject command
+ * center mouse, center view on a hatch
+* Monitor inject initiate
+ * Shift+Z = jump to main hatch (first hatch)
+ * Shift+X = select inject queens + tech
+ * Shift+Space = inject
+
+Cycle through bases with fingers only
+* center mouse
+* press Shift+V to cycle base
+ * depending on comfort preference Shift+B works as well
+* press one of those to target hatch if queen is here (depending on your comfort preference)
+ * Shift+Space
+ * Shift+F
+ * Shift+D
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -222,7 +247,7 @@ If you wanted to update the icon, select the group and recreate it.
 
 ----------------------------------------------------------------------------------------------------------------------
 
-### Use case scenarii
+### Use case scenarii (for TheCore LitePlus)
 
 #### Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
@@ -259,6 +284,7 @@ If you wanted to update the icon, select the group and recreate it.
  * Shift+Space = queue inject (prevent queens from walking around)
  * center mouse + click
  * Shift+A|S|Q|W|2+click = base camera + inject
+ * **note** alternatively consider telegraph inject
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research
@@ -276,32 +302,6 @@ If you wanted to update the icon, select the group and recreate it.
 **NOTE:** creep tumor spawn/expand could be performed without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click
 
-#### Use case: telegraph inject
-
-The "telegraph" inject is a variant of the "backspace" inject.
-It relies on:
-* command queuing
-* no mouse click
-* 2 neighbour keys, comfortably pressable with left Shift key hold
-
-Initiate inject cycle (hold Shift)
-* Basic principle
- * select inject queens
- * launch inject command
- * center mouse, center view on a hatch
-* Monitor inject initiate
- * Shift+Z = jump to main hatch (first hatch)
- * Shift+X = select inject queens + tech
- * Shift+Space = inject
-
-Cycle through bases with fingers only
-* center mouse
-* press Shift+V to cycle base
- * depending on comfort preference Shift+B works as well
-* press one of those to target hatch if queen is here (depending on your comfort preference)
- * Shift+Space
- * Shift+F
- * Shift+D
 
 ----------------------------------------------------------------------------------------------------------------------
 
