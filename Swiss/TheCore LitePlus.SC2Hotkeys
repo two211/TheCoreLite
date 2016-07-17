@@ -171,11 +171,11 @@ StatusEnemy=Alt
 StatusOwner=Grave
 SubgroupNext=ForwardMouseButton
 SubgroupPrev=BackMouseButton
-TargetChoose=LeftMouseButton,Space,R,T,D,F,G,CapsLock,Shift+Tab
+TargetChoose=LeftMouseButton,Space,R,T,D,F,G,CapsLock
 TeamResources=Shift+F2
 ToggleVersusModeSides=Control+X
 ToggleWorldPanel=Control+W
-TownCamera=B,Shift+Slash
+TownCamera=B,Shift+V,Shift+Slash
 WarpIn=Period
 
 [Commands]
@@ -341,7 +341,7 @@ CarrierRepairDroneHeal/CarrierRepairDrone=R
 CausticSpray/Corruptor=C,Space
 CelestialBeam/KerriganEpilogue02=C
 ChainLightning/XelNagaWorldshipVault=C
-ChannelSnipe/Ghost=Capslock,C
+ChannelSnipe/Ghost=CapsLock,C
 Charge/Khraxus=Space
 Charge/Orthos=Space
 Charge/ShadowOfTheVoidZealot=Space

@@ -388,6 +388,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCreepTumor/Queen2 default:  copyof: BuildCreepTumor/Queen default: C
 	BuildCreepTumor/QueenCoop default: C copyof: BuildCreepTumor/Queen default: C
 	BuildCreepTumorPropagate/CreepTumorBurrowed default: C
+	ChannelSnipe/Ghost default: R
 	Colossus/RoboticsFacility default: C
 	Colossus/RoboticsFacilityWarp default: C copyof: Colossus/RoboticsFacility default: C
 	NovaSnipe/Nova default: R copyof: Snipe/Ghost default: R
