@@ -72,7 +72,6 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Shift+F3 no more used for WarpIn
 * Tab no longer used for subgroup browsing (to encourage mouse usage)
  * Tab : Alert Jump
- * Shift+Tab : alternate for "choose target" (see "telegraph inject" below)
  * Ctl+Tab : alternate for "select all army"
  * Ctl+Shift+Tab : alternate for "select all army"
 * Group approach
@@ -97,8 +96,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * "Control" Cameras
  * Suitable for creep spread as an example
 * Support for telegraph inject (a variant of backspace inject)
- * Shift+` base camera
- * Shift+Tab target choose
+ * Shift+V base camera
  * read use case below
 * AI keys now supported
  * direct attack on Ctl+Alt+D
@@ -191,7 +189,18 @@ Tip for rally point | warp-in pylon
 
 Tip for egg inject, please read section dedicated to zerg macro routine
 
-#### Group display
+### Cameras views
+```
+`123
+  QW[ER]
+  AS[DF]
+  Z [CV] <= no more camera on X
+```
+* X camera has been moved to 1
+* ` is used for town camera
+* CV|DF|ER are control cameras aliases for 1|2|3
+
+### Group display
 
 The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
 This facilitates the visual representation of existing groups.
@@ -274,12 +283,15 @@ Initiate inject cycle (hold Shift)
  * Shift+Z = jump to main hatch (first hatch)
  * Shift+X = select inject queens + tech
  * Shift+Space = inject
- * center mouse
 
 Cycle through bases with fingers only
-* move thumb over Shift and hold to start command queuing
-* press Shift+` to cycle base
-* presse Shift+Tab to target hatch if queen is here
+* center mouse
+* press Shift+V to cycle base
+ * depending on comfort preference Shift+B works as well
+* press one of those to target hatch if queen is here (depending on your comfort preference)
+ * Shift+Space
+ * Shift+F
+ * Shift+D
 
 Changelog for the code
 ======================
