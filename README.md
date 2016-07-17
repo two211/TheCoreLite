@@ -323,20 +323,17 @@ The goals are:
 Usage						|Reference	|Army	|Macro
 ----------------------------|:---------:|:-----:|:-----:
 create camera				|A  		|A		|A
-jump to camera				|S    		|**S+A**|S
-append to group (steal)		|C			|C		|**C+A**
-create group (steal)		|C+S		|**S**	|**C+S+A**
+jump to camera				|S    		|**S+C**|S
+append to group (steal)		|C			|C		|**A (!!)**
+create group (steal)		|C+S		|**S**	|**C+A**
 append to group (non-steal)	|C+A		|C+A	|**unbound**
-create group (non-steal)	|C+S+A		|**C+S**|**unbound**
+create group (non-steal)	|C+S+A		|C+S+A	|**unbound**
 
 * reference is TheCore LitePlus
 * macro groups are Z and X
  * group X does not have camera
  * non-steal alternates are disabled for macro groups
 * other groups are army groups
-
-Other changes:
-* Quick ping is now Ctl+RightClick to prevent issues with queued smart command
 
 ## Discussions
 
@@ -346,15 +343,9 @@ Benefits of Shift camera jump come with queued commands:
 * sending worker back to work after queued commands
 * perform camera inject
 
-For those application,
+For those applications,
 considering the placement of TheCore Lite camera keys,
-it's possible to press Alt during the queue before camera keypress.
-
-**Warning:** 
-Alt+Shift does not behave as Shift+Alt.
-Alt+Shift+#camkey would be consider as Alt and overwrite the camera #camkey.
-For occasional jump to base camera, take care to press Shift+Alt+#camkey.
-For other usage, control cameras are encouraged.
+it's possible to press Ctl with the thumb during the queue before camera keypress.
 
 ### About macro group modifiers
 
@@ -364,13 +355,14 @@ Consideration about macro groups
  * Ctl+X needs to be disabled for better/safe warp pylon usage with control cameras
 
 Chosen solution:
-* Ctl+Alt is used to append to both Z and X groups
-* Ctl+Shift+Alt is used to create both Z and X groups
-* Alt additional modifier is consistent:
- * extra modifier prevents accidental inclusion of army in macro groups
- * no risk related to accidental Shift+Alt usage with macro groups
+* Alt is used to append to both Z and X groups
+ * Alt+X for "prod" group
+ * Alt+D|Tab for "base" group
+* Ctl+Alt is used to create both Z and X groups (same as non-steal)
+* Alt modifier is consistent:
  * "append" is far more useful than "create" for macro groups
- * Alt+D|Tab is supposed to be preferred to append new expansions
+ * no risk related to accidental Shift+Control usage with macro groups
+ * Alt+D|Tab is already supposed to be preferred to append new expansions
 
 ## Game mechanics changes
 * Shift available for cloning
@@ -379,14 +371,14 @@ Chosen solution:
  * shift+click on a unit removes a unit from the selection
  * shift+#groupkey overwrite the group with the current selection
  * give new order to that group, the previously selected unit won't be affected
-* **! WARNING !** missing to press Alt will overwrite the group associated to #camkey
- * For queued commands press Alt with the thumb before pressing the #camkey
+* For queued commands press Ctl with the thumb before pressing the #camkey
  * Same for occasional jump to a base camera
 * Control camera to be preferred for warp pylon
  * Ctl+C to jump to warp pylon
  * Ctl+X to select prod group (considered as X) 
  * Ctl+V saves the warp pylon cam
  * Ctl+Space helps center on a selected warp pylon before camera save
+
 
 ----------------------------------------------------------------------------------------------------------------------
 
