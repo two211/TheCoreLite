@@ -49,6 +49,8 @@ source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COm
 * Shift+[camera\_key]: jump to base
 * Shift + right click on mineral or gaz; last action of the queue is to go back to work
 
+----------------------------------------------------------------------------------------------------------------------
+
 TheCore LiteRehab.SC2Hotkeys
 ----------------------------
 
@@ -142,6 +144,8 @@ Camera creation:
 * Ctl+V = Alt+Z (Alt+1 for TheCore LitePlus)
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
+----------------------------------------------------------------------------------------------------------------------
+
 TheCore LitePlus.SC2Hotkeys
 --------------------------------
 
@@ -212,7 +216,9 @@ The 10 groups are displayed in this order (| figures the separation):
 **NOTE:** the icon representing the group seems to be the best selectable unit at group creation
 If you wanted to update the icon, select the group and recreate it.
 
-### Examples
+----------------------------------------------------------------------------------------------------------------------
+
+### Use case scenarii
 
 #### Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
@@ -292,6 +298,8 @@ Cycle through bases with fingers only
  * Shift+Space
  * Shift+F
  * Shift+D
+
+----------------------------------------------------------------------------------------------------------------------
 
 Changelog for the code
 ======================
