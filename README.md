@@ -320,14 +320,14 @@ The goals are:
 
 ## Camera/Group modifiers
 
-Usage|Reference|Army|Macro
----|:---:|:---:|:---:
-create camera|Alt|Alt|Alt
-jump to camera|Shift|**Shift+Alt**|Shift
-append to group (steal)|Ctl|Ctl|**Ctl+Alt**
-create group (steal)|Ctl+Shift|**Shift**|**Ctl+Shift+Alt**
-append to group (non-steal)|Ctl+Alt|Ctl+Alt|**unbound**
-create group (non-steal)|Ctl+Shift+Alt|**Shift+Alt**| **unbound**
+Usage						|Reference	|Army	|Macro
+----------------------------|:---------:|:-----:|:-----:
+create camera				|A  		|Alt	|Alt
+jump to camera				|S    		|**S+A**|Shift
+append to group (steal)		|C			|Ctl	|**C+A**
+create group (steal)		|C+S		|**S**	|**C+S+A**
+append to group (non-steal)	|C+A		|C+A	|**unbound**
+create group (non-steal)	|C+S+A		|**C+S**|**unbound**
 
 * reference is TheCore LitePlus
 * macro groups are Z and X
