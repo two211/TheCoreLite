@@ -97,7 +97,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Support for autocentered cameras
  * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
  * Alt+Shift+23QWASZX are alternate to declare the camera
- * Alt+Space PushToTalk (to free Alt+Shift)
+ * Alt+F1 PushToTalk (to free Alt+Shift)
 * "Control" Cameras
  * Suitable for creep spread as an example
 * Support for telegraph inject (a variant of backspace inject)

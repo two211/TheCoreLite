@@ -2,7 +2,7 @@
 AllowSetConflicts=1
 
 [Hotkeys]
-PTT=Alt+Space
+PTT=Alt+F1
 IdleWorker=F1
 ArmySelect=Control+Tab,Control+Shift+Tab
 TeamResources=Shift+F2
