@@ -323,9 +323,9 @@ The goals are:
 Usage						|Reference	|Army	|Macro
 ----------------------------|:---------:|:-----:|:-----:
 create camera				|A  		|A		|A
-jump to camera				|S    		|**S+C**|S
-append to group (steal)		|C			|C		|**A (!!)**
-create group (steal)		|C+S		|**S**	|**C+A**
+jump to camera				|S    		|**S+C**|S **S+C**
+append to group (steal)		|C			|C		|**C+A A(!)**
+create group (steal)		|C+S		|**S**	|**C+S+A**
 append to group (non-steal)	|C+A		|C+A	|**unbound**
 create group (non-steal)	|C+S+A		|C+S+A	|**unbound**
 
@@ -358,8 +358,8 @@ Chosen solution:
 * Alt is used to append to both Z and X groups
  * Alt+X for "prod" group
  * Alt+D|Tab for "base" group
-* Ctl+Alt is used to create both Z and X groups (same as non-steal)
-* Alt modifier is consistent:
+* Ctl+Shift+Alt is used to create both Z and X groups (same as non-steal)
+* Alt usage is consistent:
  * "append" is far more useful than "create" for macro groups
  * no risk related to accidental Shift+Control usage with macro groups
  * Alt+D|Tab is already supposed to be preferred to append new expansions
