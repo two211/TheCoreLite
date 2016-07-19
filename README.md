@@ -188,7 +188,9 @@ TheCore LitePlus.SC2Hotkeys
 Same as TheCore LiteRehab.SC2Hotkeys with modifications to original legacy TheCore Lite UI hotkeys.
 
 The goals are:
-* better see group affection from UI
+* benefit of Shift+Z+X combination to jump to camera while selection X group
+* have some support for easy cloning
+* better view of group affection from UI
 * not disturb (too much) TheCore Lite key spirit
 
 Modifications:
@@ -237,8 +239,29 @@ Tip for egg inject, please read section dedicated to zerg macro routine
   Z [CV] <= no more camera on X
 ```
 * X camera has been moved to 1
-* ` is used for jump to last alerjump to last alert
+* ` is used for jump to last alert (with Shift or Alt)
 * CV|DF|ER are control cameras aliases for 1|2|3
+
+### Easier cloning through Shift+Alt group creation
+
+Cloning consists in recreating a group after one unit deselection.
+Most of the seeds for TheCore 2.0 uses Shift as the modifier for group creation.
+This allows to chain:
+* select a group
+* issue a command
+* Shift+click on a unit in the selected group
+* group recreation
+* new command out of the current selection
+
+As Shift is used for camera jump in TheCore Lite,
+Shift+Alt+#groupkey has been chosen as an alternate for group creation.
+* select group with #groupkey
+* issue a command
+* Shift(+Alt)+click on a unit from the group
+* Shift+Alt+#groupkey to overwrite group
+* issue a new command
+
+**Note:** Alt+Shift differs from Shift+Alt in Starcraft II interface
 
 ### Group display
 
