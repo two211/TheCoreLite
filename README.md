@@ -197,6 +197,8 @@ The goals are:
 Modifications:
 * ZX are the macro hotkeys
 * X no longer used for camera (the related camera is now 1 or ctrl cam "CV" )
+* Shift+Alt+#groupkey is an alternate to Control+Shift+#groupkey
+* MinimapPing is now Alt+X
 
 ### Macro groups
 
