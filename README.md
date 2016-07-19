@@ -264,7 +264,8 @@ Shift+Alt+#groupkey has been chosen as an alternate for group creation.
 * Shift+Alt+#groupkey to overwrite group
 * issue a new command
 
-**Note:** Alt+Shift differs from Shift+Alt in Starcraft II interface
+**Note:** be careful not to press Alt+Shift+#camkey simultaneously while centering view with Alt+Shift,
+this would overview the group affected to #camkey
 
 ### Group display
 
