@@ -82,6 +82,9 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
 * Alert jump
  * accessible with Shift+Grave
  * accessible with Alt+Grave
+* Minimap ping
+ * QuickPing now mapped on Alt+RightClick
+ * MinimapPing on Alt+1
 * Group approach
  * all groups behave with steal (for easy split)
  * Extra Alt modifier enables non-steal behavior
@@ -91,9 +94,6 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Period: Warp (to encourage production group)
  * Numpad0: Quick save
  * Delete: CameraFollow
-* Minimap ping
- * QuickPing now mapped on Alt+RightClick
- * MinimapPing on Alt+`
 * Rotate camera (help to spot invisible)
  * Alt+T : Rotate camera Left
  * Alt+G : Rotate camera Right
@@ -125,7 +125,8 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Ctl+Shift+Alt+#group key will create non-steal the group
 
 #### Jump to last alert
-If you have some spare time, it may worth to try push Shift+` to jump to last alerts.
+If you have some spare time, it may worth to try push Shift|Alt+` to jump to last alerts.
+Alt+` could be easily chain with Alt+1 or Alt+RightClick to ping the event to teammates.
 
 **Note:** previously with direct access with Tab key (dropped due to subgroup selection)
 
