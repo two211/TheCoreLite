@@ -72,11 +72,16 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
  * Shift+F2 Team Ressources
  * Shift+F3 no more used for WarpIn
-* Tab no longer used for subgroup browsing (to encourage mouse usage)
- * Tab : Alert Jump
+* Subgroup selection
+ * ForwardMouseButton|BackMouseButton : next|previous subgroup
+ * (Shift+)Tab : next (previous) subgroup (for legacy compatibility)
+* Other Tab usages
  * Ctl+Tab : alternate for "select all army"
  * Ctl+Shift+Tab : alternate for "select all army"
  * Alt+Tab : add to nexus/CC/hatch group (**warning** could bring back to desktop)
+* Alert jump
+ * accessible with Shift+Grave
+ * accessible with Alt+Grave
 * Group approach
  * all groups behave with steal (for easy split)
  * Extra Alt modifier enables non-steal behavior
@@ -120,10 +125,9 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Ctl+Shift+Alt+#group key will create non-steal the group
 
 #### Jump to last alert
-If you have some spare time, it may worth to try push Tab to jump to last alerts.
-It's in line with TheCore Lite suggested macro groups (Q and W).
+If you have some spare time, it may worth to try push Shift+` to jump to last alerts.
 
-**Note:** Depending on your habbits, you may think about dropping this feature to bring back subgroup browsing with Tab/shift+Tab
+**Note:** previously with direct access with Tab key (dropped due to subgroup selection)
 
 #### Fight against invisible
 * immobile invisible units can't be seen with static camera
@@ -233,7 +237,7 @@ Tip for egg inject, please read section dedicated to zerg macro routine
   Z [CV] <= no more camera on X
 ```
 * X camera has been moved to 1
-* ` is used for town camera
+* ` is used for jump to last alerjump to last alert
 * CV|DF|ER are control cameras aliases for 1|2|3
 
 ### Group display
@@ -375,7 +379,7 @@ Chosen solution:
  * Same for occasional jump to a base camera
 * Control camera to be preferred for warp pylon
  * Ctl+C to jump to warp pylon
- * Ctl+X to select prod group (considered as X) 
+ * Ctl+X to select prod group (considered as X)
  * Ctl+V saves the warp pylon cam
  * Ctl+Space helps center on a selected warp pylon before camera save
 
