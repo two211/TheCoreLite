@@ -125,8 +125,8 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * Ctl+Shift+Alt+#group key will create non-steal the group
 
 #### Jump to last alert
-If you have some spare time, it may worth to try push Shift|Alt+` to jump to last alerts.
-Alt+` could be easily chain with Alt+1 or Alt+RightClick to ping the event to teammates.
+If you have some spare time, it may worth to try push Shift|Alt+\` to jump to last alerts.
+Alt+\` could be easily chain with Alt+1 or Alt+RightClick to ping the event to teammates.
 
 **Note:** previously with direct access with Tab key (dropped due to subgroup selection)
 
