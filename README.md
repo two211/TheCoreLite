@@ -1,3 +1,7 @@
+This is the "experimental" branch of TheCore Lite github repository.
+In this branch the full documentation will stay available.
+It should not be modified, as TheCore LitePlus has been retained to be the new TheCore Lite.
+
 The Core Lite Variations
 ========================
 
