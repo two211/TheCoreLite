@@ -86,6 +86,7 @@ Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
  * accessible with Alt+Grave
 * Minimap ping
  * QuickPing now mapped on Alt+RightClick
+ * MinimapPing on Shift+1
  * MinimapPing on Alt+1
 * Group approach
  * all groups behave with steal (for easy split)

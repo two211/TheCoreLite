@@ -1,6 +1,11 @@
 ============================
 Start commands with no attached conflict (log file: MissingConflict.log)
 ----------------------------
+[ERROR]: Spray not related to a conflict
+in seed TheCore Lite, keys =4
+in seed TheCore LiteRehab, keys =4
+in seed TheCore LitePlus, keys =4
+
 [ERROR]: ActivateIbikisCannon/PlanetaryFortress not related to a conflict
 in seed TheCore Lite, keys =
 in seed TheCore LiteRehab, keys =
@@ -1370,5 +1375,5 @@ in seed TheCore LiteRehab, keys =T
 in seed TheCore LitePlus, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 85 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 86 WARNs: 145 
 ============================

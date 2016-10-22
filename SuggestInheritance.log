@@ -116,6 +116,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchVesselLoad/ResearchVesselLanded default: L
 	SJHyperionFightersRecall/SJHyperion default: X
 	SpectreHoldFire/Spectre default: F copyof: GhostHoldFire/Ghost default: F
+	Spray default: Y
 	SwarmQueenRaptor/HugeSwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
 	SwarmQueenRaptor/LargeSwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
 	SwarmQueenRaptor/SwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
