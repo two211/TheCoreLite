@@ -2,6 +2,7 @@ The Core Lite v2.0
 ==================
 
 Some graphic ressources is available in Image directory
+https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore\_Lite.pdf
 
 Goals of this version
 ---------------------
