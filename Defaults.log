@@ -1,8 +1,6 @@
 ============================
 Start Check defaults (log file: Defaults.log)
 ----------------------------
-[WARN]: no default ActivateIbikisCannon/PlanetaryFortress
-[WARN]: no default Aggressive/LurkerMPBurrowed
 [WARN]: no default Apocalypse/K5Kerrigan
 [WARN]: no default ArchonHallucination/Nexus
 [WARN]: no default ArchonHallucination/Voranor
@@ -10,7 +8,6 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default AttackChampions
 [WARN]: no default Baneling/Zergling2
 [WARN]: no default BuildCreepTumor/Queen2
-[WARN]: no default BuildScarab/Reaver
 [WARN]: no default BurrowChargeMP/Ultralisk
 [WARN]: no default BurrowHydraliskImpalerDown
 [WARN]: no default BurrowHydraliskImpalerUp
@@ -25,19 +22,12 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Charge/ZealotDark
 [WARN]: no default ColossusHallucination/Nexus
 [WARN]: no default ColossusHallucination/Voranor
-[WARN]: no default CreepTumor/Queen
 [WARN]: no default CyberneticsCore/Harvester
 [WARN]: no default DarkShrine/Harvester
-[WARN]: no default DarkSwarm/Infestor
-[WARN]: no default Detonate/SpiderMine
 [WARN]: no default DisableBuildingAttack/baneling
 [WARN]: no default DisableBuildingAttack/baneling2
-[WARN]: no default EMP/ScienceVessel
 [WARN]: no default EnableBuildingAttack/baneling
 [WARN]: no default EnableBuildingAttack/baneling2
-[WARN]: no default EnrageQueen/Queen
-[WARN]: no default EvadeObserver/Observer
-[WARN]: no default EvolveBurrowCharge/Hatchery
 [WARN]: no default Explode/baneling
 [WARN]: no default Explode/baneling2
 [WARN]: no default Feedback/AnAleemController
@@ -48,51 +38,30 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Frostbat/Barracks
 [WARN]: no default FungalGrowth/Infestor2
 [WARN]: no default Gateway/Harvester
-[WARN]: no default Glare/Oracle
-[WARN]: no default Guardian/Mutalisk
 [WARN]: no default GuardianShield/Sentry2
 [WARN]: no default Hallucination/Sentry2
 [WARN]: no default Hallucination2/Voranor
 [WARN]: no default Heal/Medivac2
-[WARN]: no default HellfireThrusters/StarportTechLab
 [WARN]: no default HighTemplarHallucination/Nexus
 [WARN]: no default HighTemplarHallucination/Voranor
-[WARN]: no default IgniteAfterburner/Medivac
-[WARN]: no default Immortal
-[WARN]: no default Immortal/Gateway
-[WARN]: no default Immortal/WarpGate
 [WARN]: no default ImmortalHallucination/Nexus
 [WARN]: no default IncineratorNozzles/DevilDog
 [WARN]: no default InfestedTerrans/Infestor2
-[WARN]: no default InjectLarva/Queen
 [WARN]: no default KhalaShockwave/Immortal
-[WARN]: no default LaunchNullWard/NullSphere
-[WARN]: no default LockdownRound/Ghost
 [WARN]: no default Lurker/Hydralisk
 [WARN]: no default LurkerBurrowDown
-[WARN]: no default Matrix/Medic
 [WARN]: no default MeliakBlinkBTN/Meliak
 [WARN]: no default MorphMorphalisk/BroodMother
 [WARN]: no default MorphMorphalisk/Queen2
 [WARN]: no default MorphtoDefiler/Larva
 [WARN]: no default MorphtoRoach/Larva
 [WARN]: no default MoveChampions
-[WARN]: no default MutateintoDefilerMound/Drone
-[WARN]: no default NerveJam/ScienceVessel
 [WARN]: no default NeuralParasite/Infestor2
 [WARN]: no default Nexus/Harvester
-[WARN]: no default NurturingSwarm/Queen
-[WARN]: no default Overcharge/OrbitalCommand
-[WARN]: no default Passive
-[WARN]: no default PhaseMissile/Scout
 [WARN]: no default PhoenixHallucination/Nexus
 [WARN]: no default PhotonCannon/Harvester
-[WARN]: no default PlaceWard/Oracle
-[WARN]: no default Plague/Infestor
-[WARN]: no default PrimalConsume/Infestor
 [WARN]: no default PrimalHeal/K5Kerrigan
 [WARN]: no default PrimalSlash/K5Kerrigan
-[WARN]: no default Probe/KhaydarinNexus
 [WARN]: no default ProbeHallucination/Nexus
 [WARN]: no default ProbeHallucination/Voranor
 [WARN]: no default ProtossBuild/Harvester
@@ -103,40 +72,13 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default PsiStrike/K5Kerrigan
 [WARN]: no default PsionicBolt/Telios
 [WARN]: no default Pylon/Harvester
-[WARN]: no default Recall/Arbiter
-[WARN]: no default ResearchBarrelStabilizers/BarracksTechLab
-[WARN]: no default ResearchCharonBooster/FactoryTechLab
-[WARN]: no default ResearchEMP/StarportTechLab
-[WARN]: no default ResearchEngineeredExplosives/BarracksTechLab
-[WARN]: no default ResearchEvadeObserver/Observatory
-[WARN]: no default ResearchFortifiedBunkers/EngineeringBay
-[WARN]: no default ResearchGraviticBooster/Observatory
-[WARN]: no default ResearchIonThrusters/FactoryTechLab
-[WARN]: no default ResearchIrradiate/StarportTechLab
-[WARN]: no default ResearchKhaydarinCore/ArbiterTribunal
-[WARN]: no default ResearchKhaydarinGenerator/FleetBeacon
-[WARN]: no default ResearchMatrix/BarracksTechLab
-[WARN]: no default ResearchPiercingRockets/StarportTechLab
-[WARN]: no default ResearchPlasmaCharge/RoboticsBay
-[WARN]: no default ResearchRecall/ArbiterTribunal
-[WARN]: no default ResearchSingularityCharge2/CyberneticsCore
-[WARN]: no default ResearchSpiderMines/FactoryTechLab
 [WARN]: no default ResearchStrikeCannons/FactoryTechReactor
-[WARN]: no default ResearchTimeWarp/FleetBeacon
-[WARN]: no default ResearchTitanReactor/StarportTechLab
-[WARN]: no default ResearchTurboGripper/StarportTechLab
-[WARN]: no default Rift/KhaydarinNexus
-[WARN]: no default Rift/Nexus
 [WARN]: no default RoboticsBay/Harvester
 [WARN]: no default RoboticsFacility/Harvester
 [WARN]: no default RogueGhostCloak/Spectre
-[WARN]: no default SJHyperionBlink/Battlecruiser
-[WARN]: no default SlivanPuke/Devourer
 [WARN]: no default SpawnBanelings/K5Kerrigan
 [WARN]: no default StalkerHallucination/Nexus
 [WARN]: no default Stargate/Harvester
-[WARN]: no default StasisField/Arbiter
-[WARN]: no default StasisField/ArbiterTribunal
 [WARN]: no default Summon2DragoonHallucinations/Sentry
 [WARN]: no default Summon2DragoonHallucinations/Voranor
 [WARN]: no default Summon2ScoutHallucinations/Sentry
@@ -161,43 +103,119 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default TechReactor/Factory
 [WARN]: no default TechReactor/Starport
 [WARN]: no default TemplarArchive/Harvester
-[WARN]: no default TimeWarpSentinel/Oracle
 [WARN]: no default Transfusion/BroodMother
 [WARN]: no default Transfusion/Queen2
 [WARN]: no default TwilightCouncil/Harvester
-[WARN]: no default UpgradeLIDARTransmitter/EngineeringBay
-[WARN]: no default UpgradewithKhaydarinCore/Nexus
-[WARN]: no default UseSpiderMine/Vulture
 [WARN]: no default VoidRayHallucination/Nexus
 [WARN]: no default VoidRayHallucination/Voranor
 [WARN]: no default VoodooShield/Immortal
-[WARN]: no default WarpInCorsair/Stargate
-[WARN]: no default WarpInReaver/RoboticsFacility
 [WARN]: no default WarpInShuttle/RoboticsFacility
 [WARN]: no default WarpPrismHallucination/Nexus
 [WARN]: no default WarpPrismHallucination/Voranor
-[WARN]: no default WarpinArbiterTribunal/Probe
-[WARN]: no default WarpinDragoon/Gateway
-[WARN]: no default WarpinObservatory/Probe
-[WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 [ERROR]: no default CommanderAbility0
 [ERROR]: no default CommanderAbility1
 [ERROR]: no default CommanderAbility2
 [ERROR]: no default CommanderAbility3
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) DehakaMirrorImage/Dehaka
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Hellion/Factory
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HeroNukeCalldown/NovaHero
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireDevilDogs/MercCompound
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireSiegeBreakers/MercCompound
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PoisonNova/HotSNoxious
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5Kerrigan
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5KerriganBurrowed
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5KerriganPsiStrike
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/Starport
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRift
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRiftUnselectable
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ReleaseMinion/Nova
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchLurkerRange/LurkerDenMP
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SJHyperionFighters/SJHyperion
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpawnCorruptor/SpacePlatformVentsUnit
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Spectre/Barracks
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpiderMineReplenish/Vulture
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SwarmQueenZergling/SwarmQueen
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) TemporalField/MothershipCore
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) VoidDarkTemplarShadowFury/DarkTemplarShakuras
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) VoodooShield/Tosh
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Wraith/Starport
+[ERROR]: no default ActivateIbikisCannon/PlanetaryFortress
+[ERROR]: no default Aggressive/LurkerMPBurrowed
+[ERROR]: no default BuildScarab/Reaver
+[ERROR]: no default CreepTumor/Queen
+[ERROR]: no default DarkSwarm/Infestor
+[ERROR]: no default Detonate/SpiderMine
+[ERROR]: no default EMP/ScienceVessel
+[ERROR]: no default EnrageQueen/Queen
+[ERROR]: no default EvadeObserver/Observer
 [ERROR]: no default EvolveAdrenalineBoost/EvolutionChamber
+[ERROR]: no default EvolveBurrowCharge/Hatchery
+[ERROR]: no default Glare/Oracle
 [ERROR]: no default GreaterRoachWarren/RoachWarren
+[ERROR]: no default Guardian/Mutalisk
+[ERROR]: no default HellfireThrusters/StarportTechLab
+[ERROR]: no default IgniteAfterburner/Medivac
+[ERROR]: no default Immortal
+[ERROR]: no default Immortal/Gateway
+[ERROR]: no default Immortal/WarpGate
+[ERROR]: no default InjectLarva/Queen
+[ERROR]: no default LaunchNullWard/NullSphere
+[ERROR]: no default LockdownRound/Ghost
 [ERROR]: no default Lurker/HydraliskImpaler
+[ERROR]: no default Matrix/Medic
+[ERROR]: no default MutateintoDefilerMound/Drone
+[ERROR]: no default NerveJam/ScienceVessel
+[ERROR]: no default NurturingSwarm/Queen
+[ERROR]: no default Overcharge/OrbitalCommand
+[ERROR]: no default Passive
+[ERROR]: no default PhaseMissile/Scout
+[ERROR]: no default PlaceWard/Oracle
+[ERROR]: no default Plague/Infestor
+[ERROR]: no default PrimalConsume/Infestor
+[ERROR]: no default Probe/KhaydarinNexus
+[ERROR]: no default Recall/Arbiter
+[ERROR]: no default ResearchBarrelStabilizers/BarracksTechLab
+[ERROR]: no default ResearchCharonBooster/FactoryTechLab
+[ERROR]: no default ResearchEMP/StarportTechLab
+[ERROR]: no default ResearchEngineeredExplosives/BarracksTechLab
+[ERROR]: no default ResearchEvadeObserver/Observatory
+[ERROR]: no default ResearchFortifiedBunkers/EngineeringBay
+[ERROR]: no default ResearchGraviticBooster/Observatory
+[ERROR]: no default ResearchIonThrusters/FactoryTechLab
+[ERROR]: no default ResearchIrradiate/StarportTechLab
+[ERROR]: no default ResearchKhaydarinCore/ArbiterTribunal
+[ERROR]: no default ResearchKhaydarinGenerator/FleetBeacon
 [ERROR]: no default ResearchLocustNest/EvolutionChamber
+[ERROR]: no default ResearchMatrix/BarracksTechLab
+[ERROR]: no default ResearchPiercingRockets/StarportTechLab
+[ERROR]: no default ResearchPlasmaCharge/RoboticsBay
+[ERROR]: no default ResearchRecall/ArbiterTribunal
+[ERROR]: no default ResearchSingularityCharge2/CyberneticsCore
+[ERROR]: no default ResearchSpiderMines/FactoryTechLab
 [ERROR]: no default ResearchSpikeBurstRankOne/EvolutionChamber
 [ERROR]: no default ResearchStabRankOne/EvolutionChamber
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchStabilizerMedPacks/BarracksTechLab
+[ERROR]: no default ResearchTimeWarp/FleetBeacon
+[ERROR]: no default ResearchTitanReactor/StarportTechLab
+[ERROR]: no default ResearchTurboGripper/StarportTechLab
+[ERROR]: no default Rift/KhaydarinNexus
+[ERROR]: no default Rift/Nexus
+[ERROR]: no default SJHyperionBlink/Battlecruiser
+[ERROR]: no default SlivanPuke/Devourer
+[ERROR]: no default StasisField/Arbiter
+[ERROR]: no default StasisField/ArbiterTribunal
+[ERROR]: no default TimeWarpSentinel/Oracle
+[ERROR]: no default UpgradeLIDARTransmitter/EngineeringBay
+[ERROR]: no default UpgradewithKhaydarinCore/Nexus
+[ERROR]: no default UseSpiderMine/Vulture
+[ERROR]: no default WarpInCorsair/Stargate
+[ERROR]: no default WarpInReaver/RoboticsFacility
+[ERROR]: no default WarpinArbiterTribunal/Probe
+[ERROR]: no default WarpinDragoon/Gateway
+[ERROR]: no default WarpinObservatory/Probe
+[ERROR]: no default WormholeTransit/Predator
 ----------------------------
-Finished (Check defaults) - WARNs: 181 ERRORs: 16 
+Finished (Check defaults) - WARNs: 113 ERRORs: 102 
 ============================

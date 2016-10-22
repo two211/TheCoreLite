@@ -1,7 +1,7 @@
 ============================
 Start suggest inherit (log file: SuggestInheritance.log)
 ----------------------------
-[INFO]: TheCore Lite:    TheCore LiteRehab:    TheCore LitePlus:    
+[INFO]: TheCore Lite:    
 	ActivateIbikisCannon/PlanetaryFortress default: 
 	Aggressive/LurkerMPBurrowed default: 
 	BattleRage/Khraxus default: B
@@ -74,7 +74,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WormholeTransit/Predator default: 
 	XaphanForce/Voranor default: X
 
-[INFO]: TheCore Lite: 4   TheCore LiteRehab: 4   TheCore LitePlus: 4   
+[INFO]: TheCore Lite: 4   
 	Aberration/Larva default: B
 	BiodomeLoad/InfestableBiodome default: L
 	BunkerLoad default: L
@@ -132,12 +132,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopBanelingSpawner/ZagaraVoidCoop default: B
 	ZagaraVoidCoopBanelingSpawner/ZagaraVoidCoopBurrowed default: B
 
-[INFO]: TheCore Lite: Space,4   TheCore LiteRehab: Space,4   TheCore LitePlus: Space,4   
+[INFO]: TheCore Lite: Space,4   
 	AutoTurret/Raven default: T
 	BuildAutoTurret/Raven default: T copyof: AutoTurret/Raven default: T
 	DutchPlaceTurret/Swann default: T copyof: AutoTurret/Raven default: T
 
-[INFO]: TheCore Lite: 5   TheCore LiteRehab: 5   TheCore LitePlus: 5   
+[INFO]: TheCore Lite: 5   
 	CampaignVehicles default: A
 	CampaignVehicles/Factory default: A
 	CampaignVehicles/Starport default: A
@@ -171,13 +171,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenVile/LargeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 
-[INFO]: TheCore Lite: 6   TheCore LiteRehab: 6   TheCore LitePlus: 6   
+[INFO]: TheCore Lite: 6   
 	Scourge/Larva default: S
 	SpectreWeaponsFree/Spectre default: G
 	WeaponsFree/Ghost default: G
 	WeaponsFree/NovaHero default: G
 
-[INFO]: TheCore Lite: C   TheCore LiteRehab: C   TheCore LitePlus: C   
+[INFO]: TheCore Lite: C   
 	250mmStrikeCannons/Thor default: C
 	250mmStrikeCannons/ThorWreckageSwann default: C
 	330mmBarrageCannons/Thor default: C copyof: 250mmStrikeCannons/Thor default: C
@@ -388,7 +388,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	overlordspeed default: P
 	zerglingmovementspeed/SpawningPool default: M
 
-[INFO]: TheCore Lite: C,CapsLock   TheCore LiteRehab: C,CapsLock   TheCore LitePlus: C,CapsLock   
+[INFO]: TheCore Lite: C,CapsLock   
 	BuildCreepTumor/BroodMother default: C copyof: BuildCreepTumor/Queen default: C
 	BuildCreepTumor/Queen default: C
 	BuildCreepTumor/Queen2 default:  copyof: BuildCreepTumor/Queen default: C
@@ -404,14 +404,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Sentry default: E
 	Snipe/Ghost default: R
 
-[INFO]: TheCore Lite: E,C   TheCore LiteRehab: E,C   TheCore LitePlus: E,C   
+[INFO]: TheCore Lite: E,C   
 	ForceField/Sentry default: F
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
 	OracleBuildStasisTrap/Oracle default: T
 	SwarmHost/SwarmHostMP default: C
 	VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP default: C
 
-[INFO]: TheCore Lite: Space,E,C   TheCore LiteRehab: Space,E,C   TheCore LitePlus: Space,E,C   
+[INFO]: TheCore Lite: Space,E,C   
 	AdeptPhaseShift/Adept default: F
 	GravitonBeam/Phoenix default: G
 	GravitonBeam/Urun default: G copyof: GravitonBeam/Phoenix default: G
@@ -426,7 +426,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidRaySwarmDamageBoost/VoidRay default: E
 	YamatoGun default: Y
 
-[INFO]: TheCore Lite: C,Space   TheCore LiteRehab: C,Space   TheCore LitePlus: C,Space   
+[INFO]: TheCore Lite: C,Space   
 	CausticSpray/Corruptor default: C
 	Contaminate/Overseer default: E
 	CorruptionAbility/Corruptor default: C
@@ -440,7 +440,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MothershipCoreWeapon/MothershipCore default: F
 	PsionicBolt/Telios default:  copyof: Feedback/HighTemplar default: F
 
-[INFO]: TheCore Lite: CapsLock   TheCore LiteRehab: CapsLock   TheCore LitePlus: CapsLock   
+[INFO]: TheCore Lite: CapsLock   
 	ArchonHallucination/Nexus default:  copyof: ArchonHallucination/Sentry default: N
 	ArchonHallucination/Sentry default: N
 	ArchonHallucination/Voranor default:  copyof: ArchonHallucination/Sentry default: N
@@ -505,7 +505,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopBanelingBarrage/ZagaraVoidCoopBurrowed default: Q
 	ZergBuildAdvanced/Drone default: V
 
-[INFO]: TheCore Lite: E,CapsLock   TheCore LiteRehab: E,CapsLock   TheCore LitePlus: E,CapsLock   
+[INFO]: TheCore Lite: E,CapsLock   
 	BiodomeUnloadAll/InfestableBiodome default: U
 	BuildPointDefenseDrone/Raven default: D copyof: PointDefenseDrone/Raven default: D
 	BunkerUnloadAll default: D
@@ -516,7 +516,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HutUnloadAll/InfestableHut default: U
 	PointDefenseDrone/Raven default: D
 
-[INFO]: TheCore Lite: D   TheCore LiteRehab: D   TheCore LitePlus: D   
+[INFO]: TheCore Lite: D   
 	Aberration/VoidRift default: B
 	Aberration/VoidRiftUnselectable default: B
 	AmonCrystalDematerialize/AmonCrystalEpilogue03 default: D
@@ -618,7 +618,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	zerglingattackspeed/SpawningPool default: A
 	zergmeleeweapons1/EvolutionChamber default: M
 
-[INFO]: TheCore Lite: E   TheCore LiteRehab: E   TheCore LitePlus: E   
+[INFO]: TheCore Lite: E   
 	AdeptResearchPiercingUpgrade/TwilightCouncil default: A
 	AlarakDeadlyCharge/AlarakChampion default: E
 	AlarakPsiOrb/PitAlarak default: E
@@ -865,7 +865,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZeratulStun/Zeratul default: V
 	ZeratulStun/ZeratulVoid default: V copyof: ZeratulStun/Zeratul default: V
 
-[INFO]: TheCore Lite: E,Space   TheCore LiteRehab: E,Space   TheCore LitePlus: E,Space   
+[INFO]: TheCore Lite: E,Space   
 	BioPlasmidDischarge/Leviathan default: B
 	CorsairMPDisruptionWeb/CorsairMP default: D
 	FlagshipTimeBomb/Flagship default: T
@@ -877,14 +877,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsiStorm/HybridDominator default: T
 	TargetLock/Monitor default: T
 
-[INFO]: TheCore Lite: Escape   TheCore LiteRehab: Escape   TheCore LitePlus: Escape   
+[INFO]: TheCore Lite: Escape   
 	Cancel default: Escape
 	CancelCocoon default:  copyof: Cancel default: Escape
 	CancelMutateMorph default:  copyof: Cancel default: Escape
 	CancelUpgradeMorph default:  copyof: Cancel default: Escape
 	HyperionKorhalRegenOff/HyperionKorhal default: Escape
 
-[INFO]: TheCore Lite: F   TheCore LiteRehab: F   TheCore LitePlus: F   
+[INFO]: TheCore Lite: F   
 	AbathurDeepTunnel/ImpalerAbathur default: D
 	AbathurDeepTunnel/ImpalerAbathurBurrowed default: D
 	AbathurDeepTunnel/SwarmHost default: D
@@ -1023,7 +1023,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpPrismHallucination/Voranor default:  copyof: WarpPrismHallucination/Sentry default: R
 	XelNagaConstructChaseBeam/XelNagaConstruct default: T
 
-[INFO]: TheCore Lite: G   TheCore LiteRehab: G   TheCore LitePlus: G   
+[INFO]: TheCore Lite: G   
 	Archon/VoidRiftUnselectable default: N
 	Battlecruiser/Starport default: B
 	Bunker/SCV default: U
@@ -1078,7 +1078,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpInAdept/WarpGate default: H
 	WeaponsFree/GhostVulture default: G
 
-[INFO]: TheCore Lite: H   TheCore LiteRehab: H   TheCore LitePlus: H   
+[INFO]: TheCore Lite: H   
 	AdeptHallucination/Sentry default: H
 	Blink/SuperWarpGate default: B
 	BuildHercules/Starport default: H
@@ -1100,7 +1100,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarHound/Factory default: R
 	WarpInVulcanChampion/SuperWarpGate default: X
 
-[INFO]: TheCore Lite: I   TheCore LiteRehab: I   TheCore LitePlus: I   
+[INFO]: TheCore Lite: I   
 	ColonyInfestation/Overlord default: I
 	HireDuskWing/MercCompound default: I
 	HireDuskWing/Starport default: I
@@ -1117,7 +1117,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchIncineratorGauntlets/BarracksTechReactor default: I
 	SS_CarrierSpawnInterceptor/SS_Plane default: I
 
-[INFO]: TheCore Lite: J   TheCore LiteRehab: J   TheCore LitePlus: J   
+[INFO]: TheCore Lite: J   
 	ArtanisChannel/ArtanisVoid default: J
 	MercReaper/Barracks default: J
 	MercReaper/MercCompound default: J
@@ -1128,12 +1128,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SiegeTank/VoidThrasherWalker default: S
 	SiegeTankJumpJet/SiegeTank default: J
 
-[INFO]: TheCore Lite: K   TheCore LiteRehab: K   TheCore LitePlus: K   
+[INFO]: TheCore Lite: K   
 	ArtanisChannelOff/ArtanisVoid default: K
 	HireSiegeBreakers/Factory default: K
 	HireSiegeBreakers/MercCompound default: S, K
 
-[INFO]: TheCore Lite: L   TheCore LiteRehab: L   TheCore LitePlus: L   
+[INFO]: TheCore Lite: L   
 	BiodomeLoad/Biodome default: L
 	BiodomeLoad/BiodomeHalfBuilt default: L
 	EvolveFlyingLocusts/InfestationPit default: L
@@ -1152,7 +1152,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WraithCloak/StarportTechLab default: L
 	WraithCloak/StarportTechReactor default: L copyof: WraithCloak/StarportTechLab default: L
 
-[INFO]: TheCore Lite: M   TheCore LiteRehab: M   TheCore LitePlus: M   
+[INFO]: TheCore Lite: M   
 	MengskUnits/Barracks default: M
 	MengskUnits/Factory default: M
 	MengskUnits/Starport default: M
@@ -1166,7 +1166,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMaelstromRounds/FactoryTechReactor default: M
 	ResearchReaperSpiderMines/BarracksTechLab default: M
 
-[INFO]: TheCore Lite: N   TheCore LiteRehab: N   TheCore LitePlus: N   
+[INFO]: TheCore Lite: N   
 	Archon/SuperWarpGate default: N
 	Liberator/VoidRift default: N
 	Liberator/VoidRiftUnselectable default: N
@@ -1185,18 +1185,18 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraBileLauncher/Drone default: N
 	Zergling/Epilogue02VoidRift default: Z
 
-[INFO]: TheCore Lite: None   TheCore LiteRehab: None   TheCore LitePlus: None   
+[INFO]: TheCore Lite: None   
 	Disguise/Changeling default: None
 	HardenedShield/Immortal default: None
 	LeadFarmer/TychusCommando default: None
 
-[INFO]: TheCore Lite: O   TheCore LiteRehab: O   TheCore LitePlus: O   
+[INFO]: TheCore Lite: O   
 	EvolveOrganicCarapace/RoachWarren default: O
 	FlagshipWarpInPhoenix/Flagship default: O
 	ResearchCycloneLockOnDamageUpgrade/FactoryTechLab default: O
 	ResearchCycloneLockOnDamageUpgrade/FactoryTechReactor default: O
 
-[INFO]: TheCore Lite: P   TheCore LiteRehab: P   TheCore LitePlus: P   
+[INFO]: TheCore Lite: P   
 	EvolvePeristalsis/InfestationPit default: P
 	HireKelmorianMiners/Barracks default: P
 	HireKelmorianMiners/MercCompound default: P
@@ -1219,7 +1219,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranShipPlatingLevel2/Armory default: P
 	TerranShipPlatingLevel3/Armory default: P
 
-[INFO]: TheCore Lite: R   TheCore LiteRehab: R   TheCore LitePlus: R   
+[INFO]: TheCore Lite: R   
 	AWrp default: C
 	AlarakKnockback/AlarakChampion default: Q
 	ArbiterMPRecall/ArbiterMP default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
@@ -1405,7 +1405,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	YagdraTunnel/AbathurLavaWorm default: R
 	zergmissileweapons1/EvolutionChamber default: A
 
-[INFO]: TheCore Lite: Space   TheCore LiteRehab: Space   TheCore LitePlus: Space   
+[INFO]: TheCore Lite: Space   
 	ActivateShieldGenerator/ShadowShieldGenerator default: Q
 	ActivateShieldGenerator/ShadowShieldGeneratorSmall default: Q
 	AetherMawAetherStorm/AmonAetherMawEpilogue03 default: T
@@ -1643,7 +1643,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	zergflyerarmor1 default: C
 	zerggroundarmor1/EvolutionChamber default: C
 
-[INFO]: TheCore Lite: T   TheCore LiteRehab: T   TheCore LitePlus: T   
+[INFO]: TheCore Lite: T   
 	ActivateStasisWard/OracleStasisTrap default: T
 	BanelingNest/Drone default: B
 	Colossus/SuperWarpGate default: C
@@ -1676,7 +1676,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZealotHallucination/Sentry default: Z
 	ZealotHallucination/Voranor default:  copyof: ZealotHallucination/Sentry default: Z
 
-[INFO]: TheCore Lite: U   TheCore LiteRehab: U   TheCore LitePlus: U   
+[INFO]: TheCore Lite: U   
 	BiodomeUnloadAll/Biodome default: U
 	BiodomeUnloadAll/BiodomeHalfBuilt default: U
 	FlagshipWarpInScout/Flagship default: U
@@ -1693,7 +1693,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Ultralisk/VoidThrasherWalker default: U
 	WarpInScout/SuperWarpGate default: S
 
-[INFO]: TheCore Lite: V   TheCore LiteRehab: V   TheCore LitePlus: V   
+[INFO]: TheCore Lite: V   
 	BuildKelMorianRocketTurret/SCV default: G
 	BuildScienceVessel/Starport default: R copyof: Raven/Starport default: R, B
 	EnergyNova/Artifact default: V
@@ -1748,7 +1748,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpInReplicant/Gateway default: E
 	WarpInVulcanChampion/TwilightCouncil default: X
 
-[INFO]: TheCore Lite: Y   TheCore LiteRehab: Y   TheCore LitePlus: Y   
+[INFO]: TheCore Lite: Y   
 	DarkShrineAssignRally/DarkShrine default: Y
 	GatherProt default: G
 	HyperionKorhalYamato/HyperionKorhal default: Y
@@ -1759,13 +1759,65 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SetRallyPointSwarmHost/LocustNestBurrowed default: Y
 	Zergling/VoidThrasher default: Z
 
-[INFO]: TheCore Lite: Escape   TheCore LiteRehab: Escape   TheCore LitePlus: Escape   
+[INFO]: TheCore Lite: 1   
+	ControlGroupRecall2 default: 2
+	ObservePlayer0 default: 1
+
+[INFO]: TheCore Lite: 2   
+	ControlGroupRecall3 default: 3
+	ObservePlayer1 default: 2
+
+[INFO]: TheCore Lite: 3   
+	ControlGroupRecall4 default: 4
+	ObservePlayer2 default: 3
+
+[INFO]: TheCore Lite: A   
+	ControlGroupRecall9 default: 9
+	LeaderArmy default: A
+
+[INFO]: TheCore Lite: Control+1   
+	ControlGroupAppendAndSteal2 default: Shift+Alt+2
+	ObservePlayer8 default: Control+1
+
+[INFO]: TheCore Lite: Control+2   
+	ControlGroupAppendAndSteal3 default: Shift+Alt+3
+	ObservePlayer9 default: Control+2
+
+[INFO]: TheCore Lite: Control+3   
+	ControlGroupAppendAndSteal4 default: Shift+Alt+4
+	ObservePlayer10 default: Control+3
+
+[INFO]: TheCore Lite: Control+A   
+	ControlGroupAppendAndSteal9 default: Shift+Alt+9
+	StatPanelArmySupply default: Control+A
+
+[INFO]: TheCore Lite: Control+Alt+F   
+	AIDetect default: Alt+D
+	FPS default: Control+Alt+F
+
+[INFO]: TheCore Lite: Control+W   
+	ControlGroupAppendAndSteal8 default: Shift+Alt+8
+	ToggleWorldPanel default: Control+W
+
+[INFO]: TheCore Lite: Control+X   
+	ControlGroupAppendAndSteal6 default: Shift+Alt+6
+	ToggleVersusModeSides default: Control+X
+
+[INFO]: TheCore Lite: Escape   
 	ChatCancel default: Escape
 	CinematicSkip default: Escape
 	DialogDismiss default: Escape
 	ObserveClearSelection default: Escape
 	SelectionCancelDrag default: Escape
 
+[INFO]: TheCore Lite: S   
+	ControlGroupRecall0 default: 0
+	LeaderSpending default: S
+
+[INFO]: TheCore Lite: W   
+	ControlGroupRecall8 default: 8
+	ObserveSelected default: W
+
 ----------------------------
-Finished (suggest inherit) - INFOs: 35 
+Finished (suggest inherit) - INFOs: 48 
 ============================
