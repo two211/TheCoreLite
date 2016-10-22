@@ -34,11 +34,7 @@ Coverage and checks:
 TheCore Lite User Interface keys
 --------------------------------
 
-Compared to legacy TheCore Lite:
-* Far more Rapid Fire Hotkeys (all but "E" and "C")
-* Functions keys have been populated, but are classical
- * no more F2 select all army !
-* Back/Forward Mouse Button added to browse between subgroups
+Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 
 ### Function keys
 * F1 IdleWorker
@@ -61,6 +57,22 @@ Some examples:
  * Ctl+Shift+Alt+#group key will create non-steal the group
 
 **Note:** Alt+Tab is an alias for "add to nexus/CC/hatch group"
+
+### Rapid Fire and Precision keys.
+There are now far more Rapid Fire Hotkeys: Space, R, T, D, F, G, V, H, CapsLock.
+Now all Warp-Inable units are bound on Rapid Fire keys.
+If you don't know what rapid fire keys are, please check out JaKaTaK's video on Youtube.
+
+"E" and "C" keep on being non Rapid Fire, because they are precision key.
+They are used for precision spells/ability.
+You can keep those key pressed and just click on the target.
+After the click the ability will be called again and you just have to click on the next target.
+
+**Note:** like legacy TheCore Lite, some spells have 2 alternates: one on "rapid fire" key, the other on "precision" key
+
+### Browsing subgroups
+* Tab and Shift+Tab are used
+* Back/Forward Mouse Button added to browse between subgroups
 
 ### Ping allies !
 * Alert jump
