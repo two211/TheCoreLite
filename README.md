@@ -1,6 +1,8 @@
 The Core Lite Variations
 ========================
 
+Some graphic ressources is available in Image directory
+
 TheCore Lite.SC2Hotkeys
 -----------------------
 
