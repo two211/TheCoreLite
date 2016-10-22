@@ -169,7 +169,7 @@ Tip for additional expansion:
 
 #### Production group (or inject queens) = **X**
 
-Group content
+Group content:
 * Terran & Protoss: All army production facilities
 * Zerg: inject queens
 * Zerg should add research facilities to this group
@@ -181,8 +181,10 @@ Tip for rally point | warp-in pylon:
  * Shift+X select this group
 
 Race specifics:
-* warp-in: keep shift pressed, while holding unit key (queued rapid-fire warp-in)
-* egg inject:
+* Related to warp-in
+ * Shift+S could be used for secondary warp-in zone
+ * Keep shift pressed, while holding unit key (queued rapid-fire warp-in)
+* Related to egg inject
  * Z camera would be main hive
  * Shift+Z+X helps getting Shift already pressed for queued commands
  * please read dedicated usecase "telegraph inject" and "zerg macro routine"
