@@ -1,170 +1,287 @@
-The Core Lite Variations
-========================
+The Core Lite v2.0
+==================
 
 Some graphic ressources is available in Image directory
 
-TheCore Lite.SC2Hotkeys
------------------------
-
-This set fits with the legacy "TheCore Lite" updated to fix most of TheCore standards:
-* keys to be the same, or inherited
-* no keys conflicts accross support modes
- * WoL HoTS LoTV multiplayer
- * Campaigns ( WoL HoTS LoTV Nova)
- * Coop
-* it passes all the new introduced "seed" checks (there are still some command out of any identified conflict)
-
-**Changes:**
-* Minor command changes for compliance accross:
- * Multiplayer
- * Campaigns
- * Coop
-* Far more Fire Hotkeys (all but "E" and "C")
-* Functions keys have been populated, but are classical
- * F1 IdleWorker
- * F2 Select all army (changed in other variants)
- * Shift+F2 Minimap colors (to make it more accessible)
- * Shift+F3 Warp (swapped in other variants)
- * F3 F4 F5 F6 Commander top bar ability
- * Shift+F7 Toggle sound (moved to prevent mistyping)
- * Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
-* Back/Forward Mouse Button added to browse between subgroups
-
-**Note:** F3 to F8 cannot be used in direct access due to SelectHero.
-It should be OK for top bar commander abilities.
-
-#### Macro groups
-TheCore Lite comes with suggestions of control groups.
-Q is intended for production facilities or inject queens.
-W is intended for CC Nexus Hatcheries.
-
-source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56
-
-#### Use case: expansions cameras
-* Select new base under construction
-* Alt+Shift: center view on base
-* Alt(+Shift)+[camera\_key]: make view on associated key
-* Alt(+Shift)+D: append expansion to Nexus/CC/Hatch group
-
-#### Use case: send worker back to ressources gathering after queued commands
-* press shift to queue all necessary commands
-* Shift+[camera\_key]: jump to base
-* Shift + right click on mineral or gaz; last action of the queue is to go back to work
-
-----------------------------------------------------------------------------------------------------------------------
-
-TheCore LiteRehab.SC2Hotkeys
-----------------------------
-
-TheCore LiteRehab shares the same command set as TheCore Lite.
-Only the UI hotkeys has seen some changes.
+Goals of this version
+---------------------
 
 The goals are:
+* keep as much consistency with legacy "TheCore Lite" for unit commands
 * get rid of bad habits
 * develop sane mechanics
 * allow easy 2-keys-based macro mechanics
-* encourage camera keys for:
+* encourage camera keys usage for:
  * rally points
  * warp pylons
  * creep spread
-* no modification of TheCore Lite basic key layout
 
-Same commands as TheCore Lite.SC2Hotkeys, with hotkeys changes:
-* Function key reorganization
- * F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
- * Shift+F2 Team Ressources
- * Shift+F3 no more used for WarpIn
-* Subgroup selection
- * ForwardMouseButton|BackMouseButton : next|previous subgroup
- * (Shift+)Tab : next (previous) subgroup (for legacy compatibility)
-* Other Tab usages
- * Ctl+Tab : alternate for "select all army"
- * Ctl+Shift+Tab : alternate for "select all army"
- * Alt+Tab : add to nexus/CC/hatch group (**warning** could bring back to desktop)
+Coverage and checks:
+* no keys conflicts accross supported modes (please report anyone you found)
+ * WoL HoTS LoTV multiplayer
+ * Campaigns ( WoL HoTS LoTV Nova)
+ * Coop
+* pass TheCore standards
+ * keys supposed to be the same, or inherited
+ * delivered in a set of supported keyboard layouts
+ * it passes all the new introduced "seed" checks (there are still some command out of any identified conflict)
+
+----------------------------------------------------------------------------------------------------------------------
+
+TheCore Lite User Interface keys
+--------------------------------
+
+Compared to legacy TheCore Lite:
+* Far more Rapid Fire Hotkeys (all but "E" and "C")
+* Functions keys have been populated, but are classical
+ * no more F2 select all army !
+* Back/Forward Mouse Button added to browse between subgroups
+
+## Function keys
+* F1 IdleWorker
+* Shift+F1 select all Idle Workers
+* Alt+F1 PushToTalk (to free Alt+Shift)
+* F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
+* Shift+F2 Team Ressources
+* F3 F4 F5 F6 Commander top bar ability
+* Shift+F7 Toggle sound (moved to prevent mistyping)
+* Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
+
+## Select All Army on Tab key
+* Ctl+Tab : alternate for "select all army"
+* Ctl+Shift+Tab : alternate for "select all army"
+
+Some examples:
+* After Ctl+Shift+Tab, Ctl+Shift+click will remove entire unit type from selection
+* After Ctl+Tab, Ctl+click will select only unit of the clicked type
+* Others actions:
+ * Ctl+Shift+Alt+#group key will create non-steal the group
+
+**Note:** Alt+Tab is an alias for "add to nexus/CC/hatch group"
+
+## Ping allies !
 * Alert jump
  * accessible with Shift+Grave
  * accessible with Alt+Grave
 * Minimap ping
- * QuickPing now mapped on Alt+RightClick
  * MinimapPing on Shift+1
  * MinimapPing on Alt+1
-* Group approach
- * all groups behave with steal (for easy split)
- * Extra Alt modifier enables non-steal behavior
- * **note** TheCore approach is to make all groups behave the same, you can adapt on your own
-* Alt now show Ennemy life bar (useful for quick check of stacked ground/air armies)
-* Moved out of the dense keycard and Function keys
- * Period: Warp (to encourage production group)
- * Numpad0: Quick save
- * Delete: CameraFollow
-* Rotate camera (help to spot invisible)
- * Alt+T : Rotate camera Left
- * Alt+G : Rotate camera Right
-* Support for autocentered cameras
- * Alt+Shift Camera center (for some reason Alt has to be pressed before Shift)
- * Alt+Shift+23QWASZX are alternate to declare the camera
- * Alt+F1 PushToTalk (to free Alt+Shift)
-* "Control" Cameras
- * Suitable for creep spread as an example
-* Support for telegraph inject (a variant of backspace inject)
- * Shift+V base camera
- * read use case below
-* AI keys now supported
- * direct attack on Ctl+Alt+D
- * direct scout on Ctl+Alt+T
- * direct detect on Ctl+Alt+F
- * direct expand on Ctl+Alt+G
- * open AI communication on Ctl+Alt+V
- * build on Ctl+Alt+C
- * clearall on Ctl+Alt+E
- * delete on Ctl+Alt+R
+* QuickPing now mapped on Alt+RightClick
 
-#### Select all army Tab alternates
-* After Ctl+Shift+Tab
- * Ctl+Shift+click will remove entire unit type from selection
-* After Ctl+Tab
- * Ctl+click will select only unit of the clicked type
-* Others actions
- * Ctl+Shift+Alt+#group key will create non-steal the group
-
-#### Jump to last alert
 If you have some spare time, it may worth to try push Shift|Alt+\` to jump to last alerts.
 Alt+\` could be easily chain with Alt+1 or Alt+RightClick to ping the event to teammates.
+Shit+\` to be chained with Shift+1.
 
-**Note:** previously with direct access with Tab key (dropped due to subgroup selection)
+## Fight against invisible
+* Alt+T : Rotate camera Left
+* Alt+G : Rotate camera Right
 
-#### Fight against invisible
-* immobile invisible units can't be seen with static camera
-* camera rotation allows to spot invisible static units
-* Alternate Alt+T and Alt+G to rotate the camera and send detection at the right place
+Immobile invisible units can't be seen with static camera.
+Camera rotation allows to spot invisible static units.
+Alternate Alt+T and Alt+G to rotate the camera and send detection at the right place.
+Alt+RightClick pings the invisible unit location to allies.
 
 **Note:** T and G have been chosen because:
 * there is no Alt shortcut on them
 * the fingers are more on the command space (than ` and 1)
 * D could not be chosen due to alias to append to macro group
+* Rotate camera (help to spot invisible)
 
-#### Additional cameras alternates
-2 "Control" camera alternates:
-* Ctl+C = Shift+Z (Shift+1 for TheCore LitePlus)
-* Ctl+D = Shift+2
-* Ctl+E = Shift+3
+## more Town cameras
+* B remains toggle base camera
+* Shift+V becomes an alternate for telegraph inject use case
 
-Camera creation:
-* Ctl+V = Alt+Z (Alt+1 for TheCore LitePlus)
-* Ctl+F = Alt+2
-* Ctl+R = Alt+3
-* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
+## AI keys now supported
+* direct attack on Ctl+Alt+D
+* direct scout on Ctl+Alt+T
+* direct detect on Ctl+Alt+F
+* direct expand on Ctl+Alt+G
+* open AI communication on Ctl+Alt+V
+* build on Ctl+Alt+C
+* clearall on Ctl+Alt+E
+* delete on Ctl+Alt+R
 
-#### Group display
+## Moved out of the dense keycard and Function keys
+* Period: Warp (to encourage production group)
+* Numpad0: Quick save
+* Delete: CameraFollow
+* BackSlash: All life bars
+* Bracket Open: Allies life bars
+* Bracket Close: Player life bars
+
+TheCore Lite groups
+-------------------
+
+Compared to legacy TheCore Lite:
+* all group keys are similar
+* the suggested macro group keys changed from QW to ZX
+* Ctl is now used for AppendSteal
+* Ctl+Shift is now used of CreateSteal
+
+Non-steal aliases:
+* Ctl+Alt could be used for Append non-steal
+* Ctl+Shift+Alt could be used for Create non-steal
+
+## Macro groups
+
+### History
+
+Legacy TheCore Lite comes with suggestions of control groups.
+Q is intended for production facilities or inject queens.
+W is intended for CC Nexus Hatcheries.
+
+source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56
+
+Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
+
+### Nexus/CC/Hatch group
+
+Group key = Z
+
+Group content
+* All Nexus/CC/Hatch
+* Terran and Protoss should add research facilities to this group
+
+Tip for additional expansion
+* Alt+D helps to append base to this group after camera creation
+* Alt+Tab helps to append base to this group after camera creation
+* Alt+Shift helps to center base at camera creation
+
+### Production group (or inject queens)
+
+Group key = X
+
+Group content
+* Terran & Protoss: All army production facilities
+* Zerg: inject queens
+* Zerg should add research facilities to this group
+
+Tip for rally point | warp-in pylon
+* no more camera on X: moved on 1
+ * this camera is used for control camera Ctrl+C|V
+* Z camera being used for rally point
+ * suggestion: S to be used for extra warp-in pylon
+* Shift+Z+X selects production groups
+ * check rally point at army production step
+ * warp-in pylon: keep shift pressed, while holding unit key (queued rapid-fire warp-in)
+
+Tip for egg inject, please read section dedicated to zerg macro routine
+
+## Group display
 
 The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
 This facilitates the visual representation of existing groups.
 The 10 groups are displayed in this order (| figures the separation):
 ```
-`123|QW|ASZX
+`123|ZX|QWAS
 ```
 
-#### Use case: telegraph inject
+**Note:** the icon representing the group seems to be the best selectable unit at group creation
+If you wanted to update the icon, select the group and recreate it.
+
+TheCore Lite location cameras 
+-----------------------------
+
+Compared to legacy TheCore Lite:
+* one camera key changed: X
+* camera creation still based on Alt modifier
+* camera recall still based on Shift modifier
+* "control" cameras were introduced
+
+### Standard camera views
+```
+`123
+  QW[ER]
+  AS[DF]
+  Z [CV] <= no more camera on X
+```
+* Alt now shows Ennemy life bar (useful for quick check of stacked ground/air armies)
+* Alt+Shift center the camera on the selection
+* ` is used for jump to last alert (with Shift or Alt)
+* CV|DF|ER are "control" cameras aliases for 1|2|3
+
+### Additional cameras alternates on control
+2 "Control" camera alternates:
+* Ctl+C = Shift+1
+* Ctl+D = Shift+2
+* Ctl+E = Shift+3
+
+Camera creation:
+* Ctl+V = Alt+1
+* Ctl+F = Alt+2
+* Ctl+R = Alt+3
+* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
+
+----------------------------------------------------------------------------------------------------------------------
+
+Experimental
+------------
+
+### Easier cloning through Shift+Alt group creation
+
+Cloning consists in recreating a group after one unit deselection.
+Most of the seeds for TheCore 2.0 uses Shift as the modifier for group creation.
+This allows to chain:
+* select a group
+* issue a command
+* Shift+click on a unit in the selected group
+* group recreation
+* new command out of the current selection
+
+As Shift is used for camera jump in TheCore Lite,
+Shift+Alt+#groupkey has been chosen as an alternate for group creation.
+* select group with #groupkey
+* issue a command
+* Shift(+Alt)+click on a unit from the group
+* Shift+Alt+#groupkey to overwrite group
+* issue a new command
+
+**Note:** be careful not to press Alt+Shift+#camkey simultaneously while centering view with Alt+Shift,
+this would overview the group affected to #camkey
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+Use case scenarii
+-----------------
+
+### Use case: expansions cameras
+* Select new base under construction
+* Alt+Shift: center view on base
+* Alt+[camera\_key]: make view on associated key
+* Alt+D: append expansion to Nexus/CC/Hatch group
+ * Alt+Tab could be used as well (**warning** could bring back to desktop)
+
+### Use case: send worker back to ressources gathering after queued commands
+* press shift to queue all necessary commands
+* Shift+[camera\_key]: jump to base
+* Shift+RightClick on mineral or gaz; last action of the queue is to go back to work
+
+### Use case: army production + rally point (optional warp-in pylon)
+* Hold Shift
+* Shift+Z: jump to rally point (declared with Alt+X)
+* Shift+X: select production facilities
+* inspect rallied army
+* optional redeclaration of the rally point (RightClick, in case of new integrated facility)
+* browse subgroup and launch production
+* select rallied army and add to control groups
+
+### Use case: warp-in pylon (with Ctl camera)
+* Ctl+C|D|E: center on warp pylon
+* X: select production facilities (WarpGate have higher selection priority)
+* hold key for warping-in units (rapid fire warp-in)
+* Ctl+click: on a unit, select all units for this type
+* Ctl+[army\_group]: add selection to an army group
+* right click for rally
+* [army\_group]: attack
+
+### Use case: warp-in pylon (with Shift camera)
+* Hold shift
+* Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
+* Shift+X: select production facilities (WarpGate have higher selection priority)
+* Shift+key for warping-in units (queued rapid fire warp-in)
+
+### Use case: telegraph inject
 
 The "telegraph" inject is a variant of the "backspace" inject.
 It relies on:
@@ -192,132 +309,6 @@ Cycle through bases with fingers only
  * Shift+D
 
 **Note:** In case of wandering queen, release shift and press V
-
-----------------------------------------------------------------------------------------------------------------------
-
-TheCore LitePlus.SC2Hotkeys
---------------------------------
-
-Same as TheCore LiteRehab.SC2Hotkeys with modifications to original legacy TheCore Lite UI hotkeys.
-
-The goals are:
-* benefit of Shift+Z+X combination to jump to camera while selection X group
-* have some support for easy cloning
-* better view of group affection from UI
-* not disturb (too much) TheCore Lite key spirit
-
-Modifications:
-* ZX are the macro hotkeys
-* X no longer used for camera (the related camera is now 1 or ctrl cam "CV" )
-* Shift+Alt+#groupkey is an alternate to Control+Shift+#groupkey
-* MinimapPing is now Alt+X
-
-### Macro groups
-
-#### Nexus/CC/Hatch group
-
-Group key = Z
-
-Group content
-* All Nexus/CC/Hatch
-* Terran and Protoss should add research facilities to this group
-
-Tip for additional expansion
-* Alt+D helps to append base to this group after camera creation
-* Alt+Shift helps to center base at camera creation
-
-#### Production group (or inject queens)
-
-Group key = X
-
-Group content
-* Terran & Protoss: All army production facilities
-* Zerg: inject queens
-* Zerg should add research facilities to this group
-
-Tip for rally point | warp-in pylon
-* no more camera on X: moved on 1
- * this camera is used for control camera Ctrl+C|V
-* Z camera being used for rally point
- * suggestion: S to be used for extra warp-in pylon
-* Shift+Z+X selects production groups
- * check rally point at army production step
- * warp-in pylon: keep shift pressed, while holding unit key (queued rapid-fire warp-in)
-
-Tip for egg inject, please read section dedicated to zerg macro routine
-
-### Cameras views
-```
-`123
-  QW[ER]
-  AS[DF]
-  Z [CV] <= no more camera on X
-```
-* X camera has been moved to 1
-* ` is used for jump to last alert (with Shift or Alt)
-* CV|DF|ER are control cameras aliases for 1|2|3
-
-### Easier cloning through Shift+Alt group creation
-
-Cloning consists in recreating a group after one unit deselection.
-Most of the seeds for TheCore 2.0 uses Shift as the modifier for group creation.
-This allows to chain:
-* select a group
-* issue a command
-* Shift+click on a unit in the selected group
-* group recreation
-* new command out of the current selection
-
-As Shift is used for camera jump in TheCore Lite,
-Shift+Alt+#groupkey has been chosen as an alternate for group creation.
-* select group with #groupkey
-* issue a command
-* Shift(+Alt)+click on a unit from the group
-* Shift+Alt+#groupkey to overwrite group
-* issue a new command
-
-**Note:** be careful not to press Alt+Shift+#camkey simultaneously while centering view with Alt+Shift,
-this would overview the group affected to #camkey
-
-### Group display
-
-The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
-This facilitates the visual representation of existing groups.
-The 10 groups are displayed in this order (| figures the separation):
-```
-`123|ZX|QWAS
-```
-
-**Note:** the icon representing the group seems to be the best selectable unit at group creation
-If you wanted to update the icon, select the group and recreate it.
-
-----------------------------------------------------------------------------------------------------------------------
-
-## Use case scenarii (for TheCore LitePlus)
-
-### Use case: army production + rally point (optional warp-in pylon)
-* Hold Shift
-* Shift+Z: jump to rally point (declared with Alt+X)
-* Shift+X: select production facilities
-* optional redeclaration of the rally point (in case of new integrated facility)
-* inspect rallied army
-* browse subgroup and launch production
-* select rallied army and add to control groups
-
-### Use case: warp-in pylon (with Ctl camera)
-* Ctl+C|D|E: center on warp pylon
-* X: select production facilities (WarpGate have higher selection priority)
-* hold key for warping-in units (rapid fire warp-in)
-* Ctl+click: on a unit, select all units for this type
-* Ctl+[army\_group]: add selection to an army group
-* right click for rally
-* [army\_group]: attack
-
-### Use case: warp-in pylon (with Shift camera)
-* Hold shift
-* Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
-* Shift+X: select production facilities (WarpGate have higher selection priority)
-* Shift+key for warping-in units (queued rapid fire warp-in)
 
 ### Use case: zerg macro routine
 * Hatch check
