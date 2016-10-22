@@ -61,8 +61,6 @@ Some examples:
 * Others actions:
  * Ctl+Shift+Alt+#group key will create non-steal the group
 
-**Note:** Alt+Tab is an alias for "add to nexus/CC/hatch group"
-
 ### Rapid Fire and Precision keys.
 There are now far more Rapid Fire Hotkeys: Space, R, T, D, F, G, V, H, CapsLock.
 Now all Warp-Inable units are bound to Rapid Fire keys.
@@ -73,7 +71,7 @@ They are used for precision spells/ability.
 You can keep those key pressed and just click on the target.
 After the click the ability will be called again and you just have to click on the next target.
 
-**Note:** like legacy TheCore Lite, some spells have 2 alternates: one on "rapid fire" key, the other on "precision" key
+**Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
 
 ### Browsing subgroups
 * Tab and Shift+Tab are used
