@@ -56,8 +56,8 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * Ctl+Shift+Tab : alternate for "select all army"
 
 Some examples:
-* After Ctl+Shift+Tab, Ctl+Shift+click will remove entire unit type from selection
-* After Ctl+Tab, Ctl+click will select only unit of the clicked type
+* After Ctl+Shift+Tab, Ctl+Shift+click will remove any unit of the clicked type
+* After Ctl+Tab, Ctl+click will select only all units of the clicked type
 * Others actions:
  * Ctl+Shift+Alt+#group key will create non-steal the group
 
