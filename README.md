@@ -6,7 +6,7 @@ please download the following .pdf file:
 
 https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf
 
-### Aknowledgment
+### Aknowledgments
 
 Load of thanks to:
 * TheCore project, whose this repo is a fork, and all the accumulated work over the years
@@ -17,8 +17,7 @@ Load of thanks to:
 
 The goals are:
 * keep as much consistency with legacy "TheCore Lite" for unit commands
-* get rid of bad habits
-* develop sane mechanics
+* get rid of bad habits and develop sane mechanics
 * allow easy 2-keys-based macro mechanics
 * encourage camera keys usage for:
  * rally points
@@ -31,9 +30,9 @@ Coverage and checks:
  * Campaigns ( WoL HoTS LoTV Nova)
  * Coop
 * pass TheCore standards
- * keys supposed to be the same, or inherited
+ * keys supposed to be the same, or inherited (multi-racial support)
  * delivered in a set of supported keyboard layouts
- * it passes all the new introduced "seed" checks (there are still some command out of any identified conflict)
+ * it passes all the new introduced "seed" checks
 
 ----------------------------------------------------------------------------------------------------------------------
 
