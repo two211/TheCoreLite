@@ -109,6 +109,8 @@ Alt+RightClick pings the invisible unit location to allies.
 * Bracket Open: Allies life bars
 * Bracket Close: Player life bars
 
+----------------------------------------------------------------------------------------------------------------------
+
 TheCore Lite groups
 -------------------
 
@@ -134,38 +136,36 @@ source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COm
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
-#### Nexus/CC/Hatch group
+#### Nexus/CC/Hatch group = **Z**
 
-Group key = Z
-
-Group content
+Group content:
 * All Nexus/CC/Hatch
 * Terran and Protoss should add research facilities to this group
 
-Tip for additional expansion
+Tip for additional expansion:
 * Alt+D helps to append base to this group after camera creation
 * Alt+Tab helps to append base to this group after camera creation
 * Alt+Shift helps to center base at camera creation
 
-#### Production group (or inject queens)
-
-Group key = X
+#### Production group (or inject queens) = **X**
 
 Group content
 * Terran & Protoss: All army production facilities
 * Zerg: inject queens
 * Zerg should add research facilities to this group
 
-Tip for rally point | warp-in pylon
-* no more camera on X: moved on 1
- * this camera is used for control camera Ctrl+C|V
-* Z camera being used for rally point
- * suggestion: S to be used for extra warp-in pylon
-* Shift+Z+X selects production groups
- * check rally point at army production step
- * warp-in pylon: keep shift pressed, while holding unit key (queued rapid-fire warp-in)
+Tip for rally point | warp-in pylon:
+* Shift+X has the same effect than pressing X
+* Shift+Z+X mechanics
+ * Shift+Z recall camera (rally point)
+ * Shift+X select this group
 
-Tip for egg inject, please read section dedicated to zerg macro routine
+Race specifics:
+* warp-in: keep shift pressed, while holding unit key (queued rapid-fire warp-in)
+* egg inject:
+ * Z camera would be main hive
+ * Shift+Z+X helps getting Shift already pressed for queued commands
+ * please read dedicated usecase "telegraph inject" and "zerg macro routine"
 
 ### Group display
 
@@ -178,6 +178,8 @@ The 10 groups are displayed in this order (| figures the separation):
 
 **Note:** the icon representing the group seems to be the best selectable unit at group creation
 If you wanted to update the icon, select the group and recreate it.
+
+----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite location cameras 
 -----------------------------
@@ -214,8 +216,8 @@ Camera creation:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Experimental
-------------
+Experimental features
+---------------------
 
 ### Easier cloning through Shift+Alt group creation
 
