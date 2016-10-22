@@ -65,7 +65,7 @@ Some examples:
 
 ### Rapid Fire and Precision keys.
 There are now far more Rapid Fire Hotkeys: Space, R, T, D, F, G, V, H, CapsLock.
-Now all Warp-Inable units are bound on Rapid Fire keys.
+Now all Warp-Inable units are bound to Rapid Fire keys.
 If you don't know what rapid fire keys are, please check out JaKaTaK's video on Youtube.
 
 "E" and "C" keep on being non Rapid Fire, because they are precision key.
