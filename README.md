@@ -6,8 +6,14 @@ please download the following .pdf file:
 
 https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf
 
-Goals of this version
----------------------
+### Aknowledgment
+
+Load of thanks to:
+* TheCore project, whose this repo is a fork, and all the accumulated work over the years
+* JaKaTaK, the originator of the first TheCore Lite version
+* BeedeBdoo, who explained me the arcanes of TheCore, and datamined conflicts
+
+### Goals of this version
 
 The goals are:
 * keep as much consistency with legacy "TheCore Lite" for unit commands
