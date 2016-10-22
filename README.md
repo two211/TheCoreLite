@@ -155,6 +155,15 @@ Camera creation:
 * Ctl+R = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
+### Group display
+
+The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
+This facilitates the visual representation of existing groups.
+The 10 groups are displayed in this order (| figures the separation):
+```
+`123|QW|ASZX
+```
+
 #### Use case: telegraph inject
 
 The "telegraph" inject is a variant of the "backspace" inject.
@@ -276,7 +285,7 @@ The 2 "macro" groups are positioned in the center to split the remaining groups 
 This facilitates the visual representation of existing groups.
 The 10 groups are displayed in this order (| figures the separation):
 ```
-`123|ZX|QWAS <= standard group keys
+`123|ZX|QWAS
 ```
 
 **Note:** the icon representing the group seems to be the best selectable unit at group creation
