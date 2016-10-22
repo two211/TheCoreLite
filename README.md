@@ -155,7 +155,7 @@ Camera creation:
 * Ctl+R = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
-### Group display
+#### Group display
 
 The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
 This facilitates the visual representation of existing groups.
