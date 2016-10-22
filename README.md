@@ -37,7 +37,7 @@ Compared to legacy TheCore Lite:
  * no more F2 select all army !
 * Back/Forward Mouse Button added to browse between subgroups
 
-## Function keys
+### Function keys
 * F1 IdleWorker
 * Shift+F1 select all Idle Workers
 * Alt+F1 PushToTalk (to free Alt+Shift)
@@ -47,7 +47,7 @@ Compared to legacy TheCore Lite:
 * Shift+F7 Toggle sound (moved to prevent mistyping)
 * Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
 
-## Select All Army on Tab key
+### Select All Army on Tab key
 * Ctl+Tab : alternate for "select all army"
 * Ctl+Shift+Tab : alternate for "select all army"
 
@@ -59,7 +59,7 @@ Some examples:
 
 **Note:** Alt+Tab is an alias for "add to nexus/CC/hatch group"
 
-## Ping allies !
+### Ping allies !
 * Alert jump
  * accessible with Shift+Grave
  * accessible with Alt+Grave
@@ -72,7 +72,7 @@ If you have some spare time, it may worth to try push Shift|Alt+\` to jump to la
 Alt+\` could be easily chain with Alt+1 or Alt+RightClick to ping the event to teammates.
 Shit+\` to be chained with Shift+1.
 
-## Fight against invisible
+### Fight against invisible
 * Alt+T : Rotate camera Left
 * Alt+G : Rotate camera Right
 
@@ -87,11 +87,11 @@ Alt+RightClick pings the invisible unit location to allies.
 * D could not be chosen due to alias to append to macro group
 * Rotate camera (help to spot invisible)
 
-## more Town cameras
+### More Town cameras
 * B remains toggle base camera
 * Shift+V becomes an alternate for telegraph inject use case
 
-## AI keys now supported
+### AI keys now supported
 * direct attack on Ctl+Alt+D
 * direct scout on Ctl+Alt+T
 * direct detect on Ctl+Alt+F
@@ -101,7 +101,7 @@ Alt+RightClick pings the invisible unit location to allies.
 * clearall on Ctl+Alt+E
 * delete on Ctl+Alt+R
 
-## Moved out of the dense keycard and Function keys
+### Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
 * Numpad0: Quick save
 * Delete: CameraFollow
@@ -122,9 +122,9 @@ Non-steal aliases:
 * Ctl+Alt could be used for Append non-steal
 * Ctl+Shift+Alt could be used for Create non-steal
 
-## Macro groups
+### Macro groups
 
-### History
+#### History
 
 Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
@@ -134,7 +134,7 @@ source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COm
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
-### Nexus/CC/Hatch group
+#### Nexus/CC/Hatch group
 
 Group key = Z
 
@@ -147,7 +147,7 @@ Tip for additional expansion
 * Alt+Tab helps to append base to this group after camera creation
 * Alt+Shift helps to center base at camera creation
 
-### Production group (or inject queens)
+#### Production group (or inject queens)
 
 Group key = X
 
@@ -167,7 +167,7 @@ Tip for rally point | warp-in pylon
 
 Tip for egg inject, please read section dedicated to zerg macro routine
 
-## Group display
+### Group display
 
 The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
 This facilitates the visual representation of existing groups.
