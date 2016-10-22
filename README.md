@@ -8,7 +8,7 @@ https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf
 
 ### Aknowledgments
 
-Load of thanks to:
+Loads of thanks to:
 * TheCore project, whose this repo is a fork, and all the accumulated work over the years
 * JaKaTaK, the originator of the first TheCore Lite version
 * BeedeBdoo, who explained me the arcanes of TheCore, and datamined conflicts
