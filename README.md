@@ -174,16 +174,16 @@ Group content:
 * Zerg: inject queens
 * Zerg should add research facilities to this group
 
-Tip for rally point | warp-in pylon:
+Tips for rally point | warp-in pylon:
 * Shift+X has the same effect than pressing X
 * Shift+Z+X mechanics
  * Shift+Z recall camera (rally point)
  * Shift+X select this group
 
-Race specifics:
+Race specific:
 * Related to warp-in
- * Shift+S could be used for secondary warp-in zone
  * Keep shift pressed, while holding unit key (queued rapid-fire warp-in)
+ * Shift+S could be used for secondary warp-in zone
 * Related to egg inject
  * Z camera would be main hive
  * Shift+Z+X helps getting Shift already pressed for queued commands
@@ -198,7 +198,7 @@ The 10 groups are displayed in this order (| figures the separation):
 `123|ZX|QWAS
 ```
 
-**Note:** the icon representing the group seems to be the best selectable unit at group creation
+**Note:** the icon representing the group seems to be the best selectable unit at group creation.
 If you wanted to update the icon, select the group and recreate it.
 
 ----------------------------------------------------------------------------------------------------------------------
