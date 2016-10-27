@@ -214,6 +214,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ConsumeDNA/HybridReaver default: C
 	ConsumeDNA/ShadowOfTheVoidHybrid default: C
 	Consumption/Tosh default: C
+	CorruptionAbility/Spotter default: C
 	Corruptor/Larva default: C
 	CreepTumor/Queen default: 
 	CreepTumor/QueenClassic default: C
