@@ -214,7 +214,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ConsumeDNA/HybridReaver default: C
 	ConsumeDNA/ShadowOfTheVoidHybrid default: C
 	Consumption/Tosh default: C
-	CorruptionAbility/Spotter default: C
 	Corruptor/Larva default: C
 	CreepTumor/Queen default: 
 	CreepTumor/QueenClassic default: C
@@ -431,6 +430,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CausticSpray/Corruptor default: C
 	Contaminate/Overseer default: E
 	CorruptionAbility/Corruptor default: C
+	CorruptionAbility/Spotter default: C
 	Feedback/AnAleemController default:  copyof: Feedback/HighTemplar default: F
 	Feedback/Archon default: F
 	Feedback/HighArchonTemplar default: F copyof: Feedback/HighTemplar default: F

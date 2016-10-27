@@ -382,6 +382,7 @@ Consumption/Tosh=C
 Contaminate/Overseer=C,Space
 CorrosiveAcidDevourer/Devourer=Space
 CorruptionAbility/Corruptor=C,Space
+CorruptionAbility/Spotter=C,Space
 Corruptor/Larva=C
 CorsairMPDisruptionWeb/CorsairMP=M,Space
 CrateSwannSpecialDeliveryOpenCrate/CrateSwannSpecialDelivery=M
