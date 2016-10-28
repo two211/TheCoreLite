@@ -115,6 +115,41 @@ Alt+RightClick pings the invisible unit location to allies.
 
 ----------------------------------------------------------------------------------------------------------------------
 
+TheCore Lite location cameras 
+-----------------------------
+
+Compared to legacy TheCore Lite:
+* one camera key changed: X
+* camera creation still based on Alt modifier
+* camera recall still based on Shift modifier
+* "control" cameras were introduced
+
+### Standard camera views
+```
+`123
+  QW[ER]
+  AS[DF]
+  Z [CV] <= no more camera on X
+```
+* Alt now shows Ennemy life bar (useful for quick check of stacked ground/air armies)
+* Alt+X centers the camera on the selection
+* ` is used for jump to last alert (with Shift)
+* CV|DF|ER are "control" cameras aliases for 1|2|3
+
+### Additional cameras alternates on control
+2 "Control" camera alternates:
+* Ctl+C = Shift+1
+* Ctl+D = Shift+2
+* Ctl+E = Shift+3
+
+Camera creation:
+* Ctl+V = Alt+1
+* Ctl+F = Alt+2
+* Ctl+R = Alt+3
+* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
+
+----------------------------------------------------------------------------------------------------------------------
+
 TheCore Lite groups
 -------------------
 
@@ -197,58 +232,26 @@ Shift+Alt+#groupkey has been chosen as an alternate for group creation.
 Shift+Alt+LeftClick acts as Shift+LeftClick when deselection a unit from the selection.
 Shift+Alt+RightClick is an alias for Smart Command, it **inhibits the queuing**.
 
-As a consequence Shift+Alt could be hold during a typical cloning routine:
-* Select group with #groupkey
-* Hold Shift+Alt
-* Shift+Alt+Rclick smart command
-* Shift(+Alt)+click on a unit from the group (deselect a unit from the selection)
-* Shift+Alt+Rclick smart command
-* [...]
-* Shift(+Alt)+click on a unit from the group (deselect a unit from the selection)
-* Shift+Alt+Rclick smart command
-* Shift+Alt+#groupkey to overwrite group
-* Release Shift+Alt
-* issue a new command
-
-----------------------------------------------------------------------------------------------------------------------
-
-TheCore Lite location cameras 
------------------------------
-
-Compared to legacy TheCore Lite:
-* one camera key changed: X
-* camera creation still based on Alt modifier
-* camera recall still based on Shift modifier
-* "control" cameras were introduced
-
-### Standard camera views
-```
-`123
-  QW[ER]
-  AS[DF]
-  Z [CV] <= no more camera on X
-```
-* Alt now shows Ennemy life bar (useful for quick check of stacked ground/air armies)
-* Alt+X center the camera on the selection
-* ` is used for jump to last alert (with Shift)
-* CV|DF|ER are "control" cameras aliases for 1|2|3
-
-### Additional cameras alternates on control
-2 "Control" camera alternates:
-* Ctl+C = Shift+1
-* Ctl+D = Shift+2
-* Ctl+E = Shift+3
-
-Camera creation:
-* Ctl+V = Alt+1
-* Ctl+F = Alt+2
-* Ctl+R = Alt+3
-* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
+As a consequence Shift+Alt could be hold during a typical cloning routine,
+please see the use case.
 
 ----------------------------------------------------------------------------------------------------------------------
 
 Use case scenarii
 -----------------
+
+### Use case: cloning with Shift+Alt
+* Select group with #groupkey
+* Hold Shift+Alt
+* Shift+Alt+Rclick smart command
+* Shift(+Alt)+Lclick on a unit from the group (deselect a unit from the selection)
+* Shift+Alt+Rclick smart command
+* [...]
+* Shift(+Alt)+Lclick on a unit from the group (deselect a unit from the selection)
+* Shift+Alt+Rclick smart command
+* Shift+Alt+#groupkey to overwrite group
+* Release Shift+Alt
+* issue a new command
 
 ### Use case: expansions cameras
 * Select new base under construction
@@ -287,6 +290,8 @@ Use case scenarii
 * Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
 * Shift+X: select production facilities (WarpGate have higher selection priority)
 * Shift+key for warping-in units (queued rapid fire warp-in)
+
+Optional:
 * Ctl+click: on a unit, select all units for this type
 * Ctl+[army\_group]: add selection to an army group
 * right click for rally
