@@ -287,6 +287,10 @@ Use case scenarii
 * Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
 * Shift+X: select production facilities (WarpGate have higher selection priority)
 * Shift+key for warping-in units (queued rapid fire warp-in)
+* Ctl+click: on a unit, select all units for this type
+* Ctl+[army\_group]: add selection to an army group
+* right click for rally
+* [army\_group]: attack
 
 ### Use case: telegraph inject
 
