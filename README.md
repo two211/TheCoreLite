@@ -119,7 +119,7 @@ TheCore Lite location cameras
 -----------------------------
 
 Compared to legacy TheCore Lite:
-* one camera key changed: X
+* one camera key changed: X has been replaced by 1
 * camera creation still based on Alt modifier
 * camera recall still based on Shift modifier
 * "control" cameras were introduced
@@ -187,10 +187,10 @@ Group content:
 Tip for additional expansion:
 * Center base at camera creation with Alt+X
 * Add to Nexus/CC/Hatch with alternates:
+ * Alt+D (legacy alternate)
  * Alt+Grave
  * Alt+Tab
  * Alt+CapsLock
- * You could restore legacy Alt+D alternate if you're used to (suppressed for cloning)
 
 #### Production group (or inject queens) = **X**
 
