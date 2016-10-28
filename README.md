@@ -142,6 +142,9 @@ Non-steal aliases:
 * Ctl+Alt could be used for Append non-steal
 * Ctl+Shift+Alt could be used for Create non-steal
 
+Cloning:
+* Shift+Alt is an alternate for CreateSteal
+
 ### Macro groups
 
 #### History
@@ -199,6 +202,25 @@ The 10 groups are displayed in this order (| figures the separation):
 **Note:** the icon representing the group seems to be the best selectable unit at group creation.
 If you wanted to update the icon, select the group and recreate it.
 
+### Easier cloning through Shift+Alt group creation
+
+Shift+Alt+#groupkey has been chosen as an alternate for group creation.
+Shift+Alt+LeftClick acts as Shift+LeftClick when deselection a unit from the selection.
+Shift+Alt+RightClick is an alias for Smart Command, it **inhibits the queuing**.
+
+As a consequence Shift+Alt could be hold during a typical cloning routine:
+* Select group with #groupkey
+* Hold Shift+Alt
+* Shift+Alt+Rclick smart command
+* Shift(+Alt)+click on a unit from the group (deselect a unit from the selection)
+* Shift+Alt+Rclick smart command
+* [...]
+* Shift(+Alt)+click on a unit from the group (deselect a unit from the selection)
+* Shift+Alt+Rclick smart command
+* Shift+Alt+#groupkey to overwrite group
+* Release Shift+Alt
+* issue a new command
+
 ----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite location cameras 
@@ -238,28 +260,6 @@ Camera creation:
 
 Experimental features
 ---------------------
-
-### Easier cloning through Shift+Alt group creation
-
-Cloning consists in recreating a group after one unit deselection.
-Most of the seeds for TheCore 2.0 uses Shift as the modifier for group creation.
-This allows to chain:
-* select a group
-* issue a command
-* Shift+click on a unit in the selected group
-* group recreation
-* new command out of the current selection
-
-As Shift is used for camera jump in TheCore Lite,
-Shift+Alt+#groupkey has been chosen as an alternate for group creation.
-* select group with #groupkey
-* issue a command
-* Shift(+Alt)+click on a unit from the group
-* Shift+Alt+#groupkey to overwrite group
-* issue a new command
-
-**Note:** be careful not to press Alt+Shift+#camkey simultaneously while centering view with Alt+Shift,
-this would overview the group affected to #camkey
 
 
 ----------------------------------------------------------------------------------------------------------------------
