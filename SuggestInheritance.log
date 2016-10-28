@@ -453,6 +453,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveViperAbductImprovedStun/Viper default: T
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
+	GravitonCatapult/Carrier default: G
 	Hallucination/Sentry default: C
 	Hallucination/Sentry2 default:  copyof: Hallucination/Sentry default: C
 	Hallucination2/Voranor default:  copyof: Hallucination/Sentry default: C
@@ -461,9 +462,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	InfestedTerrans/Infestor default: T
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
-	Interceptor/Carrier default: I
-	Interceptor/CarrierAiur default: I copyof: Interceptor/Carrier default: I
-	Interceptor/Selendis default: I copyof: Interceptor/Carrier default: I
 	MindBolt/K5Kerrigan default: Q
 	MindBolt/K5KerriganBurrowed default: Q
 	MindBolt/K5KerriganPsiStrike default: Q
@@ -480,7 +478,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ProtossBuildAdvanced/Probe default: V
 	Queen default: Q
 	QueenCoop default: Q copyof: Queen default: Q
-	ReaverScarabs/Reaver default: C copyof: Interceptor/Carrier default: I
 	ResearchTechReactor/ScienceFacility default: E copyof: TechLabBarracks/Barracks default: X
 	RoachWarren/Drone default: R
 	SJHyperionBlink/SJHyperion default: Q
@@ -1462,7 +1459,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	GhostAcademy/SCV default: G
 	GravitonBeam/PhoenixPurifier default: G
 	GravitonBeamVoidCampaign/Phoenix default: G
-	GravitonCatapult/Carrier default: G
 	GravitonPrison/HybridDestroyer default: G
 	GuardianShield/Sentry default: G
 	GuardianShield/Sentry2 default:  copyof: GuardianShield/Sentry default: G
@@ -1498,6 +1494,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	InfestedAbomination/InfestedRefinery default: B
 	InfestedAbomination/InfestedStarport default: B
 	InfestedAbomination/InfestedSupply default: B
+	Interceptor/Carrier default: I
+	Interceptor/CarrierAiur default: I copyof: Interceptor/Carrier default: I
+	Interceptor/Selendis default: I copyof: Interceptor/Carrier default: I
 	KerriganEpilogue03QuantumRay/KerriganEpilogue03 default: Q
 	KerriganVoidKineticBlast/KerriganVoidUlnar02 default: Q
 	KraithSpineVolley/Kraith default: Z
@@ -1543,6 +1542,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PurificationNova/DisruptorPhased default: V
 	QueenMPSpawnBroodlings/QueenClassic default: B
 	Raise/SupplyDepotLowered default: R
+	ReaverScarabs/Reaver default: C copyof: Interceptor/Carrier default: I
 	ResearchBattlecruiserEnergyUpgrade/FusionCore default: B
 	ResearchBattlecruiserEnergyUpgrade/FusionReactor default: B
 	ResearchDrakkenLaserDrillBFG/DrakkenLaserDrillCoop default: D
