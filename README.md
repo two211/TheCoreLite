@@ -78,17 +78,8 @@ After the click the ability will be called again and you just have to click on t
 * Back/Forward Mouse Button added to browse between subgroups
 
 ### Ping allies !
-* Alert jump
- * accessible with Shift+Grave
- * accessible with Alt+Grave
-* Minimap ping
- * MinimapPing on Shift+1
- * MinimapPing on Alt+1
+* Alert jump accessible with Shift+Grave
 * QuickPing now mapped on Alt+RightClick
-
-If you have some spare time, it may worth to try push Shift|Alt+\` to jump to last alerts.
-Alt+\` could be easily chain with Alt+1 or Alt+RightClick to ping the event to teammates.
-Shit+\` to be chained with Shift+1.
 
 ### Fight against invisible
 * Alt+T : Rotate camera Left
@@ -99,14 +90,8 @@ Camera rotation allows to spot invisible static units.
 Alternate Alt+T and Alt+G to rotate the camera and send detection at the right place.
 Alt+RightClick pings the invisible unit location to allies.
 
-**Note:** T and G have been chosen because:
-* there is no Alt shortcut on them
-* the fingers are more on the command space (than ` and 1)
-* D could not be chosen due to alias to append to macro group
-* Rotate camera (help to spot invisible)
-
 ### More Town cameras
-* B remains toggle base camera
+* B remains toggles base camera
 * Shift+V becomes an alternate for telegraph inject use case
 
 ### AI keys now supported
@@ -122,10 +107,11 @@ Alt+RightClick pings the invisible unit location to allies.
 ### Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
 * Numpad0: Quick save
-* Delete: CameraFollow
-* BackSlash: All life bars
-* Bracket Open: Allies life bars
-* Bracket Close: Player life bars
+* Delete: CameraFollow (confusing feature)
+* Apostrophe: Minimap ping (preferred usage of QuickPing Alt+RClick)
+* BackSlash: All life bars (better use show "damaged" units)
+* Bracket Open: Allies life bars (better use show "damaged" units)
+* Bracket Close: Player life bars (better use show "damaged" units)
 
 ----------------------------------------------------------------------------------------------------------------------
 
