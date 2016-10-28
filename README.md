@@ -150,9 +150,12 @@ Group content:
 * Terran and Protoss should add research facilities to this group
 
 Tip for additional expansion:
-* Alt+D helps to append base to this group after camera creation
-* Alt+Tab helps to append base to this group after camera creation
-* Alt+Shift helps to center base at camera creation
+* Center base at camera creation with Alt+X
+* Add to Nexus/CC/Hatch with alternates:
+ * Alt+Grave
+ * Alt+Tab
+ * Alt+CapsLock
+ * You could restore legacy Alt+D alternate if you're used to (suppressed for cloning)
 
 #### Production group (or inject queens) = **X**
 
@@ -226,8 +229,8 @@ Compared to legacy TheCore Lite:
   Z [CV] <= no more camera on X
 ```
 * Alt now shows Ennemy life bar (useful for quick check of stacked ground/air armies)
-* Alt+Shift center the camera on the selection
-* ` is used for jump to last alert (with Shift or Alt)
+* Alt+X center the camera on the selection
+* ` is used for jump to last alert (with Shift)
 * CV|DF|ER are "control" cameras aliases for 1|2|3
 
 ### Additional cameras alternates on control
@@ -244,21 +247,17 @@ Camera creation:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Experimental features
----------------------
-
-
-----------------------------------------------------------------------------------------------------------------------
-
 Use case scenarii
 -----------------
 
 ### Use case: expansions cameras
 * Select new base under construction
-* Alt+Shift: center view on base
+* Alt+X: center view on base
 * Alt+[camera\_key]: make view on associated key
-* Alt+D: append expansion to Nexus/CC/Hatch group
- * Alt+Tab could be used as well (**warning** could bring back to desktop)
+* Append expansion to Nexus/CC/Hatch group
+ * Alt+Grave
+ * Alt+Tab (**warning** could bring back to desktop)
+ * Alt+CapsLock
 
 ### Use case: send worker back to ressources gathering after queued commands
 * press shift to queue all necessary commands
