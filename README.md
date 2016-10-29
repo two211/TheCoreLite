@@ -95,7 +95,7 @@ Alt+RightClick pings the invisible unit location to allies.
 
 ### More Town cameras
 * B remains toggles base camera
-* Shift+V becomes an alternate for telegraph inject use case
+* Shift+V becomes an alternate for Telegraph inject use case
 
 ### AI keys now supported
 * direct attack on Ctl+Alt+D
@@ -212,7 +212,7 @@ Race specific:
 * Related to egg inject
  * Z camera would be main hive
  * Shift+Z+X helps getting Shift already pressed for queued commands
- * please read dedicated usecase "telegraph inject" and "zerg macro routine"
+ * please read dedicated usecase "Telegraph inject" and "TheCore inject"
 
 ### Group display
 
@@ -291,14 +291,14 @@ Optional:
 * right click for rally
 * [army\_group]: attack
 
-### Use case: telegraph inject
+### Use case: Telegraph inject
 
-The "telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).
+The "Telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).
 It relies on:
-* command queuing
 * no mouse click
-* 2 neighbour keys, comfortably pressable with left Shift key hold
-* holding shift during the whole inject phase
+* 2 neighbour keys, comfortably pressable
+* holding left Shift during the whole inject phase
+* to queue command
 
 TheCore Lite inject initiate:
 * Shift+Z = jump to main hatch (first hatch)
@@ -308,7 +308,6 @@ TheCore Lite inject initiate:
 * keep Shift hold (to queue target)
 
 Cycle through bases with fingers only:
-* keep "Shift" hold
 * press Shift+V to cycle base
  * depending on habbits/comfort preference Shift+B works as well
 * if queen is there, with enough energy, press one of those depending on your comfort preference:
