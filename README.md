@@ -293,21 +293,20 @@ Optional:
 
 ### Use case: telegraph inject
 
+[Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method)
+
 The "telegraph" inject is a variant of the "backspace" inject.
 It relies on:
 * command queuing
 * no mouse click
 * 2 neighbour keys, comfortably pressable with left Shift key hold
+* holding shift during the whole inject phase
 
-Initiate inject cycle (hold Shift)
-* Basic principle
- * select inject queens
- * launch inject command
- * center mouse, center view on a hatch
-* Monitor inject initiate
- * Shift+Z = jump to main hatch (first hatch)
- * Shift+X = select inject queens + tech
- * Shift+Space = inject
+TheCore Lite inject initiate:
+* Shift+Z = jump to main hatch (first hatch)
+* Shift+X = select inject queens + tech
+* Shift+Space = inject
+* center mouse
 
 Cycle through bases with fingers only
 * center mouse
@@ -320,18 +319,23 @@ Cycle through bases with fingers only
 
 **Note:** In case of wandering queen, release shift and press V
 
+### Use case: TheCore inject
+
+[TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#The_Core_Method)
+
+* TheCore Lite inject initiate
+ * Shift+Z = jump to main hatch (first hatch)
+ * Shift+X = select inject queens + tech
+ * Shift+Space = inject
+ * center mouse
+* Shift+Q|W|A|S+click = base camera + inject if needed
+
 ### Use case: zerg macro routine
 * Hatch check
  * Z: hatch group
  * check supply depot at this step, to produce overlords
  * morph other larvaes depending on needs
-* Inject cycle (hold Shift)
- * Shift+Z = jump to main hatch (first hatch)
- * Shift+X = select inject queens + tech
- * Shift+Space = queue inject (prevent queens from walking around)
- * center mouse + click
- * Shift+A|S|Q|W|2+click = base camera + inject
- * **note** alternatively consider telegraph inject
+* Inject routine of your choice
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research
