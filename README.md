@@ -4,7 +4,7 @@ The Core Lite v2.0
 Some graphic ressources is available in Image directory,
 please download the following .pdf file:
 
-https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf
+[TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf)
 
 ### Aknowledgments
 
@@ -174,7 +174,7 @@ Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
 W is intended for CC Nexus Hatcheries.
 
-source: https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56
+[Historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
