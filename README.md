@@ -1,19 +1,7 @@
 The Core Lite v2.0
 ==================
 
-Some graphic ressources is available in Image directory,
-please download the following .pdf file:
-
-[TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf)
-
-### Aknowledgments
-
-Loads of thanks to:
-* TheCore project, whose this repo is a fork, and all the accumulated work over the years
-* JaKaTaK, the originator of the first TheCore Lite version
-* BeedeBdoo, who explained me the arcanes of TheCore, and datamined conflicts
-
-### Goals of this version
+This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 
 The goals are:
 * keep as much consistency with legacy "TheCore Lite" for unit commands
@@ -33,6 +21,24 @@ Coverage and checks:
  * keys supposed to be the same, or inherited (multi-racial support)
  * delivered in a set of supported keyboard layouts
  * it passes all the new introduced "seed" checks
+
+### Ressources
+
+Some graphic ressources is available in Image directory,
+please download the following .pdf file:
+
+[TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf)
+
+Legacy ressources:
+* [historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
+* [TheCore Lite thread on teamliquid.net](http://www.teamliquid.net/forum/sc2-strategy/333891-thecore-lite-advanced-keyboard-layout)
+
+### Aknowledgments
+
+Loads of thanks to:
+* TheCore project, whose this repo is a fork, and all the accumulated work over the years
+* JaKaTaK, the originator of the first TheCore Lite version
+* BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -176,8 +182,6 @@ Non-steal aliases:
 Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
 W is intended for CC Nexus Hatcheries.
-
-source: [Historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
