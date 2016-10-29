@@ -174,7 +174,7 @@ Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
 W is intended for CC Nexus Hatcheries.
 
-[Historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
+Source: [Historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
@@ -233,14 +233,14 @@ Shift+Alt+RightClick is an alias for Smart Command, it **inhibits the queuing**.
 As a consequence Shift+Alt could be hold during a typical cloning routine.
 More info at the following URLs
 
-* http://wiki.teamliquid.net/starcraft2/Cloning
-* [JaKaTaK's "manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
-
 Shift+Alt+#groupkey is an alternate for group creation.
 It helps for creating groups after unit deselection.
 Please refer to JaKaTaK video for more details.
 
-* [JaKaTaK's "manual cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
+Sources:
+* http://wiki.teamliquid.net/starcraft2/Cloning
+* [JaKaTaK's "How to clone - manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
+* [JaKaTaK's "How to clone - control group cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
 
 ----------------------------------------------------------------------------------------------------------------------
 
