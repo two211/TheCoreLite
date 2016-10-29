@@ -293,9 +293,9 @@ Optional:
 
 ### Use case: telegraph inject
 
-[Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method)
 
-The "telegraph" inject is a variant of the "backspace" inject.
+
+The "telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).
 It relies on:
 * command queuing
 * no mouse click
@@ -321,7 +321,8 @@ Cycle through bases with fingers only
 
 ### Use case: TheCore inject
 
-[TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#The_Core_Method)
+The [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#The_Core_Method)
+benefits as well of TheCore Lite inject initiate.
 
 * TheCore Lite inject initiate
  * Shift+Z = jump to main hatch (first hatch)
