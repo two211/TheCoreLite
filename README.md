@@ -226,32 +226,26 @@ The 10 groups are displayed in this order (| figures the separation):
 **Note:** the icon representing the group seems to be the best selectable unit at group creation.
 If you wanted to update the icon, select the group and recreate it.
 
-### Easier cloning through Shift+Alt group creation
+### Easier cloning through Shift+Alt
 
-Shift+Alt+#groupkey has been chosen as an alternate for group creation.
 Shift+Alt+LeftClick acts as Shift+LeftClick when deselection a unit from the selection.
 Shift+Alt+RightClick is an alias for Smart Command, it **inhibits the queuing**.
+As a consequence Shift+Alt could be hold during a typical cloning routine.
+More info at the following URLs
 
-As a consequence Shift+Alt could be hold during a typical cloning routine,
-please see the use case.
+* http://wiki.teamliquid.net/starcraft2/Cloning
+* [JaKaTaK's "manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
+
+Shift+Alt+#groupkey is an alternate for group creation.
+It helps for creating groups after unit deselection.
+Please refer to JaKaTaK video for more details.
+
+* [JaKaTaK's "manual cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
 
 ----------------------------------------------------------------------------------------------------------------------
 
 Use case scenarii
 -----------------
-
-### Use case: cloning with Shift+Alt
-* Select group with #groupkey
-* Hold Shift+Alt
-* Shift+Alt+Rclick smart command
-* Shift(+Alt)+Lclick on a unit from the group (deselect a unit from the selection)
-* Shift+Alt+Rclick smart command
-* [...]
-* Shift(+Alt)+Lclick on a unit from the group (deselect a unit from the selection)
-* Shift+Alt+Rclick smart command
-* Shift+Alt+#groupkey to overwrite group
-* Release Shift+Alt
-* issue a new command
 
 ### Use case: expansions cameras
 * Select new base under construction
