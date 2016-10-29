@@ -56,10 +56,11 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * Ctl+Shift+Tab : alternate for "select all army"
 
 Some examples:
-* After Ctl+Shift+Tab, Ctl+Shift+click will remove any unit of the clicked type
 * After Ctl+Tab, Ctl+click will select only all units of the clicked type
-* Others actions:
- * Ctl+Shift+Alt+#group key will create non-steal the group
+ * Ctl+#group key will create/steal the selection
+* After Ctl+Shift+Tab, Ctl+Shift+click will remove any unit of the clicked type
+ * Ctrl+Shift+#group key will create group/steal the selection
+ * Shift+Alt+#group key will create group/non-steal the selection
 
 ### Rapid Fire and Precision keys.
 There are now far more Rapid Fire Hotkeys: Space, R, T, D, F, G, V, H, CapsLock.
@@ -160,11 +161,8 @@ Compared to legacy TheCore Lite:
 * Ctl+Shift is now used of CreateSteal
 
 Non-steal aliases:
-* Ctl+Alt could be used for Append non-steal
-* Ctl+Shift+Alt could be used for Create non-steal
-
-Cloning:
-* Shift+Alt is an alternate for CreateSteal
+* Ctl+Alt could be used for Append/non-steal
+* Shift+Alt could be used for Create/non-steal
 
 ### Macro groups
 
@@ -233,8 +231,8 @@ Shift+Alt+RightClick is an alias for Smart Command, it **inhibits the queuing**.
 As a consequence Shift+Alt could be hold during a typical cloning routine.
 More info at the following URLs
 
-Shift+Alt+#groupkey is an alternate for group creation.
-It helps for creating groups after unit deselection.
+Shift+Alt+#groupkey is used for create/non-steal group.
+It could help in creating groups after unit deselection.
 Please refer to JaKaTaK video for more details.
 
 Sources:
