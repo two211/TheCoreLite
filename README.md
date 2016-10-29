@@ -64,12 +64,15 @@ Some examples:
  * Ctrl+Shift+#group key will create group/steal the selection
  * Shift+Alt+#group key will create group/non-steal the selection
 
-### Rapid Fire and Precision keys.
-There are now far more Rapid Fire Hotkeys: Space, R, T, D, F, G, V, H, CapsLock.
-Now all Warp-Inable units are bound to Rapid Fire keys.
-If you don't know what rapid fire keys are, please check out JaKaTaK's video on Youtube.
+### Rapid Fire and Precision keys
 
-"E" and "C" keep on being non Rapid Fire, because they are precision key.
+There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, V, CapsLock.
+Now all Warp-Inable units are bound to Rapid Fire keys.
+If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
+
+source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
+
+"E" and "C" keep on being non Rapid Fire, because they are precision keys.
 They are used for precision spells/ability.
 You can keep those key pressed and just click on the target.
 After the click the ability will be called again and you just have to click on the next target.
@@ -174,7 +177,7 @@ Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
 W is intended for CC Nexus Hatcheries.
 
-Source: [Historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
+source: [Historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
