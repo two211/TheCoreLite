@@ -238,7 +238,7 @@ It helps for creating groups after unit deselection.
 Please refer to JaKaTaK video for more details.
 
 Sources:
-* http://wiki.teamliquid.net/starcraft2/Cloning
+* [TeamLiquid's page about "Cloning"](http://wiki.teamliquid.net/starcraft2/Cloning)
 * [JaKaTaK's "How to clone - manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
 * [JaKaTaK's "How to clone - control group cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
 
