@@ -305,7 +305,7 @@ TheCore Lite inject initiate:
 * Shift+X = select inject queens + tech
 * Shift+Space = inject
 * center mouse
-* Keep Shift hold (to queue target)
+* keep Shift hold (to queue target)
 
 Cycle through bases with fingers only:
 * keep "Shift" hold
@@ -329,6 +329,13 @@ benefits as well of TheCore Lite inject initiate.
  * Shift+Space = inject
  * center mouse
 * Shift+Q|W|A|S+click = base camera + inject if needed
+
+Suggested camera locations:
+* Z main
+* Q 2nd
+* W 3rd
+* A 4th
+* S 5th
 
 ### Use case: zerg macro routine
 * Hatch check
