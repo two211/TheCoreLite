@@ -293,8 +293,6 @@ Optional:
 
 ### Use case: telegraph inject
 
-
-
 The "telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).
 It relies on:
 * command queuing
@@ -307,15 +305,16 @@ TheCore Lite inject initiate:
 * Shift+X = select inject queens + tech
 * Shift+Space = inject
 * center mouse
+* Keep Shift hold (to queue target)
 
-Cycle through bases with fingers only
-* center mouse
+Cycle through bases with fingers only:
+* keep "Shift" hold
 * press Shift+V to cycle base
  * depending on habbits/comfort preference Shift+B works as well
-* press one of those to target hatch if queen is there, depending on your comfort preference:
+* if queen is there, with enough energy, press one of those depending on your comfort preference:
  * Shift+Space
  * Shift+F
- * Shift+D
+ * Shift+D, all of them are alternate for TargetChoose (aka Rapid Fire key)
 
 **Note:** In case of wandering queen, release shift and press V
 
