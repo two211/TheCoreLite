@@ -61,14 +61,7 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * Ctl+Tab : alternate for "select all army"
 * Ctl+Shift+Tab : alternate for "select all army"
 
-Some examples:
-* After Ctl+Tab
- * Ctl+click will select only all units of the clicked type
- * Ctl+#group key will create/steal the selection
-* After Ctl+Shift+Tab
- * Ctl+Shift+click will remove any unit of the clicked type
- * Ctrl+Shift+#group key will create group/steal the selection
- * Shift+Alt+#group key will create group/non-steal the selection
+This makes sense considering synergie with mouse clicking and group creation
 
 ### Rapid Fire and Precision keys
 
@@ -162,22 +155,10 @@ Camera creation:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-TheCore Lite groups
--------------------
+TheCore Lite Macro groups
+-------------------------
 
-Compared to legacy TheCore Lite:
-* all group keys are similar
-* the suggested macro group keys changed from QW to ZX
-* Ctl is now used for AppendSteal
-* Ctl+Shift is now used of CreateSteal
-
-Non-steal aliases:
-* Ctl+Alt could be used for Append/non-steal
-* Shift+Alt could be used for Create/non-steal
-
-### Macro groups
-
-#### History
+### History
 
 Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
@@ -185,7 +166,7 @@ W is intended for CC Nexus Hatcheries.
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
-#### Nexus/CC/Hatch group = **Z**
+### Nexus/CC/Hatch group = **Z**
 
 Group content:
 * All Nexus/CC/Hatch
@@ -199,7 +180,7 @@ Tip for additional expansion:
  * Alt+Tab
  * Alt+CapsLock
 
-#### Production group (or inject queens) = **X**
+### Production group (or inject queens) = **X**
 
 Group content:
 * Terran & Protoss: All army production facilities
@@ -233,18 +214,78 @@ The 10 groups are displayed in this order (| figures the separation):
 **Note:** the icon representing the group seems to be the best selectable unit at group creation.
 If you wanted to update the icon, select the group and recreate it.
 
+----------------------------------------------------------------------------------------------------------------------
+
+TheCore Lite Group modifiers
+----------------------------
+
+Compared to legacy TheCore Lite:
+* all group keys are similar
+* the suggested macro group keys changed from QW to ZX
+* modifier have been changed
+
+LoTV introduced steal behavior, for Archon mode.
+"Steal" enables to remove the selection from any other groups,
+including Archon partner or your own groups.
+TheCore team concluded that this property worths using it by default.
+
+For TheCore Lite, here are the modifiers:
+* AppendSteal
+	* Ctrl
+	* Ctrl+Shift
+* CreateSteal
+	* Ctrl+Alt
+	* Ctrl+Shift+Alt
+* Create non-steal
+	* Shift+Alt
+* Append non-steal, not used
+
+### Mouse synergies with Ctrl and Ctrl+Shift
+
+Those behaviors are similar if Alt is pressed simultaneously:
+* Ctrl+
+ * one click on the map, selects all visible units similar to target
+ * one click on the board, keeps selected only units similar to target
+* Ctrl+Shift+
+ * one click on the map, adds all visible units similar to target in selection
+ * one click on the board, removes all units similar to target in selection
+
+As AppendSteal is widely used, it is mapped to both without Alt.
+Alt additional modifier is used for CreateSteal.
+
+In case you want to remove all units from a type from a group,
+just appendsteal them to another group with Ctl+click+#groupnumber.
+Same applies for boxed selection.
+You probably want all units to be a target group anyway.
+
+Shift+Alt would be recommanded if you want to remove some units from control groups.
+Just recreate group with Shift+Alt after shift clicking the units you want to stay at their place
+(or execute the last command - read next section).
+
+Ctl+Shift AppendSteal is highly beneficial in egg drill.
+For more info please watch [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
+
+Some examples with "Select All Army":
+* After Ctl+Tab
+ * Ctl+click will select only all units of the clicked type
+ * Ctl+#group key will append/steal the selection
+* After Ctl+Shift+Tab
+ * Ctl+Shift+click will remove any unit of the clicked type
+ * Ctrl+Shift+#group key will append/steal the selection
+  * alternatively Shift+Alt+#group key will create group/non-steal the selection
+
 ### Easier cloning through Shift+Alt
 
-Shift+Alt+LeftClick acts as Shift+LeftClick when deselection a unit from the selection.
+Shift+Alt+LeftClick acts as Shift+LeftClick when deselecting a unit from the selection.
 Shift+Alt+RightClick is an alias for Smart Command, it **inhibits the queuing**.
 As a consequence Shift+Alt could be hold during a typical cloning routine.
-More info at the following URLs
+More info at the following URLs.
 
 Shift+Alt+#groupkey is used for create/non-steal group.
 It could help in creating groups after unit deselection.
 Please refer to JaKaTaK video for more details.
 
-Sources:
+sources:
 * [TeamLiquid's page about "Cloning"](http://wiki.teamliquid.net/starcraft2/Cloning)
 * [JaKaTaK's "How to clone - manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
 * [JaKaTaK's "How to clone - control group cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
