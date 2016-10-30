@@ -228,11 +228,12 @@ LoTV introduced steal behavior, for Archon mode.
 "Steal" enables to remove the selection from any other groups,
 including Archon partner or your own groups.
 TheCore team concluded that this property worths using it by default.
+JaKaTaK explains pros and cons in this video: [To steal or not to steal](https://www.youtube.com/watch?v=ayngEqIaWmM)
 
 For TheCore Lite, here are the modifiers:
 * AppendSteal = Ctrl
 * CreateSteal = Ctrl+Shift
-* Create non-steal = Shift+Alt
+* Create non-steal = Shift+Alt (and Ctrl+Shift+Alt)
 * Append non-steal = Ctrl+Alt
 
 ### Mouse synergies with Ctrl and Ctrl+Shift
@@ -253,7 +254,7 @@ In case you want to remove a unit type from a group
 * Ctl+Shift+click a unit+#groupnumber, deselected units won't have any group :(
 
 Shift+Alt would be recommanded if you want to remove some units from control groups.
-Just recreate group with Shift+Alt after shift clicking the units you want to stay at their place
+Just recreate group with Shift+Alt after shift clicking the units supposed to stay at their place
 (or execute the last command - read next section).
 
 Some examples with "Select All Army":
@@ -280,6 +281,17 @@ sources:
 * [TeamLiquid's page about "Cloning"](http://wiki.teamliquid.net/starcraft2/Cloning)
 * [JaKaTaK's "How to clone - manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
 * [JaKaTaK's "How to clone - control group cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
+
+### Twin group for easy caster selection
+
+You may want to have units in both a main army group and a caster group.
+It is the case of the Stalker group in [JaKaTaK's video on Protoss control groups](https://www.youtube.com/watch?v=Hu7sLfLpkaM&index=10&list=PLiejbQlQAdGlM1wWWxMGZsBAFCrIRjGJn).
+Ctl+Alt modifier is an alternate for Append non-steal on this purpose.
+
+* select main group
+* Ctrl+(Alt)+ click unit to select only units of this type
+* Ctrl+Alt+#groupnumber to append to target group
+ * alternatively Shift+Alt if the group needs to be overwritten
 
 ----------------------------------------------------------------------------------------------------------------------
 
