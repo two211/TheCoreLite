@@ -379,16 +379,17 @@ benefits as well of TheCore Lite inject initiate.
 
 Suggested camera locations:
 * Z main
-* Q 2nd
+* A 2nd
 * W 3rd
-* A 4th
-* S 5th
+* Q 4th
+* 3 5th
 
 ### Use case: zerg macro routine
 * Hatch check
  * Z: hatch group
  * check supply depot at this step, to produce overlords
  * morph other larvaes depending on needs
+ * add eggs to control groups and give them rally points
 * Inject routine of your choice
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
@@ -400,6 +401,7 @@ Suggested camera locations:
  * Ctl+E|D|C = jump to creep camera
  * Ctl+click to select creep tumors
  * Shift+C then clicks = queued creep tumor spread
+  * altenatively, CapsLock for rapid fire creep tumor
  * click = select a new creep tumor
  * Ctl+Space = center view on selection
  * Ctl+R|F|V = update creep camera
