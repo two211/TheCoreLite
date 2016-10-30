@@ -230,15 +230,10 @@ including Archon partner or your own groups.
 TheCore team concluded that this property worths using it by default.
 
 For TheCore Lite, here are the modifiers:
-* AppendSteal
-	* Ctrl
-	* Ctrl+Shift
-* CreateSteal
-	* Ctrl+Alt
-	* Ctrl+Shift+Alt
-* Create non-steal
-	* Shift+Alt
-* Append non-steal, not used
+* AppendSteal = Ctrl
+* CreateSteal = Ctrl+Shift
+* Create non-steal = Shift+Alt
+* Append non-steal = Ctrl+Alt
 
 ### Mouse synergies with Ctrl and Ctrl+Shift
 
@@ -250,20 +245,16 @@ Those behaviors are similar if Alt is pressed simultaneously:
  * one click on the map, adds all visible units similar to target in selection
  * one click on the board, removes all units similar to target in selection
 
-As AppendSteal is widely used, it is mapped to both without Alt.
-Alt additional modifier is used for CreateSteal.
+In case you want to split a group,
+just box some units then appendsteal them to another group with Ctl+click+#groupnumber.
 
-In case you want to remove all units from a type from a group,
-just appendsteal them to another group with Ctl+click+#groupnumber.
-Same applies for boxed selection.
-You probably want all units to be a target group anyway.
+In case you want to remove a unit type from a group
+* Ctl+click a unit+#groupnumber, you probably want all units to be a target group anyway
+* Ctl+Shift+click a unit+#groupnumber, deselected units won't have any group :(
 
 Shift+Alt would be recommanded if you want to remove some units from control groups.
 Just recreate group with Shift+Alt after shift clicking the units you want to stay at their place
 (or execute the last command - read next section).
-
-Ctl+Shift AppendSteal is highly beneficial in egg drill.
-For more info please watch [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
 
 Some examples with "Select All Army":
 * After Ctl+Tab
@@ -271,7 +262,7 @@ Some examples with "Select All Army":
  * Ctl+#group key will append/steal the selection
 * After Ctl+Shift+Tab
  * Ctl+Shift+click will remove any unit of the clicked type
- * Ctrl+Shift+#group key will append/steal the selection
+ * Ctrl+Shift+#group key will create/steal a group with this selection
   * alternatively Shift+Alt+#group key will create group/non-steal the selection
 
 ### Easier cloning through Shift+Alt
@@ -405,6 +396,10 @@ Suggested camera locations:
  * click = select a new creep tumor
  * Ctl+Space = center view on selection
  * Ctl+R|F|V = update creep camera
+
+sources:
+[JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
+[JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
 
 **Note:** creep tumor spawn/expand could be performed without queue
 , if you're not careful you would have to cancel the action before selection with click or double-click

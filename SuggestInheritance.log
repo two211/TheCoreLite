@@ -1776,9 +1776,33 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ControlGroupRecall9 default: 9
 	LeaderArmy default: A
 
+[INFO]: TheCore Lite: Control+1   
+	ControlGroupAppendAndSteal2 default: Shift+Alt+2
+	ObservePlayer8 default: Control+1
+
+[INFO]: TheCore Lite: Control+2   
+	ControlGroupAppendAndSteal3 default: Shift+Alt+3
+	ObservePlayer9 default: Control+2
+
+[INFO]: TheCore Lite: Control+3   
+	ControlGroupAppendAndSteal4 default: Shift+Alt+4
+	ObservePlayer10 default: Control+3
+
+[INFO]: TheCore Lite: Control+A   
+	ControlGroupAppendAndSteal9 default: Shift+Alt+9
+	StatPanelArmySupply default: Control+A
+
 [INFO]: TheCore Lite: Control+Alt+F   
 	AIDetect default: Alt+D
 	FPS default: Control+Alt+F
+
+[INFO]: TheCore Lite: Control+W   
+	ControlGroupAppendAndSteal8 default: Shift+Alt+8
+	ToggleWorldPanel default: Control+W
+
+[INFO]: TheCore Lite: Control+X   
+	ControlGroupAppendAndSteal6 default: Shift+Alt+6
+	ToggleVersusModeSides default: Control+X
 
 [INFO]: TheCore Lite: Escape   
 	ChatCancel default: Escape
@@ -1796,5 +1820,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 42 
+Finished (suggest inherit) - INFOs: 48 
 ============================
