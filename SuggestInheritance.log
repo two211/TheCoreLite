@@ -1646,7 +1646,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: T   
 	ActivateStasisWard/OracleStasisTrap default: T
-	BanelingNest/Drone default: B
 	Colossus/SuperWarpGate default: C
 	EvolveAdrenalineBoost/EvolutionChamber default: 
 	EvolveGuardianAttackRangeIncrease/Spire default: E
@@ -1695,6 +1694,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpInScout/SuperWarpGate default: S
 
 [INFO]: TheCore Lite: V   
+	BanelingNest/Drone default: B
 	BuildKelMorianRocketTurret/SCV default: G
 	BuildScienceVessel/Starport default: R copyof: Raven/Starport default: R, B
 	EnergyNova/Artifact default: V
