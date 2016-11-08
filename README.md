@@ -112,7 +112,7 @@ Alt+RightClick pings the invisible unit location to allies.
 ### Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
 * Numpad0: Quick save
-* Delete: CameraFollow (confusing feature)
+* Shift+Delete: CameraFollow (confusing feature)
 * Apostrophe: Minimap ping (preferred usage of QuickPing Alt+RClick)
 * BackSlash: All life bars (better use show "damaged" units)
 * Bracket Open: Allies life bars (better use show "damaged" units)
