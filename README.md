@@ -284,16 +284,14 @@ sources:
 * [JaKaTaK's "How to clone - manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
 * [JaKaTaK's "How to clone - control group cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
 
-### Twin group for easy caster selection
+### Additional group for easy caster selection
 
 You may want to have units in both a main army group and a caster group.
 It is the case of the Stalker group in [JaKaTaK's video on Protoss control groups](https://www.youtube.com/watch?v=Hu7sLfLpkaM&index=10&list=PLiejbQlQAdGlM1wWWxMGZsBAFCrIRjGJn).
-Ctl+Alt modifier is an alternate for Append non-steal on this purpose.
 
-* select main group
-* Ctrl+(Alt)+ click unit to select only units of this type
-* Ctrl+Alt+#groupnumber to append to target group
- * alternatively Shift+Alt if the group needs to be overwritten
+* Select the group where the casters are
+* Ctl+LeftClick a caster in the board (select all units)
+* Use Shift+Alt+group# to create/overwrite the caster group without stealing from the main army
 
 ----------------------------------------------------------------------------------------------------------------------
 
