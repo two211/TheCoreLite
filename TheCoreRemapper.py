@@ -652,7 +652,7 @@ def wrong_inherit(model):
 def known_hotkey_command_check(model):
 	logger = Logger("command conflicts with hotkeys, within identified conflicts", "KnownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
-		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
+		hotkey_list = getHotkeyList(seed,'Hotkeys')
 		## Find&Report context command overlap on hotkeys within CONFLICT_CHECKS
 		for command in constraints['ToCheck']['Commands']:
 			for key in model['Commands'][command].get_value(seed).split(','):
@@ -666,7 +666,7 @@ def known_hotkey_command_check(model):
 def unknown_hotkey_command_check(model):
 	logger = Logger("command conflicts with hotkeys, out of identified conflicts", "UnknownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
-		hotkey_list = getHotkeyList(seed,'Hotkeys',ignoredCommands=['TargetChoose'])
+		hotkey_list = getHotkeyList(seed,'Hotkeys')
 		## Find&Report context command overlap on hotkeys out of CONFLICT_CHECKS
 		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
 			if not(command in constraints['CommandInfo']['HasConflict']):
@@ -783,7 +783,7 @@ def getConstraints():
 	## Return constraints dict
 	return constraints
 
-def getHotkeyList(seed,section,ignoredCommands=[]):
+def getHotkeyList(seed,section,ignoredCommands=['TargetChoose','TargetCancel']):
 	hotkey_list = []
 	for command in hotkeyfile_parsers[seed].options(section):
 		if not command in ignoredCommands:
