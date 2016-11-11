@@ -31,8 +31,6 @@ class Races(Enum):
     Terran = "T"
     Random = "R"
     Zerg = "Z"
-    def str(self):
-        return self.value
 
 class Sides(Enum):
     Right = "R"
@@ -47,6 +45,14 @@ class LogLevel(Enum):
     Info = "INFO"
     Warn = "WARN"
     Error = "ERROR"
+
+####################################################################################
+## Support for other seeds than the pure TheCore, value = filename
+####################################################################################
+class OtherSeeds(Enum):
+    Lite = "TheCore Lite"
+    LiteRehab = "TheCore LiteRehab"
+    LitePlus = "TheCore LitePlus"
 
 ####################################################################################
 ## Debug infrastructure
@@ -72,11 +78,13 @@ allSeeds = []
 if debug_parser.getboolean("Settings","allseeds",fallback=True):
     for race in Races:
         allSeeds.append(race)
+    for seed in OtherSeeds:
+        allSeeds.append(seed)
 else:
     for race in debug_parser.options("Races"):
         allSeeds.append(Races[race])
     for seed in debug_parser.options("OtherSeeds"):
-        allSeeds.append(seed)
+        allSeeds.append(OtherSeeds[seed])
 
 ####################################################################################
 
@@ -195,7 +203,7 @@ class Hotkey:
                     first = False
                 else:
                     value = value + "," + alternate
-            values = values + race + ":" + value + "\n"
+            values = values + race.value + ":" + value + "\n"
         return values
 
 def init_seed_hotkeyfile_parser():
@@ -204,9 +212,9 @@ def init_seed_hotkeyfile_parser():
         hotkeyfilepath = create_filepath( prefix + thecore_tag(race, Sides.Left, Sizes.Medium) )
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[race] = hotkeyfile_parser
-    for seed in debug_parser.options("OtherSeeds"):
+    for seed in OtherSeeds:
         hotkeyfile_parser = ConfigParser()
-        hotkeyfilepath = create_filepath(seed)
+        hotkeyfilepath = create_filepath(seed.value)
         hotkeyfile_parser.read(hotkeyfilepath)
         hotkeyfile_parsers[seed] = hotkeyfile_parser
 
@@ -449,11 +457,11 @@ def translate_and_create_files(models, logger):
                             create_file(model, filename, layout, logger)
             else:
                 if layout != seed_layout:
-                    logger.log(LogLevel.Info, "translate seed: " + seed + " keyboardlayout: " + layout)
+                    logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
                     model = translate(models[seed], layout, Sides.Left)
                 else:
                     model = models[seed]
-                create_file(model, seed, layout, logger)
+                create_file(model, seed.value, layout, logger)
 
 def translate(seed_model, layout, side):
     return modify_model(seed_model, layout_parser, layout, side)
@@ -597,7 +605,7 @@ def suggest_inherit(model):
                 if first:
                     for seed in allSeeds:
                         value = hotkey.get_value(seed)
-                        log_msg = log_msg + seed + ": " + str(value) + "   "
+                        log_msg = log_msg + seed.value + ": " + str(value) + "   "
                     first = False
                 log_msg = log_msg + "\n\t" + hotkey.name + " default: " + hotkey.default
                 if hotkey.copyOf:
@@ -630,7 +638,7 @@ def wrong_inherit(model):
                         value = " "
                     if not copyofvalue:
                         copyofvalue = " "
-                    log_msg = log_msg + "\t" + seed + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
+                    log_msg = log_msg + "\t" + seed.value + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
                 default = hotkey.default
                 if not default:
                     default = " "
@@ -709,7 +717,7 @@ def missing_conflict_check(model):
 				log_msg += "\nbut is inherited"
 				level = LogLevel.Warn
 			for seed in allSeeds:
-				log_msg += "\nin seed " + seed + ", keys =" + model['Commands'][command].get_value(seed)
+				log_msg += "\nin seed " + seed.value + ", keys =" + model['Commands'][command].get_value(seed)
 			logger.log(level, log_msg)
 	logger.finish()
 
