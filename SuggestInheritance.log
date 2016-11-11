@@ -1212,7 +1212,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	StopPlanetaryFortress/KorhalPalaceGate default: P
 	StopPlanetaryFortress/MengskPalaceGate default: P
 	StopPlanetaryFortress/MercenaryFortress default: P
-	StopPlanetaryFortress/PlanetaryFortress default: P
 	StopPlanetaryFortress/WarfieldFortress default: P
 	TerranShipPlatingLevel2/Armory default: P
 	TerranShipPlatingLevel3/Armory default: P
@@ -1729,6 +1728,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Salvage/PerditionTurretUnderground default: V
 	Stop default: S
 	StopBunker/Bunker default: S
+	StopPlanetaryFortress/PlanetaryFortress default: P
 	TerranVehiclePlatingLevel1/Armory default: V
 	TerranVehiclePlatingLevel2/Armory default: V
 	TerranVehiclePlatingLevel3/Armory default: V
@@ -1792,9 +1792,25 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ControlGroupAppendAndSteal9 default: Shift+Alt+9
 	StatPanelArmySupply default: Control+A
 
-[INFO]: TheCore Lite: Control+Alt+F   
-	AIDetect default: Alt+D
-	FPS default: Control+Alt+F
+[INFO]: TheCore Lite: Control+C   
+	AIBuild default: Alt+B
+	StatPanelAPM default: Control+C
+
+[INFO]: TheCore Lite: Control+E   
+	AIClearAll default: Alt+X
+	ReplayRestart default: Control+E
+
+[INFO]: TheCore Lite: Control+R   
+	AIDelete default: Alt+X
+	StatPanelUnitsLost default: Control+R
+
+[INFO]: TheCore Lite: Control+T   
+	AIScout default: Alt+S
+	ReplayHide default: Control+T
+
+[INFO]: TheCore Lite: Control+V   
+	AIExpand default: Alt+E
+	StatPanelCPM default: Control+V
 
 [INFO]: TheCore Lite: Control+W   
 	ControlGroupAppendAndSteal8 default: Shift+Alt+8
@@ -1820,5 +1836,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 48 
+Finished (suggest inherit) - INFOs: 52 
 ============================
