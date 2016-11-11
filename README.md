@@ -97,17 +97,19 @@ Alt+RightClick pings the invisible unit location to allies.
 
 ### More Town cameras
 * B remains toggles base camera
-* Shift+V becomes an alternate for Telegraph inject use case
+* New alternates
+ * Shift+V becomes an alternate for Telegraph inject use case
+ * Shift+Alt+C
 
 ### AI keys now supported
-* direct attack on Ctl+Alt+D
-* direct scout on Ctl+Alt+T
-* direct detect on Ctl+Alt+F
-* direct expand on Ctl+Alt+G
-* open AI communication on Ctl+Alt+V
-* build on Ctl+Alt+C
-* clearall on Ctl+Alt+E
-* delete on Ctl+Alt+R
+* direct attack on Ctl+D
+* direct scout on Ctl+T
+* direct detect on Ctl+F
+* direct expand on Ctl+V
+* open AI communication on Ctl+G
+* build on Ctl+C
+* clearall on Ctl+E
+* delete on Ctl+R
 
 ### Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
@@ -117,10 +119,11 @@ Alt+RightClick pings the invisible unit location to allies.
 * BackSlash: All life bars (better use show "damaged" units)
 * Bracket Open: Allies life bars (better use show "damaged" units)
 * Bracket Close: Player life bars (better use show "damaged" units)
+* Ctl+Alt+NumPad#: append non-steal (dropped due to lack of modifier)
 
 ----------------------------------------------------------------------------------------------------------------------
 
-TheCore Lite location cameras 
+TheCore Lite location cameras
 -----------------------------
 
 Compared to legacy TheCore Lite:
@@ -130,28 +133,27 @@ Compared to legacy TheCore Lite:
 * "control" cameras were introduced
 
 ### Standard camera views
-```
-`123
-  QW[ER]
-  AS[DF]
-  Z [CV] <= no more camera on X
-```
 * Alt now shows Ennemy life bar (useful for quick check of stacked ground/air armies)
 * Alt+X centers the camera on the selection
 * ` is used for jump to last alert (with Shift)
-* CV|DF|ER are "control" cameras aliases for 1|2|3
 
 ### Additional cameras alternates on control
+
 2 "Control" camera alternates:
-* Ctl+C = Shift+1
-* Ctl+D = Shift+2
-* Ctl+E = Shift+3
+* Ctl+Alt+A = Shift+1
+* Ctl+Alt+S = Shift+2
+* Ctl+Alt+D = Shift+3
 
 Camera creation:
-* Ctl+V = Alt+1
-* Ctl+F = Alt+2
-* Ctl+R = Alt+3
+* Ctl+Alt+Z = Alt+1
+* Ctl+Alt+X = Alt+2
+* Ctl+Alt+C = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
+
+Those aliases allow easy save/recall locations.
+Same modifier is applied for save and recall.
+Using them you have a finger on Ctl:
+Ctl(+Alt)+LeftClick on a units selects all the units of this type.
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -234,7 +236,7 @@ For TheCore Lite, here are the modifiers:
 * AppendSteal = Ctrl
 * CreateSteal = Ctrl+Shift
 * Create non-steal = Shift+Alt (and Ctrl+Shift+Alt)
-* Append non-steal = Ctrl+Alt
+* Append non-steal has been dropped
 
 ### Mouse synergies with Ctrl and Ctrl+Shift
 
@@ -342,7 +344,7 @@ Optional:
 * right click for rally
 * [army\_group]: attack
 
-### Use case: Telegraph inject
+### Use case: BackSpace inject variants
 
 The "Telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).
 It relies on:
@@ -351,12 +353,17 @@ It relies on:
 * holding left Shift during the whole inject phase
 * to queue command
 
-TheCore Lite inject initiate:
+#### TheCore Lite inject initiate
+
 * Shift+Z = jump to main hatch (first hatch)
 * Shift+X = select inject queens + tech
 * Shift+Space = inject
 * center mouse
 * keep Shift hold (to queue target)
+
+#### Telegraph inject
+
+Start with a "TheCore Lite inject initiate"
 
 Cycle through bases with fingers only:
 * press Shift+V to cycle base
@@ -365,6 +372,18 @@ Cycle through bases with fingers only:
  * Shift+Space
  * Shift+F
  * Shift+D, all of them are alternate for TargetChoose (aka Rapid Fire key)
+ * or LeftClick, if you prefer
+
+#### Another approach
+
+Start with a "TheCore Lite inject initiate".
+Then move the the thumb from Space to Alt.
+You're ready to cycle base pressing Shift+Alt+C.
+Shift+Alt keeps the command queuing.
+
+Cycle through bases with one key + mouse:
+* press Shift+Alt+C to cycle base
+* if queen is there, with enough energy, left click
 
 **Note:** In case of wandering queen, release shift and press V
 
