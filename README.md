@@ -324,7 +324,7 @@ Use case scenarii
 * select rallied army and add to control groups
 
 ### Use case: warp-in pylon (with Ctl camera)
-* Ctl+C|D|E: center on warp pylon
+* Ctl+Alt+A|S|D: center on warp pylon
 * X: select production facilities (WarpGate have higher selection priority)
 * hold key for warping-in units (rapid fire warp-in)
 * Ctl+click: on a unit, select all units for this type
@@ -401,10 +401,10 @@ benefits as well of TheCore Lite inject initiate.
 
 Suggested camera locations:
 * Z main
-* A 2nd
+* Q 2nd
 * W 3rd
-* Q 4th
-* 3 5th
+* A 4th
+* S 5th
 
 ### Use case: zerg macro routine
 * Hatch check
@@ -420,13 +420,13 @@ Suggested camera locations:
  * S x2 = select + jump to creep queen (same raw as C for fast spawn creep tumor)
  * Shift+C + clicks = drop creep tumors (queued)
 * Creep cameras (control cameras : ER, DF, CV)
- * Ctl+E|D|C = jump to creep camera
- * Ctl+click to select creep tumors
+ * Ctl+Alt+A|S|D = jump to creep camera
+ * Ctl(+Alt)+click to select creep tumors
  * Shift+C then clicks = queued creep tumor spread
   * altenatively, CapsLock for rapid fire creep tumor
  * click = select a new creep tumor
  * Ctl+Space = center view on selection
- * Ctl+R|F|V = update creep camera
+ * Ctl+Z|X|C = update creep camera
 
 sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
