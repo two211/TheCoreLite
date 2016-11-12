@@ -326,16 +326,16 @@ Use case scenarii
 
 ### Use case: warp-in pylon
 
+#### with Shift camera
+* Hold shift
+* Shift+S: jump to warp-in camera (S as a suggestion with Z for the regular rally point)
+* Shift+X: select production facilities (WarpGate have higher selection priority)
+* Shift+key for warping-in units (queued rapid fire warp-in)
+
 #### with Ctl+Alt camera
 * Ctl+Alt+Shift: select production facilities (WarpGate have higher selection priority)
 * Ctl+Alt(+Shift)+A|S|D: center on warp pylon
 * hold key for warping-in units (rapid fire warp-in)
-
-#### with Shift camera
-* Hold shift
-* Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
-* Shift+X: select production facilities (WarpGate have higher selection priority)
-* Shift+key for warping-in units (queued rapid fire warp-in)
 
 #### Other tips
 * Ctl+click: on a unit, select all units for this type
@@ -412,7 +412,7 @@ Suggested camera locations:
  * morph other larvaes depending on needs
  * add eggs to control groups and give them rally points
  * check supply depot at this step, to produce overlords
- * morph 1 overlord/hatch and rally them individually to strategic locations
+ * morph 1 overlord/mining hatch and rally them individually to strategic locations
 * Inject routine of your choice
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
