@@ -321,26 +321,25 @@ Use case scenarii
 * browse subgroup and launch production
 * select rallied army and add to control groups
 
-### Use case: warp-in pylon (with Ctl camera)
-* Ctl+Alt+A|S|D: center on warp pylon
-* X: select production facilities (WarpGate have higher selection priority)
-* hold key for warping-in units (rapid fire warp-in)
-* Ctl+click: on a unit, select all units for this type
-* Ctl+[army\_group]: add selection to an army group
-* right click for rally
-* [army\_group]: attack
+### Use case: warp-in pylon
 
-### Use case: warp-in pylon (with Shift camera)
+#### with Ctl+Alt camera
+* Ctl+Alt+Shift: select production facilities (WarpGate have higher selection priority)
+* Ctl+Alt(+Shift)+A|S|D: center on warp pylon
+* hold key for warping-in units (rapid fire warp-in)
+
+#### with Shift camera
 * Hold shift
 * Shift+S: jump to warp-in camera (S as a suggestion with X for the regular rally point)
 * Shift+X: select production facilities (WarpGate have higher selection priority)
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
-Optional:
+#### Other tips
 * Ctl+click: on a unit, select all units for this type
-* Ctl+[army\_group]: add selection to an army group
+  * Ctl+Alt+click will behave the same
+* Ctl+[army\_group]: append selection to an army group
+  * Ctl+Alt+[army\_group] won't make it and could break your control cams
 * right click for rally
-* [army\_group]: attack
 
 ### Use case: BackSpace inject variants
 
