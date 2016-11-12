@@ -145,15 +145,18 @@ Compared to legacy TheCore Lite:
 * Ctl+Alt+D = Shift+3
 
 Camera creation:
-* Ctl+Alt+Q = Alt+1
-* Ctl+Alt+W = Alt+2
-* Ctl+Alt+E = Alt+3
+* Ctl+Alt+Q|Z = Alt+1
+* Ctl+Alt+W|X = Alt+2
+* Ctl+Alt+E|C = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 Those aliases allow easy save/recall locations.
 Same modifier is applied for save and recall.
 Using them you have a finger on Ctl:
-Ctl(+Alt)+LeftClick on a units selects all the units of this type.
+Ctl(+Alt)+LeftClick on a units selects all visible units of this type.
+
+**note:** Ctl+Alt+Z|X|C have been added to prevent accidental group overwrite
+, still be careful
 
 ----------------------------------------------------------------------------------------------------------------------
 
