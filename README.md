@@ -314,7 +314,7 @@ Use case scenarii
 
 ### Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
-* Shift+Z: jump to rally point (declared with Alt+X)
+* Shift+Z: jump to rally point (declared with Alt+Z)
 * Shift+X: select production facilities
 * inspect rallied army
 * optional redeclaration of the rally point (RightClick, in case of new integrated facility)
@@ -406,9 +406,10 @@ Suggested camera locations:
 ### Use case: zerg macro routine
 * Hatch check
  * Z: hatch group
- * check supply depot at this step, to produce overlords
  * morph other larvaes depending on needs
  * add eggs to control groups and give them rally points
+ * check supply depot at this step, to produce overlords
+ * morph 1 overlord/hatch and rally them individually to strategic locations
 * Inject routine of your choice
 * Tech check
  * You had time to check upgrades as they were selected with inject queeens
