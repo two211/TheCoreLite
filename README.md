@@ -145,9 +145,9 @@ Compared to legacy TheCore Lite:
 * Ctl+Alt+D = Shift+3
 
 Camera creation:
-* Ctl+Alt+Z = Alt+1
-* Ctl+Alt+X = Alt+2
-* Ctl+Alt+C = Alt+3
+* Ctl+Alt+Q = Alt+1
+* Ctl+Alt+W = Alt+2
+* Ctl+Alt+E = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 Those aliases allow easy save/recall locations.
@@ -424,7 +424,7 @@ Suggested camera locations:
   * altenatively, CapsLock for rapid fire creep tumor
  * click = select a new creep tumor
  * Ctl+Space = center view on selection
- * Ctl+Z|X|C = update creep camera
+ * Ctl+Q|W|E = update creep camera
 
 sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
