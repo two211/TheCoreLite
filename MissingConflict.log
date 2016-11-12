@@ -23,7 +23,7 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =
 
 [ERROR]: DeepTunnel/QueenCoop not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =Y
 
 [ERROR]: Detonate/SpiderMine not related to a conflict
 in seed TheCore Lite, keys =
@@ -869,12 +869,12 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: Transfusion/BroodMother not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,F
 
 [WARN]: Transfusion/Queen2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,F
 
 [WARN]: TwilightCouncil/Harvester not related to a conflict
 but is inherited
