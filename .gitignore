@@ -178,5 +178,6 @@ NOTES.txt
 clean.sh
 tmp*
 ref*
+test*
 perso
 copy
