@@ -489,9 +489,8 @@ def analyse(model):
     conflict_check(model)
     wrong_inherit(model)
     ## context dependent checks
-    known_hotkey_command_check(model)
-    known_unbound_command_check(model)
-    unknown_hotkey_command_check(model)
+    hotkey_command_check(model)
+    unbound_command_check(model)
     ## quality checks
     if debug_parser.getboolean("Settings","quality",fallback=True):
         suggest_inherit(model)
@@ -649,57 +648,27 @@ def wrong_inherit(model):
                 logger.log(LogLevel.Error, log_msg)
     logger.finish()
 
-def known_hotkey_command_check(model):
-	logger = Logger("command conflicts with hotkeys, within identified conflicts", "KnownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
+def hotkey_command_check(model):
+	logger = Logger("command conflicts with hotkeys", "HotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
 		hotkey_list = getHotkeyList(seed,'Hotkeys')
-		## Find&Report context command overlap on hotkeys within CONFLICT_CHECKS
-		for command in constraints['ToCheck']['Commands']:
+		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
 			for key in model['Commands'][command].get_value(seed).split(','):
 				if key in hotkey_list:
-					log_msg = key + " used for command "+ command +", in seed " + seed.value + ' contexts=' + str(constraints['CommandContexts'][command])
-					if debug_parser.getboolean("Settings","verbose",fallback=False):
-						 log_msg += remapHint(command, seed, log=True)
+					log_msg = key + " used for command "+ command +", in seed " + seed.value
 					logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
-def unknown_hotkey_command_check(model):
-	logger = Logger("command conflicts with hotkeys, out of identified conflicts", "UnknownHotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
-	for seed in allSeeds:
-		hotkey_list = getHotkeyList(seed,'Hotkeys')
-		## Find&Report context command overlap on hotkeys out of CONFLICT_CHECKS
-		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
-			if not(command in constraints['CommandInfo']['HasConflict']):
-				for key in model['Commands'][command].get_value(seed).split(','):
-					if key in hotkey_list:
-						log_msg = key + " used for command "+ command +", in seed " + seed.value
-						logger.log(LogLevel.Error, log_msg)
-	logger.finish()
-
-def known_unbound_command_check(model):
-	logger = Logger("unbound commands, within identified conflicts", "KnownUnboundCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
+def unbound_command_check(model):
+	logger = Logger("unbound commands, within identified conflicts", "UnboundCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
 		## Find&Report context unbound command within CONFLICT_CHECKS
-		for command in constraints['ToCheck']['Commands']:
+		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
 			for key in model['Commands'][command].get_value(seed).split(','):
 				if key == '':
 					log_msg = ' unbound command ' + command +", in seed " + seed.value
 					if debug_parser.getboolean("Settings","verbose",fallback=False):
 						 log_msg += remapHint(command, seed, log=True)
-					logger.log(LogLevel.Error, log_msg)
-	logger.finish()
-
-def outofmap_check(model):
-	logger = Logger("hotkeys and commands out of GlobalMap", "OutOfMapCheck.log", log_consol=[], log_file=[LogLevel.Error])
-	for seed in allSeeds:
-		## Find&Report command that are out of map
-		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
-			for key in model['Commands'][command].get_value(seed).split(','):
-				## Ignore unbound key, as well as Space and Escape that are not part of the GlobalMaps
-				if key in ['Space','','Escape']:
-					continue
-				if not key in settings_parser.options('GlobalMaps'):
-					log_msg = key + " used for command "+ command +", in seed " + seed.value
 					logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
