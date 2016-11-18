@@ -158,6 +158,11 @@ Ctl(+Alt)+LeftClick on a units selects all visible units of this type.
 **note:** Ctl+Alt+Z|X|C have been added to prevent accidental group overwrite
 , still be careful
 
+**note:** Ctl+Alt camera is still experimental, previously using Ctl+ E/D/C and R/F/V.
+TheCore Lite design does not seem to let a good place for this TheCore feature:
+Ctl key under little finger too far away from non-group keys,
+2 modifiers approach not elegant as well.
+
 ----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite Macro groups
