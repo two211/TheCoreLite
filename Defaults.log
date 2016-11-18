@@ -118,34 +118,12 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default CommanderAbility1
 [ERROR]: no default CommanderAbility2
 [ERROR]: no default CommanderAbility3
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) DehakaMirrorImage/Dehaka
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Hellion/Factory
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HeroNukeCalldown/NovaHero
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireDevilDogs/MercCompound
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireSiegeBreakers/MercCompound
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PoisonNova/HotSNoxious
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5Kerrigan
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5KerriganBurrowed
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5KerriganPsiStrike
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/Starport
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRift
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRiftUnselectable
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ReleaseMinion/Nova
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchLurkerRange/LurkerDenMP
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SJHyperionFighters/SJHyperion
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpawnCorruptor/SpacePlatformVentsUnit
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Spectre/Barracks
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpiderMineReplenish/Vulture
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SwarmQueenZergling/SwarmQueen
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) TemporalField/MothershipCore
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) VoidDarkTemplarShadowFury/DarkTemplarShakuras
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) VoodooShield/Tosh
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Wraith/Starport
 [ERROR]: no default ActivateIbikisCannon/PlanetaryFortress
 [ERROR]: no default Aggressive/LurkerMPBurrowed
 [ERROR]: no default BuildScarab/Reaver
 [ERROR]: no default CreepTumor/Queen
 [ERROR]: no default DarkSwarm/Infestor
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) DehakaMirrorImage/Dehaka
 [ERROR]: no default Detonate/SpiderMine
 [ERROR]: no default EMP/ScienceVessel
 [ERROR]: no default EnrageQueen/Queen
@@ -156,6 +134,10 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default GreaterRoachWarren/RoachWarren
 [ERROR]: no default Guardian/Mutalisk
 [ERROR]: no default HellfireThrusters/StarportTechLab
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Hellion/Factory
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HeroNukeCalldown/NovaHero
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireDevilDogs/MercCompound
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireSiegeBreakers/MercCompound
 [ERROR]: no default IgniteAfterburner/Medivac
 [ERROR]: no default Immortal
 [ERROR]: no default Immortal/Gateway
@@ -173,9 +155,17 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default PhaseMissile/Scout
 [ERROR]: no default PlaceWard/Oracle
 [ERROR]: no default Plague/Infestor
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PoisonNova/HotSNoxious
 [ERROR]: no default PrimalConsume/Infestor
 [ERROR]: no default Probe/KhaydarinNexus
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5Kerrigan
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5KerriganBurrowed
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PsionicLift/K5KerriganPsiStrike
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/Starport
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRift
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Raven/VoidRiftUnselectable
 [ERROR]: no default Recall/Arbiter
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ReleaseMinion/Nova
 [ERROR]: no default ResearchBarrelStabilizers/BarracksTechLab
 [ERROR]: no default ResearchCharonBooster/FactoryTechLab
 [ERROR]: no default ResearchEMP/StarportTechLab
@@ -188,6 +178,7 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default ResearchKhaydarinCore/ArbiterTribunal
 [ERROR]: no default ResearchKhaydarinGenerator/FleetBeacon
 [ERROR]: no default ResearchLocustNest/EvolutionChamber
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchLurkerRange/LurkerDenMP
 [ERROR]: no default ResearchMatrix/BarracksTechLab
 [ERROR]: no default ResearchPiercingRockets/StarportTechLab
 [ERROR]: no default ResearchPlasmaCharge/RoboticsBay
@@ -203,19 +194,28 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default Rift/KhaydarinNexus
 [ERROR]: no default Rift/Nexus
 [ERROR]: no default SJHyperionBlink/Battlecruiser
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SJHyperionFighters/SJHyperion
 [ERROR]: no default SlivanPuke/Devourer
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpawnCorruptor/SpacePlatformVentsUnit
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Spectre/Barracks
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpiderMineReplenish/Vulture
 [ERROR]: no default StasisField/Arbiter
 [ERROR]: no default StasisField/ArbiterTribunal
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SwarmQueenZergling/SwarmQueen
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) TemporalField/MothershipCore
 [ERROR]: no default TimeWarpSentinel/Oracle
 [ERROR]: no default UpgradeLIDARTransmitter/EngineeringBay
 [ERROR]: no default UpgradewithKhaydarinCore/Nexus
 [ERROR]: no default UseSpiderMine/Vulture
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) VoidDarkTemplarShadowFury/DarkTemplarShakuras
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) VoodooShield/Tosh
 [ERROR]: no default WarpInCorsair/Stargate
 [ERROR]: no default WarpInReaver/RoboticsFacility
 [ERROR]: no default WarpinArbiterTribunal/Probe
 [ERROR]: no default WarpinDragoon/Gateway
 [ERROR]: no default WarpinObservatory/Probe
 [ERROR]: no default WormholeTransit/Predator
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Wraith/Starport
 ----------------------------
 Finished (Check defaults) - WARNs: 113 ERRORs: 102 
 ============================

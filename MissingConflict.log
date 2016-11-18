@@ -1,9 +1,6 @@
 ============================
 Start commands with no attached conflict (log file: MissingConflict.log)
 ----------------------------
-[ERROR]: Spray not related to a conflict
-in seed TheCore Lite, keys =4
-
 [ERROR]: ActivateIbikisCannon/PlanetaryFortress not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -216,6 +213,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: SlivanPuke/Devourer not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: Spray not related to a conflict
+in seed TheCore Lite, keys =4
 
 [ERROR]: StasisField/Arbiter not related to a conflict
 in seed TheCore Lite, keys =
