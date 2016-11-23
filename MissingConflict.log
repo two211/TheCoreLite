@@ -19,6 +19,9 @@ in seed TheCore Lite, keys =C
 [ERROR]: DarkSwarm/Infestor not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: DarkTemplarBlink/DarkTemplar not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: DeepTunnel/QueenCoop not related to a conflict
 in seed TheCore Lite, keys =Y
 
@@ -40,8 +43,20 @@ in seed TheCore Lite, keys =T
 [ERROR]: EvolveBurrowCharge/Hatchery not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: EvolveGroovedSpines/HydraliskDen not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: EvolveGroovedSpines/LurkerDenMP not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: EvolveMuscularAugments/LurkerDenMP not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: EvolveOrganicCarapace/RoachWarren not related to a conflict
 in seed TheCore Lite, keys =O
+
+[ERROR]: FungalGrowth/InfestorBurrowed not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: Glare/Oracle not related to a conflict
 in seed TheCore Lite, keys =
@@ -88,6 +103,9 @@ in seed TheCore Lite, keys =
 [ERROR]: NerveJam/ScienceVessel not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: NeuralParasite/InfestorBurrowed not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: NurturingSwarm/Queen not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -123,6 +141,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: ResearchCharonBooster/FactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchDarkTemplarBlink/DarkShrine not related to a conflict
+in seed TheCore Lite, keys =C
 
 [ERROR]: ResearchEMP/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
@@ -222,6 +243,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: StasisField/ArbiterTribunal not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: TempestDisruptionBlast/Tempest not related to a conflict
+in seed TheCore Lite, keys =E,Space
 
 [ERROR]: TimeWarpSentinel/Oracle not related to a conflict
 in seed TheCore Lite, keys =
@@ -913,5 +937,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 86 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 94 WARNs: 145 
 ============================

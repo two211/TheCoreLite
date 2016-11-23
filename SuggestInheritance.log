@@ -224,15 +224,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DisablingCloud/Viper default: B copyof: BlindingCloud/Viper default: B
 	EnergyChannel/XelNagaObeliskAiur06 default: C
 	EntropicBlast/XelNagaConstruct default: Q
-	EvolveAncillaryCarapace/HydraliskDen default: C
-	EvolveAncillaryCarapace/ImpalerDen default: C
-	EvolveAncillaryCarapace/LurkerDen default: C
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
 	EvolveBroodLordSpeed/Spire default: P
 	EvolveCentrificalHooks/BanelingNest default: C
 	EvolveGlialRegeneration/GreaterRoachWarren default: G
 	EvolveGlialRegeneration/RoachWarren default: G
 	EvolveK5ChainLightning/EvolutionChamber default: R
+	EvolveMuscularAugments/HydraliskDen default: H
+	EvolveMuscularAugments/LurkerDenMP default: H
 	EvolveTissueAssimilation/UltraliskCavern default: T
 	EvolveToBrutalisk/RoachVile default: B
 	ExperimentalPlasmaGun/Raynor default: G
@@ -272,7 +271,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoDevourer/Mutalisk default: D
 	NPSwarm/Infestor default: E copyof: NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor default: E
-	NeuralParasite/Infestor2 default:  copyof: NeuralParasite/Infestor default: E
+	NeuralParasite/Infestor2 default: E copyof: NeuralParasite/Infestor default: E
+	NeuralParasite/InfestorBurrowed default: E
 	Nexus/Harvester default:  copyof: Nexus/Probe default: N
 	Nexus/Probe default: N
 	NovaGadgetPulseGrenades/NovaHero default: W
@@ -313,6 +313,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchCerberusMines/FactoryTechLab default: C
 	ResearchCerberusMines/FactoryTechReactor default: C copyof: ResearchCerberusMines/FactoryTechLab default: C
 	ResearchDarkArchonMindControl/DarkShrine default: C
+	ResearchDarkTemplarBlink/DarkShrine default: B
 	ResearchDoubleGravitonBeam/FleetBeacon default: G
 	ResearchFireSuppression/ScienceFacility default: Y
 	ResearchFireSuppressionSystems/EngineeringBay default: F
@@ -529,6 +530,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DrakkenLaserDrillBFG/DrakkenLaserDrillCoop default: Q
 	EvolveAdaptivePlating/GreaterRoachWarren default: D
 	EvolveAdaptivePlating/RoachWarren default: D
+	EvolveGroovedSpines/HydraliskDen default: G
+	EvolveGroovedSpines/LurkerDenMP default: G
 	Factory/SCV default: F
 	HireHelsAngels/Starport default: A
 	HydraliskDen/Drone default: H
@@ -541,7 +544,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToSwarmling/Larva default: Z copyof: Zergling/Larva default: Z
 	MuscularAugments/HydraliskDen default: A
 	MuscularAugments/LurkerDenMP default: A
-	MutateintoLurkerDen/HydraliskDen default: D
 	OracleAttack default: A copyof: Attack default: A
 	OrbitalCommand/CommandCenter default: B
 	OrbitalCommandCalldownSupplyDepot/OrbitalCommand default: B
@@ -670,7 +672,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Forge/Harvester default:  copyof: Forge/Probe default: F
 	Forge/Probe default: F
 	FungalGrowth/Infestor default: F
-	FungalGrowth/Infestor2 default:  copyof: FungalGrowth/Infestor default: F
+	FungalGrowth/Infestor2 default: F copyof: FungalGrowth/Infestor default: F
+	FungalGrowth/InfestorBurrowed default: F
 	GravitonPrison/Maar default: G
 	GreaterRoachWarren/RoachWarren default: 
 	GreaterSpire/Spire default: G
@@ -716,6 +719,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoSplitterling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
 	Mothership/Nexus default: M copyof: MothershipCore/Nexus default: M
 	MothershipCore/Nexus default: M
+	MutateintoLurkerDen/HydraliskDen default: D
 	NarudEpilogueSummonShadeofNarud/NarudEpilogue default: E
 	NovaGadgetPulseGrenades/NovaVulture default: W
 	Oracle/VoidRiftUnselectable default: E
@@ -876,6 +880,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LightningBomb/TempestPurifier default: D
 	PsiStorm/HybridDominator default: T
 	TargetLock/Monitor default: T
+	TempestDisruptionBlast/Tempest default: D
 
 [INFO]: TheCore Lite: Escape   
 	Cancel default: Escape
@@ -1247,9 +1252,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EnergizerReclamation/SentryCampaignBase default: R
 	EnergizerReclamation/SentryPurifier default: R
 	EvolveBanelingRupture/BanelingNest default: R
-	EvolveMuscularAugments/HydraliskDen default: A
-	EvolveMuscularAugments/ImpalerDen default: A
-	EvolveMuscularAugments/LurkerDen default: A
+	EvolveMuscularAugments/ImpalerDen default: H
+	EvolveMuscularAugments/LurkerDen default: H
 	EvolveMutaliskRapidRegeneration/GreaterSpire default: R
 	EvolveMutaliskRapidRegeneration/Spire default: R
 	EvolveScourgeSplashDamage/ScourgeNest default: D
@@ -1433,6 +1437,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	D8Charge/MengskReaper default: G
 	D8Charge/MercReaper default: G copyof: D8Charge/Reaper default: G
 	D8Charge/Reaper default: G
+	DarkTemplarBlink/DarkTemplar default: B
 	DarkTemplarShadowDash/DarkTemplarShakuras default: B copyof: Blink/Stalker default: B
 	DeepTunnel/BroodMother default: D
 	DefensiveMatrixTarget/ScienceVessel default: D
@@ -1447,6 +1452,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EnableBuildingAttack/baneling default:  copyof: EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttack/baneling2 default:  copyof: EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttackSplitterling/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
+	EvolveAncillaryCarapace/HydraliskDen default: C
+	EvolveAncillaryCarapace/ImpalerDen default: C
+	EvolveAncillaryCarapace/LurkerDen default: C
 	EvolveChitinousPlating/UltraliskCavern default: C
 	EvolveInfestorEnergyUpgrade/InfestationPit default: G
 	FenixSOACharge/FenixChampion default: Q copyof: Charge/Zealot default: C
