@@ -102,14 +102,14 @@ Alt+RightClick pings the invisible unit location to allies.
  * Shift+Alt+C
 
 ### AI keys now supported
-* direct attack on Ctl+D
-* direct scout on Ctl+T
-* direct detect on Ctl+F
-* direct expand on Ctl+V
-* open AI communication on Ctl+G
-* build on Ctl+C
-* clearall on Ctl+E
-* delete on Ctl+R
+* direct attack on Shift+Alt+D
+* direct scout on Shift+Alt+T
+* direct detect on Shift+Alt+F
+* direct expand on Shift+Alt+V
+* open AI communication on Shift+Alt+G
+* build style on Shift+Alt+4
+* clearall on Shift+Alt+E
+* delete on Shift+Alt+R
 
 ### Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
@@ -140,28 +140,20 @@ Compared to legacy TheCore Lite:
 ### Additional cameras alternates on control
 
 2 "Control" camera alternates:
-* Ctl+Alt+A = Shift+1
-* Ctl+Alt+S = Shift+2
-* Ctl+Alt+D = Shift+3
+* Ctl+C = Shift+1
+* Ctl+D = Shift+2
+* Ctl+E = Shift+3
 
 Camera creation:
-* Ctl+Alt+Q|Z = Alt+1
-* Ctl+Alt+W|X = Alt+2
-* Ctl+Alt+E|C = Alt+3
+* Ctl+V = Alt+1
+* Ctl+F = Alt+2
+* Ctl+R = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 Those aliases allow easy save/recall locations.
 Same modifier is applied for save and recall.
 Using them you have a finger on Ctl:
-Ctl(+Alt)+LeftClick on a units selects all visible units of this type.
-
-**note:** Ctl+Alt+Z|X|C have been added to prevent accidental group overwrite
-, still be careful
-
-**note:** Ctl+Alt camera is still experimental, previously using Ctl+ E/D/C and R/F/V.
-TheCore Lite design does not seem to let a good place for this TheCore feature:
-Ctl key under little finger too far away from non-group keys,
-2 modifiers approach not elegant as well.
+Ctl+LeftClick on a units selects all visible units of this type.
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -337,16 +329,13 @@ Use case scenarii
 * Shift+X: select production facilities (WarpGate have higher selection priority)
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
-#### with Ctl+Alt camera
-* Ctl+Alt+Shift: select production facilities (WarpGate have higher selection priority)
-* Ctl+Alt(+Shift)+A|S|D: center on warp pylon
+#### with Ctl camera
+* Ctl+Alt: select production facilities (WarpGate have higher selection priority)
+* Ctl+C|D|E: center on warp pylon
 * hold key for warping-in units (rapid fire warp-in)
 
 #### Other tips
 * Ctl+click: on a unit, select all units for this type
-  * Ctl+Alt+click will behave the same
-* Ctl+[army\_group]: append selection to an army group
-  * Ctl+Alt+[army\_group] won't make it and could break your control cams
 * right click for rally
 
 ### Use case: BackSpace inject variants
@@ -425,14 +414,14 @@ Suggested camera locations:
 * Creep queen
  * S x2 = select + jump to creep queen (same raw as C for fast spawn creep tumor)
  * Shift+C + clicks = drop creep tumors (queued)
-* Creep cameras (control cameras : ER, DF, CV)
- * Ctl+Alt+A|S|D = jump to creep camera
- * Ctl(+Alt)+click to select creep tumors
+* Creep cameras (control cameras)
+ * Ctl+C|D|E = jump to creep camera
+ * Ctl+click to select creep tumors
  * Shift+C then clicks = queued creep tumor spread
   * altenatively, CapsLock for rapid fire creep tumor
  * click = select a new creep tumor
  * Ctl+Space = center view on selection
- * Ctl+Q|W|E = update creep camera
+ * Ctl+V|F|R = update creep camera
 
 sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)

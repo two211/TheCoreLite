@@ -1801,26 +1801,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ControlGroupAppendAndSteal9 default: Shift+Alt+9
 	StatPanelArmySupply default: Control+A
 
-[INFO]: TheCore Lite: Control+C   
-	AIBuild default: Alt+B
-	StatPanelAPM default: Control+C
-
-[INFO]: TheCore Lite: Control+E   
-	AIClearAll default: Alt+X
-	ReplayRestart default: Control+E
-
-[INFO]: TheCore Lite: Control+R   
-	AIDelete default: Alt+X
-	StatPanelUnitsLost default: Control+R
-
-[INFO]: TheCore Lite: Control+T   
-	AIScout default: Alt+S
-	ReplayHide default: Control+T
-
-[INFO]: TheCore Lite: Control+V   
-	AIExpand default: Alt+E
-	StatPanelCPM default: Control+V
-
 [INFO]: TheCore Lite: Control+W   
 	ControlGroupAppendAndSteal8 default: Shift+Alt+8
 	ToggleWorldPanel default: Control+W
@@ -1845,5 +1825,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 53 
+Finished (suggest inherit) - INFOs: 48 
 ============================
