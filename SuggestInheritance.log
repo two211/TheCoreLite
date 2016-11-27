@@ -1299,9 +1299,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MothershipCoreMassRecall/MothershipCore default: R
 	MothershipMassRecall/Mothership default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	NanoRepair/ScienceVessel default: N copyof: Heal/Medivac default: E
+	NovaDomination/NovaHero default: 
 	Oracle/Stargate default: E
 	Oracle/StargateWarp default: E
 	OracleRevelation/Oracle default: R
+	ParasiticBomb/Viper default: R
 	PitAlarakSuperMove/PitAlarak default: R
 	PitMalashSuperMove/PitMalash default: R
 	PrimalBuildingRoot/PrimalTownHallUprooted default: R
@@ -1407,6 +1409,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ActivateShieldGenerator/ShadowShieldGenerator default: Q
 	ActivateShieldGenerator/ShadowShieldGeneratorSmall default: Q
 	AetherMawAetherStorm/AmonAetherMawEpilogue03 default: T
+	ApolloCloakOnNova/NovaHero default: 
 	ArchAngelCoopBombardment/ArchAngelCoopAssault default: B
 	ArmorpiercingMode default: E
 	Battlecruiser/SJMercStarport default: B
@@ -1469,6 +1472,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	GuardianShield/Sentry2 default:  copyof: GuardianShield/Sentry default: G
 	GuardianShield/SentryAiur default: G copyof: GuardianShield/Sentry default: G
 	GuardianShield/SentryCampaignBase default: G
+	HercGrapple/HERC default: 
 	HighTemplar default: T
 	HighTemplarHallucination/Nexus default:  copyof: HighTemplarHallucination/Sentry default: T
 	HighTemplarHallucination/Sentry default: T

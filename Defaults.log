@@ -118,6 +118,7 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default CommanderAbility3
 [ERROR]: no default ActivateIbikisCannon/PlanetaryFortress
 [ERROR]: no default Aggressive/LurkerMPBurrowed
+[ERROR]: no default ApolloCloakOnNova/NovaHero
 [ERROR]: no default BuildScarab/Reaver
 [ERROR]: no default CreepTumor/Queen
 [ERROR]: no default DarkSwarm/Infestor
@@ -133,6 +134,7 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default Guardian/Mutalisk
 [ERROR]: no default HellfireThrusters/StarportTechLab
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Hellion/Factory
+[ERROR]: no default HercGrapple/HERC
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HeroNukeCalldown/NovaHero
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireDevilDogs/MercCompound
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) HireSiegeBreakers/MercCompound
@@ -147,6 +149,7 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default Matrix/Medic
 [ERROR]: no default MutateintoDefilerMound/Drone
 [ERROR]: no default NerveJam/ScienceVessel
+[ERROR]: no default NovaDomination/NovaHero
 [ERROR]: no default NurturingSwarm/Queen
 [ERROR]: no default Overcharge/OrbitalCommand
 [ERROR]: no default Passive
@@ -215,5 +218,5 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default WormholeTransit/Predator
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Wraith/Starport
 ----------------------------
-Finished (Check defaults) - WARNs: 111 ERRORs: 102 
+Finished (Check defaults) - WARNs: 111 ERRORs: 105 
 ============================

@@ -7,6 +7,9 @@ in seed TheCore Lite, keys =
 [ERROR]: Aggressive/LurkerMPBurrowed not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: ApolloCloakOnNova/NovaHero not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: BattleRage/Khraxus not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -70,6 +73,9 @@ in seed TheCore Lite, keys =
 [ERROR]: HellfireThrusters/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: HercGrapple/HERC not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: IgniteAfterburner/Medivac not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -105,6 +111,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: NeuralParasite/InfestorBurrowed not related to a conflict
 in seed TheCore Lite, keys =C
+
+[ERROR]: NovaDomination/NovaHero not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: NurturingSwarm/Queen not related to a conflict
 in seed TheCore Lite, keys =
@@ -937,5 +946,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 94 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 97 WARNs: 145 
 ============================
