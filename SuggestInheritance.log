@@ -1809,7 +1809,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObservePlayer2 default: 3
 
 [INFO]: TheCore Lite: A   
-	ControlGroupRecall9 default: 9
+	ControlGroupRecall7 default: 7
 	LeaderArmy default: A
 
 [INFO]: TheCore Lite: Control+1   
@@ -1825,15 +1825,15 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObservePlayer10 default: Control+3
 
 [INFO]: TheCore Lite: Control+A   
-	ControlGroupAppendAndSteal9 default: Shift+Alt+9
+	ControlGroupAppendAndSteal7 default: Shift+Alt+7
 	StatPanelArmySupply default: Control+A
 
 [INFO]: TheCore Lite: Control+W   
-	ControlGroupAppendAndSteal8 default: Shift+Alt+8
+	ControlGroupAppendAndSteal6 default: Shift+Alt+6
 	ToggleWorldPanel default: Control+W
 
 [INFO]: TheCore Lite: Control+X   
-	ControlGroupAppendAndSteal6 default: Shift+Alt+6
+	ControlGroupAppendAndSteal0 default: Shift+Alt+0
 	ToggleVersusModeSides default: Control+X
 
 [INFO]: TheCore Lite: Escape   
@@ -1844,13 +1844,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SelectionCancelDrag default: Escape
 
 [INFO]: TheCore Lite: S   
-	ControlGroupRecall0 default: 0
+	ControlGroupRecall8 default: 8
 	LeaderSpending default: S
 
-[INFO]: TheCore Lite: W   
-	ControlGroupRecall8 default: 8
-	ObserveSelected default: W
-
 ----------------------------
-Finished (suggest inherit) - INFOs: 48 
+Finished (suggest inherit) - INFOs: 47 
 ============================

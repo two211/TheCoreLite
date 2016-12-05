@@ -118,11 +118,16 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default CommanderAbility3
 [ERROR]: no default ActivateIbikisCannon/PlanetaryFortress
 [ERROR]: no default Aggressive/LurkerMPBurrowed
+[ERROR]: no default AlarakDeadlyCharge/AlarakCoop
+[ERROR]: no default AlarakMothershipMassTeleport/SOAMothershipv4
 [ERROR]: no default ApolloCloakOnNova/NovaHero
+[ERROR]: no default AutoTurret/Raven_BlackOps
 [ERROR]: no default BuildScarab/Reaver
 [ERROR]: no default CreepTumor/Queen
 [ERROR]: no default DarkSwarm/Infestor
+[ERROR]: no default DefensiveMatrixTarget/NovaDefensiveMatrixDrone
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) DehakaMirrorImage/Dehaka
+[ERROR]: no default DeploySpiderMines/SiegeTank_BlackOps
 [ERROR]: no default Detonate/SpiderMine
 [ERROR]: no default EMP/ScienceVessel
 [ERROR]: no default EnrageQueen/Queen
@@ -144,18 +149,29 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default Immortal/WarpGate
 [ERROR]: no default InjectLarva/Queen
 [ERROR]: no default LaunchNullWard/NullSphere
+[ERROR]: no default Liberator_BlackOpsMorphtoAA/Liberator_BlackOps
+[ERROR]: no default Liberator_BlackOpsMorphtoAG/Liberator_BlackOps
 [ERROR]: no default LockdownRound/Ghost
 [ERROR]: no default Lurker/HydraliskImpaler
+[ERROR]: no default MarineSuperStimpack/Marine_BlackOps
 [ERROR]: no default Matrix/Medic
+[ERROR]: no default MedicHeal/Medivac_BlackOps
+[ERROR]: no default MedivacSpeedBoost/Medivac_BlackOps
+[ERROR]: no default MorphToHellbatBlackOps/HellionBlackOps
+[ERROR]: no default MorphToHellion/HellionBlackOps
 [ERROR]: no default MutateintoDefilerMound/Drone
 [ERROR]: no default NerveJam/ScienceVessel
 [ERROR]: no default NovaDomination/NovaHero
+[ERROR]: no default NovaSwitchAssaultMode/NovaCoop
+[ERROR]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaCoop
 [ERROR]: no default NurturingSwarm/Queen
 [ERROR]: no default Overcharge/OrbitalCommand
 [ERROR]: no default Passive
 [ERROR]: no default PhaseMissile/Scout
+[ERROR]: no default PhasingMode/WarpPrismTaldarim
 [ERROR]: no default PlaceWard/Oracle
 [ERROR]: no default Plague/Infestor
+[ERROR]: no default PointDefenseDrone/Raven_BlackOps
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) PoisonNova/HotSNoxious
 [ERROR]: no default PrimalConsume/Infestor
 [ERROR]: no default Probe/KhaydarinNexus
@@ -180,6 +196,8 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default ResearchKhaydarinGenerator/FleetBeacon
 [ERROR]: no default ResearchLocustNest/EvolutionChamber
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchLurkerRange/LurkerDenMP
+[ERROR]: no default ResearchMarauderMagrailMunitions/BarracksTechLab
+[ERROR]: no default ResearchMarauderMagrailMunitions/BarracksTechReactor
 [ERROR]: no default ResearchMatrix/BarracksTechLab
 [ERROR]: no default ResearchPiercingRockets/StarportTechLab
 [ERROR]: no default ResearchPlasmaCharge/RoboticsBay
@@ -196,6 +214,8 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default Rift/Nexus
 [ERROR]: no default SJHyperionBlink/Battlecruiser
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SJHyperionFighters/SJHyperion
+[ERROR]: no default SiegeTank_BlackOpsSiege
+[ERROR]: no default SiegeTank_BlackOpsUnsiege
 [ERROR]: no default SlivanPuke/Devourer
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SpawnCorruptor/SpacePlatformVentsUnit
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Spectre/Barracks
@@ -205,6 +225,7 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) SwarmQueenZergling/SwarmQueen
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) TemporalField/MothershipCore
 [ERROR]: no default TimeWarpSentinel/Oracle
+[ERROR]: no default TransportMode/WarpPrismTaldarim
 [ERROR]: no default UpgradeLIDARTransmitter/EngineeringBay
 [ERROR]: no default UpgradewithKhaydarinCore/Nexus
 [ERROR]: no default UseSpiderMine/Vulture
@@ -215,31 +236,10 @@ Start Check defaults (log file: Defaults.log)
 [ERROR]: no default WarpinArbiterTribunal/Probe
 [ERROR]: no default WarpinDragoon/Gateway
 [ERROR]: no default WarpinObservatory/Probe
-[ERROR]: no default WormholeTransit/Predator
-[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Wraith/Starport
-[ERROR]: no default AlarakDeadlyCharge/AlarakCoop
-[ERROR]: no default AlarakMothershipMassTeleport/SOAMothershipv4
-[ERROR]: no default AutoTurret/Raven_BlackOps
-[ERROR]: no default DefensiveMatrixTarget/NovaDefensiveMatrixDrone
-[ERROR]: no default DeploySpiderMines/SiegeTank_BlackOps
-[ERROR]: no default Liberator_BlackOpsMorphtoAA/Liberator_BlackOps
-[ERROR]: no default Liberator_BlackOpsMorphtoAG/Liberator_BlackOps
-[ERROR]: no default MarineSuperStimpack/Marine_BlackOps
-[ERROR]: no default MedicHeal/Medivac_BlackOps
-[ERROR]: no default MedivacSpeedBoost/Medivac_BlackOps
-[ERROR]: no default MorphToHellbatBlackOps/HellionBlackOps
-[ERROR]: no default MorphToHellion/HellionBlackOps
-[ERROR]: no default NovaSwitchAssaultMode/NovaCoop
-[ERROR]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaCoop
-[ERROR]: no default PhasingMode/WarpPrismTaldarim
-[ERROR]: no default PointDefenseDrone/Raven_BlackOps
-[ERROR]: no default ResearchMarauderMagrailMunitions/BarracksTechLab
-[ERROR]: no default ResearchMarauderMagrailMunitions/BarracksTechReactor
-[ERROR]: no default SiegeTank_BlackOpsSiege
-[ERROR]: no default SiegeTank_BlackOpsUnsiege
-[ERROR]: no default TransportMode/WarpPrismTaldarim
 [ERROR]: no default WeaponsFree/Ghost_BlackOps
 [ERROR]: no default WeaponsFree/NovaCoop
+[ERROR]: no default WormholeTransit/Predator
+[ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) Wraith/Starport
 ----------------------------
 Finished (Check defaults) - WARNs: 111 ERRORs: 128 
 ============================

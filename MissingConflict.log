@@ -7,8 +7,17 @@ in seed TheCore Lite, keys =
 [ERROR]: Aggressive/LurkerMPBurrowed not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: AlarakDeadlyCharge/AlarakCoop not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: AlarakMothershipMassTeleport/SOAMothershipv4 not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: ApolloCloakOnNova/NovaHero not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
+in seed TheCore Lite, keys =Space,4
 
 [ERROR]: BattleRage/Khraxus not related to a conflict
 in seed TheCore Lite, keys =
@@ -27,6 +36,12 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: DeepTunnel/QueenCoop not related to a conflict
 in seed TheCore Lite, keys =Y
+
+[ERROR]: DefensiveMatrixTarget/NovaDefensiveMatrixDrone not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: DeploySpiderMines/SiegeTank_BlackOps not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: Detonate/SpiderMine not related to a conflict
 in seed TheCore Lite, keys =
@@ -94,14 +109,35 @@ in seed TheCore Lite, keys =
 [ERROR]: LaunchNullWard/NullSphere not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: Liberator_BlackOpsMorphtoAA/Liberator_BlackOps not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: Liberator_BlackOpsMorphtoAG/Liberator_BlackOps not related to a conflict
+in seed TheCore Lite, keys =Space,E,C
+
 [ERROR]: LockdownRound/Ghost not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: Lurker/HydraliskImpaler not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: MarineSuperStimpack/Marine_BlackOps not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: Matrix/Medic not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: MedicHeal/Medivac_BlackOps not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: MedivacSpeedBoost/Medivac_BlackOps not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: MorphToHellbatBlackOps/HellionBlackOps not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: MorphToHellion/HellionBlackOps not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: MutateintoDefilerMound/Drone not related to a conflict
 in seed TheCore Lite, keys =
@@ -115,6 +151,12 @@ in seed TheCore Lite, keys =C
 [ERROR]: NovaDomination/NovaHero not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: NovaSwitchAssaultMode/NovaCoop not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: NovaWeaponImprovedCanisterRifleSnipe/NovaCoop not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: NurturingSwarm/Queen not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -127,11 +169,17 @@ in seed TheCore Lite, keys =
 [ERROR]: PhaseMissile/Scout not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: PhasingMode/WarpPrismTaldarim not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: PlaceWard/Oracle not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: Plague/Infestor not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: PointDefenseDrone/Raven_BlackOps not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: PrimalConsume/Infestor not related to a conflict
 in seed TheCore Lite, keys =
@@ -187,6 +235,12 @@ in seed TheCore Lite, keys =4
 [ERROR]: ResearchLocustNest/EvolutionChamber not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: ResearchMarauderMagrailMunitions/BarracksTechLab not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: ResearchMarauderMagrailMunitions/BarracksTechReactor not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: ResearchMatrix/BarracksTechLab not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -241,6 +295,12 @@ in seed TheCore Lite, keys =
 [ERROR]: ShapedBlast/SiegeTankSieged not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: SiegeTank_BlackOpsSiege not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: SiegeTank_BlackOpsUnsiege not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: SlivanPuke/Devourer not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -258,6 +318,9 @@ in seed TheCore Lite, keys =E,Space
 
 [ERROR]: TimeWarpSentinel/Oracle not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: TransportMode/WarpPrismTaldarim not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: UpgradeLIDARTransmitter/EngineeringBay not related to a conflict
 in seed TheCore Lite, keys =
@@ -283,6 +346,12 @@ in seed TheCore Lite, keys =
 [ERROR]: WarpinObservatory/Probe not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: WeaponsFree/Ghost_BlackOps not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: WeaponsFree/NovaCoop not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: WidowMineAttack/WidowMine not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -291,75 +360,6 @@ in seed TheCore Lite, keys =
 
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
-
-[ERROR]: AlarakDeadlyCharge/AlarakCoop not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: AlarakMothershipMassTeleport/SOAMothershipv4 not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
-in seed TheCore Lite, keys =Space,4
-
-[ERROR]: DefensiveMatrixTarget/NovaDefensiveMatrixDrone not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: DeploySpiderMines/SiegeTank_BlackOps not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: Liberator_BlackOpsMorphtoAA/Liberator_BlackOps not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: Liberator_BlackOpsMorphtoAG/Liberator_BlackOps not related to a conflict
-in seed TheCore Lite, keys =Space,E,C
-
-[ERROR]: MarineSuperStimpack/Marine_BlackOps not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: MedicHeal/Medivac_BlackOps not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: MedivacSpeedBoost/Medivac_BlackOps not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: MorphToHellbatBlackOps/HellionBlackOps not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: MorphToHellion/HellionBlackOps not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: NovaSwitchAssaultMode/NovaCoop not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: NovaWeaponImprovedCanisterRifleSnipe/NovaCoop not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: PhasingMode/WarpPrismTaldarim not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: PointDefenseDrone/Raven_BlackOps not related to a conflict
-in seed TheCore Lite, keys =E
-
-[ERROR]: ResearchMarauderMagrailMunitions/BarracksTechLab not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: ResearchMarauderMagrailMunitions/BarracksTechReactor not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: SiegeTank_BlackOpsSiege not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: SiegeTank_BlackOpsUnsiege not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: TransportMode/WarpPrismTaldarim not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: WeaponsFree/Ghost_BlackOps not related to a conflict
-in seed TheCore Lite, keys =4
-
-[ERROR]: WeaponsFree/NovaCoop not related to a conflict
-in seed TheCore Lite, keys =4
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
