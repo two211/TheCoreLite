@@ -2,6 +2,7 @@
 AllowSetConflicts=1
 
 [Hotkeys]
+FPS=Alt+F2
 Music=Shift+F8
 Sound=Shift+F7
 PTT=Alt+F1
