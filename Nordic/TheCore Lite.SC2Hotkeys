@@ -2,13 +2,13 @@
 AllowSetConflicts=1
 
 [Hotkeys]
-AIArmy=Shift+Alt+D
+AIArmy=Shift+Alt+R
 AIBuild=Shift+Alt+4
-AIClearAll=Shift+Alt+C
-AICommunication=Shift+Alt+G
-AIDelete=Shift+Alt+R
+AIClearAll=Shift+Alt+5
+AICommunication=Shift+Alt+C
+AIDelete=Shift+Alt+V
 AIDetect=Shift+Alt+F
-AIExpand=Shift+Alt+V
+AIExpand=Shift+Alt+G
 AIScout=Shift+Alt+T
 AlertRecall=Shift+BackSlash
 ArmySelect=Control+Tab,Control+Shift+Tab
