@@ -1828,10 +1828,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ControlGroupAppendAndSteal7 default: Shift+Alt+7
 	StatPanelArmySupply default: Control+A
 
-[INFO]: TheCore Lite: Control+W   
-	ControlGroupAppendAndSteal6 default: Shift+Alt+6
-	ToggleWorldPanel default: Control+W
-
 [INFO]: TheCore Lite: Control+X   
 	ControlGroupAppendAndSteal0 default: Shift+Alt+0
 	ToggleVersusModeSides default: Control+X
@@ -1846,6 +1842,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: S   
 	ControlGroupRecall8 default: 8
 	LeaderSpending default: S
+
+[INFO]: TheCore Lite: W   
+	ControlGroupRecall6 default: 6
+	ObserveSelected default: W
 
 ----------------------------
 Finished (suggest inherit) - INFOs: 47 
