@@ -277,9 +277,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Lower/SupplyDepot default: R
 	Lurker/HydraliskImpaler default: 
 	MindControl/HiveMindEmulator default: C
-	MorphBackToGateway/WarpGate default: M
-	MorphBackToRoboticsFacility/RoboticsFacilityWarp default: M copyof: MorphBackToGateway/WarpGate default: M
-	MorphBackToStargate/StargateWarp default: M copyof: MorphBackToGateway/WarpGate default: M
 	MorphtoDevourer/Mutalisk default: D
 	NPSwarm/Infestor default: E copyof: NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor default: E
@@ -1169,6 +1166,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MengskUnits/Starport default: M
 	MercCompound/SCV default: M
 	MicroBot/Factory default: M
+	MorphBackToGateway/WarpGate default: M
+	MorphBackToRoboticsFacility/RoboticsFacilityWarp default: M copyof: MorphBackToGateway/WarpGate default: M
+	MorphBackToStargate/StargateWarp default: M copyof: MorphBackToGateway/WarpGate default: M
 	MothershipCore/SuperWarpGate default: M
 	ResearchMaelstromRounds/FactoryTechLab default: M
 	ResearchMaelstromRounds/FactoryTechReactor default: M
