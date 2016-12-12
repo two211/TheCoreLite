@@ -200,7 +200,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =
 
 [ERROR]: ResearchDarkTemplarBlink/DarkShrine not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =F
 
 [ERROR]: ResearchEMP/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
@@ -235,6 +235,9 @@ in seed TheCore Lite, keys =4
 [ERROR]: ResearchLocustNest/EvolutionChamber not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: ResearchMagFieldLaunchers/FactoryTechLab not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: ResearchMarauderMagrailMunitions/BarracksTechLab not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -249,6 +252,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: ResearchPlasmaCharge/RoboticsBay not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchRavenRecalibratedExplosives/StarportTechLab not related to a conflict
+in seed TheCore Lite, keys =V
 
 [ERROR]: ResearchRecall/ArbiterTribunal not related to a conflict
 in seed TheCore Lite, keys =
@@ -581,7 +587,7 @@ in seed TheCore Lite, keys =R
 [WARN]: InfestedTerrans/Infestor2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =CapsLock,4
 
 [WARN]: K5DropPods/K5Kerrigan not related to a conflict
 but is part of same check
@@ -1015,5 +1021,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 120 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 122 WARNs: 145 
 ============================
