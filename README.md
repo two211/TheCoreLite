@@ -102,14 +102,14 @@ Alt+RightClick pings the invisible unit location to allies.
  * Shift+Alt+C
 
 ### AI keys now supported
-* direct attack on Shift+Alt+D
+* direct attack on Shift+Alt+R
 * direct scout on Shift+Alt+T
 * direct detect on Shift+Alt+F
-* direct expand on Shift+Alt+V
-* open AI communication on Shift+Alt+G
+* direct expand on Shift+Alt+G
 * build style on Shift+Alt+4
-* clearall on Shift+Alt+E
-* delete on Shift+Alt+R
+* clearall on Shift+Alt+5
+* open AI communication on Shift+Alt+C
+* delete on Shift+Alt+V
 
 ### Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
@@ -140,14 +140,14 @@ Compared to legacy TheCore Lite:
 ### Additional cameras alternates on control
 
 2 "Control" camera alternates:
-* Ctl+C = Shift+1
-* Ctl+D = Shift+2
-* Ctl+E = Shift+3
+* Ctl+D = Shift+1
+* Ctl+F = Shift+2
+* Ctl+G = Shift+3
 
 Camera creation:
-* Ctl+V = Alt+1
-* Ctl+F = Alt+2
-* Ctl+R = Alt+3
+* Ctl+E = Alt+1
+* Ctl+R = Alt+2
+* Ctl+T = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 Those aliases allow easy save/recall locations.
@@ -324,7 +324,7 @@ Use case scenarii
 
 #### with Ctl camera
 * Ctl+Alt: select production facilities (WarpGate have higher selection priority)
-* Ctl+C|D|E: center on warp pylon
+* Ctl+D|F|G: center on warp pylon
 * hold key for warping-in units (rapid fire warp-in)
 
 #### Other tips
@@ -389,16 +389,15 @@ Suggested camera locations:
  * You had time to check upgrades as they were selected with inject queeens
  * browse subgroup + add new research
 * Creep queen
- * S x2 = select + jump to creep queen (same raw as C for fast spawn creep tumor)
- * Shift+C + clicks = drop creep tumors (queued)
+ * Ctl+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
+ * Ctl+C + clicks = drop creep tumors (queued)
 * Creep cameras (control cameras)
- * Ctl+C|D|E = jump to creep camera
+ * Ctl+D|F|G = jump to creep camera
  * Ctl+click to select creep tumors
- * Shift+C then clicks = queued creep tumor spread
-  * altenatively, CapsLock for rapid fire creep tumor
+ * Ctl+C then clicks = spread creep tumor
  * click = select a new creep tumor
  * Ctl+Space = center view on selection
- * Ctl+V|F|R = update creep camera
+ * Ctl+E|R|T = update creep camera
 
 sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
