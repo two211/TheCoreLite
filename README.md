@@ -127,14 +127,13 @@ TheCore Lite location cameras
 -----------------------------
 
 Compared to legacy TheCore Lite:
-* one camera key changed: X has been replaced by 1
+* one camera key changed: Q has been replaced by 1
 * camera creation still based on Alt modifier
 * camera recall still based on Shift modifier
 * "control" cameras were introduced
 
-### Standard camera views
-* Alt now shows Ennemy life bar (useful for quick check of stacked ground/air armies)
-* Alt+X centers the camera on the selection
+### Other features
+* Alt now shows Ennemy life bar (useful for quick check for mana bars of stacked ground/air armies)
 * ` is used for jump to last alert (with Shift)
 
 ### Additional cameras alternates on control
@@ -154,6 +153,7 @@ Those aliases allow easy save/recall locations.
 Same modifier is applied for save and recall.
 Using them you have a finger on Ctl:
 Ctl+LeftClick on a units selects all visible units of this type.
+It is particularly useful for spreading creep.
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -164,9 +164,7 @@ TheCore Lite Macro groups
 
 Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
-W is intended for CC Nexus Hatcheries.
-
-Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
+W is intended for CC Nexus Hatcheries + Tech.
 
 ### Nexus/CC/Hatch group = **W**
 
@@ -175,9 +173,13 @@ Group content:
 * Terran and Protoss should add research facilities to this group
 
 Tip for additional expansion:
-* Center base at camera creation with Alt+X
-* Add to Nexus/CC/Hatch with alternates:
- * Alt+D (legacy alternate)
+* Center base at camera creation with:
+ * Alt+Shift
+ * Alt+CapsLock
+ * Alt+Tab
+ * Alt+`
+ * Alt+Q
+* Add to Nexus/CC/Hatch with alternates Alt+D
 
 ### Production group (or inject queens) = **Q**
 
@@ -378,15 +380,16 @@ Suggested camera locations:
 * X 5th
 
 ### Use case: zerg macro routine
+* Inject routine of your choice
+* check supply depot at this step and produce overlords
+ * morph 1 overlord/mining hatch/egg cycle
+ * rally overlords individually to strategic locations
 * Hatch check
  * W: hatch group
  * morph other larvaes depending on needs
  * add eggs to control groups and give them rally points
- * check supply depot at this step, to produce overlords
- * morph 1 overlord/mining hatch and rally them individually to strategic locations
-* Inject routine of your choice
 * Tech check
- * You had time to check upgrades as they were selected with inject queeens
+ * You had time to check upgrades as they were selected with hatcheries
  * browse subgroup + add new research
 * Creep queen
  * Ctl+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
@@ -399,12 +402,12 @@ Suggested camera locations:
  * Ctl+Space = center view on selection
  * Ctl+E|R|T = update creep camera
 
+**Note:** keep in mind that selecting another group cancels the action
+
 sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
 [JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
 
-**Note:** creep tumor spawn/expand could be performed without queue
-, if you're not careful you would have to cancel the action before selection with click or double-click
 
 
 ----------------------------------------------------------------------------------------------------------------------
