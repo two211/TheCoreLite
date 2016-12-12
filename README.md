@@ -168,7 +168,7 @@ W is intended for CC Nexus Hatcheries.
 
 Macros keys have been changing for this version to benefit from Shift+Z+X mechanics.
 
-### Nexus/CC/Hatch group = **Z**
+### Nexus/CC/Hatch group = **W**
 
 Group content:
 * All Nexus/CC/Hatch
@@ -178,11 +178,8 @@ Tip for additional expansion:
 * Center base at camera creation with Alt+X
 * Add to Nexus/CC/Hatch with alternates:
  * Alt+D (legacy alternate)
- * Alt+Grave
- * Alt+Tab
- * Alt+CapsLock
 
-### Production group (or inject queens) = **X**
+### Production group (or inject queens) = **Q**
 
 Group content:
 * Terran & Protoss: All army production facilities
@@ -190,18 +187,18 @@ Group content:
 * Zerg should add research facilities to this group
 
 Tips for rally point | warp-in pylon:
-* Shift+X has the same effect than pressing X
-* Shift+Z+X mechanics
- * Shift+Z recall camera (rally point)
- * Shift+X select this group
+* Shift+Q has the same effect than pressing Q
+* Shift+Q+W mechanics
+ * Shift+Q selects this group
+ * Shift+W recalls camera (rally point)
 
 Race specific:
 * Related to warp-in
  * Keep shift pressed, while holding unit key (queued rapid-fire warp-in)
- * Shift+S could be used for secondary warp-in zone
+ * Shift+3 could be used for secondary warp-in zone
 * Related to egg inject
- * Z camera would be main hive
- * Shift+Z+X helps getting Shift already pressed for queued commands
+ * W camera would be main hive
+ * Shift+Q+W helps getting Shift already pressed for queued commands
  * please read dedicated usecase "Telegraph inject" and "TheCore inject"
 
 ### Group display
@@ -210,7 +207,7 @@ The 2 "macro" groups are positioned in the center to split the remaining groups 
 This facilitates the visual representation of existing groups.
 The 10 groups are displayed in this order (| figures the separation):
 ```
-`123|ZX|QWAS
+`123|QW|ASZX
 ```
 
 **Note:** the icon representing the group seems to be the best selectable unit at group creation.
@@ -223,7 +220,6 @@ TheCore Lite Group modifiers
 
 Compared to legacy TheCore Lite:
 * all group keys are similar
-* the suggested macro group keys changed from QW to ZX
 * modifier have been changed
 
 LoTV introduced steal behavior, for Archon mode.
@@ -300,12 +296,9 @@ Use case scenarii
 
 ### Use case: expansions cameras
 * Select new base under construction
-* Alt+X: center view on base
+* Alt+CapsLock|`|Tab|Q: center view on base
 * Alt+[camera\_key]: make view on associated key
-* Append expansion to Nexus/CC/Hatch group
- * Alt+Grave
- * Alt+Tab (**warning** could bring back to desktop)
- * Alt+CapsLock
+* Alt+D: Append expansion to Nexus/CC/Hatch group
 
 ### Use case: send worker back to ressources gathering after queued commands
 * press shift to queue all necessary commands
@@ -314,8 +307,8 @@ Use case scenarii
 
 ### Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
-* Shift+Z: jump to rally point (declared with Alt+Z)
-* Shift+X: select production facilities
+* Shift+Q: select production facilities
+* Shift+W: jump to rally point (declared with Alt+W)
 * inspect rallied army
 * optional redeclaration of the rally point (RightClick, in case of new integrated facility)
 * browse subgroup and launch production
@@ -325,8 +318,8 @@ Use case scenarii
 
 #### with Shift camera
 * Hold shift
-* Shift+S: jump to warp-in camera (S as a suggestion with Z for the regular rally point)
-* Shift+X: select production facilities (WarpGate have higher selection priority)
+* Shift+Q: select production facilities (WarpGate have higher selection priority)
+* Shift+3: jump to warp-in camera (S as a suggestion with Z for the regular rally point)
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
 #### with Ctl camera
@@ -349,35 +342,19 @@ It relies on:
 
 #### TheCore Lite inject initiate
 
-* Shift+Z = jump to main hatch (first hatch)
-* Shift+X = select inject queens + tech
+* Shift+Q = select inject queens + tech
+* Shift+W = jump to main hatch (first hatch)
 * Shift+Space = inject
 * center mouse
 * keep Shift hold (to queue target)
 
 #### Telegraph inject
 
-Start with a "TheCore Lite inject initiate"
-
-Cycle through bases with fingers only:
-* press Shift+V to cycle base
- * depending on habbits/comfort preference Shift+B works as well
-* if queen is there, with enough energy, press one of those depending on your comfort preference:
- * Shift+Space
- * Shift+F
- * Shift+D, all of them are alternate for TargetChoose (aka Rapid Fire key)
- * or LeftClick, if you prefer
-
-#### Another approach
-
-Start with a "TheCore Lite inject initiate".
-Then move the the thumb from Space to Alt.
-You're ready to cycle base pressing Shift+Alt+C.
-Shift+Alt keeps the command queuing.
-
-Cycle through bases with one key + mouse:
-* press Shift+Alt+C to cycle base
+* Start with a "TheCore Lite inject initiate"
+* Then keep Shift pressed and move thumb on Alt
+* Shift+Alt+E used to cycle base
 * if queen is there, with enough energy, left click
+ * Shift+Alt+D used to TargetChoose, like LeftClick (Rapid Fire key)
 
 **Note:** In case of wandering queen, release shift and press V
 
@@ -387,22 +364,22 @@ The [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_o
 benefits as well of TheCore Lite inject initiate.
 
 * TheCore Lite inject initiate
- * Shift+Z = jump to main hatch (first hatch)
- * Shift+X = select inject queens + tech
+ * Shift+Q = select inject queens + tech
+ * Shift+W = jump to main hatch (first hatch)
  * Shift+Space = inject
  * center mouse
-* Shift+Q|W|A|S+click = base camera + inject if needed
+* Shift+A|S|Z|X+click = base camera + inject if needed
 
 Suggested camera locations:
-* Z main
-* Q 2nd
-* W 3rd
-* A 4th
-* S 5th
+* W main
+* A 2nd
+* S 3rd
+* Z 4th
+* X 5th
 
 ### Use case: zerg macro routine
 * Hatch check
- * Z: hatch group
+ * W: hatch group
  * morph other larvaes depending on needs
  * add eggs to control groups and give them rally points
  * check supply depot at this step, to produce overlords
