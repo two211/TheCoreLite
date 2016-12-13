@@ -289,8 +289,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NovaWeaponCanisterRifleSnipe/NovaVulture default: Q
 	OdinBarrage/Odin default: B copyof: 250mmStrikeCannons/Thor default: C
 	OdinBarrage/OdinMKII default: B
-	OracleWeaponOn default: C
-	OracleWeaponOn/Oracle default: C copyof: OracleWeaponOn default: C
 	ParasiticInvasion/LarvalQueen default: Q
 	PhaseMineBlast/VoidSeekerCrashed default: V
 	PlanetCracker/Purifier default: C
@@ -983,6 +981,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoOverlordTransport/Overlord default: T
 	NovaWeaponCanisterRifleSnipe/NovaHero default: Q
 	NydusNetwork/Drone default: N
+	OracleWeaponOff default: D
+	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	PhotonCannon/Harvester default:  copyof: PhotonCannon/Probe default: C
 	PhotonCannon/Probe default: C
 	PlanetCrackerOff/MothershipAiur06 default: C
@@ -1553,8 +1553,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Observer/RoboticsFacilityWarp default: B copyof: Observer/RoboticsFacility default: B
 	OmegaStorm/Kerrigan default: T
 	OmegaStorm/KerriganChar default: T
-	OracleWeaponOff default: D
-	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
+	OracleWeaponOn default: C
+	OracleWeaponOn/Oracle default: C copyof: OracleWeaponOn default: C
 	PhaseMineBlast/VoidSeeker default: V
 	PhasingMode/WarpPrism default: E
 	PhasingMode/WarpPrismGiant default: E
