@@ -58,7 +58,7 @@ class OtherSeeds(Enum):
 ## Debug infrastructure
 ####################################################################################
 
-debug_parser = ConfigParser()
+debug_parser = ConfigParser(allow_no_value=True)
 debug = False
 try:
 	debug_parser.read('Debug.ini')
