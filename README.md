@@ -49,10 +49,11 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 
 ### Function keys
 * F1 IdleWorker
-* Shift+F1 select all Idle Workers
-* Alt+F1 PushToTalk (to free Alt+Shift)
 * F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
+* Shift+F1 select all Idle Workers
 * Shift+F2 Team Ressources
+* Alt+F1 PushToTalk (to free Alt+Shift)
+* Alt+F2 Show FPS
 * F3 F4 F5 F6 Commander top bar ability
 * Shift+F7 Toggle sound (moved to prevent mistyping)
 * Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
