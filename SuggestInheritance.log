@@ -457,8 +457,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Barracks/SCV default: B
 	BuildTechLabFactory/FactoryFlying default: X copyof: TechLabBarracks/Barracks default: X
 	BuildTechLabStarport/StarportFlying default: X copyof: TechLabBarracks/Barracks default: X
-	CalldownMULE/CommandCenter default: E copyof: CalldownMULE/OrbitalCommand default: E
-	CalldownMULE/OrbitalCommand default: E
+	CommandCenterUnloadAll default: D
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
 	GravitonCatapult/Carrier default: G
@@ -642,8 +641,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BroodLord/Corruptor default: B
 	BroodLord/MutaliskBroodlord default: B copyof: BroodLord/Corruptor default: B
 	BuildKelMorianAutoTurret/KelMorianWorker default: A
+	CalldownMULE/CommandCenter default: E copyof: CalldownMULE/OrbitalCommand default: E
+	CalldownMULE/OrbitalCommand default: E
 	Carrier/SuperWarpGate default: C
-	CommandCenterUnloadAll default: D
 	CrateSwannSpecialDeliveryOpenCrate/CrateSwannSpecialDelivery default: E
 	DeactivateShieldGenerator/ShadowShieldGeneratorSmall default: E
 	DefilerMPPlague/DefilerMP default: G
