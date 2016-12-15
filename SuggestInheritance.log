@@ -341,7 +341,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SS_TerraTronSawAttack/SS_Plane default: W
 	Scan/CommandCenter default: C
 	Scan/OrbitalCommand default: C
-	ScourgeNest/Drone default: C
 	SetRallyPointSwarmHost/SwarmHostBurrowedMP default: Y
 	SlaynElementalGrab/SlaynElemental default: Q
 	SpawnBanelings/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
@@ -535,7 +534,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveGroovedSpines/LurkerDenMP default: G
 	Factory/SCV default: F
 	HireHelsAngels/Starport default: A
-	HydraliskDen/Drone default: H
 	Immortal/RoboticsFacility default: I
 	Immortal/RoboticsFacilityWarp default: I copyof: Immortal/RoboticsFacility default: I
 	KerriganVoidCoopCrushingGripWave/KerriganReviveCocoon default: D
@@ -547,6 +545,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToSwarmling/Larva default: Z copyof: Zergling/Larva default: Z
 	MuscularAugments/HydraliskDen default: A
 	MuscularAugments/LurkerDenMP default: A
+	NydusNetwork/Drone default: N
 	OracleAttack default: A copyof: Attack default: A
 	OrbitalCommand/CommandCenter default: B
 	OrbitalCommandCalldownSupplyDepot/OrbitalCommand default: B
@@ -800,6 +799,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResourceStun/Oracle default: E
 	ReturnCargo default: C
 	SS_LeviathanTentacleAttackR1/SS_Plane default: S
+	ScourgeNest/Drone default: C
 	ShadowBlade/PrologueZeratul default: E
 	ShadowBlade/ZeratulVoidAiur01 default: E
 	ShieldBatteryStructureBarrier/ShieldBattery default: B
@@ -832,7 +832,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TwilightCouncil/Harvester default:  copyof: TwilightCouncil/Probe default: C
 	TwilightCouncil/Probe default: C
 	UltraliskBurrowCharge/HotSTorrasqueBurrowed default: C
-	UltraliskCavern/Drone default: U
 	UltrasonicPulse/Spectre default: U copyof: EMP/Ghost default: E
 	UpgradeToRoboticsFacilityWarp/RoboticsFacility default: G copyof: UpgradeToWarpGate/Gateway default: G
 	UpgradeToStargateWarp/Stargate default: G copyof: UpgradeToWarpGate/Gateway default: G
@@ -953,6 +952,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	IgniteAfterburners/SiegeTank default: B
 	IgniteAfterburners/VikingAssault default: B
 	IgniteAfterburners/Vulture default: B
+	InfestationPit/Drone default: I
 	Infestor/Larva default: F
 	K5DropPods/K5Kerrigan default: D copyof: K5Leviathan/K5Kerrigan default: D
 	K5Leviathan/K5Kerrigan default: D
@@ -975,7 +975,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoDefiler/Larva default:  copyof: Infestor/Larva default: F
 	MorphtoOverlordTransport/Overlord default: T
 	NovaWeaponCanisterRifleSnipe/NovaHero default: Q
-	NydusNetwork/Drone default: N
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	PlanetCrackerOff/MothershipAiur06 default: C
@@ -1083,6 +1082,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Voranor default:  copyof: StalkerHallucination/Sentry default: S
 	Ultralisk/Larva default: U
+	UltraliskCavern/Drone default: U
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
 	Vulture/Factory default: V
 	WeaponsFree/GhostVulture default: G
@@ -1493,7 +1493,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ImmortalOverload/Immortal default: B
 	ImmortalOverload/ImmortalAiur default: B
 	ImpalerBurrowUp default: R copyof: BurrowUp default: R
-	InfestationPit/Drone default: I
 	InfestedAbomination/InfestableBiodome default: B
 	InfestedAbomination/InfestableHut default: B
 	InfestedAbomination/InfestedArmory default: B
@@ -1733,6 +1732,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Firebat/Barracks default: F
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	Hydralisk/Larva default: H
+	HydraliskDen/Drone default: H
 	KhaydarinMonolith/Probe default: D
 	MorphToHydraliskImpaler/Larva default: H copyof: Hydralisk/Larva default: H
 	MorphToHydraliskLurker/Larva default: H copyof: Hydralisk/Larva default: H
