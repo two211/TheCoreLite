@@ -815,7 +815,7 @@ in seed TheCore Lite, keys =D
 [WARN]: ResearchMultiLockTargetingSystem/FactoryTechReactor not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: ResearchRegenerativeBioSteel/FactoryTechReactor not related to a conflict
 but is part of same check
