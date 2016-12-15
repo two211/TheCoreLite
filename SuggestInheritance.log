@@ -274,7 +274,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganEpilogue03Heal/KerriganEpilogue03 default: C
 	KerriganVoidSpawnBanelings/KerriganVoidUlnar02 default: E
 	LockOnUpgraded/Cyclone default: C
-	Lower/SupplyDepot default: R
 	Lurker/HydraliskImpaler default: 
 	MindControl/HiveMindEmulator default: C
 	MorphtoDevourer/Mutalisk default: D
@@ -914,6 +913,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCreepTumor/Hatchery default: C
 	BuildCreepTumor/Hive default: C
 	BuildCreepTumor/Lair default: C
+	Bunker/SCV default: U
+	BunkerFortified/SCV default: U copyof: Bunker/SCV default: U
 	Carrier/Epilogue02VoidRift default: C
 	Carrier/VoidRift default: C
 	Carrier/VoidRiftUnselectable default: C
@@ -974,15 +975,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MissilePods/Battlecruiser default: E
 	MissilePods/DukesRevenge default: E copyof: MissilePods/Battlecruiser default: E
 	MissilePods/MengskBC default: E
-	MissileTurret/SCV default: T
 	MorphtoDefiler/Larva default:  copyof: Infestor/Larva default: F
 	MorphtoOverlordTransport/Overlord default: T
 	NovaWeaponCanisterRifleSnipe/NovaHero default: Q
 	NydusNetwork/Drone default: N
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
-	PhotonCannon/Harvester default:  copyof: PhotonCannon/Probe default: C
-	PhotonCannon/Probe default: C
 	PlanetCrackerOff/MothershipAiur06 default: C
 	PrimalFlyer/PrimalTownHall default: F
 	PrimalUltralisk/PrimalTownHallUprooted default: U
@@ -1011,7 +1009,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SiegeTank/VoidRift default: S
 	SiegeTank/VoidRiftUnselectable default: S
 	SkyTankLaserBeamSlow/SkyTank default: W
-	SporeCrawler/Drone default: A
+	SpineCrawler/Drone default: C
 	SwannCommanderRebuild default: R
 	SwarmQueenHydralisk/HugeSwarmQueen default: D
 	SwarmQueenHydralisk/SwarmQueenEgg default: D copyof: SwarmQueenHydralisk/HugeSwarmQueen default: D
@@ -1045,8 +1043,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: G   
 	Archon/VoidRiftUnselectable default: N
 	Battlecruiser/Starport default: B
-	Bunker/SCV default: U
-	BunkerFortified/SCV default: U copyof: Bunker/SCV default: U
 	Carrier/Stargate default: C
 	Carrier/StargateWarp default: C copyof: Carrier/Stargate default: C
 	CyberneticsCore/Harvester default:  copyof: CyberneticsCore/Probe default: Y
@@ -1085,7 +1081,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMaelstromRounds/FactoryTechLab default: M
 	ResearchMaelstromRounds/FactoryTechReactor default: M
 	SS_LeviathanTentacleAttackR2/SS_Plane default: A
-	SpineCrawler/Drone default: C
 	StalkerHallucination/Nexus default:  copyof: StalkerHallucination/Sentry default: S
 	StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
@@ -1290,6 +1285,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganEpilogue03CreepTeleport/KerriganEpilogue03 default: T
 	LiberatorAAMode/Liberator default: D
 	Liberator_BlackOpsMorphtoAA/Liberator_BlackOps default: 
+	Lower/SupplyDepot default: R
 	LurkerBurrowDown default:  copyof: BurrowDown default: R
 	MassRecall/Artanis default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	MassRecall/Mothership default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
@@ -1535,6 +1531,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MeliakBlinkBTN/Meliak default:  copyof: Blink/Stalker default: B
 	MindBlast/Spectre default: B
 	MindBlast/Tosh default: B
+	MissileTurret/SCV default: T
 	MorphMorphalisk/BroodMother default:  copyof: MorphMorphalisk/Queen default: V
 	MorphMorphalisk/Queen default: V
 	MorphMorphalisk/Queen2 default:  copyof: MorphMorphalisk/Queen default: V
@@ -1558,6 +1555,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PhasingMode/WarpPrismGiant default: E
 	PhasingMode/WarpPrismTaldarim default: 
 	PhoenixAiurGravitonBeam/Phoenix default: G
+	PhotonCannon/Harvester default:  copyof: PhotonCannon/Probe default: C
+	PhotonCannon/Probe default: C
 	PitMalashPsiShift/PitMalash default: Q
 	PlanetCracker/MothershipAiur06 default: C
 	PlantC4Charge/Raynor default: D
@@ -1600,6 +1599,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SiegeTank_BlackOpsSiege default: 
 	SkyTankLaserBeamFast/SkyTank default: Q
 	SpineCrawlerUproot/SpineCrawler default: R
+	SporeCrawler/Drone default: A
 	SporeCrawlerUproot/SporeCrawler default: R
 	StalkerBlinkMultiple/Stalker default: B
 	StalkerBlinkShieldRestoreBase/StalkerShakuras default: B copyof: Blink/Stalker default: B
@@ -1665,7 +1665,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZeratulBlink/Zeratul default: B copyof: Blink/Stalker default: B
 	ZeratulBlink/ZeratulVoid default: B copyof: Blink/Stalker default: B
 	ZeratulBlink/ZeratulVoidAiur01 default: B copyof: Blink/Stalker default: B
-	ZergBuild/Drone default: B
 	Zergling/VoidRift default: Z
 	Zergling/VoidRiftUnselectable default: Z
 	Zergling/VoidThrasherWalker default: Z

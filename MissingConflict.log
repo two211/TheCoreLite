@@ -418,7 +418,7 @@ in seed TheCore Lite, keys =V
 
 [WARN]: BunkerFortified/SCV not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =G
+in seed TheCore Lite, keys =F
 
 [WARN]: BurrowChargeMP/Ultralisk not related to a conflict
 but is part of same check
@@ -727,7 +727,7 @@ in seed TheCore Lite, keys =D
 
 [WARN]: PhotonCannon/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =Space
 
 [WARN]: PrimalHeal/K5Kerrigan not related to a conflict
 but is part of same check
