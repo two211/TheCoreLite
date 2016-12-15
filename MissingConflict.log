@@ -839,7 +839,7 @@ in seed TheCore Lite, keys =C
 
 [WARN]: RoboticsBay/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =V
 
 [WARN]: RoboticsFacility/Harvester not related to a conflict
 but is inherited
