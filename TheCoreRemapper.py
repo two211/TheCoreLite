@@ -18,33 +18,33 @@ from ConflictChecks import *  # @UnresolvedImport @UnusedWildImport
 from SameChecks import *  # @UnresolvedImport @UnusedWildImport
 
 class ConfigParser(configparser.ConfigParser):
-    """Case-sensitive ConfigParser."""
+	"""Case-sensitive ConfigParser."""
 
-    def optionxform(self, opt):
-        return opt
+	def optionxform(self, opt):
+		return opt
 
-    def write(self, file):
-        return super().write(file, space_around_delimiters=False)
+	def write(self, file):
+		return super().write(file, space_around_delimiters=False)
 
 class Races(Enum):
-    Protoss = "P"
-    Terran = "T"
-    Random = "R"
-    Zerg = "Z"
+	Protoss = "P"
+	Terran = "T"
+	Random = "R"
+	Zerg = "Z"
 
 class Sides(Enum):
-    Right = "R"
-    Left = "L"
+	Right = "R"
+	Left = "L"
 
 class Sizes (Enum):
-    Small = "S"
-    Medium = "M"
-    Large = "L"
+	Small = "S"
+	Medium = "M"
+	Large = "L"
 
 class LogLevel(Enum):
-    Info = "INFO"
-    Warn = "WARN"
-    Error = "ERROR"
+	Info = "INFO"
+	Warn = "WARN"
+	Error = "ERROR"
 
 ####################################################################################
 ## Support for other seeds than the pure TheCore, value = filename
@@ -76,68 +76,68 @@ if not(debug):
 ## List allSeeds to browse all hotkey seed
 allSeeds = []
 if debug_parser.getboolean("Settings","allseeds",fallback=True):
-    for race in Races:
-        allSeeds.append(race)
-    for seed in OtherSeeds:
-        allSeeds.append(seed)
+	for race in Races:
+		allSeeds.append(race)
+	for seed in OtherSeeds:
+		allSeeds.append(seed)
 else:
-    for race in debug_parser.options("Races"):
-        allSeeds.append(Races[race])
-    for seed in debug_parser.options("OtherSeeds"):
-        allSeeds.append(OtherSeeds[seed])
+	for race in debug_parser.options("Races"):
+		allSeeds.append(Races[race])
+	for seed in debug_parser.options("OtherSeeds"):
+		allSeeds.append(OtherSeeds[seed])
 
 ####################################################################################
 
 
 class Logger:
-    def __init__(self, title, filepath=None, log_file=[LogLevel.Warn, LogLevel.Error], log_consol=[LogLevel.Info, LogLevel.Error]):
-        self.title = title
-        self.filepath = filepath
-        self.log_file = log_file
-        self.log_consol = log_consol
-        self.messages = {}
-        self.messages[LogLevel.Info] = []
-        self.messages[LogLevel.Warn] = []
-        self.messages[LogLevel.Error] = []
-        print(self.get_start_str())
+	def __init__(self, title, filepath=None, log_file=[LogLevel.Warn, LogLevel.Error], log_consol=[LogLevel.Info, LogLevel.Error]):
+		self.title = title
+		self.filepath = filepath
+		self.log_file = log_file
+		self.log_consol = log_consol
+		self.messages = {}
+		self.messages[LogLevel.Info] = []
+		self.messages[LogLevel.Warn] = []
+		self.messages[LogLevel.Error] = []
+		print(self.get_start_str())
 
-    
-    def get_start_str(self):
-        output = "============================\n" 
-        output = output + "Start " + self.title
-        if not self.filepath is None:
-            output = output + " (log file: " + self.filepath + ")"
-        output = output + "\n"
-        output = output + "----------------------------"
-        return output
-    
-    def log(self, log_level, msg):
-        msg_str = self.get_message_str(log_level, msg)
-        self.messages[log_level].append(msg_str)
-        if log_level in self.log_consol:
-            print(msg_str)
-        
-    def finish(self):
-        output = "----------------------------\n"
-        output = output + "Finished (" + self.title + ") - "
-        for log_level_file in self.log_file:
-            output = output + log_level_file.value + "s: " + str(len(self.messages[log_level_file])) + " "
-        output = output + "\n"
-        output = output + "============================"
-        print(output)
-        if not self.filepath is None:
-            with open(self.filepath, 'w') as file:
-                file.write(self.get_start_str() + "\n")
-                for log_level_file in self.log_file:
-                    for line in self.messages[log_level_file]:
-                        file.write(line + "\n")
-                file.write(output)
-        
-    def get_message_str(self, log_level, msg):
-        msg_str = "[" + log_level.value + "]: " + msg
-        if msg.count('\n') > 0:
-            msg_str = msg_str + "\n" 
-        return msg_str
+	
+	def get_start_str(self):
+		output = "============================\n"
+		output = output + "Start " + self.title
+		if not self.filepath is None:
+			output = output + " (log file: " + self.filepath + ")"
+		output = output + "\n"
+		output = output + "----------------------------"
+		return output
+	
+	def log(self, log_level, msg):
+		msg_str = self.get_message_str(log_level, msg)
+		self.messages[log_level].append(msg_str)
+		if log_level in self.log_consol:
+			print(msg_str)
+		
+	def finish(self):
+		output = "----------------------------\n"
+		output = output + "Finished (" + self.title + ") - "
+		for log_level_file in self.log_file:
+			output = output + log_level_file.value + "s: " + str(len(self.messages[log_level_file])) + " "
+		output = output + "\n"
+		output = output + "============================"
+		print(output)
+		if not self.filepath is None:
+			with open(self.filepath, 'w') as file:
+				file.write(self.get_start_str() + "\n")
+				for log_level_file in self.log_file:
+					for line in self.messages[log_level_file]:
+						file.write(line + "\n")
+				file.write(output)
+		
+	def get_message_str(self, log_level, msg):
+		msg_str = "[" + log_level.value + "]: " + msg
+		if msg.count('\n') > 0:
+			msg_str = msg_str + "\n"
+		return msg_str
 
 # Read the settings
 settings_parser = ConfigParser()
@@ -166,134 +166,134 @@ hotkeyfile_parsers = {}
 
 ## class Hotkey modified : object structure now allows OtherSeeds
 class Hotkey:
-    seedTuple=tuple(allSeeds)
+	seedTuple=tuple(allSeeds)
 
-    def __init__(self, name, section, default=None, copyOf=None):
-        self.name = name
-        self.section = section
-        self.key = {}
-        self.default = default
-        self.copyOf = copyOf
-        # init to None for all seed
-        for seed in self.seedTuple:
-            self.key[seed] = None
+	def __init__(self, name, section, default=None, copyOf=None):
+		self.name = name
+		self.section = section
+		self.key = {}
+		self.default = default
+		self.copyOf = copyOf
+		# init to None for all seed
+		for seed in self.seedTuple:
+			self.key[seed] = None
 
-    def set_value(self, race, value):
-        self.key[race] = value
+	def set_value(self, race, value):
+		self.key[race] = value
 
-    def get_raw_value(self, race):
-        return self.key[race]
+	def get_raw_value(self, race):
+		return self.key[race]
 
-    def get_value(self, race):
-        value = self.get_raw_value(race)
-        if value is None:
-            value = self.default
-        return value
+	def get_value(self, race):
+		value = self.get_raw_value(race)
+		if value is None:
+			value = self.default
+		return value
 
-    def get_values_id(self):
-        values = ""
-        for race in self.seedTuple:
-            value = self.get_value(race)
-            first = True
-            alternates = value.split(",")
-            alternates.sort()
-            for alternate in alternates:
-                if first:
-                    value = alternate
-                    first = False
-                else:
-                    value = value + "," + alternate
-            values = values + race.value + ":" + value + "\n"
-        return values
+	def get_values_id(self):
+		values = ""
+		for race in self.seedTuple:
+			value = self.get_value(race)
+			first = True
+			alternates = value.split(",")
+			alternates.sort()
+			for alternate in alternates:
+				if first:
+					value = alternate
+					first = False
+				else:
+					value = value + "," + alternate
+			values = values + race.value + ":" + value + "\n"
+		return values
 
 def init_seed_hotkeyfile_parser():
-    for race in Races:
-        hotkeyfile_parser = ConfigParser()
-        hotkeyfilepath = create_filepath( prefix + thecore_tag(race, Sides.Left, Sizes.Medium) )
-        hotkeyfile_parser.read(hotkeyfilepath)
-        hotkeyfile_parsers[race] = hotkeyfile_parser
-    for seed in OtherSeeds:
-        hotkeyfile_parser = ConfigParser()
-        hotkeyfilepath = create_filepath(seed.value)
-        hotkeyfile_parser.read(hotkeyfilepath)
-        hotkeyfile_parsers[seed] = hotkeyfile_parser
+	for race in Races:
+		hotkeyfile_parser = ConfigParser()
+		hotkeyfilepath = create_filepath( prefix + thecore_tag(race, Sides.Left, Sizes.Medium) )
+		hotkeyfile_parser.read(hotkeyfilepath)
+		hotkeyfile_parsers[race] = hotkeyfile_parser
+	for seed in OtherSeeds:
+		hotkeyfile_parser = ConfigParser()
+		hotkeyfilepath = create_filepath(seed.value)
+		hotkeyfile_parser.read(hotkeyfilepath)
+		hotkeyfile_parsers[seed] = hotkeyfile_parser
 
 def thecore_tag(race, side, size):
-    return(" " + race.value + side.value + size.value + " ")
+	return(" " + race.value + side.value + size.value + " ")
 
 def create_filepath(string, path=""):
-    filename = string + suffix
-    filepath = filename
-    if path:
-        filepath = path + "/" + filename
-    return filepath
+	filename = string + suffix
+	filepath = filename
+	if path:
+		filepath = path + "/" + filename
+	return filepath
 
 def new_keys_from_seed_hotkeys():
-    logger = Logger("Search for new Keys in seed layouts", log_consol=[LogLevel.Info], log_file=[])
-    for seed in allSeeds:
-        for section in hotkeyfile_parsers[seed].sections():
-            for item in hotkeyfile_parsers[seed].items(section):
-                key = item[0]
-                if not default_parser.has_option(section, key):
-                    default_parser.set(section, key, "")
-                    logger.log(LogLevel.Info, "New key found " + key + " added to " + default_filepath + " please add a default value")
-    with open(default_filepath, 'w') as myfile:
-        default_parser.write(myfile)
-    order(default_filepath)
-    default_parser.read(default_filepath)
-    logger.finish()
+	logger = Logger("Search for new Keys in seed layouts", log_consol=[LogLevel.Info], log_file=[])
+	for seed in allSeeds:
+		for section in hotkeyfile_parsers[seed].sections():
+			for item in hotkeyfile_parsers[seed].items(section):
+				key = item[0]
+				if not default_parser.has_option(section, key):
+					default_parser.set(section, key, "")
+					logger.log(LogLevel.Info, "New key found " + key + " added to " + default_filepath + " please add a default value")
+	with open(default_filepath, 'w') as myfile:
+		default_parser.write(myfile)
+	order(default_filepath)
+	default_parser.read(default_filepath)
+	logger.finish()
 
 def order(filepath):
-    read_parser = ConfigParser()
-    read_parser.read(filepath)
+	read_parser = ConfigParser()
+	read_parser.read(filepath)
 
-    dicti = {}
-    for section in read_parser.sections():
-        items = read_parser.items(section)
-        items.sort()
-        dicti[section] = items
+	dicti = {}
+	for section in read_parser.sections():
+		items = read_parser.items(section)
+		items.sort()
+		dicti[section] = items
 
-    open(filepath, 'w').close()  # clear file
+	open(filepath, 'w').close()  # clear file
 
-    write_parser = ConfigParser()  # on other parser just for the safty
-    write_parser.read(filepath)
-    write_parser.add_section("Settings")
-    write_parser.add_section("Hotkeys")
-    write_parser.add_section("Commands")
+	write_parser = ConfigParser()  # on other parser just for the safty
+	write_parser.read(filepath)
+	write_parser.add_section("Settings")
+	write_parser.add_section("Hotkeys")
+	write_parser.add_section("Commands")
 
-    for section in dicti.keys():
-        if not write_parser.has_section(section):
-            write_parser.add_section(section)
-        items = dicti.get(section)
-        for item in items:
-            write_parser.set(section, item[0], item[1])
+	for section in dicti.keys():
+		if not write_parser.has_section(section):
+			write_parser.add_section(section)
+		items = dicti.get(section)
+		for item in items:
+			write_parser.set(section, item[0], item[1])
 
-    with open(filepath, 'w') as myfile:
-	    write_parser.write(myfile)
+	with open(filepath, 'w') as myfile:
+		write_parser.write(myfile)
 
 def check_defaults():
-    logger = Logger("Check defaults", "Defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
-    for section in default_parser.sections():
-        for item in default_parser.items(section):
-            key = item[0]
-            default = item[1]
-            multidefault = ddefault_parser.has_option(section, key)
-            if not default or multidefault:
-                seedhas = True
-                for race in Races:
-                    if not hotkeyfile_parsers[race].has_option(section, key):
-                        seedhas = False
-                inherit = inherit_parser.has_option(section, key)
+	logger = Logger("Check defaults", "Defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
+	for section in default_parser.sections():
+		for item in default_parser.items(section):
+			key = item[0]
+			default = item[1]
+			multidefault = ddefault_parser.has_option(section, key)
+			if not default or multidefault:
+				seedhas = True
+				for race in Races:
+					if not hotkeyfile_parsers[race].has_option(section, key):
+						seedhas = False
+				inherit = inherit_parser.has_option(section, key)
 
-                if multidefault:
-                    if not seedhas and not inherit:
-                        logger.log(LogLevel.Error, "key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) " + key)
-                if not default:
-                    if seedhas or inherit:
-                        logger.log(LogLevel.Warn, "no default " + key)
-                    else:
-                        logger.log(LogLevel.Error, "no default " + key)
-    logger.finish()
+				if multidefault:
+					if not seedhas and not inherit:
+						logger.log(LogLevel.Error, "key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) " + key)
+				if not default:
+					if seedhas or inherit:
+						logger.log(LogLevel.Warn, "no default " + key)
+					else:
+						logger.log(LogLevel.Error, "no default " + key)
+	logger.finish()
 
 def create_model(seeds=allSeeds):
 	model = {}
@@ -305,18 +305,7 @@ def create_model(seeds=allSeeds):
 			for seed in seeds:
 				if hotkeyfile_parsers[seed].has_option(section, key):
 					value = hotkeyfile_parsers[seed].get(section, key)
-#					## meta enabled case:  (could be built recurusively
-#					if debug_parser.getboolean("Settings","enablemeta",fallback=False):
-#						if hotkeyfile_parsers[seed].has_option(section, value):
-#							value = hotkeyfile_parsers[seed].get(section, value)
 					hotkey.set_value(seed, value)
-##					continue
-#				## consider command root if in the meta file
-#				if debug_parser.getboolean("Settings","enablemeta",fallback=False):
-#					command_root = key.split("/")[0]
-#					if hotkeyfile_parsers[seed].has_option(section, command_root):
-#						value = hotkeyfile_parsers[seed].get(section, command_root)  #
-#						hotkey.set_value(seed, value)
 			if inherit_parser.has_option(section, key):
 				copyof = inherit_parser.get(section, key)
 				hotkey.copyOf = copyof
@@ -325,330 +314,330 @@ def create_model(seeds=allSeeds):
 	return model
 
 def generate(seed_model):
-    logger = Logger("Generation", log_consol=[LogLevel.Info], log_file=[])
-    seed_models = init_models()
-    for seed in allSeeds:
-        if seed in Races:
-            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: M keyboardlayout: " + seed_layout)
-            seed_models[seed][Sides.Left][Sizes.Medium] = extract_race(seed_model, seed)
-            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: M keyboardlayout: " + seed_layout)
-            seed_models[seed][Sides.Right][Sizes.Medium] = convert_side(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Right)
-            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: S keyboardlayout: " + seed_layout)
-            seed_models[seed][Sides.Left][Sizes.Small] = shift_left(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Left)
-            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: S keyboardlayout: " + seed_layout)
-            seed_models[seed][Sides.Right][Sizes.Small] = shift_right(seed_models[seed][Sides.Right][Sizes.Medium], Sides.Right)
-            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: L keyboardlayout: " + seed_layout)
-            seed_models[seed][Sides.Left][Sizes.Large] = shift_right(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Left)
-            logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: L keyboardlayout: " + seed_layout)
-            seed_models[seed][Sides.Right][Sizes.Large] = shift_left(seed_models[seed][Sides.Right][Sizes.Medium], Sides.Right)
-        else:
-            seed_models[seed] = extract_race(seed_model, seed)
-    translate_and_create_files(seed_models, logger)
-    logger.finish()
+	logger = Logger("Generation", log_consol=[LogLevel.Info], log_file=[])
+	seed_models = init_models()
+	for seed in allSeeds:
+		if seed in Races:
+			logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: M keyboardlayout: " + seed_layout)
+			seed_models[seed][Sides.Left][Sizes.Medium] = extract_race(seed_model, seed)
+			logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: M keyboardlayout: " + seed_layout)
+			seed_models[seed][Sides.Right][Sizes.Medium] = convert_side(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Right)
+			logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: S keyboardlayout: " + seed_layout)
+			seed_models[seed][Sides.Left][Sizes.Small] = shift_left(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Left)
+			logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: S keyboardlayout: " + seed_layout)
+			seed_models[seed][Sides.Right][Sizes.Small] = shift_right(seed_models[seed][Sides.Right][Sizes.Medium], Sides.Right)
+			logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: L keyboardlayout: " + seed_layout)
+			seed_models[seed][Sides.Left][Sizes.Large] = shift_right(seed_models[seed][Sides.Left][Sizes.Medium], Sides.Left)
+			logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: R size: L keyboardlayout: " + seed_layout)
+			seed_models[seed][Sides.Right][Sizes.Large] = shift_left(seed_models[seed][Sides.Right][Sizes.Medium], Sides.Right)
+		else:
+			seed_models[seed] = extract_race(seed_model, seed)
+	translate_and_create_files(seed_models, logger)
+	logger.finish()
 
 def init_models():
-    models = {}
-    for race in Races:
-        models[race] = {}
-        for side in Sides:
-            models[race][side] = {}
-    return models
+	models = {}
+	for race in Races:
+		models[race] = {}
+		for side in Sides:
+			models[race][side] = {}
+	return models
 
 def extract_race(seed_model, race):
-    model_dict = {}
-    for section in seed_model:
-        model_dict[section] = {}
-        for key, hotkey in seed_model[section].items():
-            value = resolve_inherit(seed_model, section, hotkey, race)
-            model_dict[section][key] = value
-    return model_dict
+	model_dict = {}
+	for section in seed_model:
+		model_dict[section] = {}
+		for key, hotkey in seed_model[section].items():
+			value = resolve_inherit(seed_model, section, hotkey, race)
+			model_dict[section][key] = value
+	return model_dict
 
 def resolve_inherit(model, section, hotkey, race):
-    hotkey = resolve_copyof(model, section, hotkey)
-    value = hotkey.get_value(race)
-    return value
+	hotkey = resolve_copyof(model, section, hotkey)
+	value = hotkey.get_value(race)
+	return value
 
 def resolve_copyof(model, section, hotkey):
-    while True:
-        if hotkey.copyOf:
-            hotkey = model[section][hotkey.copyOf]
-        else:
-            return hotkey
+	while True:
+		if hotkey.copyOf:
+			hotkey = model[section][hotkey.copyOf]
+		else:
+			return hotkey
 
 def convert_side(seed_model, side):
-    return modify_model(seed_model, settings_parser, 'GlobalMaps', side)
+	return modify_model(seed_model, settings_parser, 'GlobalMaps', side)
 
 def modify_model(seed_model, parser, parser_section, side):
-    model_dict = {}
-    for section in seed_model:
-        model_dict[section] = {}
-        for key, value in seed_model[section].items():
-            if section == "Settings":
-                newvalue = value
-            else:
-                newvalue = modify_value(value, parser, parser_section, side)
-            model_dict[section][key] = newvalue
-    return model_dict
+	model_dict = {}
+	for section in seed_model:
+		model_dict[section] = {}
+		for key, value in seed_model[section].items():
+			if section == "Settings":
+				newvalue = value
+			else:
+				newvalue = modify_value(value, parser, parser_section, side)
+			model_dict[section][key] = newvalue
+	return model_dict
 
 def modify_value(org_value, parser, section, side):
-    altgr = "0"
-    if parser == layout_parser and side == Sides.Right:
-        altgr = layout_parser.get(section, "AltGr")
+	altgr = "0"
+	if parser == layout_parser and side == Sides.Right:
+		altgr = layout_parser.get(section, "AltGr")
 
-    newalternates = []
-    for alternate in org_value.split(","):
-        keys = alternate.split("+")
-        newkeys = []
-        # filter "Shift" only to make sure it is the same output as the old script
-        if altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
-            newkeys.append("Control")
-        for key in keys:
-            if parser.has_option(section, key):
-                newkey = parser.get(section, key)
-            else:
-                newkey = key
-            newkeys.append(newkey)
-        newalternate = ""
-        first = True
-        for newkey in newkeys:
-            if not first:
-                newalternate = newalternate + "+"
-            else:
-                first = False
-            if not newkey:
-                newalternate = ""
-            else:
-                newalternate = newalternate + newkey
-        newalternates.append(newalternate)
-    first = True
-    newvalues = ""
-    for newalternate in newalternates:
-        if not newalternate:
-            continue
-        if not first:
-            newvalues = newvalues + ","
-        else:
-            first = False
-        newvalues = newvalues + newalternate
-    return newvalues
+	newalternates = []
+	for alternate in org_value.split(","):
+		keys = alternate.split("+")
+		newkeys = []
+		# filter "Shift" only to make sure it is the same output as the old script
+		if altgr == "1" and keys.count("Alt") == 1 and keys.count("Control") == 0 and keys.count("Shift") == 0:
+			newkeys.append("Control")
+		for key in keys:
+			if parser.has_option(section, key):
+				newkey = parser.get(section, key)
+			else:
+				newkey = key
+			newkeys.append(newkey)
+		newalternate = ""
+		first = True
+		for newkey in newkeys:
+			if not first:
+				newalternate = newalternate + "+"
+			else:
+				first = False
+			if not newkey:
+				newalternate = ""
+			else:
+				newalternate = newalternate + newkey
+		newalternates.append(newalternate)
+	first = True
+	newvalues = ""
+	for newalternate in newalternates:
+		if not newalternate:
+			continue
+		if not first:
+			newvalues = newvalues + ","
+		else:
+			first = False
+		newvalues = newvalues + newalternate
+	return newvalues
 
 def shift_left(seed_model, side):
-    shift_section = side.value + 'ShiftLeftMaps'
-    return shift(seed_model, shift_section, side)
+	shift_section = side.value + 'ShiftLeftMaps'
+	return shift(seed_model, shift_section, side)
 
 def shift_right(seed_model, side):
-    shift_section = side.value + 'ShiftRightMaps'
-    return shift(seed_model, shift_section, side)
+	shift_section = side.value + 'ShiftRightMaps'
+	return shift(seed_model, shift_section, side)
 
 def shift(seed_model, shift_section, side):
-    return modify_model(seed_model, settings_parser, shift_section, side)
+	return modify_model(seed_model, settings_parser, shift_section, side)
 
 def translate_and_create_files(models, logger):
-    layouts = layout_parser.sections()
-    for layout in layouts:
-        for seed in allSeeds:
-            if seed in Races:
-                for side in Sides:
-                    for size in Sizes:
-                            if layout != seed_layout:
-                                logger.log(LogLevel.Info, "translate seed: " + seed.value + " side: " + side.value + " size: " + size.value + " keyboardlayout: " + layout)
-                                model = translate(models[seed][side][size], layout, side)
-                            else:
-                                model = models[seed][side][size]
-                            filename = prefix + thecore_tag(seed, side, size)
-                            create_file(model, filename, layout, logger)
-            else:
-                if layout != seed_layout:
-                    logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
-                    model = translate(models[seed], layout, Sides.Left)
-                else:
-                    model = models[seed]
-                create_file(model, seed.value, layout, logger)
+	layouts = layout_parser.sections()
+	for layout in layouts:
+		for seed in allSeeds:
+			if seed in Races:
+				for side in Sides:
+					for size in Sizes:
+							if layout != seed_layout:
+								logger.log(LogLevel.Info, "translate seed: " + seed.value + " side: " + side.value + " size: " + size.value + " keyboardlayout: " + layout)
+								model = translate(models[seed][side][size], layout, side)
+							else:
+								model = models[seed][side][size]
+							filename = prefix + thecore_tag(seed, side, size)
+							create_file(model, filename, layout, logger)
+			else:
+				if layout != seed_layout:
+					logger.log(LogLevel.Info, "translate seed: " + seed.value + " keyboardlayout: " + layout)
+					model = translate(models[seed], layout, Sides.Left)
+				else:
+					model = models[seed]
+				create_file(model, seed.value, layout, logger)
 
 def translate(seed_model, layout, side):
-    return modify_model(seed_model, layout_parser, layout, side)
+	return modify_model(seed_model, layout_parser, layout, side)
 
 def create_file(model, filename, layout, logger):
-    hotkeyfile_parser = ConfigParser()
-    for section in model:
-        if not hotkeyfile_parser.has_section(section):
-                hotkeyfile_parser.add_section(section)
-        for key, value in model[section].items():
-            hotkeyfile_parser.set(section, key, value)
-    if not os.path.isdir(layout):
-        os.makedirs(layout)
-    filepath = create_filepath(filename, layout)
-    hotkeyfile = open(filepath, 'w')
-    hotkeyfile_parser.write(hotkeyfile)
-    hotkeyfile.close()
-    order(filepath)
-    logger.log(LogLevel.Info, filepath + " created")
-    return filepath
+	hotkeyfile_parser = ConfigParser()
+	for section in model:
+		if not hotkeyfile_parser.has_section(section):
+				hotkeyfile_parser.add_section(section)
+		for key, value in model[section].items():
+			hotkeyfile_parser.set(section, key, value)
+	if not os.path.isdir(layout):
+		os.makedirs(layout)
+	filepath = create_filepath(filename, layout)
+	hotkeyfile = open(filepath, 'w')
+	hotkeyfile_parser.write(hotkeyfile)
+	hotkeyfile.close()
+	order(filepath)
+	logger.log(LogLevel.Info, filepath + " created")
+	return filepath
 
 def analyse(model):
-    ## default checks
-    same_check(model)
-    conflict_check(model)
-    wrong_inherit(model)
-    ## context dependent checks
-    hotkey_command_check(model)
-    unbound_command_check(model)
-    ## quality checks
-    if debug_parser.getboolean("Settings","quality",fallback=True):
-        suggest_inherit(model)
-        missing_conflict_check(model)
+	## default checks
+	same_check(model)
+	conflict_check(model)
+	wrong_inherit(model)
+	## context dependent checks
+	hotkey_command_check(model)
+	unbound_command_check(model)
+	## quality checks
+	if debug_parser.getboolean("Settings","quality",fallback=True):
+		suggest_inherit(model)
+		missing_conflict_check(model)
 
 def same_check(model):
-    logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
-    for seed in allSeeds:
-        for same_set in SAME_CHECKS:  # @UndefinedVariable
-            same_set.sort()
-            first_key = same_set[0]
-            for section in collections.OrderedDict(sorted(model.items())):
-                if not first_key in model[section]:
-                    continue
-                mismatched = False
-                value = model[section][first_key].get_value(seed)
-                for key in same_set:
-                    if not model[section][key].get_value(seed) == value:
-                        mismatched = True
-                if mismatched:
-                    log_msg = "Mismatched values in seed: " + seed.value
-                    for key in same_set:
-                        log_msg = log_msg + "\n\t" + key + " = " + model[section][key].get_value(seed)
-                    logger.log(LogLevel.Error, log_msg)
-    logger.finish()
+	logger = Logger("same check", "SameCheck.log", log_consol=[], log_file=[LogLevel.Error])
+	for seed in allSeeds:
+		for same_set in SAME_CHECKS:  # @UndefinedVariable
+			same_set.sort()
+			first_key = same_set[0]
+			for section in collections.OrderedDict(sorted(model.items())):
+				if not first_key in model[section]:
+					continue
+				mismatched = False
+				value = model[section][first_key].get_value(seed)
+				for key in same_set:
+					if not model[section][key].get_value(seed) == value:
+						mismatched = True
+				if mismatched:
+					log_msg = "Mismatched values in seed: " + seed.value
+					for key in same_set:
+						log_msg = log_msg + "\n\t" + key + " = " + model[section][key].get_value(seed)
+					logger.log(LogLevel.Error, log_msg)
+	logger.finish()
 
 def conflict_check(model):
-    logger = Logger("conflict check", "ConflictCheck.log", log_consol=[], log_file=[LogLevel.Error])
-    for seed in allSeeds:
-        for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
-            if not(commandcard_key in constraints['ToCheck']['Conflicts']):
-                continue
-            conflict_set.sort()
-            count_hotkeys = {}
-            for section in model:
-                for key, hotkey in model[section].items():
-                    if key in conflict_set:
-                        values = hotkey.get_value(seed).split(",")
-                        for value in values:
-                            if not value:
-                                continue
-                            if not value in count_hotkeys:
-                                count_hotkeys[value] = 1
-                            else:
-                                count_hotkeys[value] = count_hotkeys[value] + 1
-            
-            
-            for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
-                if count > 1:
-                    log_msg = "Conflict of hotkeys in seed: " + seed.value + " commandcard: " + commandcard_key
-                    issue_keys = []
-                    for key in conflict_set:
-                        for section in collections.OrderedDict(sorted(model.items())):
-                            if not key in model[section]:
-                                continue
-                            raw_values = model[section][key].get_value(seed)
-                            values = raw_values.split(",")
-                            values.sort()
-                            issue = False
-                            for issue_value in values:
-                                if issue_value == value:
-                                    issue = True
-                                    issue_keys.append(key)
-                            if issue:
-                                log_msg + log_msg + "\n\t" + key + " = " + raw_values
-                    if debug_parser.getboolean("Settings","verbose",fallback=False):
-                        log_msg += "\nCommand in conflict :"
-                        hint=""
-                        for issue_key in issue_keys:
-                            log_msg += "\n- " + issue_key
-                            tmp_hint = remapHint(issue_key, seed, log=True)
-                            if hint=="" or tmp_hint.count("\n")<hint.count("\n"):
-                                hint=tmp_hint
-                        log_msg += hint
-                    logger.log(LogLevel.Error, log_msg)
-    logger.finish()
-                
+	logger = Logger("conflict check", "ConflictCheck.log", log_consol=[], log_file=[LogLevel.Error])
+	for seed in allSeeds:
+		for commandcard_key, conflict_set in collections.OrderedDict(sorted(CONFLICT_CHECKS.items())).items():  # @UndefinedVariable
+			if not(commandcard_key in constraints['ToCheck']['Conflicts']):
+				continue
+			conflict_set.sort()
+			count_hotkeys = {}
+			for section in model:
+				for key, hotkey in model[section].items():
+					if key in conflict_set:
+						values = hotkey.get_value(seed).split(",")
+						for value in values:
+							if not value:
+								continue
+							if not value in count_hotkeys:
+								count_hotkeys[value] = 1
+							else:
+								count_hotkeys[value] = count_hotkeys[value] + 1
+			
+			
+			for value, count in collections.OrderedDict(sorted(count_hotkeys.items())).items():
+				if count > 1:
+					log_msg = "Conflict of hotkeys in seed: " + seed.value + " commandcard: " + commandcard_key
+					issue_keys = []
+					for key in conflict_set:
+						for section in collections.OrderedDict(sorted(model.items())):
+							if not key in model[section]:
+								continue
+							raw_values = model[section][key].get_value(seed)
+							values = raw_values.split(",")
+							values.sort()
+							issue = False
+							for issue_value in values:
+								if issue_value == value:
+									issue = True
+									issue_keys.append(key)
+							if issue:
+								log_msg + log_msg + "\n\t" + key + " = " + raw_values
+					if debug_parser.getboolean("Settings","verbose",fallback=False):
+						log_msg += "\nCommand in conflict :"
+						hint=""
+						for issue_key in issue_keys:
+							log_msg += "\n- " + issue_key
+							tmp_hint = remapHint(issue_key, seed, log=True)
+							if hint=="" or tmp_hint.count("\n")<hint.count("\n"):
+								hint=tmp_hint
+						log_msg += hint
+					logger.log(LogLevel.Error, log_msg)
+	logger.finish()
+				
 def suggest_inherit(model):
-    logger = Logger("suggest inherit", "SuggestInheritance.log", log_consol=[], log_file=[LogLevel.Info])
-    outputdict = {}
-    for section in model:
-        outputdict[section] = {}
-        for hotkey1 in model[section].values():
-            values_id = hotkey1.get_values_id()
-            for hotkey2 in model[section].values():
-                if hotkey1.name == hotkey2.name:
-                    continue
-                equal = True
-                for seed in allSeeds:
-                    value = hotkey1.get_value(seed)
-                    value2 = hotkey2.get_value(seed)
-                    value_set = set(str(value).split(","))
-                    value2_set = set(str(value2).split(","))
-                    if value_set != value2_set:
-                        equal = False
-                        break
-                if equal:
-                    if not values_id in outputdict[section]:
-                        outputdict[section][values_id] = {}
-                    if not hotkey1.name in outputdict[section][values_id]:
-                        outputdict[section][values_id][hotkey1.name] = hotkey1
-                    if not hotkey2.name in outputdict[section][values_id]:
-                        outputdict[section][values_id][hotkey2.name] = hotkey2
+	logger = Logger("suggest inherit", "SuggestInheritance.log", log_consol=[], log_file=[LogLevel.Info])
+	outputdict = {}
+	for section in model:
+		outputdict[section] = {}
+		for hotkey1 in model[section].values():
+			values_id = hotkey1.get_values_id()
+			for hotkey2 in model[section].values():
+				if hotkey1.name == hotkey2.name:
+					continue
+				equal = True
+				for seed in allSeeds:
+					value = hotkey1.get_value(seed)
+					value2 = hotkey2.get_value(seed)
+					value_set = set(str(value).split(","))
+					value2_set = set(str(value2).split(","))
+					if value_set != value2_set:
+						equal = False
+						break
+				if equal:
+					if not values_id in outputdict[section]:
+						outputdict[section][values_id] = {}
+					if not hotkey1.name in outputdict[section][values_id]:
+						outputdict[section][values_id][hotkey1.name] = hotkey1
+					if not hotkey2.name in outputdict[section][values_id]:
+						outputdict[section][values_id][hotkey2.name] = hotkey2
 
-    for section in collections.OrderedDict(sorted(outputdict.items())):
-        for values_id in collections.OrderedDict(sorted(outputdict[section].items())):
-            hotkeys = outputdict[section][values_id]
-            first = True
-            log_msg = ""
-            for hotkey in collections.OrderedDict(sorted(hotkeys.items())).values():
-                if first:
-                    for seed in allSeeds:
-                        value = hotkey.get_value(seed)
-                        log_msg = log_msg + seed.value + ": " + str(value) + "   "
-                    first = False
-                log_msg = log_msg + "\n\t" + hotkey.name + " default: " + hotkey.default
-                if hotkey.copyOf:
-                    hotkeycopyof = model[section][hotkey.copyOf]
-                    log_msg = log_msg + " copyof: " + hotkeycopyof.name + " default: " + hotkeycopyof.default
-            logger.log(LogLevel.Info, log_msg)
-    logger.finish()
+	for section in collections.OrderedDict(sorted(outputdict.items())):
+		for values_id in collections.OrderedDict(sorted(outputdict[section].items())):
+			hotkeys = outputdict[section][values_id]
+			first = True
+			log_msg = ""
+			for hotkey in collections.OrderedDict(sorted(hotkeys.items())).values():
+				if first:
+					for seed in allSeeds:
+						value = hotkey.get_value(seed)
+						log_msg = log_msg + seed.value + ": " + str(value) + "   "
+					first = False
+				log_msg = log_msg + "\n\t" + hotkey.name + " default: " + hotkey.default
+				if hotkey.copyOf:
+					hotkeycopyof = model[section][hotkey.copyOf]
+					log_msg = log_msg + " copyof: " + hotkeycopyof.name + " default: " + hotkeycopyof.default
+			logger.log(LogLevel.Info, log_msg)
+	logger.finish()
 
 def wrong_inherit(model):
-    logger = Logger("wrong inherit", "WrongInheritance.log", log_consol=[], log_file=[LogLevel.Error])
-    for section in collections.OrderedDict(sorted(model.items())):
-        for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
-            if not hotkey.copyOf:
-                continue
-            hotkeycopyof = resolve_copyof(model, section, hotkey)
-            equal = True
-            for seed in allSeeds:
-                value = hotkey.get_value(seed)
-                copyofvalue = hotkeycopyof.get_value(seed)
-                value_set = set(str(value).split(","))
-                copyofvalue_set = set(str(copyofvalue).split(","))
-                if value_set != copyofvalue_set:
-                    equal = False
-            if not equal:
-                log_msg = hotkey.name + " != " + hotkeycopyof.name + "\n"
-                for seed in allSeeds:
-                    value = hotkey.get_raw_value(seed)
-                    copyofvalue = hotkeycopyof.get_value(seed)
-                    if not value:
-                        value = " "
-                    if not copyofvalue:
-                        copyofvalue = " "
-                    log_msg = log_msg + "\t" + seed.value + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
-                default = hotkey.default
-                if not default:
-                    default = " "
-                copyofdefault = hotkeycopyof.default
-                if not copyofdefault:
-                    copyofdefault = " "
-                log_msg = log_msg + "\tD: " + str(default) + "\t" + str(copyofdefault) + " (default)"
-                logger.log(LogLevel.Error, log_msg)
-    logger.finish()
+	logger = Logger("wrong inherit", "WrongInheritance.log", log_consol=[], log_file=[LogLevel.Error])
+	for section in collections.OrderedDict(sorted(model.items())):
+		for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
+			if not hotkey.copyOf:
+				continue
+			hotkeycopyof = resolve_copyof(model, section, hotkey)
+			equal = True
+			for seed in allSeeds:
+				value = hotkey.get_value(seed)
+				copyofvalue = hotkeycopyof.get_value(seed)
+				value_set = set(str(value).split(","))
+				copyofvalue_set = set(str(copyofvalue).split(","))
+				if value_set != copyofvalue_set:
+					equal = False
+			if not equal:
+				log_msg = hotkey.name + " != " + hotkeycopyof.name + "\n"
+				for seed in allSeeds:
+					value = hotkey.get_raw_value(seed)
+					copyofvalue = hotkeycopyof.get_value(seed)
+					if not value:
+						value = " "
+					if not copyofvalue:
+						copyofvalue = " "
+					log_msg = log_msg + "\t" + seed.value + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
+				default = hotkey.default
+				if not default:
+					default = " "
+				copyofdefault = hotkeycopyof.default
+				if not copyofdefault:
+					copyofdefault = " "
+				log_msg = log_msg + "\tD: " + str(default) + "\t" + str(copyofdefault) + " (default)"
+				logger.log(LogLevel.Error, log_msg)
+	logger.finish()
 
 
 
@@ -703,7 +692,7 @@ def getConstraints():
 	constraints['CommandConflicts'] = {}
 	constraints['CommandContexts'] = {}
 	constraints['ToCheck'] = {}
-	## sublevels init 
+	## sublevels init
 	constraints['CommandInfo']['HasSame'] = []
 	constraints['CommandInfo']['HasInherit'] = []
 	constraints['CommandInfo']['HasConflict'] = []
@@ -788,7 +777,10 @@ def remapHint(command, seed, log=False):
 	else:
 		print(hint)
 
-################## manual checks #########################
+###########################################
+# Section related to Meta .SC2Hotkeys
+###########################################
+
 def CheckConsistency(model, write=True):
 	for seed in allSeeds:
 		metaseed_parser = ConfigParser()
@@ -824,25 +816,54 @@ def CheckConsistency(model, write=True):
 			with open(seed.value+".SC2HotkeysMeta",'w') as myfile:
 				metaseed_parser.write(myfile)
 
-print("  ________         ______              " + "\n"
-    " /_  __/ /_  ___  / ____/___  ________ " + "\n"
-    "  / / / __ \\/ _ \\/ /   / __ \\/ ___/ _ \\" + "\n"
-    " / / / / / /  __/ /___/ /_/ / /  /  __/" + "\n"
-    "/_/ /_/ /_/\\___/\\____/\\____/_/   \\___/ " + "\n"
-    "   ______                           __           " + "\n"
-    "  / ____/___  ____ _   _____  _____/ /____  _____" + "\n"
-    " / /   / __ \\/ __ \\ | / / _ \\/ ___/ __/ _ \\/ ___/" + "\n"
-    "/ /___/ /_/ / / / / |/ /  __/ /  / /_/  __/ /    " + "\n"
-    "\\____/\\____/_/ /_/|___/\\___/_/   \\__/\\___/_/     " + "\n"
-    "                                                 " + "\n\n")
+#def load_meta(seeds=allSeeds):
+#	model = {}
+#	for section in default_parser.sections():
+#		section_dict = {}
+#		for key in default_parser.options(section):
+#			hotkey = Hotkey(key, section)
+#			hotkey.default = default_parser.get(section,key)
+#			for seed in seeds:
+#				if hotkeyfile_parsers[seed].has_option(section, key):
+#					value = hotkeyfile_parsers[seed].get(section, key)
+##					## meta enabled case:  (could be built recurusively
+##					if debug_parser.getboolean("Settings","enablemeta",fallback=False):
+##						if hotkeyfile_parsers[seed].has_option(section, value):
+##							value = hotkeyfile_parsers[seed].get(section, value)
+#					hotkey.set_value(seed, value)
+###					continue
+##				## consider command root if in the meta file
+##				if debug_parser.getboolean("Settings","enablemeta",fallback=False):
+##					command_root = key.split("/")[0]
+##					if hotkeyfile_parsers[seed].has_option(section, command_root):
+##						value = hotkeyfile_parsers[seed].get(section, command_root)  #
+##						hotkey.set_value(seed, value)
+#			if inherit_parser.has_option(section, key):
+#				copyof = inherit_parser.get(section, key)
+#				hotkey.copyOf = copyof
+#			section_dict[key] = hotkey
+#		model[section] = section_dict
+#	return model
+
+print("""
+  ________         ______
+ /_  __/ /_  ___  / ____/___  ________
+  / / / __ \/ _ \/ /   / __ \/ ___/ _ \\
+ / / / / / /  __/ /___/ /_/ / /  /  __/
+/_/ /_/ /_/\___/\____/\____/_/   \___/
+   ______                           __
+  / ____/___  ____ _   _____  _____/ /____  _____
+ / /   / __ \/ __ \ | / / _ \/ ___/ __/ _ \/ ___/
+/ /___/ /_/ / / / / |/ /  __/ /  / /_/  __/ /
+\____/\____/_/ /_/|___/\___/_/   \__/\___/_/
+""")
 
 init_seed_hotkeyfile_parser()
-# check sections
 if debug_parser.getboolean("Settings","update_default",fallback=True):
 	new_keys_from_seed_hotkeys()
 check_defaults()
 model = create_model()
 if debug_parser.getboolean("Settings","generate",fallback=True):
-    generate(model)
+	generate(model)
 constraints = getConstraints()
 analyse(model)
