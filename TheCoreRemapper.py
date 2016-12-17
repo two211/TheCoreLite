@@ -648,6 +648,35 @@ def wrong_inherit(model):
                 logger.log(LogLevel.Error, log_msg)
     logger.finish()
 
+tmp_dict = {}
+def consistency_check(model):
+#    logger = Logger("consistency check", "test.log", log_consol=[], log_file=[LogLevel.Error])
+	for command in default_parser.options('Commands'):
+		key = command.split('/')[0]
+		if not( key in tmp_dict ):
+			tmp_dict[key] = []
+		tmp_dict[key].append(command)
+	for seed in allSeeds:
+		tmp_dict2 = {}
+		tmp_dict2['keys'] = {}
+		tmp_dict2['ok'] = {}
+		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
+			command_list = command.split('/')
+			if len(command_list) > 1:
+				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall']:
+					continue
+			command_root = command_list[0]
+			if not( command_root in tmp_dict2['ok'] ):
+				tmp_dict2['ok'][command_root] = True
+			if tmp_dict2['ok'][command_root] == True:
+				keys = model['Commands'][command].get_value(seed).split(',')
+				if not( command_root in tmp_dict2['keys'] ):
+					tmp_dict2['keys'][command_root] = keys
+				else:
+					if keys != tmp_dict2['keys'][command_root]:
+						print(command_root)
+						tmp_dict2['ok'][command_root] = False
+
 def hotkey_command_check(model):
 	logger = Logger("command conflicts with hotkeys", "HotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
 	for seed in allSeeds:
@@ -784,6 +813,7 @@ def remapHint(command, seed, log=False):
 		return("\n"+hint)
 	else:
 		print(hint)
+
 
 print("  ________         ______              " + "\n"
     " /_  __/ /_  ___  / ____/___  ________ " + "\n"
