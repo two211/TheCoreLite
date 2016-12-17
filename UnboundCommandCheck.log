@@ -31,11 +31,6 @@ Remap hints for command: Detonate/SpiderMine
 List of forbidden keys:
 []
 
-[ERROR]:  unbound command EMP/ScienceVessel, in seed TheCore Lite
-Remap hints for command: EMP/ScienceVessel
-List of forbidden keys:
-[]
-
 [ERROR]:  unbound command EnrageQueen/Queen, in seed TheCore Lite
 Remap hints for command: EnrageQueen/Queen
 List of forbidden keys:
@@ -43,11 +38,6 @@ List of forbidden keys:
 
 [ERROR]:  unbound command EvadeObserver/Observer, in seed TheCore Lite
 Remap hints for command: EvadeObserver/Observer
-List of forbidden keys:
-[]
-
-[ERROR]:  unbound command EvolveBurrowCharge/Hatchery, in seed TheCore Lite
-Remap hints for command: EvolveBurrowCharge/Hatchery
 List of forbidden keys:
 []
 
@@ -63,26 +53,6 @@ List of forbidden keys:
 
 [ERROR]:  unbound command HellfireThrusters/StarportTechLab, in seed TheCore Lite
 Remap hints for command: HellfireThrusters/StarportTechLab
-List of forbidden keys:
-[]
-
-[ERROR]:  unbound command IgniteAfterburner/Medivac, in seed TheCore Lite
-Remap hints for command: IgniteAfterburner/Medivac
-List of forbidden keys:
-[]
-
-[ERROR]:  unbound command Immortal, in seed TheCore Lite
-Remap hints for command: Immortal
-List of forbidden keys:
-[]
-
-[ERROR]:  unbound command Immortal/Gateway, in seed TheCore Lite
-Remap hints for command: Immortal/Gateway
-List of forbidden keys:
-[]
-
-[ERROR]:  unbound command Immortal/WarpGate, in seed TheCore Lite
-Remap hints for command: Immortal/WarpGate
 List of forbidden keys:
 []
 
@@ -151,11 +121,6 @@ Remap hints for command: PrimalConsume/Infestor
 List of forbidden keys:
 []
 
-[ERROR]:  unbound command Probe/KhaydarinNexus, in seed TheCore Lite
-Remap hints for command: Probe/KhaydarinNexus
-List of forbidden keys:
-[]
-
 [ERROR]:  unbound command Recall/Arbiter, in seed TheCore Lite
 Remap hints for command: Recall/Arbiter
 List of forbidden keys:
@@ -188,11 +153,6 @@ List of forbidden keys:
 
 [ERROR]:  unbound command ResearchFortifiedBunkers/EngineeringBay, in seed TheCore Lite
 Remap hints for command: ResearchFortifiedBunkers/EngineeringBay
-List of forbidden keys:
-[]
-
-[ERROR]:  unbound command ResearchGraviticBooster/Observatory, in seed TheCore Lite
-Remap hints for command: ResearchGraviticBooster/Observatory
 List of forbidden keys:
 []
 
@@ -271,11 +231,6 @@ Remap hints for command: Rift/Nexus
 List of forbidden keys:
 []
 
-[ERROR]:  unbound command SJHyperionBlink/Battlecruiser, in seed TheCore Lite
-Remap hints for command: SJHyperionBlink/Battlecruiser
-List of forbidden keys:
-[]
-
 [ERROR]:  unbound command ShapedBlast/SiegeBreakerSieged, in seed TheCore Lite
 Remap hints for command: ShapedBlast/SiegeBreakerSieged
 List of forbidden keys:
@@ -346,16 +301,11 @@ Remap hints for command: WarpinObservatory/Probe
 List of forbidden keys:
 []
 
-[ERROR]:  unbound command WormholeTransit/Predator, in seed TheCore Lite
-Remap hints for command: WormholeTransit/Predator
-List of forbidden keys:
-[]
-
 [ERROR]:  unbound command XaphanForce/Voranor, in seed TheCore Lite
 Remap hints for command: XaphanForce/Voranor
 List of forbidden keys:
 []
 
 ----------------------------
-Finished (unbound commands, within identified conflicts) - ERRORs: 71 
+Finished (unbound commands, within identified conflicts) - ERRORs: 61 
 ============================
