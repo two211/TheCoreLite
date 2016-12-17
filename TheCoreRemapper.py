@@ -50,9 +50,9 @@ class LogLevel(Enum):
 ## Support for other seeds than the pure TheCore, value = filename
 ####################################################################################
 class OtherSeeds(Enum):
-    Lite = "TheCore Lite"
-    LiteRehab = "TheCore LiteRehab"
-    LitePlus = "TheCore LitePlus"
+	Lite = "TheCore Lite"
+	LiteRehab = "TheCore LiteRehab"
+	LitePlus = "TheCore LitePlus"
 
 ####################################################################################
 ## Debug infrastructure
@@ -237,10 +237,8 @@ def new_keys_from_seed_hotkeys():
                 if not default_parser.has_option(section, key):
                     default_parser.set(section, key, "")
                     logger.log(LogLevel.Info, "New key found " + key + " added to " + default_filepath + " please add a default value")
-
-    file = open(default_filepath, 'w')
-    default_parser.write(file)
-    file.close()
+    with open(default_filepath, 'w') as myfile:
+        default_parser.write(myfile)
     order(default_filepath)
     default_parser.read(default_filepath)
     logger.finish()
@@ -259,7 +257,6 @@ def order(filepath):
 
     write_parser = ConfigParser()  # on other parser just for the safty
     write_parser.read(filepath)
-
     write_parser.add_section("Settings")
     write_parser.add_section("Hotkeys")
     write_parser.add_section("Commands")
@@ -271,9 +268,8 @@ def order(filepath):
         for item in items:
             write_parser.set(section, item[0], item[1])
 
-    file = open(filepath, 'w')
-    write_parser.write(file)
-    file.close()
+    with open(filepath, 'w') as myfile:
+	    write_parser.write(myfile)
 
 def check_defaults():
     logger = Logger("Check defaults", "Defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
@@ -299,28 +295,34 @@ def check_defaults():
                         logger.log(LogLevel.Error, "no default " + key)
     logger.finish()
 
-def create_model():
-    model = {}
-    for section in default_parser.sections():
-        section_dict = {}
-        for item in default_parser.items(section):
-            key = item[0]
-            hotkey = Hotkey(key, section)
-
-            default = item[1]
-            hotkey.default = default
-
-            for seed in allSeeds:
-                if hotkeyfile_parsers[seed].has_option(section, key):
-                    value = hotkeyfile_parsers[seed].get(section, key)  #
-                    hotkey.set_value(seed, value)
-
-            if inherit_parser.has_option(section, key):
-                copyof = inherit_parser.get(section, key)
-                hotkey.copyOf = copyof
-            section_dict[key] = hotkey
-        model[section] = section_dict
-    return model
+def create_model(seeds=allSeeds):
+	model = {}
+	for section in default_parser.sections():
+		section_dict = {}
+		for key in default_parser.options(section):
+			hotkey = Hotkey(key, section)
+			hotkey.default = default_parser.get(section,key)
+			for seed in seeds:
+				if hotkeyfile_parsers[seed].has_option(section, key):
+					value = hotkeyfile_parsers[seed].get(section, key)
+#					## meta enabled case:  (could be built recurusively
+#					if debug_parser.getboolean("Settings","enablemeta",fallback=False):
+#						if hotkeyfile_parsers[seed].has_option(section, value):
+#							value = hotkeyfile_parsers[seed].get(section, value)
+					hotkey.set_value(seed, value)
+##					continue
+#				## consider command root if in the meta file
+#				if debug_parser.getboolean("Settings","enablemeta",fallback=False):
+#					command_root = key.split("/")[0]
+#					if hotkeyfile_parsers[seed].has_option(section, command_root):
+#						value = hotkeyfile_parsers[seed].get(section, command_root)  #
+#						hotkey.set_value(seed, value)
+			if inherit_parser.has_option(section, key):
+				copyof = inherit_parser.get(section, key)
+				hotkey.copyOf = copyof
+			section_dict[key] = hotkey
+		model[section] = section_dict
+	return model
 
 def generate(seed_model):
     logger = Logger("Generation", log_consol=[LogLevel.Info], log_file=[])
@@ -648,34 +650,7 @@ def wrong_inherit(model):
                 logger.log(LogLevel.Error, log_msg)
     logger.finish()
 
-tmp_dict = {}
-def consistency_check(model):
-#    logger = Logger("consistency check", "test.log", log_consol=[], log_file=[LogLevel.Error])
-	for command in default_parser.options('Commands'):
-		key = command.split('/')[0]
-		if not( key in tmp_dict ):
-			tmp_dict[key] = []
-		tmp_dict[key].append(command)
-	for seed in allSeeds:
-		tmp_dict2 = {}
-		tmp_dict2['keys'] = {}
-		tmp_dict2['ok'] = {}
-		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
-			command_list = command.split('/')
-			if len(command_list) > 1:
-				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall']:
-					continue
-			command_root = command_list[0]
-			if not( command_root in tmp_dict2['ok'] ):
-				tmp_dict2['ok'][command_root] = True
-			if tmp_dict2['ok'][command_root] == True:
-				keys = model['Commands'][command].get_value(seed).split(',')
-				if not( command_root in tmp_dict2['keys'] ):
-					tmp_dict2['keys'][command_root] = keys
-				else:
-					if keys != tmp_dict2['keys'][command_root]:
-						print(command_root)
-						tmp_dict2['ok'][command_root] = False
+
 
 def hotkey_command_check(model):
 	logger = Logger("command conflicts with hotkeys", "HotkeyCommandCheck.log", log_consol=[], log_file=[LogLevel.Error])
@@ -727,7 +702,6 @@ def getConstraints():
 	constraints['CommandByContexts'] = {}
 	constraints['CommandConflicts'] = {}
 	constraints['CommandContexts'] = {}
-#	constraints['CommandEquivalence'] = {}	# to be implemented (for a deeper remapHint)
 	constraints['ToCheck'] = {}
 	## sublevels init 
 	constraints['CommandInfo']['HasSame'] = []
@@ -814,6 +788,41 @@ def remapHint(command, seed, log=False):
 	else:
 		print(hint)
 
+################## manual checks #########################
+def CheckConsistency(model, write=True):
+	for seed in allSeeds:
+		metaseed_parser = ConfigParser()
+		## Settings&Hotkey section
+		for section in ['Settings','Hotkeys']:
+			metaseed_parser.add_section(section)
+			for option in hotkeyfile_parsers[seed].options(section):
+				metaseed_parser.set(section,option,hotkeyfile_parsers[seed].get(section,option))
+		## Command section
+		metaseed_parser.add_section('Commands')
+		tmp_dict2 = {}
+		tmp_dict2['keys'] = {}
+		tmp_dict2['ok'] = {}
+		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
+			command_list = command.split('/')
+			if len(command_list) > 1:
+				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall']:
+					metaseed_parser.set('Commands',command,model['Commands'][command].get_value(seed))
+					continue
+			command_root = command_list[0]
+			if not( command_root in tmp_dict2['ok'] ):
+				tmp_dict2['ok'][command_root] = True
+			if tmp_dict2['ok'][command_root] == True:
+				keys = model['Commands'][command].get_value(seed).split(',')
+				if not( command_root in tmp_dict2['keys'] ):
+					tmp_dict2['keys'][command_root] = keys
+					metaseed_parser.set('Commands',command_root,model['Commands'][command].get_value(seed))
+				else:
+					if keys != tmp_dict2['keys'][command_root]:
+						print(command_root)
+						tmp_dict2['ok'][command_root] = False
+		if write:
+			with open(seed.value+".SC2HotkeysMeta",'w') as myfile:
+				metaseed_parser.write(myfile)
 
 print("  ________         ______              " + "\n"
     " /_  __/ /_  ___  / ____/___  ________ " + "\n"
