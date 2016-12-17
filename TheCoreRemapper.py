@@ -69,22 +69,6 @@ debug = debug_parser.getboolean("Settings","debug",fallback=False)
 if not(debug):
 	debug_parser = ConfigParser()
 
-####################################################################################
-## Seed list to be considered
-####################################################################################
-
-## List allSeeds to browse all hotkey seed
-allSeeds = []
-if debug_parser.getboolean("Settings","allseeds",fallback=True):
-	for race in Races:
-		allSeeds.append(race)
-	for seed in OtherSeeds:
-		allSeeds.append(seed)
-else:
-	for race in debug_parser.options("Races"):
-		allSeeds.append(Races[race])
-	for seed in debug_parser.options("OtherSeeds"):
-		allSeeds.append(OtherSeeds[seed])
 
 ####################################################################################
 
@@ -139,61 +123,35 @@ class Logger:
 			msg_str = msg_str + "\n"
 		return msg_str
 
-# Read the settings
-settings_parser = ConfigParser()
-settings_parser.read('MapDefinitions.ini')
-
-layout_parser = ConfigParser()
-layout_parser.read('KeyboardLayouts.ini')
-
-default_filepath = 'Defaults.ini'
-default_parser = ConfigParser()
-default_parser.read(default_filepath)
-
-ddefault_filepath = 'DifferentDefault.ini'
-ddefault_parser = ConfigParser()
-ddefault_parser.read(ddefault_filepath)
-
-inherit_filepath = 'Inheritance.ini'
-inherit_parser = ConfigParser()
-inherit_parser.read(inherit_filepath)
-
-prefix = settings_parser.get("Filenames", "Prefix")
-suffix = settings_parser.get("Filenames", "Suffix")
-seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
-
-hotkeyfile_parsers = {}
-
 ## class Hotkey modified : object structure now allows OtherSeeds
 class Hotkey:
-	seedTuple=tuple(allSeeds)
 
-	def __init__(self, name, section, default=None, copyOf=None):
+	def __init__(self, seeds, name, section, default=None, copyOf=None):
 		self.name = name
 		self.section = section
 		self.key = {}
 		self.default = default
 		self.copyOf = copyOf
 		# init to None for all seed
-		for seed in self.seedTuple:
+		for seed in seeds:
 			self.key[seed] = None
 
-	def set_value(self, race, value):
-		self.key[race] = value
+	def set_value(self, seed, value):
+		self.key[seed] = value
 
-	def get_raw_value(self, race):
-		return self.key[race]
+	def get_raw_value(self, seed):
+		return self.key[seed]
 
-	def get_value(self, race):
-		value = self.get_raw_value(race)
+	def get_value(self, seed):
+		value = self.get_raw_value(seed)
 		if value is None:
 			value = self.default
 		return value
 
 	def get_values_id(self):
 		values = ""
-		for race in self.seedTuple:
-			value = self.get_value(race)
+		for seed in self.key:
+			value = self.get_value(seed)
 			first = True
 			alternates = value.split(",")
 			alternates.sort()
@@ -203,20 +161,25 @@ class Hotkey:
 					first = False
 				else:
 					value = value + "," + alternate
-			values = values + race.value + ":" + value + "\n"
+			values = values + seed.value + ":" + value + "\n"
 		return values
 
 def init_seed_hotkeyfile_parser():
+	hotkeyfile_parsers = {}
+	allSeeds = []
 	for race in Races:
 		hotkeyfile_parser = ConfigParser()
-		hotkeyfilepath = create_filepath( prefix + thecore_tag(race, Sides.Left, Sizes.Medium) )
-		hotkeyfile_parser.read(hotkeyfilepath)
-		hotkeyfile_parsers[race] = hotkeyfile_parser
+		hotkeyfile_parser.read(create_filepath( prefix + thecore_tag(race, Sides.Left, Sizes.Medium) ) )
+		if len(hotkeyfile_parser.sections()) > 0:
+			hotkeyfile_parsers[race] = hotkeyfile_parser
+			allSeeds.append(race)
 	for seed in OtherSeeds:
 		hotkeyfile_parser = ConfigParser()
-		hotkeyfilepath = create_filepath(seed.value)
-		hotkeyfile_parser.read(hotkeyfilepath)
-		hotkeyfile_parsers[seed] = hotkeyfile_parser
+		hotkeyfile_parser.read(create_filepath( seed.value ) )
+		if len(hotkeyfile_parser.sections()) > 0:
+			hotkeyfile_parsers[seed] = hotkeyfile_parser
+			allSeeds.append(seed)
+	return hotkeyfile_parsers, allSeeds
 
 def thecore_tag(race, side, size):
 	return(" " + race.value + side.value + size.value + " ")
@@ -228,9 +191,9 @@ def create_filepath(string, path=""):
 		filepath = path + "/" + filename
 	return filepath
 
-def new_keys_from_seed_hotkeys():
+def new_keys_from_seed_hotkeys(default_parser,hotkeyfile_parsers):
 	logger = Logger("Search for new Keys in seed layouts", log_consol=[LogLevel.Info], log_file=[])
-	for seed in allSeeds:
+	for seed in hotkeyfile_parsers:
 		for section in hotkeyfile_parsers[seed].sections():
 			for item in hotkeyfile_parsers[seed].items(section):
 				key = item[0]
@@ -242,6 +205,7 @@ def new_keys_from_seed_hotkeys():
 	order(default_filepath)
 	default_parser.read(default_filepath)
 	logger.finish()
+	return default_parser
 
 def order(filepath):
 	read_parser = ConfigParser()
@@ -271,7 +235,7 @@ def order(filepath):
 	with open(filepath, 'w') as myfile:
 		write_parser.write(myfile)
 
-def check_defaults():
+def check_defaults(default_parser):
 	logger = Logger("Check defaults", "Defaults.log", log_consol=[LogLevel.Error], log_file=[LogLevel.Warn, LogLevel.Error])
 	for section in default_parser.sections():
 		for item in default_parser.items(section):
@@ -280,8 +244,8 @@ def check_defaults():
 			multidefault = ddefault_parser.has_option(section, key)
 			if not default or multidefault:
 				seedhas = True
-				for race in Races:
-					if not hotkeyfile_parsers[race].has_option(section, key):
+				for seed in hotkeyfile_parsers:
+					if not hotkeyfile_parsers[seed].has_option(section, key):
 						seedhas = False
 				inherit = inherit_parser.has_option(section, key)
 
@@ -295,13 +259,12 @@ def check_defaults():
 						logger.log(LogLevel.Error, "no default " + key)
 	logger.finish()
 
-def create_model(seeds=allSeeds):
+def create_model(seeds):
 	model = {}
 	for section in default_parser.sections():
 		section_dict = {}
 		for key in default_parser.options(section):
-			hotkey = Hotkey(key, section)
-			hotkey.default = default_parser.get(section,key)
+			hotkey = Hotkey(seeds, key, section, default=default_parser.get(section,key))
 			for seed in seeds:
 				if hotkeyfile_parsers[seed].has_option(section, key):
 					value = hotkeyfile_parsers[seed].get(section, key)
@@ -313,10 +276,10 @@ def create_model(seeds=allSeeds):
 		model[section] = section_dict
 	return model
 
-def generate(seed_model):
+def generate(seeds,seed_model):
 	logger = Logger("Generation", log_consol=[LogLevel.Info], log_file=[])
 	seed_models = init_models()
-	for seed in allSeeds:
+	for seed in seeds:
 		if seed in Races:
 			logger.log(LogLevel.Info, "generate model for race: " + seed.value + " side: L size: M keyboardlayout: " + seed_layout)
 			seed_models[seed][Sides.Left][Sizes.Medium] = extract_race(seed_model, seed)
@@ -858,12 +821,47 @@ print("""
 \____/\____/_/ /_/|___/\___/_/   \__/\___/_/
 """)
 
-init_seed_hotkeyfile_parser()
+# Read the settings
+settings_parser = ConfigParser()
+settings_parser.read('MapDefinitions.ini')
+prefix = settings_parser.get("Filenames", "Prefix")
+suffix = settings_parser.get("Filenames", "Suffix")
+seed_layout = settings_parser.get("Filenames", "Seed_files_folder")
+
+layout_parser = ConfigParser()
+layout_parser.read('KeyboardLayouts.ini')
+
+default_filepath = 'Defaults.ini'
+default_parser = ConfigParser()
+default_parser.read(default_filepath)
+
+ddefault_filepath = 'DifferentDefault.ini'
+ddefault_parser = ConfigParser()
+ddefault_parser.read(ddefault_filepath)
+
+inherit_filepath = 'Inheritance.ini'
+inherit_parser = ConfigParser()
+inherit_parser.read(inherit_filepath)
+
+## Consider all existing seeds for defaults handling/checks
+hotkeyfile_parsers, allSeeds = init_seed_hotkeyfile_parser()
 if debug_parser.getboolean("Settings","update_default",fallback=True):
-	new_keys_from_seed_hotkeys()
-check_defaults()
-model = create_model()
+	default_parser = new_keys_from_seed_hotkeys(default_parser,hotkeyfile_parsers)
+check_defaults(default_parser)
+
+## Possibly reduce seed list to be considered
+if not(debug_parser.getboolean("Settings","allseeds",fallback=True)):
+	allSeeds = []
+	for race in debug_parser.options("Races"):
+		allSeeds.append(Races[race])
+	for seed in debug_parser.options("OtherSeeds"):
+		allSeeds.append(OtherSeeds[seed])
+
+## Create model based on wanted seeds
+model = create_model(allSeeds)
 if debug_parser.getboolean("Settings","generate",fallback=True):
-	generate(model)
+	generate(allSeeds,model)
+
+## Check model against constraints
 constraints = getConstraints()
 analyse(model)
