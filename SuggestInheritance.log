@@ -125,8 +125,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopMassFrenzy/ZagaraVoidCoop default: E
 	ZagaraVoidCoopMassFrenzy/ZagaraVoidCoopBurrowed default: E
 
-[INFO]: TheCore Lite: CapsLock,4   
+[INFO]: TheCore Lite: 4,CapsLock   
 	CorruptionAbility/Corruptor default: C
+	CorruptionAbility/Spotter default: C
 	InfestedTerrans/Infestor default: T
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
@@ -268,6 +269,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	IgniteAfterburners/Liberator default: B
 	IgniteAfterburners/SiegeTank default: B
 	IgniteAfterburners/VikingAssault default: B
+	IgniteAfterburners/Vulture default: B
 	ImmortalShakurasShadowCannon/ImmortalAiur default: C
 	ImmortalShakurasShadowCannon/ImmortalShakuras default: C
 	InfestorConsumption/DefilerMP default: C
@@ -300,7 +302,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Probe/SuperWarpGate default: E
 	PrologueVoidArmor/PrologueZeratul default: V
 	PrologueVoidArmor/ZeratulVoidAiur01 default: V
-	QueenClassicParasite/SIQueen default: 
 	QueenMPInfestCommandCenter/QueenMP default: C
 	RapidIncubation/InfestationPit default: A
 	RapidIncubation/SwarmHost default: A
@@ -351,6 +352,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SOAMothershipLineAttack/SOAMothershipv4 default: R
 	SS_LeviathanTentacleAttackL1NoDelay/SS_Plane default: C
 	SS_TerraTronSawAttack/SS_Plane default: W
+	Salvage/Bunker default: V
+	Salvage/KelMorianGrenadeTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/KelMorianMissileTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/MissileTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/NovaACLaserTurret default: 
+	Salvage/PerditionTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/SIMissileTurret default: 
+	Salvage/SIMissileTurretFlying default: 
 	Scan/CommandCenter default: C
 	Scan/OrbitalCommand default: C
 	SetRallyPointSwarmHost/SwarmHostBurrowedMP default: Y
@@ -358,8 +367,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpawnBanelings/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
 	SpawnCorruptor/SpacePlatformVentsUnit default: R, C
 	SpectreDomination/Spectre default: D
-	SpiderMine/Bunker default: E
-	SpiderMine/Vulture default: E
 	SquadSight/Monitor default: Q
 	StartColonistVehicle/ColonistVehicleUnit default: S
 	StartColonistVehicle/ColonistVehicleUnit01 default: S
@@ -441,7 +448,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CausticSpray/Corruptor default: C
 	ChannelSnipe/Ghost default: R
 	Contaminate/Overseer default: E
-	CorruptionAbility/Spotter default: C
 	Feedback/AnAleemController default:  copyof: Feedback/HighTemplar default: F
 	Feedback/Archon default: F
 	Feedback/HighArchonTemplar default: F copyof: Feedback/HighTemplar default: F
@@ -494,6 +500,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ProtossBuildAdvanced/Harvester default:  copyof: ProtossBuildAdvanced/Probe default: V
 	ProtossBuildAdvanced/Probe default: V
 	Queen default: Q
+	QueenClassicParasite/QueenClassic default: R
+	QueenClassicParasite/SIQueen default: 
 	QueenCoop default: Q copyof: Queen default: Q
 	ResearchKaraxEnergyRegenUpgrade/SentryCampaignBase default: S
 	ResearchKaraxEnergyRegenUpgrade/SentryPurifier default: S
@@ -991,7 +999,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HealingPsionicStorm/HighArchonTemplar default: H
 	HealingPsionicStorm/HighTemplar default: H
 	HyperionAdvancedPDD/HyperionVoidCoop default: R
-	IgniteAfterburners/Vulture default: B
 	ImmortalityProtocol/Thor default: I
 	ImmortalityProtocol/ThorWreckage default: I
 	InfestationPit/Drone default: I
@@ -1041,8 +1048,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIInfestedMarine/SIBarracks default: 
 	SJHyperionFighters/SJHyperion default: W, T
 	SS_LeviathanTentacleAttackL2/SS_Plane default: F
-	Salvage/SIMissileTurret default: 
-	Salvage/SIMissileTurretFlying default: 
 	SelfRepair/Thor default: R
 	SelfRepair/ThorWreckageSwann default: R
 	SentryTaldarimForceField/Monitor default: F
@@ -1050,6 +1055,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SiegeTank/VoidRift default: S
 	SiegeTank/VoidRiftUnselectable default: S
 	SkyTankLaserBeamSlow/SkyTank default: W
+	SpiderMineReplenish/Vulture default: R, T
 	SpineCrawler/Drone default: C
 	SwannCommanderRebuild default: R
 	SwarmQueenHydralisk/HugeSwarmQueen default: D
@@ -1363,7 +1369,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PrimalBuildingRoot/PrimalTownHallUprooted default: R
 	PrimalRoach/PrimalTownHall default: R
 	QueenClassic default: Q
-	QueenClassicParasite/QueenClassic default: R
 	Raven/VoidRift default: R, B
 	Raven/VoidRiftUnselectable default: R, B
 	Reactor/Barracks default: C
@@ -1410,19 +1415,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Roach/VoidRiftUnselectable default: R
 	SJHyperionLightningStorm/SJHyperion default: R
 	SS_LeviathanTentacleAttackR1NoDelay/SS_Plane default: X
-	Salvage/Bunker default: V
-	Salvage/KelMorianGrenadeTurret default: V copyof: Salvage/Bunker default: V
-	Salvage/KelMorianMissileTurret default: V copyof: Salvage/Bunker default: V
-	Salvage/MissileTurret default: V copyof: Salvage/Bunker default: V
-	Salvage/NovaACLaserTurret default: 
-	Salvage/PerditionTurret default: V copyof: Salvage/Bunker default: V
 	ShieldBatteryRecharge/ShieldBattery default: R
 	SiegeTank_BlackOpsUnsiege default: 
 	Snipe/GhostVulture default: R
 	SpawnBroodLord/Leviathan default: B
 	SpawnBroodLord/SpacePlatformVentsUnit default: B
+	SpiderMine/Bunker default: E
+	SpiderMine/Vulture default: E
 	SpiderMineReplenish/MercVulture default: R
-	SpiderMineReplenish/Vulture default: R, T
 	SpineCrawlerRoot/SpineCrawlerUprooted default: R
 	Spire/Drone default: S
 	SporeColony/CreepColony default: R

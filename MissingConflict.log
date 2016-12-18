@@ -227,7 +227,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =Space
 
 [ERROR]: QueenClassicParasite/SIQueen not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: QueenMPSpawnBroodlings/SIQueen not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -434,13 +434,13 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: Salvage/NovaACLaserTurret not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =C
 
 [ERROR]: Salvage/SIMissileTurret not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =C
 
 [ERROR]: Salvage/SIMissileTurretFlying not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =C
 
 [ERROR]: ShapedBlast/SiegeBreakerSieged not related to a conflict
 in seed TheCore Lite, keys =
