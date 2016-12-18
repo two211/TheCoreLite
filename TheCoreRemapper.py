@@ -760,7 +760,7 @@ def CheckConsistency(model, write=True):
 		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
 			command_list = command.split('/')
 			if len(command_list) > 1:
-				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall']:
+				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall','MutaliskViper']:
 					metaseed_parser.set('Commands',command,model['Commands'][command].get_value(seed))
 					continue
 			command_root = command_list[0]
@@ -807,6 +807,12 @@ def CheckConsistency(model, write=True):
 #			section_dict[key] = hotkey
 #		model[section] = section_dict
 #	return model
+
+
+
+####################################################################################
+## MAIN
+####################################################################################
 
 print("""
   ________         ______
