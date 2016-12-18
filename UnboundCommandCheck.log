@@ -4,7 +4,6 @@ Start unbound commands, within identified conflicts (log file: UnboundCommandChe
 [ERROR]:  unbound command ActivateIbikisCannon/PlanetaryFortress, in seed TheCore Lite
 [ERROR]:  unbound command Aggressive/LurkerMPBurrowed, in seed TheCore Lite
 [ERROR]:  unbound command BattleRage/Khraxus, in seed TheCore Lite
-[ERROR]:  unbound command BuildScarab/Reaver, in seed TheCore Lite
 [ERROR]:  unbound command DarkSwarm/Infestor, in seed TheCore Lite
 [ERROR]:  unbound command Detonate/SpiderMine, in seed TheCore Lite
 [ERROR]:  unbound command EnrageQueen/Queen, in seed TheCore Lite
@@ -63,5 +62,5 @@ Start unbound commands, within identified conflicts (log file: UnboundCommandChe
 [ERROR]:  unbound command WarpinObservatory/Probe, in seed TheCore Lite
 [ERROR]:  unbound command XaphanForce/Voranor, in seed TheCore Lite
 ----------------------------
-Finished (unbound commands, within identified conflicts) - ERRORs: 61 
+Finished (unbound commands, within identified conflicts) - ERRORs: 60 
 ============================
