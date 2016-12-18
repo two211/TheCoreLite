@@ -126,7 +126,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopMassFrenzy/ZagaraVoidCoopBurrowed default: E
 
 [INFO]: TheCore Lite: CapsLock,4   
-	CorruptionAbility/Corruptor default: C
 	InfestedTerrans/Infestor default: T
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
@@ -268,6 +267,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	IgniteAfterburners/Liberator default: B
 	IgniteAfterburners/SiegeTank default: B
 	IgniteAfterburners/VikingAssault default: B
+	IgniteAfterburners/Vulture default: B
 	ImmortalShakurasShadowCannon/ImmortalAiur default: C
 	ImmortalShakurasShadowCannon/ImmortalShakuras default: C
 	InfestorConsumption/DefilerMP default: C
@@ -280,7 +280,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganVoidSpawnBanelings/KerriganVoidUlnar02 default: E
 	LockOnUpgraded/Cyclone default: C
 	MindControl/HiveMindEmulator default: C
-	MorphtoDevourer/Mutalisk default: D
 	NPSwarm/Infestor default: E copyof: NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor2 default: E copyof: NeuralParasite/Infestor default: E
@@ -300,7 +299,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Probe/SuperWarpGate default: E
 	PrologueVoidArmor/PrologueZeratul default: V
 	PrologueVoidArmor/ZeratulVoidAiur01 default: V
-	QueenClassicParasite/SIQueen default: 
 	QueenMPInfestCommandCenter/QueenMP default: C
 	RapidIncubation/InfestationPit default: A
 	RapidIncubation/SwarmHost default: A
@@ -351,6 +349,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SOAMothershipLineAttack/SOAMothershipv4 default: R
 	SS_LeviathanTentacleAttackL1NoDelay/SS_Plane default: C
 	SS_TerraTronSawAttack/SS_Plane default: W
+	Salvage/Bunker default: V
+	Salvage/KelMorianGrenadeTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/KelMorianMissileTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/MissileTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/NovaACLaserTurret default: 
+	Salvage/PerditionTurret default: V copyof: Salvage/Bunker default: V
+	Salvage/SIMissileTurret default: 
+	Salvage/SIMissileTurretFlying default: 
 	Scan/CommandCenter default: C
 	Scan/OrbitalCommand default: C
 	SetRallyPointSwarmHost/SwarmHostBurrowedMP default: Y
@@ -358,8 +364,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpawnBanelings/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
 	SpawnCorruptor/SpacePlatformVentsUnit default: R, C
 	SpectreDomination/Spectre default: D
-	SpiderMine/Bunker default: E
-	SpiderMine/Vulture default: E
 	SquadSight/Monitor default: Q
 	StartColonistVehicle/ColonistVehicleUnit default: S
 	StartColonistVehicle/ColonistVehicleUnit01 default: S
@@ -441,7 +445,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CausticSpray/Corruptor default: C
 	ChannelSnipe/Ghost default: R
 	Contaminate/Overseer default: E
-	CorruptionAbility/Spotter default: C
 	Feedback/AnAleemController default:  copyof: Feedback/HighTemplar default: F
 	Feedback/Archon default: F
 	Feedback/HighArchonTemplar default: F copyof: Feedback/HighTemplar default: F
@@ -494,6 +497,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ProtossBuildAdvanced/Harvester default:  copyof: ProtossBuildAdvanced/Probe default: V
 	ProtossBuildAdvanced/Probe default: V
 	Queen default: Q
+	QueenClassicParasite/QueenClassic default: R
+	QueenClassicParasite/SIQueen default: 
 	QueenCoop default: Q copyof: Queen default: Q
 	ResearchKaraxEnergyRegenUpgrade/SentryCampaignBase default: S
 	ResearchKaraxEnergyRegenUpgrade/SentryPurifier default: S
@@ -536,6 +541,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BiodomeUnloadAll/InfestableBiodome default: U
 	BuildPointDefenseDrone/Raven default: D copyof: PointDefenseDrone/Raven default: D
 	BunkerUnloadAll default: D
+	CorruptionAbility/Corruptor default: C
+	CorruptionAbility/Spotter default: C
 	HerculesUnloadAll/Hercules default: D copyof: BunkerUnloadAll default: D
 	HerculesUnloadAll/HerculesCrashing default: D
 	HerculesUnloadAll/NovaShip default: D
@@ -659,17 +666,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Archon/VoidRift default: N
 	Armory/SCV default: A
 	ArtanisAstralWind/ArtanisVoid default: E
-	Baneling/HotSRaptor default: E copyof: Baneling/Zergling default: E
-	Baneling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
-	Baneling/Zergling default: E
-	Baneling/Zergling2 default:  copyof: Baneling/Zergling default: E
 	Banshee/Epilogue02VoidRift default: E
 	Banshee/VoidRift default: E
 	Banshee/VoidRiftUnselectable default: E
 	Banshee/VoidThrasher default: E
 	Banshee/VoidThrasherWalker default: E
-	BroodLord/Corruptor default: B
-	BroodLord/MutaliskBroodlord default: B copyof: BroodLord/Corruptor default: B
 	BuildKelMorianAutoTurret/KelMorianWorker default: A
 	CalldownMULE/CommandCenter default: E copyof: CalldownMULE/OrbitalCommand default: E
 	CalldownMULE/OrbitalCommand default: E
@@ -694,14 +695,20 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EngineeringBay/SCV default: E
 	EvolutionChamber/Drone default: V
 	EvolveAnabolicSynthesis2/UltraliskCavern default: A
-	EvolveBanelingHeal/BanelingNest default: E
-	EvolveBileLauncherIncreasedRange/SpawningPool default: B
 	EvolveBurrowCharge/Hatchery default: 
 	EvolveBurrowCharge/UltraliskCavern default: B
-	EvolveCorrosiveBileDamageIncrease/RoachWarren default: E
+	EvolveCentrificalHooks/BanelingNest default: C
+	EvolveGlialRegeneration/GreaterRoachWarren default: G
+	EvolveGlialRegeneration/RoachWarren default: G
 	EvolveKerriganHeroicFortitude/EvolutionChamber default: F
+	EvolveMuscularAugments/HydraliskDen default: H
+	EvolveMuscularAugments/ImpalerDen default: H
+	EvolveMuscularAugments/LurkerDen default: H
+	EvolveMuscularAugments/LurkerDenMP default: H
 	EvolveSIDiamondbackImprovedEnsnare/SIFactoryTechLab default: 
 	EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab default: 
+	EvolveSunderingGlave/GreaterSpire default: S
+	EvolveSunderingGlave/Spire default: S
 	ExplosiveMode default: D
 	FaceEmbrace/Viper default: D
 	FenixWhirlwind/FenixChampion default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
@@ -712,23 +719,16 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	FungalGrowth/Infestor2 default: F copyof: FungalGrowth/Infestor default: F
 	FungalGrowth/InfestorBurrowed default: F
 	GreaterRoachWarren/RoachWarren default: 
-	GreaterSpire/Spire default: G
-	GreaterSpireBroodlord/Spire default: G copyof: GreaterSpire/Spire default: G
-	GreaterSpireViper/Spire default: G
 	GrowHugeQueen/LargeSwarmQueen default: G copyof: GrowSwarmQueen/LarvalQueen default: G
 	GrowLargeQueen/SwarmQueen default: G copyof: GrowSwarmQueen/LarvalQueen default: G
 	GrowSwarmQueen/LarvalQueen default: G
 	Hellion/Factory default: E, R
 	HighArchonPsiStorm/HighArchonTemplar default: T copyof: PsiStorm/HighTemplar default: T
-	Hive/Lair default: H copyof: Lair/Hatchery default: L
 	HoverSiegeMode default: E
-	Impaler/HydraliskImpaler default: E, I copyof: LurkerMP/Hydralisk default: E
-	ImpalerDen/HydraliskDen default: D copyof: Lair/Hatchery default: L
 	Irradiate/ScienceVessel default: R
 	KerriganEpilogue03Extinction/KerriganEpilogue03 default: E
 	KerriganVoidApocalypse/KerriganVoidUlnar02 default: D
 	KhalaShockwave/Immortal default:  copyof: PsiStorm/HighTemplar default: T
-	Lair/Hatchery default: L
 	Liberator/Starport default: N
 	LightofAiur/Oracle default: T
 	LocustFlyingLaunch/SwarmHostSplitABurrowed default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
@@ -738,11 +738,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LocustLaunch/SwarmHostRooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustLaunchCreeper/SwarmHostSplitBBurrowed default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustLaunchCreeper/SwarmHostSplitBRooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
-	Lurker/Hydralisk default:  copyof: LurkerMP/Hydralisk default: E
-	Lurker/HydraliskImpaler default: 
-	Lurker/HydraliskLurker default: E copyof: LurkerMP/Hydralisk default: E
-	LurkerDen/HydraliskDen default: D
-	LurkerMP/Hydralisk default: E
 	Marine/Barracks default: A
 	MassRoachDrop/ZagaraReviveCocoon default: D
 	MassRoachDrop/ZagaraVoidCoop default: D
@@ -753,16 +748,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MindBlast/Tosh default: B
 	MissilePods/SkyTank default: E
 	MohandarOmnislash/VorazunChampion default: E
-	MorphToGuardian/Mutalisk default: G
 	MorphToHoverHellion/HoverHellion default: E
-	MorphtoHunter/HotSRaptor default: E copyof: Baneling/Zergling default: E
-	MorphtoHunter/HotSSwarmling default: E copyof: Baneling/Zergling default: E
-	MorphtoOverseerNormal/Overseer default: T
-	MorphtoSplitterling/HotSRaptor default: E copyof: Baneling/Zergling default: E
-	MorphtoSplitterling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
+	MorphtoDevourer/Mutalisk default: D
 	Mothership/Nexus default: M copyof: MothershipCore/Nexus default: M
 	MothershipCore/Nexus default: M
-	MutateintoLurkerDen/HydraliskDen default: D
 	NarudEpilogueSummonShadeofNarud/NarudEpilogue default: E
 	Oracle/VoidRiftUnselectable default: E
 	OracleBuildStasisTrap/Oracle default: T
@@ -798,9 +787,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsionicLift/KerriganVoidBurrowed default: T, W copyof: PsionicLift/K5KerriganBurrowed default: W, T
 	QueenMPEnsnare/QueenClassic default: E
 	QueenMPEnsnare/QueenMP default: E
-	Ravager/Roach default: V
-	Ravager/RoachCorpser default: V
-	Ravager/RoachVile default: V
 	RepairDrones/Carrier default: E
 	RepairDrones/CarrierAiur default: E
 	RepairSupportDroneB/RoguePurifier default: B
@@ -820,7 +806,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchKaraxTurretAttackSpeed/PhotonCannon default: E
 	ResearchOracleStasisWardUpgrade/FleetBeacon default: A
 	ResearchSILiberatorImprovedAoeAttack/SIStarportTechLab default: 
-	ResearchSeismicSpinesAbathur/ImpalerDen default: E
 	ResearchShieldWall/BarracksTechLab default: C
 	ResearchShieldWall/BarracksTechReactor default: C copyof: ResearchShieldWall/BarracksTechLab default: C
 	ResearchShockwaveMissileBattery/StarportTechLab default: S
@@ -880,7 +865,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	UpgradeToStargateWarp/Stargate default: G copyof: UpgradeToWarpGate/Gateway default: G
 	UpgradeToWarpGate/Gateway default: G
 	Viper/Larva default: E
-	Viper/MutaliskViper default: E copyof: BroodLord/Corruptor default: B
 	Viper/VoidRift default: E
 	Viper/VoidRiftUnselectable default: E
 	VoidHighTemplarPsiOrb/HighTemplarTaldarim default: T
@@ -903,6 +887,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	YagdraFirebreath/Yagdra default: B
 	ZeratulStun/Zeratul default: V
 	ZeratulStun/ZeratulVoid default: V copyof: ZeratulStun/Zeratul default: V
+	hydraliskspeed/HydraliskDen default: G
+	hydraliskspeed/LurkerDen default: G copyof: hydraliskspeed/LurkerDenMP default: G
+	hydraliskspeed/LurkerDenMP default: G
+	overlordspeed default: P
+	zerglingmovementspeed/SpawningPool default: M
 
 [INFO]: TheCore Lite: E,Space   
 	BioPlasmidDischarge/Leviathan default: B
@@ -944,7 +933,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Arbiter/StargateWarp default: A
 	ArbiterMPStasisField/ArbiterMP default: F
 	ArchAngelCoopMissileShot/ArchAngelCoopAssault default: F
+	Baneling/HotSRaptor default: E copyof: Baneling/Zergling default: E
+	Baneling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
+	Baneling/Zergling default: E
+	Baneling/Zergling2 default:  copyof: Baneling/Zergling default: E
 	BansheeSpeed/StarportTechLab default: B
+	BroodLord/Corruptor default: B
+	BroodLord/MutaliskBroodlord default: B copyof: BroodLord/Corruptor default: B
 	BroodLord/VoidRift default: B
 	BroodLord/VoidRiftUnselectable default: B
 	BrutaliskDeepTunnel/Brutalisk default: D
@@ -973,27 +968,27 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DefensiveMatrix/MengskBC default: D
 	Defiler/Larva default: F
 	EnableBuildingAttackScourge/Scourge default: F
-	EvolveCentrificalHooks/BanelingNest default: C
-	EvolveGlialRegeneration/GreaterRoachWarren default: G
-	EvolveGlialRegeneration/RoachWarren default: G
-	EvolveMuscularAugments/HydraliskDen default: H
-	EvolveMuscularAugments/ImpalerDen default: H
-	EvolveMuscularAugments/LurkerDen default: H
-	EvolveMuscularAugments/LurkerDenMP default: H
-	EvolveSunderingGlave/GreaterSpire default: S
-	EvolveSunderingGlave/Spire default: S
+	EvolveBanelingHeal/BanelingNest default: E
+	EvolveBileLauncherIncreasedRange/SpawningPool default: B
+	EvolveCorrosiveBileDamageIncrease/RoachWarren default: E
 	EvolveToLeviathan/Devourer default: L
+	EvolveToLeviathan/Mutalisk default: L
 	EvolveToLeviathan/Viper default: L
 	GhostHoldFire/GhostVulture default: F
 	GravitonBeamUrun/Urun default: F
+	GreaterSpire/Spire default: G
+	GreaterSpireBroodlord/Spire default: G copyof: GreaterSpire/Spire default: G
+	GreaterSpireViper/Spire default: G
 	Halt default: T
 	HealingPsionicStorm/Archon default: H
 	HealingPsionicStorm/HighArchonTemplar default: H
 	HealingPsionicStorm/HighTemplar default: H
+	Hive/Lair default: H copyof: Lair/Hatchery default: L
 	HyperionAdvancedPDD/HyperionVoidCoop default: R
-	IgniteAfterburners/Vulture default: B
 	ImmortalityProtocol/Thor default: I
 	ImmortalityProtocol/ThorWreckage default: I
+	Impaler/HydraliskImpaler default: E, I copyof: LurkerMP/Hydralisk default: E
+	ImpalerDen/HydraliskDen default: D copyof: Lair/Hatchery default: L
 	InfestationPit/Drone default: I
 	Infestor/Larva default: F
 	K5DropPods/K5Kerrigan default: D copyof: K5Leviathan/K5Kerrigan default: D
@@ -1002,20 +997,35 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	K5Leviathan/K5KerriganPsiStrike default: D
 	K5Leviathan/KerriganVoid default: D copyof: K5Leviathan/K5Kerrigan default: D
 	K5Leviathan/KerriganVoidBurrowed default: D copyof: K5Leviathan/K5KerriganBurrowed default: D
+	Lair/Hatchery default: L
 	Land default: L
 	LeviathanSpawnMutalisk/Leviathan default: U
 	LeviathanSpawnMutalisk/SpacePlatformVentsUnit default: U
 	Lift default: L
+	Lurker/Hydralisk default:  copyof: LurkerMP/Hydralisk default: E
+	Lurker/HydraliskImpaler default: 
+	Lurker/HydraliskLurker default: E copyof: LurkerMP/Hydralisk default: E
+	LurkerDen/HydraliskDen default: D
 	LurkerHoldFire/LurkerBurrowed default: F copyof: LurkerHoldFire/LurkerMPBurrowed default: F
 	LurkerHoldFire/LurkerMPBurrowed default: F
+	LurkerMP/Hydralisk default: E
 	MercMedicHealToggle/MercMedic default: R
 	MorphtoDefiler/Larva default:  copyof: Infestor/Larva default: F
+	MorphtoHunter/HotSRaptor default: E copyof: Baneling/Zergling default: E
+	MorphtoHunter/HotSSwarmling default: E copyof: Baneling/Zergling default: E
 	MorphtoOverlordTransport/Overlord default: T
+	MorphtoOverseerNormal/Overseer default: T
+	MorphtoSplitterling/HotSRaptor default: E copyof: Baneling/Zergling default: E
+	MorphtoSplitterling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
+	MutateintoLurkerDen/HydraliskDen default: D
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	PlanetCrackerOff/MothershipAiur06 default: C
 	PrimalFlyer/PrimalTownHall default: F
 	PrimalUltralisk/PrimalTownHallUprooted default: U
+	Ravager/Roach default: V
+	Ravager/RoachCorpser default: V
+	Ravager/RoachVile default: V
 	ReleaseMinion/Nova default: E, C
 	ReleaseMinion/Spectre default: C
 	ResearchDarkTemplarBlink/DarkShrine default: B
@@ -1034,6 +1044,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchReaverIncreasedScarabSplashRadius/Reaver default: A
 	ResearchReaverIncreasedScarabSplashRadius/RoboticsBay default: A
 	ResearchSIQueenEnergy/SIStarportTechLab default: 
+	ResearchSeismicSpinesAbathur/ImpalerDen default: E
 	ResearchTempestDisintegration/FleetBeacon default: D
 	ResearchWhirlwind/TwilightCouncil default: D
 	SIInfestedBunkerSpawnInfestedMarine/SIInfestedBunker default: 
@@ -1041,8 +1052,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIInfestedMarine/SIBarracks default: 
 	SJHyperionFighters/SJHyperion default: W, T
 	SS_LeviathanTentacleAttackL2/SS_Plane default: F
-	Salvage/SIMissileTurret default: 
-	Salvage/SIMissileTurretFlying default: 
 	SelfRepair/Thor default: R
 	SelfRepair/ThorWreckageSwann default: R
 	SentryTaldarimForceField/Monitor default: F
@@ -1050,6 +1059,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SiegeTank/VoidRift default: S
 	SiegeTank/VoidRiftUnselectable default: S
 	SkyTankLaserBeamSlow/SkyTank default: W
+	SpiderMineReplenish/Vulture default: R, T
 	SpineCrawler/Drone default: C
 	SwannCommanderRebuild default: R
 	SwarmQueenHydralisk/HugeSwarmQueen default: D
@@ -1062,6 +1072,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenHydraliskLurker/SwarmQueen default:  copyof: SwarmQueenHydralisk/HugeSwarmQueen default: D
 	TempestRangeUpgrade/FleetBeacon default: S
 	TitanMechMissileShot/TitanMechAssault default: F
+	Viper/MutaliskViper default: E copyof: BroodLord/Corruptor default: B
 	VoidRay/VoidRift default: V
 	VoidRay/VoidRiftUnselectable default: V
 	VoidSentryShieldRepair/RoguePurifierSupportDroneB default: Q
@@ -1086,11 +1097,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopSpawnHunterKillers/ZagaraReviveCocoon default: W
 	ZagaraVoidCoopSpawnHunterKillers/ZagaraVoidCoop default: W
 	ZagaraVoidCoopSpawnHunterKillers/ZagaraVoidCoopBurrowed default: W
-	hydraliskspeed/HydraliskDen default: G
-	hydraliskspeed/LurkerDen default: G copyof: hydraliskspeed/LurkerDenMP default: G
-	hydraliskspeed/LurkerDenMP default: G
-	overlordspeed default: P
-	zerglingmovementspeed/SpawningPool default: M
 	zergmissileweapons1/EvolutionChamber default: A
 
 [INFO]: TheCore Lite: G   
@@ -1201,7 +1207,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BiodomeLoad/BiodomeHalfBuilt default: L
 	EvolveFlyingLocusts/InfestationPit default: L
 	EvolveToLeviathan/GuardianMP default: L
-	EvolveToLeviathan/Mutalisk default: L
 	GhostVultureLayMine/GhostVulture default: L
 	HerculesLoad/HerculesCrashing default: L
 	HireDevilDogs/Barracks default: L
@@ -1344,6 +1349,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MissilePods/Loki default: E
 	MissilePods/MengskBC default: E
 	MorphToCorpser/Larva default: R copyof: Roach/Larva default: R
+	MorphToGuardian/Mutalisk default: G
 	MorphToHellion/Hellion default: E
 	MorphToHellion/HellionBlackOps default: 
 	MorphToVile/Larva default: R copyof: Roach/Larva default: R
@@ -1363,7 +1369,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PrimalBuildingRoot/PrimalTownHallUprooted default: R
 	PrimalRoach/PrimalTownHall default: R
 	QueenClassic default: Q
-	QueenClassicParasite/QueenClassic default: R
 	Raven/VoidRift default: R, B
 	Raven/VoidRiftUnselectable default: R, B
 	Reactor/Barracks default: C
@@ -1410,19 +1415,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Roach/VoidRiftUnselectable default: R
 	SJHyperionLightningStorm/SJHyperion default: R
 	SS_LeviathanTentacleAttackR1NoDelay/SS_Plane default: X
-	Salvage/Bunker default: V
-	Salvage/KelMorianGrenadeTurret default: V copyof: Salvage/Bunker default: V
-	Salvage/KelMorianMissileTurret default: V copyof: Salvage/Bunker default: V
-	Salvage/MissileTurret default: V copyof: Salvage/Bunker default: V
-	Salvage/NovaACLaserTurret default: 
-	Salvage/PerditionTurret default: V copyof: Salvage/Bunker default: V
 	ShieldBatteryRecharge/ShieldBattery default: R
 	SiegeTank_BlackOpsUnsiege default: 
 	Snipe/GhostVulture default: R
 	SpawnBroodLord/Leviathan default: B
 	SpawnBroodLord/SpacePlatformVentsUnit default: B
+	SpiderMine/Bunker default: E
+	SpiderMine/Vulture default: E
 	SpiderMineReplenish/MercVulture default: R
-	SpiderMineReplenish/Vulture default: R, T
 	SpineCrawlerRoot/SpineCrawlerUprooted default: R
 	Spire/Drone default: S
 	SporeColony/CreepColony default: R

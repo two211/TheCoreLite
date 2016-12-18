@@ -77,7 +77,7 @@ in seed TheCore Lite, keys =D
 in seed TheCore Lite, keys =D
 
 [ERROR]: EvolveMuscularAugments/LurkerDenMP not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =E
 
 [ERROR]: EvolveOrganicCarapace/RoachWarren not related to a conflict
 in seed TheCore Lite, keys =O
@@ -149,7 +149,7 @@ in seed TheCore Lite, keys =Space,E,C
 in seed TheCore Lite, keys =
 
 [ERROR]: Lurker/HydraliskImpaler not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [ERROR]: MarineSuperStimpack/Marine_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -227,7 +227,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =Space
 
 [ERROR]: QueenClassicParasite/SIQueen not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: QueenMPSpawnBroodlings/SIQueen not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -434,13 +434,13 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: Salvage/NovaACLaserTurret not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =C
 
 [ERROR]: Salvage/SIMissileTurret not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =C
 
 [ERROR]: Salvage/SIMissileTurretFlying not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =C
 
 [ERROR]: ShapedBlast/SiegeBreakerSieged not related to a conflict
 in seed TheCore Lite, keys =
@@ -570,7 +570,7 @@ in seed TheCore Lite, keys =R
 [WARN]: Baneling/Zergling2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: BuildCreepTumor/Queen2 not related to a conflict
 but is inherited
@@ -765,7 +765,7 @@ in seed TheCore Lite, keys =E
 
 [WARN]: Lurker/Hydralisk not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: LurkerBurrowDown not related to a conflict
 but is part of same check
@@ -852,12 +852,12 @@ in seed TheCore Lite, keys =F
 [WARN]: MorphtoHunter/HotSRaptor not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: MorphtoHunter/HotSSwarmling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: MorphtoRoach/Larva not related to a conflict
 but is inherited
@@ -866,12 +866,12 @@ in seed TheCore Lite, keys =R
 [WARN]: MorphtoSplitterling/HotSRaptor not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: MorphtoSplitterling/HotSSwarmling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: MoveChampions not related to a conflict
 but is inherited
