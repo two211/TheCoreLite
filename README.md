@@ -42,6 +42,79 @@ Loads of thanks to:
 
 ----------------------------------------------------------------------------------------------------------------------
 
+TheCore Lite Command spirit
+--------------------------------
+
+### Rapid Fire and Precision keys
+
+There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, V, CapsLock.
+Now all Warp-Inable units are bound to Rapid Fire keys.
+If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
+
+source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
+
+"E" and "C" keep on being non Rapid Fire, because they are precision keys.
+They are used for precision spells/ability.
+You can keep those key pressed and just click on the target.
+After the click the ability will be called again and you just have to click on the next target.
+
+**Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
+
+### Unit keys
+
+All Units:
+* D = Attack
+* V = Stop
+* G = Hold
+* T = Patrol
+* H = Move
+* Space = useful ability
+* E/C = any ability requiring precision
+
+All workers:
+* Space = Basic building
+* CapsLock = Advanced building
+* E = Return cargo
+* Y = Gather
+
+Transport/Bunker/CC
+* E/CapsLock = unload all
+* 4 = Load
+
+Terran:
+* Space/R = "transformers'" keys
+* CapsLock/F = cloak/decloak
+* C = ignite after burner (coop)
+* F = halt key
+
+Zerg:
+* Space/R =  Burrow/Unburrow
+* C = creep tumor
+* F = morph/evolve
+* E = speed key (for research affecting speed)
+
+Protoss:
+* Space = blink guardian shield feedback
+* Space/R = warp prism (phase mode)
+* E = morph building to warp building
+* CapsLock/F = orale pulsar beam
+
+### Building/Unit production key/Research keys
+
+Bridging method is used to try to facilitate learning.
+Research will tend to have the same key as unit production key,
+so as the building enabling the production of this unit.
+
+Basic buildings:
+* C = Command center / Nexus / Hatchery
+* R = Refinery / Assimilator / Extractor
+* D = Supply Depot / Pylon
+* E = Engineering Bay / Armory / Forge / Evolution Chamber
+* Space = Turret / Photo Cannon / Spore Crawler (rapid fire air defense)
+* F = Bunker / Spine Crawler (rapid fire Spine Crawler)
+
+----------------------------------------------------------------------------------------------------------------------
+
 TheCore Lite User Interface keys
 --------------------------------
 
@@ -63,21 +136,6 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * Ctl+Shift+Tab : alternate for "select all army"
 
 This makes sense considering synergie with mouse clicking and group creation
-
-### Rapid Fire and Precision keys
-
-There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, V, CapsLock.
-Now all Warp-Inable units are bound to Rapid Fire keys.
-If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
-
-source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
-
-"E" and "C" keep on being non Rapid Fire, because they are precision keys.
-They are used for precision spells/ability.
-You can keep those key pressed and just click on the target.
-After the click the ability will be called again and you just have to click on the next target.
-
-**Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
 
 ### Browsing subgroups
 * Tab and Shift+Tab are used
