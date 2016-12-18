@@ -492,6 +492,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToMothership/MothershipCore default: U
 	MorphToOverseer/VoidRiftUnselectable default: V
 	NukeArm/GhostAcademy default: N
+	OracleWeaponOn default: C
+	OracleWeaponOn/Oracle default: C copyof: OracleWeaponOn default: C
 	Overlord/Larva default: V
 	PrimalSlash/K5Kerrigan default:  copyof: MindBolt/K5Kerrigan default: Q
 	ProtossBuildAdvanced/Harvester default:  copyof: ProtossBuildAdvanced/Probe default: V
@@ -1586,8 +1588,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Observer/RoboticsFacilityWarp default: B copyof: Observer/RoboticsFacility default: B
 	OmegaStorm/Kerrigan default: T
 	OmegaStorm/KerriganChar default: T
-	OracleWeaponOn default: C
-	OracleWeaponOn/Oracle default: C copyof: OracleWeaponOn default: C
 	PhaseMineBlast/VoidSeeker default: V
 	PhaseMineBlast/VoidSeekerCrashed default: V
 	PhasingMode/WarpPrism default: E
