@@ -1,4 +1,4 @@
-The Core Lite v2.0
+The Core Lite v2.1
 ==================
 
 This is the Github repository for TheCore Lite Starcraft2 bindkeys.
