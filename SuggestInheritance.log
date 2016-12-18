@@ -709,7 +709,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab default: 
 	EvolveSunderingGlave/GreaterSpire default: S
 	EvolveSunderingGlave/Spire default: S
-	ExplosiveMode default: D
 	FaceEmbrace/Viper default: D
 	FenixWhirlwind/FenixChampion default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
 	FenixWhirlwind/FenixSOA default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
@@ -1311,6 +1310,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveTunnelingClaws/GreaterRoachWarren default: T
 	EvolveTunnelingClaws/RoachWarren default: T
 	EvolveZerglingArmorShred/SpawningPool default: R
+	ExplosiveMode default: D
 	Extractor/Drone default: E
 	GravitonPrison/HybridDestroyer default: G
 	GravitonPrison/HybridDominator default: G
