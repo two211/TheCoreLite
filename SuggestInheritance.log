@@ -473,6 +473,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CloakOnBanshee default: C
 	CloakOnGhost/Ghost default: C
 	CommandCenterUnloadAll default: D
+	DarkArchon/Gateway default: A
+	DarkArchon/WarpGate default: A
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
 	GravitonCatapult/Carrier default: G
@@ -516,7 +518,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SJHyperionBlink/Battlecruiser default: 
 	SJHyperionBlink/SJHyperion default: Q
 	SS_LeviathanTentacleAttackR2NoDelay/SS_Plane default: Z
-	Sentry default: E
 	SpectreNukeArm/GhostAcademy default: N copyof: NukeArm/GhostAcademy default: N
 	SwarmHostDeepBurrow/SwarmHostSplitB default: D
 	SwarmHostDeepBurrow/SwarmHostSplitBBurrowed default: D copyof: SwarmHostDeepBurrow/SwarmHostSplitB default: D
@@ -930,8 +931,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AbathurDeepTunnel/SwarmHost default: D
 	AbathurDeepTunnel/SwarmHostBurrowed default: D
 	Apocalypse/K5Kerrigan default:  copyof: K5Leviathan/K5Kerrigan default: D
-	Arbiter/Stargate default: A
-	Arbiter/StargateWarp default: A
 	ArbiterMPStasisField/ArbiterMP default: F
 	ArchAngelCoopMissileShot/ArchAngelCoopAssault default: F
 	Baneling/HotSRaptor default: E copyof: Baneling/Zergling default: E
@@ -1019,6 +1018,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoSplitterling/HotSRaptor default: E copyof: Baneling/Zergling default: E
 	MorphtoSplitterling/HotSSwarmling default: E copyof: Baneling/Zergling default: E
 	MutateintoLurkerDen/HydraliskDen default: D
+	Oracle/Stargate default: E
+	Oracle/StargateWarp default: E
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	PlanetCrackerOff/MothershipAiur06 default: C
@@ -1087,7 +1088,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpInFenixChampion/SuperWarpGate default: F
 	WarpInFenixChampion/TwilightCouncil default: F
 	WarpInFenixChampionAir/TwilightCouncil default: S
-	WarpInScout/Stargate default: S
 	WarpInShuttle/RoboticsFacility default:  copyof: WarpPrism/RoboticsFacility default: A
 	WarpPrism/RoboticsFacility default: A
 	WarpPrismHallucination/Nexus default:  copyof: WarpPrismHallucination/Sentry default: R
@@ -1101,14 +1101,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	zergmissileweapons1/EvolutionChamber default: A
 
 [INFO]: TheCore Lite: G   
+	Arbiter/Stargate default: A
+	Arbiter/StargateWarp default: A
 	Archon/VoidRiftUnselectable default: N
 	Battlecruiser/Starport default: B
 	Carrier/Stargate default: C
 	Carrier/StargateWarp default: C copyof: Carrier/Stargate default: C
 	CyberneticsCore/Harvester default:  copyof: CyberneticsCore/Probe default: Y
 	CyberneticsCore/Probe default: Y
-	DarkArchon/Gateway default: A
-	DarkArchon/WarpGate default: A
 	EvolveBileLauncherBombardmentCooldown/SpawningPool default: D
 	EvolveDevourerAoEDamage/GreaterSpire default: D
 	EvolveDevourerAoEDamage/Spire default: D
@@ -1131,7 +1131,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MoveHoldPosition default: H
 	Oracle/SuperWarpGate default: E
 	Oracle/VoidRift default: E
-	Phoenix/SuperWarpGate default: X
 	PrimalFlyer/PrimalTownHallUprooted default: F
 	RallyEgg default: G
 	ResearchAbathurLocustAirAttack/EvolutionPit default: G
@@ -1141,6 +1140,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMaelstromRounds/FactoryTechLab default: M
 	ResearchMaelstromRounds/FactoryTechReactor default: M
 	SS_LeviathanTentacleAttackR2/SS_Plane default: A
+	Sentry default: E
 	StalkerHallucination/Nexus default:  copyof: StalkerHallucination/Sentry default: S
 	StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
@@ -1149,6 +1149,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	UltraliskCavern/Drone default: U
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
 	Vulture/Factory default: V
+	WarpinDisruptor/RoboticsFacility default: D
 	WeaponsFree/GhostVulture default: G
 	WraithCloak/StarportTechLab default: L
 	WraithCloak/StarportTechReactor default: L copyof: WraithCloak/StarportTechLab default: L
@@ -1362,8 +1363,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MothershipMassRecall/Mothership default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	NanoRepair/ScienceVessel default: N copyof: Heal/Medivac default: E
 	NovaDomination/NovaHero default: 
-	Oracle/Stargate default: E
-	Oracle/StargateWarp default: E
 	OracleRevelation/Oracle default: R
 	ParasiticBomb/Viper default: R
 	PitAlarakSuperMove/PitAlarak default: R
@@ -1451,10 +1450,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	UpgradeToPlanetaryFortress/CommandCenter default: P
 	VespeneDrone/DroneOperator default: R
 	VespeneDrone/VespeneDrone default: R
+	VoidRay/Stargate default: V
+	VoidRay/StargateWarp default: V copyof: VoidRay/Stargate default: V
 	VoidTendrilVoidZone/VoidShard default: Z
 	WarbotA/VoidCoopWarbot default: R
 	WarpInDarkTemplarChampion/TwilightCouncil default: D
-	WarpinDisruptor/RoboticsFacility default: D
 	WidowMineUnburrow/WidowMine default: D
 	XelNagaConstructSmash/XelNagaConstruct default: R
 	YagdraTunnel/AbathurLavaWorm default: R
@@ -1666,7 +1666,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SymbioteCarapace/Brutalisk default: E
 	SymbioteStab/AbathurSymbioteBrutalisk default: Q
 	Taunt/Ball default: T
-	Tempest/Stargate default: T
 	TemplarArchive/Harvester default:  copyof: TemplarArchive/Probe default: T
 	TemplarArchive/Probe default: T
 	TerranBuild/KelMorianWorker default: B
@@ -1738,6 +1737,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Mutalisk/VoidRiftUnselectable default: T
 	Mutalisk/VoidThrasher default: T
 	Mutalisk/VoidThrasherWalker default: T
+	Phoenix/SuperWarpGate default: X
 	PrimalMutalisk/PrimalTownHall default: T
 	PsiStorm/ZenithStone default: T
 	ResearchAbathurHiddenToxicNest/EvolutionPit default: T
@@ -1753,6 +1753,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Transfusion/EvolutionChamber default: T
 	WarpInArtanisChampion/SuperWarpGate default: T
 	WarpInArtanisChampion/TwilightCouncil default: T
+	WarpInScout/Stargate default: S
 	ZealotHallucination/Nexus default:  copyof: ZealotHallucination/Sentry default: Z
 	ZealotHallucination/Sentry default: Z
 	ZealotHallucination/Voranor default:  copyof: ZealotHallucination/Sentry default: Z
@@ -1825,12 +1826,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Stop default: S
 	StopBunker/Bunker default: S
 	StopPlanetaryFortress/PlanetaryFortress default: P
+	Tempest/Stargate default: T
 	TerranVehiclePlatingLevel2/Armory default: V
 	TerranVehiclePlatingLevel3/Armory default: V
 	Thor/Factory default: T
 	VoidRay/Epilogue02VoidRift default: V
-	VoidRay/Stargate default: V
-	VoidRay/StargateWarp default: V copyof: VoidRay/Stargate default: V
 	VoidRay/SuperWarpGate default: V
 	VoidRay/VoidThrasher default: V
 	VoidRay/VoidThrasherWalker default: V
