@@ -96,8 +96,9 @@ Zerg:
 Protoss:
 * Space = blink guardian shield feedback
 * Space/R = warp prism (phase mode)
-* E = morph building to warp building
 * CapsLock/F = orale pulsar beam
+* E = morph building to warp
+* M = morph building to non-warp (intentionally out of compact keys)
 
 ### Building/Unit production key/Research keys
 
