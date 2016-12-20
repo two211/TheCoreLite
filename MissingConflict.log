@@ -235,6 +235,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: Recall/Arbiter not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: ResearchAlarakTargetLockBuff/CyberneticsCore not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =D
 
@@ -1186,5 +1189,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 177 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 178 WARNs: 145 
 ============================
