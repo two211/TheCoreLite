@@ -802,12 +802,12 @@ in seed TheCore Lite, keys =G
 [WARN]: MorphToHydraliskImpaler/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =E
 
 [WARN]: MorphToHydraliskLurker/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =E
 
 [WARN]: MorphToMutaliskBroodlord/Larva not related to a conflict
 but is part of same check
@@ -827,12 +827,12 @@ in seed TheCore Lite, keys =D
 [WARN]: MorphToSwarmHostSplitA/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =5
+in seed TheCore Lite, keys =4
 
 [WARN]: MorphToSwarmHostSplitB/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =5
+in seed TheCore Lite, keys =4
 
 [WARN]: MorphToSwarmling/Larva not related to a conflict
 but is part of same check
