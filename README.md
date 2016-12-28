@@ -73,19 +73,31 @@ All Units:
 
 All workers:
 * Space = Basic building
+* F = Basic building
 * CapsLock = Advanced building
 * E = Return cargo
 * Y = Gather
 
 Transport/Bunker/CC
 * E/CapsLock = unload all
-* 4 = Load
+* C = Load
 
 Terran:
 * Space/R = "transformers'" keys
 * CapsLock/F = cloak/decloak
-* C = ignite after burner (coop)
-* F = halt key
+* 4 = halt key
+* 4 = lift key
+* 4 = ignite after burner (coop)
+* 5 = select worker key
+* R = Salvage
+* R = Load CC/Planetary Fortress
+
+Protoss:
+* Space = blink guardian shield feedback
+* CapsLock/F = orale pulsar beam
+* Space/R = warp prism (phase mode)
+* E = morph building to warp
+* M = morph building to non-warp (intentionally out of compact keys)
 
 Zerg:
 * Space/R =  Burrow/Unburrow
@@ -93,26 +105,42 @@ Zerg:
 * F = morph/evolve
 * E = speed key (for research affecting speed)
 
-Protoss:
-* Space = blink guardian shield feedback
-* Space/R = warp prism (phase mode)
-* CapsLock/F = orale pulsar beam
-* E = morph building to warp
-* M = morph building to non-warp (intentionally out of compact keys)
-
 ### Building/Unit production key/Research keys
-
-Bridging method is used to try to facilitate learning.
-Research will tend to have the same key as unit production key,
-so as the building enabling the production of this unit.
 
 Basic buildings:
 * C = Command center / Nexus / Hatchery
 * R = Refinery / Assimilator / Extractor
 * D = Supply Depot / Pylon
-* E = Engineering Bay / Armory / Forge / Evolution Chamber
+* E = Engineering Bay / Forge / Evolution Chamber
 * Space = Turret / Photo Cannon / Spore Crawler (rapid fire air defense)
-* F = Bunker / Spine Crawler (rapid fire Spine Crawler)
+* F = Bunker / Spine Crawler (rapid fire defense)
+
+Advanced buildings:
+* R = Starport / Stargate / Spire
+* G = Fusion core / Fleet Beacon / Ultralisk cavern
+* E = Armory (same as Engineering Bay / Forge / Evolution Chamber)
+
+### Units
+
+Some mnemonics:
+* D for basic units in the command card
+ * zergling
+ * marine, hellion, viking
+ * zealot, immortal, phoenix
+* R for support unit
+ * roach
+ * marauder, siege tank, liberator
+ * stalker, void ray
+* F for sneak
+ * infestor
+ * reaper, widow mine, medivac
+ * dark templar, warp prism, oracle
+* V and G for advanced and ultimate units
+* Space for high profile casters (high templar, ghost, raven)
+
+Bridging method is used to try to facilitate learning.
+Research will tend to have the same key as unit production key,
+so as the building enabling the production of this unit.
 
 ----------------------------------------------------------------------------------------------------------------------
 
