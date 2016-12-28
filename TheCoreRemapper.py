@@ -722,7 +722,7 @@ def remapHint(command, seed, log=False):
 	else:
 		hint = ''
 	listForbiddenKeys = []
-	for conflict in sorted(CONFLICT_CHECKS):
+	for conflict in sorted(constraints['ToCheck']['Conflicts']):
 		if command in sorted(CONFLICT_CHECKS[conflict]):
 			if debug_parser.getboolean("Settings","verydetail",fallback=not(log)):
 				hint += "-CONFLICT- " + conflict + '\n'
@@ -760,7 +760,7 @@ def CheckConsistency(model, write=True):
 		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
 			command_list = command.split('/')
 			if len(command_list) > 1:
-				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall','MutaliskViper']:
+				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall','MutaliskViper','Bunker']:
 					metaseed_parser.set('Commands',command,model['Commands'][command].get_value(seed))
 					continue
 			command_root = command_list[0]
