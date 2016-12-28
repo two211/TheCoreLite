@@ -68,6 +68,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Forge/Harvester
 [WARN]: no default Frostbat/Barracks
 [WARN]: no default Gateway/Harvester
+[WARN]: no default GhostHoldFire/NovaCoop
 [WARN]: no default Glare/Oracle
 [WARN]: no default GreaterRoachWarren/RoachWarren
 [WARN]: no default Guardian/Mutalisk
@@ -114,6 +115,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Nexus/Harvester
 [WARN]: no default NovaDomination/NovaHero
 [WARN]: no default NovaSwitchAssaultMode/NovaCoop
+[WARN]: no default NovaUnitNuke/NovaCoop
 [WARN]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaCoop
 [WARN]: no default NurturingSwarm/Queen
 [WARN]: no default Overcharge/OrbitalCommand
@@ -193,12 +195,20 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SIBarracks/SISCV
 [WARN]: no default SIClusterRockets/StukovApocalisk
 [WARN]: no default SIDiamondBack/SIFactory
+[WARN]: no default SIInfestedBunkerRoot/SIInfestedBunkerUprooted
 [WARN]: no default SIInfestedBunkerSpawnInfestedMarine/SIInfestedBunker
+[WARN]: no default SIInfestedBunkerUproot/SIInfestedBunker
 [WARN]: no default SIInfestedCivilian/SICivilianStructure
+[WARN]: no default SIInfestedCivilian/SICivilianStructureFlying
 [WARN]: no default SIInfestedMarine/SIBarracks
 [WARN]: no default SILiberator/SIStarport
 [WARN]: no default SIQueen
 [WARN]: no default SIQueenFungalGrowth/SIQueen
+[WARN]: no default SIRoot/SIBarracksFlying
+[WARN]: no default SIRoot/SICivilianStructureFlying
+[WARN]: no default SIRoot/SICommandCenterFlying
+[WARN]: no default SIRoot/SIMissileTurretFlying
+[WARN]: no default SIRoot/SIStarportFlying
 [WARN]: no default SISCV
 [WARN]: no default SISiegeTank/SIFactory
 [WARN]: no default SIStarport/SISCV
@@ -206,8 +216,12 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SITechLabBarracks/SIBarracksFlying
 [WARN]: no default SITechLabFactory/SIFactory
 [WARN]: no default SITechLabStarport/SIStarport
+[WARN]: no default SIUproot/SIBarracks
 [WARN]: no default SIUproot/SICivilianStructure
+[WARN]: no default SIUproot/SICommandCenter
+[WARN]: no default SIUproot/SIFactory
 [WARN]: no default SIUproot/SIMissileTurret
+[WARN]: no default SIUproot/SIStarport
 [WARN]: no default SJHyperionBlink/Battlecruiser
 [WARN]: no default Salvage/NovaACLaserTurret
 [WARN]: no default Salvage/SIMissileTurret
@@ -215,6 +229,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SiegeTank_BlackOpsSiege
 [WARN]: no default SiegeTank_BlackOpsUnsiege
 [WARN]: no default SlivanPuke/Devourer
+[WARN]: no default Snipe_BlackOps/Ghost_BlackOps
 [WARN]: no default SpawnBanelings/K5Kerrigan
 [WARN]: no default StalkerHallucination/Nexus
 [WARN]: no default Stargate/Harvester
@@ -271,10 +286,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WarpinObservatory/Probe
 [WARN]: no default WeaponsFree/Ghost_BlackOps
 [WARN]: no default WeaponsFree/NovaCoop
+[WARN]: no default WidowMineBurrow/MutatorWidowMine
 [WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchLurkerRange/LurkerDenMP
 ----------------------------
-Finished (Check defaults) - WARNs: 273 ERRORs: 1 
+Finished (Check defaults) - WARNs: 289 ERRORs: 1 
 ============================
