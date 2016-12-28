@@ -1041,7 +1041,7 @@ in seed TheCore Lite, keys =E
 [WARN]: ResearchShapedBlast/FactoryTechReactor not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =Space
 
 [WARN]: ResearchStabilizerMedPacks/BarracksTechReactor not related to a conflict
 but is part of same check
@@ -1175,17 +1175,17 @@ in seed TheCore Lite, keys =5
 [WARN]: TechReactor/Barracks not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [WARN]: TechReactor/Factory not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [WARN]: TechReactor/Starport not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [WARN]: TemplarArchive/Harvester not related to a conflict
 but is inherited
