@@ -91,6 +91,8 @@ Terran:
 * 5 = select worker key
 * R = Salvage
 * R = Load CC/Planetary Fortress
+* E = Reactor
+* C = Techlab
 
 Protoss:
 * Space = blink guardian shield feedback
@@ -129,7 +131,7 @@ Some mnemonics:
  * zealot, immortal, phoenix
 * R for support unit
  * roach
- * marauder, siege tank, liberator
+ * marauder, hellbat, liberator
  * stalker, void ray
 * F for sneak
  * infestor
