@@ -528,8 +528,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SJHyperionBlink/SJHyperion default: Q
 	SS_LeviathanTentacleAttackR2NoDelay/SS_Plane default: Z
 	TechReactorAI/Barracks default: Z
+	TechReactorAI/BarracksFlying default: Z
 	TechReactorAI/Factory default: Z copyof: TechReactorAI/Barracks default: Z
+	TechReactorAI/FactoryFlying default: Z
 	TechReactorAI/Starport default: Z copyof: TechReactorAI/Barracks default: Z
+	TechReactorAI/StarportFlying default: Z
 	TerranBuildAdvanced/SCV default: V
 	TerranBuildAdvanced/SISCV default: 
 	WraithCloakOn/Wraith default: C copyof: CloakOnBanshee default: C
@@ -823,8 +826,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchOracleStasisWardUpgrade/FleetBeacon default: A
 	ResearchPerditionTurret/ScienceFacility default: P
 	ResearchRavenRecalibratedExplosives/StarportTechLab default: 
-	ResearchRegenerativeBioSteel/FactoryTechLab default: R
-	ResearchRegenerativeBioSteel/FactoryTechReactor default: C copyof: ResearchRegenerativeBioSteel/FactoryTechLab default: R
 	ResearchRipwaveMissiles/StarportTechLab default: R
 	ResearchRipwaveMissiles/StarportTechReactor default: R
 	ResearchSILiberatorImprovedAoeAttack/SIStarportTechLab default: 
@@ -1258,9 +1259,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NukeCalldown/GhostVulture default: N
 	ResearchAbathurImprovedToxicNest/EvolutionPit default: N
 	ResearchLiberatorAGMode/StarportTechLab default: N
-	TechReactorAI/BarracksFlying default: Z
-	TechReactorAI/FactoryFlying default: Z
-	TechReactorAI/StarportFlying default: Z
 	Zergling/Epilogue02VoidRift default: Z
 
 [INFO]: TheCore Lite: None   
@@ -1411,6 +1409,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchPunisherGrenades/BarracksTechReactor default: G copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchRegenerativeBioSteel/Armory default: B
+	ResearchRegenerativeBioSteel/FactoryTechLab default: R
+	ResearchRegenerativeBioSteel/FactoryTechReactor default: C copyof: ResearchRegenerativeBioSteel/FactoryTechLab default: R
 	ResearchSIBarracksTrainInfestedCivilianLevel2/SICivilianStructure default: 
 	ResearchSILiberatorBecometheSwarm/SIStarportTechLab default: 
 	ResearchSOARepairBeamExtraTarget/SolarForge default: R
