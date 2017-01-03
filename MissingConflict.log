@@ -17,7 +17,7 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =Space
 
 [ERROR]: ApolloCloakOnNova/NovaHero not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =CapsLock,F
 
 [ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,4
