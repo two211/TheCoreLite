@@ -18,6 +18,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default AttackChampions
 [WARN]: no default AutoTurret/Raven_BlackOps
 [WARN]: no default Baneling/Zergling2
+[WARN]: no default Banshee_BlackOpsAirstrike/Banshee_BlackOps
+[WARN]: no default BioMechanicalHeal/HealingDrone
 [WARN]: no default BuildCreepTumor/Queen2
 [WARN]: no default BuildSITechLabFactory/SIFactoryFlying
 [WARN]: no default BuildSITechLabStarport/SIStarportFlying
@@ -96,6 +98,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Lurker/Hydralisk
 [WARN]: no default Lurker/HydraliskImpaler
 [WARN]: no default LurkerBurrowDown
+[WARN]: no default MagrailMunitions/Marauder_BlackOps
 [WARN]: no default MarineSuperStimpack/Marine_BlackOps
 [WARN]: no default Matrix/Medic
 [WARN]: no default MedicHeal/Medivac_BlackOps
@@ -166,6 +169,10 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchMarauderMagrailMunitions/BarracksTechLab
 [WARN]: no default ResearchMarauderMagrailMunitions/BarracksTechReactor
 [WARN]: no default ResearchMatrix/BarracksTechLab
+[WARN]: no default ResearchNovaDetector/GhostAcademyNova
+[WARN]: no default ResearchNovaLifeRegen/GhostAcademyNova
+[WARN]: no default ResearchNovaShotgunBlastRange/GhostAcademyNova
+[WARN]: no default ResearchNovaSnipeRefund/GhostAcademyNova
 [WARN]: no default ResearchPiercingRockets/StarportTechLab
 [WARN]: no default ResearchPlasmaCharge/RoboticsBay
 [WARN]: no default ResearchRavenRecalibratedExplosives/StarportTechLab
@@ -182,6 +189,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchStrikeCannons/FactoryTechReactor
 [WARN]: no default ResearchStukovInfestedBansheeBurrowRegeneration/SIStarportTechLab
 [WARN]: no default ResearchStukovInfestedBansheeInfestedLife/SIStarportTechLab
+[WARN]: no default ResearchSuperScience/StarportTechLab
 [WARN]: no default ResearchTimeWarp/FleetBeacon
 [WARN]: no default ResearchTitanReactor/StarportTechLab
 [WARN]: no default ResearchTurboGripper/StarportTechLab
@@ -292,5 +300,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Voranor
 [ERROR]: key has multiple different defaults - please set in all seed layouts a value for this key (or at leased unbound it) ResearchLurkerRange/LurkerDenMP
 ----------------------------
-Finished (Check defaults) - WARNs: 289 ERRORs: 1 
+Finished (Check defaults) - WARNs: 297 ERRORs: 1 
 ============================

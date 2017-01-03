@@ -22,8 +22,14 @@ in seed TheCore Lite, keys =CapsLock,F
 [ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,4
 
+[ERROR]: Banshee_BlackOpsAirstrike/Banshee_BlackOps not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
 [ERROR]: BattleRage/Khraxus not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: BioMechanicalHeal/HealingDrone not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: BuildSITechLabFactory/SIFactoryFlying not related to a conflict
 in seed TheCore Lite, keys =CapsLock
@@ -154,6 +160,9 @@ in seed TheCore Lite, keys =
 [ERROR]: Lurker/HydraliskImpaler not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: MagrailMunitions/Marauder_BlackOps not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
 [ERROR]: MarineSuperStimpack/Marine_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
 
@@ -275,10 +284,10 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =C
 
 [ERROR]: ResearchImprovedSiegeMode/FactoryTechLab not related to a conflict
-in seed TheCore Lite, keys =T
+in seed TheCore Lite, keys =Space
 
 [ERROR]: ResearchImprovedSiegeMode/FactoryTechReactor not related to a conflict
-in seed TheCore Lite, keys =T
+in seed TheCore Lite, keys =Space
 
 [ERROR]: ResearchInfestedSiegeTankArmoredDamage/SIFactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =F
@@ -305,13 +314,25 @@ in seed TheCore Lite, keys =G
 in seed TheCore Lite, keys =C
 
 [ERROR]: ResearchMarauderMagrailMunitions/BarracksTechLab not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =E
 
 [ERROR]: ResearchMarauderMagrailMunitions/BarracksTechReactor not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =E
 
 [ERROR]: ResearchMatrix/BarracksTechLab not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchNovaDetector/GhostAcademyNova not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: ResearchNovaLifeRegen/GhostAcademyNova not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: ResearchNovaShotgunBlastRange/GhostAcademyNova not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: ResearchNovaSnipeRefund/GhostAcademyNova not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: ResearchPiercingRockets/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
@@ -357,6 +378,9 @@ in seed TheCore Lite, keys =C
 
 [ERROR]: ResearchStukovInfestedBansheeInfestedLife/SIStarportTechLab not related to a conflict
 in seed TheCore Lite, keys =V
+
+[ERROR]: ResearchSuperScience/StarportTechLab not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: ResearchTimeWarp/FleetBeacon not related to a conflict
 in seed TheCore Lite, keys =
@@ -1237,5 +1261,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 194 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 202 WARNs: 145 
 ============================
