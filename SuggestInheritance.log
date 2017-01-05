@@ -69,6 +69,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: 4   
 	BiodomeLoad/InfestableBiodome default: L
+	CloakOff default: D
 	EvolveToBrutalisk/DefilerMP default: B
 	EvolveToBrutalisk/Queen default: B
 	EvolveToBrutalisk/QueenBurrowed default: B
@@ -83,17 +84,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveViperImprovedCastRange/InfestationPit default: R
 	EvolveViperImprovedCastRange/Viper default: R
 	GenerateCreep/Overlord default: G
-	GhostHoldFire/Ghost default: F
-	GhostHoldFire/NovaCoop default: 
-	GhostHoldFire/NovaHero default: F
 	Halt default: T
 	HutLoad/InfestableHut default: L
-	IgniteAfterburners/Banshee default: B
-	IgniteAfterburners/Battlecruiser default: B
-	IgniteAfterburners/Liberator default: B
-	IgniteAfterburners/SiegeTank default: B
-	IgniteAfterburners/VikingAssault default: B
-	IgniteAfterburners/Vulture default: B
 	KerriganVoidCoopCrushingGripWave/K5Kerrigan default: D
 	KerriganVoidCoopCrushingGripWave/K5KerriganBurrowed default: D
 	KerriganVoidCoopCrushingGripWave/K5KerriganPsiStrike default: D
@@ -103,13 +95,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LurkerHoldFire/LurkerMPBurrowed default: F
 	MorphToSwarmHostSplitA/Larva default: A copyof: SwarmHostMP/Larva default: A
 	MorphToSwarmHostSplitB/Larva default: A copyof: SwarmHostMP/Larva default: A
+	OracleWeaponOff default: D
+	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	PrimalHydralisk/PrimalTownHallUprooted default: H
 	ProbeHallucination/Nexus default:  copyof: ProbeHallucination/Sentry default: E
 	ProbeHallucination/Sentry default: E
 	ProbeHallucination/Voranor default:  copyof: ProbeHallucination/Sentry default: E
 	ResearchLocustLifetimeIncrease/InfestationPit default: L
 	SJHyperionFightersRecall/SJHyperion default: X
-	SpectreHoldFire/Spectre default: F copyof: GhostHoldFire/Ghost default: F
 	SwarmHostMP/Larva default: A
 	SwarmQueenRaptor/HugeSwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
 	SwarmQueenRaptor/LargeSwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
@@ -124,11 +117,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenZergling/SwarmQueen default: W, T
 	SwarmQueenZergling/SwarmQueenEgg default: W, T copyof: SwarmQueenZergling/SwarmQueen default: W, T
 	WarpInDarkArchonChampion/SuperWarpGate default: R
+	WraithCloakOff/Wraith default: D copyof: CloakOff default: D
 	ZagaraVoidCoopMassFrenzy/ZagaraReviveCocoon default: E
 	ZagaraVoidCoopMassFrenzy/ZagaraVoidCoop default: E
 	ZagaraVoidCoopMassFrenzy/ZagaraVoidCoopBurrowed default: E
 
 [INFO]: TheCore Lite: CapsLock,4   
+	ApolloCloakOnNova/NovaHero default: 
 	InfestedTerrans/Infestor default: T
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
@@ -139,8 +134,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AutoTurret/Raven_BlackOps default: 
 	BuildAutoTurret/Raven default: T copyof: AutoTurret/Raven default: T
 	DutchPlaceTurret/Swann default: T copyof: AutoTurret/Raven default: T
-	IgniteAfterburner/Medivac default: 
-	MedivacSpeedBoost/Medivac default: B
 	MedivacSpeedBoost/Medivac_BlackOps default: 
 
 [INFO]: TheCore Lite: 5   
@@ -151,6 +144,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HeroNukeCalldown/Nova default: N, R copyof: NukeCalldown/Ghost default: N
 	HeroNukeCalldown/NovaHero default: N, R
 	HeroNukeCalldown/Tosh default: N, R copyof: NukeCalldown/Ghost default: N
+	IgniteAfterburners/Banshee default: B
+	IgniteAfterburners/Battlecruiser default: B
+	IgniteAfterburners/Liberator default: B
+	IgniteAfterburners/SiegeTank default: B
+	IgniteAfterburners/VikingAssault default: B
+	IgniteAfterburners/Vulture default: B
 	KerriganVoidCoopEconDrop/K5Kerrigan default: E
 	KerriganVoidCoopEconDrop/K5KerriganBurrowed default: E
 	KerriganVoidCoopEconDrop/K5KerriganPsiStrike default: E
@@ -180,6 +179,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenVile/HugeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/LargeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
+
+[INFO]: TheCore Lite: Space,5   
+	IgniteAfterburner/Medivac default: 
+	MedivacSpeedBoost/Medivac default: B
 
 [INFO]: TheCore Lite: 6   
 	CampaignVehicles default: A
@@ -225,9 +228,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Colossus/VoidRiftUnselectable default: C
 	Colossus/VoidThrasher default: C
 	Colossus/VoidThrasherWalker default: C
-	ColossusHallucination/Nexus default:  copyof: ColossusHallucination/Sentry default: C
-	ColossusHallucination/Sentry default: C
-	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
 	CommandCenter/SCV default: C
 	CommandCenterOrbRelay/SCV default: C copyof: CommandCenter/SCV default: C
 	Consume/GiantYeti default: W copyof: ParasiticInvasion/LarvalQueen default: Q
@@ -273,6 +273,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HotSBioStasis/HotSLeviathan default: W
 	HybridDominatorPlasmaBlast/HybridDominatorVoid default: Q
 	HybridGeneralMindControl/HybridGeneral default: C
+	ImmortalHallucination/Nexus default:  copyof: ImmortalHallucination/Sentry default: I
+	ImmortalHallucination/Sentry default: I
 	InfestorConsumption/DefilerMP default: C
 	JackhammerConcussionGrenade/HammerSecurity default: C copyof: JackhammerConcussionGrenade/Marauder default: C
 	JackhammerConcussionGrenade/Marauder default: C
@@ -292,6 +294,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NovaGadgetPulseGrenades/NovaVulture default: W
 	OdinBarrage/Odin default: B copyof: 250mmStrikeCannons/Thor default: C
 	OdinBarrage/OdinMKII default: B
+	OracleRevelation/Oracle default: R
 	ParasiticInvasion/LarvalQueen default: Q
 	PlanetCracker/Purifier default: C
 	PrimalHeal/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
@@ -433,7 +436,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: E,C   
 	ForceField/Sentry default: F
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
-	ResearchBattlecruiserSpecializations/FusionCore default: R
 	TossGrenadeTychus/TychusCommando default: T
 	VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP default: C
 
@@ -620,7 +622,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchNovaLifeRegen/GhostAcademyNova default: 
 	ResearchPhobosClassWeaponsSystem/StarportTechLab default: B
 	ResearchPhobosClassWeaponsSystem/StarportTechReactor default: B
-	ResearchPsiStorm/TemplarArchive default: T
 	ResearchSIQueenFungalGrowth/SIStarportTechLab default: 
 	ResearchSOASolarLanceUpgrade/SolarForge default: A
 	ResearchShieldWall/BarracksTechLab default: C
@@ -766,7 +767,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MothershipCore/Nexus default: M
 	NarudEpilogueSummonShadeofNarud/NarudEpilogue default: E
 	Oracle/VoidRiftUnselectable default: E
-	OracleBuildStasisTrap/Oracle default: T
 	OracleEnergyUpgrade/FleetBeacon default: A
 	OracleHallucination/Sentry default: L
 	OrbitalCommand/CommandCenter default: B
@@ -815,7 +815,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchExplosiveShrapnelShells/StarportTechLab default: E
 	ResearchExtendedThermalLance/Colossus default: E
 	ResearchExtendedThermalLance/ColossusPurifier default: E
-	ResearchHealingPsionicStorm/TemplarArchive default: H
 	ResearchHiSecAutoTracking/EngineeringBay default: H
 	ResearchKaraxTurretAttackSpeed/KhaydarinMonolith default: E
 	ResearchKaraxTurretAttackSpeed/PhotonCannon default: E
@@ -825,6 +824,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMarauderMagrailMunitions/BarracksTechReactor default: 
 	ResearchOracleStasisWardUpgrade/FleetBeacon default: A
 	ResearchPerditionTurret/ScienceFacility default: P
+	ResearchPsiStorm/TemplarArchive default: T
 	ResearchRavenRecalibratedExplosives/StarportTechLab default: 
 	ResearchRipwaveMissiles/StarportTechLab default: R
 	ResearchRipwaveMissiles/StarportTechReactor default: R
@@ -967,7 +967,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Carrier/VoidRiftUnselectable default: C
 	Carrier/VoidThrasher default: C
 	Carrier/VoidThrasherWalker default: C
-	CloakOff default: D
 	DarkShrine/Harvester default:  copyof: DarkShrine/Probe default: D
 	DarkShrine/Probe default: D
 	DarkTemplar default: D
@@ -989,7 +988,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveToLeviathan/Devourer default: L
 	EvolveToLeviathan/Mutalisk default: L
 	EvolveToLeviathan/Viper default: L
+	GhostHoldFire/Ghost default: F
 	GhostHoldFire/GhostVulture default: F
+	GhostHoldFire/NovaCoop default: 
+	GhostHoldFire/NovaHero default: F
 	GravitonBeamUrun/Urun default: F
 	GreaterSpire/Spire default: G
 	GreaterSpireBroodlord/Spire default: G copyof: GreaterSpire/Spire default: G
@@ -1032,8 +1034,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MutateintoLurkerDen/HydraliskDen default: D
 	Oracle/Stargate default: E
 	Oracle/StargateWarp default: E
-	OracleWeaponOff default: D
-	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	PlanetCrackerOff/MothershipAiur06 default: C
 	Predator/Factory default: P
 	PrimalFlyer/PrimalTownHall default: F
@@ -1045,8 +1045,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ReaperSpeed/BarracksTechLab default: N
 	ReaperSpeed/BarracksTechReactor default: N copyof: ReaperSpeed/BarracksTechLab default: N
 	ReaperSpeed/MercCompound default: N
-	ReleaseMinion/Nova default: E, C
-	ReleaseMinion/Spectre default: C
 	ResearchAlarakTargetLockBuff/CyberneticsCore default: 
 	ResearchDarkTemplarBlink/DarkShrine default: B
 	ResearchDragoonRange/TwilightCouncil default: B
@@ -1092,6 +1090,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SiegeTank/VoidRift default: S
 	SiegeTank/VoidRiftUnselectable default: S
 	SkyTankLaserBeamSlow/SkyTank default: W
+	SpectreHoldFire/Spectre default: F copyof: GhostHoldFire/Ghost default: F
 	SpiderMine/Bunker default: E
 	SpineCrawler/Drone default: C
 	SquadSight/Monitor default: Q
@@ -1125,7 +1124,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpPrismHallucination/Sentry default: R
 	WarpPrismHallucination/Voranor default:  copyof: WarpPrismHallucination/Sentry default: R
 	WidowMine/Factory default: D
-	WraithCloakOff/Wraith default: D copyof: CloakOff default: D
 	XelNagaConstructChaseBeam/XelNagaConstruct default: T
 	ZagaraVoidCoopSpawnHunterKillers/ZagaraReviveCocoon default: W
 	ZagaraVoidCoopSpawnHunterKillers/ZagaraVoidCoop default: W
@@ -1346,8 +1344,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HyperionVoidCoopHyperjump/HyperionVoidCoop default: Q copyof: Hyperjump/Battlecruiser default: T
 	Hyperjump/Battlecruiser default: T
 	HyperjumpHercules/Hercules default: T copyof: Hyperjump/Battlecruiser default: T
-	ImmortalHallucination/Nexus default:  copyof: ImmortalHallucination/Sentry default: I
-	ImmortalHallucination/Sentry default: I
 	ImpalerBurrowDown default: R copyof: BurrowDown default: R
 	IncineratorNozzles/DevilDog default:  copyof: IncineratorNozzles/Firebat default: R
 	IncineratorNozzles/Firebat default: R
@@ -1381,7 +1377,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NanoRepair/ScienceVessel default: N copyof: Heal/Medivac default: E
 	NovaDomination/NovaHero default: 
 	NovaSwitchAssaultMode/NovaCoop default: 
-	OracleRevelation/Oracle default: R
 	ParasiticBomb/Viper default: R
 	PitAlarakSuperMove/PitAlarak default: R
 	PitMalashSuperMove/PitMalash default: R
@@ -1394,12 +1389,15 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Reclamation/KaraxChampion default: Q
 	Refinery/SCV default: R
 	ReleaseInterceptors/Carrier default: R
+	ReleaseMinion/Nova default: E, C
+	ReleaseMinion/Spectre default: C
 	ResearchBallisticRange/StarportTechLab default: N
 	ResearchBarrier/RoboticsBay default: R
 	ResearchBattlecruiserSpecializations/FusionReactor default: R
 	ResearchBurrow default: B
 	ResearchGoliath/ScienceFacility default: G copyof: HellionTank/Factory default: R
 	ResearchHallucination/CyberneticsCore default: H
+	ResearchHealingPsionicStorm/TemplarArchive default: H
 	ResearchJackhammerConcussionGrenade/BarracksTechLab default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchJackhammerConcussionGrenade/BarracksTechReactor default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchKaraxTurretRange/KhaydarinMonolith default: R
@@ -1467,6 +1465,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VespeneDrone/VespeneDrone default: R
 	VoidRay/Stargate default: V
 	VoidRay/StargateWarp default: V copyof: VoidRay/Stargate default: V
+	VoidRayHallucination/Nexus default:  copyof: VoidRayHallucination/Sentry default: V
+	VoidRayHallucination/Sentry default: V
+	VoidRayHallucination/Voranor default:  copyof: VoidRayHallucination/Sentry default: V
 	VoidSentryShieldRepair/RoguePurifierSupportDroneB default: Q
 	VoidSentryShieldRepair/Sentry default: Q
 	VoidSentryShieldRepair/SentryCampaignBase default: Q
@@ -1814,6 +1815,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildKelMorianRocketTurret/SCV default: G
 	Colossus/RoboticsFacility default: C
 	Colossus/RoboticsFacilityWarp default: C copyof: Colossus/RoboticsFacility default: C
+	ColossusHallucination/Nexus default:  copyof: ColossusHallucination/Sentry default: C
+	ColossusHallucination/Sentry default: C
+	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
 	EnergyNova/Artifact default: V
 	EvolveAberrationArmorAura/EvolutionChamber default: B
 	EvolveK5Cooldowns/EvolutionChamber default: E
@@ -1863,9 +1867,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidRay/SuperWarpGate default: V
 	VoidRay/VoidThrasher default: V
 	VoidRay/VoidThrasherWalker default: V
-	VoidRayHallucination/Nexus default:  copyof: VoidRayHallucination/Sentry default: V
-	VoidRayHallucination/Sentry default: V
-	VoidRayHallucination/Voranor default:  copyof: VoidRayHallucination/Sentry default: V
 	WarpInAdept/Gateway default: H
 	WarpInAdept/WarpGate default: H
 	WarpInReplicant/Gateway default: E
@@ -1933,5 +1934,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 49 
+Finished (suggest inherit) - INFOs: 50 
 ============================

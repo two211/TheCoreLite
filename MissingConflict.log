@@ -17,7 +17,7 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =Space
 
 [ERROR]: ApolloCloakOnNova/NovaHero not related to a conflict
-in seed TheCore Lite, keys =CapsLock,F
+in seed TheCore Lite, keys =CapsLock,4
 
 [ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,4
@@ -113,7 +113,7 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =E
 
 [ERROR]: GhostHoldFire/NovaCoop not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =F
 
 [ERROR]: Glare/Oracle not related to a conflict
 in seed TheCore Lite, keys =
@@ -131,7 +131,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =Space
 
 [ERROR]: IgniteAfterburner/Medivac not related to a conflict
-in seed TheCore Lite, keys =Space,4
+in seed TheCore Lite, keys =Space,5
 
 [ERROR]: Immortal not related to a conflict
 in seed TheCore Lite, keys =D
@@ -715,11 +715,11 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: ColossusHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =V
 
 [WARN]: ColossusHallucination/Voranor not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =V
 
 [WARN]: CyberneticsCore/Harvester not related to a conflict
 but is inherited
@@ -822,7 +822,7 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: ImmortalHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =C
 
 [WARN]: InfestedTerrans/Infestor2 not related to a conflict
 but is part of same check
@@ -1230,11 +1230,11 @@ in seed TheCore Lite, keys =E
 
 [WARN]: VoidRayHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =R
 
 [WARN]: VoidRayHallucination/Voranor not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =R
 
 [WARN]: VoodooShield/Immortal not related to a conflict
 but is inherited
