@@ -84,7 +84,7 @@ Transport/Bunker/CC
 
 Terran:
 * Space/R = "transformers'" keys
-* CapsLock/F = cloak/decloak
+* F/CapsLock = cloak/decloak
 * 4 = halt key
 * 4 = lift key
 * 4 = ignite after burner (coop)
@@ -96,7 +96,7 @@ Terran:
 
 Protoss:
 * Space = blink guardian shield feedback
-* CapsLock/F = orale pulsar beam
+* F/CapsLock = orale pulsar beam
 * Space/R = warp prism (phase mode)
 * E = morph building to warp
 * M = morph building to non-warp (intentionally out of compact keys)
