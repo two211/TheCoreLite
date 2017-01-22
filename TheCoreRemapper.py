@@ -797,7 +797,7 @@ def CheckConsistency(model, write=False):
 		tmp_dict2 = {}
 		tmp_dict2['keys'] = {}
 		tmp_dict2['ok'] = {}
-		for command in sorted(hotkeyfile_parsers[seed].options('Commands')):
+		for command in sorted(model['Commands']):
 			command_list = command.split('/')
 			if len(command_list) > 1:
 				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall','MutaliskViper','Bunker']:
