@@ -572,7 +572,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =
 
 [ERROR]: UseSpiderMine/Vulture not related to a conflict
-in seed TheCore Lite, keys =
+in seed TheCore Lite, keys =C,CapsLock
 
 [ERROR]: WarpInCorsair/Stargate not related to a conflict
 in seed TheCore Lite, keys =

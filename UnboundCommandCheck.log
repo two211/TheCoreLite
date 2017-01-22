@@ -54,7 +54,6 @@ Start unbound commands, within identified conflicts (log file: UnboundCommandChe
 [ERROR]:  unbound command TimeWarpSentinel/Oracle, in seed TheCore Lite
 [ERROR]:  unbound command UpgradeLIDARTransmitter/EngineeringBay, in seed TheCore Lite
 [ERROR]:  unbound command UpgradewithKhaydarinCore/Nexus, in seed TheCore Lite
-[ERROR]:  unbound command UseSpiderMine/Vulture, in seed TheCore Lite
 [ERROR]:  unbound command WarpInCorsair/Stargate, in seed TheCore Lite
 [ERROR]:  unbound command WarpInReaver/RoboticsFacility, in seed TheCore Lite
 [ERROR]:  unbound command WarpinArbiterTribunal/Probe, in seed TheCore Lite
@@ -62,5 +61,5 @@ Start unbound commands, within identified conflicts (log file: UnboundCommandChe
 [ERROR]:  unbound command WarpinObservatory/Probe, in seed TheCore Lite
 [ERROR]:  unbound command XaphanForce/Voranor, in seed TheCore Lite
 ----------------------------
-Finished (unbound commands, within identified conflicts) - ERRORs: 60 
+Finished (unbound commands, within identified conflicts) - ERRORs: 59 
 ============================

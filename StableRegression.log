@@ -1,7 +1,9 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
+[ERROR]: 'Space' used in place of 'C' for command 'DefilerMPConsume/DefilerMP', in seed 'TheCore Lite'
+[ERROR]: 'C' used in place of 'Space' for command 'DefilerMPDarkSwarm/DefilerMP', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 2 INFOs: 1 
 ============================
