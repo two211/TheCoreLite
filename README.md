@@ -210,6 +210,7 @@ Alt+RightClick pings the invisible unit location to allies.
 * Bracket Open: Allies life bars (better use show "damaged" units)
 * Bracket Close: Player life bars (better use show "damaged" units)
 * Ctl+Alt+NumPad#: append non-steal (dropped due to lack of modifier)
+* 0: set rally point (prefer right click)
 
 ----------------------------------------------------------------------------------------------------------------------
 
