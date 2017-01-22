@@ -800,7 +800,7 @@ def CheckConsistency(model, write=False):
 		for command in sorted(model['Commands']):
 			command_list = command.split('/')
 			if len(command_list) > 1:
-				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall','MutaliskViper','Bunker']:
+				if command_list[1] in ['VoidRift','VoidRiftUnselectable','SuperWarpGate','VoidThrasher','VoidThrasherWalker','Epilogue02VoidRift','SJMercStarport','MercCompound','PrimalTownHallUprooted','PrimalTownHall','MutaliskViper','Bunker','Colossus','ColossusPurifier']:
 					metaseed_parser.set('Commands',command,model['Commands'][command].get_value(seed))
 					continue
 			command_root = command_list[0]
