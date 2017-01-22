@@ -1,0 +1,7 @@
+============================
+Start Regression against referenced seeds (log file: StableRegression.log)
+----------------------------
+[INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
+----------------------------
+Finished (Regression against referenced seeds) - ERRORs: 0 INFOs: 1 
+============================
