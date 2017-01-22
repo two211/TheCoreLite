@@ -66,6 +66,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: 0   
 	Rally default: Y
 	SetBunkerRallyPoint/Bunker default: Y
+	SetRallyPointSwarmHost/LocustNestBurrowed default: Y
+	SetRallyPointSwarmHost/SwarmHostBurrowedMP default: Y
 
 [INFO]: TheCore Lite: 4   
 	BiodomeLoad/InfestableBiodome default: L
@@ -133,7 +135,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AutoTurret/Raven_BlackOps default: 
 	BuildAutoTurret/Raven default: T copyof: AutoTurret/Raven default: T
 	DutchPlaceTurret/Swann default: T copyof: AutoTurret/Raven default: T
-	MedivacSpeedBoost/Medivac_BlackOps default: 
 
 [INFO]: TheCore Lite: 5   
 	Aberration/Larva default: B
@@ -182,6 +183,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: Space,5   
 	IgniteAfterburner/Medivac default: 
 	MedivacSpeedBoost/Medivac default: B
+	MedivacSpeedBoost/Medivac_BlackOps default: 
 
 [INFO]: TheCore Lite: 6   
 	CampaignVehicles default: A
@@ -352,7 +354,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SS_TerraTronSawAttack/SS_Plane default: W
 	Scan/CommandCenter default: C
 	Scan/OrbitalCommand default: C
-	SetRallyPointSwarmHost/SwarmHostBurrowedMP default: Y
 	SlaynElementalGrab/SlaynElemental default: Q
 	SpawnBanelings/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
 	SpawnCorruptor/SpacePlatformVentsUnit default: R, C
@@ -436,7 +437,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: E,C   
 	ForceField/Sentry default: F
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
-	SwarmHost/SwarmHostMP default: C
 	TossGrenadeTychus/TychusCommando default: T
 	VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP default: C
 
@@ -849,6 +849,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	StukovCrystalChannel/InfestedStukov default: Period
 	SunkenColony/CreepColony default: E
 	SwarmHost/SwarmHostBurrowedMP default: C
+	SwarmHost/SwarmHostMP default: C
 	SwarmQueenCorpser/SwarmQueenEgg default: E
 	SymbioteCarapace/HotSLeviathan default: E
 	TemporalField/Mothership default: T, C copyof: TemporalField/MothershipCore default: T, C
@@ -1878,7 +1879,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HyperionKorhalYamato/HyperionKorhal default: Y
 	HyperionYamatoGun/Hyperion default: Y
 	Marine/VoidThrasherWalker default: A
-	SetRallyPointSwarmHost/LocustNestBurrowed default: Y
 	Zergling/VoidThrasher default: Z
 
 [INFO]: TheCore Lite: 1   
