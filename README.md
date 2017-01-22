@@ -510,8 +510,8 @@ Compared to upstream project:
 * New "seed" checks:
  * check for unbound commands, known from conflicts
  * check to prevent conflicts between Hotkeys (i.e. directly access such as groups, base camera key) and Commands
-  * known from conflicts
-  * unknown from conflicts
+ * regression check against stable version for Multiplayer
+ * check key consistency over CommandRoot
 * New "quality" checks:
  * check for commands out of known conflicts (warning only in case of inherit/same)
 * Debug mode

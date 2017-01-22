@@ -443,10 +443,11 @@ def analyse(model):
 	conflict_check(model)
 	wrong_inherit(model)
 	## context dependent checks
+	CheckConsistency(model)
 	hotkey_command_check(model)
 	unbound_command_check(model)
 	stable_regression_check(model)
-	## quality checks
+	## quality checks accross seeds
 	if debug_parser.getboolean("Settings","quality",fallback=True):
 		suggest_inherit(model)
 		missing_conflict_check(model)
@@ -782,7 +783,8 @@ def remapHint(command, seed, log=False):
 # Section related to Meta .SC2Hotkeys
 ###########################################
 
-def CheckConsistency(model, write=True):
+def CheckConsistency(model, write=False):
+	logger = Logger("Check key reuse over common CommandRoot", "CommandRootConsistency.log", log_file=[LogLevel.Error])
 	for seed in allSeeds:
 		metaseed_parser = ConfigParser()
 		## Settings&Hotkey section
@@ -811,11 +813,13 @@ def CheckConsistency(model, write=True):
 					metaseed_parser.set('Commands',command_root,model['Commands'][command].get_value(seed))
 				else:
 					if keys != tmp_dict2['keys'][command_root]:
-						print(command_root)
+						log_msg = "'" +command_root+"' is not consistent in seed '" + seed.value + "'"
+						logger.log(LogLevel.Error, log_msg)
 						tmp_dict2['ok'][command_root] = False
 		if write:
 			with open(seed.value+".SC2HotkeysMeta",'w') as myfile:
 				metaseed_parser.write(myfile)
+	logger.finish()
 
 #def load_meta(seeds=allSeeds):
 #	model = {}
