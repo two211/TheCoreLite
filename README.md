@@ -224,8 +224,8 @@ Compared to legacy TheCore Lite:
 * "control" cameras were introduced
 
 ### Other features
-* Alt now shows Ennemy life bar (useful for quick check for mana bars of stacked ground/air armies)
-* ` is used for jump to last alert (with Shift)
+* Alt now shows Enemy life bar (useful for quick check for mana bars of stacked ground/air armies)
+* Shift+` is used for jump to last alert
 
 ### Additional cameras alternates on control
 
