@@ -184,11 +184,11 @@ def init_seed_hotkeyfile_parser():
 def thecore_tag(race, side, size):
 	return(" " + race.value + side.value + size.value + " ")
 
-def create_filepath(string, path=""):
+def create_filepath(string, directory=None):
 	filename = string + suffix
 	filepath = filename
-	if path:
-		filepath = path + "/" + filename
+	if directory:
+		filepath = directory + "/" + filename
 	return filepath
 
 def new_keys_from_seed_hotkeys(default_parser,hotkeyfile_parsers):
@@ -445,6 +445,7 @@ def analyse(model):
 	## context dependent checks
 	hotkey_command_check(model)
 	unbound_command_check(model)
+	stable_regression_check(model)
 	## quality checks
 	if debug_parser.getboolean("Settings","quality",fallback=True):
 		suggest_inherit(model)
@@ -644,6 +645,43 @@ def missing_conflict_check(model):
 			for seed in allSeeds:
 				log_msg += "\nin seed " + seed.value + ", keys =" + model['Commands'][command].get_value(seed)
 			logger.log(level, log_msg)
+	logger.finish()
+
+def stable_regression_check(model,stableDir='stable'):
+	logger = Logger("Regression against referenced seeds", "StableRegression.log", log_consol=[LogLevel.Info], log_file=[LogLevel.Error, LogLevel.Info])
+	pairlist = []
+	for race in Races:
+		if race in allSeeds:
+			filename = create_filepath( prefix + thecore_tag(race, Sides.Left, Sizes.Medium), 'stable')
+			if os.path.isfile(filename):
+				pairlist.append( (seed,filename) )
+	for seed in OtherSeeds:
+		if seed in allSeeds:
+			filename = create_filepath( seed.value, 'stable')
+			if os.path.isfile(filename):
+				pairlist.append( (seed,filename) )
+	for seed, filename in pairlist:
+		log_msg = "seed '"+seed.value+"' got regression check against '"+filename+"'"
+		logger.log(LogLevel.Info, log_msg)
+		ref_parser = ConfigParser()
+		ref_parser.read(default_filepath)
+		ref_parser.read(filename)
+		for section in model.keys():
+			## Check Commands
+			if section == 'Commands':
+				commandToCheck={}
+				for context in ['LotV Multiplayer','HotS Multiplayer','libertymulti','swarmmulti','voidmulti']:
+					for command in constraints['CommandByContexts'][context]:
+						commandToCheck[command]=0
+				for command in sorted(commandToCheck):
+					if model['Commands'][command].get_value(seed) != ref_parser['Commands'][command]:
+						log_msg = "'" +model['Commands'][command].get_value(seed) + "' used in place of '" + ref_parser['Commands'][command] + "' for command '"+ command + "', in seed '" + seed.value + "'"
+						logger.log(LogLevel.Error, log_msg)
+			else:
+				for param in ref_parser[section].keys():
+					if model[section][param].get_value(seed) != ref_parser[section][param]:
+						log_msg =  model[section][param].get_value(seed) + " used in place of " + ref_parser[section][command] + " for command "+ command +", in seed " + seed.value
+						logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
 def getConstraints():
