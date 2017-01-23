@@ -424,6 +424,16 @@ Use case scenarii
 * Ctl+click: on a unit, select all units for this type
 * right click for rally
 
+### Use case: Easy MULE/Chronoboost
+* Shift+[camera\_key]: jump to base
+* W: select CC/Nexus
+* hold E: precision key for MULE/Chronoboost
+* click on wanted location
+* how to end
+ * rightclick will cancel
+ * select another group
+ * select|box unit(s)
+
 ### Use case: BackSpace inject variants
 
 The "Telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).

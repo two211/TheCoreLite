@@ -1,7 +1,14 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
+[ERROR]: 'CapsLock' used in place of 'E' for command 'MothershipCore/Nexus', in seed 'TheCore Lite'
+[ERROR]: 'E,Space' used in place of 'C,Space' for command 'MothershipCoreWeapon/Mothership', in seed 'TheCore Lite'
+[ERROR]: 'E,Space' used in place of 'C,Space' for command 'MothershipCoreWeapon/MothershipCore', in seed 'TheCore Lite'
+[ERROR]: 'C' used in place of 'E' for command 'TemporalField/Mothership', in seed 'TheCore Lite'
+[ERROR]: 'C' used in place of 'E' for command 'TemporalField/MothershipCore', in seed 'TheCore Lite'
+[ERROR]: 'E,C' used in place of 'C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
+[ERROR]: 'C' used in place of 'E' for command 'Vortex/Mothership', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 7 INFOs: 1 
 ============================
