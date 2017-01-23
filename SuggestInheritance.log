@@ -454,6 +454,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: E,C   
 	ForceField/Sentry default: F
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
+	SwarmHost/LocustNestBurrowed default: C
+	SwarmHost/SwarmHostBurrowedMP default: C
+	SwarmHost/SwarmHostMP default: C
 	TimeWarp/Nexus default: C
 	TossGrenadeTychus/TychusCommando default: T
 	VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP default: C
@@ -870,9 +873,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpawnChangeling/Overseer default: C
 	StukovCrystalChannel/InfestedStukov default: Period
 	SunkenColony/CreepColony default: E
-	SwarmHost/LocustNestBurrowed default: C
-	SwarmHost/SwarmHostBurrowedMP default: C
-	SwarmHost/SwarmHostMP default: C
 	TerranVehicleWeaponsLevel1/Armory default: E
 	TerranVehicleWeaponsLevel2/Armory default: E
 	TerranVehicleWeaponsLevel3/Armory default: E

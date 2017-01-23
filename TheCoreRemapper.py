@@ -570,7 +570,7 @@ def suggest_inherit(model):
 	logger.finish()
 
 def wrong_inherit(model):
-	logger = Logger("wrong inherit", "WrongInheritance.log", log_consol=[], log_file=[LogLevel.Error])
+	logger = Logger("wrong inherit", "WrongInheritance.log", log_consol=[], log_file=[LogLevel.Error,LogLevel.Warn])
 	for section in collections.OrderedDict(sorted(model.items())):
 		for hotkey in collections.OrderedDict(sorted(model[section].items())).values():
 			if not hotkey.copyOf:
@@ -586,6 +586,7 @@ def wrong_inherit(model):
 					equal = False
 			if not equal:
 				log_msg = hotkey.name + " != " + hotkeycopyof.name + "\n"
+				log_lvl = LogLevel.Warn
 				for seed in allSeeds:
 					value = hotkey.get_raw_value(seed)
 					copyofvalue = hotkeycopyof.get_value(seed)
@@ -593,6 +594,8 @@ def wrong_inherit(model):
 						value = " "
 					if not copyofvalue:
 						copyofvalue = " "
+					if value.split(",")[0] != copyofvalue.split(",")[0]:
+						log_lvl = LogLevel.Error
 					log_msg = log_msg + "\t" + seed.value + ": " + str(value) + "\t" + str(copyofvalue) + "\n"
 				default = hotkey.default
 				if not default:
@@ -601,7 +604,7 @@ def wrong_inherit(model):
 				if not copyofdefault:
 					copyofdefault = " "
 				log_msg = log_msg + "\tD: " + str(default) + "\t" + str(copyofdefault) + " (default)"
-				logger.log(LogLevel.Error, log_msg)
+				logger.log(log_lvl, log_msg)
 	logger.finish()
 
 
