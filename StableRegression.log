@@ -4,13 +4,8 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'Space' used in place of 'C' for command 'DefilerMPConsume/DefilerMP', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'Space' for command 'DefilerMPDarkSwarm/DefilerMP', in seed 'TheCore Lite'
 [WARN]: 'CapsLock' used in place of 'E' for command 'MothershipCore/Nexus', in seed 'TheCore Lite'
-[WARN]: 'E,Space' used in place of 'C,Space' for command 'MothershipCoreWeapon/Mothership', in seed 'TheCore Lite'
-[WARN]: 'E,Space' used in place of 'C,Space' for command 'MothershipCoreWeapon/MothershipCore', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'E' for command 'TemporalField/Mothership', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'E' for command 'TemporalField/MothershipCore', in seed 'TheCore Lite'
 [WARN]: 'E,C' used in place of 'C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'E' for command 'Vortex/Mothership', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 9 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 4 INFOs: 1 
 ============================

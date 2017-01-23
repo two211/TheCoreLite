@@ -356,6 +356,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchWhirlwind/TwilightCouncil default: D
 	SIArmory/SISCV default: 
 	SIBanshee/SIStarport default: 
+	SOAMothershipLineAttack/SOAMothershipv4 default: R
 	SS_LeviathanTentacleAttackL1NoDelay/SS_Plane default: C
 	SS_TerraTronSawAttack/SS_Plane default: W
 	Scan/CommandCenter default: C
@@ -380,8 +381,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TechReactor/FactoryFlying default: Z copyof: TechLabBarracks/Barracks default: X
 	TechReactor/Starport default:  copyof: TechLabBarracks/Barracks default: X
 	TechReactor/StarportFlying default: Z copyof: TechLabBarracks/Barracks default: X
-	TemporalField/Mothership default: T, C copyof: TemporalField/MothershipCore default: T, C
-	TemporalField/MothershipCore default: T, C
 	TerranVehiclePlatingLevel1/Armory default: V
 	TerranVehiclePlatingVanadiumPlatingLevel1/Armory default: V copyof: TerranVehiclePlatingLevel1/Armory default: V
 	TerranVehiclePlatingVanadiumPlatingLevel2/Armory default: V copyof: TerranVehiclePlatingLevel1/Armory default: V
@@ -399,17 +398,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VespeneDrone/VespeneDrone default: R
 	VoidDarkTemplarShadowFury/DarkTemplarShakuras default: Q, E
 	VoidHighTemplarMindBlast/HighTemplarTaldarim default: F
-	VoidSentryBlackHole/SOAMothershipv4 default: E
 	VoidSentryChronoBeam/SentryCampaignBase default: C
 	VoidSentryChronoBeam/SentryPurifier default: C
 	VoidShadowGuardShadowFury/VorazunShadowGuard default: E
 	VoidShieldCapacitor/FenixChampion default: C
 	VoidShieldCapacitor/FenixSOA default: C
 	VoidTendrilShockwave/VoidShard default: V
-	Vortex/Artanis default: V copyof: TemporalField/MothershipCore default: T, C
-	Vortex/Mothership default: V copyof: TemporalField/MothershipCore default: T, C
-	Vortex/Purifier default: V
-	Vortex/TalDarimMothership default: V
 	WarpInDarkArchonChampion/TwilightCouncil default: R
 	WidowMineAttack/WidowMine default: C
 	WildMutation/K5Kerrigan default: E
@@ -485,6 +479,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Feedback/HighTemplarShakuras default: F
 	Feedback/Khiradun default:  copyof: Feedback/HighTemplar default: F
 	Feedback/Tassadar default: F
+	MothershipCoreWeapon/Mothership default: F copyof: MothershipCoreWeapon/MothershipCore default: F
+	MothershipCoreWeapon/MothershipCore default: F
 	NovaSnipe/Nova default: R copyof: Snipe/Ghost default: R
 	NovaWeaponImprovedCanisterRifleSnipe/NovaCoop default: 
 	Obliterate/Spectre default: I
@@ -862,7 +858,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIClusterRockets/StukovApocalisk default: 
 	SIDiamondBack/SIFactory default: 
 	SIQueenFungalGrowth/SIQueen default: 
-	SOAMothershipLineAttack/SOAMothershipv4 default: R
 	SS_LeviathanTentacleAttackR1/SS_Plane default: S
 	SentryTaldarimForceField/Monitor default: F
 	Separatist/Barracks default: S
@@ -873,6 +868,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpawnChangeling/Overseer default: C
 	StukovCrystalChannel/InfestedStukov default: Period
 	SunkenColony/CreepColony default: E
+	TemporalField/Mothership default: T, C copyof: TemporalField/MothershipCore default: T, C
+	TemporalField/MothershipCore default: T, C
 	TerranVehicleWeaponsLevel1/Armory default: E
 	TerranVehicleWeaponsLevel2/Armory default: E
 	TerranVehicleWeaponsLevel3/Armory default: E
@@ -900,6 +897,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Viper/VoidRift default: E
 	Viper/VoidRiftUnselectable default: E
 	VoidHighTemplarPsiOrb/HighTemplarTaldarim default: T
+	VoidSentryBlackHole/SOAMothershipv4 default: E
 	VoidSentryPhasingMode/SentryCampaignBase default: E
 	VoidSentryPhasingMode/SentryPurifier default: E
 	VoidStasis/DarkTemplarShakuras default: V
@@ -908,6 +906,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidTendrilUnstableEnergy/VoidShard default: U
 	VoidZealotShadowChargeStun/ZealotShakuras default: Z
 	VoidZealotWhirlwind/ZealotAiur default: E
+	Vortex/Artanis default: V copyof: TemporalField/MothershipCore default: T, C
+	Vortex/Mothership default: V copyof: TemporalField/MothershipCore default: T, C
+	Vortex/Purifier default: V
+	Vortex/TalDarimMothership default: V
 	WarpInReaverChampion/TwilightCouncil default: E
 	XelNagaShadowStep/XelNagaConstruct default: E
 	YagdraFirebreath/AbathurLavaWorm default: B
@@ -943,8 +945,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LightningBomb/Tempest default: D
 	LightningBomb/TempestPurifier default: D
 	MagrailMunitions/Marauder_BlackOps default: 
-	MothershipCoreWeapon/Mothership default: F copyof: MothershipCoreWeapon/MothershipCore default: F
-	MothershipCoreWeapon/MothershipCore default: F
 	NovaWeaponCanisterRifleSnipe/NovaHero default: Q
 	NovaWeaponCanisterRifleSnipe/NovaVulture default: Q
 	SJHyperionYamato/SJHyperion default: E copyof: YamatoGun default: Y
