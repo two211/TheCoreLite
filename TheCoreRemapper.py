@@ -446,9 +446,9 @@ def analyse(model):
 	CheckConsistency(model)
 	hotkey_command_check(model)
 	unbound_command_check(model)
-	stable_regression_check(model)
 	## quality checks accross seeds
 	if debug_parser.getboolean("Settings","quality",fallback=True):
+		stable_regression_check(model)
 		suggest_inherit(model)
 		missing_conflict_check(model)
 
@@ -649,7 +649,7 @@ def missing_conflict_check(model):
 	logger.finish()
 
 def stable_regression_check(model,stableDir='stable'):
-	logger = Logger("Regression against referenced seeds", "StableRegression.log", log_consol=[LogLevel.Info], log_file=[LogLevel.Error, LogLevel.Info])
+	logger = Logger("Regression against referenced seeds", "StableRegression.log", log_consol=[LogLevel.Info], log_file=[LogLevel.Error, LogLevel.Warn, LogLevel.Info])
 	pairlist = []
 	for race in Races:
 		if race in allSeeds:
@@ -677,7 +677,7 @@ def stable_regression_check(model,stableDir='stable'):
 				for command in sorted(commandToCheck):
 					if model['Commands'][command].get_value(seed) != ref_parser['Commands'][command]:
 						log_msg = "'" +model['Commands'][command].get_value(seed) + "' used in place of '" + ref_parser['Commands'][command] + "' for command '"+ command + "', in seed '" + seed.value + "'"
-						logger.log(LogLevel.Error, log_msg)
+						logger.log(LogLevel.Warn, log_msg)
 			else:
 				for param in ref_parser[section].keys():
 					if model[section][param].get_value(seed) != ref_parser[section][param]:
