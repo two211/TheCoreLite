@@ -682,9 +682,9 @@ def stable_regression_check(model,stableDir='stable'):
 						log_msg = "'" +model['Commands'][command].get_value(seed) + "' used in place of '" + ref_parser['Commands'][command] + "' for command '"+ command + "', in seed '" + seed.value + "'"
 						logger.log(LogLevel.Warn, log_msg)
 			else:
-				for param in ref_parser[section].keys():
+				for param in sorted(model[section].keys()):
 					if model[section][param].get_value(seed) != ref_parser[section][param]:
-						log_msg =  model[section][param].get_value(seed) + " used in place of " + ref_parser[section][command] + " for command "+ command +", in seed " + seed.value
+						log_msg =  model[section][param].get_value(seed) + " used in place of " + ref_parser[section][param] + " for parameter "+ param +", in seed " + seed.value
 						logger.log(LogLevel.Error, log_msg)
 	logger.finish()
 
