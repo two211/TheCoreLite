@@ -246,6 +246,10 @@ Using them you have a finger on Ctl:
 Ctl+LeftClick on a units selects all visible units of this type.
 It is particularly useful for spreading creep.
 
+Related aliases:
+* Ctl+Alt = recall macro "production group" (use case: control cam warp-in)
+* Ctl+V = recall "utility group" (use case: creep queen, wall supply depot...)
+
 ----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite Macro groups
@@ -263,7 +267,7 @@ Group content:
 * All Nexus/CC/Hatch
 * Terran and Protoss should add research facilities to this group
 
-Tip for additional expansion:
+Tip for additional expansion and related alternates:
 * Center base at camera creation with:
  * Alt+Shift
  * Alt+CapsLock
@@ -285,6 +289,9 @@ Tips for rally point | warp-in pylon:
  * Shift+Q selects this group
  * Shift+W recalls camera (rally point)
 
+Related alternates:
+* Ctl+Alt: recall this group (use case: control cam warp-in)
+
 Race specific:
 * Related to warp-in
  * Keep shift pressed, while holding unit key (queued rapid-fire warp-in)
@@ -293,6 +300,27 @@ Race specific:
  * W camera would be main hive
  * Shift+Q+W helps getting Shift already pressed for queued commands
  * please read dedicated usecase "Telegraph inject" and "TheCore inject"
+
+### Utility group = **Grave**
+
+Group content:
+* wall supply depots
+* creep queens
+* please report any other usage
+
+Alternates for "recall utility group":
+* Shift+V
+* Ctl+V
+
+Usages:
+* Creep queen with control
+ * Ctl+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
+ * Ctl+C + clicks = drop creep tumors (precision key)
+* Creep queen with shift
+ * Shift+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
+ * Shift+C + clicks = drop creep tumors (queued)
+* wall supply depots burrow
+ * Shift+V+Space: select wall supply depots and burrow
 
 ### Group display
 
@@ -439,9 +467,17 @@ Use case scenarii
 * left click on wanted locations
 
 #### How to end
-* rightclick will cancel
+
+After usage of the variant 1:
+* releasing shift will cancel targeting on queued command
+ * only work if one LeftClick has been performed
+
+Otherwise see not about canceling targeting in Rapid Fire and Precision key section.
+After variant 1 and 2, to cancel targeting:
+* Cancel key "Escape"
+* rightclick will cancel targeting
 * select another group
-* select|box unit(s)
+* select|box other unit(s)
 
 ### Use case: BackSpace inject variants
 
@@ -490,7 +526,9 @@ Suggested camera locations:
 * X 5th
 
 ### Use case: zerg macro routine
-* Inject routine of your choice
+* Inject routine
+ * use TheCore Lite Inject initiate
+ * then "TheCore inject" or "Telegraph inject"
 * check supply depot at this step and produce overlords
  * morph 1 overlord/mining hatch/egg cycle
  * rally overlords individually to strategic locations
@@ -501,14 +539,12 @@ Suggested camera locations:
 * Tech check
  * You had time to check upgrades as they were selected with hatcheries
  * browse subgroup + add new research
-* Creep queen
- * Ctl+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
- * Ctl+C + clicks = drop creep tumors (queued)
-* Creep cameras (control cameras)
+* Creep queens (see "utility group section")
+* Creep cameras (control cameras) holding control
  * Ctl+D|F|G = jump to creep camera
  * Ctl+click to select creep tumors
  * Ctl+C then clicks = spread creep tumor
- * click = select a new creep tumor
+ * Ctl+click = select a new creep tumor
  * Ctl+Space = center view on selection
  * Ctl+E|R|T = update creep camera
 
