@@ -425,14 +425,23 @@ Use case scenarii
 * right click for rally
 
 ### Use case: Easy MULE/Chronoboost
+
+#### Variant 1
+* W: select CC/Nexus
+* E: key for MULE/Chronoboost, precision key, no risk of rapid fire
+* Shift+[camera\_key]: jump to base
+* hold shift + click on wanted locations
+
+#### Variant 2
 * Shift+[camera\_key]: jump to base
 * W: select CC/Nexus
-* hold E: precision key for MULE/Chronoboost
-* click on wanted location
-* how to end
- * rightclick will cancel
- * select another group
- * select|box unit(s)
+* hold E: key for MULE/Chronoboost, precision key
+* left click on wanted locations
+
+#### How to end
+* rightclick will cancel
+* select another group
+* select|box unit(s)
 
 ### Use case: BackSpace inject variants
 
