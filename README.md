@@ -452,33 +452,6 @@ Use case scenarii
 * Ctl+click: on a unit, select all units for this type
 * right click for rally
 
-### Use case: Easy MULE/Chronoboost
-
-#### Variant 1
-* W: select CC/Nexus
-* E: key for MULE/Chronoboost, precision key, no risk of rapid fire
-* Shift+[camera\_key]: jump to base
-* hold shift + click on wanted locations
-
-#### Variant 2
-* Shift+[camera\_key]: jump to base
-* W: select CC/Nexus
-* hold E: key for MULE/Chronoboost, precision key
-* left click on wanted locations
-
-#### How to end
-
-After usage of the variant 1:
-* releasing shift will cancel targeting on queued command
- * only work if one LeftClick has been performed
-
-Otherwise see not about canceling targeting in Rapid Fire and Precision key section.
-After variant 1 and 2, to cancel targeting:
-* Cancel key "Escape"
-* rightclick will cancel targeting
-* select another group
-* select|box other unit(s)
-
 ### Use case: BackSpace inject variants
 
 The "Telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).
@@ -554,7 +527,34 @@ sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
 [JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
 
+### Use case: Easy MULE/Chronoboost
 
+Protoss and Terran have also some macro optimization with TheCore Lite \o/
+
+#### Variant 1
+* W: select CC/Nexus
+* E: key for MULE/Chronoboost, precision key, no risk of rapid fire
+* Shift+[camera\_key]: jump to base
+* hold shift + click on wanted locations
+
+#### Variant 2
+* Shift+[camera\_key]: jump to base
+* W: select CC/Nexus
+* hold E: key for MULE/Chronoboost, precision key
+* left click on wanted locations
+
+#### How to end
+
+After usage of the variant 1:
+* releasing shift will cancel targeting on queued command
+ * only work if one LeftClick has been performed
+
+Otherwise see not about canceling targeting in Rapid Fire and Precision key section.
+After variant 1 and 2, to cancel targeting:
+* Cancel key "Escape"
+* rightclick will cancel targeting
+* select another group
+* select|box other unit(s)
 
 ----------------------------------------------------------------------------------------------------------------------
 
