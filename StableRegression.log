@@ -1,11 +1,12 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
+[ERROR]: Grave,Control+V,Shift+V used in place of Grave,Control+V for parameter ControlGroupRecall1, in seed TheCore Lite
 [WARN]: 'Space' used in place of 'C' for command 'DefilerMPConsume/DefilerMP', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'Space' for command 'DefilerMPDarkSwarm/DefilerMP', in seed 'TheCore Lite'
 [WARN]: 'CapsLock' used in place of 'E' for command 'MothershipCore/Nexus', in seed 'TheCore Lite'
 [WARN]: 'E,C' used in place of 'C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 4 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 1 WARNs: 4 INFOs: 1 
 ============================
