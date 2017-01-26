@@ -229,7 +229,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ChainLightning/XelNagaWorldshipVault default: C
 	CloakOnFlagship/Flagship default: C
 	Colossus/Epilogue02VoidRift default: C
-	Colossus/SuperWarpGate default: C
 	Colossus/VoidRift default: C
 	Colossus/VoidRiftUnselectable default: C
 	Colossus/VoidThrasher default: C
@@ -329,6 +328,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchCycloneLockOnDamageUpgrade/FactoryTechLab default: O
 	ResearchCycloneLockOnDamageUpgrade/FactoryTechReactor default: O
 	ResearchDoubleGravitonBeam/FleetBeacon default: G
+	ResearchExtendedThermalLance/Colossus default: E
+	ResearchExtendedThermalLance/ColossusPurifier default: E
+	ResearchExtendedThermalLance/RoboticsBay default: E
 	ResearchHeavyInfestation/SICommandCenter default: 
 	ResearchIncineratorGauntlets/BarracksTechLab default: I
 	ResearchIncineratorGauntlets/BarracksTechReactor default: I
@@ -354,6 +356,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchTransformationServos/FactoryTechLab default: T
 	ResearchVehicleWeaponRange/Armory default: R
 	ResearchWhirlwind/TwilightCouncil default: D
+	RoboticsBay/Harvester default:  copyof: RoboticsBay/Probe default: B
+	RoboticsBay/Probe default: B
 	SIArmory/SISCV default: 
 	SIBanshee/SIStarport default: 
 	SOAMothershipLineAttack/SOAMothershipv4 default: R
@@ -430,7 +434,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCreepTumor/Queen2 default:  copyof: BuildCreepTumor/Queen default: C
 	BuildCreepTumor/QueenCoop default: C copyof: BuildCreepTumor/Queen default: C
 	BuildCreepTumor/ZaGara default: C
-	BuildCreepTumorPropagate/CreepTumorBurrowed default: C
+	Colossus/RoboticsFacility default: C
+	Colossus/RoboticsFacilityWarp default: C copyof: Colossus/RoboticsFacility default: C
 	CorruptionAbility/Corruptor default: C
 	CorruptionAbility/Spotter default: C
 	DeploySpiderMines/SiegeTank default: R
@@ -440,6 +445,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsionicShockwave/Maar default: V
 	PsionicShockwave/ShadowOfTheVoidHybridDominator default: V
 	RaynorSnipe/RaynorCommando default: T
+	Sentry default: E
 	SpiderMine/MercVulture default: E
 	SpiderMine/Reaper default: E
 	SpiderMine/Vulture default: E
@@ -499,8 +505,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildSITechLabStarport/SIStarportFlying default: 
 	CloakOff default: D
 	CommandCenterUnloadAll default: D
-	DarkArchon/Gateway default: A
-	DarkArchon/WarpGate default: A
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
 	GravitonCatapult/Carrier default: G
@@ -643,6 +647,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Pylon/Harvester default:  copyof: Pylon/Probe default: E
 	Pylon/Probe default: E
 	ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab default: 
+	ResearchBarrier/RoboticsBay default: R
 	ResearchCharge/TwilightCouncil default: C
 	ResearchHellion/ScienceFacility default: H copyof: Hellion/Factory default: E, R
 	ResearchHighCapacityBarrels/FactoryTechLab default: I
@@ -1068,8 +1073,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchDarkTemplarBlink/DarkShrine default: B
 	ResearchDragoonChassis/TwilightCouncil default: E
 	ResearchDrillClaws/FactoryTechLab default: C
-	ResearchExtendedThermalLance/Colossus default: E
-	ResearchExtendedThermalLance/ColossusPurifier default: E
 	ResearchFireSuppressionSystems/EngineeringBay default: F
 	ResearchG4Charge/BarracksTechLab default: G copyof: ReaperSpeed/BarracksTechLab default: N
 	ResearchG4Charge/BarracksTechReactor default: G copyof: ReaperSpeed/BarracksTechLab default: N
@@ -1173,8 +1176,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Battlecruiser/Starport default: B
 	Carrier/Stargate default: C
 	Carrier/StargateWarp default: C copyof: Carrier/Stargate default: C
+	Colossus/SuperWarpGate default: C
 	CyberneticsCore/Harvester default:  copyof: CyberneticsCore/Probe default: Y
 	CyberneticsCore/Probe default: Y
+	DarkArchon/Gateway default: A
+	DarkArchon/WarpGate default: A
 	EvolveBileLauncherBombardmentCooldown/SpawningPool default: D
 	EvolveGuardianAttackRangeIncrease/GreaterSpire default: E
 	EvolveGuardianAttackRangeIncrease/Spire default: E
@@ -1204,7 +1210,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchLocustNest/EvolutionChamber default: 
 	ResearchReaverIncreasedScarabCount/RoboticsBay default: C
 	SS_LeviathanTentacleAttackR2/SS_Plane default: A
-	Sentry default: E
 	StalkerHallucination/Nexus default:  copyof: StalkerHallucination/Sentry default: S
 	StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
@@ -1213,7 +1218,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Ultralisk/Larva default: U
 	UltraliskCavern/Drone default: U
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
-	WarpinDisruptor/RoboticsFacility default: D
+	WarpInAdept/Gateway default: H
+	WarpInAdept/WarpGate default: H
 	ZagaraBileLauncher/Drone default: N
 
 [INFO]: TheCore Lite: H   
@@ -1402,7 +1408,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ReleaseMinion/Nova default: E, C
 	ReleaseMinion/Spectre default: C
 	ResearchBallisticRange/StarportTechLab default: N
-	ResearchBarrier/RoboticsBay default: R
 	ResearchBurrow default: B
 	ResearchDragoonRange/TwilightCouncil default: B
 	ResearchGoliath/ScienceFacility default: G copyof: HellionTank/Factory default: R
@@ -1817,8 +1822,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCyclone/Factory default: N
 	BuildKelMorianRocketTurret/KelMorianWorker default: G
 	BuildKelMorianRocketTurret/SCV default: G
-	Colossus/RoboticsFacility default: C
-	Colossus/RoboticsFacilityWarp default: C copyof: Colossus/RoboticsFacility default: C
 	ColossusHallucination/Nexus default:  copyof: ColossusHallucination/Sentry default: C
 	ColossusHallucination/Sentry default: C
 	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
@@ -1839,7 +1842,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PrimalHydralisk/YagdraEggSmall default: H
 	ResearchDurableMaterials/StarportTechLab default: D
 	ResearchDurableMaterials/StarportTechReactor default: D copyof: ResearchDurableMaterials/StarportTechLab default: D
-	ResearchExtendedThermalLance/RoboticsBay default: E
 	ResearchFirebat/ScienceFacility default: F copyof: Firebat/Barracks default: F
 	ResearchImprovedTurretAttackSpeed/EngineeringBay default: R
 	ResearchIncineratorNozzles/BarracksTechLab default: R
@@ -1852,8 +1854,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchStructureBarrier/Forge default: B
 	ResearchStukovInfestedBansheeInfestedLife/SIStarportTechLab default: 
 	RetributionField/Meliak default: V
-	RoboticsBay/Harvester default:  copyof: RoboticsBay/Probe default: B
-	RoboticsBay/Probe default: B
 	SIStarport/SISCV default: 
 	SS_LeviathanTentacleAttackL2NoDelay/SS_Plane default: V
 	ScourgeNest/Drone default: C
@@ -1865,7 +1865,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	StopPlanetaryFortress/MercenaryFortress default: P
 	StopPlanetaryFortress/PlanetaryFortress default: P
 	StopPlanetaryFortress/WarfieldFortress default: P
-	Tempest/Stargate default: T
 	TerranVehiclePlatingLevel2/Armory default: V
 	TerranVehiclePlatingLevel3/Armory default: V
 	Viper/Larva default: E
@@ -1873,8 +1872,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidRay/SuperWarpGate default: V
 	VoidRay/VoidThrasher default: V
 	VoidRay/VoidThrasherWalker default: V
-	WarpInAdept/Gateway default: H
-	WarpInAdept/WarpGate default: H
 	WarpInReplicant/Gateway default: E
 	WarpInReplicant/WarpGate default: E
 	WarpInVulcanChampion/TwilightCouncil default: X

@@ -2,11 +2,21 @@
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
 [ERROR]: Grave,Control+V,Shift+V used in place of Grave,Control+V for parameter ControlGroupRecall1, in seed TheCore Lite
+[ERROR]: RightMouseButton,V used in place of RightMouseButton for parameter TargetCancel, in seed TheCore Lite
+[ERROR]: LeftMouseButton,Space,R,T,Y,D,F,G,H,CapsLock used in place of LeftMouseButton,Space,R,T,Y,D,F,G,H,V,CapsLock for parameter TargetChoose, in seed TheCore Lite
+[WARN]: 'C,CapsLock,E' used in place of 'C,CapsLock' for command 'BuildCreepTumorPropagate/CreepTumorBurrowed', in seed 'TheCore Lite'
+[WARN]: 'C,CapsLock' used in place of 'V' for command 'Colossus/RoboticsFacility', in seed 'TheCore Lite'
 [WARN]: 'Space' used in place of 'C' for command 'DefilerMPConsume/DefilerMP', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'Space' for command 'DefilerMPDarkSwarm/DefilerMP', in seed 'TheCore Lite'
 [WARN]: 'CapsLock' used in place of 'E' for command 'MothershipCore/Nexus', in seed 'TheCore Lite'
+[WARN]: 'C' used in place of 'V' for command 'ResearchExtendedThermalLance/RoboticsBay', in seed 'TheCore Lite'
+[WARN]: 'C' used in place of 'V' for command 'RoboticsBay/Probe', in seed 'TheCore Lite'
+[WARN]: 'C,CapsLock' used in place of 'G' for command 'Sentry', in seed 'TheCore Lite'
 [WARN]: 'E,C' used in place of 'C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
+[WARN]: 'G' used in place of 'V' for command 'WarpInAdept/Gateway', in seed 'TheCore Lite'
+[WARN]: 'G' used in place of 'V' for command 'WarpInAdept/WarpGate', in seed 'TheCore Lite'
+[WARN]: 'V,G' used in place of 'G' for command 'WarpinDisruptor/RoboticsFacility', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 1 WARNs: 4 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 3 WARNs: 12 INFOs: 1 
 ============================
