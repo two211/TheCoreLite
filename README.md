@@ -66,15 +66,23 @@ Holding precision key for multiple cast, you will end up to have to cancel targe
 For this there are several option:
 * cancel key "Escape"
 * rightclick will cancel targeting
+* V is now an alias for CancelTargeting
 * select another group
 * select|box other unit(s)
 
 The 2 last save you APMs if some others unit/building need action
 
 #### High Templar group example
-* assuming HTs in a group following some ranged units not to run into enemies
+Case study assuming HTs in a group following some ranged units not to run into enemies.
+
+Important to know:
 * after feedback/psistorm cast, HT will give up follow, think about make the entire group re-follow
-* in case HTs were too far to cast, you still can cancel the cast issuing a move command on the entire group
+* in case HTs were too far to cast and enemy moved, you still can cancel the cast:
+ * issuing a move command on the entire group
+ * using V will cancel the target and make stop all selected units
+* caster split
+ * cast area of effect spells far away on the minimap (eventually rapid fire...)
+ * hold V to cancel targeting and stop the casters, it will cancels the spells that were not casted
 
 ### Unit keys
 
