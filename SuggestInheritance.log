@@ -143,7 +143,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: 5   
 	Aberration/Larva default: B
-	DisruptorHallucination/Sentry default: D
 	EvolveViperAbductImprovedStun/InfestationPit default: T
 	EvolveViperAbductImprovedStun/Viper default: T
 	HeroNukeCalldown/Nova default: N, R copyof: NukeCalldown/Ghost default: N
@@ -170,6 +169,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NukeCalldown/GhostVulture default: N
 	NukeCalldown/Spectre default: N
 	OdinNukeCalldown/Odin default: N copyof: NukeCalldown/Ghost default: N
+	OracleHallucination/Sentry default: L
 	PrimalRoach/PrimalTownHallUprooted default: R
 	QueenBurstHeal/BroodMother default: T
 	QueenBurstHeal/Queen default: T
@@ -233,6 +233,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Colossus/VoidRiftUnselectable default: C
 	Colossus/VoidThrasher default: C
 	Colossus/VoidThrasherWalker default: C
+	ColossusHallucination/Nexus default:  copyof: ColossusHallucination/Sentry default: C
+	ColossusHallucination/Sentry default: C
+	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
 	CommandCenter/SCV default: C
 	CommandCenterOrbRelay/SCV default: C copyof: CommandCenter/SCV default: C
 	Consume/GiantYeti default: W copyof: ParasiticInvasion/LarvalQueen default: Q
@@ -279,8 +282,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HotSBioStasis/HotSLeviathan default: W
 	HybridDominatorPlasmaBlast/HybridDominatorVoid default: Q
 	HybridGeneralMindControl/HybridGeneral default: C
-	ImmortalHallucination/Nexus default:  copyof: ImmortalHallucination/Sentry default: I
-	ImmortalHallucination/Sentry default: I
 	JackhammerConcussionGrenade/HammerSecurity default: C copyof: JackhammerConcussionGrenade/Marauder default: C
 	JackhammerConcussionGrenade/Marauder default: C
 	KaiserWormScourgeMissile/VoidThrasher default: Q
@@ -767,6 +768,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HoverSiegeMode default: E
 	Hydralisk/Larva default: H
 	HydraliskDen/Drone default: H
+	ImmortalHallucination/Nexus default:  copyof: ImmortalHallucination/Sentry default: I
+	ImmortalHallucination/Sentry default: I
 	ImmortalShakurasShadowCannon/ImmortalAiur default: C
 	ImmortalShakurasShadowCannon/ImmortalShakuras default: C
 	Irradiate/ScienceVessel default: R
@@ -794,7 +797,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NarudEpilogueSummonShadeofNarud/NarudEpilogue default: E
 	Oracle/VoidRiftUnselectable default: E
 	OracleEnergyUpgrade/FleetBeacon default: A
-	OracleHallucination/Sentry default: L
 	OrbitalCommand/CommandCenter default: B
 	ParkColonistVehicle/ColonistVehicleUnit default: L
 	ParkColonistVehicle/ColonistVehicleUnit01 default: L
@@ -1822,9 +1824,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCyclone/Factory default: N
 	BuildKelMorianRocketTurret/KelMorianWorker default: G
 	BuildKelMorianRocketTurret/SCV default: G
-	ColossusHallucination/Nexus default:  copyof: ColossusHallucination/Sentry default: C
-	ColossusHallucination/Sentry default: C
-	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
+	DisruptorHallucination/Sentry default: D
 	EnergyNova/Artifact default: V
 	EvolveAberrationArmorAura/EvolutionChamber default: B
 	EvolveK5Cooldowns/EvolutionChamber default: E

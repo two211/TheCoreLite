@@ -715,11 +715,11 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: ColossusHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =C
 
 [WARN]: ColossusHallucination/Voranor not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =C
 
 [WARN]: CyberneticsCore/Harvester not related to a conflict
 but is inherited
@@ -822,7 +822,7 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: ImmortalHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =E
 
 [WARN]: InfestedTerrans/Infestor2 not related to a conflict
 but is part of same check
