@@ -246,14 +246,14 @@ Compared to legacy TheCore Lite:
 ### Additional cameras alternates on control
 
 2 "Control" camera alternates:
-* Ctl+D = Shift+1
-* Ctl+F = Shift+2
-* Ctl+G = Shift+3
+* Ctl+F = Shift+1
+* Ctl+4 = Shift+2
+* Ctl+5 = Shift+3
 
 Camera creation:
-* Ctl+E = Alt+1
-* Ctl+R = Alt+2
-* Ctl+T = Alt+3
+* Ctl+R = Alt+1
+* Ctl+T = Alt+2
+* Ctl+D = Alt+3
 * Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
 
 Those aliases allow easy save/recall locations.
@@ -263,7 +263,7 @@ Ctl+LeftClick on a units selects all visible units of this type.
 It is particularly useful for spreading creep.
 
 Related aliases:
-* Ctl+Alt = recall macro "production group" (use case: control cam warp-in)
+* Ctl+G = recall macro "production group" (use case: control cam warp-in)
 * Ctl+V = recall "utility group" (use case: creep queen, wall supply depot...)
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -514,7 +514,28 @@ Suggested camera locations:
 * Z 4th
 * X 5th
 
+### Use case: Camera creep spread
+
+This step benefits from holding Ctl.
+Ctl+click acts as select all units of the same kind.
+
+* initiate
+ * Ctl+D = jump to creep camera 1 (initiate)
+* creep spread
+ * Ctl+click to select creep tumors
+ * hold Ctl+E then clicks = spread creep tumor
+* optionally centering
+ * Ctl+click = select a new creep tumor
+ * Ctl+Space = center view on selection
+* save and jump to next creep spread
+ * Ctl+R+4, save 1 jump to 2
+ * Ctl+T+5, save 2 jump to 3
+ * Ctl+D, save 3
+
+**Note:** keep in mind that selecting another group cancels the action
+
 ### Use case: zerg macro routine
+
 * Inject routine
  * use TheCore Lite Inject initiate
  * then "TheCore inject" or "Telegraph inject"
@@ -530,14 +551,6 @@ Suggested camera locations:
  * browse subgroup + add new research
 * Creep queens (see "utility group section")
 * Creep cameras (control cameras) holding control
- * Ctl+D|F|G = jump to creep camera
- * Ctl+click to select creep tumors
- * Ctl+C then clicks = spread creep tumor
- * Ctl+click = select a new creep tumor
- * Ctl+Space = center view on selection
- * Ctl+E|R|T = update creep camera
-
-**Note:** keep in mind that selecting another group cancels the action
 
 sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)

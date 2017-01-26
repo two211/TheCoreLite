@@ -1,7 +1,14 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
+[ERROR]: Alt+1,Control+R used in place of Alt+1,Control+E for parameter CameraSave1, in seed TheCore Lite
+[ERROR]: Alt+2,Control+T used in place of Alt+2,Control+R for parameter CameraSave2, in seed TheCore Lite
+[ERROR]: Alt+3,Control+D used in place of Alt+3,Control+T for parameter CameraSave3, in seed TheCore Lite
+[ERROR]: Shift+1,Control+F used in place of Shift+1,Control+D for parameter CameraView1, in seed TheCore Lite
+[ERROR]: Shift+2,Control+4 used in place of Shift+2,Control+F for parameter CameraView2, in seed TheCore Lite
+[ERROR]: Shift+3,Control+5 used in place of Shift+3,Control+G for parameter CameraView3, in seed TheCore Lite
 [ERROR]: Grave,Control+V,Shift+V used in place of Grave,Control+V for parameter ControlGroupRecall1, in seed TheCore Lite
+[ERROR]: Q,Control+G used in place of Q,Control+Alt for parameter ControlGroupRecall5, in seed TheCore Lite
 [ERROR]: RightMouseButton,V used in place of RightMouseButton for parameter TargetCancel, in seed TheCore Lite
 [ERROR]: LeftMouseButton,Space,R,T,Y,D,F,G,H,CapsLock used in place of LeftMouseButton,Space,R,T,Y,D,F,G,H,V,CapsLock for parameter TargetChoose, in seed TheCore Lite
 [WARN]: 'C,CapsLock,E' used in place of 'C,CapsLock' for command 'BuildCreepTumorPropagate/CreepTumorBurrowed', in seed 'TheCore Lite'
@@ -22,5 +29,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'V,G' used in place of 'G' for command 'WarpinDisruptor/RoboticsFacility', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 3 WARNs: 16 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 10 WARNs: 16 INFOs: 1 
 ============================
