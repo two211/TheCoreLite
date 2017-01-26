@@ -78,7 +78,7 @@ Case study assuming HTs in a group following some ranged units not to run into e
 Important to know:
 * after feedback/psistorm cast, HT will give up follow, think about make the entire group re-follow
 * in case HTs were too far to cast and enemy moved, you still can cancel the cast:
- * issuing a move command on the entire group
+ * issuing a move command on the entire group with double RightClicks (1st one will cancel targeting if needed)
  * using V will cancel the target and make stop all selected units
 * caster split
  * cast area of effect spells far away on the minimap (eventually rapid fire...)
