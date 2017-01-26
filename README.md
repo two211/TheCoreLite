@@ -460,8 +460,8 @@ Use case scenarii
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
 #### with Ctl camera
-* Ctl+Alt: select production facilities (WarpGate have higher selection priority)
-* Ctl+D|F|G: center on warp pylon
+* Ctl+G: select production facilities (WarpGate have higher selection priority)
+* Ctl+F|4|5: center on warp pylon
 * hold key for warping-in units (rapid fire warp-in)
 
 #### Other tips
