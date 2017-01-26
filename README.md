@@ -60,6 +60,22 @@ After the click the ability will be called again and you just have to click on t
 
 **Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
 
+#### After precision key usage
+
+Holding precision key for multiple cast, you will end up to have to cancel targeting.
+For this there are several option:
+* cancel key "Escape"
+* rightclick will cancel targeting
+* select another group
+* select|box other unit(s)
+
+The 2 last save you APMs if some others unit/building need action
+
+#### High Templar group example
+* assuming HTs in a group following some ranged units not to run into enemies
+* after feedback/psistorm cast, HT will give up follow, think about make the entire group re-follow
+* in case HTs were too far to cast, you still can cancel the cast issuing a move command on the entire group
+
 ### Unit keys
 
 All Units:
@@ -547,14 +563,9 @@ Protoss and Terran have also some macro optimization with TheCore Lite \o/
 
 After usage of the variant 1:
 * releasing shift will cancel targeting on queued command
- * only work if one LeftClick has been performed
+ * only works if one LeftClick has been performed
 
-Otherwise see not about canceling targeting in Rapid Fire and Precision key section.
-After variant 1 and 2, to cancel targeting:
-* Cancel key "Escape"
-* rightclick will cancel targeting
-* select another group
-* select|box other unit(s)
+Otherwise please read "After precision key usage" section.
 
 ----------------------------------------------------------------------------------------------------------------------
 
