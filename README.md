@@ -470,11 +470,11 @@ Use case scenarii
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
 ~~#### with Ctl camera~~
-* Ctl+? (missing alternate): select production facilities (WarpGate have higher selection priority)
-* Ctl+D|F|G: center on warp pylon
-* continuous key press for warping-in units (rapid fire warp-in)
-* Ctl+click: select all units of the same kind
-~~* Ctl+[group\_key]: append to a group~~
+* ~~Ctl+? (missing alternate): select production facilities (WarpGate have higher selection priority)~~
+* ~~Ctl+D|F|G: center on warp pylon~~
+* ~~continuous key press for warping-in units (rapid fire warp-in)~~
+* ~~Ctl+click: select all units of the same kind~~
+* ~~Ctl+[group\_key]: append to a group~~
 
 #### Other tips
 * Ctl+click: on a unit, select all units for this type
