@@ -254,15 +254,14 @@ Compared to legacy TheCore Lite:
 ### Additional cameras alternates on control
 
 2 "Control" camera alternates:
-* Ctl+F = Shift+1
-* Ctl+4 = Shift+2
-* Ctl+5 = Shift+3
+* Ctl+D = Shift+1
+* Ctl+F = Shift+2
+* Ctl+G = Shift+3
 
 Camera creation:
-* Ctl+R = Alt+1
-* Ctl+T = Alt+2
-* Ctl+D = Alt+3
-* Ctl+Space centers camera view (if you want to center a warp pylon, or a creep tumor)
+* Ctl+E = Alt+1
+* Ctl+R = Alt+2
+* Ctl+T = Alt+3
 
 Those aliases allow easy save/recall locations.
 Same modifier is applied for save and recall.
@@ -271,8 +270,11 @@ Ctl+LeftClick on a units selects all visible units of this type.
 It is particularly useful for spreading creep.
 
 Related aliases:
-* Ctl+G = recall macro "production group" (use case: control cam warp-in)
-* Ctl+V = recall "utility group" (use case: creep queen, wall supply depot...)
+* Ctl+V = centers camera view (if you want to center a warp pylon, or a creep tumor)
+* Ctl+C = precision creep spread
+* Ctl+Space = rapid fire creep spread
+
+**Note:** control cam could be used for warp gate with a proper alias for
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -467,10 +469,12 @@ Use case scenarii
 * Shift+3: jump to warp-in camera (S as a suggestion with Z for the regular rally point)
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
-#### with Ctl camera
-* Ctl+G: select production facilities (WarpGate have higher selection priority)
-* Ctl+F|4|5: center on warp pylon
-* hold key for warping-in units (rapid fire warp-in)
+~~#### with Ctl camera
+* Ctl+? (missing alternate): select production facilities (WarpGate have higher selection priority)
+* Ctl+D|F|G: center on warp pylon
+* continuous key press for warping-in units (rapid fire warp-in)
+* Ctl+click: select all units of the same kind
+* Ctl+[group\_key]: append to a group~~
 
 #### Other tips
 * Ctl+click: on a unit, select all units for this type
@@ -529,16 +533,17 @@ Ctl+click acts as select all units of the same kind.
 
 * initiate
  * Ctl+D = jump to creep camera 1 (initiate)
+* select all creep tumors with Ctl+click
 * creep spread
- * Ctl+click to select creep tumors
- * hold Ctl+E then clicks = spread creep tumor
+ * hold (Ctl)+C then clicks = spread creep tumor (precision key)
+ * (Ctl)+Space = spread creep tumor (rapid fire)
 * optionally centering
- * Ctl+click = select a new creep tumor
- * Ctl+Space = center view on selection
-* save and jump to next creep spread
- * Ctl+R+4, save 1 jump to 2
- * Ctl+T+5, save 2 jump to 3
- * Ctl+D, save 3
+ * click = select a new creep tumor
+ * Ctl+V = center view on selection
+* save and restart from "select all creep tumors"
+ * Ctl+E+F, save 1 jump to 2
+ * Ctl+R+G, save 2 jump to 3
+ * Ctl+T, save 3
 
 **Note:** keep in mind that selecting another group cancels the action
 
