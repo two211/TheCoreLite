@@ -469,12 +469,12 @@ Use case scenarii
 * Shift+3: jump to warp-in camera (S as a suggestion with Z for the regular rally point)
 * Shift+key for warping-in units (queued rapid fire warp-in)
 
-~~#### with Ctl camera
+~~#### with Ctl camera~~
 * Ctl+? (missing alternate): select production facilities (WarpGate have higher selection priority)
 * Ctl+D|F|G: center on warp pylon
 * continuous key press for warping-in units (rapid fire warp-in)
 * Ctl+click: select all units of the same kind
-* Ctl+[group\_key]: append to a group~~
+~~* Ctl+[group\_key]: append to a group~~
 
 #### Other tips
 * Ctl+click: on a unit, select all units for this type
