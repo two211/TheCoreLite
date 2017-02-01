@@ -541,6 +541,9 @@ in seed TheCore Lite, keys =
 [ERROR]: StukovInfestedDiamondbackSnare/StukovInfestedDiamondBack not related to a conflict
 in seed TheCore Lite, keys =E,Space
 
+[ERROR]: StukovInfestedSiegeTankDeepTunnel/StukovInfestedSiegeTank not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: StukovInfestedSiegeTankRoot/StukovInfestedSiegeTank not related to a conflict
 in seed TheCore Lite, keys =R
 
@@ -1261,5 +1264,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 202 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 203 WARNs: 145 
 ============================

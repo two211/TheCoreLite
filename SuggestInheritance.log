@@ -1122,6 +1122,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpiderMine/Bunker default: E
 	SpineCrawler/Drone default: C
 	SquadSight/Monitor default: Q
+	StukovInfestedSiegeTankDeepTunnel/StukovInfestedSiegeTank default: 
 	SwannCommanderRebuild default: R
 	SwarmHostDeepBurrow/InfestationPit default: D
 	SwarmHostDeepBurrow/SwarmHostSplitB default: D
@@ -1770,6 +1771,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: T   
 	ActivateStasisWard/OracleStasisTrap default: T
+	BanelingNest/Drone default: B
 	EvolveAdrenalineBoost/EvolutionChamber default: 
 	EvolveViciousGlaive/GreaterSpire default: V
 	EvolveViciousGlaive/Spire default: V
@@ -1793,6 +1795,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMultiLockWeaponsSystem/FactoryTechLab default: L
 	ResearchMultiLockWeaponsSystem/FactoryTechReactor default: L
 	Scout/Stargate default: T
+	SensorTower/SCV default: N
 	ShieldBattery/Probe default: B
 	Thor/VoidRift default: T
 	Thor/VoidRiftUnselectable default: T
@@ -1818,7 +1821,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: V   
 	AdeptResearchPiercingUpgrade/TwilightCouncil default: A
-	BanelingNest/Drone default: B
 	Banshee/Starport default: E
 	BansheeSpeed/StarportTechLab default: B
 	BuildCyclone/Factory default: N
@@ -1857,7 +1859,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIStarport/SISCV default: 
 	SS_LeviathanTentacleAttackL2NoDelay/SS_Plane default: V
 	ScourgeNest/Drone default: C
-	SensorTower/SCV default: N
 	Stop default: S
 	StopBunker/Bunker default: S
 	StopPlanetaryFortress/KorhalPalaceGate default: P

@@ -1,33 +1,18 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
-[ERROR]: Alt+1,Control+R used in place of Alt+1,Control+E for parameter CameraSave1, in seed TheCore Lite
-[ERROR]: Alt+2,Control+T used in place of Alt+2,Control+R for parameter CameraSave2, in seed TheCore Lite
-[ERROR]: Alt+3,Control+D used in place of Alt+3,Control+T for parameter CameraSave3, in seed TheCore Lite
-[ERROR]: Shift+1,Control+F used in place of Shift+1,Control+D for parameter CameraView1, in seed TheCore Lite
-[ERROR]: Shift+2,Control+4 used in place of Shift+2,Control+F for parameter CameraView2, in seed TheCore Lite
-[ERROR]: Shift+3,Control+5 used in place of Shift+3,Control+G for parameter CameraView3, in seed TheCore Lite
-[ERROR]: Grave,Control+V,Shift+V used in place of Grave,Control+V for parameter ControlGroupRecall1, in seed TheCore Lite
-[ERROR]: Q,Control+G used in place of Q,Control+Alt for parameter ControlGroupRecall5, in seed TheCore Lite
-[ERROR]: RightMouseButton,V used in place of RightMouseButton for parameter TargetCancel, in seed TheCore Lite
-[ERROR]: LeftMouseButton,Space,R,T,Y,D,F,G,H,CapsLock used in place of LeftMouseButton,Space,R,T,Y,D,F,G,H,V,CapsLock for parameter TargetChoose, in seed TheCore Lite
-[WARN]: 'C,CapsLock,E' used in place of 'C,CapsLock' for command 'BuildCreepTumorPropagate/CreepTumorBurrowed', in seed 'TheCore Lite'
-[WARN]: 'C,CapsLock' used in place of 'V' for command 'Colossus/RoboticsFacility', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'V' for command 'ColossusHallucination/Sentry', in seed 'TheCore Lite'
-[WARN]: 'Space' used in place of 'C' for command 'DefilerMPConsume/DefilerMP', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'Space' for command 'DefilerMPDarkSwarm/DefilerMP', in seed 'TheCore Lite'
-[WARN]: 'V' used in place of '5' for command 'DisruptorHallucination/Sentry', in seed 'TheCore Lite'
-[WARN]: 'E' used in place of 'C' for command 'ImmortalHallucination/Sentry', in seed 'TheCore Lite'
-[WARN]: 'CapsLock' used in place of 'E' for command 'MothershipCore/Nexus', in seed 'TheCore Lite'
-[WARN]: '5' used in place of 'E' for command 'OracleHallucination/Sentry', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'V' for command 'ResearchExtendedThermalLance/RoboticsBay', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'V' for command 'RoboticsBay/Probe', in seed 'TheCore Lite'
-[WARN]: 'C,CapsLock' used in place of 'G' for command 'Sentry', in seed 'TheCore Lite'
-[WARN]: 'E,C' used in place of 'C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
-[WARN]: 'G' used in place of 'V' for command 'WarpInAdept/Gateway', in seed 'TheCore Lite'
-[WARN]: 'G' used in place of 'V' for command 'WarpInAdept/WarpGate', in seed 'TheCore Lite'
-[WARN]: 'V,G' used in place of 'G' for command 'WarpinDisruptor/RoboticsFacility', in seed 'TheCore Lite'
+[ERROR]: Alt+CapsLock,Alt+Grave,Alt+Shift,Alt+Tab,Alt+Q,Control+V used in place of Alt+CapsLock,Alt+Grave,Alt+Shift,Alt+Tab,Alt+Q,Control+Space for parameter CameraCenter, in seed TheCore Lite
+[ERROR]: Alt+1,Control+E used in place of Alt+1,Control+R for parameter CameraSave1, in seed TheCore Lite
+[ERROR]: Alt+2,Control+R used in place of Alt+2,Control+T for parameter CameraSave2, in seed TheCore Lite
+[ERROR]: Alt+3,Control+T used in place of Alt+3,Control+D for parameter CameraSave3, in seed TheCore Lite
+[ERROR]: Shift+1,Control+D used in place of Shift+1,Control+F for parameter CameraView1, in seed TheCore Lite
+[ERROR]: Shift+2,Control+F used in place of Shift+2,Control+4 for parameter CameraView2, in seed TheCore Lite
+[ERROR]: Shift+3,Control+G used in place of Shift+3,Control+5 for parameter CameraView3, in seed TheCore Lite
+[ERROR]: Grave,Shift+V used in place of Grave,Control+V,Shift+V for parameter ControlGroupRecall1, in seed TheCore Lite
+[ERROR]: Q used in place of Q,Control+G for parameter ControlGroupRecall5, in seed TheCore Lite
+[WARN]: 'T' used in place of 'V' for command 'BanelingNest/Drone', in seed 'TheCore Lite'
+[WARN]: 'C,Space,CapsLock' used in place of 'C,CapsLock,E' for command 'BuildCreepTumorPropagate/CreepTumorBurrowed', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 10 WARNs: 16 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 9 WARNs: 2 INFOs: 1 
 ============================

@@ -244,6 +244,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default StasisField/Arbiter
 [WARN]: no default StasisField/ArbiterTribunal
 [WARN]: no default StukovInfestedDiamondbackSnare/StukovInfestedDiamondBack
+[WARN]: no default StukovInfestedSiegeTankDeepTunnel/StukovInfestedSiegeTank
 [WARN]: no default StukovInfestedSiegeTankRoot/StukovInfestedSiegeTank
 [WARN]: no default StukovInfestedSiegeTankUproot/StukovInfestedSiegeTank
 [WARN]: no default Summon2DragoonHallucinations/Sentry
@@ -298,7 +299,6 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
-[WARN]: no default StukovInfestedSiegeTankDeepTunnel/StukovInfestedSiegeTank
 ----------------------------
 Finished (Check defaults) - WARNs: 298 ERRORs: 0 
 ============================
