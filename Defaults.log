@@ -298,6 +298,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
+[WARN]: no default StukovInfestedSiegeTankDeepTunnel/StukovInfestedSiegeTank
 ----------------------------
-Finished (Check defaults) - WARNs: 297 ERRORs: 0 
+Finished (Check defaults) - WARNs: 298 ERRORs: 0 
 ============================
