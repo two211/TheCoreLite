@@ -216,14 +216,14 @@ Alt+RightClick pings the invisible unit location to allies.
  * Shift+Alt+C
 
 ### AI keys now supported
-* direct attack on Shift+Alt+R
-* direct scout on Shift+Alt+T
-* direct detect on Shift+Alt+F
-* direct expand on Shift+Alt+G
-* build style on Shift+Alt+4
-* clearall on Shift+Alt+5
+* direct attack on Alt+E
+* direct scout on Alt+R
+* direct detect on Alt+F
+* direct expand on Alt+C
+* delete on Alt+V
+* clearall on Shift+Alt+V
+* build style on Shift+Alt+F
 * open AI communication on Shift+Alt+C
-* delete on Shift+Alt+V
 
 ### Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
