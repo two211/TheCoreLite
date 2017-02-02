@@ -233,7 +233,6 @@ Alt+RightClick pings the invisible unit location to allies.
 * BackSlash: All life bars (better use show "damaged" units)
 * Bracket Open: Allies life bars (better use show "damaged" units)
 * Bracket Close: Player life bars (better use show "damaged" units)
-* Ctl+Alt+NumPad#: append non-steal (dropped due to lack of modifier)
 * 0: set rally point (prefer right click)
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -433,8 +432,9 @@ You may want to have units in both a main army group and a caster group.
 It is the case of the Stalker group in [JaKaTaK's video on Protoss control groups](https://www.youtube.com/watch?v=Hu7sLfLpkaM&index=10&list=PLiejbQlQAdGlM1wWWxMGZsBAFCrIRjGJn).
 
 * Select the group where the casters are
-* Ctl+LeftClick a caster in the board (select all units)
-* Use Shift+Alt+group# to create/overwrite the caster group without stealing from the main army
+* Ctl(+Alt)+LeftClick a caster in the board (select only all units of a given type)
+* Ctl+Alt+group# to append in a group without stealing from the main army
+ * Use Shift+Alt+group# could be use to create/overwrite, but chains not as well
 
 ----------------------------------------------------------------------------------------------------------------------
 
