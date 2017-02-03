@@ -212,7 +212,8 @@ Alt+RightClick pings the invisible unit location to allies.
 ### More Town cameras
 * B remains toggles base camera
 * New alternates
- * Shift+Alt+C becomes an alternate for Telegraph inject use case
+ * Shift+V becomes an alternate for Telegraph inject use case
+ * Shift+Alt+C
 
 ### AI keys now supported
 * direct attack on Alt+E
