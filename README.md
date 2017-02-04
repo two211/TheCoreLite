@@ -40,7 +40,39 @@ Loads of thanks to:
 * JaKaTaK, the originator of the first TheCore Lite version
 * BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
 
-### Table of Content
+### Table of Contents
+* [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
+ * [Rapid Fire and Precision keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#rapid-fire-and-precision-keys)
+ * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
+ * [Building Consistency](https://github.com/bobo38/TheCoreLite/blob/master/README.md#building-consistency)
+ * [Unit Production](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-production)
+* [TheCore Lite Macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
+ * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history)
+ * [Nexus/CC/Hatch group = W](https://github.com/bobo38/TheCoreLite/blob/master/README.md#nexuscchatch-group--w)
+ * [Production group (or inject queens) = Q](https://github.com/bobo38/TheCoreLite/blob/master/README.md#production-group-or-inject-queens--q)
+ * [Utility group = Grave](https://github.com/bobo38/TheCoreLite/blob/master/README.md#utility-group--grave)
+ * [Group display](https://github.com/bobo38/TheCoreLite/blob/master/README.md#group-display)
+* [TheCore Lite User Interface keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-user-interface-keys)
+ * [Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#function-keys)
+ * [Other tips](https://github.com/bobo38/TheCoreLite/blob/master/README.md#other-tips)
+ * [Moved out of the dense keycard and Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#moved-out-of-the-dense-keycard-and-function-keys)
+* [TheCore Lite Group/Cameras modifiers](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
+ * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history-1)
+ * [Groups and mouse synergies with Ctrl and Ctrl+Shift](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
+ * [Easier cloning through Shift+Alt](https://github.com/bobo38/TheCoreLite/blob/master/README.md#easier-cloning-through-shiftalt)
+ * [Shift/Control and camera synergies](https://github.com/bobo38/TheCoreLite/blob/master/README.md#shiftcontrol-and-camera-synergies)
+* [Use case scenarii](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-scenarii)
+ * [Use case: expansions cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-expansions-cameras)
+ * [Use case: send worker back to ressources gathering after queued commands](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-send-worker-back-to-ressources-gathering-after-queued-commands)
+ * [Use case: army production + rally point (optional warp-in pylon)](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-army-production--rally-point-optional-warp-in-pylon)
+ * [Use case: warp-in pylon](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-warp-in-pylon)
+ * [Use case: TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-thecore-lite-inject-initiate)
+ * [Use case: Telegraph inject (Backspace family)](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-telegraph-inject-backspace-family)
+ * [Use case: TheCore inject](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-thecore-inject)
+ * [Use case: Camera creep spread](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-camera-creep-spread)
+ * [Use case: zerg macro routine](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-zerg-macro-routine)
+ * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
+* [Changelog for the code](https://github.com/bobo38/TheCoreLite/blob/master/README.md#changelog-for-the-code)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -244,7 +276,7 @@ Race specific:
  * Shift+Q+W helps getting Shift already pressed for queued commands
  * please read dedicated usecase "Telegraph inject" and "TheCore inject"
 
-## Utility group = **Grave**
+## Utility group = Grave
 
 Group content:
 * wall supply depots
