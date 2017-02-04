@@ -43,9 +43,9 @@ The Core Lite v2.1
 This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 
 ### Project goals
-* keep as much consistency with legacy "TheCore Lite" for unit commands
-* get rid of bad habits and develop sane mechanics
+* keep as much consistency as possible with legacy "TheCore Lite" for [Commands] section
 * allow easy 2-keys-based macro mechanics
+* get rid of bad habits and develop sane mechanics
 * encourage camera keys usage for:
  * rally points
  * warp pylons
