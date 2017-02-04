@@ -131,7 +131,10 @@ Zerg:
 * F = morph/evolve
 * E = speed key (for research affecting speed)
 
-### Building/Unit production key/Research keys
+### Building Consistency
+
+Building consistency between race, allows better off-race and random play.
+Hereafter are the principles
 
 Basic buildings:
 * C = Command center / Nexus / Hatchery
@@ -146,7 +149,13 @@ Advanced buildings:
 * G = Fusion core / Fleet Beacon 
 * E = Armory (same as Engineering Bay / Forge / Evolution Chamber)
 
-### Units
+#### Bridging method
+
+Bridging method is used to try to facilitate learning.
+Research will tend to have the same key as unit production key,
+so as the building enabling the production of this unit.
+
+### Unit Production
 
 Some mnemonics:
 * D for basic units in the command card
@@ -172,12 +181,6 @@ Alls units are covered apart of:
 * SwarmHost (same key as research burrow)
 * Viper (same key as Queen)
 * Ultralisk (same key as Pneumatized Carapace)
-
-### Bridging method
-
-Bridging method is used to try to facilitate learning.
-Research will tend to have the same key as unit production key,
-so as the building enabling the production of this unit.
 
 ----------------------------------------------------------------------------------------------------------------------
 
