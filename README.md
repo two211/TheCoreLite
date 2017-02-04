@@ -467,7 +467,7 @@ Related aliases:
 ----------------------------------------------------------------------------------------------------------------------
 
 Use case scenarii
------------------
+=================
 
 ## Use case: expansions cameras
 * Select new base under construction
