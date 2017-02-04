@@ -175,7 +175,7 @@ Some mnemonics:
 
 #### Zerg specific
 
-Select larva has many alternates to prevent waste of time producing new units en masse.
+Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse.
 Alls units are covered apart of:
 * Infestor (same key as Lair/Hive)
 * SwarmHost (same key as research burrow)
