@@ -126,7 +126,7 @@ Protoss:
 * M = morph building to non-warp (intentionally out of compact keys)
 
 Zerg:
-* Space/R =  Burrow/Unburrow
+* Space/R = Unburrow/Burrow
 * C = creep tumor/queen
 * F = morph/evolve
 * E = speed key (for research affecting speed)
