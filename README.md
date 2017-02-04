@@ -58,10 +58,11 @@ After the target being selected the ability will be called again and you just ha
 
 source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
 
-#### RapidFire keys
+#### Precision keys
 
 "E" and "C" keep on being non Rapid Fire, because they are precision keys.
-They are used for precision spells/ability.
+They are used for precision spells/ability,
+and have been chosen because of ease of access.
 You can keep those key pressed and just click on the target.
 After the click, the ability will be called again and you just have to click on the next target.
 
