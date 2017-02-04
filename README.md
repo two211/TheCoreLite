@@ -164,12 +164,16 @@ Some mnemonics:
 * V and G for advanced and ultimate units (exception = zerg)
 * Space for high profile casters (high templar, ghost, raven), and detectors
 
-**Zerg:** select larva has many alternates to prevent waste of time producing new units.
+#### Zerg specific
+
+Select larva has many alternates to prevent waste of time producing new units en masse.
 Alls units are covered apart of:
 * Infestor (same key as Lair/Hive)
 * SwarmHost (same key as research burrow)
 * Viper (same key as Queen)
 * Ultralisk (same key as Pneumatized Carapace)
+
+### Bridging method
 
 Bridging method is used to try to facilitate learning.
 Research will tend to have the same key as unit production key,
