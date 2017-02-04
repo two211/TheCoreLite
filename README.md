@@ -290,15 +290,11 @@ Group content:
 
 Alternates for "recall utility group":
 * Shift+V
-* Ctl+V
 
 Usages:
-* Creep queen with control
- * Ctl+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
- * Ctl+C + clicks = drop creep tumors (precision key)
 * Creep queen with shift
  * Shift+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
- * Shift+C + clicks = drop creep tumors (queued)
+ * Shift+C + clicks = queued drop creep tumors
 * wall supply depots burrow
  * Shift+V+Space: select wall supply depots and burrow
 
