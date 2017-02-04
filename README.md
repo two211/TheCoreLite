@@ -127,7 +127,7 @@ Protoss:
 
 Zerg:
 * Space/R =  Burrow/Unburrow
-* C = creep tumor
+* C = creep tumor/queen
 * F = morph/evolve
 * E = speed key (for research affecting speed)
 
@@ -143,7 +143,7 @@ Basic buildings:
 
 Advanced buildings:
 * R = Starport / Stargate / Spire
-* G = Fusion core / Fleet Beacon / Ultralisk cavern
+* G = Fusion core / Fleet Beacon 
 * E = Armory (same as Engineering Bay / Forge / Evolution Chamber)
 
 ### Units
@@ -161,8 +161,15 @@ Some mnemonics:
  * infestor
  * reaper, widow mine, medivac
  * dark templar, warp prism, oracle
-* V and G for advanced and ultimate units
-* Space for high profile casters (high templar, ghost, raven)
+* V and G for advanced and ultimate units (exception = zerg)
+* Space for high profile casters (high templar, ghost, raven), and detectors
+
+**Zerg:** select larva has many alternates to prevent waste of time producing new units.
+Alls units are covered apart of:
+* Infestor (same key as Lair/Hive)
+* SwarmHost (same key as research burrow)
+* Viper (same key as Queen)
+* Ultralisk (same key as Pneumatized Carapace)
 
 Bridging method is used to try to facilitate learning.
 Research will tend to have the same key as unit production key,
