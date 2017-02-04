@@ -1,37 +1,13 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
-[ERROR]: Alt+E used in place of Shift+Alt+R for parameter AIArmy, in seed TheCore Lite
-[ERROR]: Shift+Alt+F used in place of Shift+Alt+4 for parameter AIBuild, in seed TheCore Lite
-[ERROR]: Shift+Alt+V used in place of Shift+Alt+5 for parameter AIClearAll, in seed TheCore Lite
-[ERROR]: Alt+V used in place of Shift+Alt+V for parameter AIDelete, in seed TheCore Lite
-[ERROR]: Alt+F used in place of Shift+Alt+F for parameter AIDetect, in seed TheCore Lite
-[ERROR]: Alt+C used in place of Shift+Alt+G for parameter AIExpand, in seed TheCore Lite
-[ERROR]: Alt+R used in place of Shift+Alt+T for parameter AIScout, in seed TheCore Lite
-[ERROR]: Alt+CapsLock,Alt+Grave,Alt+Shift,Alt+Tab,Alt+Q,Control+V used in place of Alt+CapsLock,Alt+Grave,Alt+Shift,Alt+Tab,Alt+Q,Control+Space for parameter CameraCenter, in seed TheCore Lite
-[ERROR]: Alt+1,Control+E used in place of Alt+1,Control+R for parameter CameraSave1, in seed TheCore Lite
-[ERROR]: Alt+2,Control+R used in place of Alt+2,Control+T for parameter CameraSave2, in seed TheCore Lite
-[ERROR]: Alt+3,Control+T used in place of Alt+3,Control+D for parameter CameraSave3, in seed TheCore Lite
-[ERROR]: Shift+1,Control+D used in place of Shift+1,Control+F for parameter CameraView1, in seed TheCore Lite
-[ERROR]: Shift+2,Control+F used in place of Shift+2,Control+4 for parameter CameraView2, in seed TheCore Lite
-[ERROR]: Shift+3,Control+G used in place of Shift+3,Control+5 for parameter CameraView3, in seed TheCore Lite
-[ERROR]: Control+Alt+X used in place of Control+Alt+NumPad0 for parameter ControlGroupAppend0, in seed TheCore Lite
-[ERROR]: Control+Alt+Grave used in place of Control+Alt+NumPad1 for parameter ControlGroupAppend1, in seed TheCore Lite
-[ERROR]: Control+Alt+1 used in place of Control+Alt+NumPad2 for parameter ControlGroupAppend2, in seed TheCore Lite
-[ERROR]: Control+Alt+2 used in place of Control+Alt+NumPad3 for parameter ControlGroupAppend3, in seed TheCore Lite
-[ERROR]: Control+Alt+3 used in place of Control+Alt+NumPad4 for parameter ControlGroupAppend4, in seed TheCore Lite
-[ERROR]: Control+Alt+Q used in place of Control+Alt+NumPad5 for parameter ControlGroupAppend5, in seed TheCore Lite
-[ERROR]: Control+Alt+W used in place of Control+Alt+NumPad6 for parameter ControlGroupAppend6, in seed TheCore Lite
-[ERROR]: Control+Alt+A used in place of Control+Alt+NumPad7 for parameter ControlGroupAppend7, in seed TheCore Lite
-[ERROR]: Control+Alt+S used in place of Control+Alt+NumPad8 for parameter ControlGroupAppend8, in seed TheCore Lite
-[ERROR]: Control+Alt+Z used in place of Control+Alt+NumPad9 for parameter ControlGroupAppend9, in seed TheCore Lite
-[ERROR]: Shift+Alt+Q used in place of Shift+Alt+NumPad5 for parameter ControlGroupAssign5, in seed TheCore Lite
-[ERROR]: Shift+Alt+W used in place of Shift+Alt+NumPad6 for parameter ControlGroupAssign6, in seed TheCore Lite
-[ERROR]: Grave,Shift+V used in place of Grave,Control+V,Shift+V for parameter ControlGroupRecall1, in seed TheCore Lite
-[ERROR]: Q used in place of Q,Control+G for parameter ControlGroupRecall5, in seed TheCore Lite
-[WARN]: 'T' used in place of 'V' for command 'BanelingNest/Drone', in seed 'TheCore Lite'
-[WARN]: 'C,Space,CapsLock' used in place of 'C,CapsLock,E' for command 'BuildCreepTumorPropagate/CreepTumorBurrowed', in seed 'TheCore Lite'
+[WARN]: 'C,CapsLock' used in place of 'C,Space' for command 'Contaminate/Overseer', in seed 'TheCore Lite'
+[WARN]: 'G' used in place of 'C' for command 'Corruptor/Larva', in seed 'TheCore Lite'
+[WARN]: 'V' used in place of 'E' for command 'Hydralisk/Larva', in seed 'TheCore Lite'
+[WARN]: 'E,Space' used in place of 'E' for command 'SpawnChangeling/Overseer', in seed 'TheCore Lite'
+[WARN]: 'E' used in place of 'G' for command 'Ultralisk/Larva', in seed 'TheCore Lite'
+[WARN]: 'C' used in place of 'V' for command 'Viper/Larva', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 28 WARNs: 2 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 6 INFOs: 1 
 ============================
