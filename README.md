@@ -40,6 +40,8 @@ Loads of thanks to:
 * JaKaTaK, the originator of the first TheCore Lite version
 * BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
 
+### Table of Content
+
 ----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite Command spirit
@@ -202,7 +204,7 @@ Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
 W is intended for CC Nexus Hatcheries + Tech.
 
-## Nexus/CC/Hatch group = **W**
+## Nexus/CC/Hatch group = W
 
 Group content:
 * All Nexus/CC/Hatch
@@ -217,7 +219,7 @@ Tip for additional expansion and related alternates:
  * Alt+Q
 * Add to Nexus/CC/Hatch with alternates Alt+D
 
-## Production group (or inject queens) = **Q**
+## Production group (or inject queens) = Q
 
 Group content:
 * Terran & Protoss: All army production facilities
