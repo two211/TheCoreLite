@@ -43,11 +43,11 @@ Loads of thanks to:
 ----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite Command spirit
---------------------------------
+===========================
 
-### Rapid Fire and Precision keys
+## Rapid Fire and Precision keys
 
-#### RapidFire keys
+### RapidFire keys
 
 There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, CapsLock.
 Now all warp-inable units are bound to Rapid Fire keys.
@@ -58,7 +58,7 @@ After the target being selected the ability will be called again and you just ha
 
 source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
 
-#### Precision keys
+### Precision keys
 
 "E" and "C" keep on being non Rapid Fire, because they are precision keys.
 They are used for precision spells/ability,
@@ -68,7 +68,7 @@ After the click, the ability will be called again and you just have to click on 
 
 **Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
 
-##### After precision key usage
+#### After precision key usage
 
 Holding precision key for multiple cast, you will end up to have to cancel targeting.
 For this there are several option:
@@ -80,7 +80,7 @@ For this there are several option:
 
 The 2 last save you APMs if some others unit/building need action
 
-##### High Templar group example
+#### High Templar group example
 
 Case study assuming HTs in a group following some ranged units not to run into enemies.
 
@@ -93,7 +93,7 @@ Important to know:
  * cast area of effect spells far away on the minimap (eventually rapid fire...)
  * hold V to cancel targeting and stop the casters, it will cancels the spells that were not casted
 
-### Unit keys
+## Unit keys
 
 All Units:
 * D = Attack
@@ -140,7 +140,7 @@ Zerg:
 * F = morph/evolve
 * E = speed key (for research affecting speed)
 
-### Building Consistency
+## Building Consistency
 
 Building consistency between race, allows better off-race and random play.
 Hereafter are the principles
@@ -158,13 +158,13 @@ Advanced buildings:
 * G = Fusion core / Fleet Beacon 
 * E = Armory (same as Engineering Bay / Forge / Evolution Chamber)
 
-#### Bridging method
+### Bridging method
 
 Bridging method is used to try to facilitate learning.
 Research will tend to have the same key as unit production key,
 so as the building enabling the production of this unit.
 
-### Unit Production
+## Unit Production
 
 Some mnemonics:
 * D for basic units in the command card
@@ -182,7 +182,7 @@ Some mnemonics:
 * V and G for advanced and ultimate units (exception = zerg)
 * Space for high profile casters (high templar, ghost, raven), and detectors
 
-#### Zerg specific
+### Zerg specific
 
 Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse.
 Alls units are covered apart of:
@@ -194,11 +194,11 @@ Alls units are covered apart of:
 ----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite User Interface keys
---------------------------------
+================================
 
 Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 
-### Function keys
+## Function keys
 * F1 IdleWorker
 * F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
 * Shift+F1 select all Idle Workers
@@ -208,6 +208,8 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * F3 F4 F5 F6 Commander top bar ability
 * Shift+F7 Toggle sound (moved to prevent mistyping)
 * Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
+
+## Other tips
 
 ### Select All Army on Tab key
 * Ctl+Tab : alternate for "select all army"
@@ -247,7 +249,7 @@ Alt+RightClick pings the invisible unit location to allies.
 * build style on Shift+Alt+F
 * open AI communication on Shift+Alt+C
 
-### Moved out of the dense keycard and Function keys
+## Moved out of the dense keycard and Function keys
 * Period: Warp (to encourage production group)
 * Numpad0: Quick save
 * Shift+Delete: CameraFollow (confusing feature)
@@ -259,56 +261,18 @@ Alt+RightClick pings the invisible unit location to allies.
 
 ----------------------------------------------------------------------------------------------------------------------
 
-TheCore Lite location cameras
------------------------------
-
-Compared to legacy TheCore Lite:
-* one camera key changed: Q has been replaced by 1
-* camera creation still based on Alt modifier
-* camera recall still based on Shift modifier
-* "control" cameras were introduced
-
-### Other features
-* Alt now shows Enemy life bar (useful for quick check for mana bars of stacked ground/air armies)
-* Shift+` is used for jump to last alert
-
-### Additional cameras alternates on control
-
-2 "Control" camera alternates:
-* Ctl+D = Shift+1
-* Ctl+F = Shift+2
-* Ctl+G = Shift+3
-
-Camera creation:
-* Ctl+E = Alt+1
-* Ctl+R = Alt+2
-* Ctl+T = Alt+3
-
-Those aliases allow easy save/recall locations.
-Same modifier is applied for save and recall.
-Using them you have a finger on Ctl:
-Ctl+LeftClick on a units selects all visible units of this type.
-It is particularly useful for spreading creep.
-
-Related aliases:
-* Ctl+V = centers camera view (if you want to center a warp pylon, or a creep tumor)
-* Ctl+C = precision creep spread
-* Ctl+Space = rapid fire creep spread
-
-**Note:** control cam could be used for warp gate with a proper alias for
-
 ----------------------------------------------------------------------------------------------------------------------
 
 TheCore Lite Macro groups
--------------------------
+=========================
 
-### History
+## History
 
 Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
 W is intended for CC Nexus Hatcheries + Tech.
 
-### Nexus/CC/Hatch group = **W**
+## Nexus/CC/Hatch group = **W**
 
 Group content:
 * All Nexus/CC/Hatch
@@ -323,7 +287,7 @@ Tip for additional expansion and related alternates:
  * Alt+Q
 * Add to Nexus/CC/Hatch with alternates Alt+D
 
-### Production group (or inject queens) = **Q**
+## Production group (or inject queens) = **Q**
 
 Group content:
 * Terran & Protoss: All army production facilities
@@ -348,7 +312,7 @@ Race specific:
  * Shift+Q+W helps getting Shift already pressed for queued commands
  * please read dedicated usecase "Telegraph inject" and "TheCore inject"
 
-### Utility group = **Grave**
+## Utility group = **Grave**
 
 Group content:
 * wall supply depots
@@ -369,7 +333,7 @@ Usages:
 * wall supply depots burrow
  * Shift+V+Space: select wall supply depots and burrow
 
-### Group display
+## Group display
 
 The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
 This facilitates the visual representation of existing groups.
@@ -383,8 +347,10 @@ If you wanted to update the icon, select the group and recreate it.
 
 ----------------------------------------------------------------------------------------------------------------------
 
-TheCore Lite Group modifiers
-----------------------------
+TheCore Lite Group/Cameras modifiers
+====================================
+
+## History
 
 Compared to legacy TheCore Lite:
 * all group keys are similar
@@ -402,7 +368,7 @@ For TheCore Lite, here are the modifiers:
 * Create non-steal = Shift+Alt (and Ctrl+Shift+Alt)
 * Append non-steal has been dropped
 
-### Mouse synergies with Ctrl and Ctrl+Shift
+## Groups and mouse synergies with Ctrl and Ctrl+Shift
 
 Those behaviors are similar if Alt is pressed simultaneously:
 * Ctrl+
@@ -432,7 +398,17 @@ Some examples with "Select All Army":
  * Ctrl+Shift+#group key will create/steal a group with this selection
   * alternatively Shift+Alt+#group key will create group/non-steal the selection
 
-### Easier cloning through Shift+Alt
+### Additional group for easy caster selection through Ctl+Alt
+
+You may want to have units in both a main army group and a caster group.
+It is the case of the Stalker group in [JaKaTaK's video on Protoss control groups](https://www.youtube.com/watch?v=Hu7sLfLpkaM&index=10&list=PLiejbQlQAdGlM1wWWxMGZsBAFCrIRjGJn).
+
+* Select the group where the casters are
+* Ctl(+Alt)+LeftClick a caster in the board (select only all units of a given type)
+* Ctl+Alt+group# to append in a group without stealing from the main army
+ * Use Shift+Alt+group# could be use to create/overwrite, but chains not as well
+
+## Easier cloning through Shift+Alt
 
 Shift+Alt+LeftClick acts as Shift+LeftClick when deselecting a unit from the selection.
 Shift+Alt+RightClick is an alias for Smart Command, it **inhibits the queuing**.
@@ -448,33 +424,65 @@ sources:
 * [JaKaTaK's "How to clone - manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
 * [JaKaTaK's "How to clone - control group cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
 
-### Additional group for easy caster selection
+## Shift/Control and camera synergies
 
-You may want to have units in both a main army group and a caster group.
-It is the case of the Stalker group in [JaKaTaK's video on Protoss control groups](https://www.youtube.com/watch?v=Hu7sLfLpkaM&index=10&list=PLiejbQlQAdGlM1wWWxMGZsBAFCrIRjGJn).
+### History
 
-* Select the group where the casters are
-* Ctl(+Alt)+LeftClick a caster in the board (select only all units of a given type)
-* Ctl+Alt+group# to append in a group without stealing from the main army
- * Use Shift+Alt+group# could be use to create/overwrite, but chains not as well
+TheCore Lite keeps on having Shift+cam# for cam# recall.
+It allows precise queuing.
+
+Compared to legacy TheCore Lite:
+* one camera key changed: Q has been replaced by 1
+* camera creation still based on Alt modifier
+* camera recall still based on Shift modifier
+* "control" cameras were introduced
+
+### Additional cameras alternates on control
+
+2 "Control" camera alternates:
+* Ctl+D = Shift+1
+* Ctl+F = Shift+2
+* Ctl+G = Shift+3
+
+Camera creation:
+* Ctl+E = Alt+1
+* Ctl+R = Alt+2
+* Ctl+T = Alt+3
+
+Those aliases allow easy save/recall locations.
+Same modifier is applied for save and recall.
+Using them you have a finger on Ctl:
+Ctl+LeftClick on a units selects all visible units of this type.
+It is particularly useful for spreading creep.
+
+Related aliases:
+* Ctl+V = centers camera view (if you want to center a warp pylon, or a creep tumor)
+* Ctl+C = precision creep spread
+* Ctl+Space = rapid fire creep spread
+
+**Note:** control cam could be used for warp gate with a proper alias for
+
+### Other features
+* Alt now shows Enemy life bar (useful for quick check for mana bars of stacked ground/air armies)
+* Shift+` is used for jump to last alert
 
 ----------------------------------------------------------------------------------------------------------------------
 
 Use case scenarii
 -----------------
 
-### Use case: expansions cameras
+## Use case: expansions cameras
 * Select new base under construction
 * Alt+CapsLock|`|Tab|Q: center view on base
 * Alt+[camera\_key]: make view on associated key
 * Alt+D: Append expansion to Nexus/CC/Hatch group
 
-### Use case: send worker back to ressources gathering after queued commands
+## Use case: send worker back to ressources gathering after queued commands
 * press shift to queue all necessary commands
 * Shift+[camera\_key]: jump to base
 * Shift+RightClick on mineral or gaz; last action of the queue is to go back to work
 
-### Use case: army production + rally point (optional warp-in pylon)
+## Use case: army production + rally point (optional warp-in pylon)
 * Hold Shift
 * Shift+Q: select production facilities
 * Shift+W: jump to rally point (declared with Alt+W)
@@ -483,7 +491,7 @@ Use case scenarii
 * browse subgroup and launch production
 * select rallied army and add to control groups
 
-### Use case: warp-in pylon
+## Use case: warp-in pylon
 
 #### with Shift camera
 * Hold shift
@@ -502,7 +510,16 @@ Use case scenarii
 * Ctl+click: on a unit, select all units for this type
 * right click for rally
 
-### Use case: BackSpace inject variants
+
+## Use case: TheCore Lite inject initiate
+
+* Shift+Q = select inject queens + tech
+* Shift+W = jump to main hatch (first hatch)
+* Shift+Space = inject
+* center mouse
+* keep Shift hold (to queue target)
+
+## Use case: Telegraph inject (Backspace family)
 
 The "Telegraph" inject is an implementation of the [Backspace inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#Backspace_Method).
 It relies on:
@@ -511,16 +528,7 @@ It relies on:
 * holding left Shift during the whole inject phase
 * to queue command
 
-#### TheCore Lite inject initiate
-
-* Shift+Q = select inject queens + tech
-* Shift+W = jump to main hatch (first hatch)
-* Shift+Space = inject
-* center mouse
-* keep Shift hold (to queue target)
-
-#### Telegraph inject
-
+Method:
 * Start with a "TheCore Lite inject initiate"
 * Then keep Shift pressed and move thumb on Alt
 * Shift+Alt+E used to cycle base
@@ -529,7 +537,7 @@ It relies on:
 
 **Note:** In case of wandering queen, release shift and press V
 
-### Use case: TheCore inject
+## Use case: TheCore inject
 
 The [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_of_the_Void)#The_Core_Method)
 benefits as well of TheCore Lite inject initiate.
@@ -548,7 +556,7 @@ Suggested camera locations:
 * Z 4th
 * X 5th
 
-### Use case: Camera creep spread
+## Use case: Camera creep spread
 
 This step benefits from holding Ctl.
 Ctl+click acts as select all units of the same kind.
@@ -569,7 +577,7 @@ Ctl+click acts as select all units of the same kind.
 
 **Note:** keep in mind that selecting another group cancels the action
 
-### Use case: zerg macro routine
+## Use case: zerg macro routine
 
 * Inject routine
  * use TheCore Lite Inject initiate
@@ -591,7 +599,7 @@ sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
 [JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
 
-### Use case: Easy MULE/Chronoboost
+## Use case: Easy MULE/Chronoboost
 
 Protoss and Terran have also some macro optimization with TheCore Lite \o/
 
