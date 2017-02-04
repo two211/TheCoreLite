@@ -47,20 +47,27 @@ TheCore Lite Command spirit
 
 ### Rapid Fire and Precision keys
 
-There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, V, CapsLock.
-Now all Warp-Inable units are bound to Rapid Fire keys.
+#### RapidFire keys
+
+There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, CapsLock.
+Now all warp-inable units are bound to Rapid Fire keys.
 If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
+You can keep those key pressed and just move pointer on the target,
+as RapidFire key hold will select target with no click needed.
+After the target being selected the ability will be called again and you just have to point at the next target.
 
 source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
+
+#### RapidFire keys
 
 "E" and "C" keep on being non Rapid Fire, because they are precision keys.
 They are used for precision spells/ability.
 You can keep those key pressed and just click on the target.
-After the click the ability will be called again and you just have to click on the next target.
+After the click, the ability will be called again and you just have to click on the next target.
 
 **Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
 
-#### After precision key usage
+##### After precision key usage
 
 Holding precision key for multiple cast, you will end up to have to cancel targeting.
 For this there are several option:
@@ -72,7 +79,8 @@ For this there are several option:
 
 The 2 last save you APMs if some others unit/building need action
 
-#### High Templar group example
+##### High Templar group example
+
 Case study assuming HTs in a group following some ranged units not to run into enemies.
 
 Important to know:
