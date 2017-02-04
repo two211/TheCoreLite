@@ -2,6 +2,10 @@ The Core Lite v2.1
 ==================
 
 ### Table of Contents
+* [The Core Lite v2.1](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
+ * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
+ * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
+ * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
  * [Rapid Fire and Precision keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#rapid-fire-and-precision-keys)
  * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
