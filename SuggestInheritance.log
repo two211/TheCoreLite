@@ -72,6 +72,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BiodomeLoad/Biodome default: L
 	BiodomeLoad/BiodomeHalfBuilt default: L
 	BiodomeLoad/InfestableBiodome default: L
+	EvolveBurrowCharge/Hatchery default: 
+	EvolveBurrowCharge/UltraliskCavern default: B
 	EvolveToBrutalisk/DefilerMP default: B
 	EvolveToBrutalisk/Queen default: B
 	EvolveToBrutalisk/QueenBurrowed default: B
@@ -615,8 +617,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Designate/TestShop default: D
 	DrakkenLaserDrillBFG/DrakkenLaserDrillCoop default: Q
 	EvolveBanelingCorrosiveBile/BanelingNest default: A
-	EvolveBurrowCharge/Hatchery default: 
-	EvolveBurrowCharge/UltraliskCavern default: B
 	EvolveCorrosiveBileDamageIncrease/RoachWarren default: E
 	EvolveFrenzy/HydraliskDen default: F
 	EvolveFrenzy/ImpalerDen default: F
@@ -741,10 +741,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EMPNova/ShadowScrambler default: E
 	EngineeringBay/SCV default: E
 	EvolutionChamber/Drone default: V
-	EvolveAnabolicSynthesis2/UltraliskCavern default: A
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
 	EvolveBroodLordSpeed/Spire default: P
 	EvolveCentrificalHooks/BanelingNest default: C
+	EvolveChitinousPlating/UltraliskCavern default: C
 	EvolveGlialRegeneration/GreaterRoachWarren default: G
 	EvolveGlialRegeneration/RoachWarren default: G
 	EvolveMuscularAugments/HydraliskDen default: H
@@ -1332,6 +1332,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DarkPylonRecall/DarkPylon default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	EnergizerReclamation/SentryCampaignBase default: R
 	EnergizerReclamation/SentryPurifier default: R
+	EvolveAnabolicSynthesis2/UltraliskCavern default: A
 	EvolveBanelingHeal/BanelingNest default: E
 	EvolveKerriganHeroicFortitude/EvolutionChamber default: F
 	EvolveMutaliskRapidRegeneration/GreaterSpire default: R
@@ -1550,7 +1551,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveAncillaryCarapace/HydraliskDen default: C
 	EvolveAncillaryCarapace/ImpalerDen default: C
 	EvolveAncillaryCarapace/LurkerDen default: C
-	EvolveChitinousPlating/UltraliskCavern default: C
 	EvolveHardenedCarapace/SpawningPool default: C
 	EvolveInfestorEnergyUpgrade/InfestationPit default: G
 	FenixSOACharge/FenixChampion default: Q copyof: Charge/Zealot default: C
