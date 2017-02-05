@@ -744,7 +744,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
 	EvolveBroodLordSpeed/Spire default: P
 	EvolveCentrificalHooks/BanelingNest default: C
-	EvolveChitinousPlating/UltraliskCavern default: C
 	EvolveGlialRegeneration/GreaterRoachWarren default: G
 	EvolveGlialRegeneration/RoachWarren default: G
 	EvolveMuscularAugments/HydraliskDen default: H
@@ -1041,6 +1040,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	K5Leviathan/K5KerriganPsiStrike default: D
 	K5Leviathan/KerriganVoid default: D copyof: K5Leviathan/K5Kerrigan default: D
 	K5Leviathan/KerriganVoidBurrowed default: D copyof: K5Leviathan/K5KerriganBurrowed default: D
+	KhaydarinMonolith/Probe default: D
 	Lair/Hatchery default: L
 	LeviathanSpawnMutalisk/Leviathan default: U
 	LeviathanSpawnMutalisk/SpacePlatformVentsUnit default: U
@@ -1551,6 +1551,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveAncillaryCarapace/HydraliskDen default: C
 	EvolveAncillaryCarapace/ImpalerDen default: C
 	EvolveAncillaryCarapace/LurkerDen default: C
+	EvolveChitinousPlating/UltraliskCavern default: C
 	EvolveHardenedCarapace/SpawningPool default: C
 	EvolveInfestorEnergyUpgrade/InfestationPit default: G
 	FenixSOACharge/FenixChampion default: Q copyof: Charge/Zealot default: C
@@ -1774,13 +1775,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveViciousGlaive/Spire default: V
 	Goliath/Factory default: G
 	HireSpartanCompany/MercCompound default: C
+	Hydralisk/Larva default: H
+	HydraliskDen/Drone default: H
 	Immortal/VoidRiftUnselectable default: I
 	Medic/Barracks default: E
-	MorphToMutaliskBroodlord/Larva default: T copyof: Mutalisk/Larva default: T
-	MorphToMutaliskViper/Larva default: T copyof: Mutalisk/Larva default: T
+	MorphToHydraliskImpaler/Larva default: H copyof: Hydralisk/Larva default: H
+	MorphToHydraliskLurker/Larva default: H copyof: Hydralisk/Larva default: H
 	MovePatrol default: P
 	Mutalisk/Epilogue02VoidRift default: T
-	Mutalisk/Larva default: T
 	Mutalisk/VoidRift default: T
 	Mutalisk/VoidRiftUnselectable default: T
 	Mutalisk/VoidThrasher default: T
@@ -1832,13 +1834,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Firebat/Barracks default: F
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	HireDuskWing/MercCompound default: I
-	Hydralisk/Larva default: H
-	HydraliskDen/Drone default: H
-	KhaydarinMonolith/Probe default: D
 	MercHellion/Factory default: N
-	MorphToHydraliskImpaler/Larva default: H copyof: Hydralisk/Larva default: H
-	MorphToHydraliskLurker/Larva default: H copyof: Hydralisk/Larva default: H
+	MorphToMutaliskBroodlord/Larva default: T copyof: Mutalisk/Larva default: T
+	MorphToMutaliskViper/Larva default: T copyof: Mutalisk/Larva default: T
 	MorphToOverseer/VoidRift default: V
+	Mutalisk/Larva default: T
 	Phoenix/VoidRift default: X
 	Phoenix/VoidRiftUnselectable default: X
 	PrimalHydralisk/YagdraEggSmall default: H

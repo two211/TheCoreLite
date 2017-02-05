@@ -3,11 +3,12 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
 [WARN]: 'C,CapsLock' used in place of 'C,Space' for command 'Contaminate/Overseer', in seed 'TheCore Lite'
 [WARN]: 'G' used in place of 'C' for command 'Corruptor/Larva', in seed 'TheCore Lite'
-[WARN]: 'V' used in place of 'E' for command 'Hydralisk/Larva', in seed 'TheCore Lite'
+[WARN]: 'T' used in place of 'E' for command 'Hydralisk/Larva', in seed 'TheCore Lite'
+[WARN]: 'V' used in place of 'T' for command 'Mutalisk/Larva', in seed 'TheCore Lite'
 [WARN]: 'E,Space' used in place of 'E' for command 'SpawnChangeling/Overseer', in seed 'TheCore Lite'
 [WARN]: 'E' used in place of 'G' for command 'Ultralisk/Larva', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'V' for command 'Viper/Larva', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 6 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 7 INFOs: 1 
 ============================
