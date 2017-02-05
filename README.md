@@ -675,7 +675,9 @@ Otherwise please read "After precision key usage" section.
  * Alt+(A|)S|Z|X
 
 **Note:** during cam creation, your CC/Nexus/Hatch keeps on being selected,
-just follow launch next production when ressources available
+just follow launch next production when ressources available.
+For terran and protoss you see the worker production timer.
+For zerg, best is to spawn an overlord at 100 minerals after 1st drone.
 
 ----------------------------------------------------------------------------------------------------------------------
 
