@@ -37,6 +37,7 @@ The Core Lite v2.1
  * [Use case: Camera creep spread](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-camera-creep-spread)
  * [Use case: zerg macro routine](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-zerg-macro-routine)
  * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
+ * [Use case: start sequence](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-start-sequence)
 * [Changelog for the code](https://github.com/bobo38/TheCoreLite/blob/master/README.md#changelog-for-the-code)
 
 ## Repository description
