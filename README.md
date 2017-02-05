@@ -37,7 +37,7 @@ The Core Lite v2.1
  * [Use case: Camera creep spread](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-camera-creep-spread)
  * [Use case: zerg macro routine](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-zerg-macro-routine)
  * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
- * [Use case: start sequence](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-start-sequence)
+ * [Use case: Start Sequence](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-start-sequence)
 * [Changelog for the code](https://github.com/bobo38/TheCoreLite/blob/master/README.md#changelog-for-the-code)
 
 ## Repository description
@@ -657,7 +657,7 @@ After usage of the variant 1:
 
 Otherwise please read "After precision key usage" section.
 
-## Use case: start sequence
+## Use case: Start Sequence
 * hold Space before match begin
  * immediately click CC/Nexus/Hatch at start-up it will launch worker production
  * in case of zerg click again afterwards to reselect hatch and not append eggs to Hatch group
@@ -670,9 +670,11 @@ Otherwise please read "After precision key usage" section.
 * rally point cam for terran/protoss
  * click on the minimap
  * Alt+W
-* set new expansion cam, for each cam:
+* set new expansion cams, for each cam:
  * click on minimap
  * Alt+(A|)S|Z|X
+* release Alt
+ * check mineral level for benchmark
 
 **Note:** during cam creation, your CC/Nexus/Hatch keeps on being selected,
 just follow launch next production when ressources available.
