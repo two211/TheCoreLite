@@ -656,6 +656,26 @@ After usage of the variant 1:
 
 Otherwise please read "After precision key usage" section.
 
+## Use case: start sequence
+* hold Space before match begin
+ * immediately click CC/Nexus/Hatch at start-up it will launch worker production
+ * in case of zerg click again afterwards to reselect hatch and not append eggs to Hatch group
+* from here keep thumb on Alt
+* create first base cam
+ * Alt+Shift center on CC/Nexus/Hatch
+ * Alt+A: create main base cam, Terran Protoss
+ * Alt+W: create main base cam Zerg
+ * Alt+D: append to CC/Nexus/Hatch group
+* rally point cam for terran/protoss
+ * click on the minimap
+ * Alt+W
+* set new expansion cam, for each cam:
+ * click on minimap
+ * Alt+(A|)S|Z|X
+
+**Note:** during cam creation, your CC/Nexus/Hatch keeps on being selected,
+just follow launch next production when ressources available
+
 ----------------------------------------------------------------------------------------------------------------------
 
 Changelog for the code
