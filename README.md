@@ -2,7 +2,7 @@ The Core Lite v2.2
 ==================
 
 ### Table of Contents
-* [The Core Lite v2.1](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
+* [The Core Lite v2.2](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
  * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
  * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
  * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
