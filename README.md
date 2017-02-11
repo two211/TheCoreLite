@@ -132,6 +132,7 @@ Important to know:
 * caster split
  * cast area of effect spells far away on the minimap (eventually rapid fire...)
  * hold V to cancel targeting and stop the casters, it will cancels the spells that were not casted
+ * **Note:** V cancel targeting only works with pointer on map
 
 ## Unit keys
 
