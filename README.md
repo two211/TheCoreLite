@@ -1,4 +1,4 @@
-The Core Lite v2.1
+The Core Lite v2.2
 ==================
 
 ### Table of Contents
