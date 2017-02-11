@@ -272,7 +272,7 @@ Tips for rally point | warp-in pylon:
  * Shift+W recalls camera (rally point)
 
 Related alternates:
-* Ctl+Alt: recall this group (use case: control cam warp-in)
+* none, the alternate for control camera was removed
 
 Race specific:
 * Related to warp-in
