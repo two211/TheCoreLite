@@ -105,7 +105,7 @@ CameraView3=Shift+3,Control+G
 CameraView4=Shift+A
 CameraView5=Shift+S
 CameraView6=Shift+Z
-CameraView7=Shift+R
+CameraView7=Shift+X
 
 [Commands]
 250mmStrikeCannons/Thor=C

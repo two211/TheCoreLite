@@ -62,7 +62,7 @@ in seed TheCore Lite, keys =C,CapsLock
 in seed TheCore Lite, keys =
 
 [ERROR]: EMP/ScienceVessel not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,R
 
 [ERROR]: EnrageQueen/Queen not related to a conflict
 in seed TheCore Lite, keys =
@@ -110,7 +110,7 @@ in seed TheCore Lite, keys =D
 in seed TheCore Lite, keys =C
 
 [ERROR]: FungalGrowth/InfestorBurrowed not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,F
 
 [ERROR]: GhostHoldFire/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =4
@@ -230,7 +230,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =
 
 [ERROR]: PointDefenseDrone/Raven_BlackOps not related to a conflict
-in seed TheCore Lite, keys =E,CapsLock
+in seed TheCore Lite, keys =E,R
 
 [ERROR]: PrimalConsume/Infestor not related to a conflict
 in seed TheCore Lite, keys =
@@ -777,7 +777,7 @@ in seed TheCore Lite, keys =G
 [WARN]: ForceField2/Sentry2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E,C
+in seed TheCore Lite, keys =E,C,R
 
 [WARN]: Forge/Harvester not related to a conflict
 but is inherited
@@ -790,7 +790,7 @@ in seed TheCore Lite, keys =V
 [WARN]: FungalGrowth/Infestor2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,F
 
 [WARN]: Gateway/Harvester not related to a conflict
 but is inherited
@@ -839,7 +839,7 @@ in seed TheCore Lite, keys =F
 
 [WARN]: KhalaShockwave/Immortal not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,R
 
 [WARN]: Lurker/Hydralisk not related to a conflict
 but is inherited
@@ -1004,15 +1004,15 @@ in seed TheCore Lite, keys =I
 
 [WARN]: PsiStorm/AnAleemController not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,R
 
 [WARN]: PsiStorm/Khiradun not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,R
 
 [WARN]: PsiStorm/Telios not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,R
 
 [WARN]: PsiStrike/K5Kerrigan not related to a conflict
 but is part of same check
