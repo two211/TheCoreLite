@@ -177,9 +177,9 @@ Protoss:
 
 Zerg:
 * Space/R = Unburrow/Burrow
-* C = creep tumor/queen
+* C = creep tumor
 * F = morph/evolve
-* E = speed key (for research affecting speed)
+* CapsLock = speed key (for research affecting speed)
 
 ## Building Consistency
 
@@ -227,10 +227,10 @@ Some mnemonics:
 
 Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse.
 Alls units are covered apart of:
-* Infestor (same key as Lair/Hive)
-* SwarmHost (same key as research burrow)
 * Viper (same key as Queen)
+* Infestor (same key as Lair/Hive)
 * Ultralisk (same key as Pneumatized Carapace)
+* SwarmHost (same key as research burrow)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -611,6 +611,30 @@ Ctl+click acts as select all units of the same kind.
  * Ctl+T, save 3
 
 **Note:** keep in mind that selecting another group cancels the action
+
+## Use case: hatching eggs
+
+Easy hatch eggs:
+* W selects hatcheries
+* select larvae and launch production:
+ * Space drones
+ * E overlord
+ * D zergling
+ * R roach
+ * C hydralisk
+ * T mutalisk
+ * G corruptor
+* units that needs select larvae with another key
+ * V viper
+ * F infestor
+ * CapsLock ultralisk
+ * 4 Swarm Host
+
+Overlord map control "W+Space+E+Right click on minimap":
+* W select hatchery
+* Space select larvae
+* E spawn overlord
+* Right click on minimap, sets rally point.
 
 ## Use case: zerg macro routine
 
