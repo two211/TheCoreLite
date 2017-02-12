@@ -83,7 +83,7 @@ in seed TheCore Lite, keys =D
 in seed TheCore Lite, keys =D
 
 [ERROR]: EvolveMuscularAugments/LurkerDenMP not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: EvolveOrganicCarapace/RoachWarren not related to a conflict
 in seed TheCore Lite, keys =O
@@ -870,12 +870,12 @@ in seed TheCore Lite, keys =R
 [WARN]: MorphToHotSNoxious/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =CapsLock
 
 [WARN]: MorphToHotSTorrasque/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =CapsLock
 
 [WARN]: MorphToHydraliskImpaler/Larva not related to a conflict
 but is part of same check

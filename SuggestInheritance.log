@@ -517,6 +517,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildSITechLabStarport/SIStarportFlying default: 
 	CloakOff default: D
 	CommandCenterUnloadAll default: D
+	EvolveCentrificalHooks/BanelingNest default: C
+	EvolveGlialRegeneration/GreaterRoachWarren default: G
+	EvolveGlialRegeneration/RoachWarren default: G
+	EvolveMuscularAugments/HydraliskDen default: H
+	EvolveMuscularAugments/ImpalerDen default: H
+	EvolveMuscularAugments/LurkerDen default: H
+	EvolveMuscularAugments/LurkerDenMP default: H
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
 	GravitonCatapult/Carrier default: G
@@ -544,13 +551,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MindBolt/KerriganReviveCocoon default: Q
 	MindBolt/KerriganVoid default: Q copyof: MindBolt/K5Kerrigan default: Q
 	MindBolt/KerriganVoidBurrowed default: Q copyof: MindBolt/K5KerriganBurrowed default: Q
+	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
+	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToMothership/MothershipCore default: U
 	MorphToOverseer/VoidRiftUnselectable default: V
 	Mothership/Nexus default: M copyof: MothershipCore/Nexus default: M
 	MothershipCore/Nexus default: M
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
-	Overlord/Larva default: V
 	ParasiticBomb/Viper default: R
 	PlanetCrackerOff/MothershipAiur06 default: C
 	PrimalSlash/K5Kerrigan default:  copyof: MindBolt/K5Kerrigan default: Q
@@ -582,6 +590,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TechReactorAI/StarportFlying default: Z
 	TerranBuildAdvanced/SCV default: V
 	TerranBuildAdvanced/SISCV default: 
+	Ultralisk/Larva default: U
+	UltraliskCavern/Drone default: U
 	VoidSentryShieldRepair/RoguePurifierSupportDroneB default: Q
 	VoidSentryShieldRepair/Sentry default: Q
 	VoidSentryShieldRepair/SentryCampaignBase default: Q
@@ -592,6 +602,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopBanelingBarrage/ZagaraVoidCoop default: Q
 	ZagaraVoidCoopBanelingBarrage/ZagaraVoidCoopBurrowed default: Q
 	ZergBuildAdvanced/Drone default: V
+	overlordspeed default: P
+	zerglingmovementspeed/SpawningPool default: M
 
 [INFO]: TheCore Lite: E,CapsLock   
 	BiodomeUnloadAll/Biodome default: U
@@ -742,13 +754,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolutionChamber/Drone default: V
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
 	EvolveBroodLordSpeed/Spire default: P
-	EvolveCentrificalHooks/BanelingNest default: C
-	EvolveGlialRegeneration/GreaterRoachWarren default: G
-	EvolveGlialRegeneration/RoachWarren default: G
-	EvolveMuscularAugments/HydraliskDen default: H
-	EvolveMuscularAugments/ImpalerDen default: H
-	EvolveMuscularAugments/LurkerDen default: H
-	EvolveMuscularAugments/LurkerDenMP default: H
 	EvolveSIDiamondbackImprovedEnsnare/SIFactoryTechLab default: 
 	EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab default: 
 	FaceEmbrace/Viper default: D
@@ -785,14 +790,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MindBlast/Spectre default: B
 	MindBlast/Tosh default: B
 	MohandarOmnislash/VorazunChampion default: E
-	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
-	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToHoverHellion/HoverHellion default: E
 	MorphtoDevourer/Mutalisk default: D
 	NarudEpilogueSummonShadeofNarud/NarudEpilogue default: E
 	Oracle/VoidRiftUnselectable default: E
 	OracleEnergyUpgrade/FleetBeacon default: A
 	OrbitalCommand/CommandCenter default: B
+	Overlord/Larva default: V
 	ParkColonistVehicle/ColonistVehicleUnit default: L
 	ParkColonistVehicle/ColonistVehicleUnit01 default: L
 	PhaseCannon/KaraxChampion default: E
@@ -878,9 +882,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Transfusion/ZaGara default: T
 	TwilightCouncil/Harvester default:  copyof: TwilightCouncil/Probe default: C
 	TwilightCouncil/Probe default: C
-	Ultralisk/Larva default: U
 	UltraliskBurrowCharge/HotSTorrasqueBurrowed default: C
-	UltraliskCavern/Drone default: U
 	UpgradeToRoboticsFacilityWarp/RoboticsFacility default: G copyof: UpgradeToWarpGate/Gateway default: G
 	UpgradeToStargateWarp/Stargate default: G copyof: UpgradeToWarpGate/Gateway default: G
 	UpgradeToWarpGate/Gateway default: G
@@ -909,8 +911,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	hydraliskspeed/HydraliskDen default: G
 	hydraliskspeed/LurkerDen default: G copyof: hydraliskspeed/LurkerDenMP default: G
 	hydraliskspeed/LurkerDenMP default: G
-	overlordspeed default: P
-	zerglingmovementspeed/SpawningPool default: M
 
 [INFO]: TheCore Lite: E,F   
 	FungalGrowth/Infestor default: F

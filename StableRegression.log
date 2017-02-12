@@ -1,24 +1,9 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
-[WARN]: 'CapsLock' used in place of 'R' for command 'AWrp', in seed 'TheCore Lite'
-[WARN]: 'C,R' used in place of 'C' for command 'BlindingCloud/Viper', in seed 'TheCore Lite'
-[WARN]: 'C,CapsLock' used in place of 'C,Space' for command 'Contaminate/Overseer', in seed 'TheCore Lite'
-[WARN]: 'G' used in place of 'C' for command 'Corruptor/Larva', in seed 'TheCore Lite'
-[WARN]: 'E,R' used in place of 'E' for command 'EMP/Ghost', in seed 'TheCore Lite'
-[WARN]: 'E,C,R' used in place of 'E,C' for command 'ForceField/Sentry', in seed 'TheCore Lite'
-[WARN]: 'E,F' used in place of 'E' for command 'FungalGrowth/Infestor', in seed 'TheCore Lite'
-[WARN]: 'CapsLock,C' used in place of 'R,C' for command 'HunterSeekerMissile/Raven', in seed 'TheCore Lite'
-[WARN]: 'C' used in place of 'E' for command 'Hydralisk/Larva', in seed 'TheCore Lite'
-[WARN]: 'E,Space' used in place of 'E,R' for command 'OracleBuildStasisTrap/Oracle', in seed 'TheCore Lite'
-[WARN]: 'C,R' used in place of 'C' for command 'OracleRevelation/Oracle', in seed 'TheCore Lite'
-[WARN]: 'CapsLock' used in place of 'R' for command 'ParasiticBomb/Viper', in seed 'TheCore Lite'
-[WARN]: 'E,R' used in place of 'E,CapsLock' for command 'PointDefenseDrone/Raven', in seed 'TheCore Lite'
-[WARN]: 'E,R' used in place of 'E' for command 'PsiStorm/HighTemplar', in seed 'TheCore Lite'
-[WARN]: 'E,C,Space,F' used in place of 'E,C,Space' for command 'RavagerCorrosiveBile/Ravager', in seed 'TheCore Lite'
-[WARN]: 'E,Space' used in place of 'E' for command 'SpawnChangeling/Overseer', in seed 'TheCore Lite'
-[WARN]: 'E' used in place of 'G' for command 'Ultralisk/Larva', in seed 'TheCore Lite'
+[WARN]: 'E' used in place of 'CapsLock' for command 'Overlord/Larva', in seed 'TheCore Lite'
+[WARN]: 'CapsLock' used in place of 'E' for command 'Ultralisk/Larva', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 17 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 2 INFOs: 1 
 ============================
