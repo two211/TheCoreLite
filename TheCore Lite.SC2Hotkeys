@@ -670,6 +670,7 @@ InfestorConsumption/DefilerMP=Space
 InfestorConsumption/Infestor=Space
 InjectLarva/Queen=
 InstantHunterSeekerMissile/Raven=CapsLock,C
+InstantHunterSeekerMissile/Raven_BlackOps=CapsLock,C
 Interceptor/Carrier=Space
 Interceptor/CarrierAiur=Space
 Interceptor/Selendis=Space
