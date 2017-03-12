@@ -90,6 +90,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default IncineratorNozzles/DevilDog
 [WARN]: no default InfestedTerrans/Infestor2
 [WARN]: no default InjectLarva/Queen
+[WARN]: no default InstantHunterSeekerMissile/Raven_BlackOps
 [WARN]: no default KhalaShockwave/Immortal
 [WARN]: no default LaunchNullWard/NullSphere
 [WARN]: no default Liberator_BlackOpsMorphtoAA/Liberator_BlackOps
@@ -300,5 +301,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 298 ERRORs: 0 
+Finished (Check defaults) - WARNs: 299 ERRORs: 0 
 ============================

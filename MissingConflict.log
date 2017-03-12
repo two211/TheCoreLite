@@ -83,7 +83,7 @@ in seed TheCore Lite, keys =D
 in seed TheCore Lite, keys =D
 
 [ERROR]: EvolveMuscularAugments/LurkerDenMP not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =E
 
 [ERROR]: EvolveOrganicCarapace/RoachWarren not related to a conflict
 in seed TheCore Lite, keys =O
@@ -144,6 +144,9 @@ in seed TheCore Lite, keys =D
 
 [ERROR]: InjectLarva/Queen not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: InstantHunterSeekerMissile/Raven_BlackOps not related to a conflict
+in seed TheCore Lite, keys =CapsLock,C
 
 [ERROR]: LaunchNullWard/NullSphere not related to a conflict
 in seed TheCore Lite, keys =
@@ -1264,5 +1267,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 203 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 204 WARNs: 145 
 ============================
