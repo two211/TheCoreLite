@@ -1,9 +1,7 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
-[WARN]: 'E,C,Space' used in place of 'E,C,Space,F' for command 'RavagerCorrosiveBile/Ravager', in seed 'TheCore Lite'
-[WARN]: 'Space' used in place of 'D' for command 'SummonNydusWorm/NydusNetwork', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 2 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 0 INFOs: 1 
 ============================
