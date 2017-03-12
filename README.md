@@ -227,10 +227,11 @@ Some mnemonics:
 
 Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse.
 Alls units are covered apart of:
-* Overlord (same key as Pneumatized Carapace)
-* Viper (same key as Queen)
-* Infestor (same key as Lair/Hive)
-* Ultralisk (same key as research burrow)
+* Overlord (E, same key as Pneumatized Carapace)
+* Viper (V, same key as Queen)
+* Infestor (F, same key as Lair/Hive)
+* Ultralisk (CapsLock, same key as research burrow)
+* Swarm Host (4, key used in some other mode than Multiplayer)
 
 ----------------------------------------------------------------------------------------------------------------------
 
