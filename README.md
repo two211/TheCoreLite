@@ -179,7 +179,7 @@ Zerg:
 * Space/R = Unburrow/Burrow
 * C = creep tumor
 * F = morph/evolve
-* CapsLock = speed key (for research affecting speed)
+* E = speed key (for research affecting speed)
 
 ## Building Consistency
 
@@ -227,10 +227,10 @@ Some mnemonics:
 
 Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse.
 Alls units are covered apart of:
+* Overlord (same key as Pneumatized Carapace)
 * Viper (same key as Queen)
 * Infestor (same key as Lair/Hive)
-* Ultralisk (same key as Pneumatized Carapace)
-* SwarmHost (same key as research burrow)
+* Ultralisk (same key as research burrow)
 
 ----------------------------------------------------------------------------------------------------------------------
 
