@@ -3,41 +3,42 @@ The Core Lite v2.2
 
 ### Table of Contents
 * [The Core Lite v2.2](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
- * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
- * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
- * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
+  * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
+  * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
+  * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
- * [Rapid Fire and Precision keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#rapid-fire-and-precision-keys)
- * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
- * [Building Consistency](https://github.com/bobo38/TheCoreLite/blob/master/README.md#building-consistency)
- * [Unit Production](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-production)
+  * [Rapid Fire and Precision keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#rapid-fire-and-precision-keys)
+  * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
+  * [Building Consistency](https://github.com/bobo38/TheCoreLite/blob/master/README.md#building-consistency)
+  * [Unit Production](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-production)
 * [TheCore Lite Macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
- * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history)
- * [Nexus/CC/Hatch group = W](https://github.com/bobo38/TheCoreLite/blob/master/README.md#nexuscchatch-group--w)
- * [Production group (or inject queens) = Q](https://github.com/bobo38/TheCoreLite/blob/master/README.md#production-group-or-inject-queens--q)
- * [Utility group = Grave](https://github.com/bobo38/TheCoreLite/blob/master/README.md#utility-group--grave)
- * [Group display](https://github.com/bobo38/TheCoreLite/blob/master/README.md#group-display)
+  * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history)
+  * [Nexus/CC/Hatch group = W](https://github.com/bobo38/TheCoreLite/blob/master/README.md#nexuscchatch-group--w)
+  * [Production group (or inject queens) = Q](https://github.com/bobo38/TheCoreLite/blob/master/README.md#production-group-or-inject-queens--q)
+  * [Utility group = Grave](https://github.com/bobo38/TheCoreLite/blob/master/README.md#utility-group--grave)
+  * [Group display](https://github.com/bobo38/TheCoreLite/blob/master/README.md#group-display)
 * [TheCore Lite User Interface keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-user-interface-keys)
- * [Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#function-keys)
- * [Other tips](https://github.com/bobo38/TheCoreLite/blob/master/README.md#other-tips)
- * [Moved out of the dense keycard and Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#moved-out-of-the-dense-keycard-and-function-keys)
+  * [Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#function-keys)
+  * [Other tips](https://github.com/bobo38/TheCoreLite/blob/master/README.md#other-tips)
+  * [Moved out of the dense keycard and Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#moved-out-of-the-dense-keycard-and-function-keys)
 * [TheCore Lite Group/Cameras modifiers](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
- * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history-1)
- * [Groups and mouse synergies with Ctrl and Ctrl+Shift](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
- * [Easier cloning through Shift+Alt](https://github.com/bobo38/TheCoreLite/blob/master/README.md#easier-cloning-through-shiftalt)
- * [Shift/Control and camera synergies](https://github.com/bobo38/TheCoreLite/blob/master/README.md#shiftcontrol-and-camera-synergies)
+  * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history-1)
+  * [Groups and mouse synergies with Ctrl and Ctrl+Shift](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
+  * [Easier cloning through Shift+Alt](https://github.com/bobo38/TheCoreLite/blob/master/README.md#easier-cloning-through-shiftalt)
+  * [Shift/Control and camera synergies](https://github.com/bobo38/TheCoreLite/blob/master/README.md#shiftcontrol-and-camera-synergies)
 * [Use case scenarii](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-scenarii)
- * [Use case: expansions cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-expansions-cameras)
- * [Use case: send worker back to ressources gathering after queued commands](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-send-worker-back-to-ressources-gathering-after-queued-commands)
- * [Use case: army production + rally point (optional warp-in pylon)](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-army-production--rally-point-optional-warp-in-pylon)
- * [Use case: warp-in pylon](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-warp-in-pylon)
- * [Use case: TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-thecore-lite-inject-initiate)
- * [Use case: Telegraph inject (Backspace family)](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-telegraph-inject-backspace-family)
- * [Use case: TheCore inject](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-thecore-inject)
- * [Use case: Camera creep spread](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-camera-creep-spread)
- * [Use case: zerg macro routine](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-zerg-macro-routine)
- * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
- * [Use case: Start Sequence](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-start-sequence)
+  * [Use case: expansions cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-expansions-cameras)
+  * [Use case: send worker back to ressources gathering after queued commands](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-send-worker-back-to-ressources-gathering-after-queued-commands)
+  * [Use case: army production + rally point (optional warp-in pylon)](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-army-production--rally-point-optional-warp-in-pylon)
+  * [Use case: warp-in pylon](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-warp-in-pylon)
+  * [Use case: TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-thecore-lite-inject-initiate)
+  * [Use case: Telegraph inject (Backspace family)](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-telegraph-inject-backspace-family)
+  * [Use case: TheCore inject](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-thecore-inject)
+  * [Use case: Camera creep spread](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-camera-creep-spread)
+  * [Use case: hatching eggs](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-hatching-eggs)
+  * [Use case: zerg macro routine](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-zerg-macro-routine)
+  * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
+  * [Use case: Start Sequence](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-start-sequence)
 * [Changelog for the code](https://github.com/bobo38/TheCoreLite/blob/master/README.md#changelog-for-the-code)
 
 ## Repository description
@@ -48,19 +49,19 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 * allow easy 2-keys-based macro mechanics
 * get rid of bad habits and develop sane mechanics
 * encourage camera keys usage for:
- * rally points
- * warp pylons
- * creep spread
+  * rally points
+  * warp pylons
+  * creep spread
 
 ### Coverage and checks
 * no keys conflicts accross supported modes (please report anyone you found)
- * WoL HoTS LoTV multiplayer
- * Campaigns ( WoL HoTS LoTV Nova)
- * Coop
+  * WoL HoTS LoTV multiplayer
+  * Campaigns ( WoL HoTS LoTV Nova)
+  * Coop
 * pass TheCore standards
- * keys supposed to be the same, or inherited (multi-racial support)
- * delivered in a set of supported keyboard layouts
- * it passes all the new introduced "seed" checks
+  * keys supposed to be the same, or inherited (multi-racial support)
+  * delivered in a set of supported keyboard layouts
+  * it passes all the new introduced "seed" checks
 
 ## Aknowledgments
 
@@ -127,12 +128,12 @@ Case study assuming HTs in a group following some ranged units not to run into e
 Important to know:
 * after feedback/psistorm cast, HT will give up follow, think about make the entire group re-follow
 * in case HTs were too far to cast and enemy moved, you still can cancel the cast:
- * issuing a move command on the entire group with double RightClicks (1st one will cancel targeting if needed)
- * using V will cancel the target and make stop all selected units
+  * issuing a move command on the entire group with double RightClicks (1st one will cancel targeting if needed)
+  * using V will cancel the target and make stop all selected units
 * caster split
- * cast area of effect spells far away on the minimap (eventually rapid fire...)
- * hold V to cancel targeting and stop the casters, it will cancels the spells that were not casted
- * **Note:** V cancel targeting only works with pointer on map
+  * cast area of effect spells far away on the minimap (eventually rapid fire...)
+  * hold V to cancel targeting and stop the casters, it will cancels the spells that were not casted
+  * **Note:** V cancel targeting only works with pointer on map
 
 ## Unit keys
 
@@ -209,17 +210,17 @@ so as the building enabling the production of this unit.
 
 Some mnemonics:
 * D for basic units in the command card
- * zergling
- * marine, hellion, viking
- * zealot, immortal, phoenix
+  * zergling
+  * marine, hellion, viking
+  * zealot, immortal, phoenix
 * R for support unit
- * roach
- * marauder, hellbat, liberator
- * stalker, void ray
+  * roach
+  * marauder, hellbat, liberator
+  * stalker, void ray
 * F for sneak
- * infestor
- * reaper, widow mine, medivac
- * dark templar, warp prism, oracle
+  * infestor
+  * reaper, widow mine, medivac
+  * dark templar, warp prism, oracle
 * V and G for advanced and ultimate units (exception = zerg)
 * Space for high profile casters (high templar, ghost, raven), and detectors
 
@@ -252,11 +253,11 @@ Group content:
 
 Tip for additional expansion and related alternates:
 * Center base at camera creation with:
- * Alt+Shift
- * Alt+CapsLock
- * Alt+Tab
- * Alt+`
- * Alt+Q
+  * Alt+Shift
+  * Alt+CapsLock
+  * Alt+Tab
+  * Alt+`
+  * Alt+Q
 * Add to Nexus/CC/Hatch with alternates Alt+D
 
 ## Production group (or inject queens) = Q
@@ -269,20 +270,20 @@ Group content:
 Tips for rally point | warp-in pylon:
 * Shift+Q has the same effect than pressing Q
 * Shift+Q+W mechanics
- * Shift+Q selects this group
- * Shift+W recalls camera (rally point)
+  * Shift+Q selects this group
+  * Shift+W recalls camera (rally point)
 
 Related alternates:
 * none, the alternate for control camera was removed
 
 Race specific:
 * Related to warp-in
- * Keep shift pressed, while holding unit key (queued rapid-fire warp-in)
- * Shift+3 could be used for secondary warp-in zone
+  * Keep shift pressed, while holding unit key (queued rapid-fire warp-in)
+  * Shift+3 could be used for secondary warp-in zone
 * Related to egg inject
- * W camera would be main hive
- * Shift+Q+W helps getting Shift already pressed for queued commands
- * please read dedicated usecase "Telegraph inject" and "TheCore inject"
+  * W camera would be main hive
+  * Shift+Q+W helps getting Shift already pressed for queued commands
+  * please read dedicated usecase "Telegraph inject" and "TheCore inject"
 
 ## Utility group = Grave
 
@@ -296,10 +297,10 @@ Alternates for "recall utility group":
 
 Usages:
 * Creep queen with shift
- * Shift+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
- * Shift+C + clicks = queued drop creep tumors
+  * Shift+V+V = select + jump to creep queen (same raw as C for fast spawn creep tumor)
+  * Shift+C + clicks = queued drop creep tumors
 * wall supply depots burrow
- * Shift+V+Space: select wall supply depots and burrow
+  * Shift+V+Space: select wall supply depots and burrow
 
 ## Group display
 
@@ -359,7 +360,7 @@ Alt+RightClick pings the invisible unit location to allies.
 ### More Town cameras
 * B remains toggles base camera
 * New alternates
- * Shift+Alt+E
+  * Shift+Alt+E
 
 ### AI keys now supported
 * direct attack on Alt+E
@@ -408,11 +409,11 @@ For TheCore Lite, here are the modifiers:
 
 Those behaviors are similar if Alt is pressed simultaneously:
 * Ctrl+
- * one click on the map, selects all visible units similar to target
- * one click on the board, keeps selected only units similar to target
+  * one click on the map, selects all visible units similar to target
+  * one click on the board, keeps selected only units similar to target
 * Ctrl+Shift+
- * one click on the map, adds all visible units similar to target in selection
- * one click on the board, removes all units similar to target in selection
+  * one click on the map, adds all visible units similar to target in selection
+  * one click on the board, removes all units similar to target in selection
 
 In case you want to split a group,
 just box some units then appendsteal them to another group with Ctl+click+#groupnumber.
@@ -427,11 +428,11 @@ Just recreate group with Shift+Alt after shift clicking the units supposed to st
 
 Some examples with "Select All Army":
 * After Ctl+Tab
- * Ctl+click will select only all units of the clicked type
- * Ctl+#group key will append/steal the selection
+  * Ctl+click will select only all units of the clicked type
+  * Ctl+#group key will append/steal the selection
 * After Ctl+Shift+Tab
- * Ctl+Shift+click will remove any unit of the clicked type
- * Ctrl+Shift+#group key will create/steal a group with this selection
+  * Ctl+Shift+click will remove any unit of the clicked type
+  * Ctrl+Shift+#group key will create/steal a group with this selection
   * alternatively Shift+Alt+#group key will create group/non-steal the selection
 
 ### Additional group for easy caster selection through Ctl+Alt
@@ -442,7 +443,7 @@ It is the case of the Stalker group in [JaKaTaK's video on Protoss control group
 * Select the group where the casters are
 * Ctl(+Alt)+LeftClick a caster in the board (select only all units of a given type)
 * Ctl+Alt+group# to append in a group without stealing from the main army
- * Use Shift+Alt+group# could be use to create/overwrite, but chains not as well
+  * Use Shift+Alt+group# could be use to create/overwrite, but chains not as well
 
 ## Easier cloning through Shift+Alt
 
@@ -569,7 +570,7 @@ Method:
 * Then keep Shift pressed and move thumb on Alt
 * Shift+Alt+E used to cycle base
 * if queen is there, with enough energy, left click
- * Shift+Alt+D used to TargetChoose, like LeftClick (Rapid Fire key)
+  * Shift+Alt+D used to TargetChoose, like LeftClick (Rapid Fire key)
 
 **Note:** In case of wandering queen, release shift and press V
 
@@ -579,10 +580,10 @@ The [TheCore inject](http://wiki.teamliquid.net/starcraft2/Spawn_Larva_(Legacy_o
 benefits as well of TheCore Lite inject initiate.
 
 * TheCore Lite inject initiate
- * Shift+Q = select inject queens + tech
- * Shift+W = jump to main hatch (first hatch)
- * Shift+Space = inject
- * center mouse
+  * Shift+Q = select inject queens + tech
+  * Shift+W = jump to main hatch (first hatch)
+  * Shift+Space = inject
+  * center mouse
 * Shift+A|S|Z|X+click = base camera + inject if needed
 
 Suggested camera locations:
@@ -598,18 +599,18 @@ This step benefits from holding Ctl.
 Ctl+click acts as select all units of the same kind.
 
 * initiate
- * Ctl+D = jump to creep camera 1 (initiate)
+  * Ctl+D = jump to creep camera 1 (initiate)
 * select all creep tumors with Ctl+click
 * creep spread
- * hold (Ctl)+C then clicks = spread creep tumor (precision key)
- * (Ctl)+Space = spread creep tumor (rapid fire)
+  * hold (Ctl)+C then clicks = spread creep tumor (precision key)
+  * (Ctl)+Space = spread creep tumor (rapid fire)
 * optionally centering
- * click = select a new creep tumor
- * Ctl+V = center view on selection
+  * click = select a new creep tumor
+  * Ctl+V = center view on selection
 * save and restart from "select all creep tumors"
- * Ctl+E+F, save 1 jump to 2
- * Ctl+R+G, save 2 jump to 3
- * Ctl+T, save 3
+  * Ctl+E+F, save 1 jump to 2
+  * Ctl+R+G, save 2 jump to 3
+  * Ctl+T, save 3
 
 **Note:** keep in mind that selecting another group cancels the action
 
@@ -618,18 +619,18 @@ Ctl+click acts as select all units of the same kind.
 Easy hatch eggs:
 * W selects hatcheries
 * select larvae and launch production:
- * Space drones
- * E overlord
- * D zergling
- * R roach
- * C hydralisk
- * T mutalisk
- * G corruptor
+  * Space drones
+  * E overlord
+  * D zergling
+  * R roach
+  * C hydralisk
+  * T mutalisk
+  * G corruptor
 * units that needs select larvae with another key
- * V viper
- * F infestor
- * CapsLock ultralisk
- * 4 Swarm Host
+  * V viper
+  * F infestor
+  * CapsLock ultralisk
+  * 4 Swarm Host
 
 Overlord map control "W+Space+E+Right click on minimap":
 * W select hatchery
@@ -640,18 +641,18 @@ Overlord map control "W+Space+E+Right click on minimap":
 ## Use case: zerg macro routine
 
 * Inject routine
- * use TheCore Lite Inject initiate
- * then "TheCore inject" or "Telegraph inject"
+  * use TheCore Lite Inject initiate
+  * then "TheCore inject" or "Telegraph inject"
 * check supply depot at this step and produce overlords
- * morph 1 overlord/mining hatch/egg cycle
- * rally overlords individually to strategic locations
+  * morph 1 overlord/mining hatch/egg cycle
+  * rally overlords individually to strategic locations
 * Hatch check
- * W: hatch group
- * morph other larvaes depending on needs
- * add eggs to control groups and give them rally points
+  * W: hatch group
+  * morph other larvaes depending on needs
+  * add eggs to control groups and give them rally points
 * Tech check
- * You had time to check upgrades as they were selected with hatcheries
- * browse subgroup + add new research
+  * You had time to check upgrades as they were selected with hatcheries
+  * browse subgroup + add new research
 * Creep queens (see "utility group section")
 * Creep cameras (control cameras) holding control
 
@@ -679,28 +680,28 @@ Protoss and Terran have also some macro optimization with TheCore Lite \o/
 
 After usage of the variant 1:
 * releasing shift will cancel targeting on queued command
- * only works if one LeftClick has been performed
+  * only works if one LeftClick has been performed
 
 Otherwise please read "After precision key usage" section.
 
 ## Use case: Start Sequence
 * hold Space before match begin
- * immediately click CC/Nexus/Hatch at start-up it will launch worker production
- * in case of zerg click again afterwards to reselect hatch and not append eggs to Hatch group
+  * immediately click CC/Nexus/Hatch at start-up it will launch worker production
+  * in case of zerg click again afterwards to reselect hatch and not append eggs to Hatch group
 * from here keep thumb on Alt
 * create first base cam
- * Alt+Shift center on CC/Nexus/Hatch
- * Alt+A: create main base cam, Terran Protoss
- * Alt+W: create main base cam Zerg
- * Alt+D: append to CC/Nexus/Hatch group
+  * Alt+Shift center on CC/Nexus/Hatch
+  * Alt+A: create main base cam, Terran Protoss
+  * Alt+W: create main base cam Zerg
+  * Alt+D: append to CC/Nexus/Hatch group
 * rally point cam for terran/protoss
- * click on the minimap
- * Alt+W
+  * click on the minimap
+  * Alt+W
 * set new expansion cams, for each cam:
- * click on minimap
- * Alt+(A|)S|Z|X
+  * click on minimap
+  * Alt+(A|)S|Z|X
 * release Alt
- * check mineral level for benchmark
+  * check mineral level for benchmark
 
 **Note:** during cam creation, your CC/Nexus/Hatch keeps on being selected,
 just follow launch next production when ressources available.
@@ -715,16 +716,16 @@ Changelog for the code
 Compared to upstream project:
 * TheCoreRemapper.py supporting other seeds than pure TheCore
 * New "seed" checks:
- * check for unbound commands, known from conflicts
- * check to prevent conflicts between Hotkeys (i.e. directly access such as groups, base camera key) and Commands
- * regression check against stable version for Multiplayer
- * check key consistency over CommandRoot
+  * check for unbound commands, known from conflicts
+  * check to prevent conflicts between Hotkeys (i.e. directly access such as groups, base camera key) and Commands
+  * regression check against stable version for Multiplayer
+  * check key consistency over CommandRoot
 * New "quality" checks:
- * check for commands out of known conflicts (warning only in case of inherit/same)
+  * check for commands out of known conflicts (warning only in case of inherit/same)
 * Debug mode
- * optional generation
- * optional seed selection (you could run the script for the seeds you want)
- * optional quality checks (otherwise just run "seed" checks)
- * optional hint through a "verbose" and "verydetail" options (including the remapHint function)
- * optional IgnoredContext (such as "WoL Campaign" or "Coop") to filter conflicts and keys
+  * optional generation
+  * optional seed selection (you could run the script for the seeds you want)
+  * optional quality checks (otherwise just run "seed" checks)
+  * optional hint through a "verbose" and "verydetail" options (including the remapHint function)
+  * optional IgnoredContext (such as "WoL Campaign" or "Coop") to filter conflicts and keys
 * Some .ini file fixed to prevent wrong positives
