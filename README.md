@@ -620,13 +620,13 @@ Easy hatch eggs:
 * W selects hatcheries
 * select larvae and launch production:
   * Space drones
-  * E overlord
   * D zergling
   * R roach
   * C hydralisk
   * T mutalisk
   * G corruptor
 * units that needs select larvae with another key
+  * E overlord
   * V viper
   * F infestor
   * CapsLock ultralisk
