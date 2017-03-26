@@ -79,7 +79,7 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 
 #### TheCore Lite extras
 * [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
-* [Shift+Q+W select prod buildings and jump to rally](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
+* [Shift+Q+W select prod buildings and jump to rally point](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
 * [Shift+Q+W+Space TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite#use-case-thecore-lite-inject-initiate)
 * [TheCore Lite telegraph inject(backspace family)](https://github.com/bobo38/TheCoreLite#use-case-telegraph-inject-backspace-family)
 * [Utility group and creep queen mechanics](https://github.com/bobo38/TheCoreLite#utility-group--grave)
