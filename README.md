@@ -4,6 +4,7 @@ The Core Lite v2.2
 ### Table of Contents
 * [The Core Lite v2.2](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
   * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
+  * [TheCore Lite features](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-features)
   * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
   * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
