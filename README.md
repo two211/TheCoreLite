@@ -253,12 +253,13 @@ Group content:
 
 Tip for additional expansion and related alternates:
 * Center base at camera creation with:
-  * Alt+Shift
   * Alt+CapsLock
   * Alt+Tab
   * Alt+`
+  * Control+V
+* Add to Nexus/CC/Hatch with alternates
+  * Alt+D (legacy could be removed)
   * Alt+Q
-* Add to Nexus/CC/Hatch with alternates Alt+D
 
 ## Production group (or inject queens) = Q
 
@@ -510,9 +511,14 @@ Use case scenarii
 
 ## Use case: expansions cameras
 * Select new base under construction
-* Alt+CapsLock|`|Tab|Q: center view on base
+* Alt+CapsLock|`|Tab: center view on base
 * Alt+[camera\_key]: make view on associated key
-* Alt+D: Append expansion to Nexus/CC/Hatch group
+* Alt+D|Q: Append expansion to Nexus/CC/Hatch group
+  * Alt+D is legacy and could be removed for v2.3
+
+Recommended:
+* select
+* Alt+Q+Tab+[camera\_key]
 
 ## Use case: send worker back to ressources gathering after queued commands
 * press shift to queue all necessary commands
@@ -690,10 +696,10 @@ Otherwise please read "After precision key usage" section.
   * in case of zerg click again afterwards to reselect hatch and not append eggs to Hatch group
 * from here keep thumb on Alt
 * create first base cam
-  * Alt+Shift center on CC/Nexus/Hatch
+  * Alt+Tab center on CC/Nexus/Hatch
+  * Alt+Q: append to CC/Nexus/Hatch group
   * Alt+A: create main base cam, Terran Protoss
   * Alt+W: create main base cam Zerg
-  * Alt+D: append to CC/Nexus/Hatch group
 * rally point cam for terran/protoss
   * click on the minimap
   * Alt+W
