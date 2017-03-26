@@ -1,19 +1,7 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
-[ERROR]: Shift+Alt+R used in place of Alt+E for parameter AIArmy, in seed TheCore Lite
-[ERROR]: Shift+Alt+4 used in place of Shift+Alt+F for parameter AIBuild, in seed TheCore Lite
-[ERROR]: Shift+Alt+G used in place of Shift+Alt+V for parameter AIClearAll, in seed TheCore Lite
-[ERROR]: Shift+Alt+5 used in place of Shift+Alt+C for parameter AICommunication, in seed TheCore Lite
-[ERROR]: Shift+Alt+V used in place of Alt+V for parameter AIDelete, in seed TheCore Lite
-[ERROR]: Shift+Alt+F used in place of Alt+F for parameter AIDetect, in seed TheCore Lite
-[ERROR]: Shift+Alt+C used in place of Alt+C for parameter AIExpand, in seed TheCore Lite
-[ERROR]: Shift+Alt+T used in place of Alt+R for parameter AIScout, in seed TheCore Lite
-[ERROR]: Alt+Tab,Alt+CapsLock,Alt+Grave,Control+V,Alt+Shift used in place of Alt+CapsLock,Alt+Grave,Alt+Shift,Alt+Tab,Alt+Q,Control+V for parameter CameraCenter, in seed TheCore Lite
-[ERROR]: Control+W,Alt+D,Alt+Q used in place of Control+W,Alt+D for parameter ControlGroupAppendAndSteal6, in seed TheCore Lite
-[WARN]: 'CapsLock' used in place of 'C' for command 'Explode/Baneling', in seed 'TheCore Lite'
-[WARN]: 'CapsLock' used in place of 'C' for command 'Explode/BanelingBurrowed', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 10 WARNs: 2 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 0 INFOs: 1 
 ============================
