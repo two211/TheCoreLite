@@ -222,7 +222,7 @@ After the target being selected the ability will be called again and you just ha
 
 source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
 
-### RapidFire Static Defence
+#### RapidFire Static Defence
 
 All workers have Space and F for "Basic building".
 Defence strutures are mapped on those 2 keys.
