@@ -266,15 +266,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveK5ChainLightning/EvolutionChamber default: R
 	EvolveStukovInfestedCivilianSpawnBroodlingsOnDeath/SICivilianStructure default: 
 	ExperimentalPlasmaGun/Raynor default: G
-	Explode/Baneling default: X
-	Explode/BanelingBurrowed default: X
-	Explode/HotSHunter default: X copyof: Explode/Baneling default: X
-	Explode/HotSHunterBurrowed default: X copyof: Explode/BanelingBurrowed default: X
-	Explode/HotSSplitterlingBig default: X copyof: Explode/Baneling default: X
-	Explode/HotSSplitterlingBigBurrowed default: X copyof: Explode/BanelingBurrowed default: X
-	Explode/baneling default:  copyof: Explode/Baneling default: X
-	Explode/baneling2 default:  copyof: Explode/Baneling default: X
-	ExplodeVolatileInfested/SIVolatileInfested default: 
 	GasCanisterGather/Probe default: Period
 	Hatchery/Drone default: H
 	HerculesLoad/Hercules default: L copyof: BunkerLoad default: L
@@ -345,9 +336,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchKaraxTurretRange/KhaydarinMonolith default: R
 	ResearchKaraxTurretRange/PhotonCannon default: R
 	ResearchKaraxTurretRange/ShieldBattery default: R
-	ResearchLurkerRange/HydraliskDen default: E
-	ResearchLurkerRange/LurkerDen default: E
-	ResearchLurkerRange/LurkerDenMP default: D, E
 	ResearchMagFieldLaunchers/FactoryTechLab default: 
 	ResearchNeuralParasite/InfestationPit default: E
 	ResearchSOAOrbitalStrikeUpgrade/SolarForge default: B
@@ -521,6 +509,15 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CommandCenterUnloadAll default: D
 	EvolveTunnelingClaws/GreaterRoachWarren default: T
 	EvolveTunnelingClaws/RoachWarren default: T
+	Explode/Baneling default: X
+	Explode/BanelingBurrowed default: X
+	Explode/HotSHunter default: X copyof: Explode/Baneling default: X
+	Explode/HotSHunterBurrowed default: X copyof: Explode/BanelingBurrowed default: X
+	Explode/HotSSplitterlingBig default: X copyof: Explode/Baneling default: X
+	Explode/HotSSplitterlingBigBurrowed default: X copyof: Explode/BanelingBurrowed default: X
+	Explode/baneling default:  copyof: Explode/Baneling default: X
+	Explode/baneling2 default:  copyof: Explode/Baneling default: X
+	ExplodeVolatileInfested/SIVolatileInfested default: 
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
 	GravitonCatapult/Carrier default: G
@@ -968,6 +965,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LightningBomb/Tempest default: D
 	LightningBomb/TempestPurifier default: D
 	MagrailMunitions/Marauder_BlackOps default: 
+	NovaBoombotBurrow/NovaBoombot default: 
 	NovaWeaponCanisterRifleSnipe/NovaHero default: Q
 	NovaWeaponCanisterRifleSnipe/NovaVulture default: Q
 	OracleBuildStasisTrap/Oracle default: T
@@ -1424,6 +1422,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchHealingPsionicStorm/TemplarArchive default: H
 	ResearchJackhammerConcussionGrenade/BarracksTechLab default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchJackhammerConcussionGrenade/BarracksTechReactor default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
+	ResearchLurkerRange/HydraliskDen default: E
+	ResearchLurkerRange/LurkerDen default: E
+	ResearchLurkerRange/LurkerDenMP default: D, E
 	ResearchNeosteelFrame/EngineeringBay default: N
 	ResearchNovaShotgunBlastRange/GhostAcademyNova default: 
 	ResearchPunisherGrenades/BarracksTechLab default: G

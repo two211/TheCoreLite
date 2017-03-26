@@ -117,6 +117,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MutatorWorkerSleep/SISCV
 [WARN]: no default NerveJam/ScienceVessel
 [WARN]: no default Nexus/Harvester
+[WARN]: no default NovaBoombotBurrow/NovaBoombot
 [WARN]: no default NovaDomination/NovaHero
 [WARN]: no default NovaSwitchAssaultMode/NovaCoop
 [WARN]: no default NovaUnitNuke/NovaCoop
@@ -301,5 +302,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 299 ERRORs: 0 
+Finished (Check defaults) - WARNs: 300 ERRORs: 0 
 ============================

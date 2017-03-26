@@ -107,7 +107,7 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =D
 
 [ERROR]: ExplodeVolatileInfested/SIVolatileInfested not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: FungalGrowth/InfestorBurrowed not related to a conflict
 in seed TheCore Lite, keys =E,F
@@ -198,6 +198,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: NeuralParasite/InfestorBurrowed not related to a conflict
 in seed TheCore Lite, keys =C
+
+[ERROR]: NovaBoombotBurrow/NovaBoombot not related to a conflict
+in seed TheCore Lite, keys =E,Space
 
 [ERROR]: NovaDomination/NovaHero not related to a conflict
 in seed TheCore Lite, keys =R
@@ -758,12 +761,12 @@ in seed TheCore Lite, keys =Space
 [WARN]: Explode/baneling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =CapsLock
 
 [WARN]: Explode/baneling2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =CapsLock
 
 [WARN]: Feedback/AnAleemController not related to a conflict
 but is inherited
@@ -1267,5 +1270,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 204 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 205 WARNs: 145 
 ============================
