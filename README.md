@@ -548,6 +548,31 @@ Related aliases:
 Use case scenarii
 =================
 
+## Use case: Start Sequence
+* hold Space before match begin
+  * immediately click CC/Nexus/Hatch at start-up it will launch worker production
+  * in case of zerg click again afterwards to reselect hatch and not append eggs to Hatch group
+* from here keep thumb on Alt
+* create first base cam
+  * Alt+Tab center on CC/Nexus/Hatch
+  * Alt+Q: append to CC/Nexus/Hatch group
+  * create main base cam:
+    * Alt+A: for Terran & Protoss
+    * Alt+W: for Zerg (zerg don't need rally point !)
+* rally point cam for terran/protoss
+  * click on the minimap
+  * Alt+W
+* set new expansion cams, for each cam:
+  * click on minimap
+  * Alt+(A|)S|Z|X
+* release Alt
+  * check mineral level for benchmark
+
+**Note:** during cam creation, your CC/Nexus/Hatch keeps on being selected,
+just follow launch next production when ressources available.
+For terran and protoss you see the worker production timer.
+For zerg, best is to spawn an overlord at 100 minerals after 1st drone.
+
 ## Use case: expansions cameras
 * Select new base under construction
 * Alt+CapsLock|`|Tab: center view on base
@@ -556,7 +581,7 @@ Use case scenarii
   * Alt+D is legacy and could be removed for v2.3
 
 Recommended:
-* select
+* select new base under construction
 * Alt+Q+Tab+[camera\_key]
 
 ## Use case: send worker back to ressources gathering after queued commands
@@ -591,7 +616,6 @@ Recommended:
 #### Other tips
 * Ctl+click: on a unit, select all units for this type
 * right click for rally
-
 
 ## Use case: TheCore Lite inject initiate
 
@@ -728,30 +752,6 @@ After usage of the variant 1:
   * only works if one LeftClick has been performed
 
 Otherwise please read "After precision key usage" section.
-
-## Use case: Start Sequence
-* hold Space before match begin
-  * immediately click CC/Nexus/Hatch at start-up it will launch worker production
-  * in case of zerg click again afterwards to reselect hatch and not append eggs to Hatch group
-* from here keep thumb on Alt
-* create first base cam
-  * Alt+Tab center on CC/Nexus/Hatch
-  * Alt+Q: append to CC/Nexus/Hatch group
-  * Alt+A: create main base cam, Terran Protoss
-  * Alt+W: create main base cam Zerg
-* rally point cam for terran/protoss
-  * click on the minimap
-  * Alt+W
-* set new expansion cams, for each cam:
-  * click on minimap
-  * Alt+(A|)S|Z|X
-* release Alt
-  * check mineral level for benchmark
-
-**Note:** during cam creation, your CC/Nexus/Hatch keeps on being selected,
-just follow launch next production when ressources available.
-For terran and protoss you see the worker production timer.
-For zerg, best is to spawn an overlord at 100 minerals after 1st drone.
 
 ----------------------------------------------------------------------------------------------------------------------
 
