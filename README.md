@@ -76,7 +76,7 @@ All TheCore tips are implemented:
 * 2 keys macro groups
 * Center on selection + add to hatch+CC/Nexus
 
-Some enhancement to TheCore were added:
+Some enhancements to TheCore were added:
 * [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
 * [Shift+Q+W select prod buildings and jump to rally](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
 * [Shift+Q+W+Space TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite#use-case-thecore-lite-inject-initiate)
@@ -84,7 +84,7 @@ Some enhancement to TheCore were added:
 * [Utility group and creep queen mechanics](https://github.com/bobo38/TheCoreLite#utility-group--grave)
 * [Shift+Alt easy cloning](https://github.com/bobo38/TheCoreLite#easier-cloning-through-shiftalt)
 * [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
-* [RapidFire static defence](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
+* [RapidFire static defence](https://github.com/bobo38/TheCoreLite#rapidfire-static-defence)
 
 ## Aknowledgments
 
