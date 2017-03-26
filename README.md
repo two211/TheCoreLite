@@ -4,8 +4,8 @@ The Core Lite v2.2
 ### Table of Contents
 * [The Core Lite v2.2](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
   * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
-  * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
   * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
+  * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
   * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
   * [Building Consistency](https://github.com/bobo38/TheCoreLite/blob/master/README.md#building-consistency)
@@ -63,7 +63,7 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
   * delivered in a set of supported keyboard layouts
   * it passes all the new introduced "seed" checks
 
-### TheCore Lite features
+## TheCore Lite features
 
 #### Implemented TheCore tips
 * Consistency accross all races
@@ -86,23 +86,24 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 * [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
 * [RapidFire static defence](https://github.com/bobo38/TheCoreLite#rapidfire-static-defence)
 
-## Aknowledgments
-
-Loads of thanks to:
-* TheCore project, whose this repo is a fork, and all the accumulated work over the years
-* JaKaTaK, the originator of the first TheCore Lite version
-* BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
-
 ## Ressources
 
-Some graphic ressources is available in Image directory,
-please download the following .pdf file:
+Beside this README.md file,
+some graphic ressources is available in Image directory.
+Please download the following .pdf file:
 
 [TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf)
 
 Legacy ressources:
 * [historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
 * [TheCore Lite thread on teamliquid.net](http://www.teamliquid.net/forum/sc2-strategy/333891-thecore-lite-advanced-keyboard-layout)
+
+## Aknowledgments
+
+Loads of thanks to:
+* TheCore project, whose this repo is a fork, and all the accumulated work over the years
+* JaKaTaK, the originator of the first TheCore Lite version
+* BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
 
 ----------------------------------------------------------------------------------------------------------------------
 
