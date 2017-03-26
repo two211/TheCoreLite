@@ -109,54 +109,6 @@ Legacy ressources:
 TheCore Lite Command spirit
 ===========================
 
-## Rapid Fire and Precision keys
-
-### RapidFire keys
-
-There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, CapsLock.
-Now all warp-inable units are bound to Rapid Fire keys.
-If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
-You can keep those key pressed and just move pointer on the target,
-as RapidFire key hold will select target with no click needed.
-After the target being selected the ability will be called again and you just have to point at the next target.
-
-source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
-
-### Precision keys
-
-"E" and "C" keep on being non Rapid Fire, because they are precision keys.
-They are used for precision spells/ability,
-and have been chosen because of ease of access.
-You can keep those key pressed and just click on the target.
-After the click, the ability will be called again and you just have to click on the next target.
-
-**Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
-
-#### After precision key usage
-
-Holding precision key for multiple cast, you will end up to have to cancel targeting.
-For this there are several option:
-* cancel key "Escape"
-* rightclick will cancel targeting
-* V is now an alias for CancelTargeting
-* select another group
-* select|box other unit(s)
-
-The 2 last save you APMs if some others unit/building need action
-
-#### High Templar group example
-
-Case study assuming HTs in a group following some ranged units not to run into enemies.
-
-Important to know:
-* after feedback/psistorm cast, HT will give up follow, think about make the entire group re-follow
-* in case HTs were too far to cast and enemy moved, you still can cancel the cast:
-  * issuing a move command on the entire group with double RightClicks (1st one will cancel targeting if needed)
-  * using V will cancel the target and make stop all selected units
-* caster split
-  * cast area of effect spells far away on the minimap (eventually rapid fire...)
-  * hold V to cancel targeting and stop the casters, it will cancels the spells that were not casted
-  * **Note:** V cancel targeting only works with pointer on map
 
 ## Unit keys
 
@@ -229,18 +181,6 @@ Bridging method is used to try to facilitate learning.
 Research will tend to have the same key as unit production key,
 so as the building enabling the production of this unit.
 
-### RapidFire Static Defence
-
-All workers have Space and F for "Basic building".
-Defence strutures are mapped on those 2 keys.
-To build static defence:
-* select workers
-* go to area
-* hold Space (or F) and move the pointer to order defence build
-
-Particularly useful as Zerg and Terran, it makes less sense with protoss.
-The only benefit from protoss is that photocannon building start is accelerated.
-
 ## Unit Production
 
 Some mnemonics:
@@ -268,6 +208,70 @@ Alls units are covered apart of:
 * Infestor (F, same key as Lair/Hive)
 * Ultralisk (CapsLock, same key as research burrow)
 * Swarm Host (4, key used in some other mode than Multiplayer)
+
+## Rapid Fire and Precision keys
+
+### RapidFire keys
+
+There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, CapsLock.
+Now all warp-inable units are bound to Rapid Fire keys.
+If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
+You can keep those key pressed and just move pointer on the target,
+as RapidFire key hold will select target with no click needed.
+After the target being selected the ability will be called again and you just have to point at the next target.
+
+source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
+
+### RapidFire Static Defence
+
+All workers have Space and F for "Basic building".
+Defence strutures are mapped on those 2 keys.
+To build static defence:
+* select workers
+* go to area
+* hold Space (or F) and move the pointer to order defence build, it will chain:
+  * select basic building
+  * select defence building
+  * target location where to build
+
+Particularly useful as Zerg and Terran, it makes less sense with protoss.
+The only benefit from protoss is that photocannon building start is accelerated.
+
+### Precision keys
+
+"E" and "C" keep on being non Rapid Fire, because they are precision keys.
+They are used for precision spells/ability,
+and have been chosen because of ease of access.
+You can keep those key pressed and just click on the target.
+After the click, the ability will be called again and you just have to click on the next target.
+
+**Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
+
+#### After precision key usage
+
+Holding precision key for multiple cast, you will end up to have to cancel targeting.
+For this there are several option:
+* cancel key "Escape"
+* rightclick will cancel targeting
+* V is now an alias for CancelTargeting
+* select another group
+* select|box other unit(s)
+
+The 2 last save you APMs if some others unit/building need action
+
+#### High Templar group example
+
+Case study assuming HTs in a group following some ranged units not to run into enemies.
+
+Important to know:
+* after feedback/psistorm cast, HT will give up follow, think about make the entire group re-follow
+* in case HTs were too far to cast and enemy moved, you still can cancel the cast:
+  * issuing a move command on the entire group with double RightClicks (1st one will cancel targeting if needed)
+  * using V will cancel the target and make stop all selected units
+* caster split
+  * cast area of effect spells far away on the minimap (eventually rapid fire...)
+  * hold V to cancel targeting and stop the casters, it will cancels the spells that were not casted
+  * **Note:** V cancel targeting only works with pointer on map
 
 ----------------------------------------------------------------------------------------------------------------------
 
