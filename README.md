@@ -90,7 +90,7 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 ## Ressources
 
 Beside this README.md file,
-some graphic ressources is available in Image directory.
+some graphic ressources are available in Image directory.
 Please download the following .pdf file:
 
 [TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf)
