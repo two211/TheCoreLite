@@ -65,7 +65,7 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 
 ### TheCore Lite features
 
-All TheCore tips are implemented:
+#### Implemented TheCore tips
 * Consistency accross all races
 * Easy access to groups, cameras, basic commands and spells
 * Zerg extensive select larvae alternates
@@ -76,7 +76,7 @@ All TheCore tips are implemented:
 * 2 keys macro groups
 * Center on selection + add to hatch+CC/Nexus
 
-Some enhancements to TheCore were added:
+#### TheCore Lite extras
 * [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
 * [Shift+Q+W select prod buildings and jump to rally](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
 * [Shift+Q+W+Space TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite#use-case-thecore-lite-inject-initiate)
