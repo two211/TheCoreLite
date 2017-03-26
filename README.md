@@ -7,10 +7,10 @@ The Core Lite v2.2
   * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
   * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
-  * [Rapid Fire and Precision keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#rapid-fire-and-precision-keys)
   * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
   * [Building Consistency](https://github.com/bobo38/TheCoreLite/blob/master/README.md#building-consistency)
   * [Unit Production](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-production)
+  * [Rapid Fire and Precision keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#rapid-fire-and-precision-keys)
 * [TheCore Lite Macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
   * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history)
   * [Nexus/CC/Hatch group = W](https://github.com/bobo38/TheCoreLite/blob/master/README.md#nexuscchatch-group--w)
@@ -27,6 +27,7 @@ The Core Lite v2.2
   * [Easier cloning through Shift+Alt](https://github.com/bobo38/TheCoreLite/blob/master/README.md#easier-cloning-through-shiftalt)
   * [Shift/Control and camera synergies](https://github.com/bobo38/TheCoreLite/blob/master/README.md#shiftcontrol-and-camera-synergies)
 * [Use case scenarii](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-scenarii)
+  * [Use case: Start Sequence](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-start-sequence)
   * [Use case: expansions cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-expansions-cameras)
   * [Use case: send worker back to ressources gathering after queued commands](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-send-worker-back-to-ressources-gathering-after-queued-commands)
   * [Use case: army production + rally point (optional warp-in pylon)](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-army-production--rally-point-optional-warp-in-pylon)
@@ -38,7 +39,6 @@ The Core Lite v2.2
   * [Use case: hatching eggs](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-hatching-eggs)
   * [Use case: zerg macro routine](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-zerg-macro-routine)
   * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
-  * [Use case: Start Sequence](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-start-sequence)
 * [Changelog for the code](https://github.com/bobo38/TheCoreLite/blob/master/README.md#changelog-for-the-code)
 
 ## Repository description
