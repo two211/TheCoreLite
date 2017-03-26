@@ -444,8 +444,8 @@ JaKaTaK explains pros and cons in this video: [To steal or not to steal](https:/
 For TheCore Lite, here are the modifiers:
 * AppendSteal = Ctrl
 * CreateSteal = Ctrl+Shift
-* Create non-steal = Shift+Alt (and Ctrl+Shift+Alt)
-* Append non-steal has been dropped
+* Create non-steal = Shift+Alt
+* Append non-steal = Control+Alt
 
 ## Groups and mouse synergies with Ctrl and Ctrl+Shift
 
