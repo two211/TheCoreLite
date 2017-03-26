@@ -63,6 +63,29 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
   * delivered in a set of supported keyboard layouts
   * it passes all the new introduced "seed" checks
 
+### TheCore Lite features
+
+All TheCore tips are implemented:
+* Consistency accross all races
+* Easy access to groups, cameras, basic commands and spells
+* Zerg extensive select larvae alternates
+* RapidFire alternates
+* Control group and camera modifiers with good synergie with UI
+* Rotate camera
+* Control cameras
+* 2 keys macro groups
+* Center on selection + add to hatch+CC/Nexus
+
+Some enhancement to TheCore were added:
+* [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
+* [Shift+Q+W select prod buildings and jump to rally](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
+* [Shift+Q+W+Space TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite#use-case-thecore-lite-inject-initiate)
+* [TheCore Lite telegraph inject(backspace family)](https://github.com/bobo38/TheCoreLite#use-case-telegraph-inject-backspace-family)
+* [Utility group and creep queen mechanics](https://github.com/bobo38/TheCoreLite#utility-group--grave)
+* [Shift+Alt easy cloning](https://github.com/bobo38/TheCoreLite#easier-cloning-through-shiftalt)
+* [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
+* [RapidFire static defence](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
+
 ## Aknowledgments
 
 Loads of thanks to:
@@ -192,19 +215,31 @@ Basic buildings:
 * R = Refinery / Assimilator / Extractor
 * D = Supply Depot / Pylon
 * E = Engineering Bay / Forge / Evolution Chamber
-* Space = Turret / Photo Cannon / Spore Crawler (rapid fire air defense)
-* F = Bunker / Spine Crawler (rapid fire defense)
+* Space = Turret / Photo Cannon / Spore Crawler (RapidFire air defence)
+* F = Bunker / Spine Crawler (RapidFire defence)
 
 Advanced buildings:
 * R = Starport / Stargate / Spire
 * G = Fusion core / Fleet Beacon 
 * E = Armory (same as Engineering Bay / Forge / Evolution Chamber)
 
-### Bridging method
+### Bridge method
 
 Bridging method is used to try to facilitate learning.
 Research will tend to have the same key as unit production key,
 so as the building enabling the production of this unit.
+
+### RapidFire Static Defence
+
+All workers have Space and F for "Basic building".
+Defence strutures are mapped on those 2 keys.
+To build static defence:
+* select workers
+* go to area
+* hold Space (or F) and move the pointer to order defence build
+
+Particularly useful as Zerg and Terran, it makes less sense with protoss.
+The only benefit from protoss is that photocannon building start is accelerated.
 
 ## Unit Production
 
