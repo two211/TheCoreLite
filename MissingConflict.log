@@ -271,6 +271,12 @@ in seed TheCore Lite, keys =
 [ERROR]: ResearchDarkTemplarBlink/DarkShrine not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: ResearchDisruptorCloak/RoboticsBay not related to a conflict
+in seed TheCore Lite, keys =CapsLock
+
+[ERROR]: ResearchDisruptorSecondExplosion/RoboticsBay not related to a conflict
+in seed TheCore Lite, keys =V
+
 [ERROR]: ResearchEMP/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -876,12 +882,12 @@ in seed TheCore Lite, keys =R
 [WARN]: MorphToHotSNoxious/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =V
 
 [WARN]: MorphToHotSTorrasque/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =V
 
 [WARN]: MorphToHydraliskImpaler/Larva not related to a conflict
 but is part of same check
@@ -1270,5 +1276,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 205 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 207 WARNs: 145 
 ============================

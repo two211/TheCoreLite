@@ -503,6 +503,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ArchonHallucination/Sentry default: N
 	ArchonHallucination/Voranor default:  copyof: ArchonHallucination/Sentry default: N
 	Barracks/SCV default: B
+	Brutalisk/Larva default: X
 	BuildSITechLabFactory/SIFactoryFlying default: 
 	BuildSITechLabStarport/SIStarportFlying default: 
 	CloakOff default: D
@@ -545,8 +546,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MindBolt/KerriganReviveCocoon default: Q
 	MindBolt/KerriganVoid default: Q copyof: MindBolt/K5Kerrigan default: Q
 	MindBolt/KerriganVoidBurrowed default: Q copyof: MindBolt/K5KerriganBurrowed default: Q
-	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
-	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToMothership/MothershipCore default: U
 	MorphToOverseer/VoidRiftUnselectable default: V
 	Mothership/Nexus default: M copyof: MothershipCore/Nexus default: M
@@ -564,6 +563,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchBansheeCloak/StarportTechReactor default: C copyof: ResearchBansheeCloak/StarportTechLab default: C
 	ResearchBurrow default: B
 	ResearchDarkArchonFullStartingEnergy/DarkShrine default: E
+	ResearchDisruptorCloak/RoboticsBay default: 
 	ResearchKaraxEnergyRegenUpgrade/SentryCampaignBase default: S
 	ResearchKaraxEnergyRegenUpgrade/SentryPurifier default: S
 	ResearchKaraxEnergyRegenUpgrade/ShieldBattery default: S
@@ -585,8 +585,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TechReactorAI/StarportFlying default: Z
 	TerranBuildAdvanced/SCV default: V
 	TerranBuildAdvanced/SISCV default: 
-	Ultralisk/Larva default: U
-	UltraliskCavern/Drone default: U
+	Viper/Larva default: E
 	VoidSentryShieldRepair/RoguePurifierSupportDroneB default: Q
 	VoidSentryShieldRepair/Sentry default: Q
 	VoidSentryShieldRepair/SentryCampaignBase default: Q
@@ -1827,7 +1826,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AdeptResearchPiercingUpgrade/TwilightCouncil default: A
 	Banshee/Starport default: E
 	BansheeSpeed/StarportTechLab default: B
-	Brutalisk/Larva default: X
 	BuildCreepTumor/Hatchery default: C
 	BuildCreepTumor/Hive default: C
 	BuildCreepTumor/Lair default: C
@@ -1844,12 +1842,15 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	HireDuskWing/MercCompound default: I
 	MercHellion/Factory default: N
+	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
+	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToOverseer/VoidRift default: V
 	Phoenix/VoidRift default: X
 	Phoenix/VoidRiftUnselectable default: X
 	PrimalHydralisk/YagdraEggSmall default: H
 	Queen default: Q
 	QueenCoop default: Q copyof: Queen default: Q
+	ResearchDisruptorSecondExplosion/RoboticsBay default: 
 	ResearchDurableMaterials/StarportTechLab default: D
 	ResearchDurableMaterials/StarportTechReactor default: D copyof: ResearchDurableMaterials/StarportTechLab default: D
 	ResearchFirebat/ScienceFacility default: F copyof: Firebat/Barracks default: F
@@ -1875,7 +1876,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	StopPlanetaryFortress/WarfieldFortress default: P
 	TerranVehiclePlatingLevel2/Armory default: V
 	TerranVehiclePlatingLevel3/Armory default: V
-	Viper/Larva default: E
+	Ultralisk/Larva default: U
+	UltraliskCavern/Drone default: U
 	VoidRay/Epilogue02VoidRift default: V
 	VoidRay/SuperWarpGate default: V
 	VoidRay/VoidThrasher default: V

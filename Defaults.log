@@ -153,6 +153,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab
 [WARN]: no default ResearchBarrelStabilizers/BarracksTechLab
 [WARN]: no default ResearchCharonBooster/FactoryTechLab
+[WARN]: no default ResearchDisruptorCloak/RoboticsBay
+[WARN]: no default ResearchDisruptorSecondExplosion/RoboticsBay
 [WARN]: no default ResearchEMP/StarportTechLab
 [WARN]: no default ResearchEngineeredExplosives/BarracksTechLab
 [WARN]: no default ResearchEvadeObserver/Observatory
@@ -302,5 +304,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 300 ERRORs: 0 
+Finished (Check defaults) - WARNs: 302 ERRORs: 0 
 ============================
