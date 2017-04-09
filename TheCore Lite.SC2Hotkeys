@@ -80,6 +80,7 @@ MinimapPing=Apostrophe
 MinimapTerrain=Equals
 QuickPing=Alt+RightMouseButton
 QuickSave=NumPad0
+SelectionCancelDrag=RightMouseButton
 Selection=LeftMouseButton
 SmartCommand=RightMouseButton,Shift+Alt+RightMouseButton
 StatusAll=BackSlash

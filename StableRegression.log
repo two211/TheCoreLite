@@ -2,9 +2,10 @@
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
 [ERROR]: Shift+Home used in place of Shift+Delete for parameter CameraFollow, in seed TheCore Lite
+[ERROR]: RightMouseButton used in place of Escape for parameter SelectionCancelDrag, in seed TheCore Lite
 [WARN]: 'V' used in place of 'CapsLock' for command 'Ultralisk/Larva', in seed 'TheCore Lite'
 [WARN]: 'CapsLock' used in place of 'V' for command 'Viper/Larva', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 1 WARNs: 2 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 2 WARNs: 2 INFOs: 1 
 ============================

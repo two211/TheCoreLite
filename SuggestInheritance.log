@@ -1936,7 +1936,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CinematicSkip default: Escape
 	DialogDismiss default: Escape
 	ObserveClearSelection default: Escape
-	SelectionCancelDrag default: Escape
 
 [INFO]: TheCore Lite: S   
 	ControlGroupRecall8 default: 8
