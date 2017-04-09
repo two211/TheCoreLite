@@ -295,6 +295,7 @@ Group content:
 
 Tip for additional expansion and related alternates:
 * Center base at camera creation with:
+  * Alt+Shift
   * Alt+CapsLock
   * Alt+Tab
   * Alt+`
@@ -504,6 +505,11 @@ sources:
 * [TeamLiquid's page about "Cloning"](http://wiki.teamliquid.net/starcraft2/Cloning)
 * [JaKaTaK's "How to clone - manual cloning" video](https://www.youtube.com/watch?v=S4Q9ghZbqpA&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=7)
 * [JaKaTaK's "How to clone - control group cloning" video](https://www.youtube.com/watch?v=1cozEzPaxnw&list=PLiejbQlQAdGnuLyxXEC7fnLIy-hdD7J-8&index=11)
+
+**Warning:**
+Alt+Shift is an alternate for center on selection.
+It could mess up your cloning, if you don't press exactly Shift+Alt.
+You could think about unbinding it, as there are enough other alternates.
 
 ## Shift/Control and camera synergies
 
