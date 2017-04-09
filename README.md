@@ -148,10 +148,10 @@ Terran:
 
 Protoss:
 * Space = blink guardian shield feedback
-* F/CapsLock = orale pulsar beam
+* F/CapsLock = oracle pulsar beam
 * Space/R = warp prism (phase mode)
-* E = morph building to warp
-* M = morph building to non-warp (intentionally out of compact keys)
+* E = evolve building to warp
+* M = evolve back building to non-warp (intentionally out of compact keys)
 
 Zerg:
 * Space/R = Unburrow/Burrow
@@ -215,8 +215,9 @@ Alls units are covered apart of:
 
 ### RapidFire keys
 
-There are now far more Rapid Fire Hotkeys: Space, R, T, Y, D, F, G, H, CapsLock.
-Now all warp-inable units are bound to Rapid Fire keys.
+There are now far more Rapid Fire Hotkeys than in the first TheCore Lite release:
+Space, R, T, Y, D, F, G, H, CapsLock.
+All warp-inable units are bound to Rapid Fire keys.
 If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
 You can keep those key pressed and just move pointer on the target,
 as RapidFire key hold will select target with no click needed.
