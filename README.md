@@ -72,7 +72,7 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 * [Control group and camera modifiers with good synergie with UI](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
 * [Easy access to groups, cameras, basic commands and spells](https://github.com/bobo38/TheCoreLite#unit-keys)
 * [RapidFire alternates](https://github.com/bobo38/TheCoreLite#rapidfire-keys)
-* [Zerg extensive select larvae alternates](https://github.com/bobo38/TheCoreLite#zerg-specific)
+* [Zerg extensive select larvae alternates](https://github.com/bobo38/TheCoreLite#zerg-larvae)
 * [Center on selection + add to hatch+CC/Nexus](https://github.com/bobo38/TheCoreLite#use-case-expansions-cameras)
 * [Rotate camera](https://github.com/bobo38/TheCoreLite#fight-against-invisible)
 * [Control cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#additional-cameras-alternates-on-control)
@@ -200,9 +200,9 @@ Some mnemonics:
 * V and G for advanced and ultimate units (exception = zerg)
 * Space for high profile casters (high templar, ghost, raven), and detectors
 
-### Zerg specific
+### Zerg larvae
 
-Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse.
+Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse:
 * Larva (Space)
 * Zergling (D)
 * Roach (R)
@@ -210,14 +210,13 @@ Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time p
 * Mutalisk (T)
 * Corruptor (G)
 
+In this way all keys of the dense cards are useful for hatcheries, lairs and hives.
 Alls units are covered apart of:
 * Overlord (E, same key as Pneumatized Carapace)
 * Ultralisk (V, same key as Queen)
 * Infestor (F, same key as Lair/Hive)
 * Viper (CapsLock, same key as research burrow)
 * Swarm Host (4, key used in some other mode than Multiplayer)
-
-In this way all keys of the dense cards are useful for hatcheries, lairs and hives.
 
 ## Rapid Fire and Precision keys
 
