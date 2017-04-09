@@ -67,15 +67,15 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 ## TheCore Lite features
 
 #### Implemented TheCore tips
-* Consistency accross all races
-* Easy access to groups, cameras, basic commands and spells
-* Zerg extensive select larvae alternates
-* RapidFire alternates
-* Control group and camera modifiers with good synergie with UI
-* Rotate camera
-* Control cameras
-* 2 keys macro groups
-* Center on selection + add to hatch+CC/Nexus
+* [Consistency accross all races](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
+* [2 keys macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
+* [Control group and camera modifiers with good synergie with UI](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
+* [Easy access to groups, cameras, basic commands and spells](https://github.com/bobo38/TheCoreLite#unit-keys)
+* [RapidFire alternates](https://github.com/bobo38/TheCoreLite#rapidfire-keys)
+* [Zerg extensive select larvae alternates](https://github.com/bobo38/TheCoreLite#zerg-specific)
+* [Center on selection + add to hatch+CC/Nexus](https://github.com/bobo38/TheCoreLite#use-case-expansions-cameras)
+* [Rotate camera](https://github.com/bobo38/TheCoreLite#fight-against-invisible)
+* [Control cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#additional-cameras-alternates-on-control)
 
 #### TheCore Lite extras
 * [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
@@ -110,7 +110,6 @@ Loads of thanks to:
 
 TheCore Lite Command spirit
 ===========================
-
 
 ## Unit keys
 
