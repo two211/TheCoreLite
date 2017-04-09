@@ -203,12 +203,21 @@ Some mnemonics:
 ### Zerg specific
 
 Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse.
+* Larva (Space)
+* Zergling (D)
+* Roach (R)
+* Hydralisk (C)
+* Mutalisk (T)
+* Corruptor (G)
+
 Alls units are covered apart of:
 * Overlord (E, same key as Pneumatized Carapace)
 * Ultralisk (V, same key as Queen)
 * Infestor (F, same key as Lair/Hive)
 * Viper (CapsLock, same key as research burrow)
 * Swarm Host (4, key used in some other mode than Multiplayer)
+
+In this way all keys of the dense cards are useful for hatcheries, lairs and hives.
 
 ## Rapid Fire and Precision keys
 
