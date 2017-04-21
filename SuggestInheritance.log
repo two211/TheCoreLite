@@ -1201,7 +1201,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Carrier/Stargate default: C
 	Carrier/StargateWarp default: C copyof: Carrier/Stargate default: C
 	Colossus/SuperWarpGate default: C
-	Corruptor/Larva default: C
 	CyberneticsCore/Harvester default:  copyof: CyberneticsCore/Probe default: Y
 	CyberneticsCore/Probe default: Y
 	DarkArchon/Gateway default: A
@@ -1219,6 +1218,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Ghost/VoidThrasher default: G
 	Ghost/VoidThrasherWalker default: G
 	GroundMissileVolley/NydusBeast default: G
+	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
+	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MoveHoldPosition default: H
 	Oracle/SuperWarpGate default: E
 	Oracle/VoidRift default: E
@@ -1237,6 +1238,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Voranor default:  copyof: StalkerHallucination/Sentry default: S
 	Thor/Factory default: T
+	Ultralisk/Larva default: U
+	UltraliskCavern/Drone default: U
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
 	ZagaraBileLauncher/Drone default: N
 
@@ -1832,6 +1835,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCyclone/Factory default: N
 	BuildKelMorianRocketTurret/KelMorianWorker default: G
 	BuildKelMorianRocketTurret/SCV default: G
+	Corruptor/Larva default: C
 	DisruptorHallucination/Sentry default: D
 	EnergyNova/Artifact default: V
 	EvolveAberrationArmorAura/EvolutionChamber default: B
@@ -1842,8 +1846,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	HireDuskWing/MercCompound default: I
 	MercHellion/Factory default: N
-	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
-	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToOverseer/VoidRift default: V
 	Phoenix/VoidRift default: X
 	Phoenix/VoidRiftUnselectable default: X
@@ -1876,8 +1878,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	StopPlanetaryFortress/WarfieldFortress default: P
 	TerranVehiclePlatingLevel2/Armory default: V
 	TerranVehiclePlatingLevel3/Armory default: V
-	Ultralisk/Larva default: U
-	UltraliskCavern/Drone default: U
 	VoidRay/Epilogue02VoidRift default: V
 	VoidRay/SuperWarpGate default: V
 	VoidRay/VoidThrasher default: V
