@@ -105,6 +105,7 @@ Loads of thanks to:
 * TheCore project, whose this repo is a fork, and all the accumulated work over the years
 * JaKaTaK, the originator of the first TheCore Lite version
 * BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
+* MilExo, who reviewed extensively the Protoss aspect of TheCore Lite
 
 ----------------------------------------------------------------------------------------------------------------------
 
