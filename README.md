@@ -196,7 +196,7 @@ Some mnemonics:
 * F for sneak
   * infestor
   * reaper, widow mine, medivac
-  * dark templar, warp prism, oracle
+  * adept, warp prism, oracle
 * V and G for advanced and ultimate units (exception = zerg)
 * Space for high profile casters (high templar, ghost, raven), and detectors
 
