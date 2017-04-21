@@ -1,7 +1,12 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
+[WARN]: 'F' used in place of 'V' for command 'AdeptResearchPiercingUpgrade/TwilightCouncil', in seed 'TheCore Lite'
+[WARN]: 'T' used in place of 'F' for command 'DarkShrine/Probe', in seed 'TheCore Lite'
+[WARN]: 'T' used in place of 'F' for command 'DarkTemplar', in seed 'TheCore Lite'
+[WARN]: 'F' used in place of 'G' for command 'WarpInAdept/Gateway', in seed 'TheCore Lite'
+[WARN]: 'F' used in place of 'G' for command 'WarpInAdept/WarpGate', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 0 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 5 INFOs: 1 
 ============================

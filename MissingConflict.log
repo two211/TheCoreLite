@@ -269,7 +269,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =
 
 [ERROR]: ResearchDarkTemplarBlink/DarkShrine not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =T
 
 [ERROR]: ResearchDisruptorCloak/RoboticsBay not related to a conflict
 in seed TheCore Lite, keys =CapsLock
@@ -742,7 +742,7 @@ in seed TheCore Lite, keys =G
 
 [WARN]: DarkShrine/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =T
 
 [WARN]: DisableBuildingAttack/baneling not related to a conflict
 but is part of same check
