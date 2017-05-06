@@ -390,7 +390,8 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * Ctl+Tab : alternate for "select all army"
 * Ctl+Shift+Tab : alternate for "select all army"
 
-This makes sense considering synergie with mouse clicking and group creation
+This makes sense considering
+[synergie with mouse clicking and group creation](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
 
 ### Browsing subgroups
 * Tab and Shift+Tab are used
