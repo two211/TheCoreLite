@@ -12,16 +12,16 @@ The Core Lite v2.2
   * [Building Consistency](https://github.com/bobo38/TheCoreLite/blob/master/README.md#building-consistency)
   * [Unit Production](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-production)
   * [Rapid Fire and Precision keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#rapid-fire-and-precision-keys)
+* [TheCore Lite User Interface keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-user-interface-keys)
+  * [Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#function-keys)
+  * [Other tips](https://github.com/bobo38/TheCoreLite/blob/master/README.md#other-tips)
+  * [Moved out of the dense keycard and Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#moved-out-of-the-dense-keycard-and-function-keys)
 * [TheCore Lite Macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
   * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history)
   * [Nexus/CC/Hatch group = W](https://github.com/bobo38/TheCoreLite/blob/master/README.md#nexuscchatch-group--w)
   * [Production group (or inject queens) = Q](https://github.com/bobo38/TheCoreLite/blob/master/README.md#production-group-or-inject-queens--q)
   * [Utility group = Grave](https://github.com/bobo38/TheCoreLite/blob/master/README.md#utility-group--grave)
   * [Group display](https://github.com/bobo38/TheCoreLite/blob/master/README.md#group-display)
-* [TheCore Lite User Interface keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-user-interface-keys)
-  * [Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#function-keys)
-  * [Other tips](https://github.com/bobo38/TheCoreLite/blob/master/README.md#other-tips)
-  * [Moved out of the dense keycard and Function keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#moved-out-of-the-dense-keycard-and-function-keys)
 * [TheCore Lite Group/Cameras modifiers](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
   * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history-1)
   * [Groups and mouse synergies with Ctrl and Ctrl+Shift](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
@@ -286,6 +286,76 @@ Important to know:
 
 ----------------------------------------------------------------------------------------------------------------------
 
+TheCore Lite User Interface keys
+================================
+
+Compared to legacy TheCore Lite, many changes occured in User Interface keys.
+
+## Function keys
+* F1 IdleWorker
+* F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
+* Shift+F1 select all Idle Workers
+* Shift+F2 Team Ressources
+* Alt+F1 PushToTalk (to free Alt+Shift)
+* Alt+F2 Show FPS
+* F3 F4 F5 F6 Commander top bar ability
+* Shift+F7 Toggle sound (moved to prevent mistyping)
+* Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
+
+## Other tips
+
+### Select All Army on Tab key
+* Ctl+Tab : alternate for "select all army"
+* Ctl+Shift+Tab : alternate for "select all army"
+
+This makes sense considering
+[synergie with mouse clicking and group creation](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
+
+### Browsing subgroups
+* Tab and Shift+Tab are used
+* Back/Forward Mouse Button added to browse between subgroups
+
+### Ping allies !
+* Alert jump accessible with Shift+Grave
+* QuickPing now mapped on Alt+RightClick
+
+### Fight against invisible
+* Alt+T : Rotate camera Left
+* Alt+G : Rotate camera Right
+
+Immobile invisible units can't be seen with static camera.
+Camera rotation allows to spot invisible static units.
+Alternate Alt+T and Alt+G to rotate the camera and send detection at the right place.
+Alt+RightClick pings the invisible unit location to allies.
+
+### More Town cameras
+* B remains toggles base camera
+* New alternates
+  * Shift+Alt+E
+
+### AI keys now supported
+* direct attack on Shift+Alt+R
+* direct scout on Shift+Alt+T
+* direct detect on Shift+Alt+F
+* direct expand on Shift+Alt+C
+* delete on Shift+Alt+V
+* clearall on Shift+Alt+G
+* build style on Shift+Alt+4
+* open AI communication on Shift+Alt+5
+
+## Moved out of the dense keycard and Function keys
+* Period: Warp (to encourage production group)
+* Numpad0: Quick save (no usage in Multiplayer)
+* Insert: CameraFollow (confusing feature)
+* Apostrophe: Minimap ping (preferred usage of QuickPing Alt+RClick)
+* BackSlash: All life bars (better use show "damaged" units)
+* Bracket Open: Allies life bars (better use show "damaged" units)
+* Bracket Close: Player life bars (better use show "damaged" units)
+* 9: set egg rally point (prefer right click)
+* 0: set rally point (prefer right click)
+
+----------------------------------------------------------------------------------------------------------------------
+
 TheCore Lite Macro groups
 =========================
 
@@ -365,76 +435,6 @@ The 10 groups are displayed in this order (| figures the separation):
 
 **Note:** the icon representing the group seems to be the best selectable unit at group creation.
 If you wanted to update the icon, select the group and recreate it.
-
-----------------------------------------------------------------------------------------------------------------------
-
-TheCore Lite User Interface keys
-================================
-
-Compared to legacy TheCore Lite, many changes occured in User Interface keys.
-
-## Function keys
-* F1 IdleWorker
-* F2 Toggle minimap colors (no more Select all army on this key - see Tab key)
-* Shift+F1 select all Idle Workers
-* Shift+F2 Team Ressources
-* Alt+F1 PushToTalk (to free Alt+Shift)
-* Alt+F2 Show FPS
-* F3 F4 F5 F6 Commander top bar ability
-* Shift+F7 Toggle sound (moved to prevent mistyping)
-* Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
-
-## Other tips
-
-### Select All Army on Tab key
-* Ctl+Tab : alternate for "select all army"
-* Ctl+Shift+Tab : alternate for "select all army"
-
-This makes sense considering
-[synergie with mouse clicking and group creation](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
-
-### Browsing subgroups
-* Tab and Shift+Tab are used
-* Back/Forward Mouse Button added to browse between subgroups
-
-### Ping allies !
-* Alert jump accessible with Shift+Grave
-* QuickPing now mapped on Alt+RightClick
-
-### Fight against invisible
-* Alt+T : Rotate camera Left
-* Alt+G : Rotate camera Right
-
-Immobile invisible units can't be seen with static camera.
-Camera rotation allows to spot invisible static units.
-Alternate Alt+T and Alt+G to rotate the camera and send detection at the right place.
-Alt+RightClick pings the invisible unit location to allies.
-
-### More Town cameras
-* B remains toggles base camera
-* New alternates
-  * Shift+Alt+E
-
-### AI keys now supported
-* direct attack on Shift+Alt+R
-* direct scout on Shift+Alt+T
-* direct detect on Shift+Alt+F
-* direct expand on Shift+Alt+C
-* delete on Shift+Alt+V
-* clearall on Shift+Alt+G
-* build style on Shift+Alt+4
-* open AI communication on Shift+Alt+5
-
-## Moved out of the dense keycard and Function keys
-* Period: Warp (to encourage production group)
-* Numpad0: Quick save (no usage in Multiplayer)
-* Insert: CameraFollow (confusing feature)
-* Apostrophe: Minimap ping (preferred usage of QuickPing Alt+RClick)
-* BackSlash: All life bars (better use show "damaged" units)
-* Bracket Open: Allies life bars (better use show "damaged" units)
-* Bracket Close: Player life bars (better use show "damaged" units)
-* 9: set egg rally point (prefer right click)
-* 0: set rally point (prefer right click)
 
 ----------------------------------------------------------------------------------------------------------------------
 
