@@ -5,6 +5,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default CommanderAbility1
 [WARN]: no default CommanderAbility2
 [WARN]: no default CommanderAbility3
+[WARN]: no default ACAlarakPhasingMode/WarpPrismTaldarim
+[WARN]: no default ACAlarakTransportMode/WarpPrismTaldarim
+[WARN]: no default AbathurDeepTunnel/SwarmHostSplitB
+[WARN]: no default AbathurDeepTunnel/SwarmHostSplitBBurrowed
+[WARN]: no default AbathurDeepTunnel/SwarmHostSplitBRooted
 [WARN]: no default ActivateIbikisCannon/PlanetaryFortress
 [WARN]: no default Aggressive/LurkerMPBurrowed
 [WARN]: no default AlarakDeadlyCharge/AlarakCoop
@@ -65,6 +70,24 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ExplodeVolatileInfested/SIVolatileInfested
 [WARN]: no default Feedback/AnAleemController
 [WARN]: no default Feedback/Khiradun
+[WARN]: no default FenixArbiterCloakField/FenixArbiter
+[WARN]: no default FenixArbiterStasisField/FenixArbiter
+[WARN]: no default FenixClolarionBomberDummy/FenixClolarionCarrier
+[WARN]: no default FenixClolarionCarrierDownloadUpgrade
+[WARN]: no default FenixClolarionInterceptor/FenixClolarionCarrier
+[WARN]: no default FenixDragoonChargedBuster/FenixDragoon
+[WARN]: no default FenixImmortalResearchDetonationShot/RoboticsBay
+[WARN]: no default FenixKaldalisZealotCharge/FenixKaldalisZealot
+[WARN]: no default FenixKaldalisZealotDownloadUpgrade
+[WARN]: no default FenixMojoMissiles/FenixMojoScout
+[WARN]: no default FenixMojoScoutDownloadUpgrade
+[WARN]: no default FenixPurificationNova/Disruptor
+[WARN]: no default FenixSentryGuardianZone/SentryFenix
+[WARN]: no default FenixTaldarinImmortalDownloadUpgrade
+[WARN]: no default FenixTalisAdeptBounceShot/FenixTalisAdept
+[WARN]: no default FenixTalisAdeptDownloadUpgrade
+[WARN]: no default FenixThunderousChargeCoop/FenixCoop
+[WARN]: no default FenixWarbringerColossusPowerShot/FenixWarbringerColossus
 [WARN]: no default FleetBeacon/Harvester
 [WARN]: no default ForceField2/Sentry2
 [WARN]: no default Forge/Harvester
@@ -87,6 +110,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Immortal/Gateway
 [WARN]: no default Immortal/WarpGate
 [WARN]: no default ImmortalHallucination/Nexus
+[WARN]: no default ImmortalOverload/FenixTaldarinImmortal
 [WARN]: no default IncineratorNozzles/DevilDog
 [WARN]: no default InfestedTerrans/Infestor2
 [WARN]: no default InjectLarva/Queen
@@ -288,6 +312,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default UseSpiderMine/Vulture
 [WARN]: no default VoidRayHallucination/Nexus
 [WARN]: no default VoidRayHallucination/Voranor
+[WARN]: no default VoidSentryMobileMode/SentryFenix
 [WARN]: no default VoodooShield/Immortal
 [WARN]: no default WarpInCorsair/Stargate
 [WARN]: no default WarpInReaver/RoboticsFacility
@@ -304,5 +329,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 302 ERRORs: 0 
+Finished (Check defaults) - WARNs: 327 ERRORs: 0 
 ============================

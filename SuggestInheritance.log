@@ -266,6 +266,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveK5ChainLightning/EvolutionChamber default: R
 	EvolveStukovInfestedCivilianSpawnBroodlingsOnDeath/SICivilianStructure default: 
 	ExperimentalPlasmaGun/Raynor default: G
+	FenixArbiterStasisField/FenixArbiter default: 
 	GasCanisterGather/Probe default: Period
 	Hatchery/Drone default: H
 	HerculesLoad/Hercules default: L copyof: BunkerLoad default: L
@@ -611,6 +612,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HutUnloadAll/Hut default: U
 	HutUnloadAll/InfestableHut default: U
 
+[INFO]: TheCore Lite: CapsLock,F   
+	ApolloCloakOnNova/NovaHero default: 
+	FenixArbiterCloakField/FenixArbiter default: 
+
 [INFO]: TheCore Lite: D   
 	Aberration/VoidRift default: B
 	Aberration/VoidRiftUnselectable default: B
@@ -633,6 +638,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolvePlaguedMunitions/SIBarracksTechLab default: 
 	EvolveStukovInfestedInfestedCivilianLeap/SICivilianStructure default: 
 	Factory/SCV default: F
+	FenixKaldalisZealotDownloadUpgrade default: 
 	Hellion/Factory default: E, R
 	HireKelmorianMiners/MercCompound default: P
 	Immortal default: 
@@ -741,6 +747,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DisableBuildingAttackSplitterling/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
 	Domination/Nova default: D
 	DrakkenLaserDrillNuke/DrakkenLaserDrillCoop default: E
+	EnergizerReclamation/SentryCampaignBase default: R
+	EnergizerReclamation/SentryPurifier default: R
 	EngineeringBay/SCV default: E
 	EvolutionChamber/Drone default: V
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
@@ -755,6 +763,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveSIDiamondbackImprovedEnsnare/SIFactoryTechLab default: 
 	EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab default: 
 	FaceEmbrace/Viper default: D
+	FenixClolarionBomberDummy/FenixClolarionCarrier default: 
+	FenixImmortalResearchDetonationShot/RoboticsBay default: 
+	FenixMojoScoutDownloadUpgrade default: 
 	FenixWhirlwind/FenixChampion default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
 	FenixWhirlwind/FenixSOA default: E copyof: VoidZealotWhirlwind/ZealotAiur default: E
 	Forge/Harvester default:  copyof: Forge/Probe default: F
@@ -888,8 +899,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Viper/VoidRiftUnselectable default: E
 	VoidHighTemplarPsiOrb/HighTemplarTaldarim default: T
 	VoidSentryBlackHole/SOAMothershipv4 default: E
-	VoidSentryPhasingMode/SentryCampaignBase default: E
-	VoidSentryPhasingMode/SentryPurifier default: E
 	VoidStasis/DarkTemplarShakuras default: V
 	VoidStasis/DarkTemplarTaldarim default: V
 	VoidStasis/VorazunShadowGuard default: V
@@ -951,6 +960,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BioPlasmidDischarge/Leviathan default: B
 	CausticSpray/Corruptor default: C
 	CorsairMPDisruptionWeb/CorsairMP default: D
+	FenixKaldalisZealotCharge/FenixKaldalisZealot default: 
+	FenixMojoMissiles/FenixMojoScout default: 
+	FenixPurificationNova/Disruptor default: 
+	FenixWarbringerColossusPowerShot/FenixWarbringerColossus default: 
 	FlagshipTimeBomb/Flagship default: T
 	GiantYetiLeap/GiantYeti default: Q
 	GravitonBeam/Phoenix default: G
@@ -986,6 +999,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AbathurDeepTunnel/ImpalerAbathurBurrowed default: D
 	AbathurDeepTunnel/SwarmHost default: D
 	AbathurDeepTunnel/SwarmHostBurrowed default: D
+	AbathurDeepTunnel/SwarmHostSplitB default: 
+	AbathurDeepTunnel/SwarmHostSplitBBurrowed default: 
+	AbathurDeepTunnel/SwarmHostSplitBRooted default: 
 	AdeptResearchPiercingUpgrade/TwilightCouncil default: A
 	Apocalypse/K5Kerrigan default:  copyof: K5Leviathan/K5Kerrigan default: D
 	ArchAngelCoopMissileShot/ArchAngelCoopAssault default: F
@@ -1028,6 +1044,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveToLeviathan/GuardianMP default: L
 	EvolveToLeviathan/Mutalisk default: L
 	EvolveToLeviathan/Viper default: L
+	FenixTalisAdeptDownloadUpgrade default: 
 	GravitonBeamUrun/Urun default: F
 	GravitonPrison/HybridDestroyer default: G
 	GravitonPrison/HybridDominator default: G
@@ -1209,6 +1226,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveGuardianAttackRangeIncrease/GreaterSpire default: E
 	EvolveGuardianAttackRangeIncrease/Spire default: E
 	EvolveHatcheryDoubleQueue/EvolutionChamber default: I
+	FenixClolarionCarrierDownloadUpgrade default: 
 	FleetBeacon/Harvester default:  copyof: FleetBeacon/Probe default: F
 	FleetBeacon/Probe default: F
 	FusionCore/SCV default: C
@@ -1323,6 +1341,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranShipPlatingLevel3/Armory default: P
 
 [INFO]: TheCore Lite: R   
+	ACAlarakTransportMode/WarpPrismTaldarim default: 
 	AlarakMothershipMassTeleport/SOAMothershipv4 default: 
 	ArbiterMPRecall/ArbiterMP default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	ArchAngelCoopRepel/ArchAngelCoopAssault default: R
@@ -1345,8 +1364,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CommandCenterLoad default: O
 	CycloneResearchLockOnDamageUpgrade/FactoryTechLab default: R
 	DarkPylonRecall/DarkPylon default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
-	EnergizerReclamation/SentryCampaignBase default: R
-	EnergizerReclamation/SentryPurifier default: R
 	EvolveAnabolicSynthesis2/UltraliskCavern default: A
 	EvolveBanelingHeal/BanelingNest default: E
 	EvolveKerriganHeroicFortitude/EvolutionChamber default: F
@@ -1358,6 +1375,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveZerglingArmorShred/SpawningPool default: R
 	ExplosiveMode default: D
 	Extractor/Drone default: E
+	FenixTaldarinImmortalDownloadUpgrade default: 
 	Heal/Medivac default: E
 	Heal/Medivac2 default:  copyof: Heal/Medivac default: E
 	HellionTank/Factory default: R
@@ -1489,6 +1507,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidRayHallucination/Nexus default:  copyof: VoidRayHallucination/Sentry default: V
 	VoidRayHallucination/Sentry default: V
 	VoidRayHallucination/Voranor default:  copyof: VoidRayHallucination/Sentry default: V
+	VoidSentryMobileMode/SentryFenix default: 
+	VoidSentryMobileMode/SentryPurifier default: T
 	VoidTendrilVoidZone/VoidShard default: Z
 	Vulture/Factory default: V
 	WarbotA/VoidCoopWarbot default: R
@@ -1497,6 +1517,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	XelNagaConstructSmash/XelNagaConstruct default: R
 
 [INFO]: TheCore Lite: Space   
+	ACAlarakPhasingMode/WarpPrismTaldarim default: 
 	ActivateShieldGenerator/ShadowShieldGenerator default: Q
 	ActivateShieldGenerator/ShadowShieldGeneratorSmall default: Q
 	AetherMawAetherStorm/AmonAetherMawEpilogue03 default: T
@@ -1557,8 +1578,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveChitinousPlating/UltraliskCavern default: C
 	EvolveHardenedCarapace/SpawningPool default: C
 	EvolveInfestorEnergyUpgrade/InfestationPit default: G
+	FenixClolarionInterceptor/FenixClolarionCarrier default: 
+	FenixDragoonChargedBuster/FenixDragoon default: 
 	FenixSOACharge/FenixChampion default: Q copyof: Charge/Zealot default: C
 	FenixSOACharge/FenixSOA default: Q copyof: Charge/Zealot default: C
+	FenixSentryGuardianZone/SentryFenix default: 
+	FenixTalisAdeptBounceShot/FenixTalisAdept default: 
+	FenixThunderousChargeCoop/FenixCoop default: 
 	FighterMode default: E
 	Ghost/Barracks default: G
 	GhostAcademy/SCV default: G
@@ -1581,6 +1607,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HydraliskFrenzy/HydraliskImpaler default: T copyof: Blink/Stalker default: B
 	HydraliskFrenzy/HydraliskLurker default: T copyof: Blink/Stalker default: B
 	ImmortalBarrierBase/Immortal default: B copyof: ImmortalOverload/Immortal default: B
+	ImmortalOverload/FenixTaldarinImmortal default: 
 	ImmortalOverload/Immortal default: B
 	ImmortalOverload/ImmortalAiur default: B
 	ImpalerBurrowUp default: R copyof: BurrowUp default: R
@@ -1743,7 +1770,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidRift/VoidRiftAutoBuild default: Q
 	VoidRift/VoidShard default: Q
 	VoidRift/VoidShardAC default: Q
-	VoidSentryMobileMode/SentryPurifier default: T
+	VoidSentryPhasingMode/SentryCampaignBase default: E
+	VoidSentryPhasingMode/SentryPurifier default: E
 	VoidSiphon/Oracle default: D
 	VoidThrasherLightningAoE/VoidThrasher default: T
 	VoidThrasherLightningAoE/VoidThrasherWalker default: T
@@ -1946,5 +1974,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 55 
+Finished (suggest inherit) - INFOs: 56 
 ============================

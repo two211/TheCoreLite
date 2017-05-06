@@ -1,6 +1,21 @@
 ============================
 Start commands with no attached conflict (log file: MissingConflict.log)
 ----------------------------
+[ERROR]: ACAlarakPhasingMode/WarpPrismTaldarim not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ACAlarakTransportMode/WarpPrismTaldarim not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: AbathurDeepTunnel/SwarmHostSplitB not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: AbathurDeepTunnel/SwarmHostSplitBBurrowed not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: AbathurDeepTunnel/SwarmHostSplitBRooted not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: ActivateIbikisCannon/PlanetaryFortress not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -109,6 +124,60 @@ in seed TheCore Lite, keys =D
 [ERROR]: ExplodeVolatileInfested/SIVolatileInfested not related to a conflict
 in seed TheCore Lite, keys =CapsLock
 
+[ERROR]: FenixArbiterCloakField/FenixArbiter not related to a conflict
+in seed TheCore Lite, keys =F,CapsLock
+
+[ERROR]: FenixArbiterStasisField/FenixArbiter not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: FenixClolarionBomberDummy/FenixClolarionCarrier not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: FenixClolarionCarrierDownloadUpgrade not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: FenixClolarionInterceptor/FenixClolarionCarrier not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: FenixDragoonChargedBuster/FenixDragoon not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: FenixImmortalResearchDetonationShot/RoboticsBay not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: FenixKaldalisZealotCharge/FenixKaldalisZealot not related to a conflict
+in seed TheCore Lite, keys =Space,E
+
+[ERROR]: FenixKaldalisZealotDownloadUpgrade not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: FenixMojoMissiles/FenixMojoScout not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: FenixMojoScoutDownloadUpgrade not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: FenixPurificationNova/Disruptor not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: FenixSentryGuardianZone/SentryFenix not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: FenixTaldarinImmortalDownloadUpgrade not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: FenixTalisAdeptBounceShot/FenixTalisAdept not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: FenixTalisAdeptDownloadUpgrade not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: FenixThunderousChargeCoop/FenixCoop not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: FenixWarbringerColossusPowerShot/FenixWarbringerColossus not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
 [ERROR]: FungalGrowth/InfestorBurrowed not related to a conflict
 in seed TheCore Lite, keys =E,F
 
@@ -141,6 +210,9 @@ in seed TheCore Lite, keys =D
 
 [ERROR]: Immortal/WarpGate not related to a conflict
 in seed TheCore Lite, keys =D
+
+[ERROR]: ImmortalOverload/FenixTaldarinImmortal not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: InjectLarva/Queen not related to a conflict
 in seed TheCore Lite, keys =
@@ -588,6 +660,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: UseSpiderMine/Vulture not related to a conflict
 in seed TheCore Lite, keys =C,CapsLock
+
+[ERROR]: VoidSentryMobileMode/SentryFenix not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: WarpInCorsair/Stargate not related to a conflict
 in seed TheCore Lite, keys =
@@ -1276,5 +1351,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 207 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 232 WARNs: 145 
 ============================
