@@ -101,6 +101,7 @@ Legacy ressources:
 
 Other ressources:
 * [NeoBlade's video](https://www.youtube.com/watch?v=y5Gw3BQfC_g)
+* [Feedback on NeoBlade's video](http://www.teamliquid.net/forum/viewpost.php?post_id=26542923)
 
 ## Aknowledgments
 
