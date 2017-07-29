@@ -638,7 +638,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =E,Space
 
 [ERROR]: TerranBuild/SISCV not related to a conflict
-in seed TheCore Lite, keys =Space,F
+in seed TheCore Lite, keys =Space
 
 [ERROR]: TerranBuildAdvanced/SISCV not related to a conflict
 in seed TheCore Lite, keys =CapsLock
@@ -716,7 +716,7 @@ in seed TheCore Lite, keys =CapsLock
 
 [WARN]: Assimilator/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [WARN]: AttackChampions not related to a conflict
 but is inherited
@@ -725,12 +725,12 @@ in seed TheCore Lite, keys =D
 [WARN]: AutomatedExtractor/Drone not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [WARN]: AutomatedRefinery/SCV not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [WARN]: Baneling/Zergling2 not related to a conflict
 but is part of same check
@@ -748,7 +748,7 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: BunkerFortified/SCV not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =R
 
 [WARN]: BurrowChargeMP/Ultralisk not related to a conflict
 but is part of same check
@@ -813,7 +813,7 @@ in seed TheCore Lite, keys =C
 
 [WARN]: CyberneticsCore/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =G
+in seed TheCore Lite, keys =R
 
 [WARN]: DarkShrine/Harvester not related to a conflict
 but is inherited
@@ -868,7 +868,7 @@ in seed TheCore Lite, keys =E,C,R
 
 [WARN]: Forge/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =CapsLock
 
 [WARN]: Frostbat/Barracks not related to a conflict
 but is inherited
@@ -881,7 +881,7 @@ in seed TheCore Lite, keys =E,F
 
 [WARN]: Gateway/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [WARN]: GuardianShield/Sentry2 not related to a conflict
 but is part of same check
@@ -1049,7 +1049,7 @@ in seed TheCore Lite, keys =C
 
 [WARN]: Nexus/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =E
 
 [WARN]: PhoenixHallucination/Nexus not related to a conflict
 but is inherited
@@ -1079,7 +1079,7 @@ in seed TheCore Lite, keys =4
 
 [WARN]: ProtossBuild/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Space,F
+in seed TheCore Lite, keys =Space
 
 [WARN]: ProtossBuildAdvanced/Harvester not related to a conflict
 but is inherited
