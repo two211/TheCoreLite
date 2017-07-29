@@ -257,11 +257,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DigesterCreepSpray/NydusCanalCreeper default: C
 	EnergyChannel/XelNagaObeliskAiur06 default: C
 	EntropicBlast/XelNagaConstruct default: Q
-	EvolveCorrosiveBileRadiusIncrease/RoachWarren default: C
+	EvolveCorrosiveBileDamageIncrease/RoachWarren default: E
 	EvolveDevourerAoEDamage/GreaterSpire default: D
 	EvolveDevourerAoEDamage/Spire default: D
-	EvolveHydriodicBile/GreaterRoachWarren default: B
-	EvolveHydriodicBile/RoachWarren default: B
 	EvolveK5ChainLightning/EvolutionChamber default: R
 	EvolveStukovInfestedCivilianSpawnBroodlingsOnDeath/SICivilianStructure default: 
 	ExperimentalPlasmaGun/Raynor default: G
@@ -628,12 +626,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Designate/TestShop default: D
 	DrakkenLaserDrillBFG/DrakkenLaserDrillCoop default: Q
 	EvolveBanelingCorrosiveBile/BanelingNest default: A
-	EvolveCorrosiveBileDamageIncrease/RoachWarren default: E
 	EvolveFrenzy/HydraliskDen default: F
 	EvolveFrenzy/ImpalerDen default: F
 	EvolveFrenzy/LurkerDen default: F
 	EvolveGroovedSpines/HydraliskDen default: G
 	EvolveGroovedSpines/LurkerDenMP default: G
+	EvolveHydriodicBile/GreaterRoachWarren default: B
+	EvolveHydriodicBile/RoachWarren default: B
 	EvolvePlaguedMunitions/SIBarracksTechLab default: 
 	EvolveStukovInfestedInfestedCivilianLeap/SICivilianStructure default: 
 	Factory/SCV default: F
@@ -1040,6 +1039,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EnableBuildingAttackScourge/Scourge default: F
 	EvolveBanelingRupture/BanelingNest default: R
 	EvolveBileLauncherIncreasedRange/SpawningPool default: B
+	EvolveCorrosiveBileRadiusIncrease/RoachWarren default: C
 	EvolveScourgeGasCostReduction/ScourgeNest default: G
 	EvolveToLeviathan/Devourer default: L
 	EvolveToLeviathan/GuardianMP default: L
