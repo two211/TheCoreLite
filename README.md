@@ -64,29 +64,6 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
   * delivered in a set of supported keyboard layouts
   * it passes all the new introduced "seed" checks
 
-## TheCore Lite features
-
-#### Implemented TheCore tips
-* [Consistency accross all races](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
-* [2 keys macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
-* [Control group and camera modifiers with good synergie with UI](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
-* [Easy access to groups, cameras, basic commands and spells](https://github.com/bobo38/TheCoreLite#unit-keys)
-* [RapidFire alternates](https://github.com/bobo38/TheCoreLite#rapidfire-keys)
-* [Zerg extensive select larvae alternates](https://github.com/bobo38/TheCoreLite#zerg-larvae)
-* [Center on selection + add to hatch+CC/Nexus](https://github.com/bobo38/TheCoreLite#use-case-expansions-cameras)
-* [Rotate camera](https://github.com/bobo38/TheCoreLite#fight-against-invisible)
-* [Control cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#additional-cameras-alternates-on-control)
-
-#### TheCore Lite extras
-* [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
-* [Shift+Q+W select prod buildings and jump to rally point](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
-* [Shift+Q+W+Space TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite#use-case-thecore-lite-inject-initiate)
-* [TheCore Lite telegraph inject(backspace family)](https://github.com/bobo38/TheCoreLite#use-case-telegraph-inject-backspace-family)
-* [Utility group and creep queen mechanics](https://github.com/bobo38/TheCoreLite#utility-group--grave)
-* [Shift+Alt easy cloning](https://github.com/bobo38/TheCoreLite#easier-cloning-through-shiftalt)
-* [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
-* [RapidFire static defence](https://github.com/bobo38/TheCoreLite#rapidfire-static-defence)
-
 ## Ressources
 
 Beside this README.md file,
@@ -110,6 +87,29 @@ Loads of thanks to:
 * JaKaTaK, the originator of the first TheCore Lite version
 * BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
 * MilExo, who reviewed extensively the Protoss aspect of TheCore Lite
+
+## TheCore Lite features
+
+#### Implemented TheCore tips
+* [Consistency accross all races](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
+* [2 keys macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
+* [Control group and camera modifiers with good synergie with UI](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
+* [Easy access to groups, cameras, basic commands and spells](https://github.com/bobo38/TheCoreLite#unit-keys)
+* [RapidFire alternates](https://github.com/bobo38/TheCoreLite#rapidfire-keys)
+* [Zerg extensive select larvae alternates](https://github.com/bobo38/TheCoreLite#zerg-larvae)
+* [Center on selection + add to hatch+CC/Nexus](https://github.com/bobo38/TheCoreLite#use-case-expansions-cameras)
+* [Rotate camera](https://github.com/bobo38/TheCoreLite#fight-against-invisible)
+* [Control cameras](https://github.com/bobo38/TheCoreLite/blob/master/README.md#additional-cameras-alternates-on-control)
+
+#### TheCore Lite extras
+* [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
+* [Shift+Q+W select prod buildings and jump to rally point](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
+* [Shift+Q+W+Space TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite#use-case-thecore-lite-inject-initiate)
+* [TheCore Lite telegraph inject(backspace family)](https://github.com/bobo38/TheCoreLite#use-case-telegraph-inject-backspace-family)
+* [Utility group and creep queen mechanics](https://github.com/bobo38/TheCoreLite#utility-group--grave)
+* [Shift+Alt easy cloning](https://github.com/bobo38/TheCoreLite#easier-cloning-through-shiftalt)
+* [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
+* [RapidFire static defence](https://github.com/bobo38/TheCoreLite#rapidfire-static-defence)
 
 ----------------------------------------------------------------------------------------------------------------------
 
