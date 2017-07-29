@@ -169,17 +169,18 @@ Building consistency between race, allows better off-race and random play.
 Hereafter are the principles
 
 Basic buildings:
-* C = Command center / Nexus / Hatchery
-* R = Refinery / Assimilator / Extractor
+* E = Command center / Nexus / Hatchery
+* F = Refinery / Assimilator / Extractor
 * D = Supply Depot / Pylon
-* E = Engineering Bay / Forge / Evolution Chamber
+* CapsLock = Engineering Bay / Forge / Evolution Chamber
 * Space = Turret / Photo Cannon / Spore Crawler (RapidFire air defence)
-* F = Bunker / Spine Crawler (RapidFire defence)
+* C = Barrack / Gateway / Spine Crawler
 
 Advanced buildings:
+* D = Factory / Robo
 * R = Starport / Stargate / Spire
-* G = Fusion core / Fleet Beacon 
-* E = Armory (same as Engineering Bay / Forge / Evolution Chamber)
+* G = Fusion core / Fleet Beacon / Ultralisk Cavern
+* ~~E = Armory (same as Engineering Bay / Forge / Evolution Chamber)~~
 
 ### Bridge method
 
@@ -239,18 +240,15 @@ source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc
 
 #### RapidFire Static Defence
 
-All workers have Space and F for "Basic building".
-Defence strutures are mapped on those 2 keys.
-To build static defence:
+All workers have Space for "Basic building".
+Air defence strutures are mapped on this key
+To build static air defence:
 * select workers
 * go to area
-* hold Space (or F) and move the pointer to order defence build, it will chain:
+* hold Space and move the pointer to order defence build, it will chain:
   * select basic building
   * select defence building
   * target location where to build
-
-Particularly useful as Zerg and Terran, it makes less sense with protoss.
-The only benefit from protoss is that photocannon building start is accelerated.
 
 ### Precision keys
 
