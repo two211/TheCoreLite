@@ -730,25 +730,32 @@ Overlord map control "W+Space+E+Right click on minimap":
 
 ## Use case: zerg macro routine
 
+* Eggs pop, you have 2.746s for your queens to reach +25 energy
+* Hatch check
+  * W: hatch group
+  * morph larvaes depending on needs (drone or army)
+  * add eggs to control groups and give them rally points
 * Inject routine
   * use TheCore Lite Inject initiate
   * then "TheCore inject" or "Telegraph inject"
-* check supply depot at this step and produce overlords
-  * morph 1 overlord/mining hatch/egg cycle
-  * rally overlords individually to strategic locations
-* Hatch check
-  * W: hatch group
-  * morph other larvaes depending on needs
-  * add eggs to control groups and give them rally points
 * Tech check
   * You had time to check upgrades as they were selected with hatcheries
   * browse subgroup + add new research
 * Creep queens (see "utility group section")
 * Creep cameras (control cameras) holding control
+* Use natural larvae to make overlord
+  * morph 1 overlord/mining hatch/egg cycle
+  * rally overlords individually to strategic locations
+
+Extra:
+* sync Queen birth and Hatch spawn with the macro cycle
+* sync building spawn with next eggs' pop (build order)
 
 sources:
 [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
 [JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
+[Zerg Cycle Revisited - LoTV](http://www.teamliquid.net/forum/sc2-strategy/524948-zerg-cycle-revisited-lotv) (Team Liquid forum thread)
+[\[G\] The Cycle method for Zerg macro](http://www.teamliquid.net/forum/sc2-strategy/274298-the-cycle-method-for-zerg-macro) (Team Liquid forum thread)
 
 ## Use case: Easy MULE/Chronoboost
 
