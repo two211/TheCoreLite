@@ -752,10 +752,10 @@ Extra:
 * sync building spawn with next eggs' pop (build order)
 
 sources:
-[JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
-[JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
-[Zerg Cycle Revisited - LoTV](http://www.teamliquid.net/forum/sc2-strategy/524948-zerg-cycle-revisited-lotv) (Team Liquid forum thread)
-[\[G\] The Cycle method for Zerg macro](http://www.teamliquid.net/forum/sc2-strategy/274298-the-cycle-method-for-zerg-macro) (Team Liquid forum thread)
+* [JaKaTaK's "Egg Hotkey Drill" video](https://www.youtube.com/watch?v=GWgwuce9q6o&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh&index=6)
+* [JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
+* [Zerg Cycle Revisited - LoTV](http://www.teamliquid.net/forum/sc2-strategy/524948-zerg-cycle-revisited-lotv) (Team Liquid forum thread)
+* [\[G\] The Cycle method for Zerg macro](http://www.teamliquid.net/forum/sc2-strategy/274298-the-cycle-method-for-zerg-macro) (Team Liquid forum thread)
 
 ## Use case: Easy MULE/Chronoboost
 
