@@ -41,6 +41,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Charge/Orthos
 [WARN]: no default Charge/Voranor
 [WARN]: no default Charge/ZealotDark
+[WARN]: no default ChronoBoostEnergyCost/Nexus
 [WARN]: no default ColossusHallucination/Nexus
 [WARN]: no default ColossusHallucination/Voranor
 [WARN]: no default CreepTumor/Queen
@@ -59,6 +60,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default EvadeObserver/Observer
 [WARN]: no default EvolveAdrenalineBoost/EvolutionChamber
 [WARN]: no default EvolveBurrowCharge/Hatchery
+[WARN]: no default EvolveDiggingClaws/LurkerDenMP
 [WARN]: no default EvolvePlaguedMunitions/SIBarracksTechLab
 [WARN]: no default EvolveSIDiamondbackImprovedEnsnare/SIFactoryTechLab
 [WARN]: no default EvolveSIDiamondbackSnailTrail/SIFactoryTechLab
@@ -138,9 +140,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MorphtoRoach/Larva
 [WARN]: no default MoveChampions
 [WARN]: no default MutateintoDefilerMound/Drone
+[WARN]: no default MutateintoLurkerDen/Drone
 [WARN]: no default MutatorWorkerSleep/SISCV
 [WARN]: no default NerveJam/ScienceVessel
 [WARN]: no default Nexus/Harvester
+[WARN]: no default NexusShieldRecharge/Nexus
 [WARN]: no default NovaBoombotBurrow/NovaBoombot
 [WARN]: no default NovaDomination/NovaHero
 [WARN]: no default NovaSwitchAssaultMode/NovaCoop
@@ -172,8 +176,12 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Pylon/Harvester
 [WARN]: no default QueenClassicParasite/SIQueen
 [WARN]: no default QueenMPSpawnBroodlings/SIQueen
+[WARN]: no default RavenRepairDrone/Raven
+[WARN]: no default RavenScramblerMissile/Raven
+[WARN]: no default RavenShredderMissile/Raven
 [WARN]: no default Recall/Arbiter
 [WARN]: no default ResearchAlarakTargetLockBuff/CyberneticsCore
+[WARN]: no default ResearchArmorPiercingRockets/FactoryTechLab
 [WARN]: no default ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab
 [WARN]: no default ResearchBarrelStabilizers/BarracksTechLab
 [WARN]: no default ResearchCharonBooster/FactoryTechLab
@@ -211,6 +219,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchSIQueenEnergy/SIStarportTechLab
 [WARN]: no default ResearchSIQueenFungalGrowth/SIStarportTechLab
 [WARN]: no default ResearchSingularityCharge2/CyberneticsCore
+[WARN]: no default ResearchSmartServos/FactoryTechLab
 [WARN]: no default ResearchSpiderMines/FactoryTechLab
 [WARN]: no default ResearchSpikeBurstRankOne/EvolutionChamber
 [WARN]: no default ResearchStabRankOne/EvolutionChamber
@@ -329,5 +338,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 327 ERRORs: 0 
+Finished (Check defaults) - WARNs: 336 ERRORs: 0 
 ============================

@@ -55,6 +55,9 @@ in seed TheCore Lite, keys =CapsLock
 [ERROR]: BuildScarab/Reaver not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: CreepTumor/Queen not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -90,6 +93,9 @@ in seed TheCore Lite, keys =T
 
 [ERROR]: EvolveBurrowCharge/Hatchery not related to a conflict
 in seed TheCore Lite, keys =4
+
+[ERROR]: EvolveDiggingClaws/LurkerDenMP not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: EvolveGroovedSpines/HydraliskDen not related to a conflict
 in seed TheCore Lite, keys =D
@@ -262,6 +268,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: MutateintoDefilerMound/Drone not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: MutateintoLurkerDen/Drone not related to a conflict
+in seed TheCore Lite, keys =T
+
 [ERROR]: MutatorWorkerSleep/SISCV not related to a conflict
 in seed TheCore Lite, keys =5
 
@@ -269,6 +278,9 @@ in seed TheCore Lite, keys =5
 in seed TheCore Lite, keys =
 
 [ERROR]: NeuralParasite/InfestorBurrowed not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: NexusShieldRecharge/Nexus not related to a conflict
 in seed TheCore Lite, keys =C
 
 [ERROR]: NovaBoombotBurrow/NovaBoombot not related to a conflict
@@ -325,11 +337,23 @@ in seed TheCore Lite, keys =CapsLock
 [ERROR]: QueenMPSpawnBroodlings/SIQueen not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: RavenRepairDrone/Raven not related to a conflict
+in seed TheCore Lite, keys =Space,4
+
+[ERROR]: RavenScramblerMissile/Raven not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: RavenShredderMissile/Raven not related to a conflict
+in seed TheCore Lite, keys =C,CapsLock
+
 [ERROR]: Recall/Arbiter not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: ResearchAlarakTargetLockBuff/CyberneticsCore not related to a conflict
 in seed TheCore Lite, keys =G
+
+[ERROR]: ResearchArmorPiercingRockets/FactoryTechLab not related to a conflict
+in seed TheCore Lite, keys =V
 
 [ERROR]: ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =D
@@ -447,6 +471,9 @@ in seed TheCore Lite, keys =D
 
 [ERROR]: ResearchSingularityCharge2/CyberneticsCore not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchSmartServos/FactoryTechLab not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: ResearchSpiderMines/FactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =
@@ -1062,12 +1089,12 @@ in seed TheCore Lite, keys =Space
 [WARN]: PrimalHeal/K5Kerrigan not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =CapsLock
 
 [WARN]: PrimalSlash/K5Kerrigan not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [WARN]: ProbeHallucination/Nexus not related to a conflict
 but is inherited
@@ -1183,7 +1210,7 @@ in seed TheCore Lite, keys =F
 [WARN]: SpawnBanelings/K5Kerrigan not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =CapsLock
 
 [WARN]: StalkerHallucination/Nexus not related to a conflict
 but is inherited
@@ -1351,5 +1378,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 232 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 241 WARNs: 145 
 ============================
