@@ -523,6 +523,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CloakOff default: D
 	CommandCenterUnloadAll default: D
 	DehakaArmorUpgrade/DehakaCoop default: 
+	DehakaHeal/Dehaka default: E
 	EngineeringBay/SCV default: E
 	EvolutionChamber/Drone default: V
 	EvolveTunnelingClaws/GreaterRoachWarren default: T
@@ -762,7 +763,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DarkArchonMindControl/DarkArchon default: R
 	DefilerMPPlague/DefilerMP default: G
 	DehakaGlevigRoachFireBreath/DehakaGlevigStructure default: 
-	DehakaHeal/Dehaka default: E
 	DehakaHydraliskToMutalisk/DehakaHydraliskLevel2 default: 
 	DehakaLeapStomp/DehakaCoop default: 
 	DehakaLearnPrimalWeaponsLevel1/DehakaHatchery default: 
@@ -902,7 +902,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ShadowBlade/ZeratulVoidAiur01 default: E
 	ShieldBatteryStructureBarrier/ShieldBattery default: B
 	SlaynElementalGrabAOE/SlaynElemental default: E
-	StukovCrystalChannel/InfestedStukov default: Period
 	SunkenColony/CreepColony default: E
 	TemporalField/Mothership default: T, C copyof: TemporalField/MothershipCore default: T, C
 	TemporalField/MothershipCore default: T, C
@@ -996,6 +995,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CorsairMPDisruptionWeb/CorsairMP default: D
 	DehakaGuardianMineCharge/DehakaGuardian default: 
 	DehakaTyrannozorFanOfKnives/DehakaUltraliskLevel3 default: 
+	DevastatingShot/InfestedStukov default: Q
+	Drag/Dehaka default: Q
+	Drag/DehakaMirrorImage default: Q copyof: Drag/Dehaka default: Q
 	FenixKaldalisZealotCharge/FenixKaldalisZealot default: 
 	FenixMojoMissiles/FenixMojoScout default: 
 	FenixPurificationNova/Disruptor default: 
@@ -1541,6 +1543,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Starport/SCV default: S
 	StopGenerateCreep default: C
 	StopGenerateCreep/Overlord default: C copyof: StopGenerateCreep default: C
+	StukovCrystalChannel/InfestedStukov default: Period
 	StukovInfestedSiegeTankRoot/StukovInfestedSiegeTank default: 
 	SwarmHostBurrowDown default: R
 	SwarmHostRoot default: R copyof: SwarmHostBurrowDown default: R
@@ -1617,9 +1620,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaDrone/DehakaHatchery default: 
 	DehakaIntimidatingRoar/DehakaCoop default: 
 	DehakaUltraliskCrashingCharge/DehakaUltraliskLevel2 default: 
-	DevastatingShot/InfestedStukov default: Q
-	Drag/Dehaka default: Q
-	Drag/DehakaMirrorImage default: Q copyof: Drag/Dehaka default: Q
 	Drone/Larva default: D
 	EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttack/HotSHunter default: F copyof: EnableBuildingAttack/Baneling default: F
