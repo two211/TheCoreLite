@@ -46,6 +46,9 @@ in seed TheCore Lite, keys =
 [ERROR]: BioMechanicalHeal/HealingDrone not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: BuildDehakaExtractor/DehakaHatchery not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: BuildSITechLabFactory/SIFactoryFlying not related to a conflict
 in seed TheCore Lite, keys =CapsLock
 
@@ -58,8 +61,14 @@ in seed TheCore Lite, keys =Space
 [ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: CoopMurvarSpawnCreepers/DehakaMurvar not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: CreepTumor/Queen not related to a conflict
 in seed TheCore Lite, keys =C
+
+[ERROR]: DakrunCrashingCharge/DehakaDakrun not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: DarkSwarm/Infestor not related to a conflict
 in seed TheCore Lite, keys =
@@ -73,11 +82,110 @@ in seed TheCore Lite, keys =F
 [ERROR]: DefensiveMatrixTarget/NovaDefensiveMatrixDrone not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: DehakaAirAttack/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: DehakaAirAttackUpgrade/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: DehakaArmorUpgrade/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =CapsLock
+
+[ERROR]: DehakaConsume/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: DehakaDeepTunnel/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaDetector/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =7
+
+[ERROR]: DehakaDrone/DehakaHatchery not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: DehakaGlevigRoachFireBreath/DehakaGlevigStructure not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: DehakaGuardianMineCharge/DehakaGuardian not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: DehakaHydralisk/DehakaBarracks not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: DehakaHydraliskImpalerMerge/DehakaHydraliskLevel2 not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaHydraliskToMutalisk/DehakaHydraliskLevel2 not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: DehakaIntimidatingRoar/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: DehakaLeapStomp/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: DehakaLearnAbilities/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: DehakaLearnPrimalArmorLevel1/DehakaHatchery not related to a conflict
+in seed TheCore Lite, keys =V
+
+[ERROR]: DehakaLearnPrimalWeaponsLevel1/DehakaHatchery not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: DehakaMendingAura/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =6
+
+[ERROR]: DehakaMurvarCreeperAir/DehakaMurvarStructure not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaNydusDestroyerTimedNoFoodBeam/DehakaNydusDestroyerTimedNoFood not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: DehakaRavasaurMerge/DehakaZerglingLevel2 not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaRoach/DehakaBarracks not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: DehakaRoachGuardianMerge/DehakaRoachLevel2 not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: DehakaRoachLevel2Merge/DehakaRoachLevel2 not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaRoachMoveSpeed/DehakaGlevigStructure not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: DehakaSwarmHost/DehakaBarracks not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaSwarmHostMerge/DehakaSwarmHost not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaTyrannozorFanOfKnives/DehakaUltraliskLevel3 not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: DehakaUltralisk/DehakaBarracks not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: DehakaUltraliskCrashingCharge/DehakaUltraliskLevel2 not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: DehakaUltraliskLevel2Merge/DehakaUltraliskLevel2 not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaZergling/DehakaBarracks not related to a conflict
+in seed TheCore Lite, keys =D
+
 [ERROR]: DeploySpiderMines/SiegeTank_BlackOps not related to a conflict
 in seed TheCore Lite, keys =C,CapsLock
 
 [ERROR]: Detonate/SpiderMine not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: DownloadBackupPart1/CybrosEscortDownloader not related to a conflict
+in seed TheCore Lite, keys =C
 
 [ERROR]: EMP/ScienceVessel not related to a conflict
 in seed TheCore Lite, keys =E,R
@@ -95,7 +203,7 @@ in seed TheCore Lite, keys =T
 in seed TheCore Lite, keys =4
 
 [ERROR]: EvolveDiggingClaws/LurkerDenMP not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =E
 
 [ERROR]: EvolveGroovedSpines/HydraliskDen not related to a conflict
 in seed TheCore Lite, keys =D
@@ -193,6 +301,15 @@ in seed TheCore Lite, keys =4
 [ERROR]: Glare/Oracle not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: GlevigFirebreath/DehakaGlevig not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: GlevigTunnel/DehakaGlevig not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: GreaterNydusDestroyerDeepTunnel/DehakaNydusDestroyerTimedNoFood not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: GreaterRoachWarren/RoachWarren not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -228,6 +345,24 @@ in seed TheCore Lite, keys =CapsLock,C
 
 [ERROR]: LaunchNullWard/NullSphere not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: LearnDehakaArmorUpgrade/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =CapsLock
+
+[ERROR]: LearnDehakaConsume/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: LearnDehakaDetector/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =7
+
+[ERROR]: LearnDehakaIntimidatingRoar/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: LearnDehakaLeapStomp/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: LearnDehakaMendingAura/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =6
 
 [ERROR]: Liberator_BlackOpsMorphtoAA/Liberator_BlackOps not related to a conflict
 in seed TheCore Lite, keys =R
@@ -265,6 +400,9 @@ in seed TheCore Lite, keys =R
 [ERROR]: MorphToOverseer/SIOverlord not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: MurvarPukeCoop/DehakaMurvar not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: MutateintoDefilerMound/Drone not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -301,6 +439,12 @@ in seed TheCore Lite, keys =Space,C
 [ERROR]: NurturingSwarm/Queen not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: NydusDestroyerBeam/DehakaNydusDestroyer not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: NydusDestroyerDeepTunnel/DehakaNydusDestroyer not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: Overcharge/OrbitalCommand not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -322,6 +466,12 @@ in seed TheCore Lite, keys =
 [ERROR]: PointDefenseDrone/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =E,R
 
+[ERROR]: PrimalBuildingUproot/DehakaBarracks not related to a conflict
+in seed TheCore Lite, keys =CapsLock
+
+[ERROR]: PrimalBuildingUproot/DehakaHatchery not related to a conflict
+in seed TheCore Lite, keys =CapsLock
+
 [ERROR]: PrimalConsume/Infestor not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -336,6 +486,9 @@ in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: QueenMPSpawnBroodlings/SIQueen not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: RallySCV not related to a conflict
+in seed TheCore Lite, keys =0
 
 [ERROR]: RavenRepairDrone/Raven not related to a conflict
 in seed TheCore Lite, keys =Space,4
@@ -366,6 +519,45 @@ in seed TheCore Lite, keys =
 
 [ERROR]: ResearchDarkTemplarBlink/DarkShrine not related to a conflict
 in seed TheCore Lite, keys =T
+
+[ERROR]: ResearchDehakaGuardianExplosiveBomb/DehakaMurvarStructure not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: ResearchDehakaGuardianFury/DehakaMurvarStructure not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: ResearchDehakaHydraliskSpeed/DehakaGlevigStructure not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: ResearchDehakaImpalerTenderize/DehakaGlevigStructure not related to a conflict
+in seed TheCore Lite, keys =V
+
+[ERROR]: ResearchDehakaMutaliskDamageReduction/DehakaMurvarStructure not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: ResearchDehakaMutaliskRespawnOnDeath/DehakaMurvarStructure not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: ResearchDehakaRavasaurRange/DehakaGlevigStructure not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: ResearchDehakaRavasaurVSArmor/DehakaGlevigStructure not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: ResearchDehakaTyrannozorArmorAura/DehakaDakrunStructure not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: ResearchDehakaTyrannozorFanOfKnives/DehakaDakrunStructure not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: ResearchDehakaUltraliskBash/DehakaDakrunStructure not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: ResearchDehakaUltraliskCrashingCharge/DehakaDakrunStructure not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ResearchDehakaUltraliskRegen/DehakaDakrunStructure not related to a conflict
+in seed TheCore Lite, keys =G
 
 [ERROR]: ResearchDisruptorCloak/RoboticsBay not related to a conflict
 in seed TheCore Lite, keys =CapsLock
@@ -471,6 +663,9 @@ in seed TheCore Lite, keys =D
 
 [ERROR]: ResearchSingularityCharge2/CyberneticsCore not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchSlicingGlave/DehakaMurvarStructure not related to a conflict
+in seed TheCore Lite, keys =G
 
 [ERROR]: ResearchSmartServos/FactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =R
@@ -1378,5 +1573,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 241 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 306 WARNs: 145 
 ============================

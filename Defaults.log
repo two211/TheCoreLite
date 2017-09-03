@@ -26,6 +26,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Banshee_BlackOpsAirstrike/Banshee_BlackOps
 [WARN]: no default BioMechanicalHeal/HealingDrone
 [WARN]: no default BuildCreepTumor/Queen2
+[WARN]: no default BuildDehakaExtractor/DehakaHatchery
 [WARN]: no default BuildSITechLabFactory/SIFactoryFlying
 [WARN]: no default BuildSITechLabStarport/SIStarportFlying
 [WARN]: no default BuildScarab/Reaver
@@ -44,15 +45,50 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ChronoBoostEnergyCost/Nexus
 [WARN]: no default ColossusHallucination/Nexus
 [WARN]: no default ColossusHallucination/Voranor
+[WARN]: no default CoopMurvarSpawnCreepers/DehakaMurvar
 [WARN]: no default CreepTumor/Queen
 [WARN]: no default CyberneticsCore/Harvester
+[WARN]: no default DakrunCrashingCharge/DehakaDakrun
 [WARN]: no default DarkShrine/Harvester
 [WARN]: no default DarkSwarm/Infestor
 [WARN]: no default DefensiveMatrixTarget/NovaDefensiveMatrixDrone
+[WARN]: no default DehakaAirAttack/DehakaCoop
+[WARN]: no default DehakaAirAttackUpgrade/DehakaCoop
+[WARN]: no default DehakaArmorUpgrade/DehakaCoop
+[WARN]: no default DehakaConsume/DehakaCoop
+[WARN]: no default DehakaDeepTunnel/DehakaCoop
+[WARN]: no default DehakaDetector/DehakaCoop
+[WARN]: no default DehakaDrone/DehakaHatchery
+[WARN]: no default DehakaGlevigRoachFireBreath/DehakaGlevigStructure
+[WARN]: no default DehakaGuardianMineCharge/DehakaGuardian
+[WARN]: no default DehakaHydralisk/DehakaBarracks
+[WARN]: no default DehakaHydraliskImpalerMerge/DehakaHydraliskLevel2
+[WARN]: no default DehakaHydraliskToMutalisk/DehakaHydraliskLevel2
+[WARN]: no default DehakaIntimidatingRoar/DehakaCoop
+[WARN]: no default DehakaLeapStomp/DehakaCoop
+[WARN]: no default DehakaLearnAbilities/DehakaCoop
+[WARN]: no default DehakaLearnPrimalArmorLevel1/DehakaHatchery
+[WARN]: no default DehakaLearnPrimalWeaponsLevel1/DehakaHatchery
+[WARN]: no default DehakaMendingAura/DehakaCoop
+[WARN]: no default DehakaMurvarCreeperAir/DehakaMurvarStructure
+[WARN]: no default DehakaNydusDestroyerTimedNoFoodBeam/DehakaNydusDestroyerTimedNoFood
+[WARN]: no default DehakaRavasaurMerge/DehakaZerglingLevel2
+[WARN]: no default DehakaRoach/DehakaBarracks
+[WARN]: no default DehakaRoachGuardianMerge/DehakaRoachLevel2
+[WARN]: no default DehakaRoachLevel2Merge/DehakaRoachLevel2
+[WARN]: no default DehakaRoachMoveSpeed/DehakaGlevigStructure
+[WARN]: no default DehakaSwarmHost/DehakaBarracks
+[WARN]: no default DehakaSwarmHostMerge/DehakaSwarmHost
+[WARN]: no default DehakaTyrannozorFanOfKnives/DehakaUltraliskLevel3
+[WARN]: no default DehakaUltralisk/DehakaBarracks
+[WARN]: no default DehakaUltraliskCrashingCharge/DehakaUltraliskLevel2
+[WARN]: no default DehakaUltraliskLevel2Merge/DehakaUltraliskLevel2
+[WARN]: no default DehakaZergling/DehakaBarracks
 [WARN]: no default DeploySpiderMines/SiegeTank_BlackOps
 [WARN]: no default Detonate/SpiderMine
 [WARN]: no default DisableBuildingAttack/baneling
 [WARN]: no default DisableBuildingAttack/baneling2
+[WARN]: no default DownloadBackupPart1/CybrosEscortDownloader
 [WARN]: no default EMP/ScienceVessel
 [WARN]: no default EnableBuildingAttack/baneling
 [WARN]: no default EnableBuildingAttack/baneling2
@@ -97,6 +133,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Gateway/Harvester
 [WARN]: no default GhostHoldFire/NovaCoop
 [WARN]: no default Glare/Oracle
+[WARN]: no default GlevigFirebreath/DehakaGlevig
+[WARN]: no default GlevigTunnel/DehakaGlevig
+[WARN]: no default GreaterNydusDestroyerDeepTunnel/DehakaNydusDestroyerTimedNoFood
 [WARN]: no default GreaterRoachWarren/RoachWarren
 [WARN]: no default Guardian/Mutalisk
 [WARN]: no default GuardianShield/Sentry2
@@ -119,6 +158,12 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default InstantHunterSeekerMissile/Raven_BlackOps
 [WARN]: no default KhalaShockwave/Immortal
 [WARN]: no default LaunchNullWard/NullSphere
+[WARN]: no default LearnDehakaArmorUpgrade/DehakaCoop
+[WARN]: no default LearnDehakaConsume/DehakaCoop
+[WARN]: no default LearnDehakaDetector/DehakaCoop
+[WARN]: no default LearnDehakaIntimidatingRoar/DehakaCoop
+[WARN]: no default LearnDehakaLeapStomp/DehakaCoop
+[WARN]: no default LearnDehakaMendingAura/DehakaCoop
 [WARN]: no default Liberator_BlackOpsMorphtoAA/Liberator_BlackOps
 [WARN]: no default Liberator_BlackOpsMorphtoAG/Liberator_BlackOps
 [WARN]: no default LockdownRound/Ghost
@@ -139,6 +184,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MorphtoDefiler/Larva
 [WARN]: no default MorphtoRoach/Larva
 [WARN]: no default MoveChampions
+[WARN]: no default MurvarPukeCoop/DehakaMurvar
 [WARN]: no default MutateintoDefilerMound/Drone
 [WARN]: no default MutateintoLurkerDen/Drone
 [WARN]: no default MutatorWorkerSleep/SISCV
@@ -151,6 +197,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default NovaUnitNuke/NovaCoop
 [WARN]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaCoop
 [WARN]: no default NurturingSwarm/Queen
+[WARN]: no default NydusDestroyerBeam/DehakaNydusDestroyer
+[WARN]: no default NydusDestroyerDeepTunnel/DehakaNydusDestroyer
 [WARN]: no default Overcharge/OrbitalCommand
 [WARN]: no default Passive
 [WARN]: no default PhaseMissile/Scout
@@ -160,6 +208,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default PlaceWard/Oracle
 [WARN]: no default Plague/Infestor
 [WARN]: no default PointDefenseDrone/Raven_BlackOps
+[WARN]: no default PrimalBuildingUproot/DehakaBarracks
+[WARN]: no default PrimalBuildingUproot/DehakaHatchery
 [WARN]: no default PrimalConsume/Infestor
 [WARN]: no default PrimalHeal/K5Kerrigan
 [WARN]: no default PrimalSlash/K5Kerrigan
@@ -176,6 +226,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Pylon/Harvester
 [WARN]: no default QueenClassicParasite/SIQueen
 [WARN]: no default QueenMPSpawnBroodlings/SIQueen
+[WARN]: no default RallySCV
 [WARN]: no default RavenRepairDrone/Raven
 [WARN]: no default RavenScramblerMissile/Raven
 [WARN]: no default RavenShredderMissile/Raven
@@ -185,6 +236,19 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab
 [WARN]: no default ResearchBarrelStabilizers/BarracksTechLab
 [WARN]: no default ResearchCharonBooster/FactoryTechLab
+[WARN]: no default ResearchDehakaGuardianExplosiveBomb/DehakaMurvarStructure
+[WARN]: no default ResearchDehakaGuardianFury/DehakaMurvarStructure
+[WARN]: no default ResearchDehakaHydraliskSpeed/DehakaGlevigStructure
+[WARN]: no default ResearchDehakaImpalerTenderize/DehakaGlevigStructure
+[WARN]: no default ResearchDehakaMutaliskDamageReduction/DehakaMurvarStructure
+[WARN]: no default ResearchDehakaMutaliskRespawnOnDeath/DehakaMurvarStructure
+[WARN]: no default ResearchDehakaRavasaurRange/DehakaGlevigStructure
+[WARN]: no default ResearchDehakaRavasaurVSArmor/DehakaGlevigStructure
+[WARN]: no default ResearchDehakaTyrannozorArmorAura/DehakaDakrunStructure
+[WARN]: no default ResearchDehakaTyrannozorFanOfKnives/DehakaDakrunStructure
+[WARN]: no default ResearchDehakaUltraliskBash/DehakaDakrunStructure
+[WARN]: no default ResearchDehakaUltraliskCrashingCharge/DehakaDakrunStructure
+[WARN]: no default ResearchDehakaUltraliskRegen/DehakaDakrunStructure
 [WARN]: no default ResearchDisruptorCloak/RoboticsBay
 [WARN]: no default ResearchDisruptorSecondExplosion/RoboticsBay
 [WARN]: no default ResearchEMP/StarportTechLab
@@ -219,6 +283,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchSIQueenEnergy/SIStarportTechLab
 [WARN]: no default ResearchSIQueenFungalGrowth/SIStarportTechLab
 [WARN]: no default ResearchSingularityCharge2/CyberneticsCore
+[WARN]: no default ResearchSlicingGlave/DehakaMurvarStructure
 [WARN]: no default ResearchSmartServos/FactoryTechLab
 [WARN]: no default ResearchSpiderMines/FactoryTechLab
 [WARN]: no default ResearchSpikeBurstRankOne/EvolutionChamber
@@ -338,5 +403,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 336 ERRORs: 0 
+Finished (Check defaults) - WARNs: 401 ERRORs: 0 
 ============================
