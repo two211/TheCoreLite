@@ -223,10 +223,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LurkerCancelHoldFire/LurkerBurrowed default: G copyof: LurkerCancelHoldFire/LurkerMPBurrowed default: G
 	LurkerCancelHoldFire/LurkerMPBurrowed default: G
 
-[INFO]: TheCore Lite: 7   
-	DehakaDetector/DehakaCoop default: 
-	LearnDehakaDetector/DehakaCoop default: 
-
 [INFO]: TheCore Lite: C   
 	250mmStrikeCannons/Thor default: C
 	250mmStrikeCannons/ThorWreckageSwann default: C
@@ -1990,10 +1986,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: Y   
 	DarkShrineAssignRally/DarkShrine default: Y
+	DehakaDetector/DehakaCoop default: 
 	GatherProt default: G
 	HireSpartanCompany/Factory default: C
 	HyperionKorhalYamato/HyperionKorhal default: Y
 	HyperionYamatoGun/Hyperion default: Y
+	LearnDehakaDetector/DehakaCoop default: 
 	Marine/VoidThrasherWalker default: A
 	Zergling/VoidThrasher default: Z
 
@@ -2048,5 +2046,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 56 
+Finished (suggest inherit) - INFOs: 55 
 ============================

@@ -98,7 +98,7 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =F
 
 [ERROR]: DehakaDetector/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =7
+in seed TheCore Lite, keys =Y
 
 [ERROR]: DehakaDrone/DehakaHatchery not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -353,7 +353,7 @@ in seed TheCore Lite, keys =CapsLock
 in seed TheCore Lite, keys =C
 
 [ERROR]: LearnDehakaDetector/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =7
+in seed TheCore Lite, keys =Y
 
 [ERROR]: LearnDehakaIntimidatingRoar/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =Space
