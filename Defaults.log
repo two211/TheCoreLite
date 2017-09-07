@@ -402,6 +402,13 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
+[WARN]: no default SICivilianStructure/SISCV
+[WARN]: no default SICommandCenter/SISCV
+[WARN]: no default SIEngineeringBay/SISCV
+[WARN]: no default SIFactory/SISCV
+[WARN]: no default SIInfestedBunker/SISCV
+[WARN]: no default SIMissileTurret/SISCV
+[WARN]: no default SIRefinery/SISCV
 ----------------------------
-Finished (Check defaults) - WARNs: 401 ERRORs: 0 
+Finished (Check defaults) - WARNs: 408 ERRORs: 0 
 ============================
