@@ -19,6 +19,9 @@ in seed TheCore Lite, keys =F
 [ERROR]: ActivateIbikisCannon/PlanetaryFortress not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: AdvancedConstructionAuto/SCV not related to a conflict
+in seed TheCore Lite, keys =6
+
 [ERROR]: Aggressive/LurkerMPBurrowed not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -140,7 +143,7 @@ in seed TheCore Lite, keys =6
 in seed TheCore Lite, keys =F
 
 [ERROR]: DehakaNydusDestroyerTimedNoFoodBeam/DehakaNydusDestroyerTimedNoFood not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,Space
 
 [ERROR]: DehakaRavasaurMerge/DehakaZerglingLevel2 not related to a conflict
 in seed TheCore Lite, keys =F
@@ -710,19 +713,34 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =
 
 [ERROR]: SIArmory/SISCV not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =E
 
 [ERROR]: SIBanshee/SIStarport not related to a conflict
 in seed TheCore Lite, keys =C
 
 [ERROR]: SIBarracks/SISCV not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
+
+[ERROR]: SICivilianStructure/SISCV not related to a conflict
+in seed TheCore Lite, keys =G
 
 [ERROR]: SIClusterRockets/StukovApocalisk not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: SICommandCenter/SISCV not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: SIDiamondBack/SIFactory not related to a conflict
 in seed TheCore Lite, keys =E
+
+[ERROR]: SIEngineeringBay/SISCV not related to a conflict
+in seed TheCore Lite, keys =CapsLock
+
+[ERROR]: SIFactory/SISCV not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: SIInfestedBunker/SISCV not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: SIInfestedBunkerRoot/SIInfestedBunkerUprooted not related to a conflict
 in seed TheCore Lite, keys =F
@@ -745,11 +763,17 @@ in seed TheCore Lite, keys =Space
 [ERROR]: SILiberator/SIStarport not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: SIMissileTurret/SISCV not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: SIQueen not related to a conflict
 in seed TheCore Lite, keys =D
 
 [ERROR]: SIQueenFungalGrowth/SIQueen not related to a conflict
 in seed TheCore Lite, keys =E
+
+[ERROR]: SIRefinery/SISCV not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: SIRoot/SIBarracksFlying not related to a conflict
 in seed TheCore Lite, keys =F
@@ -773,7 +797,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =D
 
 [ERROR]: SIStarport/SISCV not related to a conflict
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =R
 
 [ERROR]: SITechLabBarracks/SIBarracks not related to a conflict
 in seed TheCore Lite, keys =CapsLock
@@ -1309,7 +1333,7 @@ in seed TheCore Lite, keys =CapsLock
 
 [WARN]: PsiDisruptor/SCV not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =I
+in seed TheCore Lite, keys =4
 
 [WARN]: PsiStorm/AnAleemController not related to a conflict
 but is inherited
@@ -1573,5 +1597,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 306 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 314 WARNs: 145 
 ============================

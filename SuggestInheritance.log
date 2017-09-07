@@ -95,6 +95,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	GhostHoldFire/NovaCoop default: 
 	GhostHoldFire/NovaHero default: F
 	Halt default: T
+	HiveMindEmulator/SCV default: I
 	HutLoad/DataCore default: L
 	HutLoad/Hut default: L
 	HutLoad/InfestableHut default: L
@@ -112,6 +113,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ProbeHallucination/Nexus default:  copyof: ProbeHallucination/Sentry default: E
 	ProbeHallucination/Sentry default: E
 	ProbeHallucination/Voranor default:  copyof: ProbeHallucination/Sentry default: E
+	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
 	ResearchLocustLifetimeIncrease/InfestationPit default: L
 	RespawnZergling/Hatchery default: Z
 	RespawnZergling/Hive default: Z copyof: RespawnZergling/Hatchery default: Z
@@ -204,6 +206,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MedivacSpeedBoost/Medivac_BlackOps default: 
 
 [INFO]: TheCore Lite: 6   
+	AdvancedConstructionAuto/SCV default: 
 	CampaignVehicles default: A
 	CampaignVehicles/Factory default: A
 	CampaignVehicles/Starport default: A
@@ -372,8 +375,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchWhirlwind/TwilightCouncil default: D
 	RoboticsBay/Harvester default:  copyof: RoboticsBay/Probe default: B
 	RoboticsBay/Probe default: B
-	SIArmory/SISCV default: 
 	SIBanshee/SIStarport default: 
+	SIBarracks/SISCV default: 
 	SJHyperionFighters/SJHyperion default: W, T
 	SOAMothershipLineAttack/SOAMothershipv4 default: R
 	SS_LeviathanTentacleAttackL1NoDelay/SS_Plane default: C
@@ -464,9 +467,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	UseSpiderMine/Vulture default: 
 
 [INFO]: TheCore Lite: E,C   
-	SwarmHost/LocustNestBurrowed default: C
-	SwarmHost/SwarmHostBurrowedMP default: C
-	SwarmHost/SwarmHostMP default: C
 	TimeWarp/Nexus default: C
 	TossGrenadeTychus/TychusCommando default: T
 	VoidSwarmHostSpawnLocust/SwarmHostBurrowedMP default: C
@@ -582,7 +582,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchKaraxEnergyRegenUpgrade/SentryPurifier default: S
 	ResearchKaraxEnergyRegenUpgrade/ShieldBattery default: S
 	ResearchPersonalCloaking/GhostAcademy default: C
-	SIBarracks/SISCV default: 
+	SIEngineeringBay/SISCV default: 
 	SITechLabBarracks/SIBarracks default: 
 	SITechLabBarracks/SIBarracksFlying default: 
 	SITechLabFactory/SIFactory default: 
@@ -707,6 +707,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchVoidRaySpeedUpgrade/FleetBeacon default: F
 	RoboticsFacility/Harvester default:  copyof: RoboticsFacility/Probe default: R
 	RoboticsFacility/Probe default: R
+	SIFactory/SISCV default: 
 	SIQueen default: 
 	SISiegeTank/SIFactory default: 
 	SS_LeviathanTentacleAttackL1/SS_Plane default: D
@@ -766,7 +767,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaHydraliskToMutalisk/DehakaHydraliskLevel2 default: 
 	DehakaLeapStomp/DehakaCoop default: 
 	DehakaLearnPrimalWeaponsLevel1/DehakaHatchery default: 
-	DehakaNydusDestroyerTimedNoFoodBeam/DehakaNydusDestroyerTimedNoFood default: 
 	DehakaRoachGuardianMerge/DehakaRoachLevel2 default: 
 	DisableBuildingAttack/Baneling default: G
 	DisableBuildingAttack/HotSHunter default: G copyof: DisableBuildingAttack/Baneling default: G
@@ -892,7 +892,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchWarpGate/CyberneticsCore default: G
 	ResourceStun/Oracle default: E
 	ReturnCargo default: C
+	SIArmory/SISCV default: 
 	SIClusterRockets/StukovApocalisk default: 
+	SICommandCenter/SISCV default: 
 	SIDiamondBack/SIFactory default: 
 	SIQueenFungalGrowth/SIQueen default: 
 	SS_LeviathanTentacleAttackR1/SS_Plane default: S
@@ -903,6 +905,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ShieldBatteryStructureBarrier/ShieldBattery default: B
 	SlaynElementalGrabAOE/SlaynElemental default: E
 	SunkenColony/CreepColony default: E
+	SwarmHost/LocustNestBurrowed default: C
+	SwarmHost/SwarmHostBurrowedMP default: C
+	SwarmHost/SwarmHostMP default: C
 	TemporalField/Mothership default: T, C copyof: TemporalField/MothershipCore default: T, C
 	TemporalField/MothershipCore default: T, C
 	TerranVehicleWeaponsLevel1/Armory default: E
@@ -994,6 +999,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CausticSpray/Corruptor default: C
 	CorsairMPDisruptionWeb/CorsairMP default: D
 	DehakaGuardianMineCharge/DehakaGuardian default: 
+	DehakaNydusDestroyerTimedNoFoodBeam/DehakaNydusDestroyerTimedNoFood default: 
 	DehakaTyrannozorFanOfKnives/DehakaUltraliskLevel3 default: 
 	DevastatingShot/InfestedStukov default: Q
 	Drag/Dehaka default: Q
@@ -1192,6 +1198,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
 	SIInfestedBunkerRoot/SIInfestedBunkerUprooted default: 
 	SIInfestedBunkerUproot/SIInfestedBunker default: 
+	SIRefinery/SISCV default: 
 	SIRoot/SIBarracksFlying default: 
 	SIRoot/SICivilianStructureFlying default: 
 	SIRoot/SICommandCenterFlying default: 
@@ -1260,6 +1267,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Arbiter/StargateWarp default: A
 	Archon/VoidRiftUnselectable default: N
 	Battlecruiser/Starport default: B
+	BuildKelMorianRocketTurret/KelMorianWorker default: G
+	BuildKelMorianRocketTurret/SCV default: G
 	Carrier/Stargate default: C
 	Carrier/StargateWarp default: C copyof: Carrier/Stargate default: C
 	Colossus/SuperWarpGate default: C
@@ -1297,6 +1306,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchLocustNest/EvolutionChamber default: 
 	ResearchReaverIncreasedScarabCount/RoboticsBay default: C
 	ResearchSlicingGlave/DehakaMurvarStructure default: 
+	SICivilianStructure/SISCV default: 
 	SS_LeviathanTentacleAttackR2/SS_Plane default: A
 	StalkerHallucination/Nexus default:  copyof: StalkerHallucination/Sentry default: S
 	StalkerHallucination/Sentry default: S
@@ -1327,13 +1337,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: I   
 	ColonyInfestation/Overlord default: I
-	HiveMindEmulator/SCV default: I
 	Immortal/Epilogue02VoidRift default: I
 	Immortal/SuperWarpGate default: I
 	Immortal/VoidRift default: I
 	Immortal/VoidThrasher default: I
 	Immortal/VoidThrasherWalker default: I
-	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
 	SS_CarrierSpawnInterceptor/SS_Plane default: I
 
 [INFO]: TheCore Lite: J   
@@ -1515,7 +1523,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Roach/VoidRift default: R
 	Roach/VoidRiftUnselectable default: R
 	RoachWarren/Drone default: R
+	SIInfestedBunker/SISCV default: 
 	SILiberator/SIStarport default: 
+	SIStarport/SISCV default: 
 	SJHyperionLightningStorm/SJHyperion default: R
 	SS_LeviathanTentacleAttackR1NoDelay/SS_Plane default: X
 	Salvage/Bunker default: V
@@ -1768,6 +1778,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIInfestedCivilian/SICivilianStructure default: 
 	SIInfestedCivilian/SICivilianStructureFlying default: 
 	SIInfestedMarine/SIBarracks default: 
+	SIMissileTurret/SISCV default: 
 	SISCV default: 
 	SOAMothershipBlink/SOAMothershipv4 default: B copyof: Blink/Stalker default: B
 	SS_FighterBomb/SS_Plane default: B
@@ -1928,8 +1939,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCreepTumor/Hive default: C
 	BuildCreepTumor/Lair default: C
 	BuildCyclone/Factory default: N
-	BuildKelMorianRocketTurret/KelMorianWorker default: G
-	BuildKelMorianRocketTurret/SCV default: G
 	Corruptor/Larva default: C
 	DehakaLearnPrimalArmorLevel1/DehakaHatchery default: 
 	DisruptorHallucination/Sentry default: D
@@ -1965,7 +1974,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchStructureBarrier/Forge default: B
 	ResearchStukovInfestedBansheeInfestedLife/SIStarportTechLab default: 
 	RetributionField/Meliak default: V
-	SIStarport/SISCV default: 
 	SS_LeviathanTentacleAttackL2NoDelay/SS_Plane default: V
 	Stop default: S
 	StopBunker/Bunker default: S

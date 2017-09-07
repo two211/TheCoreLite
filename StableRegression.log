@@ -12,6 +12,7 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'R' used in place of 'CapsLock' for command 'RoachWarren/Drone', in seed 'TheCore Lite'
 [WARN]: 'E,CapsLock' used in place of 'E,Space' for command 'SpawnChangeling/Overseer', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'F' for command 'SpineCrawler/Drone', in seed 'TheCore Lite'
+[WARN]: 'E' used in place of 'E,C' for command 'SwarmHost/SwarmHostMP', in seed 'TheCore Lite'
 [WARN]: 'Space' used in place of 'Space,F' for command 'TerranBuild/SCV', in seed 'TheCore Lite'
 [WARN]: 'G' used in place of 'V' for command 'Ultralisk/Larva', in seed 'TheCore Lite'
 [WARN]: 'F' used in place of 'G' for command 'WarpInAdept/Gateway', in seed 'TheCore Lite'
@@ -19,5 +20,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'Space' used in place of 'Space,F' for command 'ZergBuild/Drone', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 16 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 0 WARNs: 17 INFOs: 1 
 ============================

@@ -11,6 +11,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default AbathurDeepTunnel/SwarmHostSplitBBurrowed
 [WARN]: no default AbathurDeepTunnel/SwarmHostSplitBRooted
 [WARN]: no default ActivateIbikisCannon/PlanetaryFortress
+[WARN]: no default AdvancedConstructionAuto/SCV
 [WARN]: no default Aggressive/LurkerMPBurrowed
 [WARN]: no default AlarakDeadlyCharge/AlarakCoop
 [WARN]: no default AlarakMothershipMassTeleport/SOAMothershipv4
@@ -303,8 +304,13 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SIArmory/SISCV
 [WARN]: no default SIBanshee/SIStarport
 [WARN]: no default SIBarracks/SISCV
+[WARN]: no default SICivilianStructure/SISCV
 [WARN]: no default SIClusterRockets/StukovApocalisk
+[WARN]: no default SICommandCenter/SISCV
 [WARN]: no default SIDiamondBack/SIFactory
+[WARN]: no default SIEngineeringBay/SISCV
+[WARN]: no default SIFactory/SISCV
+[WARN]: no default SIInfestedBunker/SISCV
 [WARN]: no default SIInfestedBunkerRoot/SIInfestedBunkerUprooted
 [WARN]: no default SIInfestedBunkerSpawnInfestedMarine/SIInfestedBunker
 [WARN]: no default SIInfestedBunkerUproot/SIInfestedBunker
@@ -312,8 +318,10 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SIInfestedCivilian/SICivilianStructureFlying
 [WARN]: no default SIInfestedMarine/SIBarracks
 [WARN]: no default SILiberator/SIStarport
+[WARN]: no default SIMissileTurret/SISCV
 [WARN]: no default SIQueen
 [WARN]: no default SIQueenFungalGrowth/SIQueen
+[WARN]: no default SIRefinery/SISCV
 [WARN]: no default SIRoot/SIBarracksFlying
 [WARN]: no default SIRoot/SICivilianStructureFlying
 [WARN]: no default SIRoot/SICommandCenterFlying
@@ -402,13 +410,6 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
-[WARN]: no default SICivilianStructure/SISCV
-[WARN]: no default SICommandCenter/SISCV
-[WARN]: no default SIEngineeringBay/SISCV
-[WARN]: no default SIFactory/SISCV
-[WARN]: no default SIInfestedBunker/SISCV
-[WARN]: no default SIMissileTurret/SISCV
-[WARN]: no default SIRefinery/SISCV
 ----------------------------
-Finished (Check defaults) - WARNs: 408 ERRORs: 0 
+Finished (Check defaults) - WARNs: 409 ERRORs: 0 
 ============================
