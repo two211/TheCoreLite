@@ -1958,6 +1958,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Queen default: Q
 	QueenCoop default: Q copyof: Queen default: Q
 	ResearchArmorPiercingRockets/FactoryTechLab default: 
+	ResearchCycloneRapidFireLaunchers/FactoryTechLab default: 
 	ResearchDehakaImpalerTenderize/DehakaGlevigStructure default: 
 	ResearchDisruptorSecondExplosion/RoboticsBay default: 
 	ResearchDurableMaterials/StarportTechLab default: D

@@ -410,6 +410,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WormholeTransit/Predator
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
+[WARN]: no default ResearchCycloneRapidFireLaunchers/FactoryTechLab
 ----------------------------
-Finished (Check defaults) - WARNs: 409 ERRORs: 0 
+Finished (Check defaults) - WARNs: 410 ERRORs: 0 
 ============================

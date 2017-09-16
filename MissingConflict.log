@@ -943,6 +943,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: ResearchCycloneRapidFireLaunchers/FactoryTechLab not related to a conflict
+in seed TheCore Lite, keys =V
+
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
 in seed TheCore Lite, keys =C
@@ -1597,5 +1600,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 314 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 315 WARNs: 145 
 ============================

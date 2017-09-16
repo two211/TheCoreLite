@@ -1343,6 +1343,7 @@ ResearchCharge/TwilightCouncil=S
 ResearchCharonBooster/FactoryTechLab=
 ResearchCycloneLockOnDamageUpgrade/FactoryTechLab=C
 ResearchCycloneLockOnDamageUpgrade/FactoryTechReactor=C
+ResearchCycloneRapidFireLaunchers/FactoryTechLab=V
 ResearchDarkArchonFullStartingEnergy/DarkShrine=Backspace
 ResearchDarkArchonMindControl/DarkShrine=F
 ResearchDarkTemplarBlink/DarkShrine=G
