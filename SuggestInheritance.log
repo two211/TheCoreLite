@@ -645,6 +645,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AttackChampions default:  copyof: Attack default: A
 	BuildDrakkenLaserDrill/KelMorianWorker default: D
 	BunkerAttack/InfestedBunker default: A
+	DehakaBarracks/DehakaDrone default: 
 	DehakaZergling/DehakaBarracks default: 
 	Designate/TestShop default: D
 	DrakkenLaserDrillBFG/DrakkenLaserDrillCoop default: Q
@@ -764,6 +765,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DarkArchonMindControl/DarkArchon default: R
 	DefilerMPPlague/DefilerMP default: G
 	DehakaGlevigRoachFireBreath/DehakaGlevigStructure default: 
+	DehakaHatchery/DehakaDrone default: 
 	DehakaHydraliskToMutalisk/DehakaHydraliskLevel2 default: 
 	DehakaLeapStomp/DehakaCoop default: 
 	DehakaLearnPrimalWeaponsLevel1/DehakaHatchery default: 
@@ -1086,6 +1088,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaDeepTunnel/DehakaCoop default: 
 	DehakaHydraliskImpalerMerge/DehakaHydraliskLevel2 default: 
 	DehakaMurvarCreeperAir/DehakaMurvarStructure default: 
+	DehakaMurvarStructure/DehakaDrone default: 
 	DehakaRavasaurMerge/DehakaZerglingLevel2 default: 
 	DehakaRoachLevel2Merge/DehakaRoachLevel2 default: 
 	DehakaSwarmHost/DehakaBarracks default: 
@@ -1274,6 +1277,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Colossus/SuperWarpGate default: C
 	DarkArchon/Gateway default: A
 	DarkArchon/WarpGate default: A
+	DehakaDakrunStructure/DehakaDrone default: 
 	DehakaUltralisk/DehakaBarracks default: 
 	EvolveBileLauncherBombardmentCooldown/SpawningPool default: D
 	EvolveGuardianAttackRangeIncrease/GreaterSpire default: E
@@ -1420,6 +1424,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CyberneticsCore/Probe default: Y
 	CycloneResearchLockOnDamageUpgrade/FactoryTechLab default: R
 	DarkPylonRecall/DarkPylon default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
+	DehakaGlevigStructure/DehakaDrone default: 
 	DehakaRoach/DehakaBarracks default: 
 	DehakaRoachMoveSpeed/DehakaGlevigStructure default: 
 	EvolveAnabolicSynthesis2/UltraliskCavern default: A
@@ -1627,8 +1632,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DefensiveMatrixTarget/NovaDefensiveMatrixDrone default: 
 	DefensiveMatrixTarget/ScienceVessel default: D
 	DefilerMPConsume/DefilerMP default: C
+	DehakaBuild/DehakaDrone default: 
 	DehakaDrone/DehakaHatchery default: 
 	DehakaIntimidatingRoar/DehakaCoop default: 
+	DehakaNydusDestroyer/DehakaDrone default: 
 	DehakaUltraliskCrashingCharge/DehakaUltraliskLevel2 default: 
 	Drone/Larva default: D
 	EnableBuildingAttack/Baneling default: F

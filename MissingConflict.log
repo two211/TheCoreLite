@@ -94,8 +94,17 @@ in seed TheCore Lite, keys =5
 [ERROR]: DehakaArmorUpgrade/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =CapsLock
 
+[ERROR]: DehakaBarracks/DehakaDrone not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: DehakaBuild/DehakaDrone not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: DehakaConsume/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =C
+
+[ERROR]: DehakaDakrunStructure/DehakaDrone not related to a conflict
+in seed TheCore Lite, keys =G
 
 [ERROR]: DehakaDeepTunnel/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =F
@@ -109,8 +118,14 @@ in seed TheCore Lite, keys =Space
 [ERROR]: DehakaGlevigRoachFireBreath/DehakaGlevigStructure not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: DehakaGlevigStructure/DehakaDrone not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: DehakaGuardianMineCharge/DehakaGuardian not related to a conflict
 in seed TheCore Lite, keys =E,Space
+
+[ERROR]: DehakaHatchery/DehakaDrone not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: DehakaHydralisk/DehakaBarracks not related to a conflict
 in seed TheCore Lite, keys =C
@@ -141,6 +156,12 @@ in seed TheCore Lite, keys =6
 
 [ERROR]: DehakaMurvarCreeperAir/DehakaMurvarStructure not related to a conflict
 in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaMurvarStructure/DehakaDrone not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: DehakaNydusDestroyer/DehakaDrone not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: DehakaNydusDestroyerTimedNoFoodBeam/DehakaNydusDestroyerTimedNoFood not related to a conflict
 in seed TheCore Lite, keys =E,Space
@@ -519,6 +540,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: ResearchCharonBooster/FactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchCycloneRapidFireLaunchers/FactoryTechLab not related to a conflict
+in seed TheCore Lite, keys =V
 
 [ERROR]: ResearchDarkTemplarBlink/DarkShrine not related to a conflict
 in seed TheCore Lite, keys =T
@@ -942,9 +966,6 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
-
-[ERROR]: ResearchCycloneRapidFireLaunchers/FactoryTechLab not related to a conflict
-in seed TheCore Lite, keys =V
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
@@ -1600,5 +1621,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 315 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 322 WARNs: 145 
 ============================
