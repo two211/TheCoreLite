@@ -6,7 +6,7 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'V' used in place of 'G' for command 'Corruptor/Larva', in seed 'TheCore Lite'
 [WARN]: 'T' used in place of 'F' for command 'DarkShrine/Probe', in seed 'TheCore Lite'
 [WARN]: 'T' used in place of 'F' for command 'DarkTemplar', in seed 'TheCore Lite'
-[WARN]: 'CapsLock' used in place of 'E' for command 'EvolutionChamber/Drone', in seed 'TheCore Lite'
+[WARN]: '4' used in place of 'E' for command 'EvolutionChamber/Drone', in seed 'TheCore Lite'
 [WARN]: 'F' used in place of 'R' for command 'Extractor/Drone', in seed 'TheCore Lite'
 [WARN]: 'E' used in place of 'C' for command 'Hatchery/Drone', in seed 'TheCore Lite'
 [WARN]: 'R' used in place of 'CapsLock' for command 'RoachWarren/Drone', in seed 'TheCore Lite'
