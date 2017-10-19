@@ -1,8 +1,8 @@
-The Core Lite v2.2
+The Core Lite v2.3
 ==================
 
 ### Table of Contents
-* [The Core Lite v2.2](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
+* [The Core Lite v2.3](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
   * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
   * [TheCore Lite features](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-features)
   * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
@@ -172,7 +172,7 @@ Basic buildings:
 * E = Command center / Nexus / Hatchery
 * F = Refinery / Assimilator / Extractor
 * D = Supply Depot / Pylon
-* CapsLock = Engineering Bay / Forge / Evolution Chamber
+* 4 = Engineering Bay / Forge / Evolution Chamber
 * Space = Turret / Photo Cannon / Spore Crawler (RapidFire air defence)
 * C = Barrack / Gateway / Spine Crawler
 
@@ -180,7 +180,7 @@ Advanced buildings:
 * D = Factory / Robo
 * R = Starport / Stargate / Spire
 * G = Fusion core / Fleet Beacon / Ultralisk Cavern
-* ~~E = Armory (same as Engineering Bay / Forge / Evolution Chamber)~~
+* E = Armory ~~(same as Engineering Bay / Forge / Evolution Chamber)~~
 
 ### Bridge method
 
@@ -273,6 +273,8 @@ For this there are several option:
 The 2 last save you APMs if some others unit/building need action
 
 #### High Templar group example
+
+(experimental, fun fact)
 
 Case study assuming HTs in a group following some ranged units not to run into enemies.
 
