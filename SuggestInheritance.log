@@ -74,6 +74,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BiodomeLoad/BiodomeHalfBuilt default: L
 	BiodomeLoad/InfestableBiodome default: L
 	DehakaLearnAbilities/DehakaCoop default: 
+	EngineeringBay/SCV default: E
+	EvolutionChamber/Drone default: V
 	EvolveBurrowCharge/Hatchery default: 
 	EvolveBurrowCharge/UltraliskCavern default: B
 	EvolveToBrutalisk/DefilerMP default: B
@@ -89,13 +91,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveToBrutalisk/SwarmHostBurrowed default: B
 	EvolveViperImprovedCastRange/InfestationPit default: R
 	EvolveViperImprovedCastRange/Viper default: R
+	Forge/Harvester default:  copyof: Forge/Probe default: F
+	Forge/Probe default: F
 	GenerateCreep/Overlord default: G
 	GhostHoldFire/Ghost default: F
 	GhostHoldFire/GhostVulture default: F
 	GhostHoldFire/NovaCoop default: 
 	GhostHoldFire/NovaHero default: F
 	Halt default: T
-	HiveMindEmulator/SCV default: I
 	HutLoad/DataCore default: L
 	HutLoad/Hut default: L
 	HutLoad/InfestableHut default: L
@@ -113,7 +116,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ProbeHallucination/Nexus default:  copyof: ProbeHallucination/Sentry default: E
 	ProbeHallucination/Sentry default: E
 	ProbeHallucination/Voranor default:  copyof: ProbeHallucination/Sentry default: E
-	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
 	ResearchLocustLifetimeIncrease/InfestationPit default: L
 	RespawnZergling/Hatchery default: Z
 	RespawnZergling/Hive default: Z copyof: RespawnZergling/Hatchery default: Z
@@ -161,6 +163,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HeroNukeCalldown/Nova default: N, R copyof: NukeCalldown/Ghost default: N
 	HeroNukeCalldown/NovaHero default: N, R
 	HeroNukeCalldown/Tosh default: N, R copyof: NukeCalldown/Ghost default: N
+	HiveMindEmulator/SCV default: I
 	IgniteAfterburners/Banshee default: B
 	IgniteAfterburners/Battlecruiser default: B
 	IgniteAfterburners/Liberator default: B
@@ -184,6 +187,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	OdinNukeCalldown/Odin default: N copyof: NukeCalldown/Ghost default: N
 	OracleHallucination/Sentry default: L
 	PrimalRoach/PrimalTownHallUprooted default: R
+	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
 	QueenBurstHeal/BroodMother default: T
 	QueenBurstHeal/Queen default: T
 	SelectBuilder default: Q
@@ -524,8 +528,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CommandCenterUnloadAll default: D
 	DehakaArmorUpgrade/DehakaCoop default: 
 	DehakaHeal/Dehaka default: E
-	EngineeringBay/SCV default: E
-	EvolutionChamber/Drone default: V
 	EvolveTunnelingClaws/GreaterRoachWarren default: T
 	EvolveTunnelingClaws/RoachWarren default: T
 	Explode/Baneling default: X
@@ -537,8 +539,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Explode/baneling default:  copyof: Explode/Baneling default: X
 	Explode/baneling2 default:  copyof: Explode/Baneling default: X
 	ExplodeVolatileInfested/SIVolatileInfested default: 
-	Forge/Harvester default:  copyof: Forge/Probe default: F
-	Forge/Probe default: F
 	GravitonCatapult/Carrier default: G
 	Hallucination/Sentry default: C
 	Hallucination/Sentry2 default:  copyof: Hallucination/Sentry default: C
@@ -1299,6 +1299,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MoveHoldPosition default: H
 	Oracle/SuperWarpGate default: E
 	Oracle/VoidRift default: E
+	PerditionTurret/SCV default: P
 	PrimalFlyer/PrimalTownHallUprooted default: F
 	Research330mmBarrageCannon/FactoryTechLab default: C
 	Research330mmBarrageCannon/FactoryTechReactor default: C
@@ -1395,7 +1396,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: P   
 	EvolvePeristalsis/InfestationPit default: P
 	HireKelmorianMiners/Barracks default: P
-	PerditionTurret/SCV default: P
 	TerranShipPlatingLevel2/Armory default: P
 	TerranShipPlatingLevel3/Armory default: P
 

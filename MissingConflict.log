@@ -1138,7 +1138,7 @@ in seed TheCore Lite, keys =E,C,R
 
 [WARN]: Forge/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [WARN]: Frostbat/Barracks not related to a conflict
 but is inherited
@@ -1357,7 +1357,7 @@ in seed TheCore Lite, keys =CapsLock
 
 [WARN]: PsiDisruptor/SCV not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =5
 
 [WARN]: PsiStorm/AnAleemController not related to a conflict
 but is inherited
