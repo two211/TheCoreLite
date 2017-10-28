@@ -55,7 +55,6 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default DefensiveMatrixTarget/NovaDefensiveMatrixDrone
 [WARN]: no default DehakaAirAttack/DehakaCoop
 [WARN]: no default DehakaAirAttackUpgrade/DehakaCoop
-[WARN]: no default DehakaArmorUpgrade/DehakaCoop
 [WARN]: no default DehakaBarracks/DehakaDrone
 [WARN]: no default DehakaBuild/DehakaDrone
 [WARN]: no default DehakaConsume/DehakaCoop
@@ -216,6 +215,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default PlaceWard/Oracle
 [WARN]: no default Plague/Infestor
 [WARN]: no default PointDefenseDrone/Raven_BlackOps
+[WARN]: no default PrimalBuildingRoot/DehakaBarracksUprooted
+[WARN]: no default PrimalBuildingRoot/DehakaHatcheryUprooted
 [WARN]: no default PrimalBuildingUproot/DehakaBarracks
 [WARN]: no default PrimalBuildingUproot/DehakaHatchery
 [WARN]: no default PrimalConsume/Infestor
@@ -403,6 +404,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default VoidRayHallucination/Nexus
 [WARN]: no default VoidRayHallucination/Voranor
 [WARN]: no default VoidSentryMobileMode/SentryFenix
+[WARN]: no default VoidSwarmHostSpawnLocust/SwarmHostMP
 [WARN]: no default VoodooShield/Immortal
 [WARN]: no default WarpInCorsair/Stargate
 [WARN]: no default WarpInReaver/RoboticsFacility
@@ -419,5 +421,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 417 ERRORs: 0 
+Finished (Check defaults) - WARNs: 419 ERRORs: 0 
 ============================

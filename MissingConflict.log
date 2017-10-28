@@ -5,7 +5,7 @@ Start commands with no attached conflict (log file: MissingConflict.log)
 in seed TheCore Lite, keys =Space
 
 [ERROR]: ACAlarakTransportMode/WarpPrismTaldarim not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =4
 
 [ERROR]: AbathurDeepTunnel/SwarmHostSplitB not related to a conflict
 in seed TheCore Lite, keys =F
@@ -35,7 +35,7 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =Space
 
 [ERROR]: ApolloCloakOnNova/NovaHero not related to a conflict
-in seed TheCore Lite, keys =CapsLock,F
+in seed TheCore Lite, keys =F
 
 [ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,4
@@ -53,10 +53,10 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =F
 
 [ERROR]: BuildSITechLabFactory/SIFactoryFlying not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [ERROR]: BuildSITechLabStarport/SIStarportFlying not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [ERROR]: BuildScarab/Reaver not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -90,9 +90,6 @@ in seed TheCore Lite, keys =5
 
 [ERROR]: DehakaAirAttackUpgrade/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =5
-
-[ERROR]: DehakaArmorUpgrade/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =CapsLock
 
 [ERROR]: DehakaBarracks/DehakaDrone not related to a conflict
 in seed TheCore Lite, keys =D
@@ -146,10 +143,10 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =4
 
 [ERROR]: DehakaLearnPrimalArmorLevel1/DehakaHatchery not related to a conflict
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =R
 
 [ERROR]: DehakaLearnPrimalWeaponsLevel1/DehakaHatchery not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =D
 
 [ERROR]: DehakaMendingAura/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =6
@@ -203,7 +200,7 @@ in seed TheCore Lite, keys =F
 in seed TheCore Lite, keys =D
 
 [ERROR]: DeploySpiderMines/SiegeTank_BlackOps not related to a conflict
-in seed TheCore Lite, keys =C,CapsLock
+in seed TheCore Lite, keys =C,F
 
 [ERROR]: Detonate/SpiderMine not related to a conflict
 in seed TheCore Lite, keys =
@@ -260,10 +257,10 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =D
 
 [ERROR]: ExplodeVolatileInfested/SIVolatileInfested not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [ERROR]: FenixArbiterCloakField/FenixArbiter not related to a conflict
-in seed TheCore Lite, keys =F,CapsLock
+in seed TheCore Lite, keys =F
 
 [ERROR]: FenixArbiterStasisField/FenixArbiter not related to a conflict
 in seed TheCore Lite, keys =C
@@ -317,10 +314,10 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =E,Space
 
 [ERROR]: FungalGrowth/InfestorBurrowed not related to a conflict
-in seed TheCore Lite, keys =E,F
+in seed TheCore Lite, keys =E
 
 [ERROR]: GhostHoldFire/NovaCoop not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =Y
 
 [ERROR]: Glare/Oracle not related to a conflict
 in seed TheCore Lite, keys =
@@ -365,13 +362,13 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =
 
 [ERROR]: InstantHunterSeekerMissile/Raven_BlackOps not related to a conflict
-in seed TheCore Lite, keys =CapsLock,C
+in seed TheCore Lite, keys =C,F
 
 [ERROR]: LaunchNullWard/NullSphere not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: LearnDehakaArmorUpgrade/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [ERROR]: LearnDehakaConsume/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =C
@@ -410,7 +407,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =
 
 [ERROR]: MedicHeal/Medivac_BlackOps not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [ERROR]: MedivacSpeedBoost/Medivac_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,5
@@ -479,7 +476,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =
 
 [ERROR]: PhasingMode/WarpPrismTaldarim not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =Space,F
 
 [ERROR]: PlaceWard/Oracle not related to a conflict
 in seed TheCore Lite, keys =
@@ -490,11 +487,17 @@ in seed TheCore Lite, keys =
 [ERROR]: PointDefenseDrone/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =E,R
 
+[ERROR]: PrimalBuildingRoot/DehakaBarracksUprooted not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: PrimalBuildingRoot/DehakaHatcheryUprooted not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: PrimalBuildingUproot/DehakaBarracks not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [ERROR]: PrimalBuildingUproot/DehakaHatchery not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [ERROR]: PrimalConsume/Infestor not related to a conflict
 in seed TheCore Lite, keys =
@@ -506,7 +509,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =Space
 
 [ERROR]: QueenClassicParasite/SIQueen not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [ERROR]: QueenMPSpawnBroodlings/SIQueen not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -521,7 +524,7 @@ in seed TheCore Lite, keys =Space,4
 in seed TheCore Lite, keys =E
 
 [ERROR]: RavenShredderMissile/Raven not related to a conflict
-in seed TheCore Lite, keys =C,CapsLock
+in seed TheCore Lite, keys =C,R
 
 [ERROR]: Recall/Arbiter not related to a conflict
 in seed TheCore Lite, keys =
@@ -587,7 +590,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =G
 
 [ERROR]: ResearchDisruptorCloak/RoboticsBay not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [ERROR]: ResearchDisruptorSecondExplosion/RoboticsBay not related to a conflict
 in seed TheCore Lite, keys =V
@@ -740,7 +743,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =E
 
 [ERROR]: SIBanshee/SIStarport not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =V
 
 [ERROR]: SIBarracks/SISCV not related to a conflict
 in seed TheCore Lite, keys =C
@@ -758,7 +761,7 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =E
 
 [ERROR]: SIEngineeringBay/SISCV not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIFactory/SISCV not related to a conflict
 in seed TheCore Lite, keys =D
@@ -800,19 +803,19 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =F
 
 [ERROR]: SIRoot/SIBarracksFlying not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIRoot/SICivilianStructureFlying not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIRoot/SICommandCenterFlying not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIRoot/SIMissileTurretFlying not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIRoot/SIStarportFlying not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SISCV not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -824,46 +827,46 @@ in seed TheCore Lite, keys =D
 in seed TheCore Lite, keys =R
 
 [ERROR]: SITechLabBarracks/SIBarracks not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [ERROR]: SITechLabBarracks/SIBarracksFlying not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [ERROR]: SITechLabFactory/SIFactory not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [ERROR]: SITechLabStarport/SIStarport not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =C
 
 [ERROR]: SIUproot/SIBarracks not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIUproot/SICivilianStructure not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIUproot/SICommandCenter not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIUproot/SIFactory not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIUproot/SIMissileTurret not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIUproot/SIStarport not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SJHyperionBlink/Battlecruiser not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [ERROR]: Salvage/NovaACLaserTurret not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [ERROR]: Salvage/SIMissileTurret not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [ERROR]: Salvage/SIMissileTurretFlying not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [ERROR]: ShapedBlast/SiegeBreakerSieged not related to a conflict
 in seed TheCore Lite, keys =
@@ -911,7 +914,7 @@ in seed TheCore Lite, keys =E,Space
 in seed TheCore Lite, keys =Space
 
 [ERROR]: TerranBuildAdvanced/SISCV not related to a conflict
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =E
 
 [ERROR]: TerranInfantryArmorLevel1/SIEngineeringBay not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -920,7 +923,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =
 
 [ERROR]: TransportMode/WarpPrismTaldarim not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =4
 
 [ERROR]: UpgradeLIDARTransmitter/EngineeringBay not related to a conflict
 in seed TheCore Lite, keys =
@@ -929,10 +932,13 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =
 
 [ERROR]: UseSpiderMine/Vulture not related to a conflict
-in seed TheCore Lite, keys =C,CapsLock
+in seed TheCore Lite, keys =E,Space
 
 [ERROR]: VoidSentryMobileMode/SentryFenix not related to a conflict
 in seed TheCore Lite, keys =R
+
+[ERROR]: VoidSwarmHostSpawnLocust/SwarmHostMP not related to a conflict
+in seed TheCore Lite, keys =E,C
 
 [ERROR]: WarpInCorsair/Stargate not related to a conflict
 in seed TheCore Lite, keys =
@@ -974,15 +980,15 @@ in seed TheCore Lite, keys =C
 [WARN]: Apocalypse/K5Kerrigan not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [WARN]: ArchonHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [WARN]: ArchonHallucination/Voranor not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [WARN]: Assimilator/Harvester not related to a conflict
 but is inherited
@@ -1009,7 +1015,7 @@ in seed TheCore Lite, keys =F
 
 [WARN]: BuildCreepTumor/Queen2 not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =C,CapsLock
+in seed TheCore Lite, keys =C
 
 [WARN]: BuildScienceVessel/Starport not related to a conflict
 but is part of same check
@@ -1047,15 +1053,15 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: CancelCocoon not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Escape
+in seed TheCore Lite, keys =Escape,Grave
 
 [WARN]: CancelMutateMorph not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Escape
+in seed TheCore Lite, keys =Escape,Grave
 
 [WARN]: CancelUpgradeMorph not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Escape
+in seed TheCore Lite, keys =Escape,Grave
 
 [WARN]: Charge/Khraxus not related to a conflict
 but is inherited
@@ -1092,12 +1098,12 @@ in seed TheCore Lite, keys =T
 [WARN]: DisableBuildingAttack/baneling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: DisableBuildingAttack/baneling2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: EnableBuildingAttack/baneling not related to a conflict
 but is part of same check
@@ -1112,12 +1118,12 @@ in seed TheCore Lite, keys =Space
 [WARN]: Explode/baneling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [WARN]: Explode/baneling2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =4
 
 [WARN]: Feedback/AnAleemController not related to a conflict
 but is inherited
@@ -1134,7 +1140,7 @@ in seed TheCore Lite, keys =G
 [WARN]: ForceField2/Sentry2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E,C,R
+in seed TheCore Lite, keys =E,R
 
 [WARN]: Forge/Harvester not related to a conflict
 but is inherited
@@ -1147,7 +1153,7 @@ in seed TheCore Lite, keys =V
 [WARN]: FungalGrowth/Infestor2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =E,F
+in seed TheCore Lite, keys =E
 
 [WARN]: Gateway/Harvester not related to a conflict
 but is inherited
@@ -1161,16 +1167,16 @@ in seed TheCore Lite, keys =Space
 [WARN]: Hallucination/Sentry2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [WARN]: Hallucination2/Voranor not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [WARN]: Heal/Medivac2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [WARN]: HighTemplarHallucination/Nexus not related to a conflict
 but is inherited
@@ -1182,17 +1188,17 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: ImmortalHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =Y
 
 [WARN]: InfestedTerrans/Infestor2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock,4
+in seed TheCore Lite, keys =F,4
 
 [WARN]: K5DropPods/K5Kerrigan not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [WARN]: KhalaShockwave/Immortal not related to a conflict
 but is inherited
@@ -1262,12 +1268,12 @@ in seed TheCore Lite, keys =D
 [WARN]: MorphToSwarmHostSplitA/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =Y
 
 [WARN]: MorphToSwarmHostSplitB/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =Y
 
 [WARN]: MorphToSwarmling/Larva not related to a conflict
 but is part of same check
@@ -1332,7 +1338,7 @@ in seed TheCore Lite, keys =Space
 [WARN]: PrimalHeal/K5Kerrigan not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [WARN]: PrimalSlash/K5Kerrigan not related to a conflict
 but is part of same check
@@ -1353,7 +1359,7 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: ProtossBuildAdvanced/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =E
 
 [WARN]: PsiDisruptor/SCV not related to a conflict
 but is inherited
@@ -1453,7 +1459,7 @@ in seed TheCore Lite, keys =F
 [WARN]: SpawnBanelings/K5Kerrigan not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =CapsLock
+in seed TheCore Lite, keys =F
 
 [WARN]: StalkerHallucination/Nexus not related to a conflict
 but is inherited
@@ -1586,7 +1592,7 @@ in seed TheCore Lite, keys =E
 
 [WARN]: TwilightCouncil/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =F
 
 [WARN]: VoidRayHallucination/Nexus not related to a conflict
 but is inherited
@@ -1606,11 +1612,11 @@ in seed TheCore Lite, keys =F
 
 [WARN]: WarpPrismHallucination/Nexus not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =E
 
 [WARN]: WarpPrismHallucination/Voranor not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =E
 
 [WARN]: ZealotHallucination/Nexus not related to a conflict
 but is inherited
@@ -1621,5 +1627,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 322 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 324 WARNs: 145 
 ============================
