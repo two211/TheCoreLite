@@ -129,18 +129,17 @@ All Units:
 
 All workers:
 * Space = Basic building
-* F = Basic building
-* CapsLock = Advanced building
-* E = Return cargo
+* E = Advanced building
+* F = Return cargo
 * Y = Gather
 
 Transport/Bunker/CC
-* E/CapsLock = unload all
+* E/R = unload all
 * C = Load
 
 Terran:
 * Space/R = "transformers'" keys
-* F/CapsLock = cloak/decloak
+* F/4 = cloak/decloak
 * 4 = halt key
 * 4 = lift key
 * 4 = ignite after burner (coop)
@@ -152,7 +151,7 @@ Terran:
 
 Protoss:
 * Space = blink guardian shield feedback
-* F/CapsLock = oracle pulsar beam
+* F/4 = oracle pulsar beam
 * Space/R = warp prism (phase mode)
 * E = evolve building to warp
 * M = evolve back building to non-warp (intentionally out of compact keys)
@@ -174,7 +173,7 @@ Basic buildings:
 * D = Supply Depot / Pylon
 * 4 = Engineering Bay / Forge / Evolution Chamber
 * Space = Turret / Photo Cannon / Spore Crawler (RapidFire air defence)
-* C = Barrack / Gateway / Spine Crawler
+* C = Barracks / Gateway / Spine Crawler
 
 Advanced buildings:
 * D = Factory / Robo
@@ -187,6 +186,8 @@ Advanced buildings:
 Bridging method is used to try to facilitate learning.
 Research will tend to have the same key as unit production key,
 so as the building enabling the production of this unit.
+
+Feel free to report inconsistencies in the GitHub project's issues
 
 ## Unit Production
 
@@ -219,22 +220,23 @@ Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time p
 In this way all keys of the dense cards are useful for hatcheries, lairs and hives.
 Alls units are covered apart of:
 * Overlord (E, same key as Pneumatized Carapace)
-* Viper (CapsLock, same key as research burrow)
+* Viper (4, same key as research burrow)
 * Infestor (F, same key as Lair/Hive)
 * Corruptor (V, same key as Queen)
-* Swarm Host (4, key used in some other mode than Multiplayer)
+* Swarm Host (Y, very out of compact command card: feel free to change if you are Swarm Hosts heavy in your BOs)
 
 ## Rapid Fire and Precision keys
 
 ### RapidFire keys
 
 There are now far more Rapid Fire Hotkeys than in the first TheCore Lite release:
-Space, R, T, Y, D, F, G, H, CapsLock.
+Space, R, T, Y, D, F, G, H.
 All warp-inable units are bound to Rapid Fire keys.
 If you don't know what rapid fire keys are, please check out JaKaTaK's videos on Youtube.
-You can keep those key pressed and just move pointer on the target,
+You can keep those keys pressed and just move point on the target,
 as RapidFire key hold will select target with no click needed.
 After the target being selected the ability will be called again and you just have to point at the next target.
+This property is also known as "smart cast"
 
 source: [JaKaTaK's Rapid Fire Hotkeys thread](http://www.teamliquid.net/forum/sc2-strategy/446530-rapid-fire-hotkey-trick) on TeamLiquid.net
 
@@ -255,7 +257,7 @@ To build static air defence:
 "E" and "C" keep on being non Rapid Fire, because they are precision keys.
 They are used for precision spells/ability,
 and have been chosen because of ease of access.
-You can keep those key pressed and just click on the target.
+You can keep those keys pressed and just click on the target.
 After the click, the ability will be called again and you just have to click on the next target.
 
 **Note:** like legacy TheCore Lite, some spells have 2 alternates; one on "rapid fire" key, the other on "precision" key
@@ -411,7 +413,7 @@ Race specific:
   * Shift+Q+W helps getting Shift already pressed for queued commands
   * please read dedicated usecase "Telegraph inject" and "TheCore inject"
 
-## Utility group = Grave
+## Utility group = 1
 
 Group content:
 * wall supply depots
@@ -434,7 +436,7 @@ The 2 "macro" groups are positioned in the center to split the remaining groups 
 This facilitates the visual representation of existing groups.
 The 10 groups are displayed in this order (| figures the separation):
 ```
-`123|QW|ASZX
+123|QW|CapsLockASZX
 ```
 
 **Note:** the icon representing the group seems to be the best selectable unit at group creation.
@@ -710,19 +712,9 @@ Ctl+click acts as select all units of the same kind.
 
 Easy hatch eggs:
 * W selects hatcheries
-* select larvae and launch production:
-  * Space drones
-  * D zergling
-  * R roach
-  * C hydralisk
-  * T mutalisk
-  * G corruptor
-* units that needs select larvae with another key
-  * E overlord
-  * V viper
-  * F infestor
-  * CapsLock ultralisk
-  * 4 Swarm Host
+* select larvae and launch production: Space, D, R, C, T, G
+* some units need select larvae with another key
+  * [read more details here](https://github.com/bobo38/TheCoreLite#zerg-larvae)
 
 Overlord map control "W+Space+E+Right click on minimap":
 * W select hatchery
