@@ -505,6 +505,11 @@ It is the case of the Stalker group in [JaKaTaK's video on Protoss control group
 * Ctl+Alt+group# to append in a group without stealing from the main army
   * Use Shift+Alt+group# could be use to create/overwrite, but chains not as well
 
+There is a documented ["combined production group"](https://terrancraft.com/2016/02/24/terran-control-group-set-up/):
+it uses the recommended production group,
+with easy recallable for factory/robo and air.
+Z and X would be recommended for this usage, as they are easier to combine with Control+Alt.
+
 ## Easier cloning through Shift+Alt
 
 Shift+Alt+LeftClick acts as Shift+LeftClick when deselecting a unit from the selection.
