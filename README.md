@@ -70,7 +70,7 @@ Beside this README.md file,
 some graphic ressources are available in Image directory.
 Please download the following .pdf file:
 
-[TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Images/TheCore_Lite.pdf)
+[TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Reference/TheCore_Lite.pdf)
 
 Legacy ressources:
 * [historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
