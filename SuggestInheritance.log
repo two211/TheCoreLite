@@ -1709,6 +1709,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToOverseer/VoidRiftUnselectable default: V
 	MorphtoObserver/Observer default: T
 	MorphtoOverseerSiege/Overseer default: E
+	MutateintoLurkerDen/Drone default: 
 	Observer/RoboticsFacility default: B
 	Observer/RoboticsFacilityWarp default: B copyof: Observer/RoboticsFacility default: B
 	OmegaStorm/Kerrigan default: T
@@ -1880,7 +1881,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Mutalisk/VoidRiftUnselectable default: T
 	Mutalisk/VoidThrasher default: T
 	Mutalisk/VoidThrasherWalker default: T
-	MutateintoLurkerDen/Drone default: 
 	PrimalMutalisk/PrimalTownHall default: T
 	ResearchAbathurHiddenToxicNest/EvolutionPit default: T
 	ResearchDarkTemplarBlink/DarkShrine default: B

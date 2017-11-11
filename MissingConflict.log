@@ -428,7 +428,7 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =
 
 [ERROR]: MutateintoLurkerDen/Drone not related to a conflict
-in seed TheCore Lite, keys =T
+in seed TheCore Lite, keys =Space
 
 [ERROR]: MutatorWorkerSleep/SISCV not related to a conflict
 in seed TheCore Lite, keys =5
