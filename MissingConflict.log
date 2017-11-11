@@ -257,7 +257,7 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =D
 
 [ERROR]: ExplodeVolatileInfested/SIVolatileInfested not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =E
 
 [ERROR]: FenixArbiterCloakField/FenixArbiter not related to a conflict
 in seed TheCore Lite, keys =F
@@ -1098,32 +1098,32 @@ in seed TheCore Lite, keys =T
 [WARN]: DisableBuildingAttack/baneling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [WARN]: DisableBuildingAttack/baneling2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [WARN]: EnableBuildingAttack/baneling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =F
 
 [WARN]: EnableBuildingAttack/baneling2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =F
 
 [WARN]: Explode/baneling not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =E
 
 [WARN]: Explode/baneling2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =E
 
 [WARN]: Feedback/AnAleemController not related to a conflict
 but is inherited

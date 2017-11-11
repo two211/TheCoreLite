@@ -78,21 +78,19 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Brutalisk/Larva default: X
 	CloakOff default: D
 	DehakaLearnAbilities/DehakaCoop default: 
+	DisableBuildingAttack/Baneling default: G
+	DisableBuildingAttack/HotSHunter default: G copyof: DisableBuildingAttack/Baneling default: G
+	DisableBuildingAttack/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
+	DisableBuildingAttack/baneling default:  copyof: DisableBuildingAttack/Baneling default: G
+	DisableBuildingAttack/baneling2 default:  copyof: DisableBuildingAttack/Baneling default: G
+	DisableBuildingAttackScourge/Scourge default: G copyof: DisableBuildingAttack/Baneling default: G
+	DisableBuildingAttackSplitterling/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
 	EngineeringBay/SCV default: E
 	EvolutionChamber/Drone default: V
 	EvolveBurrowCharge/Hatchery default: 
 	EvolveBurrowCharge/UltraliskCavern default: B
 	EvolveTunnelingClaws/GreaterRoachWarren default: T
 	EvolveTunnelingClaws/RoachWarren default: T
-	Explode/Baneling default: X
-	Explode/BanelingBurrowed default: X
-	Explode/HotSHunter default: X copyof: Explode/Baneling default: X
-	Explode/HotSHunterBurrowed default: X copyof: Explode/BanelingBurrowed default: X
-	Explode/HotSSplitterlingBig default: X copyof: Explode/Baneling default: X
-	Explode/HotSSplitterlingBigBurrowed default: X copyof: Explode/BanelingBurrowed default: X
-	Explode/baneling default:  copyof: Explode/Baneling default: X
-	Explode/baneling2 default:  copyof: Explode/Baneling default: X
-	ExplodeVolatileInfested/SIVolatileInfested default: 
 	Forge/Harvester default:  copyof: Forge/Probe default: F
 	Forge/Probe default: F
 	GenerateCreep/Overlord default: G
@@ -749,6 +747,15 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveMuscularAugments/LurkerDenMP default: H
 	EvolveSIDiamondbackImprovedEnsnare/SIFactoryTechLab default: 
 	EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab default: 
+	Explode/Baneling default: X
+	Explode/BanelingBurrowed default: X
+	Explode/HotSHunter default: X copyof: Explode/Baneling default: X
+	Explode/HotSHunterBurrowed default: X copyof: Explode/BanelingBurrowed default: X
+	Explode/HotSSplitterlingBig default: X copyof: Explode/Baneling default: X
+	Explode/HotSSplitterlingBigBurrowed default: X copyof: Explode/BanelingBurrowed default: X
+	Explode/baneling default:  copyof: Explode/Baneling default: X
+	Explode/baneling2 default:  copyof: Explode/Baneling default: X
+	ExplodeVolatileInfested/SIVolatileInfested default: 
 	FaceEmbrace/Viper default: D
 	FenixClolarionBomberDummy/FenixClolarionCarrier default: 
 	FenixImmortalResearchDetonationShot/RoboticsBay default: 
@@ -1069,14 +1076,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaSwarmHost/DehakaBarracks default: 
 	DehakaSwarmHostMerge/DehakaSwarmHost default: 
 	DehakaUltraliskLevel2Merge/DehakaUltraliskLevel2 default: 
-	DisableBuildingAttack/Baneling default: G
-	DisableBuildingAttack/HotSHunter default: G copyof: DisableBuildingAttack/Baneling default: G
-	DisableBuildingAttack/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
-	DisableBuildingAttack/baneling default:  copyof: DisableBuildingAttack/Baneling default: G
-	DisableBuildingAttack/baneling2 default:  copyof: DisableBuildingAttack/Baneling default: G
-	DisableBuildingAttackScourge/Scourge default: G copyof: DisableBuildingAttack/Baneling default: G
-	DisableBuildingAttackSplitterling/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
+	EnableBuildingAttack/Baneling default: F
+	EnableBuildingAttack/HotSHunter default: F copyof: EnableBuildingAttack/Baneling default: F
+	EnableBuildingAttack/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
+	EnableBuildingAttack/baneling default:  copyof: EnableBuildingAttack/Baneling default: F
+	EnableBuildingAttack/baneling2 default:  copyof: EnableBuildingAttack/Baneling default: F
 	EnableBuildingAttackScourge/Scourge default: F
+	EnableBuildingAttackSplitterling/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
 	EvolveBanelingRupture/BanelingNest default: R
 	EvolveBileLauncherIncreasedRange/SpawningPool default: B
 	EvolveCorrosiveBileRadiusIncrease/RoachWarren default: C
@@ -1616,12 +1622,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaNydusDestroyer/DehakaDrone default: 
 	DehakaUltraliskCrashingCharge/DehakaUltraliskLevel2 default: 
 	Drone/Larva default: D
-	EnableBuildingAttack/Baneling default: F
-	EnableBuildingAttack/HotSHunter default: F copyof: EnableBuildingAttack/Baneling default: F
-	EnableBuildingAttack/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
-	EnableBuildingAttack/baneling default:  copyof: EnableBuildingAttack/Baneling default: F
-	EnableBuildingAttack/baneling2 default:  copyof: EnableBuildingAttack/Baneling default: F
-	EnableBuildingAttackSplitterling/HotSSplitterlingBig default: F copyof: EnableBuildingAttack/Baneling default: F
 	EvolveAdaptivePlating/GreaterRoachWarren default: D
 	EvolveAdaptivePlating/RoachWarren default: D
 	EvolveAncillaryCarapace/HydraliskDen default: C

@@ -42,9 +42,10 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'C' used in place of 'C,CapsLock' for command 'Colossus/RoboticsFacility', in seed 'TheCore Lite'
 [WARN]: 'F' used in place of 'CapsLock' for command 'CommandCenterUnloadAll', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'C,CapsLock' for command 'CorruptionAbility/Corruptor', in seed 'TheCore Lite'
-[WARN]: 'F' used in place of 'E' for command 'DisableBuildingAttack/Baneling', in seed 'TheCore Lite'
-[WARN]: '4' used in place of 'CapsLock' for command 'Explode/Baneling', in seed 'TheCore Lite'
-[WARN]: '4' used in place of 'CapsLock' for command 'Explode/BanelingBurrowed', in seed 'TheCore Lite'
+[WARN]: '4' used in place of 'E' for command 'DisableBuildingAttack/Baneling', in seed 'TheCore Lite'
+[WARN]: 'F' used in place of 'Space' for command 'EnableBuildingAttack/Baneling', in seed 'TheCore Lite'
+[WARN]: 'E' used in place of 'CapsLock' for command 'Explode/Baneling', in seed 'TheCore Lite'
+[WARN]: 'E' used in place of 'CapsLock' for command 'Explode/BanelingBurrowed', in seed 'TheCore Lite'
 [WARN]: 'E,R' used in place of 'E,C,R' for command 'ForceField/Sentry', in seed 'TheCore Lite'
 [WARN]: 'E' used in place of 'E,F' for command 'FungalGrowth/Infestor', in seed 'TheCore Lite'
 [WARN]: 'Y' used in place of '4' for command 'GhostHoldFire/Ghost', in seed 'TheCore Lite'
@@ -77,5 +78,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'E' used in place of 'CapsLock' for command 'ZergBuildAdvanced/Drone', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 31 WARNs: 43 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 31 WARNs: 44 INFOs: 1 
 ============================
