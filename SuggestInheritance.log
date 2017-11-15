@@ -1477,7 +1477,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToHellion/Hellion default: E
 	MorphToHellion/HellionBlackOps default: 
 	MorphToVile/Larva default: R copyof: Roach/Larva default: R
-	MorphtoObserverSiege/Observer default: E
+	MorphtoObserver/Observer default: T
 	MorphtoOverseer/Overseer default: T
 	MorphtoOverseerNormal/Overseer default: T
 	MorphtoRoach/Larva default:  copyof: Roach/Larva default: R
@@ -1707,7 +1707,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToOverseer/Overlord default: V
 	MorphToOverseer/SIOverlord default: 
 	MorphToOverseer/VoidRiftUnselectable default: V
-	MorphtoObserver/Observer default: T
+	MorphtoObserverSiege/Observer default: E
 	MorphtoOverseerSiege/Overseer default: E
 	MutateintoLurkerDen/Drone default: 
 	Observer/RoboticsFacility default: B
