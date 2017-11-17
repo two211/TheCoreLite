@@ -62,6 +62,7 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: '4' used in place of 'CapsLock' for command 'OracleWeaponOff/Oracle', in seed 'TheCore Lite'
 [WARN]: '4' used in place of 'CapsLock' for command 'ParasiticBomb/Viper', in seed 'TheCore Lite'
 [WARN]: 'Space,F' used in place of 'Space' for command 'PhasingMode/WarpPrism', in seed 'TheCore Lite'
+[WARN]: 'E,Space' used in place of 'E,C,Space' for command 'RavagerCorrosiveBile/Ravager', in seed 'TheCore Lite'
 [WARN]: '4' used in place of 'CapsLock' for command 'ResearchBansheeCloak/StarportTechLab', in seed 'TheCore Lite'
 [WARN]: 'F' used in place of 'E' for command 'ReturnCargo', in seed 'TheCore Lite'
 [WARN]: 'F' used in place of 'R' for command 'Salvage/Bunker', in seed 'TheCore Lite'
@@ -78,5 +79,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'E' used in place of 'CapsLock' for command 'ZergBuildAdvanced/Drone', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 31 WARNs: 44 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 31 WARNs: 45 INFOs: 1 
 ============================

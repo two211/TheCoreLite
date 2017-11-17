@@ -14,6 +14,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default AdvancedConstructionAuto/SCV
 [WARN]: no default Aggressive/LurkerMPBurrowed
 [WARN]: no default AlarakDeadlyCharge/AlarakCoop
+[WARN]: no default AlarakDeadlyCharge/AlarakReviveBeacon
 [WARN]: no default AlarakMothershipMassTeleport/SOAMothershipv4
 [WARN]: no default ApocaliskBurrowCharge/StukovApocalisk
 [WARN]: no default Apocalypse/K5Kerrigan
@@ -25,9 +26,14 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default AutoTurret/Raven_BlackOps
 [WARN]: no default Baneling/Zergling2
 [WARN]: no default Banshee_BlackOpsAirstrike/Banshee_BlackOps
+[WARN]: no default Battlecruiser/HHStarport
 [WARN]: no default BioMechanicalHeal/HealingDrone
 [WARN]: no default BuildCreepTumor/Queen2
 [WARN]: no default BuildDehakaExtractor/DehakaHatchery
+[WARN]: no default BuildHHBomberPlatform/HHSCV
+[WARN]: no default BuildHHMercStarport/HHSCV
+[WARN]: no default BuildHHTechLabStarport/HHStarportFlying
+[WARN]: no default BuildHHTechLabStarport/StarportFlying
 [WARN]: no default BuildSITechLabFactory/SIFactoryFlying
 [WARN]: no default BuildSITechLabStarport/SIStarportFlying
 [WARN]: no default BuildScarab/Reaver
@@ -46,6 +52,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ChronoBoostEnergyCost/Nexus
 [WARN]: no default ColossusHallucination/Nexus
 [WARN]: no default ColossusHallucination/Voranor
+[WARN]: no default CommandCenter/HHSCV
 [WARN]: no default CoopMurvarSpawnCreepers/DehakaMurvar
 [WARN]: no default CreepTumor/Queen
 [WARN]: no default CyberneticsCore/Harvester
@@ -134,9 +141,14 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default FenixThunderousChargeCoop/FenixCoop
 [WARN]: no default FenixWarbringerColossusPowerShot/FenixWarbringerColossus
 [WARN]: no default FleetBeacon/Harvester
+[WARN]: no default FleetwideJump/HHRaven
+[WARN]: no default FleetwideJump/HHVikingAssault
+[WARN]: no default FleetwideJump/HHVikingFighter
+[WARN]: no default FleetwideJump/HHWraith
 [WARN]: no default ForceField2/Sentry2
 [WARN]: no default Forge/Harvester
 [WARN]: no default Frostbat/Barracks
+[WARN]: no default FusionCore/HHSCV
 [WARN]: no default Gateway/Harvester
 [WARN]: no default GhostHoldFire/NovaCoop
 [WARN]: no default Glare/Oracle
@@ -146,6 +158,17 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default GreaterRoachWarren/RoachWarren
 [WARN]: no default Guardian/Mutalisk
 [WARN]: no default GuardianShield/Sentry2
+[WARN]: no default HHArmory/HHSCV
+[WARN]: no default HHBattlecruiserShots/HHBattlecruiser
+[WARN]: no default HHBomberAreaBomb/HHBomberPlatform
+[WARN]: no default HHHellionTank/HHMercStarportUpgraded
+[WARN]: no default HHKD8Charge/HHReaper
+[WARN]: no default HHMercCompound/HHSCV
+[WARN]: no default HHReaper/HHMercStarportUpgraded
+[WARN]: no default HHTechLabStarport/HHStarport
+[WARN]: no default HHVikingRockets/HHVikingFighter
+[WARN]: no default HHWidowMine/HHMercStarportUpgraded
+[WARN]: no default HHYamatoShots/HHBattlecruiser
 [WARN]: no default Hallucination/Sentry2
 [WARN]: no default Hallucination2/Voranor
 [WARN]: no default Heal/Medivac2
@@ -153,6 +176,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default HercGrapple/HERC
 [WARN]: no default HighTemplarHallucination/Nexus
 [WARN]: no default HighTemplarHallucination/Voranor
+[WARN]: no default Hyperjump/HHBattlecruiser
 [WARN]: no default IgniteAfterburner/Medivac
 [WARN]: no default Immortal
 [WARN]: no default Immortal/Gateway
@@ -186,9 +210,13 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MorphMorphalisk/BroodMother
 [WARN]: no default MorphMorphalisk/Queen2
 [WARN]: no default MorphToHellbatBlackOps/HellionBlackOps
+[WARN]: no default MorphToHellion/HHHellionTank
 [WARN]: no default MorphToHellion/HellionBlackOps
+[WARN]: no default MorphToHellionTank/HHHellion
 [WARN]: no default MorphToOverseer/SIOverlord
 [WARN]: no default MorphtoDefiler/Larva
+[WARN]: no default MorphtoHHRaven/HHRaven
+[WARN]: no default MorphtoHHRavenSiege/HHRaven
 [WARN]: no default MorphtoRoach/Larva
 [WARN]: no default MoveChampions
 [WARN]: no default MurvarPukeCoop/DehakaMurvar
@@ -201,8 +229,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default NovaBoombotBurrow/NovaBoombot
 [WARN]: no default NovaDomination/NovaHero
 [WARN]: no default NovaSwitchAssaultMode/NovaCoop
+[WARN]: no default NovaSwitchAssaultMode/NovaReviveBeacon
 [WARN]: no default NovaUnitNuke/NovaCoop
+[WARN]: no default NovaUnitNuke/NovaReviveBeacon
 [WARN]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaCoop
+[WARN]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaReviveBeacon
 [WARN]: no default NurturingSwarm/Queen
 [WARN]: no default NydusDestroyerBeam/DehakaNydusDestroyer
 [WARN]: no default NydusDestroyerDeepTunnel/DehakaNydusDestroyer
@@ -266,6 +297,13 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchEvadeObserver/Observatory
 [WARN]: no default ResearchFortifiedBunkers/EngineeringBay
 [WARN]: no default ResearchGraviticBooster/Observatory
+[WARN]: no default ResearchHHBomberNapalm/FusionCore
+[WARN]: no default ResearchHHHellionDeathStim/HHMercCompound
+[WARN]: no default ResearchHHMercStarportHangarBay/HHMercStarportUpgraded
+[WARN]: no default ResearchHHReaperClusterBombs/HHMercCompound
+[WARN]: no default ResearchHHReaperFlight/HHMercCompound
+[WARN]: no default ResearchHHTacticalJumpCharges/StarportTechLab
+[WARN]: no default ResearchHHWidowMineRangeAttack/HHMercCompound
 [WARN]: no default ResearchHeavyInfestation/SICommandCenter
 [WARN]: no default ResearchImprovedSiegeMode/FactoryTechLab
 [WARN]: no default ResearchImprovedSiegeMode/FactoryTechReactor
@@ -370,6 +408,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Summon2DragoonHallucinations/Voranor
 [WARN]: no default Summon2ScoutHallucinations/Sentry
 [WARN]: no default Summon2ScoutHallucinations/Voranor
+[WARN]: no default SupplyDepot/HHSCV
 [WARN]: no default SupplyDepotDrop/SCV
 [WARN]: no default SwarmHostRoot/SwarmHost
 [WARN]: no default SwarmHostRoot/SwarmHostSplitA
@@ -390,10 +429,14 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default TechReactor/Factory
 [WARN]: no default TechReactor/Starport
 [WARN]: no default TemplarArchive/Harvester
+[WARN]: no default TerranBuild/HHSCV
 [WARN]: no default TerranBuild/SISCV
+[WARN]: no default TerranBuildAdvanced/HHSCV
 [WARN]: no default TerranBuildAdvanced/SISCV
 [WARN]: no default TerranInfantryArmorLevel1/SIEngineeringBay
 [WARN]: no default TimeWarpSentinel/Oracle
+[WARN]: no default ToxicNestExplode/ToxicNest
+[WARN]: no default TrainHHBomber/HHBomberPlatform
 [WARN]: no default Transfusion/BroodMother
 [WARN]: no default Transfusion/Queen2
 [WARN]: no default TransportMode/WarpPrismTaldarim
@@ -416,10 +459,14 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WarpinObservatory/Probe
 [WARN]: no default WeaponsFree/Ghost_BlackOps
 [WARN]: no default WeaponsFree/NovaCoop
+[WARN]: no default WidowMineBurrow/HHWidowMine
 [WARN]: no default WidowMineBurrow/MutatorWidowMine
+[WARN]: no default WidowMineUnburrow/HHWidowMine
 [WARN]: no default WormholeTransit/Predator
+[WARN]: no default WraithCloakOff/HHWraith
+[WARN]: no default WraithCloakOn/HHWraith
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
 ----------------------------
-Finished (Check defaults) - WARNs: 419 ERRORs: 0 
+Finished (Check defaults) - WARNs: 466 ERRORs: 0 
 ============================

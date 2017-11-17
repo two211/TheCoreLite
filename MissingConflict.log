@@ -28,6 +28,9 @@ in seed TheCore Lite, keys =
 [ERROR]: AlarakDeadlyCharge/AlarakCoop not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: AlarakDeadlyCharge/AlarakReviveBeacon not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: AlarakMothershipMassTeleport/SOAMothershipv4 not related to a conflict
 in seed TheCore Lite, keys =R
 
@@ -46,11 +49,26 @@ in seed TheCore Lite, keys =E,Space
 [ERROR]: BattleRage/Khraxus not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: Battlecruiser/HHStarport not related to a conflict
+in seed TheCore Lite, keys =G
+
 [ERROR]: BioMechanicalHeal/HealingDrone not related to a conflict
 in seed TheCore Lite, keys =R
 
 [ERROR]: BuildDehakaExtractor/DehakaHatchery not related to a conflict
 in seed TheCore Lite, keys =F
+
+[ERROR]: BuildHHBomberPlatform/HHSCV not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: BuildHHMercStarport/HHSCV not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: BuildHHTechLabStarport/HHStarportFlying not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: BuildHHTechLabStarport/StarportFlying not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: BuildSITechLabFactory/SIFactoryFlying not related to a conflict
 in seed TheCore Lite, keys =C
@@ -62,6 +80,9 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =Space
 
 [ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: CommandCenter/HHSCV not related to a conflict
 in seed TheCore Lite, keys =E
 
 [ERROR]: CoopMurvarSpawnCreepers/DehakaMurvar not related to a conflict
@@ -313,8 +334,23 @@ in seed TheCore Lite, keys =Space
 [ERROR]: FenixWarbringerColossusPowerShot/FenixWarbringerColossus not related to a conflict
 in seed TheCore Lite, keys =E,Space
 
+[ERROR]: FleetwideJump/HHRaven not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: FleetwideJump/HHVikingAssault not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: FleetwideJump/HHVikingFighter not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: FleetwideJump/HHWraith not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: FungalGrowth/InfestorBurrowed not related to a conflict
 in seed TheCore Lite, keys =E
+
+[ERROR]: FusionCore/HHSCV not related to a conflict
+in seed TheCore Lite, keys =G
 
 [ERROR]: GhostHoldFire/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =Y
@@ -337,11 +373,47 @@ in seed TheCore Lite, keys =E
 [ERROR]: Guardian/Mutalisk not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: HHArmory/HHSCV not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: HHBattlecruiserShots/HHBattlecruiser not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: HHBomberAreaBomb/HHBomberPlatform not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: HHHellionTank/HHMercStarportUpgraded not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: HHKD8Charge/HHReaper not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: HHMercCompound/HHSCV not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: HHReaper/HHMercStarportUpgraded not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: HHTechLabStarport/HHStarport not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: HHVikingRockets/HHVikingFighter not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: HHWidowMine/HHMercStarportUpgraded not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: HHYamatoShots/HHBattlecruiser not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: HellfireThrusters/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: HercGrapple/HERC not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: Hyperjump/HHBattlecruiser not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: IgniteAfterburner/Medivac not related to a conflict
 in seed TheCore Lite, keys =Space,5
@@ -415,11 +487,23 @@ in seed TheCore Lite, keys =Space,5
 [ERROR]: MorphToHellbatBlackOps/HellionBlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: MorphToHellion/HHHellionTank not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: MorphToHellion/HellionBlackOps not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: MorphToHellionTank/HHHellion not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: MorphToOverseer/SIOverlord not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: MorphtoHHRaven/HHRaven not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: MorphtoHHRavenSiege/HHRaven not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: MurvarPukeCoop/DehakaMurvar not related to a conflict
 in seed TheCore Lite, keys =E
@@ -451,10 +535,19 @@ in seed TheCore Lite, keys =R
 [ERROR]: NovaSwitchAssaultMode/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: NovaSwitchAssaultMode/NovaReviveBeacon not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: NovaUnitNuke/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =5
 
+[ERROR]: NovaUnitNuke/NovaReviveBeacon not related to a conflict
+in seed TheCore Lite, keys =5
+
 [ERROR]: NovaWeaponImprovedCanisterRifleSnipe/NovaCoop not related to a conflict
+in seed TheCore Lite, keys =Space,C
+
+[ERROR]: NovaWeaponImprovedCanisterRifleSnipe/NovaReviveBeacon not related to a conflict
 in seed TheCore Lite, keys =Space,C
 
 [ERROR]: NurturingSwarm/Queen not related to a conflict
@@ -609,6 +702,27 @@ in seed TheCore Lite, keys =
 
 [ERROR]: ResearchGraviticBooster/Observatory not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: ResearchHHBomberNapalm/FusionCore not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ResearchHHHellionDeathStim/HHMercCompound not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: ResearchHHMercStarportHangarBay/HHMercStarportUpgraded not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: ResearchHHReaperClusterBombs/HHMercCompound not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: ResearchHHReaperFlight/HHMercCompound not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ResearchHHTacticalJumpCharges/StarportTechLab not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: ResearchHHWidowMineRangeAttack/HHMercCompound not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: ResearchHeavyInfestation/SICommandCenter not related to a conflict
 in seed TheCore Lite, keys =C
@@ -907,11 +1021,20 @@ in seed TheCore Lite, keys =R
 [ERROR]: StukovInfestedSiegeTankUproot/StukovInfestedSiegeTank not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: SupplyDepot/HHSCV not related to a conflict
+in seed TheCore Lite, keys =D
+
 [ERROR]: TempestDisruptionBlast/Tempest not related to a conflict
 in seed TheCore Lite, keys =E,Space
 
+[ERROR]: TerranBuild/HHSCV not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: TerranBuild/SISCV not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: TerranBuildAdvanced/HHSCV not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: TerranBuildAdvanced/SISCV not related to a conflict
 in seed TheCore Lite, keys =E
@@ -921,6 +1044,12 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: TimeWarpSentinel/Oracle not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ToxicNestExplode/ToxicNest not related to a conflict
+in seed TheCore Lite, keys =E,Space
+
+[ERROR]: TrainHHBomber/HHBomberPlatform not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: TransportMode/WarpPrismTaldarim not related to a conflict
 in seed TheCore Lite, keys =4
@@ -964,11 +1093,23 @@ in seed TheCore Lite, keys =6
 [ERROR]: WidowMineAttack/WidowMine not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: WidowMineBurrow/HHWidowMine not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: WidowMineBurrow/MutatorWidowMine not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: WidowMineUnburrow/HHWidowMine not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: WormholeTransit/Predator not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: WraithCloakOff/HHWraith not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: WraithCloakOn/HHWraith not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
@@ -1627,5 +1768,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 324 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 371 WARNs: 145 
 ============================
