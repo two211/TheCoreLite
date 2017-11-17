@@ -1161,6 +1161,7 @@ Ravager/Roach=F
 Ravager/RoachCorpser=F
 Ravager/RoachVile=F
 RavagerCorrosiveBile/Ravager=E,Space
+RavagerAbathurCorrosiveBile/RavagerAbathur=E,Space
 Raven/Starport=Space
 Raven/VoidRift=R
 Raven/VoidRiftUnselectable=R
