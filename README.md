@@ -549,18 +549,19 @@ Compared to legacy TheCore Lite:
 2 "Control" camera alternates:
 * Ctl+D = Shift+1
 * Ctl+F = Shift+2
-* Ctl+G = Shift+3
 
 Camera creation:
-* Ctl+E = Alt+1
-* Ctl+R = Alt+2
-* Ctl+T = Alt+3
+* Ctl+R = Alt+1
+* Ctl+E = Alt+2
 
 Those aliases allow easy save/recall locations.
 Same modifier is applied for save and recall.
 Using them you have a finger on Ctl:
 Ctl+LeftClick on a units selects all visible units of this type.
 It is particularly useful for spreading creep.
+
+Still experimental, feel free to adjust to your needs.
+Current implementation is for 2 creep cam and easy jump from cam 1 to 2
 
 Related aliases:
 * Ctl+V = centers camera view (if you want to center a warp pylon, or a creep tumor)
@@ -707,9 +708,8 @@ Ctl+click acts as select all units of the same kind.
   * click = select a new creep tumor
   * Ctl+V = center view on selection
 * save and restart from "select all creep tumors"
-  * Ctl+E+F, save 1 jump to 2
-  * Ctl+R+G, save 2 jump to 3
-  * Ctl+T, save 3
+  * Ctl+R+F, save 1 jump to 2
+  * Ctl+E, get fingers back on rest keys
 
 **Note:** keep in mind that selecting another group cancels the action
 

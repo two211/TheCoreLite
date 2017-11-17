@@ -1,6 +1,10 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
+[ERROR]: Alt+1,Control+F used in place of Alt+1,Control+E for parameter CameraSave1, in seed TheCore Lite
+[ERROR]: Alt+3 used in place of Alt+3,Control+T for parameter CameraSave3, in seed TheCore Lite
+[ERROR]: Shift+2,Control+E used in place of Shift+2,Control+F for parameter CameraView2, in seed TheCore Lite
+[ERROR]: Shift+3 used in place of Shift+3,Control+G for parameter CameraView3, in seed TheCore Lite
 [ERROR]: Control+Alt+1 used in place of Control+Alt+Grave for parameter ControlGroupAppend1, in seed TheCore Lite
 [ERROR]: Control+Alt+2 used in place of Control+Alt+1 for parameter ControlGroupAppend2, in seed TheCore Lite
 [ERROR]: Control+Alt+3 used in place of Control+Alt+2 for parameter ControlGroupAppend3, in seed TheCore Lite
@@ -79,5 +83,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'E' used in place of 'CapsLock' for command 'ZergBuildAdvanced/Drone', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 31 WARNs: 45 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 35 WARNs: 45 INFOs: 1 
 ============================
