@@ -581,10 +581,10 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =E,R
 
 [ERROR]: PrimalBuildingRoot/DehakaBarracksUprooted not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =4,R
 
 [ERROR]: PrimalBuildingRoot/DehakaHatcheryUprooted not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =4,R
 
 [ERROR]: PrimalBuildingUproot/DehakaBarracks not related to a conflict
 in seed TheCore Lite, keys =4
@@ -884,13 +884,13 @@ in seed TheCore Lite, keys =D
 in seed TheCore Lite, keys =R
 
 [ERROR]: SIInfestedBunkerRoot/SIInfestedBunkerUprooted not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4,R
 
 [ERROR]: SIInfestedBunkerSpawnInfestedMarine/SIInfestedBunker not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [ERROR]: SIInfestedBunkerUproot/SIInfestedBunker not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: SIInfestedCivilian/SICivilianStructure not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -917,19 +917,22 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =F
 
 [ERROR]: SIRoot/SIBarracksFlying not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =4,R
 
 [ERROR]: SIRoot/SICivilianStructureFlying not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =4,R
 
 [ERROR]: SIRoot/SICommandCenterFlying not related to a conflict
 in seed TheCore Lite, keys =4
 
+[ERROR]: SIRoot/SIFactory not related to a conflict
+in seed TheCore Lite, keys =
+
 [ERROR]: SIRoot/SIMissileTurretFlying not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =4,R
 
 [ERROR]: SIRoot/SIStarportFlying not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =4,R
 
 [ERROR]: SISCV not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -1768,5 +1771,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 371 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 372 WARNs: 145 
 ============================

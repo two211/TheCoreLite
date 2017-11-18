@@ -467,6 +467,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WraithCloakOn/HHWraith
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
+[ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 466 ERRORs: 0 
+Finished (Check defaults) - WARNs: 466 ERRORs: 1 
 ============================

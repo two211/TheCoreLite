@@ -47,6 +47,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchTurboGripper/StarportTechLab default: 
 	Rift/KhaydarinNexus default: 
 	Rift/Nexus default: 
+	SIRoot/SIFactory default: 
 	ShapedBlast/SiegeBreakerSieged default: B
 	ShapedBlast/SiegeTankSieged default: B
 	SlivanPuke/Devourer default: 
@@ -133,11 +134,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	ParasiticBomb/Viper default: R
 	PlanetCrackerOff/MothershipAiur06 default: C
-	PrimalBuildingRoot/DehakaBarracksUprooted default: 
-	PrimalBuildingRoot/DehakaHatcheryUprooted default: 
 	PrimalBuildingUproot/DehakaBarracks default: 
 	PrimalBuildingUproot/DehakaHatchery default: 
-	PrimalHydralisk/PrimalTownHallUprooted default: H
 	ProbeHallucination/Nexus default:  copyof: ProbeHallucination/Sentry default: E
 	ProbeHallucination/Sentry default: E
 	ProbeHallucination/Voranor default:  copyof: ProbeHallucination/Sentry default: E
@@ -154,11 +152,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	RespawnZergling/Hive default: Z copyof: RespawnZergling/Hatchery default: Z
 	RespawnZergling/Lair default: Z copyof: RespawnZergling/Hatchery default: Z
 	SIEngineeringBay/SISCV default: 
-	SIRoot/SIBarracksFlying default: 
-	SIRoot/SICivilianStructureFlying default: 
+	SIInfestedBunkerUproot/SIInfestedBunker default: 
 	SIRoot/SICommandCenterFlying default: 
-	SIRoot/SIMissileTurretFlying default: 
-	SIRoot/SIStarportFlying default: 
 	SIUproot/SIBarracks default: 
 	SIUproot/SICivilianStructure default: 
 	SIUproot/SICommandCenter default: 
@@ -197,6 +192,16 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
 	StukovInfestedTerrans/InfestedStukov default: W, T copyof: InfestedTerrans/Infestor default: T
+
+[INFO]: TheCore Lite: 4,R   
+	PrimalBuildingRoot/DehakaBarracksUprooted default: 
+	PrimalBuildingRoot/DehakaHatcheryUprooted default: 
+	PrimalBuildingRoot/PrimalTownHallUprooted default: R
+	SIInfestedBunkerRoot/SIInfestedBunkerUprooted default: 
+	SIRoot/SIBarracksFlying default: 
+	SIRoot/SICivilianStructureFlying default: 
+	SIRoot/SIMissileTurretFlying default: 
+	SIRoot/SIStarportFlying default: 
 
 [INFO]: TheCore Lite: Space,4   
 	AutoTurret/Raven default: T
@@ -285,6 +290,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveViperImprovedCastRange/InfestationPit default: R
 	EvolveViperImprovedCastRange/Viper default: R
 	LearnDehakaMendingAura/DehakaCoop default: 
+	PrimalHydralisk/PrimalTownHallUprooted default: H
 	QueenClassic default: Q
 	Scourge/Larva default: S
 	Spectre/Barracks default: G, S
@@ -1231,8 +1237,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchTempestDisintegration/FleetBeacon default: D
 	ReturnCargo default: C
 	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
-	SIInfestedBunkerRoot/SIInfestedBunkerUprooted default: 
-	SIInfestedBunkerUproot/SIInfestedBunker default: 
 	SIRefinery/SISCV default: 
 	SJHyperionBlink/Battlecruiser default: 
 	SJHyperionBlink/SJHyperion default: Q
@@ -1524,7 +1528,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NovaSwitchAssaultMode/NovaReviveBeacon default: 
 	PitAlarakSuperMove/PitAlarak default: R
 	PitMalashSuperMove/PitMalash default: R
-	PrimalBuildingRoot/PrimalTownHallUprooted default: R
 	PrimalRoach/PrimalTownHall default: R
 	Raven/VoidRift default: R, B
 	Raven/VoidRiftUnselectable default: R, B
@@ -2100,5 +2103,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 50 
+Finished (suggest inherit) - INFOs: 51 
 ============================

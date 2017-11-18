@@ -3,6 +3,7 @@ Start Check key reuse over common CommandRoot (log file: CommandRootConsistency.
 ----------------------------
 [ERROR]: 'BuildCreepTumor' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'MutateintoLurkerDen' is not consistent in seed 'TheCore Lite'
+[ERROR]: 'SIRoot' is not consistent in seed 'TheCore Lite'
 ----------------------------
-Finished (Check key reuse over common CommandRoot) - ERRORs: 2 
+Finished (Check key reuse over common CommandRoot) - ERRORs: 3 
 ============================
