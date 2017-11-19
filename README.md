@@ -110,6 +110,7 @@ Loads of thanks to:
 * [Shift+Alt easy cloning](https://github.com/bobo38/TheCoreLite#easier-cloning-through-shiftalt)
 * [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
 * [RapidFire static defence](https://github.com/bobo38/TheCoreLite#rapidfire-static-defence)
+* [Quick Camera](https://github.com/bobo38/TheCoreLite/blob/master/README.md#quick-cam)
 
 ----------------------------------------------------------------------------------------------------------------------
 
