@@ -411,6 +411,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NeuralParasite/Infestor default: E
 	NeuralParasite/Infestor2 default: E copyof: NeuralParasite/Infestor default: E
 	NeuralParasite/InfestorBurrowed default: E
+	NexusMassRecall/Nexus default: 
 	NexusShieldRecharge/Nexus default: 
 	NovaGadgetPulseGrenades/NovaHero default: W
 	NovaGadgetPulseGrenades/NovaVulture default: W

@@ -523,6 +523,9 @@ in seed TheCore Lite, keys =
 [ERROR]: NeuralParasite/InfestorBurrowed not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: NexusMassRecall/Nexus not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: NexusShieldRecharge/Nexus not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -1771,5 +1774,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 372 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 373 WARNs: 145 
 ============================
