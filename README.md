@@ -602,13 +602,14 @@ Use case scenarii
   * create main base cam:
     * Alt+A: for Terran & Protoss
     * Alt+W: for Zerg (zerg don't need rally point !)
+* move pointer on minimap and hold left click, it will make the main screen follow the pointer location on minimap
 * rally point cam for terran/protoss
-  * click on the minimap
+  * move pointer to ramp or expected early rally point
   * Alt+W
 * set new expansion cams, for each cam:
-  * click on minimap
+  * move pointer on expected cam location
   * Alt+(A|)S|Z|X
-* release Alt
+* release Alt and left click
   * check mineral level for benchmark
 
 **Note:** during cam creation, your CC/Nexus/Hatch keeps on being selected,
