@@ -751,7 +751,7 @@ Overlord map control "W+Space+E+Right click on minimap":
   * use TheCore Lite Inject initiate
   * then "TheCore inject" or "Telegraph inject"
 * Tech check
-  * You had time to check upgrades as they were selected with hatcheries
+  * You had time to check upgrades as they were selected with inject queens
   * browse subgroup + add new research
 * Creep queens (see "utility group section")
 * Creep cameras (control cameras) holding control
@@ -768,6 +768,7 @@ sources:
 * [JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
 * [Zerg Cycle Revisited - LoTV](http://www.teamliquid.net/forum/sc2-strategy/524948-zerg-cycle-revisited-lotv) (Team Liquid forum thread)
 * [\[G\] The Cycle method for Zerg macro](http://www.teamliquid.net/forum/sc2-strategy/274298-the-cycle-method-for-zerg-macro) (Team Liquid forum thread)
+* [larva usage factor, or why you might be macroing wrong](https://6pool.blogspot.de/2017/12/larva-usage-factor-or-why-you-might-be.html)(blog)
 
 ## Use case: Easy MULE/Chronoboost
 
