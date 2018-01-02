@@ -546,12 +546,12 @@ Compared to legacy TheCore Lite:
 
 ### Quick Cam
 
-* ~~ Camera creation with Alt ~~
-* ~~ Camera recall with Shift+CapsLock ~~
+* ~~Camera creation with Alt~~
+* ~~Camera recall with Shift+CapsLock~~
 
-~~ This cam is updated each time you press Alt. ~~
-~~ Theoretically Alt is used only to define Cams early game. ~~
-~~ Camera 2 and 3 are kept in case you want to use them for harass.~~
+~~This cam is updated each time you press Alt.~~
+~~Theoretically Alt is used only to define Cams early game.~~
+~~Camera 2 and 3 are kept in case you want to use them for harass.~~
 
 ~~Tip: Alt quick cam creation is inhibited for Control+Alt and Shift+Alt, displaying enemy life bars~~
 
