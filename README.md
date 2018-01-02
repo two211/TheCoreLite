@@ -110,7 +110,7 @@ Loads of thanks to:
 * [Shift+Alt easy cloning](https://github.com/bobo38/TheCoreLite#easier-cloning-through-shiftalt)
 * [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
 * [RapidFire static defence](https://github.com/bobo38/TheCoreLite#rapidfire-static-defence)
-* [Quick Camera](https://github.com/bobo38/TheCoreLite/blob/master/README.md#quick-cam)
+* ~~[Quick Camera](https://github.com/bobo38/TheCoreLite/blob/master/README.md#quick-cam)~~
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -540,31 +540,34 @@ TheCore Lite keeps on having Shift+cam# for cam# recall.
 It allows precise queuing.
 
 Compared to legacy TheCore Lite:
-* one camera key changed: Q has been replaced by Quick Cam
 * camera creation still based on Alt modifier
 * camera recall still based on Shift modifier
 * "control" cameras were introduced
 
 ### Quick Cam
 
-* Camera creation with Alt
-* Camera recall with Shift+CapsLock
+* ~~ Camera creation with Alt
+* ~~ Camera recall with Shift+CapsLock
 
-This cam is updated each time you press Alt.
+~~ This cam is updated each time you press Alt.
 Theoretically Alt is used only to define Cams early game.
-Camera 2 and 3 are kept in case you want to use them for harass.
+Camera 2 and 3 are kept in case you want to use them for harass.~~
 
-Tip: Alt quick cam creation is inhibited for Control+Alt and Shift+Alt, displaying enemy life bars
+~~Tip: Alt quick cam creation is inhibited for Control+Alt and Shift+Alt, displaying enemy life bars~~
+
+~~Note: quick cam removed, kept in readme in case you want to reintroduce it in your local copy~~
 
 ### Additional cameras alternates on control
 
-2 "Control" camera alternates:
+3 "Control" camera alternates:
+* Ctl+C = Shift+1
 * Ctl+D = Shift+2
-* Ctl+F = Shift+3
+* Ctl+E = Shift+3
 
 Camera creation:
-* Ctl+R = Alt+2
-* Ctl+E = Alt+3
+* Ctl+V = Alt+1
+* Ctl+F = Alt+2
+* Ctl+R = Alt+3
 
 Those aliases allow easy save/recall locations.
 Same modifier is applied for save and recall.
@@ -576,9 +579,8 @@ Still experimental, feel free to adjust to your needs.
 Current implementation is for 2 creep cam and easy jump from cam 1 to 2
 
 Related aliases:
-* Ctl+V = centers camera view (if you want to center a warp pylon, or a creep tumor)
-* Ctl+C = precision creep spread
 * Ctl+Space = rapid fire creep spread
+* maybe an alias needed for centering cam on selection while control is pressed
 
 **Note:** control cam could be used for warp gate with a proper alias for
 
@@ -649,13 +651,6 @@ Recommended:
 * Shift+Q: select production facilities (WarpGate have higher selection priority)
 * Shift+3: jump to warp-in camera (S as a suggestion with Z for the regular rally point)
 * Shift+key for warping-in units (queued rapid fire warp-in)
-
-~~#### with Ctl camera~~
-* ~~Ctl+? (missing alternate): select production facilities (WarpGate have higher selection priority)~~
-* ~~Ctl+D|F|G: center on warp pylon~~
-* ~~continuous key press for warping-in units (rapid fire warp-in)~~
-* ~~Ctl+click: select all units of the same kind~~
-* ~~Ctl+[group\_key]: append to a group~~
 
 #### Other tips
 * Ctl+click: on a unit, select all units for this type
