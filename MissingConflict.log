@@ -79,6 +79,9 @@ in seed TheCore Lite, keys =C
 [ERROR]: BuildScarab/Reaver not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: BuildScienceVessel/Starport not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -1164,11 +1167,6 @@ in seed TheCore Lite, keys =F
 but is inherited
 in seed TheCore Lite, keys =C
 
-[WARN]: BuildScienceVessel/Starport not related to a conflict
-but is part of same check
-but is inherited
-in seed TheCore Lite, keys =Space
-
 [WARN]: BunkerFortified/SCV not related to a conflict
 but is inherited
 in seed TheCore Lite, keys =R
@@ -1200,15 +1198,15 @@ in seed TheCore Lite, keys =Space
 
 [WARN]: CancelCocoon not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Escape,Grave
+in seed TheCore Lite, keys =Escape
 
 [WARN]: CancelMutateMorph not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Escape,Grave
+in seed TheCore Lite, keys =Escape
 
 [WARN]: CancelUpgradeMorph not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Escape,Grave
+in seed TheCore Lite, keys =Escape
 
 [WARN]: Charge/Khraxus not related to a conflict
 but is inherited
@@ -1774,5 +1772,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 373 WARNs: 145 
+Finished (commands with no attached conflict) - ERRORs: 374 WARNs: 144 
 ============================

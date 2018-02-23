@@ -1,11 +1,13 @@
 ============================
 Start Regression against referenced seeds (log file: StableRegression.log)
 ----------------------------
-[ERROR]: Alt used in place of Alt+1,Control+E for parameter CameraSave1, in seed TheCore Lite
-[ERROR]: Alt+3,Control+E used in place of Alt+3,Control+T for parameter CameraSave3, in seed TheCore Lite
-[ERROR]: Shift+CapsLock used in place of Shift+1,Control+D for parameter CameraView1, in seed TheCore Lite
+[ERROR]: Alt+Tab,Alt+CapsLock,Alt+Grave,Alt+Shift used in place of Alt+Tab,Alt+CapsLock,Alt+Grave,Control+V,Alt+Shift for parameter CameraCenter, in seed TheCore Lite
+[ERROR]: Alt+1,Control+V used in place of Alt+1,Control+E for parameter CameraSave1, in seed TheCore Lite
+[ERROR]: Alt+2,Control+F used in place of Alt+2,Control+R for parameter CameraSave2, in seed TheCore Lite
+[ERROR]: Alt+3,Control+R used in place of Alt+3,Control+T for parameter CameraSave3, in seed TheCore Lite
+[ERROR]: Shift+1,Control+C used in place of Shift+1,Control+D for parameter CameraView1, in seed TheCore Lite
 [ERROR]: Shift+2,Control+D used in place of Shift+2,Control+F for parameter CameraView2, in seed TheCore Lite
-[ERROR]: Shift+3,Control+F used in place of Shift+3,Control+G for parameter CameraView3, in seed TheCore Lite
+[ERROR]: Shift+3,Control+E used in place of Shift+3,Control+G for parameter CameraView3, in seed TheCore Lite
 [ERROR]: Control+Alt+1 used in place of Control+Alt+Grave for parameter ControlGroupAppend1, in seed TheCore Lite
 [ERROR]: Control+Alt+2 used in place of Control+Alt+1 for parameter ControlGroupAppend2, in seed TheCore Lite
 [ERROR]: Control+Alt+3 used in place of Control+Alt+2 for parameter ControlGroupAppend3, in seed TheCore Lite
@@ -24,7 +26,7 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [ERROR]: Shift+Alt+Q used in place of Shift+Alt+3 for parameter ControlGroupAssign4, in seed TheCore Lite
 [ERROR]: Shift+Alt+W used in place of Shift+Alt+Q for parameter ControlGroupAssign5, in seed TheCore Lite
 [ERROR]: Shift+Alt+CapsLock used in place of Shift+Alt+W for parameter ControlGroupAssign6, in seed TheCore Lite
-[ERROR]: Control+Shift+1 used in place of Control+Shift+Grave for parameter ControlGroupAssignAndSteal1, in seed TheCore Lite
+[ERROR]: Control+Shift+1,Grave used in place of Control+Shift+Grave for parameter ControlGroupAssignAndSteal1, in seed TheCore Lite
 [ERROR]: Control+Shift+2 used in place of Control+Shift+1 for parameter ControlGroupAssignAndSteal2, in seed TheCore Lite
 [ERROR]: Control+Shift+3 used in place of Control+Shift+2 for parameter ControlGroupAssignAndSteal3, in seed TheCore Lite
 [ERROR]: Control+Shift+Q used in place of Control+Shift+3 for parameter ControlGroupAssignAndSteal4, in seed TheCore Lite
@@ -37,14 +39,13 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [ERROR]: W used in place of Q for parameter ControlGroupRecall5, in seed TheCore Lite
 [ERROR]: CapsLock used in place of W for parameter ControlGroupRecall6, in seed TheCore Lite
 [ERROR]: NumPadMultiply used in place of Shift for parameter GameTooltipsOn, in seed TheCore Lite
-[ERROR]: Control,Control+Alt,Shift+Alt used in place of Alt for parameter StatusEnemy, in seed TheCore Lite
+[ERROR]: Alt,Control,Control+Alt,Shift+Alt used in place of Alt for parameter StatusEnemy, in seed TheCore Lite
 [ERROR]: LeftMouseButton,Space,R,T,Y,D,F,G,H used in place of LeftMouseButton,Space,R,T,Y,D,F,G,H,CapsLock for parameter TargetChoose, in seed TheCore Lite
 [WARN]: 'F' used in place of 'CapsLock' for command 'AWrp', in seed 'TheCore Lite'
 [WARN]: 'F' used in place of 'CapsLock' for command 'ArchonHallucination/Sentry', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'C,CapsLock' for command 'BuildCreepTumor/Queen', in seed 'TheCore Lite'
 [WARN]: 'C,Space' used in place of 'C,Space,CapsLock' for command 'BuildCreepTumorPropagate/CreepTumorBurrowed', in seed 'TheCore Lite'
 [WARN]: 'E' used in place of 'E,CapsLock' for command 'BunkerUnloadAll', in seed 'TheCore Lite'
-[WARN]: 'Escape,Grave' used in place of 'Escape' for command 'Cancel', in seed 'TheCore Lite'
 [WARN]: '4' used in place of 'CapsLock' for command 'CloakOff', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'C,CapsLock' for command 'Colossus/RoboticsFacility', in seed 'TheCore Lite'
 [WARN]: 'F' used in place of 'CapsLock' for command 'CommandCenterUnloadAll', in seed 'TheCore Lite'
@@ -86,5 +87,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'E' used in place of 'CapsLock' for command 'ZergBuildAdvanced/Drone', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 38 WARNs: 45 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 40 WARNs: 44 INFOs: 1 
 ============================

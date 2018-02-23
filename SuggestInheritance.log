@@ -325,6 +325,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildHHMercStarport/HHSCV default: 
 	BuildSITechLabFactory/SIFactoryFlying default: 
 	BuildSITechLabStarport/SIStarportFlying default: 
+	BuildScienceVessel/Starport default: R
 	BuildTechLabFactory/FactoryFlying default: X copyof: TechLabBarracks/Barracks default: X
 	BuildTechLabStarport/StarportFlying default: X copyof: TechLabBarracks/Barracks default: X
 	BunkerLoad default: L
@@ -1039,11 +1040,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	UseSpiderMine/Vulture default: 
 	YamatoGun default: Y
 
-[INFO]: TheCore Lite: Escape,Grave   
+[INFO]: TheCore Lite: Escape   
 	Cancel default: Escape
 	CancelCocoon default:  copyof: Cancel default: Escape
 	CancelMutateMorph default:  copyof: Cancel default: Escape
 	CancelUpgradeMorph default:  copyof: Cancel default: Escape
+	HyperionKorhalRegenOff/HyperionKorhal default: Escape
 
 [INFO]: TheCore Lite: F   
 	AWrp default: C
@@ -1630,7 +1632,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Blink/Stalker default: B
 	Blink/StalkerShakuras default: B
 	BuildScarab/Reaver default: 
-	BuildScienceVessel/Starport default: R copyof: Raven/Starport default: R, B
 	BurrowChargeCampaign/HotSTorrasque default: C copyof: Blink/Stalker default: B
 	BurrowChargeCampaign/Ultralisk default: C copyof: Blink/Stalker default: B
 	BurrowChargeCampaignNoxious/HotSNoxious default: C copyof: Blink/Stalker default: B
