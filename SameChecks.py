@@ -28,7 +28,7 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['Reactor/Barracks', 'Reactor/BarracksFlying', 'Reactor/Factory', 'Reactor/FactoryFlying', 'Reactor/Starport', 'Reactor/StarportFlying'],
                ['TechLabBarracks/Barracks', 'TechLabBarracks/BarracksFlying', 'TechReactor/Barracks', 'TechReactor/BarracksFlying', 'TechLabFactory/Factory', 'BuildTechLabFactory/FactoryFlying', 'TechReactor/Factory', 'TechReactor/FactoryFlying', 'TechLabStarport/Starport', 'BuildTechLabStarport/StarportFlying', 'TechReactor/Starport', 'TechReactor/StarportFlying'],
                #['Ghost/Barracks','Spectre/Barracks'], thanks to HotS campaign these can no longer be on the same key
-               ['Raven/Starport', 'BuildScienceVessel/Starport'],
+               #['Raven/Starport', 'BuildScienceVessel/Starport'],
                ['EMP/Ghost', 'UltrasonicPulse/Spectre'],
                ['Snipe/Ghost', 'NovaSnipe/Nova', 'Obliterate/Spectre'],
                ['Lair/Hatchery', 'Hive/Lair', 'LurkerDen/HydraliskDen', 'ImpalerDen/HydraliskDen'],
