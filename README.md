@@ -216,7 +216,7 @@ Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time p
 * Zergling (D)
 * Roach (R)
 * Hydralisk (C)
-* Mutalisk (T)
+* Corruptor (T)
 * Ultralisk (G)
 
 In this way all keys of the dense cards are useful for hatcheries, lairs and hives.
@@ -224,8 +224,12 @@ Alls units are covered apart of:
 * Overlord (E, same key as Pneumatized Carapace)
 * Viper (4, same key as research burrow)
 * Infestor (F, same key as Lair/Hive)
-* Corruptor (V, same key as Queen)
+* Mutalisk (V, same key as Queen)
 * Swarm Host (Y, very out of compact command card: feel free to change if you are Swarm Hosts heavy in your BOs)
+
+For those units, they are either spellcaster or situational, or you simply don't want to accidentally make too many of them.
+(i.e. Mutalisk in current meta, just one round to harass and force reaction from opponent is enough,
+dumping accidentally all larvae on overlords could easily turn into a disaster)
 
 ## Rapid Fire and Precision keys
 
