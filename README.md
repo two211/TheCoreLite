@@ -436,6 +436,10 @@ Usages:
 * wall supply depots burrow
   * Shift+V+Space: select wall supply depots and burrow
 
+**Note:** Grave is new alternate from ControlGroupAssignAndSteal1,
+to be used for creating with steal a group 1 from current selection.
+with this direct access key you can remove units from any group, and get a temporary control group for microing those
+
 ## Group display
 
 The 2 "macro" groups are positioned in the center to split the remaining groups by 4 keys.
