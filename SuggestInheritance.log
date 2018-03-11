@@ -1914,6 +1914,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: T   
 	ActivateStasisWard/OracleStasisTrap default: T
 	BanelingNest/Drone default: B
+	Corruptor/Larva default: C
 	DarkShrine/Harvester default:  copyof: DarkShrine/Probe default: D
 	DarkShrine/Probe default: D
 	DarkTemplar default: D
@@ -1924,11 +1925,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HireSpartanCompany/MercCompound default: C
 	Immortal/VoidRiftUnselectable default: I
 	Medic/Barracks default: E
-	MorphToMutaliskBroodlord/Larva default: T copyof: Mutalisk/Larva default: T
-	MorphToMutaliskViper/Larva default: T copyof: Mutalisk/Larva default: T
 	MovePatrol default: P
 	Mutalisk/Epilogue02VoidRift default: T
-	Mutalisk/Larva default: T
 	Mutalisk/VoidRift default: T
 	Mutalisk/VoidRiftUnselectable default: T
 	Mutalisk/VoidThrasher default: T
@@ -1973,7 +1971,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildCreepTumor/Hive default: C
 	BuildCreepTumor/Lair default: C
 	BuildCyclone/Factory default: N
-	Corruptor/Larva default: C
 	DisruptorHallucination/Sentry default: D
 	EnergyNova/Artifact default: V
 	EvolveAberrationArmorAura/EvolutionChamber default: B
@@ -1984,7 +1981,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	HireDuskWing/MercCompound default: I
 	MercHellion/Factory default: N
+	MorphToMutaliskBroodlord/Larva default: T copyof: Mutalisk/Larva default: T
+	MorphToMutaliskViper/Larva default: T copyof: Mutalisk/Larva default: T
 	MorphToOverseer/VoidRift default: V
+	Mutalisk/Larva default: T
 	Phoenix/VoidRift default: X
 	Phoenix/VoidRiftUnselectable default: X
 	PrimalHydralisk/YagdraEggSmall default: H
