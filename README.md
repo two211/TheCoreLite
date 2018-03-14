@@ -212,7 +212,7 @@ Some mnemonics:
 ### Zerg larvae
 
 Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time producing new units en masse:
-* Larva (Space)
+* Drone (Space)
 * Zergling (D)
 * Roach (R)
 * Hydralisk (C)
