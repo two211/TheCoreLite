@@ -118,6 +118,9 @@ Loads of thanks to:
 TheCore Lite Command spirit
 ===========================
 
+In this section, keys used to describe command mapping are using US QWERTY standard keyboard layout.
+This applies as well to the groups and cameras mapping in the rest of the document
+
 ## Unit keys
 
 All Units:
