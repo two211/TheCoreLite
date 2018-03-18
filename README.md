@@ -803,6 +803,43 @@ Otherwise please read "After precision key usage" section.
 
 ----------------------------------------------------------------------------------------------------------------------
 
+Further optimizations
+=====================
+
+TheCore Lite is a consistent set of commands which could see further optimization.
+Without changing the [Commands] section you can easily play around with [Hotkeys] section
+
+## The Control key placement
+
+The biggest weakness is Control key placement.
+Here are 2 ways of dealing with Control key:
+* tilt keyboard clockwise by 10-20°C to get super comfortable with fingers on Shift/Q/W/D/Space
+  * Control will be 1 key below a comfortable key
+* remap CapsLock as Control key at Operating System level
+  * Control will be comfortable with straight keyboard
+
+Changes implemented at my local copy:
+* use mouse only for browsing subgroup Back/ForwardMouseButton, to free Tab
+* change Select All Army to keybind to allow group modifiers with Tab (by me Shift+Tab)
+* use Tab as CapsLock group
+* CapsLock is now free to be used as Control modifier with external software
+
+## Others possible twicks
+
+Device inputs:
+* use wheel up/down as Back/ForwardMouseButton with external mouse software (work for 3-buttons mouse)
+* map middleButton to othe mouse button with external mouse software (CameraPush)
+* increase keyboard key repeat rate (more actions through key repeat)
+* decrease time to start keyboard key repeat (less delay for repeat)
+
+User Interface:
+* Graphics: [Hybrid settings](http://www.teamliquid.net/forum/starcraft-2/498454-hybrid-settings-30-lotv-edition#1) are optimizing game info versus FPS tax
+* Gameplay: check all boxes apart enable simple command card
+  * "enable select enemy unit" is controversial as it may cause some issues
+* Sound: uncheck "Response Sounds" and "Ambiant Sounds"
+
+----------------------------------------------------------------------------------------------------------------------
+
 Changelog for the code
 ======================
 
