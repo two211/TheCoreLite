@@ -4,9 +4,9 @@ The Core Lite v2.3
 ### Table of Contents
 * [The Core Lite v2.3](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
   * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
-  * [TheCore Lite features](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-features)
   * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
   * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
+  * [TheCore Lite features](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-features)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
   * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
   * [Building Consistency](https://github.com/bobo38/TheCoreLite/blob/master/README.md#building-consistency)
@@ -20,7 +20,7 @@ The Core Lite v2.3
   * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history)
   * [Nexus/CC/Hatch group = W](https://github.com/bobo38/TheCoreLite/blob/master/README.md#nexuscchatch-group--w)
   * [Production group (or inject queens) = Q](https://github.com/bobo38/TheCoreLite/blob/master/README.md#production-group-or-inject-queens--q)
-  * [Utility group = Grave](https://github.com/bobo38/TheCoreLite/blob/master/README.md#utility-group--grave)
+  * [Utility group = 1](https://github.com/bobo38/TheCoreLite/blob/master/README.md#utility-group--1)
   * [Group display](https://github.com/bobo38/TheCoreLite/blob/master/README.md#group-display)
 * [TheCore Lite Group/Cameras modifiers](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
   * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history-1)
@@ -40,6 +40,9 @@ The Core Lite v2.3
   * [Use case: hatching eggs](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-hatching-eggs)
   * [Use case: zerg macro routine](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-zerg-macro-routine)
   * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
+* [Further optimizations](https://github.com/bobo38/TheCoreLite/blob/master/README.md#further-optimizations)
+  * [The Control key placement](https://github.com/bobo38/TheCoreLite/blob/master/README.md#the-control-key-placement)
+  * [Others possible twicks](https://github.com/bobo38/TheCoreLite/blob/master/README.md#others-possible-twicks)
 * [Changelog for the code](https://github.com/bobo38/TheCoreLite/blob/master/README.md#changelog-for-the-code)
 
 ## Repository description
