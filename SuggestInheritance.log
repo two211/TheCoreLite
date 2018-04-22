@@ -124,6 +124,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganVoidCoopCrushingGripWave/K5KerriganBurrowed default: D
 	KerriganVoidCoopCrushingGripWave/K5KerriganPsiStrike default: D
 	KerriganVoidCoopCrushingGripWave/KerriganReviveCocoon default: D
+	Land default: L
 	LurkerHoldFire/LurkerBurrowed default: F copyof: LurkerHoldFire/LurkerMPBurrowed default: F
 	LurkerHoldFire/LurkerMPBurrowed default: F
 	MercMedic/Barracks default: B
@@ -243,7 +244,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganVoidCoopEconDrop/K5KerriganBurrowed default: E
 	KerriganVoidCoopEconDrop/K5KerriganPsiStrike default: E
 	KerriganVoidCoopEconDrop/KerriganReviveCocoon default: E
-	Land default: L
 	Lift default: L
 	MassRoachDrop/ZagaraReviveCocoon default: D
 	MassRoachDrop/ZagaraVoidCoop default: D

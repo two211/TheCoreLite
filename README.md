@@ -148,10 +148,11 @@ Transport/Bunker/CC
 Terran:
 * Space/R = "transformers'" keys
 * F/4 = cloak/decloak
-* 4 = halt key
-* 4 = lift key
+* 4 = select worker key
+* 5 = halt key
+* 4 = land key
+* 5 = lift key
 * 4 = ignite after burner (coop)
-* 5 = select worker key
 * R = Salvage
 * R = Load CC/Planetary Fortress
 * E = Reactor
