@@ -16,7 +16,8 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: '5' used in place of '4' for command 'Lift', in seed 'TheCore Lite'
 [WARN]: 'V' used in place of 'T' for command 'Mutalisk/Larva', in seed 'TheCore Lite'
 [WARN]: '4' used in place of '5' for command 'SelectBuilder', in seed 'TheCore Lite'
+[WARN]: 'E,R' used in place of 'E,C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 8 WARNs: 7 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 8 WARNs: 8 INFOs: 1 
 ============================

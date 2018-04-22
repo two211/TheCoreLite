@@ -83,7 +83,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =C
 
 [ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =E,R
 
 [ERROR]: CommandCenter/HHSCV not related to a conflict
 in seed TheCore Lite, keys =E
