@@ -518,7 +518,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =Space
 
 [ERROR]: MutatorWorkerSleep/SISCV not related to a conflict
-in seed TheCore Lite, keys =5
+in seed TheCore Lite, keys =4
 
 [ERROR]: NerveJam/ScienceVessel not related to a conflict
 in seed TheCore Lite, keys =
@@ -797,7 +797,7 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =
 
 [ERROR]: ResearchSIBarracksTrainInfestedCivilianLevel2/SICivilianStructure not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [ERROR]: ResearchSILiberatorBecometheSwarm/SIStarportTechLab not related to a conflict
 in seed TheCore Lite, keys =R
@@ -896,7 +896,7 @@ in seed TheCore Lite, keys =4,R
 in seed TheCore Lite, keys =Space
 
 [ERROR]: SIInfestedBunkerUproot/SIInfestedBunker not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =R
 
 [ERROR]: SIInfestedCivilian/SICivilianStructure not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -908,7 +908,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =Space
 
 [ERROR]: SILiberator/SIStarport not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =F
 
 [ERROR]: SIMissileTurret/SISCV not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -962,22 +962,22 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =C
 
 [ERROR]: SIUproot/SIBarracks not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =R
 
 [ERROR]: SIUproot/SICivilianStructure not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =R
 
 [ERROR]: SIUproot/SICommandCenter not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =5
 
 [ERROR]: SIUproot/SIFactory not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =R
 
 [ERROR]: SIUproot/SIMissileTurret not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =R
 
 [ERROR]: SIUproot/SIStarport not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =R
 
 [ERROR]: SJHyperionBlink/Battlecruiser not related to a conflict
 in seed TheCore Lite, keys =F
@@ -1010,7 +1010,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =Space,C
 
 [ERROR]: Spray not related to a conflict
-in seed TheCore Lite, keys =5
+in seed TheCore Lite, keys =4
 
 [ERROR]: StasisField/Arbiter not related to a conflict
 in seed TheCore Lite, keys =

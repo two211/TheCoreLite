@@ -96,7 +96,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Forge/Probe default: F
 	GenerateCreep/Overlord default: G
 	HHMercCompound/HHSCV default: 
-	Halt default: T
 	HealingPsionicStorm/Archon default: H
 	HealingPsionicStorm/HighArchonTemplar default: H
 	HealingPsionicStorm/HighTemplar default: H
@@ -125,11 +124,15 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganVoidCoopCrushingGripWave/K5KerriganBurrowed default: D
 	KerriganVoidCoopCrushingGripWave/K5KerriganPsiStrike default: D
 	KerriganVoidCoopCrushingGripWave/KerriganReviveCocoon default: D
-	Land default: L
-	Lift default: L
 	LurkerHoldFire/LurkerBurrowed default: F copyof: LurkerHoldFire/LurkerMPBurrowed default: F
 	LurkerHoldFire/LurkerMPBurrowed default: F
+	MercMedic/Barracks default: B
+	MercMedic/MercCompound default: B
 	MorphtoHHRaven/HHRaven default: 
+	MutatorWorkerSleep/Drone default: E
+	MutatorWorkerSleep/Probe default: E
+	MutatorWorkerSleep/SCV default: E
+	MutatorWorkerSleep/SISCV default: 
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	ParasiticBomb/Viper default: R
@@ -152,16 +155,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	RespawnZergling/Hive default: Z copyof: RespawnZergling/Hatchery default: Z
 	RespawnZergling/Lair default: Z copyof: RespawnZergling/Hatchery default: Z
 	SIEngineeringBay/SISCV default: 
-	SIInfestedBunkerUproot/SIInfestedBunker default: 
 	SIRoot/SICommandCenterFlying default: 
-	SIUproot/SIBarracks default: 
-	SIUproot/SICivilianStructure default: 
-	SIUproot/SICommandCenter default: 
-	SIUproot/SIFactory default: 
-	SIUproot/SIMissileTurret default: 
-	SIUproot/SIStarport default: 
 	SJHyperionFightersRecall/SJHyperion default: X
 	SS_LeviathanTentacleAttackR2NoDelay/SS_Plane default: Z
+	SelectBuilder default: Q
+	Spray default: Y
 	StopGenerateCreep default: C
 	StopGenerateCreep/Overlord default: C copyof: StopGenerateCreep default: C
 	SwarmQueenRaptor/HugeSwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
@@ -230,6 +228,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveVentralSacks default: E
 	EvolveViperAbductImprovedStun/InfestationPit default: T
 	EvolveViperAbductImprovedStun/Viper default: T
+	Halt default: T
 	HeroNukeCalldown/Nova default: N, R copyof: NukeCalldown/Ghost default: N
 	HeroNukeCalldown/NovaHero default: N, R
 	HeroNukeCalldown/Tosh default: N, R copyof: NukeCalldown/Ghost default: N
@@ -244,15 +243,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganVoidCoopEconDrop/K5KerriganBurrowed default: E
 	KerriganVoidCoopEconDrop/K5KerriganPsiStrike default: E
 	KerriganVoidCoopEconDrop/KerriganReviveCocoon default: E
+	Land default: L
+	Lift default: L
 	MassRoachDrop/ZagaraReviveCocoon default: D
 	MassRoachDrop/ZagaraVoidCoop default: D
 	MassRoachDrop/ZagaraVoidCoopBurrowed default: D
-	MercMedic/Barracks default: B
-	MercMedic/MercCompound default: B
-	MutatorWorkerSleep/Drone default: E
-	MutatorWorkerSleep/Probe default: E
-	MutatorWorkerSleep/SCV default: E
-	MutatorWorkerSleep/SISCV default: 
 	NovaUnitNuke/NovaCoop default: 
 	NovaUnitNuke/NovaReviveBeacon default: 
 	NukeCalldown/Ghost default: N
@@ -262,9 +257,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	OracleHallucination/Sentry default: L
 	PrimalRoach/PrimalTownHallUprooted default: R
 	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
-	SelectBuilder default: Q
+	SIUproot/SICommandCenter default: 
 	SpectreNukeCalldown/Spectre default: N copyof: NukeCalldown/Ghost default: N
-	Spray default: Y
 	SwarmQueenCorpser/HugeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/LargeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
@@ -1233,6 +1227,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchReaperSpiderMines/BarracksTechLab default: M
 	ResearchReaverIncreasedScarabSplashRadius/Reaver default: A
 	ResearchReaverIncreasedScarabSplashRadius/RoboticsBay default: A
+	ResearchSIBarracksTrainInfestedCivilianLevel2/SICivilianStructure default: 
 	ResearchSIQueenEnergy/SIStarportTechLab default: 
 	ResearchShadowDash/DarkShrine default: D
 	ResearchShockwaveMissileBattery/StarportTechLab default: S
@@ -1240,6 +1235,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchTempestDisintegration/FleetBeacon default: D
 	ReturnCargo default: C
 	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
+	SILiberator/SIStarport default: 
 	SIRefinery/SISCV default: 
 	SJHyperionBlink/Battlecruiser default: 
 	SJHyperionBlink/SJHyperion default: Q
@@ -1558,7 +1554,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchRegenerativeBioSteel/Armory default: B
 	ResearchRegenerativeBioSteel/FactoryTechLab default: R
 	ResearchRegenerativeBioSteel/FactoryTechReactor default: C copyof: ResearchRegenerativeBioSteel/FactoryTechLab default: R
-	ResearchSIBarracksTrainInfestedCivilianLevel2/SICivilianStructure default: 
 	ResearchSILiberatorBecometheSwarm/SIStarportTechLab default: 
 	ResearchSOARepairBeamExtraTarget/SolarForge default: R
 	ResearchSeekerMissile/StarportTechLab default: R
@@ -1570,8 +1565,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Roach/VoidRiftUnselectable default: R
 	RoachWarren/Drone default: R
 	SIInfestedBunker/SISCV default: 
-	SILiberator/SIStarport default: 
+	SIInfestedBunkerUproot/SIInfestedBunker default: 
 	SIStarport/SISCV default: 
+	SIUproot/SIBarracks default: 
+	SIUproot/SICivilianStructure default: 
+	SIUproot/SIFactory default: 
+	SIUproot/SIMissileTurret default: 
+	SIUproot/SIStarport default: 
 	SJHyperionLightningStorm/SJHyperion default: R
 	SS_LeviathanTentacleAttackR1NoDelay/SS_Plane default: X
 	ShieldBatteryRecharge/ShieldBattery default: R
