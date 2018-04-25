@@ -1123,6 +1123,12 @@ in seed TheCore Lite, keys =F
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: GenerateCreep/OverlordTransport not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: MorphToOverseer/OverlordTransport not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
 in seed TheCore Lite, keys =C
@@ -1772,5 +1778,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 374 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 376 WARNs: 144 
 ============================

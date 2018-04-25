@@ -468,7 +468,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WraithCloakOn/HHWraith
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
+[WARN]: no default GenerateCreep/OverlordTransport
+[WARN]: no default MorphToOverseer/OverlordTransport
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 467 ERRORs: 1 
+Finished (Check defaults) - WARNs: 469 ERRORs: 1 
 ============================

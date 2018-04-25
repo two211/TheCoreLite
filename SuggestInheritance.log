@@ -95,6 +95,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Forge/Harvester default:  copyof: Forge/Probe default: F
 	Forge/Probe default: F
 	GenerateCreep/Overlord default: G
+	GenerateCreep/OverlordTransport default: 
 	HHMercCompound/HHSCV default: 
 	HealingPsionicStorm/Archon default: H
 	HealingPsionicStorm/HighArchonTemplar default: H
@@ -1753,6 +1754,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToHellionTank/Hellion default: D
 	MorphToHoverHellbat/HoverHellion default: D
 	MorphToOverseer/Overlord default: V
+	MorphToOverseer/OverlordTransport default: 
 	MorphToOverseer/SIOverlord default: 
 	MorphToOverseer/VoidRiftUnselectable default: V
 	MorphtoObserverSiege/Observer default: E
