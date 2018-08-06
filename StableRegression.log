@@ -9,8 +9,10 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [ERROR]: Shift+3,Control+E used in place of Shift+3,Control+F for parameter CameraView3, in seed TheCore Lite
 [ERROR]: Control+Shift+1,Grave used in place of Control+Shift+1 for parameter ControlGroupAssignAndSteal1, in seed TheCore Lite
 [ERROR]: Alt,Control,Control+Alt,Shift+Alt used in place of Control,Control+Alt,Shift+Alt for parameter StatusEnemy, in seed TheCore Lite
+[ERROR]: Shift+Alt+E used in place of B,Shift+Alt+E for parameter TownCamera, in seed TheCore Lite
 [WARN]: 'Escape' used in place of 'Escape,Grave' for command 'Cancel', in seed 'TheCore Lite'
 [WARN]: 'T' used in place of 'V' for command 'Corruptor/Larva', in seed 'TheCore Lite'
+[WARN]: 'E' used in place of 'E,R' for command 'EMP/Ghost', in seed 'TheCore Lite'
 [WARN]: '5' used in place of '4' for command 'Halt', in seed 'TheCore Lite'
 [WARN]: '5' used in place of '4' for command 'Lift', in seed 'TheCore Lite'
 [WARN]: 'V' used in place of 'T' for command 'Mutalisk/Larva', in seed 'TheCore Lite'
@@ -18,5 +20,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'E,R' used in place of 'E,C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 8 WARNs: 7 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 9 WARNs: 8 INFOs: 1 
 ============================

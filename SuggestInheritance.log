@@ -135,6 +135,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MutatorWorkerSleep/Probe default: E
 	MutatorWorkerSleep/SCV default: E
 	MutatorWorkerSleep/SISCV default: 
+	NovaStoneTargetEnemy/NovaStoneHeroic default: 
 	OracleWeaponOff default: D
 	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	ParasiticBomb/Viper default: R
@@ -249,6 +250,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MassRoachDrop/ZagaraReviveCocoon default: D
 	MassRoachDrop/ZagaraVoidCoop default: D
 	MassRoachDrop/ZagaraVoidCoopBurrowed default: D
+	NovaStoneTargetEMP/NovaStoneHeroic default: 
 	NovaUnitNuke/NovaCoop default: 
 	NovaUnitNuke/NovaReviveBeacon default: 
 	NukeCalldown/Ghost default: N
@@ -281,6 +283,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CampaignVehicles default: A
 	CampaignVehicles/Factory default: A
 	CampaignVehicles/Starport default: A
+	ClassicQueen/Hatchery default: 
+	ClassicQueen/Hive default: 
+	ClassicQueen/Lair default: 
 	DehakaMendingAura/DehakaCoop default: 
 	EvolveViperImprovedCastRange/InfestationPit default: R
 	EvolveViperImprovedCastRange/Viper default: R
@@ -295,6 +300,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WeaponsFree/Ghost_BlackOps default: 
 	WeaponsFree/NovaCoop default: 
 	WeaponsFree/NovaHero default: G
+	WeaponsFree/NovaStoneHeroic default: 
 
 [INFO]: TheCore Lite: F,6   
 	LurkerCancelHoldFire/LurkerBurrowed default: G copyof: LurkerCancelHoldFire/LurkerMPBurrowed default: G
@@ -602,6 +608,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsionicBolt/Telios default:  copyof: Feedback/HighTemplar default: F
 	Snipe/Ghost default: R
 	Snipe/GhostVulture default: R
+	Snipe/NovaStoneHeroic default: 
 	Snipe_BlackOps/Ghost_BlackOps default: 
 	TargetLock/Monitor default: T
 
@@ -749,6 +756,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Drag/Dehaka default: Q
 	Drag/DehakaMirrorImage default: Q copyof: Drag/Dehaka default: Q
 	DrakkenLaserDrillNuke/DrakkenLaserDrillCoop default: E
+	EMP/Ghost default: E
 	EnergizerReclamation/SentryCampaignBase default: R
 	EnergizerReclamation/SentryPurifier default: R
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
@@ -816,6 +824,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LocustLaunch/SwarmHostRooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustLaunchCreeper/SwarmHostSplitBBurrowed default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustLaunchCreeper/SwarmHostSplitBRooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
+	MagrailMunitions/Marauder default: 
+	MagrailMunitions/Marine default: 
 	MindBlast/Spectre default: B
 	MindBlast/Tosh default: B
 	MohandarOmnislash/VorazunChampion default: E
@@ -923,6 +933,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Transfusion/QueenCoop default: T copyof: Transfusion/Queen default: T
 	Transfusion/ZaGara default: T
 	UltraliskBurrowCharge/HotSTorrasqueBurrowed default: C
+	UltrasonicPulse/Spectre default: U copyof: EMP/Ghost default: E
 	UpgradeToRoboticsFacilityWarp/RoboticsFacility default: G copyof: UpgradeToWarpGate/Gateway default: G
 	UpgradeToStargateWarp/Stargate default: G copyof: UpgradeToWarpGate/Gateway default: G
 	UpgradeToWarpGate/Gateway default: G
@@ -966,7 +977,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: E,R   
 	BuildPointDefenseDrone/Raven default: D copyof: PointDefenseDrone/Raven default: D
 	ChronoBoostEnergyCost/Nexus default: 
-	EMP/Ghost default: E
 	EMP/GhostVulture default: E
 	EMP/ScienceVessel default: 
 	EMPNova/ShadowScrambler default: E
@@ -989,7 +999,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsiStorm/Telios default:  copyof: PsiStorm/HighTemplar default: T
 	PsiStorm/ZenithStone default: T
 	TimeWarp/Nexus default: C
-	UltrasonicPulse/Spectre default: U copyof: EMP/Ghost default: E
 
 [INFO]: TheCore Lite: E,Space   
 	ArbiterMPStasisField/ArbiterMP default: F
@@ -1359,7 +1368,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchSlicingGlave/DehakaMurvarStructure default: 
 	SICivilianStructure/SISCV default: 
 	SS_LeviathanTentacleAttackR2/SS_Plane default: A
-	SpiderMine/Bunker default: E
 	StalkerHallucination/Nexus default:  copyof: StalkerHallucination/Sentry default: S
 	StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
@@ -1456,6 +1464,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BrokenDrakkenLaserDrill/DrakkenLaserDrillCoop default: R
 	BrokenSolarForge/SolarForge default: R
 	BuildHHBomberPlatform/HHSCV default: 
+	BuildHealingDrone/Raven default: 
 	Bunker/KelMorianWorker default: U
 	Bunker/SCV default: U
 	BunkerFortified/SCV default: U copyof: Bunker/SCV default: U
@@ -1468,6 +1477,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	CyberneticsCore/Harvester default:  copyof: CyberneticsCore/Probe default: Y
 	CyberneticsCore/Probe default: Y
 	CycloneResearchLockOnDamageUpgrade/FactoryTechLab default: R
+	DOMGhostPersonalDefensiveMatrix/Ghost default: 
 	DarkPylonRecall/DarkPylon default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	DehakaGlevigStructure/DehakaDrone default: 
 	DehakaLearnPrimalArmorLevel1/DehakaHatchery default: 
@@ -1524,6 +1534,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MothershipCoreMassRecall/MothershipCore default: R
 	MothershipMassRecall/Mothership default: R copyof: MothershipCoreMassRecall/MothershipCore default: R
 	NovaDomination/NovaHero default: 
+	NovaStoneDefensiveMatrix/NovaStoneHeroic default: 
 	NovaSwitchAssaultMode/NovaCoop default: 
 	NovaSwitchAssaultMode/NovaReviveBeacon default: 
 	PitAlarakSuperMove/PitAlarak default: R
@@ -1579,6 +1590,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SiegeTank_BlackOpsUnsiege default: 
 	SpawnBroodLord/Leviathan default: B
 	SpawnBroodLord/SpacePlatformVentsUnit default: B
+	SpiderMine/Bunker default: E
 	SpiderMineReplenish/MercVulture default: R
 	SpiderMineReplenish/Vulture default: R, T
 	SpineCrawlerRoot/SpineCrawlerUprooted default: R
@@ -1632,6 +1644,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Blink/ShadowOfTheVoidStalker default: B copyof: Blink/Stalker default: B
 	Blink/Stalker default: B
 	Blink/StalkerShakuras default: B
+	BuildRailGunTurret/Raven default: 
 	BuildScarab/Reaver default: 
 	BurrowChargeCampaign/HotSTorrasque default: C copyof: Blink/Stalker default: B
 	BurrowChargeCampaign/Ultralisk default: C copyof: Blink/Stalker default: B
@@ -2051,6 +2064,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToSwarmHostSplitA/Larva default: A copyof: SwarmHostMP/Larva default: A
 	MorphToSwarmHostSplitB/Larva default: A copyof: SwarmHostMP/Larva default: A
 	SpectreHoldFire/Spectre default: F copyof: GhostHoldFire/Ghost default: F
+	SuperStimpackStone default: 
 	SwarmHostMP/Larva default: A
 	TechReactorAI/Barracks default: Z
 	TechReactorAI/BarracksFlying default: Z

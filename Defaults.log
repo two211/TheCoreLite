@@ -34,6 +34,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default BuildHHMercStarport/HHSCV
 [WARN]: no default BuildHHTechLabStarport/HHStarportFlying
 [WARN]: no default BuildHHTechLabStarport/StarportFlying
+[WARN]: no default BuildHealingDrone/Raven
+[WARN]: no default BuildRailGunTurret/Raven
 [WARN]: no default BuildSITechLabFactory/SIFactoryFlying
 [WARN]: no default BuildSITechLabStarport/SIStarportFlying
 [WARN]: no default BuildScarab/Reaver
@@ -50,12 +52,16 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Charge/Voranor
 [WARN]: no default Charge/ZealotDark
 [WARN]: no default ChronoBoostEnergyCost/Nexus
+[WARN]: no default ClassicQueen/Hatchery
+[WARN]: no default ClassicQueen/Hive
+[WARN]: no default ClassicQueen/Lair
 [WARN]: no default ColossusHallucination/Nexus
 [WARN]: no default ColossusHallucination/Voranor
 [WARN]: no default CommandCenter/HHSCV
 [WARN]: no default CoopMurvarSpawnCreepers/DehakaMurvar
 [WARN]: no default CreepTumor/Queen
 [WARN]: no default CyberneticsCore/Harvester
+[WARN]: no default DOMGhostPersonalDefensiveMatrix/Ghost
 [WARN]: no default DakrunCrashingCharge/DehakaDakrun
 [WARN]: no default DarkShrine/Harvester
 [WARN]: no default DarkSwarm/Infestor
@@ -150,6 +156,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Frostbat/Barracks
 [WARN]: no default FusionCore/HHSCV
 [WARN]: no default Gateway/Harvester
+[WARN]: no default GenerateCreep/OverlordTransport
 [WARN]: no default GhostHoldFire/NovaCoop
 [WARN]: no default Glare/Oracle
 [WARN]: no default GlevigFirebreath/DehakaGlevig
@@ -201,7 +208,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Lurker/Hydralisk
 [WARN]: no default Lurker/HydraliskImpaler
 [WARN]: no default LurkerBurrowDown
+[WARN]: no default MagrailMunitions/Marauder
 [WARN]: no default MagrailMunitions/Marauder_BlackOps
+[WARN]: no default MagrailMunitions/Marine
 [WARN]: no default MarineSuperStimpack/Marine_BlackOps
 [WARN]: no default Matrix/Medic
 [WARN]: no default MedicHeal/Medivac_BlackOps
@@ -213,6 +222,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MorphToHellion/HHHellionTank
 [WARN]: no default MorphToHellion/HellionBlackOps
 [WARN]: no default MorphToHellionTank/HHHellion
+[WARN]: no default MorphToOverseer/OverlordTransport
 [WARN]: no default MorphToOverseer/SIOverlord
 [WARN]: no default MorphtoDefiler/Larva
 [WARN]: no default MorphtoHHRaven/HHRaven
@@ -229,6 +239,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default NexusShieldRecharge/Nexus
 [WARN]: no default NovaBoombotBurrow/NovaBoombot
 [WARN]: no default NovaDomination/NovaHero
+[WARN]: no default NovaStoneDefensiveMatrix/NovaStoneHeroic
+[WARN]: no default NovaStoneTargetEMP/NovaStoneHeroic
+[WARN]: no default NovaStoneTargetEnemy/NovaStoneHeroic
 [WARN]: no default NovaSwitchAssaultMode/NovaCoop
 [WARN]: no default NovaSwitchAssaultMode/NovaReviveBeacon
 [WARN]: no default NovaUnitNuke/NovaCoop
@@ -395,6 +408,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SiegeTank_BlackOpsSiege
 [WARN]: no default SiegeTank_BlackOpsUnsiege
 [WARN]: no default SlivanPuke/Devourer
+[WARN]: no default Snipe/NovaStoneHeroic
 [WARN]: no default Snipe_BlackOps/Ghost_BlackOps
 [WARN]: no default SpawnBanelings/K5Kerrigan
 [WARN]: no default StalkerHallucination/Nexus
@@ -409,6 +423,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Summon2DragoonHallucinations/Voranor
 [WARN]: no default Summon2ScoutHallucinations/Sentry
 [WARN]: no default Summon2ScoutHallucinations/Voranor
+[WARN]: no default SuperStimpackStone
 [WARN]: no default SupplyDepot/HHSCV
 [WARN]: no default SupplyDepotDrop/SCV
 [WARN]: no default SwarmHostRoot/SwarmHost
@@ -460,6 +475,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WarpinObservatory/Probe
 [WARN]: no default WeaponsFree/Ghost_BlackOps
 [WARN]: no default WeaponsFree/NovaCoop
+[WARN]: no default WeaponsFree/NovaStoneHeroic
 [WARN]: no default WidowMineBurrow/HHWidowMine
 [WARN]: no default WidowMineBurrow/MutatorWidowMine
 [WARN]: no default WidowMineUnburrow/HHWidowMine
@@ -468,9 +484,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WraithCloakOn/HHWraith
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
-[WARN]: no default GenerateCreep/OverlordTransport
-[WARN]: no default MorphToOverseer/OverlordTransport
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 469 ERRORs: 1 
+Finished (Check defaults) - WARNs: 483 ERRORs: 1 
 ============================

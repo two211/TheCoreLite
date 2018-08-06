@@ -70,6 +70,12 @@ in seed TheCore Lite, keys =E
 [ERROR]: BuildHHTechLabStarport/StarportFlying not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: BuildHealingDrone/Raven not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: BuildRailGunTurret/Raven not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: BuildSITechLabFactory/SIFactoryFlying not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -85,6 +91,15 @@ in seed TheCore Lite, keys =C
 [ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
 in seed TheCore Lite, keys =E,R
 
+[ERROR]: ClassicQueen/Hatchery not related to a conflict
+in seed TheCore Lite, keys =6
+
+[ERROR]: ClassicQueen/Hive not related to a conflict
+in seed TheCore Lite, keys =6
+
+[ERROR]: ClassicQueen/Lair not related to a conflict
+in seed TheCore Lite, keys =6
+
 [ERROR]: CommandCenter/HHSCV not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -93,6 +108,9 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: CreepTumor/Queen not related to a conflict
 in seed TheCore Lite, keys =C
+
+[ERROR]: DOMGhostPersonalDefensiveMatrix/Ghost not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: DakrunCrashingCharge/DehakaDakrun not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -355,6 +373,9 @@ in seed TheCore Lite, keys =E
 [ERROR]: FusionCore/HHSCV not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: GenerateCreep/OverlordTransport not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: GhostHoldFire/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =Y
 
@@ -472,8 +493,14 @@ in seed TheCore Lite, keys =
 [ERROR]: Lurker/HydraliskImpaler not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: MagrailMunitions/Marauder not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: MagrailMunitions/Marauder_BlackOps not related to a conflict
 in seed TheCore Lite, keys =E,Space
+
+[ERROR]: MagrailMunitions/Marine not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: MarineSuperStimpack/Marine_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -497,6 +524,9 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =R
 
 [ERROR]: MorphToHellionTank/HHHellion not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: MorphToOverseer/OverlordTransport not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [ERROR]: MorphToOverseer/SIOverlord not related to a conflict
@@ -537,6 +567,15 @@ in seed TheCore Lite, keys =E,Space
 
 [ERROR]: NovaDomination/NovaHero not related to a conflict
 in seed TheCore Lite, keys =R
+
+[ERROR]: NovaStoneDefensiveMatrix/NovaStoneHeroic not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: NovaStoneTargetEMP/NovaStoneHeroic not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: NovaStoneTargetEnemy/NovaStoneHeroic not related to a conflict
+in seed TheCore Lite, keys =4
 
 [ERROR]: NovaSwitchAssaultMode/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =R
@@ -1006,6 +1045,9 @@ in seed TheCore Lite, keys =R
 [ERROR]: SlivanPuke/Devourer not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: Snipe/NovaStoneHeroic not related to a conflict
+in seed TheCore Lite, keys =C,Space
+
 [ERROR]: Snipe_BlackOps/Ghost_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,C
 
@@ -1029,6 +1071,9 @@ in seed TheCore Lite, keys =R
 
 [ERROR]: StukovInfestedSiegeTankUproot/StukovInfestedSiegeTank not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: SuperStimpackStone not related to a conflict
+in seed TheCore Lite, keys =Y
 
 [ERROR]: SupplyDepot/HHSCV not related to a conflict
 in seed TheCore Lite, keys =D
@@ -1099,6 +1144,9 @@ in seed TheCore Lite, keys =6
 [ERROR]: WeaponsFree/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =6
 
+[ERROR]: WeaponsFree/NovaStoneHeroic not related to a conflict
+in seed TheCore Lite, keys =6
+
 [ERROR]: WidowMineAttack/WidowMine not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -1122,12 +1170,6 @@ in seed TheCore Lite, keys =F
 
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
-
-[ERROR]: GenerateCreep/OverlordTransport not related to a conflict
-in seed TheCore Lite, keys =4
-
-[ERROR]: MorphToOverseer/OverlordTransport not related to a conflict
-in seed TheCore Lite, keys =Space
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
@@ -1778,5 +1820,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 376 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 390 WARNs: 144 
 ============================
