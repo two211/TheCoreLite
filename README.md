@@ -228,10 +228,10 @@ Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time p
 
 In this way all keys of the dense cards are useful for hatcheries, lairs and hives.
 Alls units are covered apart of:
-* Overlord (E, same key as Pneumatized Carapace)
+* Overlord (E, same key as Queen, say E is Zerg mineral only macro units key)
 * Viper (4, same key as research burrow)
 * Infestor (F, same key as Lair/Hive)
-* Mutalisk (V, same key as Queen)
+* Mutalisk (V, same key as Pneumatized Carapace, exception to speed research unique key)
 * Swarm Host (Y, very out of compact command card: feel free to change if you are Swarm Hosts heavy in your BOs)
 
 For those units, they are either spellcaster or situational, or you simply don't want to accidentally make too many of them.
