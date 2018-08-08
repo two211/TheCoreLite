@@ -734,6 +734,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BiodomeUnloadAll/Biodome default: U
 	BiodomeUnloadAll/BiodomeHalfBuilt default: U
 	BiodomeUnloadAll/InfestableBiodome default: U
+	BuildCreepTumor/Hatchery default: C
+	BuildCreepTumor/Hive default: C
+	BuildCreepTumor/Lair default: C
 	BuildHHTechLabStarport/HHStarportFlying default: 
 	BuildHHTechLabStarport/StarportFlying default: 
 	BuildKelMorianAutoTurret/KelMorianWorker default: A
@@ -771,6 +774,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveMuscularAugments/LurkerDenMP default: H
 	EvolveSIDiamondbackImprovedEnsnare/SIFactoryTechLab default: 
 	EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab default: 
+	EvolveSeveringGlave/GreaterSpire default: 
+	EvolveSeveringGlave/Spire default: 
 	Explode/Baneling default: X
 	Explode/BanelingBurrowed default: X
 	Explode/HotSHunter default: X copyof: Explode/Baneling default: X
@@ -858,6 +863,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsionicLift/KerriganReviveCocoon default: W
 	PsionicLift/KerriganVoid default: T, W copyof: PsionicLift/K5Kerrigan default: W, T
 	PsionicLift/KerriganVoidBurrowed default: T, W copyof: PsionicLift/K5KerriganBurrowed default: W, T
+	Queen default: Q
+	QueenCoop default: Q copyof: Queen default: Q
 	QueenMPEnsnare/QueenClassic default: E
 	QueenMPEnsnare/QueenMP default: E
 	RavenScramblerMissile/Raven default: 
@@ -898,6 +905,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIClusterRockets/StukovApocalisk default: 
 	SICommandCenter/SISCV default: 
 	SIDiamondBack/SIFactory default: 
+	SIOverlord/SICommandCenter default: 
 	SIQueenFungalGrowth/SIQueen default: 
 	SS_LeviathanTentacleAttackR1/SS_Plane default: S
 	SentryTaldarimForceField/Monitor default: F
@@ -967,7 +975,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	hydraliskspeed/HydraliskDen default: G
 	hydraliskspeed/LurkerDen default: G copyof: hydraliskspeed/LurkerDenMP default: G
 	hydraliskspeed/LurkerDenMP default: G
-	overlordspeed default: P
 	zerglingmovementspeed/SpawningPool default: M
 
 [INFO]: TheCore Lite: G,E   
@@ -1982,9 +1989,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: V   
 	Banshee/Starport default: E
 	BansheeSpeed/StarportTechLab default: B
-	BuildCreepTumor/Hatchery default: C
-	BuildCreepTumor/Hive default: C
-	BuildCreepTumor/Lair default: C
 	BuildCyclone/Factory default: N
 	DisruptorHallucination/Sentry default: D
 	EnergyNova/Artifact default: V
@@ -2003,8 +2007,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Phoenix/VoidRift default: X
 	Phoenix/VoidRiftUnselectable default: X
 	PrimalHydralisk/YagdraEggSmall default: H
-	Queen default: Q
-	QueenCoop default: Q copyof: Queen default: Q
 	ResearchArmorPiercingRockets/FactoryTechLab default: 
 	ResearchCycloneRapidFireLaunchers/FactoryTechLab default: 
 	ResearchDehakaImpalerTenderize/DehakaGlevigStructure default: 
@@ -2043,6 +2045,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpInReplicant/WarpGate default: E
 	WarpInVulcanChampion/TwilightCouncil default: X
 	WarpinDisruptor/RoboticsFacility default: D
+	overlordspeed default: P
 
 [INFO]: TheCore Lite: Y   
 	DarkShrineAssignRally/DarkShrine default: Y

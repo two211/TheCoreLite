@@ -292,6 +292,12 @@ in seed TheCore Lite, keys =R
 [ERROR]: EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: EvolveSeveringGlave/GreaterSpire not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: EvolveSeveringGlave/Spire not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: EvolveStukovInfestedCivilianSpawnBroodlingsOnDeath/SICivilianStructure not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -951,6 +957,9 @@ in seed TheCore Lite, keys =F
 
 [ERROR]: SIMissileTurret/SISCV not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: SIOverlord/SICommandCenter not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: SIQueen not related to a conflict
 in seed TheCore Lite, keys =D
@@ -1820,5 +1829,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 390 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 393 WARNs: 144 
 ============================

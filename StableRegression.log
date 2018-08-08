@@ -8,8 +8,8 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [ERROR]: Shift+1,Control+C used in place of Shift+CapsLock for parameter CameraView1, in seed TheCore Lite
 [ERROR]: Shift+3,Control+E used in place of Shift+3,Control+F for parameter CameraView3, in seed TheCore Lite
 [ERROR]: Control+Shift+1,Grave used in place of Control+Shift+1 for parameter ControlGroupAssignAndSteal1, in seed TheCore Lite
+[ERROR]: Shift+F1 used in place of Equals for parameter MinimapTerrain, in seed TheCore Lite
 [ERROR]: Alt,Control,Control+Alt,Shift+Alt used in place of Control,Control+Alt,Shift+Alt for parameter StatusEnemy, in seed TheCore Lite
-[ERROR]: Shift+Alt+E used in place of B,Shift+Alt+E for parameter TownCamera, in seed TheCore Lite
 [WARN]: 'Escape' used in place of 'Escape,Grave' for command 'Cancel', in seed 'TheCore Lite'
 [WARN]: 'T' used in place of 'V' for command 'Corruptor/Larva', in seed 'TheCore Lite'
 [WARN]: 'E' used in place of 'E,R' for command 'EMP/Ghost', in seed 'TheCore Lite'

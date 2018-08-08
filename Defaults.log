@@ -121,6 +121,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default EvolveSIDiamondbackImprovedEnsnare/SIFactoryTechLab
 [WARN]: no default EvolveSIDiamondbackSnailTrail/SIFactoryTechLab
 [WARN]: no default EvolveSIMarineTrooperImprovedRange/SIBarracksTechLab
+[WARN]: no default EvolveSeveringGlave/GreaterSpire
+[WARN]: no default EvolveSeveringGlave/Spire
 [WARN]: no default EvolveStukovInfestedCivilianSpawnBroodlingsOnDeath/SICivilianStructure
 [WARN]: no default EvolveStukovInfestedInfestedCivilianLeap/SICivilianStructure
 [WARN]: no default Explode/baneling
@@ -380,6 +382,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SIInfestedMarine/SIBarracks
 [WARN]: no default SILiberator/SIStarport
 [WARN]: no default SIMissileTurret/SISCV
+[WARN]: no default SIOverlord/SICommandCenter
 [WARN]: no default SIQueen
 [WARN]: no default SIQueenFungalGrowth/SIQueen
 [WARN]: no default SIRefinery/SISCV
@@ -486,5 +489,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Voranor
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 483 ERRORs: 1 
+Finished (Check defaults) - WARNs: 486 ERRORs: 1 
 ============================
