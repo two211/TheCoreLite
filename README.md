@@ -559,19 +559,7 @@ Compared to legacy TheCore Lite:
 * camera creation still based on Alt modifier
 * camera recall still based on Shift modifier
 * "control" cameras were introduced
-
-### Quick Cam
-
-* ~~Camera creation with Alt~~
-* ~~Camera recall with Shift+CapsLock~~
-
-~~This cam is updated each time you press Alt.~~
-~~Theoretically Alt is used only to define Cams early game.~~
-~~Camera 2 and 3 are kept in case you want to use them for harass.~~
-
-~~Tip: Alt quick cam creation is inhibited for Control+Alt and Shift+Alt, displaying enemy life bars~~
-
-~~Note: quick cam removed, kept in readme in case you want to reintroduce it in your local copy~~
+* Q camera is no longer used, 1 in place 1 is used
 
 ### Additional cameras alternates on control
 
@@ -603,6 +591,19 @@ Related aliases:
 ### Other features
 * Alt now shows Enemy life bar (useful for quick check for mana bars of stacked ground/air armies)
 * Shift+` is used for jump to last alert
+
+### Quick Cam
+
+* ~~Camera creation with Alt~~
+* ~~Camera recall with Shift+CapsLock~~
+
+~~This cam is updated each time you press Alt.~~
+~~Theoretically Alt is used only to define Cams early game.~~
+~~Camera 2 and 3 are kept in case you want to use them for harass.~~
+
+~~Tip: Alt quick cam creation is inhibited for Control+Alt and Shift+Alt, displaying enemy life bars~~
+
+~~Note: quick cam removed, kept in readme in case you want to reintroduce it in your local copy~~
 
 ----------------------------------------------------------------------------------------------------------------------
 
