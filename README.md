@@ -4,8 +4,8 @@ The Core Lite v2.3
 ### Table of Contents
 * [The Core Lite v2.3](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
   * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
-  * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
-  * [Aknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#aknowledgments)
+  * [Resources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
+  * [Acknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#acknowledgments)
   * [TheCore Lite features](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-features)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
   * [Unit keys](https://github.com/bobo38/TheCoreLite/blob/master/README.md#unit-keys)
@@ -42,7 +42,7 @@ The Core Lite v2.3
   * [Use case: Easy MULE/Chronoboost](https://github.com/bobo38/TheCoreLite/blob/master/README.md#use-case-easy-mulechronoboost)
 * [Further optimizations](https://github.com/bobo38/TheCoreLite/blob/master/README.md#further-optimizations)
   * [The Control key placement](https://github.com/bobo38/TheCoreLite/blob/master/README.md#the-control-key-placement)
-  * [Others possible twicks](https://github.com/bobo38/TheCoreLite/blob/master/README.md#others-possible-twicks)
+  * [Other possible tweaks](https://github.com/bobo38/TheCoreLite/blob/master/README.md#other-possible-tweaks)
 * [Changelog for the code](https://github.com/bobo38/TheCoreLite/blob/master/README.md#changelog-for-the-code)
 
 ## Repository description
@@ -58,9 +58,9 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
   * creep spread
 
 ### Coverage and checks
-* no keys conflicts accross supported modes (please report anyone you found)
+* no keys conflicts across supported modes (please report any that you find)
   * WoL HoTS LoTV multiplayer
-  * Campaigns ( WoL HoTS LoTV Nova)
+  * Campaigns (WoL HoTS LoTV Nova)
   * Coop
 * pass TheCore standards
   * keys supposed to be the same, or inherited (multi-racial support)
@@ -70,24 +70,24 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 ## Ressources
 
 Beside this README.md file,
-some graphic ressources are available in Image directory.
+some graphic resources are available in Image directory.
 Please download the following .pdf file:
 
 * [TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Reference/TheCore_Lite.pdf)
 * [TheCore Lite Discord channel](https://discord.gg/yrUK7t)
 
-Legacy ressources:
+Legacy resources:
 * [historical Master Spreadsheet](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
 * [TheCore Lite thread on teamliquid.net](http://www.teamliquid.net/forum/sc2-strategy/333891-thecore-lite-advanced-keyboard-layout)
 
-Other ressources:
+Other resources:
 * [NeoBlade's video](https://www.youtube.com/watch?v=y5Gw3BQfC_g)
 * [Feedback on NeoBlade's video](http://www.teamliquid.net/forum/viewpost.php?post_id=26542923)
 
-## Aknowledgments
+## Acknowledgments
 
 Loads of thanks to:
-* TheCore project, whose this repo is a fork, and all the accumulated work over the years
+* TheCore project, of whose repo this is a fork, and all the accumulated work over the years
 * JaKaTaK, the originator of the first TheCore Lite version
 * BeedeBdoo, who explained me the arcanes of TheCore, and datamined command card conflicts
 * MilExo, who reviewed extensively the Protoss aspect of TheCore Lite
@@ -95,9 +95,9 @@ Loads of thanks to:
 ## TheCore Lite features
 
 #### Implemented TheCore tips
-* [Consistency accross all races](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
+* [Consistency across all races](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
 * [2 keys macro groups](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-macro-groups)
-* [Control group and camera modifiers with good synergie with UI](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
+* [Control group and camera modifiers with good synergy with UI](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
 * [Easy access to groups, cameras, basic commands and spells](https://github.com/bobo38/TheCoreLite#unit-keys)
 * [RapidFire alternates](https://github.com/bobo38/TheCoreLite#rapidfire-keys)
 * [Zerg extensive select larvae alternates](https://github.com/bobo38/TheCoreLite#zerg-larvae)
@@ -109,7 +109,7 @@ Loads of thanks to:
 * [Control(+Shift)+Tab as Army selection](https://github.com/bobo38/TheCoreLite#select-all-army-on-tab-key)
 * [Shift+Q+W select prod buildings and jump to rally point](https://github.com/bobo38/TheCoreLite#use-case-army-production--rally-point-optional-warp-in-pylon)
 * [Shift+Q+W+Space TheCore Lite inject initiate](https://github.com/bobo38/TheCoreLite#use-case-thecore-lite-inject-initiate)
-* [TheCore Lite telegraph inject(backspace family)](https://github.com/bobo38/TheCoreLite#use-case-telegraph-inject-backspace-family)
+* [TheCore Lite telegraph inject (backspace family)](https://github.com/bobo38/TheCoreLite#use-case-telegraph-inject-backspace-family)
 * [Utility group and creep queen mechanics](https://github.com/bobo38/TheCoreLite#utility-group--grave)
 * [Shift+Alt easy cloning](https://github.com/bobo38/TheCoreLite#easier-cloning-through-shiftalt)
 * [RapidFire caster split](https://github.com/bobo38/TheCoreLite#high-templar-group-example)
@@ -227,7 +227,7 @@ Hatchery/Lair/Hive "Select larva" has many alternates to prevent waste of time p
 * Ultralisk (G)
 
 In this way all keys of the dense cards are useful for hatcheries, lairs and hives.
-Alls units are covered apart of:
+Alls units are covered apart from:
 * Overlord (E, same key as Queen, say E is Zerg mineral only macro units key)
 * Viper (4, same key as research burrow)
 * Infestor (F, same key as Lair/Hive)
@@ -329,7 +329,7 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * Ctl+Shift+Tab : alternate for "select all army"
 
 This makes sense considering
-[synergie with mouse clicking and group creation](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
+[synergy with mouse clicking and group creation](https://github.com/bobo38/TheCoreLite/blob/master/README.md#groups-and-mouse-synergies-with-ctrl-and-ctrlshift)
 
 ### Browsing subgroups
 * Tab and Shift+Tab are used
@@ -500,7 +500,7 @@ In case you want to remove a unit type from a group
 * Ctl+click a unit+#groupnumber, you probably want all units to be a target group anyway
 * Ctl+Shift+click a unit+#groupnumber, deselected units won't have any group :(
 
-Shift+Alt would be recommanded if you want to remove some units from control groups.
+Shift+Alt would be recommended if you want to remove some units from control groups.
 Just recreate group with Shift+Alt after shift clicking the units supposed to stay at their place
 (or execute the last command - read next section).
 
@@ -608,8 +608,8 @@ Related aliases:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Use case scenarii
-=================
+Use case scenarios
+==================
 
 ## Use case: Start Sequence
 * hold Space before match begin
@@ -648,7 +648,7 @@ Recommended:
 * select new base under construction
 * Alt+Q+Tab+[camera\_key]
 
-## Use case: send worker back to ressources gathering after queued commands
+## Use case: send worker back to resource gathering after queued commands
 * press shift to queue all necessary commands
 * Shift+[camera\_key]: jump to base
 * Shift+RightClick on mineral or gaz; last action of the queue is to go back to work
@@ -781,7 +781,7 @@ sources:
 * [JaKaTaK's "Rapid Fire Creep Spread" video](https://www.youtube.com/watch?v=av2kaBI-gKg&index=11&list=PLiejbQlQAdGl0uqlZUauzrxwcM5fquSPh)
 * [Zerg Cycle Revisited - LoTV](http://www.teamliquid.net/forum/sc2-strategy/524948-zerg-cycle-revisited-lotv) (Team Liquid forum thread)
 * [\[G\] The Cycle method for Zerg macro](http://www.teamliquid.net/forum/sc2-strategy/274298-the-cycle-method-for-zerg-macro) (Team Liquid forum thread)
-* [larva usage factor, or why you might be macroing wrong](https://6pool.blogspot.de/2017/12/larva-usage-factor-or-why-you-might-be.html)(blog)
+* [larva usage factor, or why you might be macroing wrong](https://6pool.blogspot.de/2017/12/larva-usage-factor-or-why-you-might-be.html) (blog)
 
 ## Use case: Easy MULE/Chronoboost
 
@@ -830,7 +830,7 @@ Changes implemented at my local copy:
 * use Tab as CapsLock group
 * CapsLock is now free to be used as Control modifier with external software
 
-## Others possible twicks
+## Other possible tweaks
 
 Device inputs:
 * use wheel up/down as Back/ForwardMouseButton with external mouse software (work for 3-buttons mouse)
