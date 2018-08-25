@@ -554,13 +554,15 @@ You could think about unbinding it, as there are enough other alternates.
 ### History
 
 TheCore Lite keeps on having Shift+cam# for cam# recall.
-It allows precise queuing.
+It chains good with queuing,
+allows sending worker back to work,
+easy cam access for multiprong defence
 
 Compared to legacy TheCore Lite:
 * camera creation still based on Alt modifier
 * camera recall still based on Shift modifier
 * "control" cameras were introduced
-* Q camera is no longer used, 1 in place 1 is used
+* Q camera is no longer used, in place 1 is used
 
 ### Additional cameras alternates on control
 
