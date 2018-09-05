@@ -88,6 +88,12 @@ in seed TheCore Lite, keys =Space
 [ERROR]: BuildScienceVessel/Starport not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: BuildTychusBar/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: BuildTychusMedivacPlatform/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
 in seed TheCore Lite, keys =E,R
 
@@ -442,6 +448,9 @@ in seed TheCore Lite, keys =
 [ERROR]: HercGrapple/HERC not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: HighTemplarTaldarim not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: Hyperjump/HHBattlecruiser not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -567,6 +576,9 @@ in seed TheCore Lite, keys =C
 
 [ERROR]: NexusShieldRecharge/Nexus not related to a conflict
 in seed TheCore Lite, keys =C
+
+[ERROR]: NovaArmorBlinkSuitBlinkStone/NovaStoneHeroic not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: NovaBoombotBurrow/NovaBoombot not related to a conflict
 in seed TheCore Lite, keys =E,Space
@@ -1039,6 +1051,9 @@ in seed TheCore Lite, keys =F
 [ERROR]: Salvage/SIMissileTurretFlying not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: Salvage/TychusSCVAutoTurret not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: ShapedBlast/SiegeBreakerSieged not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -1055,7 +1070,7 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =
 
 [ERROR]: Snipe/NovaStoneHeroic not related to a conflict
-in seed TheCore Lite, keys =C,Space
+in seed TheCore Lite, keys =C
 
 [ERROR]: Snipe_BlackOps/Ghost_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,C
@@ -1096,6 +1111,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: TerranBuild/SISCV not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: TerranBuild/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: TerranBuildAdvanced/HHSCV not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -1116,6 +1134,198 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: TransportMode/WarpPrismTaldarim not related to a conflict
 in seed TheCore Lite, keys =4
+
+[ERROR]: TychusACBandofBrothersLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =Y
+
+[ERROR]: TychusACHero/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: TychusACImplosionGrenadesLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: TychusACPiercingRoundsLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: TychusACRageGrenadesLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: TychusArmory/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: TychusFirebat/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: TychusFirebatBlueFlameOilLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: TychusFirebatIncendiaryPetroleumLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: TychusFirebatPremiumPetroleumLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: TychusFirebatShieldLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =Y
+
+[ERROR]: TychusGhost/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: TychusGhostAcademy/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: TychusGhostConcentrationHelmetLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =Y
+
+[ERROR]: TychusGhostConfusingDominationLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: TychusGhostDominateBuffLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: TychusGhostPsychicSnare/TychusGhost not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: TychusGhostPsychicSnareLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: TychusHERC/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: TychusHercCrit/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =H
+
+[ERROR]: TychusHercGrappleArmor/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: TychusHercGrappleImpacts/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: TychusHercRageLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: TychusHeroCommonAbil1 not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TychusHeroCommonAbil2 not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: TychusHeroCommonAbil5 not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: TychusMarauder/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: TychusMarauderAttackSplashLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =N
+
+[ERROR]: TychusMarauderHealingWardBuffLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: TychusMarauderHealingWardSpeedBuffLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =V
+
+[ERROR]: TychusMarauderSuperStim/TychusMarauder not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: TychusMarauderSuperStimLearn/TychusArmory not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: TychusMedic/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: TychusMedicDefensiveMatrix/TychusMedic not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: TychusMedicDefensiveMatrixLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =N
+
+[ERROR]: TychusMedicDoubleHealLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: TychusMedicHeal/TychusMedic not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: TychusMedicHealUpgrade/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =V
+
+[ERROR]: TychusMedicHealingSprayUpgrade/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: TychusMedicTransportUnits/TychusMedivacPlatform not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TychusOdinRedButton/TychusOdin not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TychusOutlawArmorLevel1/TychusEngineeringBay not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TychusOutlawWeaponsLevel1/TychusEngineeringBay not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: TychusReaper/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: TychusReaperBombChargesLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =H
+
+[ERROR]: TychusReaperBombDamageLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: TychusReaperBombStunLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: TychusReaperEvasionBuff/TychusReaper not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: TychusReaperEvasionLearn/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: TychusRefinery/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: TychusSCV/TychusCommandCenter not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TychusSpectre/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =V
+
+[ERROR]: TychusSpectreBrillianceAuraLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =H
+
+[ERROR]: TychusSpectreExtendedPulseGunLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: TychusSpectreSuperUltrasonicPulseLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: TychusSpectreVisionSuitLearn/TychusGhostAcademy not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: TychusSquadAttackSpeed/TychusEngineeringBay not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: TychusWarhound/TychusResearchCenter not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: TychusWarhoundDeathExplosionUpgrade/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: TychusWarhoundFearUpgrade/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =V
+
+[ERROR]: TychusWarhoundHaywireMissiles/TychusWarhound not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: TychusWarhoundHaywireMissilesUpgrade/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: TychusWarhoundTurretHaywireMissiles/TychusWarhoundAutoTurret not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TychusWarhoundTurretUpgrade/TychusMercCompound not related to a conflict
+in seed TheCore Lite, keys =N
 
 [ERROR]: UpgradeLIDARTransmitter/EngineeringBay not related to a conflict
 in seed TheCore Lite, keys =
@@ -1829,5 +2039,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 393 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 463 WARNs: 144 
 ============================

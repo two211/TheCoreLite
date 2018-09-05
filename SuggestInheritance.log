@@ -180,6 +180,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TransportMode/WarpPrism default: T
 	TransportMode/WarpPrismGiant default: T
 	TransportMode/WarpPrismTaldarim default: 
+	TychusArmory/TychusSCV default: 
+	TychusHeroCommonAbil5 default: 
+	TychusMarauderSuperStimLearn/TychusArmory default: 
+	TychusMedic/TychusResearchCenter default: 
+	TychusMedicDoubleHealLearn/TychusGhostAcademy default: 
+	TychusWarhoundDeathExplosionUpgrade/TychusMercCompound default: 
 	Viper/Larva default: E
 	WarpInDarkArchonChampion/SuperWarpGate default: R
 	WraithCloakOff/HHWraith default: 
@@ -272,6 +278,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenVile/HugeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/LargeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
+	TychusGhostAcademy/TychusSCV default: 
+	TychusGhostPsychicSnare/TychusGhost default: 
+	TychusMarauderSuperStim/TychusMarauder default: 
+	TychusMedicHeal/TychusMedic default: 
+	TychusReaperEvasionBuff/TychusReaper default: 
+	TychusWarhoundHaywireMissiles/TychusWarhound default: 
 
 [INFO]: TheCore Lite: Space,5   
 	IgniteAfterburner/Medivac default: 
@@ -497,6 +509,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Scan/OrbitalCommand default: C
 	Sentry default: E
 	SlaynElementalGrab/SlaynElemental default: Q
+	Snipe/NovaStoneHeroic default: 
 	SpawnCorruptor/SpacePlatformVentsUnit default: R, C
 	SpectreDomination/Spectre default: D
 	SpineCrawler/Drone default: C
@@ -524,6 +537,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TorrasqueChrysalis/HotSTorrasque default: Q
 	TorrasqueChrysalis/HotSTorrasqueBurrowed default: Q copyof: TorrasqueChrysalis/HotSTorrasque default: Q
 	TorrasqueChrysalis/TorrasqueCorpse default: Q
+	TychusGhost/TychusResearchCenter default: 
+	TychusHeroCommonAbil2 default: 
+	TychusMarauderHealingWardBuffLearn/TychusArmory default: 
+	TychusMedicHealingSprayUpgrade/TychusGhostAcademy default: 
+	TychusWarhoundHaywireMissilesUpgrade/TychusMercCompound default: 
 	Ultralisk/VoidRift default: U
 	Ultralisk/VoidRiftUnselectable default: U
 	UpgradeBuildingArmorLevel1/EngineeringBay default: B
@@ -608,7 +626,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsionicBolt/Telios default:  copyof: Feedback/HighTemplar default: F
 	Snipe/Ghost default: R
 	Snipe/GhostVulture default: R
-	Snipe/NovaStoneHeroic default: 
 	Snipe_BlackOps/Ghost_BlackOps default: 
 	TargetLock/Monitor default: T
 
@@ -619,6 +636,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AttackAllowsInvulnerable/DrakkenLaserDrill default: A copyof: Attack default: A
 	AttackChampions default:  copyof: Attack default: A
 	BuildDrakkenLaserDrill/KelMorianWorker default: D
+	BuildTychusBar/TychusSCV default: 
 	BunkerAttack/InfestedBunker default: A
 	DehakaBarracks/DehakaDrone default: 
 	DehakaLearnPrimalWeaponsLevel1/DehakaHatchery default: 
@@ -709,6 +727,11 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranShipWeaponsUltraCapacitorsLevel2/Armory default: S copyof: TerranShipWeaponsLevel1/Armory default: S
 	TerranShipWeaponsUltraCapacitorsLevel3/Armory default: S copyof: TerranShipWeaponsLevel1/Armory default: S
 	TerranVehicleAndShipWeaponsLevel1/Armory default: E
+	TychusFirebat/TychusResearchCenter default: 
+	TychusHercGrappleImpacts/TychusArmory default: 
+	TychusOutlawWeaponsLevel1/TychusEngineeringBay default: 
+	TychusReaperBombDamageLearn/TychusMercCompound default: 
+	TychusSpectreSuperUltrasonicPulseLearn/TychusGhostAcademy default: 
 	UmbraSpireSpawnShadowOfTheVoid/VoidChasm default: D
 	UpgradeToPlanetaryFortress/CommandCenter default: P
 	VikingFighter/Starport default: V
@@ -940,6 +963,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Transfusion/Queen2 default:  copyof: Transfusion/Queen default: T
 	Transfusion/QueenCoop default: T copyof: Transfusion/Queen default: T
 	Transfusion/ZaGara default: T
+	TychusACHero/TychusResearchCenter default: 
+	TychusACImplosionGrenadesLearn/TychusMercCompound default: 
+	TychusFirebatPremiumPetroleumLearn/TychusArmory default: 
+	TychusGhostDominateBuffLearn/TychusGhostAcademy default: 
 	UltraliskBurrowCharge/HotSTorrasqueBurrowed default: C
 	UltrasonicPulse/Spectre default: U copyof: EMP/Ghost default: E
 	UpgradeToRoboticsFacilityWarp/RoboticsFacility default: G copyof: UpgradeToWarpGate/Gateway default: G
@@ -1266,6 +1293,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Salvage/PerditionTurretUnderground default: V
 	Salvage/SIMissileTurret default: 
 	Salvage/SIMissileTurretFlying default: 
+	Salvage/TychusSCVAutoTurret default: 
 	SelfRepair/Thor default: R
 	SelfRepair/ThorWreckageSwann default: R
 	SiegeTank/VoidRift default: S
@@ -1293,6 +1321,13 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TitanMechMissileShot/TitanMechAssault default: F
 	TwilightCouncil/Harvester default:  copyof: TwilightCouncil/Probe default: C
 	TwilightCouncil/Probe default: C
+	TychusHERC/TychusResearchCenter default: 
+	TychusHercGrappleArmor/TychusArmory default: 
+	TychusMedicDefensiveMatrix/TychusMedic default: 
+	TychusReaperBombStunLearn/TychusMercCompound default: 
+	TychusRefinery/TychusSCV default: 
+	TychusSpectreVisionSuitLearn/TychusGhostAcademy default: 
+	TychusSquadAttackSpeed/TychusEngineeringBay default: 
 	Viper/MutaliskViper default: E copyof: BroodLord/Corruptor default: B
 	VoidRay/VoidRift default: V
 	VoidRay/VoidRiftUnselectable default: V
@@ -1380,6 +1415,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Summon2DragoonHallucinations/Sentry default:  copyof: StalkerHallucination/Sentry default: S
 	Summon2DragoonHallucinations/Voranor default:  copyof: StalkerHallucination/Sentry default: S
 	Thor/Factory default: T
+	TychusHercRageLearn/TychusArmory default: 
+	TychusMarauder/TychusResearchCenter default: 
+	TychusReaperEvasionLearn/TychusMercCompound default: 
+	TychusSpectreExtendedPulseGunLearn/TychusGhostAcademy default: 
 	Ultralisk/Larva default: U
 	UltraliskCavern/Drone default: U
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
@@ -1400,6 +1439,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MoveChampions default:  copyof: Move default: M
 	PrimalHydralisk/PrimalTownHall default: H
 	ResearchBunkerUpgrade/ScienceFacility default: B
+	TychusHercCrit/TychusArmory default: 
+	TychusReaperBombChargesLearn/TychusMercCompound default: 
+	TychusSpectreBrillianceAuraLearn/TychusGhostAcademy default: 
 	WarpInVulcanChampion/SuperWarpGate default: X
 
 [INFO]: TheCore Lite: I   
@@ -1443,6 +1485,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MercHellion/MercCompound default: N
 	ResearchAbathurImprovedToxicNest/EvolutionPit default: N
 	ResearchLiberatorAGMode/StarportTechLab default: N
+	TychusMarauderAttackSplashLearn/TychusArmory default: 
+	TychusMedicDefensiveMatrixLearn/TychusGhostAcademy default: 
+	TychusWarhoundTurretUpgrade/TychusMercCompound default: 
 	Zergling/Epilogue02VoidRift default: Z
 
 [INFO]: TheCore Lite: None   
@@ -1472,6 +1517,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BrokenSolarForge/SolarForge default: R
 	BuildHHBomberPlatform/HHSCV default: 
 	BuildHealingDrone/Raven default: 
+	BuildTychusMedivacPlatform/TychusSCV default: 
 	Bunker/KelMorianWorker default: U
 	Bunker/SCV default: U
 	BunkerFortified/SCV default: U copyof: Bunker/SCV default: U
@@ -1618,6 +1664,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmHostRootBurrow default: R
 	TheMorosDevice/Raynor default: R
 	TitanMechRepel/TitanMechAssault default: R
+	TychusACRageGrenadesLearn/TychusMercCompound default: 
+	TychusFirebatBlueFlameOilLearn/TychusArmory default: 
+	TychusGhostConfusingDominationLearn/TychusGhostAcademy default: 
+	TychusReaper/TychusResearchCenter default: 
 	Unsiege default: D
 	VoidRay/Stargate default: V
 	VoidRay/StargateWarp default: V copyof: VoidRay/Stargate default: V
@@ -1717,6 +1767,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HighTemplarHallucination/Nexus default:  copyof: HighTemplarHallucination/Sentry default: T
 	HighTemplarHallucination/Sentry default: T
 	HighTemplarHallucination/Voranor default:  copyof: HighTemplarHallucination/Sentry default: T
+	HighTemplarTaldarim default: 
 	HireSiegeBreakers/MercCompound default: S, K
 	HoverUnsiege default: D
 	HybridBlink/Maar default: B
@@ -1780,6 +1831,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphtoObserverSiege/Observer default: E
 	MorphtoOverseerSiege/Overseer default: E
 	MutateintoLurkerDen/Drone default: 
+	NovaArmorBlinkSuitBlinkStone/NovaStoneHeroic default: 
 	Observer/RoboticsFacility default: B
 	Observer/RoboticsFacilityWarp default: B copyof: Observer/RoboticsFacility default: B
 	OmegaStorm/Kerrigan default: T
@@ -1879,6 +1931,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranBuild/KelMorianWorker default: B
 	TerranBuild/SCV default: B
 	TerranBuild/SISCV default: 
+	TerranBuild/TychusSCV default: 
 	TerranBuild/VoidRift default: B
 	TerranBuild/VoidRiftUnselectable default: B
 	TerranInfantryArmorLevel1/EngineeringBay default: A
@@ -1895,6 +1948,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranVehicleAndShipPlatingLevel1/Armory default: V
 	TitanMechBombardment/TitanMechAssault default: B
 	TrainHHBomber/HHBomberPlatform default: 
+	TychusHeroCommonAbil1 default: 
+	TychusMedicTransportUnits/TychusMedivacPlatform default: 
+	TychusOdinRedButton/TychusOdin default: 
+	TychusOutlawArmorLevel1/TychusEngineeringBay default: 
+	TychusSCV/TychusCommandCenter default: 
+	TychusWarhoundTurretHaywireMissiles/TychusWarhoundAutoTurret default: 
 	ViperConsume/Viper default: C
 	ViperConsumption/Viper default: C copyof: ViperConsume/Viper default: C
 	VoidRift/NarudEpilogue default: Q
@@ -1966,6 +2025,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ShieldBattery/Probe default: B
 	Thor/VoidRift default: T
 	Thor/VoidRiftUnselectable default: T
+	TychusACPiercingRoundsLearn/TychusMercCompound default: 
+	TychusFirebatIncendiaryPetroleumLearn/TychusArmory default: 
+	TychusGhostPsychicSnareLearn/TychusGhostAcademy default: 
+	TychusWarhound/TychusResearchCenter default: 
 	WarpInArtanisChampion/SuperWarpGate default: T
 	WarpInArtanisChampion/TwilightCouncil default: T
 	WarpInScout/Stargate default: S
@@ -2037,6 +2100,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Tempest/Stargate default: T
 	TerranVehiclePlatingLevel2/Armory default: V
 	TerranVehiclePlatingLevel3/Armory default: V
+	TychusMarauderHealingWardSpeedBuffLearn/TychusArmory default: 
+	TychusMedicHealUpgrade/TychusGhostAcademy default: 
+	TychusSpectre/TychusResearchCenter default: 
+	TychusWarhoundFearUpgrade/TychusMercCompound default: 
 	VoidRay/Epilogue02VoidRift default: V
 	VoidRay/SuperWarpGate default: V
 	VoidRay/VoidThrasher default: V
@@ -2075,6 +2142,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TechReactorAI/FactoryFlying default: Z
 	TechReactorAI/Starport default: Z copyof: TechReactorAI/Barracks default: Z
 	TechReactorAI/StarportFlying default: Z
+	TychusACBandofBrothersLearn/TychusMercCompound default: 
+	TychusFirebatShieldLearn/TychusArmory default: 
+	TychusGhostConcentrationHelmetLearn/TychusGhostAcademy default: 
 	Zergling/VoidThrasher default: Z
 
 [INFO]: TheCore Lite: 2   
