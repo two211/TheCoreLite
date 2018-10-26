@@ -82,9 +82,10 @@ SAME_CHECKS = [['Pylon/Probe', 'SupplyDepot/SCV', 'SupplyDepotDrop/SCV'],
                ['Zergling/Larva', 'MorphToSwarmling/Larva', 'MorphToRaptor/Larva'],
                ['LocustLaunch/SwarmHostBurrowed', 'LocustFlyingLaunch/SwarmHostSplitABurrowed', 'LocustFlyingLaunch/SwarmHostSplitARooted', 'LocustLaunch/SwarmHostRooted', 'LocustLaunchCreeper/SwarmHostSplitBBurrowed', 'LocustLaunchCreeper/SwarmHostSplitBRooted'],
                ['BurrowDown', 'BurrowHydraliskImpalerDown', 'BurrowHydraliskLurkerDown', 'ImpalerBurrowDown', 'LurkerBurrowDown'],
-               ['BurrowUp', 'BurrowHydraliskImpalerUp', 'BurrowHydraliskLurkerUp', 'ImpalerBurrowUp', 'LurkerBurrowUp'],  # 'SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'
+               ['BurrowHydraliskImpalerUp', 'BurrowHydraliskLurkerUp', 'ImpalerBurrowUp', 'LurkerBurrowUp'],  # 'SwarmHostUprootUnburrow/SwarmHostBurrowed','SwarmHostUprootUnburrow/SwarmHostSplitABurrowed','SwarmHostUprootUnburrow/SwarmHostSplitBBurrowed'
                ['BurrowDown', 'Lower/SupplyDepot'],
-               ['BurrowUp', 'Raise/SupplyDepotLowered'],
+               #['BurrowUp', 'Raise/SupplyDepotLowered'],
+               ['LurkerBurrowUp', 'Raise/SupplyDepotLowered'],
 			   ['WidowMineUnburrow/WidowMine', 'Unsiege', 'LiberatorAAMode/Liberator', 'MorphToHellion/Hellion', 'AssaultMode'],
 			   ['WidowMineBurrow/WidowMine', 'SiegeMode', 'MorphToHellionTank/Hellion', 'FighterMode' ],
                ['SwarmHostDeepBurrow/SwarmHostSplitB', 'SwarmHostDeepBurrow/SwarmHostSplitBBurrowed', 'SwarmHostDeepBurrow/SwarmHostSplitBRooted'],
