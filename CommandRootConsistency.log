@@ -2,12 +2,9 @@
 Start Check key reuse over common CommandRoot (log file: CommandRootConsistency.log)
 ----------------------------
 [ERROR]: 'BuildCreepTumor' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'EMP' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'MagrailMunitions' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'MutateintoLurkerDen' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'SIRoot' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'SIUproot' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'Snipe' is not consistent in seed 'TheCore Lite'
 ----------------------------
-Finished (Check key reuse over common CommandRoot) - ERRORs: 7 
+Finished (Check key reuse over common CommandRoot) - ERRORs: 4 
 ============================
