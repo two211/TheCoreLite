@@ -27,6 +27,10 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'Space' used in place of 'Space,5' for command 'MedivacSpeedBoost/Medivac', in seed 'TheCore Lite'
 [WARN]: 'V' used in place of 'T' for command 'Mutalisk/Larva', in seed 'TheCore Lite'
 [WARN]: '4' used in place of '5' for command 'NukeCalldown/Ghost', in seed 'TheCore Lite'
+[WARN]: 'E,R' used in place of 'E,Space' for command 'OracleBuildStasisTrap/Oracle', in seed 'TheCore Lite'
+[WARN]: 'C' used in place of 'C,R' for command 'OracleRevelation/Oracle', in seed 'TheCore Lite'
+[WARN]: 'Space' used in place of '4' for command 'OracleWeaponOff', in seed 'TheCore Lite'
+[WARN]: 'Space' used in place of '4' for command 'OracleWeaponOff/Oracle', in seed 'TheCore Lite'
 [WARN]: 'Space,4' used in place of 'Space' for command 'Raise/SupplyDepotLowered', in seed 'TheCore Lite'
 [WARN]: 'R' used in place of 'C' for command 'Repair', in seed 'TheCore Lite'
 [WARN]: '4' used in place of '5' for command 'SelectBuilder', in seed 'TheCore Lite'
@@ -36,5 +40,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'E,R' used in place of 'E,C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 9 WARNs: 24 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 9 WARNs: 28 INFOs: 1 
 ============================

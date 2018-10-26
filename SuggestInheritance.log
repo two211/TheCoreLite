@@ -124,8 +124,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NukeCalldown/GhostVulture default: N
 	NukeCalldown/Spectre default: N
 	OdinNukeCalldown/Odin default: N copyof: NukeCalldown/Ghost default: N
-	OracleWeaponOff default: D
-	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	ParasiticBomb/Viper default: R
 	PlanetCrackerOff/MothershipAiur06 default: C
 	PrimalBuildingUproot/DehakaBarracks default: 
@@ -400,6 +398,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NovaGadgetPulseGrenades/NovaVulture default: W
 	OdinBarrage/Odin default: B copyof: 250mmStrikeCannons/Thor default: C
 	OdinBarrage/OdinMKII default: B
+	OracleRevelation/Oracle default: R
 	ParasiticInvasion/LarvalQueen default: Q
 	PrimalSlash/K5Kerrigan default:  copyof: MindBolt/K5Kerrigan default: Q
 	PrimalZergling/PrimalTownHall default: Z
@@ -571,7 +570,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DisablingCloud/Viper default: B copyof: BlindingCloud/Viper default: B
 	NovaSnipe/Nova default: R copyof: Snipe/Ghost default: R
 	Obliterate/Spectre default: I
-	OracleRevelation/Oracle default: R
 	RavenShredderMissile/Raven default: 
 	RaynorSnipe/RaynorCommando default: T
 	Snipe/Ghost default: R
@@ -994,6 +992,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ForceField2/Sentry2 default:  copyof: ForceField/Sentry default: F
 	HighArchonPsiStorm/HighArchonTemplar default: T copyof: PsiStorm/HighTemplar default: T
 	KhalaShockwave/Immortal default:  copyof: PsiStorm/HighTemplar default: T
+	OracleBuildStasisTrap/Oracle default: T
 	PointDefenseDrone/Raven default: D
 	PointDefenseDrone/Raven_BlackOps default: 
 	PsiStorm/AnAleemController default:  copyof: PsiStorm/HighTemplar default: T
@@ -1041,7 +1040,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NovaWeaponCanisterRifleSnipe/NovaHero default: Q
 	NovaWeaponCanisterRifleSnipe/NovaVulture default: Q
 	NydusDestroyerBeam/DehakaNydusDestroyer default: 
-	OracleBuildStasisTrap/Oracle default: T
 	RavagerAbathurCorrosiveBile/RavagerAbathur default: C
 	RavagerCorrosiveBile/Ravager default: C
 	SJHyperionYamato/SJHyperion default: E copyof: YamatoGun default: Y
@@ -1152,6 +1150,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	GreaterSpire/Spire default: G
 	GreaterSpireBroodlord/Spire default: G copyof: GreaterSpire/Spire default: G
 	GreaterSpireViper/Spire default: G
+	HHBattlecruiserShots/HHBattlecruiser default: 
 	HHWidowMine/HHMercStarportUpgraded default: 
 	Hallucination/Sentry default: C
 	Hallucination/Sentry2 default:  copyof: Hallucination/Sentry default: C
@@ -1529,7 +1528,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveZerglingArmorShred/SpawningPool default: R
 	ExplosiveMode default: D
 	FenixTaldarinImmortalDownloadUpgrade default: 
-	HHBattlecruiserShots/HHBattlecruiser default: 
 	HHHellionTank/HHMercStarportUpgraded default: 
 	HellionTank/Factory default: R
 	HireHammerSecurities/MercCompound default: H
@@ -1827,6 +1825,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Observer/RoboticsFacilityWarp default: B copyof: Observer/RoboticsFacility default: B
 	OmegaStorm/Kerrigan default: T
 	OmegaStorm/KerriganChar default: T
+	OracleWeaponOff default: D
+	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	PhaseMineBlast/VoidSeeker default: V
 	PhaseMineBlast/VoidSeekerCrashed default: V
 	PhoenixAiurGravitonBeam/Phoenix default: G
