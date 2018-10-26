@@ -162,6 +162,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Gateway/Harvester
 [WARN]: no default GenerateCreep/OverlordTransport
 [WARN]: no default GhostHoldFire/NovaCoop
+[WARN]: no default GhostHoldFire/NovaStoneHeroic
 [WARN]: no default Glare/Oracle
 [WARN]: no default GlevigFirebreath/DehakaGlevig
 [WARN]: no default GlevigTunnel/DehakaGlevig
@@ -213,6 +214,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Lurker/Hydralisk
 [WARN]: no default Lurker/HydraliskImpaler
 [WARN]: no default LurkerBurrowDown
+[WARN]: no default LurkerCancelHoldFire/LurkerMP
 [WARN]: no default MagrailMunitions/Marauder
 [WARN]: no default MagrailMunitions/Marauder_BlackOps
 [WARN]: no default MagrailMunitions/Marine
@@ -343,6 +345,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchNovaSnipeRefund/GhostAcademyNova
 [WARN]: no default ResearchPiercingRockets/StarportTechLab
 [WARN]: no default ResearchPlasmaCharge/RoboticsBay
+[WARN]: no default ResearchRapidReignitionSystem/StarportTechLab
 [WARN]: no default ResearchRavenRecalibratedExplosives/StarportTechLab
 [WARN]: no default ResearchRecall/ArbiterTribunal
 [WARN]: no default ResearchSIBarracksTrainInfestedCivilianLevel2/SICivilianStructure
@@ -419,6 +422,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Snipe/NovaStoneHeroic
 [WARN]: no default Snipe_BlackOps/Ghost_BlackOps
 [WARN]: no default SpawnBanelings/K5Kerrigan
+[WARN]: no default SpineCrawlerUproot/SpineCrawlerUprooted
+[WARN]: no default SporeCrawlerUproot/SporeCrawlerUprooted
 [WARN]: no default StalkerHallucination/Nexus
 [WARN]: no default Stargate/Harvester
 [WARN]: no default StasisField/Arbiter
@@ -559,5 +564,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Voranor
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 556 ERRORs: 1 
+Finished (Check defaults) - WARNs: 561 ERRORs: 1 
 ============================
