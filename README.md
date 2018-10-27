@@ -132,7 +132,7 @@ All Units:
 * G = Hold
 * T = Patrol
 * H = Move
-* Space = useful ability <= need update: bug Nova mission pack (stim, yamato, lib siege Space broken)
+* Space = useful ability
 * E/C = any ability requiring precision
 
 All workers:
@@ -147,12 +147,12 @@ Transport/Bunker/CC
 
 Terran:
 * Space/R = "transformers'" keys
-* F/4 = cloak/decloak <= need update
+* F/Space = cloak/decloak <= change on going
 * 4 = select worker key
 * 5 = halt key
 * 4 = land key
 * 5 = lift key
-* 4 = ignite after burner (coop) <= need update
+* 4 = ignite after burner (coop) <= change on going
 * R = Salvage
 * R = Load CC/Planetary Fortress
 * E = Reactor
@@ -160,13 +160,13 @@ Terran:
 
 Protoss:
 * Space = blink guardian shield feedback
-* F/4 = oracle pulsar beam <= need update
+* F/Space = oracle pulsar beam <= change on going
 * Space/R = warp prism (phase mode)
 * E = evolve building to warp
 * M = evolve back building to non-warp (intentionally out of compact keys)
 
 Zerg:
-* Space/R = Unburrow/Burrow <= need update
+* R/4 = burrow/unborrow <= change on going
 * C = creep tumor
 * F = morph/evolve
 * E = speed key (for research affecting speed)
