@@ -2148,6 +2148,12 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TychusGhostConcentrationHelmetLearn/TychusGhostAcademy default: 
 	Zergling/VoidThrasher default: Z
 
+[INFO]: TheCore Lite:    
+	CommanderAbility0 default: 
+	CommanderAbility1 default: 
+	CommanderAbility2 default: 
+	CommanderAbility3 default: 
+
 [INFO]: TheCore Lite: 2   
 	ControlGroupRecall2 default: 2
 	ObservePlayer1 default: 2
@@ -2195,5 +2201,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 49 
+Finished (suggest inherit) - INFOs: 50 
 ============================
