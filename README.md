@@ -152,7 +152,7 @@ Terran:
 * 5 = halt key
 * 4 = land key
 * 5 = lift key
-* 4 = ignite after burner (coop) <= change on going
+* C = ignite after burner (coop) <= change on going
 * R = Salvage
 * R = Load CC/Planetary Fortress
 * E = Reactor
