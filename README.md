@@ -141,32 +141,38 @@ All workers:
 * F = Return cargo
 * Y = Gather
 
-Transport/Bunker/CC
-* E/R = unload all
+All CC/Hatch/Nexi:
+* Space = worker
+* E = important command MULE/Queen/Chrono
+* C = scan and recall
+
+Transport/Bunker
+* E = unload all
 * C = Load
 
 Terran:
 * Space/R = "transformers'" keys
-* F/Space = cloak/decloak <= change on going
+* Space/F = cloak/decloak
 * 4 = select worker key
 * 5 = halt key
 * 4 = land key
 * 5 = lift key
-* C = ignite after burner (coop) <= change on going
+* C = ignite after burner (coop)
 * R = Salvage
 * R = Load CC/Planetary Fortress
-* E = Reactor
-* C = Techlab
+* F = unload all
+* C = Reactor
+* E = Techlab
 
 Protoss:
 * Space = blink guardian shield feedback
-* F/Space = oracle pulsar beam <= change on going
+* Space/F = oracle pulsar beam
 * Space/R = warp prism (phase mode)
 * E = evolve building to warp
 * M = evolve back building to non-warp (intentionally out of compact keys)
 
 Zerg:
-* R/4 = burrow/unborrow <= change on going
+* R/4 = burrow/unburrow
 * C = creep tumor
 * F = morph/evolve
 * E = speed key (for research affecting speed)
