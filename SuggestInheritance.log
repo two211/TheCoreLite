@@ -1095,8 +1095,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Carrier/VoidRiftUnselectable default: C
 	Carrier/VoidThrasher default: C
 	Carrier/VoidThrasherWalker default: C
-	CloakOnBanshee default: C
-	CloakOnGhost/Ghost default: C
+	CloakOff default: D
 	CommandCenterUnloadAll default: D
 	DarkArchon/Gateway default: A
 	DarkArchon/WarpGate default: A
@@ -1210,8 +1209,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NydusDestroyerDeepTunnel/DehakaNydusDestroyer default: 
 	Oracle/Stargate default: E
 	Oracle/StargateWarp default: E
-	OracleWeaponOn default: C
-	OracleWeaponOn/Oracle default: C copyof: OracleWeaponOn default: C
+	OracleWeaponOff default: D
+	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
 	Phoenix/SuperWarpGate default: X
 	PlanetCracker/MothershipAiur06 default: C
 	PlanetCracker/Purifier default: C
@@ -1264,7 +1263,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchShockwaveMissileBattery/StarportTechReactor default: S
 	ResearchTempestDisintegration/FleetBeacon default: D
 	ReturnCargo default: C
-	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
 	SILiberator/SIStarport default: 
 	SIRefinery/SISCV default: 
 	SJHyperionBlink/Battlecruiser default: 
@@ -1329,9 +1327,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpInShuttle/RoboticsFacility default:  copyof: WarpPrism/RoboticsFacility default: A
 	WarpPrism/RoboticsFacility default: A
 	WidowMine/Factory default: D
-	WraithCloakOn/HHWraith default: 
-	WraithCloakOn/MengskWraith default: C
-	WraithCloakOn/Wraith default: C copyof: CloakOnBanshee default: C
+	WraithCloakOff/HHWraith default: 
+	WraithCloakOff/Wraith default: D copyof: CloakOff default: D
 	XelNagaConstructChaseBeam/XelNagaConstruct default: T
 	ZagaraVoidCoopSpawnHunterKillers/ZagaraReviveCocoon default: W
 	ZagaraVoidCoopSpawnHunterKillers/ZagaraVoidCoop default: W
@@ -1697,7 +1694,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Charge/ZealotAiur default: C copyof: Charge/Zealot default: C
 	Charge/ZealotDark default:  copyof: Charge/Zealot default: C
 	Charge/ZealotPurifier default: C copyof: Charge/Zealot default: C
-	CloakOff default: D
+	CloakOnBanshee default: C
+	CloakOnGhost/Ghost default: C
 	CoopMurvarSpawnCreepers/DehakaMurvar default: 
 	CorrosiveAcidDevourer/Devourer default: D
 	D8Charge/MengskReaper default: G
@@ -1825,8 +1823,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Observer/RoboticsFacilityWarp default: B copyof: Observer/RoboticsFacility default: B
 	OmegaStorm/Kerrigan default: T
 	OmegaStorm/KerriganChar default: T
-	OracleWeaponOff default: D
-	OracleWeaponOff/Oracle default: D copyof: OracleWeaponOff default: D
+	OracleWeaponOn default: C
+	OracleWeaponOn/Oracle default: C copyof: OracleWeaponOn default: C
 	PhaseMineBlast/VoidSeeker default: V
 	PhaseMineBlast/VoidSeekerCrashed default: V
 	PhoenixAiurGravitonBeam/Phoenix default: G
@@ -1873,6 +1871,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchSmartServos/FactoryTechLab default: 
 	ResearchSuperScience/StarportTechLab default: 
 	ResearchVoidStasis/DarkShrine default: V
+	RogueGhostCloak/Spectre default:  copyof: CloakOnBanshee default: C
 	SCV default: S
 	SIInfestedBunkerSpawnInfestedMarine/SIInfestedBunker default: 
 	SIInfestedCivilian/SICivilianStructure default: 
@@ -1974,8 +1973,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WildMutation/KerriganVoidBurrowed default: E copyof: WildMutation/K5KerriganBurrowed default: E
 	WormholeTransit/Predator default: 
 	WormholeTransit/TalDarimMothership default: T
-	WraithCloakOff/HHWraith default: 
-	WraithCloakOff/Wraith default: D copyof: CloakOff default: D
+	WraithCloakOn/HHWraith default: 
+	WraithCloakOn/MengskWraith default: C
+	WraithCloakOn/Wraith default: C copyof: CloakOnBanshee default: C
 	YagdraTunnel/AbathurLavaWorm default: R
 	YagdraTunnel/Yagdra default: R
 	ZagaraVoidCoopMassFrenzy/ZagaraReviveCocoon default: E

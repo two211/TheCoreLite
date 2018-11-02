@@ -1397,10 +1397,10 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =Space
 
 [ERROR]: WraithCloakOff/HHWraith not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =F
 
 [ERROR]: WraithCloakOn/HHWraith not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =Space
 
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
@@ -1881,7 +1881,7 @@ in seed TheCore Lite, keys =D
 [WARN]: RogueGhostCloak/Spectre not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =Space
 
 [WARN]: SpawnBanelings/K5Kerrigan not related to a conflict
 but is part of same check

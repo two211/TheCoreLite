@@ -17,7 +17,8 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: '4' used in place of 'Space' for command 'BurrowUp', in seed 'TheCore Lite'
 [WARN]: 'Escape' used in place of 'Escape,Grave' for command 'Cancel', in seed 'TheCore Lite'
 [WARN]: 'C,R' used in place of 'C,Space' for command 'ChannelSnipe/Ghost', in seed 'TheCore Lite'
-[WARN]: 'Space' used in place of '4' for command 'CloakOff', in seed 'TheCore Lite'
+[WARN]: 'F' used in place of '4' for command 'CloakOff', in seed 'TheCore Lite'
+[WARN]: 'Space' used in place of 'F' for command 'CloakOnBanshee', in seed 'TheCore Lite'
 [WARN]: 'T' used in place of 'V' for command 'Corruptor/Larva', in seed 'TheCore Lite'
 [WARN]: 'Space' used in place of '4' for command 'DisableBuildingAttack/Baneling', in seed 'TheCore Lite'
 [WARN]: 'E' used in place of 'E,R' for command 'EMP/Ghost', in seed 'TheCore Lite'
@@ -33,8 +34,10 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: '4' used in place of '5' for command 'NukeCalldown/Ghost', in seed 'TheCore Lite'
 [WARN]: 'E,R' used in place of 'E,Space' for command 'OracleBuildStasisTrap/Oracle', in seed 'TheCore Lite'
 [WARN]: 'C' used in place of 'C,R' for command 'OracleRevelation/Oracle', in seed 'TheCore Lite'
-[WARN]: 'Space' used in place of '4' for command 'OracleWeaponOff', in seed 'TheCore Lite'
-[WARN]: 'Space' used in place of '4' for command 'OracleWeaponOff/Oracle', in seed 'TheCore Lite'
+[WARN]: 'F' used in place of '4' for command 'OracleWeaponOff', in seed 'TheCore Lite'
+[WARN]: 'F' used in place of '4' for command 'OracleWeaponOff/Oracle', in seed 'TheCore Lite'
+[WARN]: 'Space' used in place of 'F' for command 'OracleWeaponOn', in seed 'TheCore Lite'
+[WARN]: 'Space' used in place of 'F' for command 'OracleWeaponOn/Oracle', in seed 'TheCore Lite'
 [WARN]: 'Space,4' used in place of 'Space' for command 'Raise/SupplyDepotLowered', in seed 'TheCore Lite'
 [WARN]: 'R' used in place of 'C' for command 'Repair', in seed 'TheCore Lite'
 [WARN]: '4' used in place of '5' for command 'SelectBuilder', in seed 'TheCore Lite'
@@ -44,5 +47,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'E,R' used in place of 'E,C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 13 WARNs: 28 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 13 WARNs: 31 INFOs: 1 
 ============================
