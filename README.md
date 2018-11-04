@@ -603,16 +603,16 @@ Related aliases:
 
 ### Quick Cam
 
-* ~~Camera creation with Alt~~
-* ~~Camera recall with Shift+CapsLock~~
+(not implemented but practically working)
 
-~~This cam is updated each time you press Alt.~~
-~~Theoretically Alt is used only to define Cams early game.~~
+* ~~Camera 1 creation with Shift~~
+* ~~Camera 1 recall with CapsLock~~
+
+~~This cam is updated each time you press Shift.~~
+~~You can recall to base and be back at last position if you don't press Shift twice~~
 ~~Camera 2 and 3 are kept in case you want to use them for harass.~~
 
-~~Tip: Alt quick cam creation is inhibited for Control+Alt and Shift+Alt, displaying enemy life bars~~
-
-~~Note: quick cam removed, kept in readme in case you want to reintroduce it in your local copy~~
+~~Note: previous quick cam implementation was removed, kept in readme in case you want to reintroduce it in your local copy~~
 
 ----------------------------------------------------------------------------------------------------------------------
 
