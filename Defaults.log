@@ -184,6 +184,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Hallucination/Sentry2
 [WARN]: no default Hallucination2/Voranor
 [WARN]: no default Heal/Medivac2
+[WARN]: no default HellbatJumpJetAssault/HellionBlackOps
 [WARN]: no default HellfireThrusters/StarportTechLab
 [WARN]: no default HercGrapple/HERC
 [WARN]: no default HighTemplarHallucination/Nexus
@@ -293,6 +294,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default RavenScramblerMissile/Raven
 [WARN]: no default RavenShredderMissile/Raven
 [WARN]: no default Recall/Arbiter
+[WARN]: no default Refinery/HHSCV
 [WARN]: no default ResearchAlarakTargetLockBuff/CyberneticsCore
 [WARN]: no default ResearchArmorPiercingRockets/FactoryTechLab
 [WARN]: no default ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab
@@ -329,6 +331,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchHeavyInfestation/SICommandCenter
 [WARN]: no default ResearchImprovedSiegeMode/FactoryTechLab
 [WARN]: no default ResearchImprovedSiegeMode/FactoryTechReactor
+[WARN]: no default ResearchInfestedBunkerLifeRegen/SIEngineeringBay
 [WARN]: no default ResearchInfestedSiegeTankArmoredDamage/SIFactoryTechLab
 [WARN]: no default ResearchIonThrusters/FactoryTechLab
 [WARN]: no default ResearchIrradiate/StarportTechLab
@@ -528,6 +531,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default TychusSpectreSuperUltrasonicPulseLearn/TychusGhostAcademy
 [WARN]: no default TychusSpectreVisionSuitLearn/TychusGhostAcademy
 [WARN]: no default TychusSquadAttackSpeed/TychusEngineeringBay
+[WARN]: no default TychusUpgradeOdinRedButton/TychusEngineeringBay
 [WARN]: no default TychusWarhound/TychusResearchCenter
 [WARN]: no default TychusWarhoundDeathExplosionUpgrade/TychusMercCompound
 [WARN]: no default TychusWarhoundFearUpgrade/TychusMercCompound
@@ -564,5 +568,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZealotHallucination/Voranor
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 561 ERRORs: 1 
+Finished (Check defaults) - WARNs: 565 ERRORs: 1 
 ============================

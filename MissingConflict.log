@@ -445,6 +445,9 @@ in seed TheCore Lite, keys =F
 [ERROR]: HHYamatoShots/HHBattlecruiser not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: HellbatJumpJetAssault/HellionBlackOps not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: HellfireThrusters/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -691,6 +694,9 @@ in seed TheCore Lite, keys =C,R
 [ERROR]: Recall/Arbiter not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: Refinery/HHSCV not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: ResearchAlarakTargetLockBuff/CyberneticsCore not related to a conflict
 in seed TheCore Lite, keys =G
 
@@ -801,6 +807,9 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: ResearchImprovedSiegeMode/FactoryTechReactor not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: ResearchInfestedBunkerLifeRegen/SIEngineeringBay not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: ResearchInfestedSiegeTankArmoredDamage/SIFactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =F
@@ -1320,6 +1329,9 @@ in seed TheCore Lite, keys =F
 
 [ERROR]: TychusSquadAttackSpeed/TychusEngineeringBay not related to a conflict
 in seed TheCore Lite, keys =F
+
+[ERROR]: TychusUpgradeOdinRedButton/TychusEngineeringBay not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: TychusWarhound/TychusResearchCenter not related to a conflict
 in seed TheCore Lite, keys =T
@@ -2054,5 +2066,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 468 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 472 WARNs: 144 
 ============================

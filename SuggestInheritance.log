@@ -793,6 +793,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HHTechLabStarport/HHStarport default: 
 	HHVikingRockets/HHVikingFighter default: 
 	Hatchery/Drone default: H
+	HellbatJumpJetAssault/HellionBlackOps default: 
 	HerculesUnloadAll/Hercules default: D copyof: BunkerUnloadAll default: D
 	HerculesUnloadAll/HerculesCrashing default: D
 	HerculesUnloadAll/NovaShip default: D
@@ -901,6 +902,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIOverlord/SICommandCenter default: 
 	SIQueenFungalGrowth/SIQueen default: 
 	SS_LeviathanTentacleAttackR1/SS_Plane default: S
+	ScourgeNest/Drone default: C
 	SentryTaldarimForceField/Monitor default: F
 	Separatist/Barracks default: S
 	ShadowBlade/PrologueZeratul default: E
@@ -937,6 +939,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TychusACImplosionGrenadesLearn/TychusMercCompound default: 
 	TychusFirebatPremiumPetroleumLearn/TychusArmory default: 
 	TychusGhostDominateBuffLearn/TychusGhostAcademy default: 
+	TychusUpgradeOdinRedButton/TychusEngineeringBay default: 
 	UltraliskBurrowCharge/HotSTorrasqueBurrowed default: C
 	UltrasonicPulse/Spectre default: U copyof: EMP/Ghost default: E
 	UpgradeToRoboticsFacilityWarp/RoboticsFacility default: G copyof: UpgradeToWarpGate/Gateway default: G
@@ -1225,6 +1228,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ReaperSpeed/BarracksTechLab default: N
 	ReaperSpeed/BarracksTechReactor default: N copyof: ReaperSpeed/BarracksTechLab default: N
 	ReaperSpeed/MercCompound default: N
+	Refinery/HHSCV default: 
 	Refinery/SCV default: R
 	ReleaseMinion/Nova default: E, C
 	ReleaseMinion/Spectre default: C
@@ -1240,6 +1244,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchHellbatHellArmor/FactoryTechLab default: H
 	ResearchHellbatHellArmor/FactoryTechReactor default: H
 	ResearchHighCapacityFuelTanks/StarportTechLab default: R
+	ResearchInfestedBunkerLifeRegen/SIEngineeringBay default: 
 	ResearchInfestedSiegeTankArmoredDamage/SIFactoryTechLab default: 
 	ResearchKaraxEnergyRegenUpgrade/SentryCampaignBase default: S
 	ResearchKaraxEnergyRegenUpgrade/SentryPurifier default: S
@@ -1369,6 +1374,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Ghost/VoidThrasherWalker default: G
 	GroundMissileVolley/NydusBeast default: G
 	KhaydarinMonolith/Probe default: D
+	MercReaper/Barracks default: J
 	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MoveHoldPosition default: H
@@ -1433,7 +1439,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: J   
 	ArtanisChannel/ArtanisVoid default: J
-	MercReaper/Barracks default: J
 	MercReaper/MercCompound default: J
 	SiegeTank/Epilogue02VoidRift default: S
 	SiegeTank/VoidThrasher default: S
@@ -2020,7 +2025,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMedic/ScienceFacility default: C
 	ResearchMultiLockWeaponsSystem/FactoryTechLab default: L
 	ResearchMultiLockWeaponsSystem/FactoryTechReactor default: L
-	ScourgeNest/Drone default: C
 	Scout/Stargate default: T
 	SensorTower/SCV default: N
 	ShieldBattery/Probe default: B
