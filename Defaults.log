@@ -13,6 +13,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ActivateIbikisCannon/PlanetaryFortress
 [WARN]: no default AdvancedConstructionAuto/SCV
 [WARN]: no default Aggressive/LurkerMPBurrowed
+[WARN]: no default AlarakDeadlyCharge
 [WARN]: no default AlarakDeadlyCharge/AlarakCoop
 [WARN]: no default AlarakDeadlyCharge/AlarakReviveBeacon
 [WARN]: no default AlarakMothershipMassTeleport/SOAMothershipv4
@@ -28,6 +29,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Banshee_BlackOpsAirstrike/Banshee_BlackOps
 [WARN]: no default Battlecruiser/HHStarport
 [WARN]: no default BioMechanicalHeal/HealingDrone
+[WARN]: no default Blink/ZeratulDarkTemplar
+[WARN]: no default Blink/ZeratulStalker
 [WARN]: no default BuildCreepTumor/Queen2
 [WARN]: no default BuildDehakaExtractor/DehakaHatchery
 [WARN]: no default BuildHHBomberPlatform/HHSCV
@@ -115,6 +118,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default EnableBuildingAttack/baneling
 [WARN]: no default EnableBuildingAttack/baneling2
 [WARN]: no default EnrageQueen/Queen
+[WARN]: no default EntropicBlast/ZeratulXelNagaConstructCyan
 [WARN]: no default EvadeObserver/Observer
 [WARN]: no default EvolveAdrenalineBoost/EvolutionChamber
 [WARN]: no default EvolveBurrowCharge/Hatchery
@@ -132,6 +136,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ExplodeVolatileInfested/SIVolatileInfested
 [WARN]: no default Feedback/AnAleemController
 [WARN]: no default Feedback/Khiradun
+[WARN]: no default Feedback/ZeratulSummonKarass
 [WARN]: no default FenixArbiterCloakField/FenixArbiter
 [WARN]: no default FenixArbiterStasisField/FenixArbiter
 [WARN]: no default FenixClolarionBomberDummy/FenixClolarionCarrier
@@ -197,6 +202,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Immortal/WarpGate
 [WARN]: no default ImmortalHallucination/Nexus
 [WARN]: no default ImmortalOverload/FenixTaldarinImmortal
+[WARN]: no default ImmortalOverload/ZeratulImmortal
+[WARN]: no default ImmortalZeratul/ZeratulRoboticsFacility
 [WARN]: no default IncineratorNozzles/DevilDog
 [WARN]: no default InfestedTerrans/Infestor2
 [WARN]: no default InjectLarva/Queen
@@ -235,6 +242,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MorphtoDefiler/Larva
 [WARN]: no default MorphtoHHRaven/HHRaven
 [WARN]: no default MorphtoHHRavenSiege/HHRaven
+[WARN]: no default MorphtoObserver/ZeratulObserver
+[WARN]: no default MorphtoObserverSiege/ZeratulObserver
 [WARN]: no default MorphtoRoach/Larva
 [WARN]: no default MoveChampions
 [WARN]: no default MurvarPukeCoop/DehakaMurvar
@@ -251,10 +260,13 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default NovaStoneDefensiveMatrix/NovaStoneHeroic
 [WARN]: no default NovaStoneTargetEMP/NovaStoneHeroic
 [WARN]: no default NovaStoneTargetEnemy/NovaStoneHeroic
+[WARN]: no default NovaSwitchAssaultMode
 [WARN]: no default NovaSwitchAssaultMode/NovaCoop
 [WARN]: no default NovaSwitchAssaultMode/NovaReviveBeacon
+[WARN]: no default NovaUnitNuke
 [WARN]: no default NovaUnitNuke/NovaCoop
 [WARN]: no default NovaUnitNuke/NovaReviveBeacon
+[WARN]: no default NovaWeaponImprovedCanisterRifleSnipe
 [WARN]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaCoop
 [WARN]: no default NovaWeaponImprovedCanisterRifleSnipe/NovaReviveBeacon
 [WARN]: no default NurturingSwarm/Queen
@@ -264,6 +276,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Passive
 [WARN]: no default PhaseMissile/Scout
 [WARN]: no default PhasingMode/WarpPrismTaldarim
+[WARN]: no default PhasingMode/ZeratulWarpPrism
 [WARN]: no default PhoenixHallucination/Nexus
 [WARN]: no default PhotonCannon/Harvester
 [WARN]: no default PlaceWard/Oracle
@@ -279,11 +292,13 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Probe/KhaydarinNexus
 [WARN]: no default ProbeHallucination/Nexus
 [WARN]: no default ProbeHallucination/Voranor
+[WARN]: no default ProphecyVision/ZeratulCoop
 [WARN]: no default ProtossBuild/Harvester
 [WARN]: no default ProtossBuildAdvanced/Harvester
 [WARN]: no default PsiStorm/AnAleemController
 [WARN]: no default PsiStorm/Khiradun
 [WARN]: no default PsiStorm/Telios
+[WARN]: no default PsiStormTelbrus/ZeratulSummonKarass
 [WARN]: no default PsiStrike/K5Kerrigan
 [WARN]: no default PsionicBolt/Telios
 [WARN]: no default Pylon/Harvester
@@ -419,6 +434,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Salvage/SIMissileTurret
 [WARN]: no default Salvage/SIMissileTurretFlying
 [WARN]: no default Salvage/TychusSCVAutoTurret
+[WARN]: no default SentryZeratul/ZeratulGateway
 [WARN]: no default SiegeTank_BlackOpsSiege
 [WARN]: no default SiegeTank_BlackOpsUnsiege
 [WARN]: no default SlivanPuke/Devourer
@@ -428,6 +444,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SpineCrawlerUproot/SpineCrawlerUprooted
 [WARN]: no default SporeCrawlerUproot/SporeCrawlerUprooted
 [WARN]: no default StalkerHallucination/Nexus
+[WARN]: no default StalkerZeratul/ZeratulGateway
 [WARN]: no default Stargate/Harvester
 [WARN]: no default StasisField/Arbiter
 [WARN]: no default StasisField/ArbiterTribunal
@@ -473,6 +490,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Transfusion/BroodMother
 [WARN]: no default Transfusion/Queen2
 [WARN]: no default TransportMode/WarpPrismTaldarim
+[WARN]: no default TransportMode/ZeratulWarpPrismPhasing
 [WARN]: no default TwilightCouncil/Harvester
 [WARN]: no default TychusACBandofBrothersLearn/TychusMercCompound
 [WARN]: no default TychusACHero/TychusResearchCenter
@@ -545,13 +563,16 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default VoidRayHallucination/Nexus
 [WARN]: no default VoidRayHallucination/Voranor
 [WARN]: no default VoidSentryMobileMode/SentryFenix
+[WARN]: no default VoidSentryShieldRepair/ZeratulSentry
 [WARN]: no default VoidSwarmHostSpawnLocust/SwarmHostMP
 [WARN]: no default VoodooShield/Immortal
 [WARN]: no default WarpInCorsair/Stargate
 [WARN]: no default WarpInReaver/RoboticsFacility
 [WARN]: no default WarpInShuttle/RoboticsFacility
+[WARN]: no default WarpInZeratulWarpPrism/ZeratulRoboticsFacility
 [WARN]: no default WarpPrismHallucination/Nexus
 [WARN]: no default WarpPrismHallucination/Voranor
+[WARN]: no default WarpPrismLoad
 [WARN]: no default WarpinArbiterTribunal/Probe
 [WARN]: no default WarpinDragoon/Gateway
 [WARN]: no default WarpinObservatory/Probe
@@ -566,7 +587,21 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default WraithCloakOn/HHWraith
 [WARN]: no default ZealotHallucination/Nexus
 [WARN]: no default ZealotHallucination/Voranor
+[WARN]: no default ZeratulBlink/ZeratulCoop
+[WARN]: no default ZeratulObserver/ZeratulRoboticsFacility
+[WARN]: no default ZeratulPurificationNovaTargeted/ZeratulDisruptor
+[WARN]: no default ZeratulReflectionShield/ZeratulSentry
+[WARN]: no default ZeratulStructureBarrier/ZeratulKhaydarinMonolith
+[WARN]: no default ZeratulStructureBarrier/ZeratulPhotonCannon
+[WARN]: no default ZeratulSummonVoidSeeker/ZeratulCoop
+[WARN]: no default ZeratulWarpPrismAutoUnloadOn/ZeratulWarpPrismPhasing
+[WARN]: no default ZeratulWarpPrismSelectVoidRift
+[WARN]: no default ZeratulWarpPrismUnload/ZeratulWarpPrismPhasing
+[WARN]: no default ZeratulWarpinDisruptor/ZeratulRoboticsFacility
+[WARN]: no default ZeratulXelNagaConstructDevolve/ZeratulXelNagaConstruct
+[WARN]: no default ZeratulXelNagaConstructPsiBlast/ZeratulXelNagaConstructCyan
+[WARN]: no default ZeratulXelNagaConstructPsiStorm/ZeratulXelNagaConstructCyan
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 565 ERRORs: 1 
+Finished (Check defaults) - WARNs: 600 ERRORs: 1 
 ============================
