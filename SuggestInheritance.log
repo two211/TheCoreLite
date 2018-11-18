@@ -203,7 +203,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SporeCrawlerUproot/SporeCrawlerUprooted default: 
 
 [INFO]: TheCore Lite: 5   
-	Aberration/Larva default: B
 	Aberration/VoidRift default: B
 	Aberration/VoidRiftUnselectable default: B
 	DOMGhostPersonalDefensiveMatrix/Ghost default: 
@@ -229,6 +228,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MassRoachDrop/ZagaraReviveCocoon default: D
 	MassRoachDrop/ZagaraVoidCoop default: D
 	MassRoachDrop/ZagaraVoidCoopBurrowed default: D
+	MorphToSwarmHostSplitA/Larva default: A copyof: SwarmHostMP/Larva default: A
+	MorphToSwarmHostSplitB/Larva default: A copyof: SwarmHostMP/Larva default: A
 	NovaStoneTargetEMP/NovaStoneHeroic default: 
 	NovaUnitNuke default: 
 	NovaUnitNuke/NovaCoop default: 
@@ -237,6 +238,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PrimalRoach/PrimalTownHallUprooted default: R
 	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
 	SIUproot/SICommandCenter default: 
+	SwarmHostMP/Larva default: A
 	SwarmQueenCorpser/HugeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/LargeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
@@ -447,7 +449,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchKaraxTurretRange/PhotonCannon default: R
 	ResearchKaraxTurretRange/ShieldBattery default: R
 	ResearchMagFieldLaunchers/FactoryTechLab default: 
-	ResearchNeuralParasite/InfestationPit default: E
 	ResearchSOAOrbitalStrikeUpgrade/SolarForge default: B
 	ResearchSeismicSpinesAbathur/ImpalerDen default: E
 	ResearchShadowFury/DarkShrine default: S
@@ -891,6 +892,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMaelstromRounds/FactoryTechReactor default: M
 	ResearchMarauderMagrailMunitions/BarracksTechLab default: 
 	ResearchMarauderMagrailMunitions/BarracksTechReactor default: 
+	ResearchNeuralParasite/InfestationPit default: E
 	ResearchOracleStasisWardUpgrade/FleetBeacon default: A
 	ResearchPerditionTurret/ScienceFacility default: P
 	ResearchRavenRecalibratedExplosives/StarportTechLab default: 
@@ -924,6 +926,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmHost/SwarmHostMP default: C
 	TemporalField/Mothership default: T, C copyof: TemporalField/MothershipCore default: T, C
 	TemporalField/MothershipCore default: T, C
+	TerranBuildAdvanced default: 
 	TerranBuildAdvanced/HHSCV default: 
 	TerranBuildAdvanced/SCV default: V
 	TerranBuildAdvanced/SISCV default: 
@@ -1947,6 +1950,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Taunt/Ball default: T
 	TemplarArchive/Harvester default:  copyof: TemplarArchive/Probe default: T
 	TemplarArchive/Probe default: T
+	TerranBuild default: 
 	TerranBuild/HHSCV default: 
 	TerranBuild/KelMorianWorker default: B
 	TerranBuild/SCV default: B
@@ -2153,6 +2157,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	overlordspeed default: P
 
 [INFO]: TheCore Lite: Y   
+	Aberration/Larva default: B
 	DarkShrineAssignRally/DarkShrine default: Y
 	DehakaDetector/DehakaCoop default: 
 	GatherProt default: G
@@ -2170,10 +2175,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ImmortalHallucination/Sentry default: I
 	LearnDehakaDetector/DehakaCoop default: 
 	Marine/VoidThrasherWalker default: A
-	MorphToSwarmHostSplitA/Larva default: A copyof: SwarmHostMP/Larva default: A
-	MorphToSwarmHostSplitB/Larva default: A copyof: SwarmHostMP/Larva default: A
 	SpectreHoldFire/Spectre default: F copyof: GhostHoldFire/Ghost default: F
-	SwarmHostMP/Larva default: A
 	TechReactorAI/Barracks default: Z
 	TechReactorAI/BarracksFlying default: Z
 	TechReactorAI/Factory default: Z copyof: TechReactorAI/Barracks default: Z

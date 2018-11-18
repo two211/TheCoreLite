@@ -41,12 +41,14 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'Space' used in place of 'Space,F' for command 'PhasingMode/WarpPrism', in seed 'TheCore Lite'
 [WARN]: 'Space,4' used in place of 'Space' for command 'Raise/SupplyDepotLowered', in seed 'TheCore Lite'
 [WARN]: 'R' used in place of 'C' for command 'Repair', in seed 'TheCore Lite'
+[WARN]: 'E' used in place of 'C' for command 'ResearchNeuralParasite/InfestationPit', in seed 'TheCore Lite'
 [WARN]: '4' used in place of '5' for command 'SelectBuilder', in seed 'TheCore Lite'
 [WARN]: 'R,C' used in place of 'Space,C' for command 'Snipe/Ghost', in seed 'TheCore Lite'
 [WARN]: 'Space,4' used in place of 'Space' for command 'SpineCrawlerUproot/SpineCrawler', in seed 'TheCore Lite'
 [WARN]: 'Space,4' used in place of 'Space' for command 'SporeCrawlerUproot/SporeCrawler', in seed 'TheCore Lite'
+[WARN]: '5' used in place of 'Y' for command 'SwarmHostMP/Larva', in seed 'TheCore Lite'
 [WARN]: 'E,R' used in place of 'E,C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 13 WARNs: 32 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 13 WARNs: 34 INFOs: 1 
 ============================

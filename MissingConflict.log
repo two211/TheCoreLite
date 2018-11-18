@@ -1180,6 +1180,9 @@ in seed TheCore Lite, keys =D
 [ERROR]: TempestDisruptionBlast/Tempest not related to a conflict
 in seed TheCore Lite, keys =E,Space
 
+[ERROR]: TerranBuild not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: TerranBuild/HHSCV not related to a conflict
 in seed TheCore Lite, keys =Space
 
@@ -1188,6 +1191,9 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: TerranBuild/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: TerranBuildAdvanced not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: TerranBuildAdvanced/HHSCV not related to a conflict
 in seed TheCore Lite, keys =E
@@ -1812,12 +1818,12 @@ in seed TheCore Lite, keys =D
 [WARN]: MorphToSwarmHostSplitA/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =Y
+in seed TheCore Lite, keys =5
 
 [WARN]: MorphToSwarmHostSplitB/Larva not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =Y
+in seed TheCore Lite, keys =5
 
 [WARN]: MorphToSwarmling/Larva not related to a conflict
 but is part of same check
@@ -2171,5 +2177,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 507 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 509 WARNs: 144 
 ============================

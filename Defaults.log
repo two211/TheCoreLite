@@ -478,9 +478,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default TechReactor/Factory
 [WARN]: no default TechReactor/Starport
 [WARN]: no default TemplarArchive/Harvester
+[WARN]: no default TerranBuild
 [WARN]: no default TerranBuild/HHSCV
 [WARN]: no default TerranBuild/SISCV
 [WARN]: no default TerranBuild/TychusSCV
+[WARN]: no default TerranBuildAdvanced
 [WARN]: no default TerranBuildAdvanced/HHSCV
 [WARN]: no default TerranBuildAdvanced/SISCV
 [WARN]: no default TerranInfantryArmorLevel1/SIEngineeringBay
@@ -603,5 +605,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZeratulXelNagaConstructPsiStorm/ZeratulXelNagaConstructCyan
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 600 ERRORs: 1 
+Finished (Check defaults) - WARNs: 602 ERRORs: 1 
 ============================
