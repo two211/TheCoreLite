@@ -231,6 +231,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MedicHeal/Medivac_BlackOps
 [WARN]: no default MedivacSpeedBoost/Medivac_BlackOps
 [WARN]: no default MeliakBlinkBTN/Meliak
+[WARN]: no default MissileTurret/HHSCV
 [WARN]: no default MorphMorphalisk/BroodMother
 [WARN]: no default MorphMorphalisk/Queen2
 [WARN]: no default MorphToHellbatBlackOps/HellionBlackOps
@@ -605,5 +606,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZeratulXelNagaConstructPsiStorm/ZeratulXelNagaConstructCyan
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 602 ERRORs: 1 
+Finished (Check defaults) - WARNs: 603 ERRORs: 1 
 ============================

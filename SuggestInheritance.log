@@ -87,6 +87,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveTunnelingClaws/RoachWarren default: T
 	Forge/Harvester default:  copyof: Forge/Probe default: F
 	Forge/Probe default: F
+	GasCanisterGather/Probe default: Period
 	GenerateCreep/Overlord default: G
 	GenerateCreep/OverlordTransport default: 
 	HHMercCompound/HHSCV default: 
@@ -149,6 +150,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SS_LeviathanTentacleAttackR2NoDelay/SS_Plane default: Z
 	SelectBuilder default: Q
 	SpectreNukeCalldown/Spectre default: N copyof: NukeCalldown/Ghost default: N
+	Spray default: Y
 	StopGenerateCreep default: C
 	StopGenerateCreep/Overlord default: C copyof: StopGenerateCreep default: C
 	SwarmQueenRaptor/HugeSwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
@@ -349,7 +351,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	FleetwideJump/HHVikingAssault default: 
 	FleetwideJump/HHVikingFighter default: 
 	FleetwideJump/HHWraith default: 
-	GasCanisterGather/Probe default: Period
 	Gateway/Harvester default:  copyof: Gateway/Probe default: G
 	Gateway/Probe default: G
 	GravitonCatapult/Carrier default: G
@@ -483,7 +484,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpawnCorruptor/SpacePlatformVentsUnit default: R, C
 	SpectreDomination/Spectre default: D
 	SpineCrawler/Drone default: C
-	Spray default: Y
 	StartColonistVehicle/ColonistVehicleUnit default: S
 	StartColonistVehicle/ColonistVehicleUnit01 default: S
 	StukovBossBlast/InfestedStukov default: B
@@ -599,8 +599,17 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	NovaWeaponImprovedCanisterRifleSnipe default: 
 	NovaWeaponImprovedCanisterRifleSnipe/NovaCoop default: 
 	NovaWeaponImprovedCanisterRifleSnipe/NovaReviveBeacon default: 
+	ProtossBuild/Harvester default:  copyof: ProtossBuild/Probe default: B
+	ProtossBuild/Probe default: B
 	PsionicBolt/Telios default:  copyof: Feedback/HighTemplar default: F
 	TargetLock/Monitor default: T
+	TerranBuild default: 
+	TerranBuild/HHSCV default: 
+	TerranBuild/KelMorianWorker default: B
+	TerranBuild/SCV default: B
+	TerranBuild/SISCV default: 
+	TerranBuild/TychusSCV default: 
+	ZergBuild/Drone default: B
 
 [INFO]: TheCore Lite: D   
 	AmonCrystalDematerialize/AmonCrystalEpilogue03 default: D
@@ -913,7 +922,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SIOverlord/SICommandCenter default: 
 	SIQueenFungalGrowth/SIQueen default: 
 	SS_LeviathanTentacleAttackR1/SS_Plane default: S
-	ScourgeNest/Drone default: C
 	SentryTaldarimForceField/Monitor default: F
 	Separatist/Barracks default: S
 	ShadowBlade/PrologueZeratul default: E
@@ -1029,6 +1037,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: E,Space   
 	ArbiterMPStasisField/ArbiterMP default: F
 	Banshee_BlackOpsAirstrike/Banshee_BlackOps default: 
+	BileLauncherBombardment/BileLauncherZagara default: A
 	BioPlasmidDischarge/Leviathan default: B
 	CausticSpray/Corruptor default: C
 	CorsairMPDisruptionWeb/CorsairMP default: D
@@ -1417,7 +1426,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Ultralisk/Larva default: U
 	UltraliskCavern/Drone default: U
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
-	ZagaraBileLauncher/Drone default: N
 
 [INFO]: TheCore Lite: H   
 	AdeptHallucination/Sentry default: H
@@ -1680,6 +1688,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WidowMineUnburrow/HHWidowMine default: 
 	WidowMineUnburrow/WidowMine default: D
 	XelNagaConstructSmash/XelNagaConstruct default: R
+	ZagaraBileLauncher/Drone default: N
 	ZeratulSummonVoidSeeker/ZeratulCoop default: 
 	ZeratulWarpPrismSelectVoidRift default: 
 
@@ -1696,7 +1705,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ArchAngelCoopBombardment/ArchAngelCoopAssault default: B
 	ArmorpiercingMode default: E
 	Battlecruiser/SJMercStarport default: B
-	BileLauncherBombardment/BileLauncherZagara default: A
 	Blink/PitAlarak default: B
 	Blink/ShadowOfTheVoidStalker default: B copyof: Blink/Stalker default: B
 	Blink/Stalker default: B
@@ -1828,6 +1836,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MedivacSpeedBoost/Medivac_BlackOps default: 
 	MeliakBlinkBTN/Meliak default:  copyof: Blink/Stalker default: B
 	MicroBot/Factory default: M
+	MissileTurret/HHSCV default: 
 	MissileTurret/KelMorianWorker default: T
 	MissileTurret/SCV default: T
 	MorphMorphalisk/BroodMother default:  copyof: MorphMorphalisk/Queen default: V
@@ -1869,8 +1878,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Probe/KhaydarinNexus default: 
 	Probe/Nexus default: E
 	ProtossAirArmorLevel1/CyberneticsCore default: A
-	ProtossBuild/Harvester default:  copyof: ProtossBuild/Probe default: B
-	ProtossBuild/Probe default: B
 	ProtossGroundArmorLevel1/Forge default: A
 	PurificationNova/Disruptor default: V
 	PurificationNova/DisruptorPhased default: V
@@ -1950,12 +1957,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Taunt/Ball default: T
 	TemplarArchive/Harvester default:  copyof: TemplarArchive/Probe default: T
 	TemplarArchive/Probe default: T
-	TerranBuild default: 
-	TerranBuild/HHSCV default: 
-	TerranBuild/KelMorianWorker default: B
-	TerranBuild/SCV default: B
-	TerranBuild/SISCV default: 
-	TerranBuild/TychusSCV default: 
 	TerranBuild/VoidRift default: B
 	TerranBuild/VoidRiftUnselectable default: B
 	TerranInfantryArmorLevel1/EngineeringBay default: A
@@ -2028,7 +2029,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZeratulStructureBarrier/ZeratulPhotonCannon default: 
 	ZeratulWarpPrismAutoUnloadOn/ZeratulWarpPrismPhasing default: 
 	ZeratulXelNagaConstructDevolve/ZeratulXelNagaConstruct default: 
-	ZergBuild/Drone default: B
 	Zergling/VoidRift default: Z
 	Zergling/VoidThrasherWalker default: Z
 	zergflyerarmor1 default: C
@@ -2061,6 +2061,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMedic/ScienceFacility default: C
 	ResearchMultiLockWeaponsSystem/FactoryTechLab default: L
 	ResearchMultiLockWeaponsSystem/FactoryTechReactor default: L
+	ScourgeNest/Drone default: C
 	Scout/Stargate default: T
 	SensorTower/SCV default: N
 	ShieldBattery/Probe default: B

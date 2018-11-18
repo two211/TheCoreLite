@@ -559,6 +559,9 @@ in seed TheCore Lite, keys =F
 [ERROR]: MedivacSpeedBoost/Medivac_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: MissileTurret/HHSCV not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: MorphToHellbatBlackOps/HellionBlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
 
@@ -1148,7 +1151,7 @@ in seed TheCore Lite, keys =Space,4
 in seed TheCore Lite, keys =Space,4
 
 [ERROR]: Spray not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =4
 
 [ERROR]: StalkerZeratul/ZeratulGateway not related to a conflict
 in seed TheCore Lite, keys =R
@@ -1181,16 +1184,16 @@ in seed TheCore Lite, keys =D
 in seed TheCore Lite, keys =E,Space
 
 [ERROR]: TerranBuild not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =Space,C
 
 [ERROR]: TerranBuild/HHSCV not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =Space,C
 
 [ERROR]: TerranBuild/SISCV not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =Space,C
 
 [ERROR]: TerranBuild/TychusSCV not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =Space,C
 
 [ERROR]: TerranBuildAdvanced not related to a conflict
 in seed TheCore Lite, keys =E
@@ -1905,7 +1908,7 @@ in seed TheCore Lite, keys =4
 
 [WARN]: ProtossBuild/Harvester not related to a conflict
 but is inherited
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =Space,C
 
 [WARN]: ProtossBuildAdvanced/Harvester not related to a conflict
 but is inherited
@@ -2177,5 +2180,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 509 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 510 WARNs: 144 
 ============================
