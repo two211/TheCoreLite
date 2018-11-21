@@ -1151,7 +1151,7 @@ in seed TheCore Lite, keys =Space,4
 in seed TheCore Lite, keys =Space,4
 
 [ERROR]: Spray not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =6
 
 [ERROR]: StalkerZeratul/ZeratulGateway not related to a conflict
 in seed TheCore Lite, keys =R

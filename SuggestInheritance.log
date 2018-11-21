@@ -150,7 +150,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SS_LeviathanTentacleAttackR2NoDelay/SS_Plane default: Z
 	SelectBuilder default: Q
 	SpectreNukeCalldown/Spectre default: N copyof: NukeCalldown/Ghost default: N
-	Spray default: Y
 	StopGenerateCreep default: C
 	StopGenerateCreep/Overlord default: C copyof: StopGenerateCreep default: C
 	SwarmQueenRaptor/HugeSwarmQueen default: W copyof: SwarmQueenZergling/SwarmQueen default: W, T
@@ -275,6 +274,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Scourge/Larva default: S
 	Spectre/Barracks default: G, S
 	SpectreWeaponsFree/Spectre default: G
+	Spray default: Y
 	WeaponsFree/Ghost default: G
 	WeaponsFree/GhostVulture default: G
 	WeaponsFree/Ghost_BlackOps default: 
