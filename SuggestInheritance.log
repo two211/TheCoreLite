@@ -73,6 +73,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: 4   
 	ACAlarakTransportMode/WarpPrismTaldarim default: 
+	AdvancedConstructionAuto/SCV default: 
 	BiodomeLoad/Biodome default: L
 	BiodomeLoad/BiodomeHalfBuilt default: L
 	BiodomeLoad/InfestableBiodome default: L
@@ -258,7 +259,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TychusWarhoundHaywireMissiles/TychusWarhound default: 
 
 [INFO]: TheCore Lite: 6   
-	AdvancedConstructionAuto/SCV default: 
 	CampaignVehicles default: A
 	CampaignVehicles/Factory default: A
 	CampaignVehicles/Starport default: A
