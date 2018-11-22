@@ -870,6 +870,7 @@ Changelog for the code
 
 Compared to upstream project:
 * TheCoreRemapper.py supporting other seeds than pure TheCore
+  * support for Left/Right conversion was removed
 * New "seed" checks:
   * check for unbound commands, known from conflicts
   * check to prevent conflicts between Hotkeys (i.e. directly access such as groups, base camera key) and Commands
