@@ -81,7 +81,8 @@ Legacy resources:
 * [TheCore Lite thread on teamliquid.net](http://www.teamliquid.net/forum/sc2-strategy/333891-thecore-lite-advanced-keyboard-layout)
 
 Other resources:
-* [NeoBlade's video](https://www.youtube.com/watch?v=y5Gw3BQfC_g)
+* [NeoBlade's video (May 2017)](https://www.youtube.com/watch?v=y5Gw3BQfC_g)
+* [NeoBlade's latest video (November 2018)](https://www.youtube.com/watch?v=GaeF9TVsZRU)
 * [Feedback on NeoBlade's video](http://www.teamliquid.net/forum/viewpost.php?post_id=26542923)
 
 ## Acknowledgments
