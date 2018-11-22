@@ -70,10 +70,18 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
 ## Ressources
 
 Beside this README.md file,
-some graphic resources are available in Image directory.
+some graphic resources are available in Reference directory.
 Please download the following .pdf file:
 
 * [TheCore_Lite.pdf](https://github.com/bobo38/TheCoreLite/raw/master/Reference/TheCore_Lite.pdf)
+
+How to get TheCore Lite installed:
+* Get the .SC2Hotkeys
+ * Download a full .zip of latest stable release [here](https://github.com/bobo38/TheCoreLite/releases)
+ * Download latest version for your keyboard layout, browsing the repository and [download the raw file content](https://raw.githubusercontent.com/bobo38/TheCoreLite/master/Reference/getTheCoreLite.jpg)
+* Drop the file in the proper directory on your computer, if you don't find it, please read [TheCore install instructions](https://docs.google.com/document/d/10auUgrpf-umdQwcwrt_GXmBc3I5xRVte3YCGnMU_fcU/edit)
+
+Online community help, please follow netiquette:
 * [TheCore Lite Discord channel](https://discord.gg/CeC7MEG)
 
 Legacy resources:
@@ -82,8 +90,9 @@ Legacy resources:
 
 Other resources:
 * [NeoBlade's video (May 2017)](https://www.youtube.com/watch?v=y5Gw3BQfC_g)
+* [Feedback on NeoBlade's video (May 2017)](http://www.teamliquid.net/forum/viewpost.php?post_id=26542923)
 * [NeoBlade's latest video (November 2018)](https://www.youtube.com/watch?v=GaeF9TVsZRU)
-* [Feedback on NeoBlade's video](http://www.teamliquid.net/forum/viewpost.php?post_id=26542923)
+* [Feedback on NeoBlade's video (November 2018)](https://www.teamliquid.net/forum/viewpost.php?post_id=27204690)
 
 ## Acknowledgments
 
