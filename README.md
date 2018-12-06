@@ -402,6 +402,8 @@ Legacy TheCore Lite comes with suggestions of control groups.
 Q is intended for production facilities or inject queens.
 W is intended for CC Nexus Hatcheries + Tech.
 
+Find the original suggested control group suggestion [here](https://docs.google.com/spreadsheets/d/1v1gTY9suNstl6KoYQ0zIA8_dIBAJ9COmdtbQ1AEuxV4/edit?pref=2&pli=1#gid=56)
+
 ## Nexus/CC/Hatch group = W
 
 Group content:
