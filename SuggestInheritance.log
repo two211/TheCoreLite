@@ -771,6 +771,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EMPNova/ShadowScrambler default: E
 	EnergizerReclamation/SentryCampaignBase default: R
 	EnergizerReclamation/SentryPurifier default: R
+	EvolveAnabolicSynthesis2/UltraliskCavern default: A
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
 	EvolveBroodLordSpeed/Spire default: P
 	EvolveCentrificalHooks/BanelingNest default: C
@@ -1537,7 +1538,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaLearnPrimalArmorLevel1/DehakaHatchery default: 
 	DehakaRoach/DehakaBarracks default: 
 	DehakaRoachMoveSpeed/DehakaGlevigStructure default: 
-	EvolveAnabolicSynthesis2/UltraliskCavern default: A
 	EvolveBanelingHeal/BanelingNest default: E
 	EvolveCorrosiveBileDamageIncrease/RoachWarren default: E
 	EvolveKerriganHeroicFortitude/EvolutionChamber default: F
