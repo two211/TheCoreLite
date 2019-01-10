@@ -840,7 +840,7 @@ Without changing the [Commands] section you can easily play around with [Hotkeys
 
 The biggest weakness is Control key placement.
 Here are 2 ways of dealing with Control key:
-* tilt keyboard clockwise by 10-20°C to get super comfortable with fingers on Shift/Q/W/D/Space
+* tilt keyboard clockwise by 10-20° to get super comfortable with fingers on Shift/Q/W/D/Space
   * Control will be 1 key below a comfortable key
 * remap CapsLock as Control key at Operating System level
   * Control will be comfortable with straight keyboard
