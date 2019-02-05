@@ -1396,6 +1396,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	GroundMissileVolley/NydusBeast default: G
 	KhaydarinMonolith/Probe default: D
 	MercReaper/Barracks default: J
+	MercReaper/MercCompound default: J
 	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
 	MorphToHotSTorrasque/Larva default: U copyof: Ultralisk/Larva default: U
 	MoveHoldPosition default: H
@@ -1459,7 +1460,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: J   
 	ArtanisChannel/ArtanisVoid default: J
-	MercReaper/MercCompound default: J
 	SiegeTank/Epilogue02VoidRift default: S
 	SiegeTank/VoidThrasher default: S
 	SiegeTank/VoidThrasherWalker default: S
