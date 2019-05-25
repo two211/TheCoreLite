@@ -64,6 +64,18 @@ in seed TheCore Lite, keys =Space
 [ERROR]: Blink/ZeratulStalker not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: BroodLordStetmann/CorruptorStetmann not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: BroodLordStetmannBombers/BroodLordStetmann not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: BroodLordStetmannBroodlings/BroodLordStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: BroodLordStetmannYamatoCannon not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: BuildDehakaExtractor/DehakaHatchery not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -103,6 +115,9 @@ in seed TheCore Lite, keys =D
 [ERROR]: BuildTychusMedivacPlatform/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: CausticSprayStetmann/CorruptorStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: ChronoBoostEnergyCost/Nexus not related to a conflict
 in seed TheCore Lite, keys =E,R
 
@@ -120,6 +135,15 @@ in seed TheCore Lite, keys =E
 
 [ERROR]: CoopMurvarSpawnCreepers/DehakaMurvar not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: Corruptor/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: CorruptorStetmannRespawn/GreaterSpire not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: CorruptorStetmannRespawn/Spire not related to a conflict
+in seed TheCore Lite, keys =5
 
 [ERROR]: CreepTumor/Queen not related to a conflict
 in seed TheCore Lite, keys =C
@@ -265,6 +289,9 @@ in seed TheCore Lite, keys =
 [ERROR]: DownloadBackupPart1/CybrosEscortDownloader not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: Drone/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: EMP/ScienceVessel not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -321,6 +348,12 @@ in seed TheCore Lite, keys =C
 
 [ERROR]: EvolveStukovInfestedInfestedCivilianLeap/SICivilianStructure not related to a conflict
 in seed TheCore Lite, keys =D
+
+[ERROR]: ExplodeStetmann/BanelingStetmann not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: ExplodeStetmann/BanelingStetmannBurrowed not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: ExplodeVolatileInfested/SIVolatileInfested not related to a conflict
 in seed TheCore Lite, keys =E
@@ -400,6 +433,12 @@ in seed TheCore Lite, keys =E
 [ERROR]: FusionCore/HHSCV not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: GaryStetmannOrb/GaryStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: GaryStetmannOrb/SuperGaryStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: GenerateCreep/OverlordTransport not related to a conflict
 in seed TheCore Lite, keys =4
 
@@ -472,6 +511,18 @@ in seed TheCore Lite, keys =Space
 [ERROR]: HighTemplarTaldarim not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: Hydralisk/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: HydraliskStetmannMissilePowerOff/HydraliskStetmann not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: HydraliskStetmannMissilePowerOn not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: HydraliskStetmannRespawn/HydraliskDen not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: Hyperjump/HHBattlecruiser not related to a conflict
 in seed TheCore Lite, keys =R
 
@@ -495,6 +546,21 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: ImmortalZeratul/ZeratulRoboticsFacility not related to a conflict
 in seed TheCore Lite, keys =D
+
+[ERROR]: InfestorStetmannEggLaunch/InfestorStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: InfestorStetmannEggLaunch/InfestorStetmannBurrowed not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: InfestorStetmannInfestBuilding/InfestorStetmann not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: InfestorStetmannInfestBuilding/InfestorStetmannBurrowed not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: InfestorStetmannRespawn/InfestationPit not related to a conflict
+in seed TheCore Lite, keys =5
 
 [ERROR]: InjectLarva/Queen not related to a conflict
 in seed TheCore Lite, keys =
@@ -538,6 +604,15 @@ in seed TheCore Lite, keys =F
 [ERROR]: LurkerCancelHoldFire/LurkerMP not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: LurkerStetmann/HydraliskStetmann not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: LurkerStetmannTunnelingBurst/LurkerStetmann not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: LurkerStetmannTunnelingBurst/LurkerStetmannBurrowed not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: MagrailMunitions/Marauder not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -579,6 +654,12 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: MorphToOverseer/SIOverlord not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: MorphToOverseerStetmann/OverlordStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: MorphToSuperGaryStetmann/GaryStetmann not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: MorphtoHHRaven/HHRaven not related to a conflict
 in seed TheCore Lite, keys =4
@@ -673,6 +754,9 @@ in seed TheCore Lite, keys =F
 [ERROR]: Overcharge/OrbitalCommand not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: Overlord/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: Passive not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -693,6 +777,15 @@ in seed TheCore Lite, keys =
 
 [ERROR]: PointDefenseDrone/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =E,R
+
+[ERROR]: PowerFieldSuperGaryStetmannSpeed/SuperGaryStetmann not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: PowerTowerOverchargeStetmannSpeed/GaryStetmann not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: PowerTowerOverchargeStetmannSpeed/SuperGaryStetmann not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: PrimalBuildingRoot/DehakaBarracksUprooted not related to a conflict
 in seed TheCore Lite, keys =4,R
@@ -727,6 +820,9 @@ in seed TheCore Lite, keys =4
 [ERROR]: QueenMPSpawnBroodlings/SIQueen not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: QueenStukovSpawnBroodlings/SIQueen not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: RallySCV not related to a conflict
 in seed TheCore Lite, keys =0
 
@@ -744,6 +840,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: Refinery/HHSCV not related to a conflict
 in seed TheCore Lite, keys =F
+
+[ERROR]: RepairStetmann not related to a conflict
+in seed TheCore Lite, keys =4
 
 [ERROR]: ResearchAlarakTargetLockBuff/CyberneticsCore not related to a conflict
 in seed TheCore Lite, keys =G
@@ -973,6 +1072,9 @@ in seed TheCore Lite, keys =C
 [ERROR]: ResearchTurboGripper/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: ReserachLurkerStetmannChannelingSpines/HydraliskDen not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: RetributionField/Meliak not related to a conflict
 in seed TheCore Lite, keys =V
 
@@ -1179,6 +1281,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: SupplyDepot/HHSCV not related to a conflict
 in seed TheCore Lite, keys =D
+
+[ERROR]: SwarmHostMP/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =5
 
 [ERROR]: TempestDisruptionBlast/Tempest not related to a conflict
 in seed TheCore Lite, keys =E,Space
@@ -1417,6 +1522,12 @@ in seed TheCore Lite, keys =Space
 [ERROR]: TychusWarhoundTurretUpgrade/TychusMercCompound not related to a conflict
 in seed TheCore Lite, keys =N
 
+[ERROR]: Ultralisk/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: UltraliskStetmannBurrowCharge/UltraliskStetmann not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: UpgradeLIDARTransmitter/EngineeringBay not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -1530,6 +1641,9 @@ in seed TheCore Lite, keys =C
 
 [ERROR]: ZeratulXelNagaConstructPsiStorm/ZeratulXelNagaConstructCyan not related to a conflict
 in seed TheCore Lite, keys =E
+
+[ERROR]: Zergling/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =D
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
@@ -2180,5 +2294,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 510 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 548 WARNs: 144 
 ============================

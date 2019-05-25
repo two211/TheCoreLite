@@ -113,6 +113,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HutLoad/DataCore default: L
 	HutLoad/Hut default: L
 	HutLoad/InfestableHut default: L
+	HydraliskStetmannRespawn/HydraliskDen default: 
 	Land default: L
 	MercMedic/Barracks default: B
 	MercMedic/MercCompound default: B
@@ -137,6 +138,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	QueenBurstHeal/Queen default: T
 	QueenClassicParasite/QueenClassic default: R
 	QueenClassicParasite/SIQueen default: 
+	RepairStetmann default: 
 	ResearchBansheeCloak/StarportTechLab default: C
 	ResearchBansheeCloak/StarportTechReactor default: C copyof: ResearchBansheeCloak/StarportTechLab default: C
 	ResearchBurrow default: B
@@ -207,6 +209,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: 5   
 	Aberration/VoidRift default: B
 	Aberration/VoidRiftUnselectable default: B
+	CorruptorStetmannRespawn/GreaterSpire default: 
+	CorruptorStetmannRespawn/Spire default: 
 	DOMGhostPersonalDefensiveMatrix/Ghost default: 
 	DehakaAirAttack/DehakaCoop default: 
 	DehakaAirAttackUpgrade/DehakaCoop default: 
@@ -226,6 +230,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveViperAbductImprovedStun/Viper default: T
 	Halt default: T
 	HiveMindEmulator/SCV default: I
+	InfestorStetmannRespawn/InfestationPit default: 
 	Lift default: L
 	MassRoachDrop/ZagaraReviveCocoon default: D
 	MassRoachDrop/ZagaraVoidCoop default: D
@@ -241,6 +246,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	PsiDisruptor/SCV default: I copyof: HiveMindEmulator/SCV default: I
 	SIUproot/SICommandCenter default: 
 	SwarmHostMP/Larva default: A
+	SwarmHostMP/LarvaStetmann default: 
 	SwarmQueenCorpser/HugeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/LargeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenCorpser/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
@@ -362,6 +368,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HybridDominatorPlasmaBlast/HybridDominatorVoid default: Q
 	HybridGeneralMindControl/HybridGeneral default: C
 	Hydralisk/Larva default: H
+	Hydralisk/LarvaStetmann default: 
 	HydraliskDen/Drone default: H
 	HyperionAdvancedPDD/HyperionVoidCoop default: R
 	IgniteAfterburners/Banshee default: B
@@ -370,6 +377,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	IgniteAfterburners/SiegeTank default: B
 	IgniteAfterburners/VikingAssault default: B
 	IgniteAfterburners/Vulture default: B
+	InfestorStetmannInfestBuilding/InfestorStetmann default: 
+	InfestorStetmannInfestBuilding/InfestorStetmannBurrowed default: 
 	JackhammerConcussionGrenade/HammerSecurity default: C copyof: JackhammerConcussionGrenade/Marauder default: C
 	JackhammerConcussionGrenade/Marauder default: C
 	KaiserWormScourgeMissile/VoidThrasher default: Q
@@ -404,6 +413,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	OdinBarrage/OdinMKII default: B
 	OracleRevelation/Oracle default: R
 	ParasiticInvasion/LarvalQueen default: Q
+	PowerFieldSuperGaryStetmannSpeed/SuperGaryStetmann default: 
 	PrimalSlash/K5Kerrigan default:  copyof: MindBolt/K5Kerrigan default: Q
 	PrimalZergling/PrimalTownHall default: Z
 	PrimalZergling/PrimalTownHallUprooted default: Z
@@ -465,6 +475,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchVesselLoad/ResearchVessel default: L
 	ResearchVesselLoad/ResearchVesselLanded default: L
 	ResearchWhirlwind/TwilightCouncil default: D
+	ReserachLurkerStetmannChannelingSpines/HydraliskDen default: 
 	RoboticsBay/Harvester default:  copyof: RoboticsBay/Probe default: B
 	RoboticsBay/Probe default: B
 	SIBarracks/SISCV default: 
@@ -721,6 +732,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	WarpInDarkTemplarChampion/SuperWarpGate default: D
 	Zealot default: Z
 	Zergling/Larva default: Z
+	Zergling/LarvaStetmann default: 
 	Zergling/VoidRiftUnselectable default: Z
 	zergflyerattack1 default: A
 	zerglingattackspeed/SpawningPool default: A
@@ -740,6 +752,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BiodomeUnloadAll/Biodome default: U
 	BiodomeUnloadAll/BiodomeHalfBuilt default: U
 	BiodomeUnloadAll/InfestableBiodome default: U
+	BroodLordStetmannYamatoCannon default: 
 	BuildCreepTumor/Hatchery default: C
 	BuildCreepTumor/Hive default: C
 	BuildCreepTumor/Lair default: C
@@ -794,6 +807,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Explode/HotSSplitterlingBigBurrowed default: X copyof: Explode/BanelingBurrowed default: X
 	Explode/baneling default:  copyof: Explode/Baneling default: X
 	Explode/baneling2 default:  copyof: Explode/Baneling default: X
+	ExplodeStetmann/BanelingStetmann default: 
+	ExplodeStetmann/BanelingStetmannBurrowed default: 
 	ExplodeVolatileInfested/SIVolatileInfested default: 
 	FaceEmbrace/Viper default: D
 	FenixClolarionBomberDummy/FenixClolarionCarrier default: 
@@ -826,6 +841,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HutUnloadAll/DataCore default: U
 	HutUnloadAll/Hut default: U
 	HutUnloadAll/InfestableHut default: U
+	HydraliskStetmannMissilePowerOff/HydraliskStetmann default: 
 	ImmortalShakurasShadowCannon/ImmortalAiur default: C
 	ImmortalShakurasShadowCannon/ImmortalShakuras default: C
 	Irradiate/ScienceVessel default: R
@@ -842,6 +858,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LocustLaunchCreeper/SwarmHostSplitBRooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LurkerHoldFire/LurkerBurrowed default: F copyof: LurkerHoldFire/LurkerMPBurrowed default: F
 	LurkerHoldFire/LurkerMPBurrowed default: F
+	LurkerStetmannTunnelingBurst/LurkerStetmann default: 
+	LurkerStetmannTunnelingBurst/LurkerStetmannBurrowed default: 
 	MagrailMunitions/Marauder default: 
 	MagrailMunitions/Marauder_BlackOps default: 
 	MagrailMunitions/Marine default: 
@@ -858,11 +876,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	OracleEnergyUpgrade/FleetBeacon default: A
 	OrbitalCommand/CommandCenter default: B
 	Overlord/Larva default: V
+	Overlord/LarvaStetmann default: 
 	ParkColonistVehicle/ColonistVehicleUnit default: L
 	ParkColonistVehicle/ColonistVehicleUnit01 default: L
 	PhaseCannon/KaraxChampion default: E
 	PitMalashUppercut/PitMalash default: E
 	PoisonNova/HotSNoxious default: W, T
+	PowerTowerOverchargeStetmannSpeed/GaryStetmann default: 
+	PowerTowerOverchargeStetmannSpeed/SuperGaryStetmann default: 
 	PrimalMutalisk/PrimalTownHallUprooted default: T
 	ProtossBuild/VoidRift default: B
 	ProtossBuild/VoidRiftUnselectable default: B
@@ -1103,6 +1124,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ArchonHallucination/Sentry default: N
 	ArchonHallucination/Voranor default:  copyof: ArchonHallucination/Sentry default: N
 	Armory/SCV default: A
+	ArtanisChannelOff/ArtanisVoid default: K
 	Assimilator/Harvester default:  copyof: Assimilator/Probe default: A
 	Assimilator/Probe default: A
 	AutomatedExtractor/Drone default: E copyof: Extractor/Drone default: E
@@ -1116,6 +1138,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BroodLord/MutaliskBroodlord default: B copyof: BroodLord/Corruptor default: B
 	BroodLord/VoidRift default: B
 	BroodLord/VoidRiftUnselectable default: B
+	BroodLordStetmann/CorruptorStetmann default: 
+	BroodLordStetmannBombers/BroodLordStetmann default: 
 	BrutaliskDeepTunnel/Brutalisk default: D
 	BuildDehakaExtractor/DehakaHatchery default: 
 	Carrier/Epilogue02VoidRift default: C
@@ -1214,6 +1238,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Lurker/HydraliskLurker default: E copyof: LurkerMP/Hydralisk default: E
 	LurkerDen/HydraliskDen default: D
 	LurkerMP/Hydralisk default: E
+	LurkerStetmann/HydraliskStetmann default: 
 	MedicHeal/InfestedMedic default: E
 	MedicHeal/Medic default: E copyof: Heal/Medivac default: E
 	MedicHeal/Medivac_BlackOps default: 
@@ -1221,6 +1246,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MercMedicHeal/MengskMedic default: E
 	MercMedicHeal/MercMedic default: E copyof: Heal/Medivac default: E
 	MorphToMothership/MothershipCore default: U
+	MorphToSuperGaryStetmann/GaryStetmann default: 
 	MorphtoDefiler/Larva default:  copyof: Infestor/Larva default: F
 	MorphtoHHRavenSiege/HHRaven default: 
 	MorphtoHunter/HotSRaptor default: E copyof: Baneling/Zergling default: E
@@ -1426,6 +1452,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TychusReaperEvasionLearn/TychusMercCompound default: 
 	TychusSpectreExtendedPulseGunLearn/TychusGhostAcademy default: 
 	Ultralisk/Larva default: U
+	Ultralisk/LarvaStetmann default: 
 	UltraliskCavern/Drone default: U
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
 
@@ -1459,7 +1486,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SS_CarrierSpawnInterceptor/SS_Plane default: I
 
 [INFO]: TheCore Lite: J   
-	ArtanisChannel/ArtanisVoid default: J
 	SiegeTank/Epilogue02VoidRift default: S
 	SiegeTank/VoidThrasher default: S
 	SiegeTank/VoidThrasherWalker default: S
@@ -1704,6 +1730,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ApocaliskBurrowCharge/StukovApocalisk default: 
 	ArchAngelCoopBombardment/ArchAngelCoopAssault default: B
 	ArmorpiercingMode default: E
+	ArtanisChannel/ArtanisVoid default: J
 	Battlecruiser/SJMercStarport default: B
 	Blink/PitAlarak default: B
 	Blink/ShadowOfTheVoidStalker default: B copyof: Blink/Stalker default: B
@@ -1711,12 +1738,14 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Blink/StalkerShakuras default: B
 	Blink/ZeratulDarkTemplar default: 
 	Blink/ZeratulStalker default: 
+	BroodLordStetmannBroodlings/BroodLordStetmann default: 
 	BuildRailGunTurret/Raven default: 
 	BuildScarab/Reaver default: 
 	BurrowChargeCampaign/HotSTorrasque default: C copyof: Blink/Stalker default: B
 	BurrowChargeCampaign/Ultralisk default: C copyof: Blink/Stalker default: B
 	BurrowChargeCampaignNoxious/HotSNoxious default: C copyof: Blink/Stalker default: B
 	BurrowChargeMP/Ultralisk default:  copyof: Blink/Stalker default: B
+	CausticSprayStetmann/CorruptorStetmann default: 
 	Charge/Khraxus default:  copyof: Charge/Zealot default: C
 	Charge/Orthos default:  copyof: Charge/Zealot default: C
 	Charge/ShadowOfTheVoidZealot default: C copyof: Charge/Zealot default: C
@@ -1754,6 +1783,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DisableBuildingAttackScourge/Scourge default: G copyof: DisableBuildingAttack/Baneling default: G
 	DisableBuildingAttackSplitterling/HotSSplitterlingBig default: G copyof: DisableBuildingAttack/Baneling default: G
 	Drone/Larva default: D
+	Drone/LarvaStetmann default: 
 	EntropicBlast/XelNagaConstruct default: Q
 	EntropicBlast/ZeratulXelNagaConstructCyan default: 
 	EvolveAdaptivePlating/GreaterRoachWarren default: D
@@ -1772,6 +1802,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	FenixTalisAdeptBounceShot/FenixTalisAdept default: 
 	FenixThunderousChargeCoop/FenixCoop default: 
 	FighterMode default: E
+	GaryStetmannOrb/GaryStetmann default: 
+	GaryStetmannOrb/SuperGaryStetmann default: 
 	Ghost/Barracks default: G
 	GhostAcademy/SCV default: G
 	GuardianShield/Sentry default: G
@@ -1795,6 +1827,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HydraliskFrenzy/HydraliskEvolved default: T
 	HydraliskFrenzy/HydraliskImpaler default: T copyof: Blink/Stalker default: B
 	HydraliskFrenzy/HydraliskLurker default: T copyof: Blink/Stalker default: B
+	HydraliskStetmannMissilePowerOn default: 
 	ImmortalBarrierBase/Immortal default: B copyof: ImmortalOverload/Immortal default: B
 	ImmortalOverload/FenixTaldarinImmortal default: 
 	ImmortalOverload/Immortal default: B
@@ -1815,6 +1848,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	InfestedAbomination/InfestedSupply default: B
 	InfestorConsumption/DefilerMP default: C
 	InfestorConsumption/Infestor default: C
+	InfestorStetmannEggLaunch/InfestorStetmann default: 
+	InfestorStetmannEggLaunch/InfestorStetmannBurrowed default: 
 	Interceptor/Carrier default: I
 	Interceptor/CarrierAiur default: I copyof: Interceptor/Carrier default: I
 	Interceptor/Selendis default: I copyof: Interceptor/Carrier default: I
@@ -1852,6 +1887,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	MorphToOverseer/OverlordTransport default: 
 	MorphToOverseer/SIOverlord default: 
 	MorphToOverseer/VoidRiftUnselectable default: V
+	MorphToOverseerStetmann/OverlordStetmann default: 
 	MorphtoObserverSiege/Observer default: E
 	MorphtoObserverSiege/ZeratulObserver default: 
 	MorphtoOverseerSiege/Overseer default: E
@@ -1884,6 +1920,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	QueenMPSpawnBroodlings/QueenClassic default: B
 	QueenMPSpawnBroodlings/QueenMP default: B
 	QueenMPSpawnBroodlings/SIQueen default: 
+	QueenStukovSpawnBroodlings/SIQueen default: 
 	Raven/Starport default: R, B
 	ReaverScarabs/Reaver default: C copyof: Interceptor/Carrier default: I
 	ResearchAresClassTargetingSystem/FactoryTechLab default: E
@@ -1979,6 +2016,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TychusOutlawArmorLevel1/TychusEngineeringBay default: 
 	TychusSCV/TychusCommandCenter default: 
 	TychusWarhoundTurretHaywireMissiles/TychusWarhoundAutoTurret default: 
+	UltraliskStetmannBurrowCharge/UltraliskStetmann default: 
 	ViperConsume/Viper default: C
 	ViperConsumption/Viper default: C copyof: ViperConsume/Viper default: C
 	VoidRift/NarudEpilogue default: Q
@@ -2038,6 +2076,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ActivateStasisWard/OracleStasisTrap default: T
 	BanelingNest/Drone default: B
 	Corruptor/Larva default: C
+	Corruptor/LarvaStetmann default: 
 	DarkShrine/Harvester default:  copyof: DarkShrine/Probe default: D
 	DarkShrine/Probe default: D
 	DarkTemplar default: D
@@ -2188,12 +2227,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TychusGhostConcentrationHelmetLearn/TychusGhostAcademy default: 
 	Zergling/VoidThrasher default: Z
 
-[INFO]: TheCore Lite:    
-	CommanderAbility0 default: 
-	CommanderAbility1 default: 
-	CommanderAbility2 default: 
-	CommanderAbility3 default: 
-
 [INFO]: TheCore Lite: 2   
 	ControlGroupRecall2 default: 2
 	ObservePlayer1 default: 2
@@ -2241,5 +2274,5 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ObserveSelected default: W
 
 ----------------------------
-Finished (suggest inherit) - INFOs: 49 
+Finished (suggest inherit) - INFOs: 48 
 ============================

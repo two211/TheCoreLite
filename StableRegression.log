@@ -7,10 +7,10 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [ERROR]: Alt+3,Control+R used in place of Alt+3,Control+E for parameter CameraSave3, in seed TheCore Lite
 [ERROR]: Shift+1,Control+C used in place of Shift+CapsLock for parameter CameraView1, in seed TheCore Lite
 [ERROR]: Shift+3,Control+E used in place of Shift+3,Control+F for parameter CameraView3, in seed TheCore Lite
-[ERROR]:  used in place of F3 for parameter CommanderAbility0, in seed TheCore Lite
-[ERROR]:  used in place of F4 for parameter CommanderAbility1, in seed TheCore Lite
-[ERROR]:  used in place of F5 for parameter CommanderAbility2, in seed TheCore Lite
-[ERROR]:  used in place of F6 for parameter CommanderAbility3, in seed TheCore Lite
+[ERROR]: Shift+F3 used in place of F3 for parameter CommanderAbility0, in seed TheCore Lite
+[ERROR]: Shift+F4 used in place of F4 for parameter CommanderAbility1, in seed TheCore Lite
+[ERROR]: Shift+F5 used in place of F5 for parameter CommanderAbility2, in seed TheCore Lite
+[ERROR]: Shift+F6 used in place of F6 for parameter CommanderAbility3, in seed TheCore Lite
 [ERROR]: Control+Shift+1,Grave used in place of Control+Shift+1 for parameter ControlGroupAssignAndSteal1, in seed TheCore Lite
 [ERROR]: Shift+F1 used in place of Equals for parameter MinimapTerrain, in seed TheCore Lite
 [ERROR]: Alt,Control,Control+Alt,Shift+Alt used in place of Control,Control+Alt,Shift+Alt for parameter StatusEnemy, in seed TheCore Lite
