@@ -31,6 +31,10 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default BioMechanicalHeal/HealingDrone
 [WARN]: no default Blink/ZeratulDarkTemplar
 [WARN]: no default Blink/ZeratulStalker
+[WARN]: no default BroodLordStetmann/CorruptorStetmann
+[WARN]: no default BroodLordStetmannBombers/BroodLordStetmann
+[WARN]: no default BroodLordStetmannBroodlings/BroodLordStetmann
+[WARN]: no default BroodLordStetmannYamatoCannon
 [WARN]: no default BuildCreepTumor/Queen2
 [WARN]: no default BuildDehakaExtractor/DehakaHatchery
 [WARN]: no default BuildHHBomberPlatform/HHSCV
@@ -52,6 +56,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default CancelCocoon
 [WARN]: no default CancelMutateMorph
 [WARN]: no default CancelUpgradeMorph
+[WARN]: no default CausticSprayStetmann/CorruptorStetmann
 [WARN]: no default Charge/Khraxus
 [WARN]: no default Charge/Orthos
 [WARN]: no default Charge/Voranor
@@ -64,6 +69,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ColossusHallucination/Voranor
 [WARN]: no default CommandCenter/HHSCV
 [WARN]: no default CoopMurvarSpawnCreepers/DehakaMurvar
+[WARN]: no default Corruptor/LarvaStetmann
+[WARN]: no default CorruptorStetmannRespawn/GreaterSpire
+[WARN]: no default CorruptorStetmannRespawn/Spire
 [WARN]: no default CreepTumor/Queen
 [WARN]: no default CyberneticsCore/Harvester
 [WARN]: no default DOMGhostPersonalDefensiveMatrix/Ghost
@@ -114,6 +122,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default DisableBuildingAttack/baneling
 [WARN]: no default DisableBuildingAttack/baneling2
 [WARN]: no default DownloadBackupPart1/CybrosEscortDownloader
+[WARN]: no default Drone/LarvaStetmann
 [WARN]: no default EMP/ScienceVessel
 [WARN]: no default EnableBuildingAttack/baneling
 [WARN]: no default EnableBuildingAttack/baneling2
@@ -133,6 +142,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default EvolveStukovInfestedInfestedCivilianLeap/SICivilianStructure
 [WARN]: no default Explode/baneling
 [WARN]: no default Explode/baneling2
+[WARN]: no default ExplodeStetmann/BanelingStetmann
+[WARN]: no default ExplodeStetmann/BanelingStetmannBurrowed
 [WARN]: no default ExplodeVolatileInfested/SIVolatileInfested
 [WARN]: no default Feedback/AnAleemController
 [WARN]: no default Feedback/Khiradun
@@ -164,6 +175,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Forge/Harvester
 [WARN]: no default Frostbat/Barracks
 [WARN]: no default FusionCore/HHSCV
+[WARN]: no default GaryStetmannOrb/GaryStetmann
+[WARN]: no default GaryStetmannOrb/SuperGaryStetmann
 [WARN]: no default Gateway/Harvester
 [WARN]: no default GenerateCreep/OverlordTransport
 [WARN]: no default GhostHoldFire/NovaCoop
@@ -195,6 +208,10 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default HighTemplarHallucination/Nexus
 [WARN]: no default HighTemplarHallucination/Voranor
 [WARN]: no default HighTemplarTaldarim
+[WARN]: no default Hydralisk/LarvaStetmann
+[WARN]: no default HydraliskStetmannMissilePowerOff/HydraliskStetmann
+[WARN]: no default HydraliskStetmannMissilePowerOn
+[WARN]: no default HydraliskStetmannRespawn/HydraliskDen
 [WARN]: no default Hyperjump/HHBattlecruiser
 [WARN]: no default IgniteAfterburner/Medivac
 [WARN]: no default Immortal
@@ -206,6 +223,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ImmortalZeratul/ZeratulRoboticsFacility
 [WARN]: no default IncineratorNozzles/DevilDog
 [WARN]: no default InfestedTerrans/Infestor2
+[WARN]: no default InfestorStetmannEggLaunch/InfestorStetmann
+[WARN]: no default InfestorStetmannEggLaunch/InfestorStetmannBurrowed
+[WARN]: no default InfestorStetmannInfestBuilding/InfestorStetmann
+[WARN]: no default InfestorStetmannInfestBuilding/InfestorStetmannBurrowed
+[WARN]: no default InfestorStetmannRespawn/InfestationPit
 [WARN]: no default InjectLarva/Queen
 [WARN]: no default InstantHunterSeekerMissile/Raven_BlackOps
 [WARN]: no default KhalaShockwave/Immortal
@@ -223,6 +245,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Lurker/HydraliskImpaler
 [WARN]: no default LurkerBurrowDown
 [WARN]: no default LurkerCancelHoldFire/LurkerMP
+[WARN]: no default LurkerStetmann/HydraliskStetmann
+[WARN]: no default LurkerStetmannTunnelingBurst/LurkerStetmann
+[WARN]: no default LurkerStetmannTunnelingBurst/LurkerStetmannBurrowed
 [WARN]: no default MagrailMunitions/Marauder
 [WARN]: no default MagrailMunitions/Marauder_BlackOps
 [WARN]: no default MagrailMunitions/Marine
@@ -240,6 +265,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MorphToHellionTank/HHHellion
 [WARN]: no default MorphToOverseer/OverlordTransport
 [WARN]: no default MorphToOverseer/SIOverlord
+[WARN]: no default MorphToOverseerStetmann/OverlordStetmann
+[WARN]: no default MorphToSuperGaryStetmann/GaryStetmann
 [WARN]: no default MorphtoDefiler/Larva
 [WARN]: no default MorphtoHHRaven/HHRaven
 [WARN]: no default MorphtoHHRavenSiege/HHRaven
@@ -274,6 +301,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default NydusDestroyerBeam/DehakaNydusDestroyer
 [WARN]: no default NydusDestroyerDeepTunnel/DehakaNydusDestroyer
 [WARN]: no default Overcharge/OrbitalCommand
+[WARN]: no default Overlord/LarvaStetmann
 [WARN]: no default Passive
 [WARN]: no default PhaseMissile/Scout
 [WARN]: no default PhasingMode/WarpPrismTaldarim
@@ -283,6 +311,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default PlaceWard/Oracle
 [WARN]: no default Plague/Infestor
 [WARN]: no default PointDefenseDrone/Raven_BlackOps
+[WARN]: no default PowerFieldSuperGaryStetmannSpeed/SuperGaryStetmann
+[WARN]: no default PowerTowerOverchargeStetmannSpeed/GaryStetmann
+[WARN]: no default PowerTowerOverchargeStetmannSpeed/SuperGaryStetmann
 [WARN]: no default PrimalBuildingRoot/DehakaBarracksUprooted
 [WARN]: no default PrimalBuildingRoot/DehakaHatcheryUprooted
 [WARN]: no default PrimalBuildingUproot/DehakaBarracks
@@ -305,12 +336,14 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Pylon/Harvester
 [WARN]: no default QueenClassicParasite/SIQueen
 [WARN]: no default QueenMPSpawnBroodlings/SIQueen
+[WARN]: no default QueenStukovSpawnBroodlings/SIQueen
 [WARN]: no default RallySCV
 [WARN]: no default RavenRepairDrone/Raven
 [WARN]: no default RavenScramblerMissile/Raven
 [WARN]: no default RavenShredderMissile/Raven
 [WARN]: no default Recall/Arbiter
 [WARN]: no default Refinery/HHSCV
+[WARN]: no default RepairStetmann
 [WARN]: no default ResearchAlarakTargetLockBuff/CyberneticsCore
 [WARN]: no default ResearchArmorPiercingRockets/FactoryTechLab
 [WARN]: no default ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab
@@ -385,6 +418,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchTimeWarp/FleetBeacon
 [WARN]: no default ResearchTitanReactor/StarportTechLab
 [WARN]: no default ResearchTurboGripper/StarportTechLab
+[WARN]: no default ReserachLurkerStetmannChannelingSpines/HydraliskDen
 [WARN]: no default Rift/KhaydarinNexus
 [WARN]: no default Rift/Nexus
 [WARN]: no default RoboticsBay/Harvester
@@ -460,6 +494,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default SuperStimpackStone
 [WARN]: no default SupplyDepot/HHSCV
 [WARN]: no default SupplyDepotDrop/SCV
+[WARN]: no default SwarmHostMP/LarvaStetmann
 [WARN]: no default SwarmHostRoot/SwarmHost
 [WARN]: no default SwarmHostRoot/SwarmHostSplitA
 [WARN]: no default SwarmHostRoot/SwarmHostSplitB
@@ -560,6 +595,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default TychusWarhoundHaywireMissilesUpgrade/TychusMercCompound
 [WARN]: no default TychusWarhoundTurretHaywireMissiles/TychusWarhoundAutoTurret
 [WARN]: no default TychusWarhoundTurretUpgrade/TychusMercCompound
+[WARN]: no default Ultralisk/LarvaStetmann
+[WARN]: no default UltraliskStetmannBurrowCharge/UltraliskStetmann
 [WARN]: no default UpgradeLIDARTransmitter/EngineeringBay
 [WARN]: no default UpgradewithKhaydarinCore/Nexus
 [WARN]: no default UseSpiderMine/Vulture
@@ -604,7 +641,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZeratulXelNagaConstructDevolve/ZeratulXelNagaConstruct
 [WARN]: no default ZeratulXelNagaConstructPsiBlast/ZeratulXelNagaConstructCyan
 [WARN]: no default ZeratulXelNagaConstructPsiStorm/ZeratulXelNagaConstructCyan
+[WARN]: no default Zergling/LarvaStetmann
 [ERROR]: no default SIRoot/SIFactory
 ----------------------------
-Finished (Check defaults) - WARNs: 603 ERRORs: 1 
+Finished (Check defaults) - WARNs: 641 ERRORs: 1 
 ============================
