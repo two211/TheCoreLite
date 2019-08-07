@@ -74,7 +74,7 @@ This is the Github repository for TheCore Lite Starcraft2 bindkeys.
   * delivered in a set of supported keyboard layouts
   * it passes all the new introduced "seed" checks
 
-## Ressources
+## Resources
 
 Beside this README.md file,
 some graphic resources are available in Reference directory.
