@@ -747,19 +747,23 @@ Suggested camera locations:
 
 This step benefits from holding Ctl.
 Ctl+click acts as select all units of the same kind.
+Control click on tumor to select all that appear on the screen.
+Creep tumor spread has a RapidFire alias (Space).
 
-* initiate
-  * Ctl+D = jump to creep camera 1 (initiate)
-* select all creep tumors with Ctl+click
-* creep spread
-  * hold (Ctl)+C then clicks = spread creep tumor (precision key)
-  * (Ctl)+Space = spread creep tumor (rapid fire)
-* optionally centering
-  * click = select a new creep tumor
-  * Ctl+V = center view on selection
-* save and restart from "select all creep tumors"
-  * Ctl+R+F, save 1 jump to 2
-  * Ctl+E, get fingers back on rest keys
+This section is outdated, control camera hotkeys are practically not that convenient to use
+
+* ~~ initiate ~~
+  * ~~ Ctl+D = jump to creep camera 1 (initiate) ~~
+* ~~ select all creep tumors with Ctl+click ~~
+* ~~ creep spread ~~
+  * ~~ hold (Ctl)+C then clicks = spread creep tumor (precision key) ~~
+  * ~~ (Ctl)+Space = spread creep tumor (rapid fire) ~~
+* ~~ optionally centering ~~
+  * ~~ click = select a new creep tumor ~~
+  * ~~ Ctl+V = center view on selection ~~
+* ~~ save and restart from "select all creep tumors" ~~
+  * ~~ Ctl+R+F, save 1 jump to 2 ~~
+  * ~~ Ctl+E, get fingers back on rest keys ~~
 
 **Note:** keep in mind that selecting another group cancels the action
 
