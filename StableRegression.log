@@ -11,7 +11,7 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [ERROR]: Shift+F4 used in place of F4 for parameter CommanderAbility1, in seed TheCore Lite
 [ERROR]: Shift+F5 used in place of F5 for parameter CommanderAbility2, in seed TheCore Lite
 [ERROR]: Shift+F6 used in place of F6 for parameter CommanderAbility3, in seed TheCore Lite
-[ERROR]: Control+Shift+1,Grave used in place of Control+Shift+1 for parameter ControlGroupAssignAndSteal1, in seed TheCore Lite
+[ERROR]: Control+Shift+CapsLock,Grave used in place of Control+Shift+CapsLock for parameter ControlGroupAssignAndSteal6, in seed TheCore Lite
 [ERROR]: Shift+F1 used in place of Equals for parameter MinimapTerrain, in seed TheCore Lite
 [ERROR]: Alt,Control,Control+Alt,Shift+Alt used in place of Control,Control+Alt,Shift+Alt for parameter StatusEnemy, in seed TheCore Lite
 [WARN]: '4' used in place of 'Space' for command 'BurrowUp', in seed 'TheCore Lite'
@@ -49,8 +49,9 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: '5' used in place of 'Y' for command 'SwarmHostMP/Larva', in seed 'TheCore Lite'
 [WARN]: 'Space,C' used in place of 'Space' for command 'TerranBuild/SCV', in seed 'TheCore Lite'
 [WARN]: 'E,R' used in place of 'E,C' for command 'TimeWarp/Nexus', in seed 'TheCore Lite'
+[WARN]: 'R' used in place of '4' for command 'TransportMode/WarpPrism', in seed 'TheCore Lite'
 [WARN]: 'Space,C' used in place of 'Space' for command 'ZergBuild/Drone', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 13 WARNs: 36 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 13 WARNs: 37 INFOs: 1 
 ============================
