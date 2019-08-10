@@ -4,7 +4,7 @@ The Core Lite v2.3
 ### Table of Contents
 * [The Core Lite v2.3](https://github.com/bobo38/TheCoreLite/blob/master/README.md)
   * [Repository description](https://github.com/bobo38/TheCoreLite/blob/master/README.md#repository-description)
-  * [Ressources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#ressources)
+  * [Resources](https://github.com/bobo38/TheCoreLite/blob/master/README.md#resources)
   * [Acknowledgments](https://github.com/bobo38/TheCoreLite/blob/master/README.md#acknowledgments)
   * [TheCore Lite features](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-features)
 * [TheCore Lite Command spirit](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-command-spirit)
@@ -21,6 +21,7 @@ The Core Lite v2.3
   * [Nexus/CC/Hatch group = W](https://github.com/bobo38/TheCoreLite/blob/master/README.md#nexuscchatch-group--w)
   * [Production group (or inject queens) = Q](https://github.com/bobo38/TheCoreLite/blob/master/README.md#production-group-or-inject-queens--q)
   * [Utility group = 1](https://github.com/bobo38/TheCoreLite/blob/master/README.md#utility-group--1)
+  * [Trash group key = Grave](https://github.com/bobo38/TheCoreLite/blob/master/README.md#trash-group-key--grave)
   * [Group display](https://github.com/bobo38/TheCoreLite/blob/master/README.md#group-display)
 * [TheCore Lite Group/Cameras modifiers](https://github.com/bobo38/TheCoreLite/blob/master/README.md#thecore-lite-groupcameras-modifiers)
   * [History](https://github.com/bobo38/TheCoreLite/blob/master/README.md#history-1)
