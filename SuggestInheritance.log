@@ -84,6 +84,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaLearnAbilities/DehakaCoop default: 
 	EngineeringBay/SCV default: E
 	EvolutionChamber/Drone default: V
+	EvolutionChamberStetmann/Drone default: 
 	EvolveBurrowCharge/Hatchery default: 
 	EvolveBurrowCharge/UltraliskCavern default: B
 	EvolveTunnelingClaws/GreaterRoachWarren default: T
@@ -372,6 +373,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Hydralisk/Larva default: H
 	Hydralisk/LarvaStetmann default: 
 	HydraliskDen/Drone default: H
+	HydraliskDenStetmann/Drone default: 
 	HydraliskStetmann/LarvaStetmann default: 
 	HyperionAdvancedPDD/HyperionVoidCoop default: R
 	IgniteAfterburners/Banshee default: B
@@ -499,6 +501,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpawnCorruptor/SpacePlatformVentsUnit default: R, C
 	SpectreDomination/Spectre default: D
 	SpineCrawler/Drone default: C
+	SpineCrawlerStetmann/Drone default: 
 	StartColonistVehicle/ColonistVehicleUnit default: S
 	StartColonistVehicle/ColonistVehicleUnit01 default: S
 	StukovBossBlast/InfestedStukov default: B
@@ -714,6 +717,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SISiegeTank/SIFactory default: 
 	SS_LeviathanTentacleAttackL1/SS_Plane default: D
 	SpawningPool/Drone default: S
+	SpawningPoolStetmann/Drone default: 
 	SpectreNukeArm/GhostAcademy default: N copyof: NukeArm/GhostAcademy default: N
 	Summon2ScoutHallucinations/Sentry default:  copyof: PhoenixHallucination/Sentry default: X
 	Summon2ScoutHallucinations/Voranor default:  copyof: PhoenixHallucination/Sentry default: X
@@ -844,6 +848,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HHTechLabStarport/HHStarport default: 
 	HHVikingRockets/HHVikingFighter default: 
 	Hatchery/Drone default: H
+	HatcheryStetmann/Drone default: 
 	HellbatJumpJetAssault/HellionBlackOps default: 
 	HerculesUnloadAll/Hercules default: D copyof: BunkerUnloadAll default: D
 	HerculesUnloadAll/HerculesCrashing default: D
@@ -1211,6 +1216,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveToLeviathan/Mutalisk default: L
 	EvolveToLeviathan/Viper default: L
 	Extractor/Drone default: E
+	ExtractorStetmann/Drone default: 
 	FenixArbiterCloakField/FenixArbiter default: 
 	FenixTalisAdeptDownloadUpgrade default: 
 	GlevigTunnel/DehakaGlevig default: 
@@ -1240,6 +1246,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Impaler/HydraliskImpaler default: E, I copyof: LurkerMP/Hydralisk default: E
 	ImpalerDen/HydraliskDen default: D copyof: Lair/Hatchery default: L
 	InfestationPit/Drone default: I
+	InfestationPitStetmann/Drone default: 
 	InfestedTerrans/Infestor default: T
 	InfestedTerrans/Infestor2 default:  copyof: InfestedTerrans/Infestor default: T
 	InfestedTerrans/InfestorBurrowed default: T copyof: InfestedTerrans/Infestor default: T
@@ -1490,6 +1497,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Ultralisk/Larva default: U
 	Ultralisk/LarvaStetmann default: 
 	UltraliskCavern/Drone default: U
+	UltraliskCavernStetmann/Drone default: 
 	UltraliskStetmann/LarvaStetmann default: 
 	UltraliskStetmannRespawn/UltraliskCavernStetmann default: 
 	VoidTendrilDeathGripAutoCast/VoidTendrilDeathGripCrystal default: G
@@ -1720,6 +1728,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SpiderMineReplenish/Vulture default: R, T
 	SpineCrawlerRoot/SpineCrawlerUprooted default: R
 	Spire/Drone default: S
+	SpireStetmann/Drone default: 
 	SporeColony/CreepColony default: R
 	SporeCrawlerRoot/SporeCrawlerUprooted default: R
 	Stalker default: S
@@ -2019,6 +2028,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SkyTankLaserBeamFast/SkyTank default: Q
 	SpawnBanelings/K5Kerrigan default:  copyof: WildMutation/K5Kerrigan default: E
 	SporeCrawler/Drone default: A
+	SporeCrawlerStetmann/Drone default: 
 	StalkerBlinkMultiple/Stalker default: B
 	StalkerBlinkShieldRestoreBase/StalkerShakuras default: B copyof: Blink/Stalker default: B
 	Stim default: T
@@ -2126,6 +2136,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: T   
 	ActivateStasisWard/OracleStasisTrap default: T
 	BanelingNest/Drone default: B
+	BanelingNestStetmann/Drone default: 
 	Corruptor/Larva default: C
 	CorruptorStetmann/LarvaStetmann default: 
 	DarkShrine/Harvester default:  copyof: DarkShrine/Probe default: D

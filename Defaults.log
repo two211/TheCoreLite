@@ -691,6 +691,17 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Zergling/LarvaStetmann
 [WARN]: no default ZerglingStetmann/LarvaStetmann
 [WARN]: no default ZerglingStetmannRespawn/SpawningPoolStetmann
+[WARN]: no default BanelingNestStetmann/Drone
+[WARN]: no default EvolutionChamberStetmann/Drone
+[WARN]: no default ExtractorStetmann/Drone
+[WARN]: no default HatcheryStetmann/Drone
+[WARN]: no default HydraliskDenStetmann/Drone
+[WARN]: no default InfestationPitStetmann/Drone
+[WARN]: no default SpawningPoolStetmann/Drone
+[WARN]: no default SpineCrawlerStetmann/Drone
+[WARN]: no default SpireStetmann/Drone
+[WARN]: no default SporeCrawlerStetmann/Drone
+[WARN]: no default UltraliskCavernStetmann/Drone
 ----------------------------
-Finished (Check defaults) - WARNs: 690 ERRORs: 0 
+Finished (Check defaults) - WARNs: 701 ERRORs: 0 
 ============================

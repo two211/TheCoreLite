@@ -1789,6 +1789,39 @@ in seed TheCore Lite, keys =D
 [ERROR]: ZerglingStetmannRespawn/SpawningPoolStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: BanelingNestStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: EvolutionChamberStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: ExtractorStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: HatcheryStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: HydraliskDenStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: InfestationPitStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: SpawningPoolStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: SpineCrawlerStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: SpireStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: SporeCrawlerStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: UltraliskCavernStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =G
+
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
 in seed TheCore Lite, keys =C
@@ -2438,5 +2471,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 596 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 607 WARNs: 144 
 ============================
