@@ -46,6 +46,9 @@ in seed TheCore Lite, keys =F
 [ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,4
 
+[ERROR]: BanelingNestStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =T
+
 [ERROR]: BanelingStetmann/ZerglingStetmann not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -316,6 +319,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: EvadeObserver/Observer not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: EvolutionChamberStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: EvolveAdrenalineBoost/EvolutionChamber not related to a conflict
 in seed TheCore Lite, keys =T
 
@@ -369,6 +375,9 @@ in seed TheCore Lite, keys =E
 
 [ERROR]: ExplodeVolatileInfested/SIVolatileInfested not related to a conflict
 in seed TheCore Lite, keys =E
+
+[ERROR]: ExtractorStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: FASTOverloadStetmann/PowerTowerStetmann not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -517,6 +526,9 @@ in seed TheCore Lite, keys =F
 [ERROR]: HHYamatoShots/HHBattlecruiser not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: HatcheryStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: HellbatJumpJetAssault/HellionBlackOps not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -533,6 +545,9 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =F
 
 [ERROR]: Hydralisk/LarvaStetmann not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: HydraliskDenStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =C
 
 [ERROR]: HydraliskStetmann/LarvaStetmann not related to a conflict
@@ -573,6 +588,9 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: ImmortalZeratul/ZeratulRoboticsFacility not related to a conflict
 in seed TheCore Lite, keys =D
+
+[ERROR]: InfestationPitStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: InfestorStetmannBonusRavager/InfestationPitStetmann not related to a conflict
 in seed TheCore Lite, keys =F
@@ -1357,11 +1375,23 @@ in seed TheCore Lite, keys =R,C
 [ERROR]: Snipe_BlackOps/Ghost_BlackOps not related to a conflict
 in seed TheCore Lite, keys =R,C
 
+[ERROR]: SpawningPoolStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: SpineCrawlerStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: SpineCrawlerUproot/SpineCrawlerUprooted not related to a conflict
 in seed TheCore Lite, keys =Space,4
 
 [ERROR]: SpineCrawlerUprootStetmann/SpineCrawlerStetmann not related to a conflict
 in seed TheCore Lite, keys =Space,4
+
+[ERROR]: SpireStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: SporeCrawlerStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: SporeCrawlerUproot/SporeCrawlerUprooted not related to a conflict
 in seed TheCore Lite, keys =Space,4
@@ -1642,6 +1672,9 @@ in seed TheCore Lite, keys =N
 [ERROR]: Ultralisk/LarvaStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: UltraliskCavernStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =G
+
 [ERROR]: UltraliskStetmann/LarvaStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
@@ -1789,38 +1822,8 @@ in seed TheCore Lite, keys =D
 [ERROR]: ZerglingStetmannRespawn/SpawningPoolStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
-[ERROR]: BanelingNestStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =T
-
-[ERROR]: EvolutionChamberStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =4
-
-[ERROR]: ExtractorStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: HatcheryStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =E
-
-[ERROR]: HydraliskDenStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: InfestationPitStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: SpawningPoolStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =D
-
-[ERROR]: SpineCrawlerStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: SpireStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: SporeCrawlerStetmann/Drone not related to a conflict
+[ERROR]: ResearchEnhancedShockwaves/GhostAcademy not related to a conflict
 in seed TheCore Lite, keys =Space
-
-[ERROR]: UltraliskCavernStetmann/Drone not related to a conflict
-in seed TheCore Lite, keys =G
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
@@ -2471,5 +2474,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 607 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 608 WARNs: 144 
 ============================

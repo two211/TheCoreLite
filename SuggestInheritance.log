@@ -1985,6 +1985,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchBattlecruiserEnergyUpgrade/FusionReactor default: B
 	ResearchDehakaUltraliskCrashingCharge/DehakaDakrunStructure default: 
 	ResearchDrakkenLaserDrillBFG/DrakkenLaserDrillCoop default: D
+	ResearchEnhancedShockwaves/GhostAcademy default: 
 	ResearchGhostEnergyUpgrade/GhostAcademy default: M
 	ResearchGraviticBooster/Observatory default: 
 	ResearchGraviticBooster/RoboticsBay default: B
