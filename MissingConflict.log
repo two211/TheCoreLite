@@ -329,7 +329,7 @@ in seed TheCore Lite, keys =T
 in seed TheCore Lite, keys =4
 
 [ERROR]: EvolveDiggingClaws/LurkerDenMP not related to a conflict
-in seed TheCore Lite, keys =E
+in seed TheCore Lite, keys =R
 
 [ERROR]: EvolveGroovedSpines/HydraliskDen not related to a conflict
 in seed TheCore Lite, keys =D
@@ -925,6 +925,9 @@ in seed TheCore Lite, keys =V
 [ERROR]: ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab not related to a conflict
 in seed TheCore Lite, keys =D
 
+[ERROR]: ResearchBallisticRange/FusionCore not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: ResearchBanelingStetmannManaShieldBonus/BanelingNestStetmann not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -993,6 +996,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: ResearchEngineeredExplosives/BarracksTechLab not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchEnhancedShockwaves/GhostAcademy not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: ResearchEvadeObserver/Observatory not related to a conflict
 in seed TheCore Lite, keys =
@@ -1075,6 +1081,9 @@ in seed TheCore Lite, keys =4
 [ERROR]: ResearchLocustNest/EvolutionChamber not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: ResearchLurkerRange/EvolutionChamber not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: ResearchLurkerStetmannTunnelingBurstRange/HydraliskDenStetmann not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -1116,6 +1125,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: ResearchPlasmaCharge/RoboticsBay not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: ResearchRapidReignitionSystem/FusionCore not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: ResearchRapidReignitionSystem/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =F
@@ -1164,6 +1176,9 @@ in seed TheCore Lite, keys =C
 
 [ERROR]: ResearchStukovInfestedBansheeInfestedLife/SIStarportTechLab not related to a conflict
 in seed TheCore Lite, keys =V
+
+[ERROR]: ResearchSunderingImpact/TwilightCouncil not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: ResearchSuperScience/StarportTechLab not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -1822,9 +1837,6 @@ in seed TheCore Lite, keys =D
 [ERROR]: ZerglingStetmannRespawn/SpawningPoolStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
-[ERROR]: ResearchEnhancedShockwaves/GhostAcademy not related to a conflict
-in seed TheCore Lite, keys =Space
-
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
 in seed TheCore Lite, keys =C
@@ -2474,5 +2486,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 608 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 612 WARNs: 144 
 ============================

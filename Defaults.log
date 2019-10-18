@@ -371,6 +371,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchAlarakTargetLockBuff/CyberneticsCore
 [WARN]: no default ResearchArmorPiercingRockets/FactoryTechLab
 [WARN]: no default ResearchAutoCreateInfestedCivilianAmmo/SIFactoryTechLab
+[WARN]: no default ResearchBallisticRange/FusionCore
 [WARN]: no default ResearchBanelingStetmannManaShieldBonus/BanelingNestStetmann
 [WARN]: no default ResearchBanelingStetmannMovementSpeed/BanelingNestStetmann
 [WARN]: no default ResearchBarrelStabilizers/BarracksTechLab
@@ -393,6 +394,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchDisruptorSecondExplosion/RoboticsBay
 [WARN]: no default ResearchEMP/StarportTechLab
 [WARN]: no default ResearchEngineeredExplosives/BarracksTechLab
+[WARN]: no default ResearchEnhancedShockwaves/GhostAcademy
 [WARN]: no default ResearchEvadeObserver/Observatory
 [WARN]: no default ResearchFortifiedBunkers/EngineeringBay
 [WARN]: no default ResearchGraviticBooster/Observatory
@@ -419,6 +421,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchKhaydarinCore/ArbiterTribunal
 [WARN]: no default ResearchKhaydarinGenerator/FleetBeacon
 [WARN]: no default ResearchLocustNest/EvolutionChamber
+[WARN]: no default ResearchLurkerRange/EvolutionChamber
 [WARN]: no default ResearchLurkerStetmannTunnelingBurstRange/HydraliskDenStetmann
 [WARN]: no default ResearchLurkerStetmannTunnelingBurstRange/LurkerDenStetmann
 [WARN]: no default ResearchMagFieldLaunchers/FactoryTechLab
@@ -433,6 +436,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchOverlordStetmannVentralSacks
 [WARN]: no default ResearchPiercingRockets/StarportTechLab
 [WARN]: no default ResearchPlasmaCharge/RoboticsBay
+[WARN]: no default ResearchRapidReignitionSystem/FusionCore
 [WARN]: no default ResearchRapidReignitionSystem/StarportTechLab
 [WARN]: no default ResearchRavenRecalibratedExplosives/StarportTechLab
 [WARN]: no default ResearchRecall/ArbiterTribunal
@@ -450,6 +454,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ResearchStrikeCannons/FactoryTechReactor
 [WARN]: no default ResearchStukovInfestedBansheeBurrowRegeneration/SIStarportTechLab
 [WARN]: no default ResearchStukovInfestedBansheeInfestedLife/SIStarportTechLab
+[WARN]: no default ResearchSunderingImpact/TwilightCouncil
 [WARN]: no default ResearchSuperScience/StarportTechLab
 [WARN]: no default ResearchTimeWarp/FleetBeacon
 [WARN]: no default ResearchTitanReactor/StarportTechLab
@@ -702,7 +707,6 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Zergling/LarvaStetmann
 [WARN]: no default ZerglingStetmann/LarvaStetmann
 [WARN]: no default ZerglingStetmannRespawn/SpawningPoolStetmann
-[WARN]: no default ResearchEnhancedShockwaves/GhostAcademy
 ----------------------------
-Finished (Check defaults) - WARNs: 702 ERRORs: 0 
+Finished (Check defaults) - WARNs: 706 ERRORs: 0 
 ============================

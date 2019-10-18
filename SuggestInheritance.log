@@ -708,7 +708,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchShieldWall/BarracksTechLab default: C
 	ResearchShieldWall/BarracksTechReactor default: C copyof: ResearchShieldWall/BarracksTechLab default: C
 	ResearchUltraliskStetmannBurrowChargeMechanicalStun/UltraliskCavernStetmann default: 
-	ResearchVoidRaySpeedUpgrade/FleetBeacon default: F
 	ResearchZerglingStetmannAttackSpeed/SpawningPoolStetmann default: 
 	RoboticsFacility/Harvester default:  copyof: RoboticsFacility/Probe default: R
 	RoboticsFacility/Probe default: R
@@ -808,7 +807,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveBroodLordSpeed/GreaterSpire default: P copyof: EvolveBroodLordSpeed/Spire default: P
 	EvolveBroodLordSpeed/Spire default: P
 	EvolveCentrificalHooks/BanelingNest default: C
-	EvolveDiggingClaws/LurkerDenMP default: 
 	EvolveGlialRegeneration/GreaterRoachWarren default: G
 	EvolveGlialRegeneration/RoachWarren default: G
 	EvolveMuscularAugments/HydraliskDen default: H
@@ -945,6 +943,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchHighTemplarEnergyUpgrade/TemplarArchive default: K
 	ResearchHydraliskStetmannMovementSpeed/HydraliskDenStetmann default: 
 	ResearchHydraliskStetmannMovementSpeed/LurkerDenStetmann default: 
+	ResearchLurkerRange/EvolutionChamber default: 
 	ResearchMaelstromRounds/FactoryTechLab default: M
 	ResearchMaelstromRounds/FactoryTechReactor default: M
 	ResearchMarauderMagrailMunitions/BarracksTechLab default: 
@@ -1343,6 +1342,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchMultiLockTargetingSystem/FactoryTechReactor default: W copyof: ResearchMultiLockTargetingSystem/FactoryTechLab default: W
 	ResearchNovaDetector/GhostAcademyNova default: 
 	ResearchPersonalCloaking/GhostAcademy default: C
+	ResearchRapidReignitionSystem/FusionCore default: 
 	ResearchRapidReignitionSystem/StarportTechLab default: 
 	ResearchReaper/ScienceFacility default: R
 	ResearchReaperSpiderMines/BarracksTechLab default: M
@@ -1614,6 +1614,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DehakaRoachMoveSpeed/DehakaGlevigStructure default: 
 	EvolveBanelingHeal/BanelingNest default: E
 	EvolveCorrosiveBileDamageIncrease/RoachWarren default: E
+	EvolveDiggingClaws/LurkerDenMP default: 
 	EvolveKerriganHeroicFortitude/EvolutionChamber default: F
 	EvolveMutaliskRapidRegeneration/GreaterSpire default: R
 	EvolveMutaliskRapidRegeneration/Spire default: R
@@ -1677,6 +1678,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Raven/VoidRiftUnselectable default: R, B
 	ReleaseInterceptors/Carrier default: R
 	Repair default: R
+	ResearchBallisticRange/FusionCore default: 
 	ResearchBallisticRange/StarportTechLab default: N
 	ResearchDarkArchonFullStartingEnergy/DarkShrine default: E
 	ResearchDehakaMutaliskDamageReduction/DehakaMurvarStructure default: 
@@ -1690,9 +1692,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchHydraliskStetmannDamage/LurkerDenStetmann default: 
 	ResearchJackhammerConcussionGrenade/BarracksTechLab default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
 	ResearchJackhammerConcussionGrenade/BarracksTechReactor default: C copyof: ResearchPunisherGrenades/BarracksTechLab default: G
-	ResearchLurkerRange/HydraliskDen default: E
-	ResearchLurkerRange/LurkerDen default: E
-	ResearchLurkerRange/LurkerDenMP default: D, E
 	ResearchNeosteelFrame/EngineeringBay default: N
 	ResearchNovaShotgunBlastRange/GhostAcademyNova default: 
 	ResearchPunisherGrenades/BarracksTechLab default: G
@@ -1705,6 +1704,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchSeekerMissile/StarportTechLab default: R
 	ResearchSeekerMissile/StarportTechReactor default: R copyof: ResearchSeekerMissile/StarportTechLab default: R
 	ResearchStalkerTeleport/TwilightCouncil default: B
+	ResearchVoidRaySpeedUpgrade/FleetBeacon default: F
 	Roach/Larva default: R
 	Roach/VoidRift default: R
 	Roach/VoidRiftUnselectable default: R
@@ -1993,6 +1993,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchHHReaperFlight/HHMercCompound default: 
 	ResearchImprovedSiegeMode/FactoryTechLab default: 
 	ResearchImprovedSiegeMode/FactoryTechReactor default: 
+	ResearchLurkerRange/HydraliskDen default: E
+	ResearchLurkerRange/LurkerDen default: E
+	ResearchLurkerRange/LurkerDenMP default: D, E
 	ResearchNovaSnipeRefund/GhostAcademyNova default: 
 	ResearchPsiStorm/TemplarArchive default: T
 	ResearchRavenEnergyUpgrade/StarportTechLab default: T
@@ -2003,6 +2006,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ResearchSiegeTech/FactoryTechLab default: S
 	ResearchSiegeTech/FactoryTechReactor default: S copyof: ResearchSiegeTech/FactoryTechLab default: S
 	ResearchSmartServos/FactoryTechLab default: 
+	ResearchSunderingImpact/TwilightCouncil default: 
 	ResearchSuperScience/StarportTechLab default: 
 	ResearchVoidStasis/DarkShrine default: V
 	ResearchZerglingStetmannHardenedShield/SpawningPoolStetmann default: 
