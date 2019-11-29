@@ -43,10 +43,34 @@ in seed TheCore Lite, keys =Space
 [ERROR]: ApolloCloakOnNova/NovaHero not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: ArmoryMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: ArtilleryMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: ArtilleryMengsk/TrooperMengsk not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: ArtilleryMengskBombardment/ArtilleryMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ArtilleryMengskRangeResearch/EngineeringBayMengsk not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: ArtilleryMengskUnloadAll not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: AssaultModeMengsk/VikingMengskFighter not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: AutoTurret/Raven_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,4
 
 [ERROR]: BanelingNestStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: BanelingNestStetmann/DroneStetmann not related to a conflict
 in seed TheCore Lite, keys =T
 
 [ERROR]: BanelingStetmann/ZerglingStetmann not related to a conflict
@@ -58,11 +82,20 @@ in seed TheCore Lite, keys =Space
 [ERROR]: Banshee_BlackOpsAirstrike/Banshee_BlackOps not related to a conflict
 in seed TheCore Lite, keys =E,Space
 
+[ERROR]: BarracksMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: BattleRage/Khraxus not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: Battlecruiser/HHStarport not related to a conflict
 in seed TheCore Lite, keys =G
+
+[ERROR]: BattlecruiserMengsk/StarportMengsk not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: BattlecruiserMengskHyperjump/BattlecruiserMengsk not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: BioMechanicalHeal/HealingDrone not related to a conflict
 in seed TheCore Lite, keys =R
@@ -124,11 +157,29 @@ in seed TheCore Lite, keys =Space
 [ERROR]: BuildScienceVessel/Starport not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: BuildTechLabStarport/StarportMengskFlying not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: BuildTychusBar/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =D
 
 [ERROR]: BuildTychusMedivacPlatform/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =R
+
+[ERROR]: BunkerDepotMengskLoad not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: BunkerDepotMengskRangeResearch/EngineeringBayMengsk not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: BunkerMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: BunkerMengsk/TrooperMengsk not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: BunkerMengskSalvage/BunkerDepotMengsk not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: CausticSprayStetmann/CorruptorStetmann not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -146,6 +197,9 @@ in seed TheCore Lite, keys =6
 in seed TheCore Lite, keys =6
 
 [ERROR]: CommandCenter/HHSCV not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: CommandCenterMengsk/SCVMengsk not related to a conflict
 in seed TheCore Lite, keys =E
 
 [ERROR]: CoopMurvarSpawnCreepers/DehakaMurvar not related to a conflict
@@ -310,6 +364,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: EMP/ScienceVessel not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: EngineeringBayMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: EnrageQueen/Queen not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -322,6 +379,9 @@ in seed TheCore Lite, keys =
 [ERROR]: EvolutionChamberStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =4
 
+[ERROR]: EvolutionChamberStetmann/DroneStetmann not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: EvolveAdrenalineBoost/EvolutionChamber not related to a conflict
 in seed TheCore Lite, keys =T
 
@@ -329,7 +389,7 @@ in seed TheCore Lite, keys =T
 in seed TheCore Lite, keys =4
 
 [ERROR]: EvolveDiggingClaws/LurkerDenMP not related to a conflict
-in seed TheCore Lite, keys =R
+in seed TheCore Lite, keys =E
 
 [ERROR]: EvolveGroovedSpines/HydraliskDen not related to a conflict
 in seed TheCore Lite, keys =D
@@ -379,8 +439,14 @@ in seed TheCore Lite, keys =E
 [ERROR]: ExtractorStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: ExtractorStetmann/DroneStetmann not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: FASTOverloadStetmann/PowerTowerStetmann not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: FactoryMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =D
 
 [ERROR]: Feedback/ZeratulSummonKarass not related to a conflict
 in seed TheCore Lite, keys =C,Space
@@ -439,6 +505,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: FenixWarbringerColossusPowerShot/FenixWarbringerColossus not related to a conflict
 in seed TheCore Lite, keys =E,Space
 
+[ERROR]: FighterModeMengsk/VikingMengskFighter not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: FleetwideJump/HHRaven not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -457,6 +526,9 @@ in seed TheCore Lite, keys =E
 [ERROR]: FusionCore/HHSCV not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: FusionCoreMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =G
+
 [ERROR]: GaryStetmannOrb/GaryStetmann not related to a conflict
 in seed TheCore Lite, keys =Space
 
@@ -466,11 +538,20 @@ in seed TheCore Lite, keys =Space
 [ERROR]: GenerateCreep/OverlordTransport not related to a conflict
 in seed TheCore Lite, keys =4
 
+[ERROR]: GhostAcademyMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: GhostHoldFire/NovaCoop not related to a conflict
 in seed TheCore Lite, keys =Y
 
 [ERROR]: GhostHoldFire/NovaStoneHeroic not related to a conflict
 in seed TheCore Lite, keys =Y
+
+[ERROR]: GhostMengskHoldFire/GhostMengsk not related to a conflict
+in seed TheCore Lite, keys =Y
+
+[ERROR]: GhostMengskSuperCloak/GhostMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
 
 [ERROR]: Glare/Oracle not related to a conflict
 in seed TheCore Lite, keys =
@@ -529,6 +610,12 @@ in seed TheCore Lite, keys =Space
 [ERROR]: HatcheryStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: HatcheryStetmann/DroneStetmann not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: HealMengsk/MedivacMengsk not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: HellbatJumpJetAssault/HellionBlackOps not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -548,6 +635,9 @@ in seed TheCore Lite, keys =F
 in seed TheCore Lite, keys =C
 
 [ERROR]: HydraliskDenStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: HydraliskDenStetmann/DroneStetmann not related to a conflict
 in seed TheCore Lite, keys =C
 
 [ERROR]: HydraliskStetmann/LarvaStetmann not related to a conflict
@@ -571,6 +661,9 @@ in seed TheCore Lite, keys =R
 [ERROR]: IgniteAfterburner/Medivac not related to a conflict
 in seed TheCore Lite, keys =Space,5
 
+[ERROR]: IgniteAfterburnersMengsk/MedivacMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: Immortal not related to a conflict
 in seed TheCore Lite, keys =D
 
@@ -590,6 +683,9 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =D
 
 [ERROR]: InfestationPitStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: InfestationPitStetmann/DroneStetmann not related to a conflict
 in seed TheCore Lite, keys =F
 
 [ERROR]: InfestorStetmannBonusRavager/InfestationPitStetmann not related to a conflict
@@ -682,19 +778,43 @@ in seed TheCore Lite, keys =E
 [ERROR]: MagrailMunitions/Marine not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: MarauderMengskAttackSpeedBoost/MarauderMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: MarineSuperStimpack/Marine_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [ERROR]: Matrix/Medic not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: MechTransformationSpeedMengsk/ArmoryMengsk not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: MedicHeal/Medivac_BlackOps not related to a conflict
 in seed TheCore Lite, keys =F
+
+[ERROR]: MedivacMengsk/StarportMengsk not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: MedivacMengskSiegeTankAirliftResearch/ArmoryMengsk not related to a conflict
+in seed TheCore Lite, keys =D
 
 [ERROR]: MedivacSpeedBoost/Medivac_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: MengskTrooperArmorLevel1/EngineeringBayMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: MengskTrooperWeaponsLevel1/EngineeringBayMengsk not related to a conflict
+in seed TheCore Lite, keys =D
+
 [ERROR]: MissileTurret/HHSCV not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: MissileTurretMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: MissileTurretMengsk/TrooperMengsk not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [ERROR]: MorphToHellbatBlackOps/HellionBlackOps not related to a conflict
@@ -733,6 +853,12 @@ in seed TheCore Lite, keys =R
 [ERROR]: MorphtoObserverSiege/ZeratulObserver not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: MorphtoRavenMengsk/RavenMengsk not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: MorphtoRavenMengskSieged/RavenMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: MurvarPukeCoop/DehakaMurvar not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -749,7 +875,7 @@ in seed TheCore Lite, keys =4
 in seed TheCore Lite, keys =
 
 [ERROR]: NeuralParasite/InfestorBurrowed not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =Space
 
 [ERROR]: NexusMassRecall/Nexus not related to a conflict
 in seed TheCore Lite, keys =C
@@ -802,6 +928,9 @@ in seed TheCore Lite, keys =Space,C
 [ERROR]: NovaWeaponImprovedCanisterRifleSnipe/NovaReviveBeacon not related to a conflict
 in seed TheCore Lite, keys =Space,C
 
+[ERROR]: NukeCalldownMengsk/GhostMengsk not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: NurturingSwarm/Queen not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -810,6 +939,9 @@ in seed TheCore Lite, keys =E,Space
 
 [ERROR]: NydusDestroyerDeepTunnel/DehakaNydusDestroyer not related to a conflict
 in seed TheCore Lite, keys =F
+
+[ERROR]: OrbitalCommand/CommandCenterMengsk not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: Overcharge/OrbitalCommand not related to a conflict
 in seed TheCore Lite, keys =
@@ -898,6 +1030,9 @@ in seed TheCore Lite, keys =0
 [ERROR]: RavagerStetmannCorrosiveBile/RavagerStetmann not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: RavenMengsk/StarportMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: RavenRepairDrone/Raven not related to a conflict
 in seed TheCore Lite, keys =Space,4
 
@@ -907,14 +1042,20 @@ in seed TheCore Lite, keys =E
 [ERROR]: RavenShredderMissile/Raven not related to a conflict
 in seed TheCore Lite, keys =C,R
 
+[ERROR]: Reactor/StarportMengskFlying not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: Recall/Arbiter not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: Refinery/HHSCV not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: RefineryMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: RepairStetmann not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =R
 
 [ERROR]: ResearchAlarakTargetLockBuff/CyberneticsCore not related to a conflict
 in seed TheCore Lite, keys =G
@@ -1228,6 +1369,18 @@ in seed TheCore Lite, keys =
 [ERROR]: Rift/Nexus not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: SCVMengskEnlist/TrooperMengsk not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: SCVMengskEnlistCC/BunkerDepotMengsk not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: SCVMengskEnlistCC/CommandCenterMengsk not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: SIArmory/SISCV not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -1354,6 +1507,12 @@ in seed TheCore Lite, keys =R
 [ERROR]: SJHyperionBlink/Battlecruiser not related to a conflict
 in seed TheCore Lite, keys =F
 
+[ERROR]: Salvage/ArtilleryMengsk not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: Salvage/MissileTurretMengsk not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: Salvage/NovaACLaserTurret not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -1375,6 +1534,12 @@ in seed TheCore Lite, keys =
 [ERROR]: ShapedBlast/SiegeTankSieged not related to a conflict
 in seed TheCore Lite, keys =
 
+[ERROR]: SiegeModeMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: SiegeTankMengsk/FactoryMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: SiegeTank_BlackOpsSiege not related to a conflict
 in seed TheCore Lite, keys =Space
 
@@ -1393,6 +1558,9 @@ in seed TheCore Lite, keys =R,C
 [ERROR]: SpawningPoolStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =D
 
+[ERROR]: SpawningPoolStetmann/DroneStetmann not related to a conflict
+in seed TheCore Lite, keys =D
+
 [ERROR]: SpineCrawlerStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -1405,7 +1573,13 @@ in seed TheCore Lite, keys =Space,4
 [ERROR]: SpireStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: SpireStetmann/DroneStetmann not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: SporeCrawlerStetmann/Drone not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: SporeCrawlerStetmann/DroneStetmann not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [ERROR]: SporeCrawlerUproot/SporeCrawlerUprooted not related to a conflict
@@ -1420,11 +1594,17 @@ in seed TheCore Lite, keys =6
 [ERROR]: StalkerZeratul/ZeratulGateway not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: StarportMengsk/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: StasisField/Arbiter not related to a conflict
 in seed TheCore Lite, keys =
 
 [ERROR]: StasisField/ArbiterTribunal not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: StructureArmorMengsk/EngineeringBayMengsk not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: StukovInfestedDiamondbackSnare/StukovInfestedDiamondBack not related to a conflict
 in seed TheCore Lite, keys =E,Space
@@ -1456,6 +1636,9 @@ in seed TheCore Lite, keys =Space,C
 [ERROR]: TerranBuild/HHSCV not related to a conflict
 in seed TheCore Lite, keys =Space,C
 
+[ERROR]: TerranBuild/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =Space,C
+
 [ERROR]: TerranBuild/SISCV not related to a conflict
 in seed TheCore Lite, keys =Space,C
 
@@ -1468,11 +1651,26 @@ in seed TheCore Lite, keys =E
 [ERROR]: TerranBuildAdvanced/HHSCV not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: TerranBuildAdvanced/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =E
+
 [ERROR]: TerranBuildAdvanced/SISCV not related to a conflict
 in seed TheCore Lite, keys =E
 
 [ERROR]: TerranInfantryArmorLevel1/SIEngineeringBay not related to a conflict
 in seed TheCore Lite, keys =Space
+
+[ERROR]: ThorMengsk/FactoryMengsk not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: ThorMengskArmorAuraResearch/ArmoryMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ThorMengskSiege/ThorMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ThorMengskUnsiege/ThorMengsk not related to a conflict
+in seed TheCore Lite, keys =R
 
 [ERROR]: TimeWarpSentinel/Oracle not related to a conflict
 in seed TheCore Lite, keys =
@@ -1487,6 +1685,30 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =R
 
 [ERROR]: TransportMode/ZeratulWarpPrismPhasing not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: TrooperMengsk/CommandCenterMengsk not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: TrooperMengskBuild/TrooperMengsk not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TrooperMengskDropTrainResearch/EngineeringBayMengsk not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: TrooperMengskEnlist/SCVMengsk not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: TrooperMengskEnlistCC/BunkerDepotMengsk not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: TrooperMengskEnlistCC/CommandCenterMengsk not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: TrooperMengskSpecializeAA/TrooperMengsk not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: TrooperMengskSpecializeImproved/TrooperMengsk not related to a conflict
 in seed TheCore Lite, keys =R
 
 [ERROR]: TychusACBandofBrothersLearn/TychusMercCompound not related to a conflict
@@ -1690,6 +1912,9 @@ in seed TheCore Lite, keys =G
 [ERROR]: UltraliskCavernStetmann/Drone not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: UltraliskCavernStetmann/DroneStetmann not related to a conflict
+in seed TheCore Lite, keys =G
+
 [ERROR]: UltraliskStetmann/LarvaStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
@@ -1699,6 +1924,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: UltraliskStetmannRespawn/UltraliskCavernStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
+[ERROR]: UnsiegeMengsk/SiegeTankMengsk not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: UpgradeLIDARTransmitter/EngineeringBay not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -1707,6 +1935,9 @@ in seed TheCore Lite, keys =
 
 [ERROR]: UseSpiderMine/Vulture not related to a conflict
 in seed TheCore Lite, keys =E,Space
+
+[ERROR]: VikingMengskFighter/StarportMengsk not related to a conflict
+in seed TheCore Lite, keys =D
 
 [ERROR]: VoidSentryMobileMode/SentryFenix not related to a conflict
 in seed TheCore Lite, keys =R
@@ -1747,6 +1978,9 @@ in seed TheCore Lite, keys =6
 [ERROR]: WeaponsFree/NovaStoneHeroic not related to a conflict
 in seed TheCore Lite, keys =6
 
+[ERROR]: WeaponsFreeMengsk/GhostMengsk not related to a conflict
+in seed TheCore Lite, keys =6
+
 [ERROR]: WidowMineAttack/WidowMine not related to a conflict
 in seed TheCore Lite, keys =C
 
@@ -1770,6 +2004,9 @@ in seed TheCore Lite, keys =Space
 
 [ERROR]: XaphanForce/Voranor not related to a conflict
 in seed TheCore Lite, keys =
+
+[ERROR]: YamatoGunMengsk not related to a conflict
+in seed TheCore Lite, keys =E
 
 [ERROR]: ZeratulBlink/ZeratulCoop not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -1811,6 +2048,12 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =C
 
 [ERROR]: ZeratulXelNagaConstructPsiStorm/ZeratulXelNagaConstructCyan not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: ZergBuild/DroneStetmann not related to a conflict
+in seed TheCore Lite, keys =Space,C
+
+[ERROR]: ZergBuildAdvanced/DroneStetmann not related to a conflict
 in seed TheCore Lite, keys =E
 
 [ERROR]: ZergFlyerArmorStetmann1 not related to a conflict
@@ -2180,7 +2423,7 @@ in seed TheCore Lite, keys =H
 [WARN]: NeuralParasite/Infestor2 not related to a conflict
 but is part of same check
 but is inherited
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =Space
 
 [WARN]: Nexus/Harvester not related to a conflict
 but is inherited
@@ -2486,5 +2729,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 612 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 693 WARNs: 144 
 ============================
