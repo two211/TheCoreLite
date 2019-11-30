@@ -336,7 +336,6 @@ Compared to legacy TheCore Lite, many changes occured in User Interface keys.
 * Shift+F2 Team Ressources
 * Alt+F1 PushToTalk (to free Alt+Shift)
 * Alt+F2 Show FPS
-* F3 F4 F5 F6 Commander top bar ability
 * Shift+F7 Toggle sound (moved to prevent mistyping)
 * Shift+F8 Toggle music (could be mapped on Shift+F5 to free space)
 
@@ -619,7 +618,7 @@ Related aliases:
 
 ### Quick Cam
 
-(not implemented but practically working)
+(not implemented but practically working, kept for hotkey hack documentation)
 
 * ~~Camera 1 creation with Shift~~
 * ~~Camera 1 recall with CapsLock~~
