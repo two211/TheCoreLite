@@ -804,6 +804,33 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Zergling/LarvaStetmann
 [WARN]: no default ZerglingStetmann/LarvaStetmann
 [WARN]: no default ZerglingStetmannRespawn/SpawningPoolStetmann
+[WARN]: no default AbathurDeepTunnel
+[WARN]: no default BrutaliskDeepTunnel/RavagerAbathur
+[WARN]: no default BrutaliskDeepTunnel/Roach
+[WARN]: no default BrutaliskDeepTunnel/RoachBurrowed
+[WARN]: no default BrutaliskDeepTunnel/RoachVile
+[WARN]: no default BrutaliskDeepTunnel/RoachVileBurrowed
+[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun
+[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig
+[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar
+[WARN]: no default CommanderPrestigeZagaraZagaraDeepTunnel/ZagaraVoidCoop
+[WARN]: no default DehakaConsume/DehakaCoopClone
+[WARN]: no default DehakaDeepTunnel/DehakaCoopClone
+[WARN]: no default DehakaIntimidatingRoar/DehakaCoopClone
+[WARN]: no default DehakaLeapStomp/DehakaCoopClone
+[WARN]: no default DehakaLearnAbilities/DehakaCoopClone
+[WARN]: no default FleetwideJump/ScienceVessel
+[WARN]: no default GenerateCreep/SIOverlord
+[WARN]: no default LearnDehakaConsume/DehakaCoopClone
+[WARN]: no default LearnDehakaDetector/DehakaCoopClone
+[WARN]: no default LearnDehakaIntimidatingRoar/DehakaCoopClone
+[WARN]: no default LearnDehakaLeapStomp/DehakaCoopClone
+[WARN]: no default LearnDehakaMammothBreath/DehakaCoop
+[WARN]: no default LearnDehakaMammothBreath/DehakaCoopClone
+[WARN]: no default LearnDehakaMendingAura/DehakaCoopClone
+[WARN]: no default MammothBreath/DehakaCoop
+[WARN]: no default MammothBreath/DehakaCoopClone
+[WARN]: no default VoidRay/SOAMothershipv4
 ----------------------------
-Finished (Check defaults) - WARNs: 803 ERRORs: 0 
+Finished (Check defaults) - WARNs: 830 ERRORs: 0 
 ============================
