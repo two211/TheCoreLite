@@ -7,6 +7,9 @@ in seed TheCore Lite, keys =Space
 [ERROR]: ACAlarakTransportMode/WarpPrismTaldarim not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: AbathurDeepTunnel not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: AbathurDeepTunnel/SwarmHostSplitB not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -127,6 +130,21 @@ in seed TheCore Lite, keys =Space
 [ERROR]: BroodLordStetmannYamatoCannon not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: BrutaliskDeepTunnel/RavagerAbathur not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: BrutaliskDeepTunnel/Roach not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: BrutaliskDeepTunnel/RoachBurrowed not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: BrutaliskDeepTunnel/RoachVile not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: BrutaliskDeepTunnel/RoachVileBurrowed not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: BuildDehakaExtractor/DehakaHatchery not related to a conflict
 in seed TheCore Lite, keys =F
 
@@ -164,7 +182,7 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =C
 
 [ERROR]: BuildTychusBar/TychusSCV not related to a conflict
-in seed TheCore Lite, keys =D
+in seed TheCore Lite, keys =5
 
 [ERROR]: BuildTychusMedivacPlatform/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =R
@@ -204,6 +222,18 @@ in seed TheCore Lite, keys =E
 
 [ERROR]: CommandCenterMengsk/SCVMengsk not related to a conflict
 in seed TheCore Lite, keys =E
+
+[ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: CommanderPrestigeZagaraZagaraDeepTunnel/ZagaraVoidCoop not related to a conflict
+in seed TheCore Lite, keys =C
 
 [ERROR]: CoopMurvarSpawnCreepers/DehakaMurvar not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -253,10 +283,16 @@ in seed TheCore Lite, keys =Space
 [ERROR]: DehakaConsume/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: DehakaConsume/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: DehakaDakrunStructure/DehakaDrone not related to a conflict
 in seed TheCore Lite, keys =G
 
 [ERROR]: DehakaDeepTunnel/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: DehakaDeepTunnel/DehakaCoopClone not related to a conflict
 in seed TheCore Lite, keys =C
 
 [ERROR]: DehakaDetector/DehakaCoop not related to a conflict
@@ -289,11 +325,20 @@ in seed TheCore Lite, keys =E
 [ERROR]: DehakaIntimidatingRoar/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =Space
 
+[ERROR]: DehakaIntimidatingRoar/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =Space
+
 [ERROR]: DehakaLeapStomp/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: DehakaLeapStomp/DehakaCoopClone not related to a conflict
 in seed TheCore Lite, keys =E
 
 [ERROR]: DehakaLearnAbilities/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =4
+
+[ERROR]: DehakaLearnAbilities/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: DehakaLearnPrimalArmorLevel1/DehakaHatchery not related to a conflict
 in seed TheCore Lite, keys =R
@@ -523,6 +568,9 @@ in seed TheCore Lite, keys =C
 [ERROR]: FleetwideJump/HHWraith not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: FleetwideJump/ScienceVessel not related to a conflict
+in seed TheCore Lite, keys =C
+
 [ERROR]: FungalGrowth/InfestorBurrowed not related to a conflict
 in seed TheCore Lite, keys =E
 
@@ -539,6 +587,9 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =Space
 
 [ERROR]: GenerateCreep/OverlordTransport not related to a conflict
+in seed TheCore Lite, keys =4
+
+[ERROR]: GenerateCreep/SIOverlord not related to a conflict
 in seed TheCore Lite, keys =4
 
 [ERROR]: GhostAcademyMengsk/SCVMengsk not related to a conflict
@@ -733,17 +784,38 @@ in seed TheCore Lite, keys =4
 [ERROR]: LearnDehakaConsume/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =R
 
+[ERROR]: LearnDehakaConsume/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =R
+
 [ERROR]: LearnDehakaDetector/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =V
 
+[ERROR]: LearnDehakaDetector/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =5
+
 [ERROR]: LearnDehakaIntimidatingRoar/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: LearnDehakaIntimidatingRoar/DehakaCoopClone not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [ERROR]: LearnDehakaLeapStomp/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =E
 
+[ERROR]: LearnDehakaLeapStomp/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: LearnDehakaMammothBreath/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: LearnDehakaMammothBreath/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: LearnDehakaMendingAura/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =C
+
+[ERROR]: LearnDehakaMendingAura/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =F
 
 [ERROR]: Liberator_BlackOpsMorphtoAA/Liberator_BlackOps not related to a conflict
 in seed TheCore Lite, keys =R
@@ -825,6 +897,12 @@ in seed TheCore Lite, keys =E
 
 [ERROR]: MagrailMunitions/Marine not related to a conflict
 in seed TheCore Lite, keys =E
+
+[ERROR]: MammothBreath/DehakaCoop not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: MammothBreath/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =4
 
 [ERROR]: MarauderMengskAttackSpeedBoost/MarauderMengsk not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -1775,7 +1853,7 @@ in seed TheCore Lite, keys =T
 in seed TheCore Lite, keys =R
 
 [ERROR]: TychusArmory/TychusSCV not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =C
 
 [ERROR]: TychusFirebat/TychusResearchCenter not related to a conflict
 in seed TheCore Lite, keys =D
@@ -1796,7 +1874,7 @@ in seed TheCore Lite, keys =Y
 in seed TheCore Lite, keys =C
 
 [ERROR]: TychusGhostAcademy/TychusSCV not related to a conflict
-in seed TheCore Lite, keys =5
+in seed TheCore Lite, keys =D
 
 [ERROR]: TychusGhostConcentrationHelmetLearn/TychusGhostAcademy not related to a conflict
 in seed TheCore Lite, keys =Y
@@ -1987,6 +2065,9 @@ in seed TheCore Lite, keys =E,Space
 [ERROR]: VikingMengskFighter/StarportMengsk not related to a conflict
 in seed TheCore Lite, keys =D
 
+[ERROR]: VoidRay/SOAMothershipv4 not related to a conflict
+in seed TheCore Lite, keys =F
+
 [ERROR]: VoidSentryMobileMode/SentryFenix not related to a conflict
 in seed TheCore Lite, keys =R
 
@@ -2128,86 +2209,14 @@ in seed TheCore Lite, keys =D
 [ERROR]: ZerglingStetmannRespawn/SpawningPoolStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
-[ERROR]: AbathurDeepTunnel not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: BrutaliskDeepTunnel/RavagerAbathur not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: BrutaliskDeepTunnel/Roach not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: BrutaliskDeepTunnel/RoachBurrowed not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: BrutaliskDeepTunnel/RoachVile not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: BrutaliskDeepTunnel/RoachVileBurrowed not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: CommanderPrestigeZagaraZagaraDeepTunnel/ZagaraVoidCoop not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: DehakaConsume/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: DehakaDeepTunnel/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: DehakaIntimidatingRoar/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =Space
-
-[ERROR]: DehakaLeapStomp/DehakaCoopClone not related to a conflict
+[ERROR]: TychusCommandCenter/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =E
 
-[ERROR]: DehakaLearnAbilities/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: FleetwideJump/ScienceVessel not related to a conflict
-in seed TheCore Lite, keys =C
-
-[ERROR]: GenerateCreep/SIOverlord not related to a conflict
+[ERROR]: TychusEngineeringBay/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =4
 
-[ERROR]: LearnDehakaConsume/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =R
-
-[ERROR]: LearnDehakaDetector/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =5
-
-[ERROR]: LearnDehakaIntimidatingRoar/DehakaCoopClone not related to a conflict
+[ERROR]: TychusSCVAutoTurret/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =Space
-
-[ERROR]: LearnDehakaLeapStomp/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =E
-
-[ERROR]: LearnDehakaMammothBreath/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: LearnDehakaMammothBreath/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =4
-
-[ERROR]: LearnDehakaMendingAura/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: MammothBreath/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =F
-
-[ERROR]: MammothBreath/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =4
-
-[ERROR]: VoidRay/SOAMothershipv4 not related to a conflict
-in seed TheCore Lite, keys =F
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
 but is inherited
@@ -2858,5 +2867,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 736 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 739 WARNs: 144 
 ============================

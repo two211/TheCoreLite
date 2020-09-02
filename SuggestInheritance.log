@@ -180,7 +180,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenZergling/SwarmQueen default: W, T
 	SwarmQueenZergling/SwarmQueenEgg default: W, T copyof: SwarmQueenZergling/SwarmQueen default: W, T
 	TrooperMengskEnlist/SCVMengsk default: 
-	TychusArmory/TychusSCV default: 
+	TychusEngineeringBay/TychusSCV default: 
 	TychusHeroCommonAbil5 default: 
 	TychusMarauderSuperStimLearn/TychusArmory default: 
 	TychusMedic/TychusResearchCenter default: 
@@ -221,6 +221,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 [INFO]: TheCore Lite: 5   
 	Aberration/VoidRift default: B
 	Aberration/VoidRiftUnselectable default: B
+	BuildTychusBar/TychusSCV default: 
 	DOMGhostPersonalDefensiveMatrix/Ghost default: 
 	DehakaAirAttack/DehakaCoop default: 
 	DehakaAirAttackUpgrade/DehakaCoop default: 
@@ -268,7 +269,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SwarmQueenVile/HugeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/LargeSwarmQueen default: E copyof: SwarmQueenRoach/HugeSwarmQueen default: E
 	SwarmQueenVile/SwarmQueen default:  copyof: SwarmQueenRoach/HugeSwarmQueen default: E
-	TychusGhostAcademy/TychusSCV default: 
 	TychusGhostPsychicSnare/TychusGhost default: 
 	TychusMarauderSuperStim/TychusMarauder default: 
 	TychusMedicHeal/TychusMedic default: 
@@ -552,6 +552,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TorrasqueChrysalis/HotSTorrasque default: Q
 	TorrasqueChrysalis/HotSTorrasqueBurrowed default: Q copyof: TorrasqueChrysalis/HotSTorrasque default: Q
 	TorrasqueChrysalis/TorrasqueCorpse default: Q
+	TychusArmory/TychusSCV default: 
 	TychusGhost/TychusResearchCenter default: 
 	TychusHeroCommonAbil2 default: 
 	TychusMarauderHealingWardBuffLearn/TychusArmory default: 
@@ -668,7 +669,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	AttackAllowsInvulnerable/DrakkenLaserDrill default: A copyof: Attack default: A
 	AttackChampions default:  copyof: Attack default: A
 	BuildDrakkenLaserDrill/KelMorianWorker default: D
-	BuildTychusBar/TychusSCV default: 
 	BunkerAttack/InfestedBunker default: A
 	BunkerMengsk/SCVMengsk default: 
 	BunkerMengsk/TrooperMengsk default: 
@@ -774,6 +774,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TerranVehicleAndShipWeaponsLevel1/Armory default: E
 	TrooperMengsk/CommandCenterMengsk default: 
 	TychusFirebat/TychusResearchCenter default: 
+	TychusGhostAcademy/TychusSCV default: 
 	TychusHercGrappleImpacts/TychusArmory default: 
 	TychusOutlawWeaponsLevel1/TychusEngineeringBay default: 
 	TychusReaperBombDamageLearn/TychusMercCompound default: 
@@ -1054,6 +1055,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TrooperMengskSpecializeAA/TrooperMengsk default: 
 	TychusACHero/TychusResearchCenter default: 
 	TychusACImplosionGrenadesLearn/TychusMercCompound default: 
+	TychusCommandCenter/TychusSCV default: 
 	TychusFirebatPremiumPetroleumLearn/TychusArmory default: 
 	TychusGhostDominateBuffLearn/TychusGhostAcademy default: 
 	TychusUpgradeOdinRedButton/TychusEngineeringBay default: 
@@ -2194,6 +2196,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TychusOdinRedButton/TychusOdin default: 
 	TychusOutlawArmorLevel1/TychusEngineeringBay default: 
 	TychusSCV/TychusCommandCenter default: 
+	TychusSCVAutoTurret/TychusSCV default: 
 	TychusWarhoundTurretHaywireMissiles/TychusWarhoundAutoTurret default: 
 	UltraliskStetmannBurrowCharge/UltraliskStetmann default: 
 	ViperConsume/Viper default: C

@@ -7,6 +7,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default CommanderAbility3
 [WARN]: no default ACAlarakPhasingMode/WarpPrismTaldarim
 [WARN]: no default ACAlarakTransportMode/WarpPrismTaldarim
+[WARN]: no default AbathurDeepTunnel
 [WARN]: no default AbathurDeepTunnel/SwarmHostSplitB
 [WARN]: no default AbathurDeepTunnel/SwarmHostSplitBBurrowed
 [WARN]: no default AbathurDeepTunnel/SwarmHostSplitBRooted
@@ -52,6 +53,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default BroodLordStetmannBombersLearn/SpireStetmann
 [WARN]: no default BroodLordStetmannBroodlings/BroodLordStetmann
 [WARN]: no default BroodLordStetmannYamatoCannon
+[WARN]: no default BrutaliskDeepTunnel/RavagerAbathur
+[WARN]: no default BrutaliskDeepTunnel/Roach
+[WARN]: no default BrutaliskDeepTunnel/RoachBurrowed
+[WARN]: no default BrutaliskDeepTunnel/RoachVile
+[WARN]: no default BrutaliskDeepTunnel/RoachVileBurrowed
 [WARN]: no default BuildCreepTumor/Queen2
 [WARN]: no default BuildDehakaExtractor/DehakaHatchery
 [WARN]: no default BuildHHBomberPlatform/HHSCV
@@ -92,6 +98,10 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ColossusHallucination/Voranor
 [WARN]: no default CommandCenter/HHSCV
 [WARN]: no default CommandCenterMengsk/SCVMengsk
+[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun
+[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig
+[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar
+[WARN]: no default CommanderPrestigeZagaraZagaraDeepTunnel/ZagaraVoidCoop
 [WARN]: no default CoopMurvarSpawnCreepers/DehakaMurvar
 [WARN]: no default CorruptorStetmann/LarvaStetmann
 [WARN]: no default CorruptorStetmannRespawn/GreaterSpireStetmann
@@ -108,8 +118,10 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default DehakaBarracks/DehakaDrone
 [WARN]: no default DehakaBuild/DehakaDrone
 [WARN]: no default DehakaConsume/DehakaCoop
+[WARN]: no default DehakaConsume/DehakaCoopClone
 [WARN]: no default DehakaDakrunStructure/DehakaDrone
 [WARN]: no default DehakaDeepTunnel/DehakaCoop
+[WARN]: no default DehakaDeepTunnel/DehakaCoopClone
 [WARN]: no default DehakaDetector/DehakaCoop
 [WARN]: no default DehakaDrone/DehakaHatchery
 [WARN]: no default DehakaGlevigRoachFireBreath/DehakaGlevigStructure
@@ -120,8 +132,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default DehakaHydraliskImpalerMerge/DehakaHydraliskLevel2
 [WARN]: no default DehakaHydraliskToMutalisk/DehakaHydraliskLevel2
 [WARN]: no default DehakaIntimidatingRoar/DehakaCoop
+[WARN]: no default DehakaIntimidatingRoar/DehakaCoopClone
 [WARN]: no default DehakaLeapStomp/DehakaCoop
+[WARN]: no default DehakaLeapStomp/DehakaCoopClone
 [WARN]: no default DehakaLearnAbilities/DehakaCoop
+[WARN]: no default DehakaLearnAbilities/DehakaCoopClone
 [WARN]: no default DehakaLearnPrimalArmorLevel1/DehakaHatchery
 [WARN]: no default DehakaLearnPrimalWeaponsLevel1/DehakaHatchery
 [WARN]: no default DehakaMendingAura/DehakaCoop
@@ -203,6 +218,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default FleetwideJump/HHVikingAssault
 [WARN]: no default FleetwideJump/HHVikingFighter
 [WARN]: no default FleetwideJump/HHWraith
+[WARN]: no default FleetwideJump/ScienceVessel
 [WARN]: no default ForceField2/Sentry2
 [WARN]: no default Forge/Harvester
 [WARN]: no default Frostbat/Barracks
@@ -212,6 +228,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default GaryStetmannOrb/SuperGaryStetmann
 [WARN]: no default Gateway/Harvester
 [WARN]: no default GenerateCreep/OverlordTransport
+[WARN]: no default GenerateCreep/SIOverlord
 [WARN]: no default GhostAcademyMengsk/SCVMengsk
 [WARN]: no default GhostHoldFire/NovaCoop
 [WARN]: no default GhostHoldFire/NovaStoneHeroic
@@ -286,10 +303,17 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default LaunchNullWard/NullSphere
 [WARN]: no default LearnDehakaArmorUpgrade/DehakaCoop
 [WARN]: no default LearnDehakaConsume/DehakaCoop
+[WARN]: no default LearnDehakaConsume/DehakaCoopClone
 [WARN]: no default LearnDehakaDetector/DehakaCoop
+[WARN]: no default LearnDehakaDetector/DehakaCoopClone
 [WARN]: no default LearnDehakaIntimidatingRoar/DehakaCoop
+[WARN]: no default LearnDehakaIntimidatingRoar/DehakaCoopClone
 [WARN]: no default LearnDehakaLeapStomp/DehakaCoop
+[WARN]: no default LearnDehakaLeapStomp/DehakaCoopClone
+[WARN]: no default LearnDehakaMammothBreath/DehakaCoop
+[WARN]: no default LearnDehakaMammothBreath/DehakaCoopClone
 [WARN]: no default LearnDehakaMendingAura/DehakaCoop
+[WARN]: no default LearnDehakaMendingAura/DehakaCoopClone
 [WARN]: no default Liberator_BlackOpsMorphtoAA/Liberator_BlackOps
 [WARN]: no default Liberator_BlackOpsMorphtoAG/Liberator_BlackOps
 [WARN]: no default LoadOutSpray
@@ -319,6 +343,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default MagrailMunitions/Marauder
 [WARN]: no default MagrailMunitions/Marauder_BlackOps
 [WARN]: no default MagrailMunitions/Marine
+[WARN]: no default MammothBreath/DehakaCoop
+[WARN]: no default MammothBreath/DehakaCoopClone
 [WARN]: no default MarauderMengskAttackSpeedBoost/MarauderMengsk
 [WARN]: no default MarineSuperStimpack/Marine_BlackOps
 [WARN]: no default Matrix/Medic
@@ -751,6 +777,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default UpgradewithKhaydarinCore/Nexus
 [WARN]: no default UseSpiderMine/Vulture
 [WARN]: no default VikingMengskFighter/StarportMengsk
+[WARN]: no default VoidRay/SOAMothershipv4
 [WARN]: no default VoidRayHallucination/Nexus
 [WARN]: no default VoidRayHallucination/Voranor
 [WARN]: no default VoidSentryMobileMode/SentryFenix
@@ -804,33 +831,9 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Zergling/LarvaStetmann
 [WARN]: no default ZerglingStetmann/LarvaStetmann
 [WARN]: no default ZerglingStetmannRespawn/SpawningPoolStetmann
-[WARN]: no default AbathurDeepTunnel
-[WARN]: no default BrutaliskDeepTunnel/RavagerAbathur
-[WARN]: no default BrutaliskDeepTunnel/Roach
-[WARN]: no default BrutaliskDeepTunnel/RoachBurrowed
-[WARN]: no default BrutaliskDeepTunnel/RoachVile
-[WARN]: no default BrutaliskDeepTunnel/RoachVileBurrowed
-[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun
-[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig
-[WARN]: no default CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar
-[WARN]: no default CommanderPrestigeZagaraZagaraDeepTunnel/ZagaraVoidCoop
-[WARN]: no default DehakaConsume/DehakaCoopClone
-[WARN]: no default DehakaDeepTunnel/DehakaCoopClone
-[WARN]: no default DehakaIntimidatingRoar/DehakaCoopClone
-[WARN]: no default DehakaLeapStomp/DehakaCoopClone
-[WARN]: no default DehakaLearnAbilities/DehakaCoopClone
-[WARN]: no default FleetwideJump/ScienceVessel
-[WARN]: no default GenerateCreep/SIOverlord
-[WARN]: no default LearnDehakaConsume/DehakaCoopClone
-[WARN]: no default LearnDehakaDetector/DehakaCoopClone
-[WARN]: no default LearnDehakaIntimidatingRoar/DehakaCoopClone
-[WARN]: no default LearnDehakaLeapStomp/DehakaCoopClone
-[WARN]: no default LearnDehakaMammothBreath/DehakaCoop
-[WARN]: no default LearnDehakaMammothBreath/DehakaCoopClone
-[WARN]: no default LearnDehakaMendingAura/DehakaCoopClone
-[WARN]: no default MammothBreath/DehakaCoop
-[WARN]: no default MammothBreath/DehakaCoopClone
-[WARN]: no default VoidRay/SOAMothershipv4
+[WARN]: no default TychusCommandCenter/TychusSCV
+[WARN]: no default TychusEngineeringBay/TychusSCV
+[WARN]: no default TychusSCVAutoTurret/TychusSCV
 ----------------------------
-Finished (Check defaults) - WARNs: 830 ERRORs: 0 
+Finished (Check defaults) - WARNs: 833 ERRORs: 0 
 ============================
