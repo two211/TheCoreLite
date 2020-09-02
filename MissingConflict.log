@@ -85,6 +85,9 @@ in seed TheCore Lite, keys =E,Space
 [ERROR]: BarracksMengsk/SCVMengsk not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: BatteryOvercharge/Nexus not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: BattleRage/Khraxus not related to a conflict
 in seed TheCore Lite, keys =
 
@@ -747,6 +750,51 @@ in seed TheCore Lite, keys =R
 
 [ERROR]: Liberator_BlackOpsMorphtoAG/Liberator_BlackOps not related to a conflict
 in seed TheCore Lite, keys =Space,E,C
+
+[ERROR]: LoadOutSpray not related to a conflict
+in seed TheCore Lite, keys =6
+
+[ERROR]: LoadOutSpray@1 not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: LoadOutSpray@10 not related to a conflict
+in seed TheCore Lite, keys =J
+
+[ERROR]: LoadOutSpray@11 not related to a conflict
+in seed TheCore Lite, keys =C
+
+[ERROR]: LoadOutSpray@12 not related to a conflict
+in seed TheCore Lite, keys =V
+
+[ERROR]: LoadOutSpray@13 not related to a conflict
+in seed TheCore Lite, keys =B
+
+[ERROR]: LoadOutSpray@14 not related to a conflict
+in seed TheCore Lite, keys =N
+
+[ERROR]: LoadOutSpray@2 not related to a conflict
+in seed TheCore Lite, keys =R
+
+[ERROR]: LoadOutSpray@3 not related to a conflict
+in seed TheCore Lite, keys =T
+
+[ERROR]: LoadOutSpray@4 not related to a conflict
+in seed TheCore Lite, keys =Y
+
+[ERROR]: LoadOutSpray@5 not related to a conflict
+in seed TheCore Lite, keys =U
+
+[ERROR]: LoadOutSpray@6 not related to a conflict
+in seed TheCore Lite, keys =D
+
+[ERROR]: LoadOutSpray@7 not related to a conflict
+in seed TheCore Lite, keys =F
+
+[ERROR]: LoadOutSpray@8 not related to a conflict
+in seed TheCore Lite, keys =G
+
+[ERROR]: LoadOutSpray@9 not related to a conflict
+in seed TheCore Lite, keys =H
 
 [ERROR]: LockdownRound/Ghost not related to a conflict
 in seed TheCore Lite, keys =
@@ -2729,5 +2777,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 693 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 709 WARNs: 144 
 ============================

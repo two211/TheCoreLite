@@ -39,6 +39,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default BanelingStetmannMovementSpeed/BanelingStetmann
 [WARN]: no default Banshee_BlackOpsAirstrike/Banshee_BlackOps
 [WARN]: no default BarracksMengsk/SCVMengsk
+[WARN]: no default BatteryOvercharge/Nexus
 [WARN]: no default Battlecruiser/HHStarport
 [WARN]: no default BattlecruiserMengsk/StarportMengsk
 [WARN]: no default BattlecruiserMengskHyperjump/BattlecruiserMengsk
@@ -291,6 +292,21 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default LearnDehakaMendingAura/DehakaCoop
 [WARN]: no default Liberator_BlackOpsMorphtoAA/Liberator_BlackOps
 [WARN]: no default Liberator_BlackOpsMorphtoAG/Liberator_BlackOps
+[WARN]: no default LoadOutSpray
+[WARN]: no default LoadOutSpray@1
+[WARN]: no default LoadOutSpray@10
+[WARN]: no default LoadOutSpray@11
+[WARN]: no default LoadOutSpray@12
+[WARN]: no default LoadOutSpray@13
+[WARN]: no default LoadOutSpray@14
+[WARN]: no default LoadOutSpray@2
+[WARN]: no default LoadOutSpray@3
+[WARN]: no default LoadOutSpray@4
+[WARN]: no default LoadOutSpray@5
+[WARN]: no default LoadOutSpray@6
+[WARN]: no default LoadOutSpray@7
+[WARN]: no default LoadOutSpray@8
+[WARN]: no default LoadOutSpray@9
 [WARN]: no default LockdownRound/Ghost
 [WARN]: no default Lurker/Hydralisk
 [WARN]: no default Lurker/HydraliskImpaler
@@ -789,5 +805,5 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default ZerglingStetmann/LarvaStetmann
 [WARN]: no default ZerglingStetmannRespawn/SpawningPoolStetmann
 ----------------------------
-Finished (Check defaults) - WARNs: 787 ERRORs: 0 
+Finished (Check defaults) - WARNs: 803 ERRORs: 0 
 ============================

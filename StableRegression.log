@@ -14,6 +14,7 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [ERROR]: Control+Shift+CapsLock,Grave used in place of Control+Shift+CapsLock for parameter ControlGroupAssignAndSteal6, in seed TheCore Lite
 [ERROR]: Shift+F1 used in place of Equals for parameter MinimapTerrain, in seed TheCore Lite
 [ERROR]: Alt,Control,Control+Alt,Shift+Alt used in place of Control,Control+Alt,Shift+Alt for parameter StatusEnemy, in seed TheCore Lite
+[ERROR]: Shift+Alt+E used in place of B,Shift+Alt+E for parameter TownCamera, in seed TheCore Lite
 [WARN]: '4' used in place of 'Space' for command 'BurrowUp', in seed 'TheCore Lite'
 [WARN]: 'Escape' used in place of 'Escape,Grave' for command 'Cancel', in seed 'TheCore Lite'
 [WARN]: 'C,R' used in place of 'C,Space' for command 'ChannelSnipe/Ghost', in seed 'TheCore Lite'
@@ -55,5 +56,5 @@ Start Regression against referenced seeds (log file: StableRegression.log)
 [WARN]: 'Space,C' used in place of 'Space' for command 'ZergBuild/Drone', in seed 'TheCore Lite'
 [INFO]: seed 'TheCore Lite' got regression check against 'stable/TheCore Lite.SC2Hotkeys'
 ----------------------------
-Finished (Regression against referenced seeds) - ERRORs: 13 WARNs: 39 INFOs: 1 
+Finished (Regression against referenced seeds) - ERRORs: 14 WARNs: 39 INFOs: 1 
 ============================

@@ -74,6 +74,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: 4   
 	AdvancedConstructionAuto/SCV default: 
+	BatteryOvercharge/Nexus default: 
 	BiodomeLoad/Biodome default: L
 	BiodomeLoad/BiodomeHalfBuilt default: L
 	BiodomeLoad/InfestableBiodome default: L
@@ -280,6 +281,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveViperImprovedCastRange/InfestationPit default: R
 	EvolveViperImprovedCastRange/Viper default: R
 	LearnDehakaMendingAura/DehakaCoop default: 
+	LoadOutSpray default: 
 	PrimalHydralisk/PrimalTownHallUprooted default: H
 	QueenClassic default: Q
 	Scourge/Larva default: S
@@ -403,6 +405,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganEpilogue03Heal/KerriganEpilogue03 default: C
 	KerriganVoidSpawnBanelings/KerriganVoidUlnar02 default: E
 	LearnDehakaConsume/DehakaCoop default: 
+	LoadOutSpray@11 default: 
 	LockOnUpgraded/Cyclone default: C
 	LurkerCancelHoldFire/LurkerBurrowed default: G copyof: LurkerCancelHoldFire/LurkerMPBurrowed default: G
 	LurkerCancelHoldFire/LurkerMP default: 
@@ -679,6 +682,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Immortal/WarpGate default: 
 	ImmortalZeratul/ZeratulRoboticsFacility default: 
 	InfestorStetmannRecharge/InfestationPitStetmann default: 
+	LoadOutSpray@6 default: 
 	Marine/Barracks default: A
 	Medivac/VoidRift default: D
 	Medivac/VoidRiftUnselectable default: D
@@ -891,6 +895,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganVoidApocalypse/KerriganVoidUlnar02 default: D
 	LearnDehakaLeapStomp/DehakaCoop default: 
 	LightofAiur/Oracle default: T
+	LoadOutSpray@1 default: 
 	LocustFlyingLaunch/SwarmHostSplitABurrowed default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustFlyingLaunch/SwarmHostSplitARooted default: C copyof: SwarmHost/SwarmHostBurrowedMP default: C
 	LocustLaunch/SwarmHost default: C
@@ -1301,6 +1306,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LearnDehakaArmorUpgrade/DehakaCoop default: 
 	LeviathanSpawnMutalisk/Leviathan default: U
 	LeviathanSpawnMutalisk/SpacePlatformVentsUnit default: U
+	LoadOutSpray@7 default: 
 	Lurker/Hydralisk default:  copyof: LurkerMP/Hydralisk default: E
 	Lurker/HydraliskImpaler default: 
 	Lurker/HydraliskLurker default: E copyof: LurkerMP/Hydralisk default: E
@@ -1508,6 +1514,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	HydraliskStetmannRespawn/LurkerDenStetmann default: 
 	InfestorStetmannRespawn/InfestationPitStetmann default: 
 	KhaydarinMonolith/Probe default: D
+	LoadOutSpray@8 default: 
 	MercReaper/Barracks default: J
 	MercReaper/MercCompound default: J
 	MorphToHotSNoxious/Larva default: U copyof: Ultralisk/Larva default: U
@@ -1560,6 +1567,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Hydralisk/VoidRiftUnselectable default: H
 	Hydralisk/VoidThrasher default: H
 	Hydralisk/VoidThrasherWalker default: H
+	LoadOutSpray@9 default: 
 	Move default: M
 	MoveChampions default:  copyof: Move default: M
 	PrimalHydralisk/PrimalTownHall default: H
@@ -1579,6 +1587,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	SS_CarrierSpawnInterceptor/SS_Plane default: I
 
 [INFO]: TheCore Lite: J   
+	LoadOutSpray@10 default: 
 	SiegeTank/Epilogue02VoidRift default: S
 	SiegeTank/VoidThrasher default: S
 	SiegeTank/VoidThrasherWalker default: S
@@ -1604,6 +1613,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Archon/SuperWarpGate default: N
 	Liberator/VoidRift default: N
 	Liberator/VoidRiftUnselectable default: N
+	LoadOutSpray@14 default: 
 	MercHellion/MercCompound default: N
 	ResearchAbathurImprovedToxicNest/EvolutionPit default: N
 	ResearchLiberatorAGMode/StarportTechLab default: N
@@ -1692,6 +1702,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Liberator/Starport default: N
 	LiberatorAAMode/Liberator default: D
 	Liberator_BlackOpsMorphtoAA/Liberator_BlackOps default: 
+	LoadOutSpray@2 default: 
 	Lower/SupplyDepot default: R
 	LurkerBurrowDown default:  copyof: BurrowDown default: R
 	Marauder/Barracks default: D
@@ -2231,6 +2242,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Goliath/Factory default: G
 	HireSpartanCompany/MercCompound default: C
 	Immortal/VoidRiftUnselectable default: I
+	LoadOutSpray@3 default: 
 	Medic/Barracks default: E
 	MovePatrol default: P
 	Mutalisk/Epilogue02VoidRift default: T
@@ -2269,6 +2281,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 
 [INFO]: TheCore Lite: U   
 	FlagshipWarpInScout/Flagship default: U
+	LoadOutSpray@5 default: 
 	PrimalUltralisk/PrimalTownHall default: U
 	PrimalUltralisk/YagdraEggBig default: U
 	TransportTruckUnloadAll/TransportTruck default: U
@@ -2290,6 +2303,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Firebat/Barracks default: F
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	HireDuskWing/MercCompound default: I
+	LoadOutSpray@12 default: 
 	MercHellion/Factory default: N
 	MorphToMutaliskBroodlord/Larva default: T copyof: Mutalisk/Larva default: T
 	MorphToMutaliskViper/Larva default: T copyof: Mutalisk/Larva default: T
@@ -2365,6 +2379,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ImmortalHallucination/Nexus default:  copyof: ImmortalHallucination/Sentry default: I
 	ImmortalHallucination/Sentry default: I
 	LearnDehakaDetector/DehakaCoop default: 
+	LoadOutSpray@4 default: 
 	Marine/VoidThrasherWalker default: A
 	SpectreHoldFire/Spectre default: F copyof: GhostHoldFire/Ghost default: F
 	TechReactorAI/Barracks default: Z
