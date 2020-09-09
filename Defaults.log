@@ -707,6 +707,8 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default TychusACPiercingRoundsLearn/TychusMercCompound
 [WARN]: no default TychusACRageGrenadesLearn/TychusMercCompound
 [WARN]: no default TychusArmory/TychusSCV
+[WARN]: no default TychusCommandCenter/TychusSCV
+[WARN]: no default TychusEngineeringBay/TychusSCV
 [WARN]: no default TychusFirebat/TychusResearchCenter
 [WARN]: no default TychusFirebatBlueFlameOilLearn/TychusArmory
 [WARN]: no default TychusFirebatIncendiaryPetroleumLearn/TychusArmory
@@ -752,6 +754,7 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default TychusReaperEvasionLearn/TychusMercCompound
 [WARN]: no default TychusRefinery/TychusSCV
 [WARN]: no default TychusSCV/TychusCommandCenter
+[WARN]: no default TychusSCVAutoTurret/TychusSCV
 [WARN]: no default TychusSpectre/TychusResearchCenter
 [WARN]: no default TychusSpectreBrillianceAuraLearn/TychusGhostAcademy
 [WARN]: no default TychusSpectreExtendedPulseGunLearn/TychusGhostAcademy
@@ -831,9 +834,11 @@ Start Check defaults (log file: Defaults.log)
 [WARN]: no default Zergling/LarvaStetmann
 [WARN]: no default ZerglingStetmann/LarvaStetmann
 [WARN]: no default ZerglingStetmannRespawn/SpawningPoolStetmann
-[WARN]: no default TychusCommandCenter/TychusSCV
-[WARN]: no default TychusEngineeringBay/TychusSCV
-[WARN]: no default TychusSCVAutoTurret/TychusSCV
+[WARN]: no default CommanderPrestigeZagaraMaxSupplyScourgeSpawn/ScourgeNest
+[WARN]: no default DehakaAirAttackUpgrade/DehakaCoopClone
+[WARN]: no default LearnDehakaArmorUpgrade/DehakaCoopClone
+[WARN]: no default ZeratulKhaydarinMonolithWarp/ZeratulKhaydarinMonolith
+[WARN]: no default ZeratulPhaseCannonProjectionPassive/ZeratulPhotonCannon
 ----------------------------
-Finished (Check defaults) - WARNs: 833 ERRORs: 0 
+Finished (Check defaults) - WARNs: 838 ERRORs: 0 
 ============================

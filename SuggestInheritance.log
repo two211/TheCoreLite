@@ -83,6 +83,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Brutalisk/Larva default: X
 	BurrowUp default: R
 	DehakaLearnAbilities/DehakaCoop default: 
+	DehakaLearnAbilities/DehakaCoopClone default: 
 	EngineeringBay/SCV default: E
 	EngineeringBayMengsk/SCVMengsk default: 
 	EvolutionChamber/Drone default: V
@@ -123,9 +124,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	InfestorConsumption/DefilerMP default: C
 	InfestorConsumption/Infestor default: C
 	Land default: L
-	LearnDehakaArmorUpgrade/DehakaCoop default: 
-	LearnDehakaMammothBreath/DehakaCoopClone default: 
-	MammothBreath/DehakaCoopClone default: 
+	LearnDehakaDetector/DehakaCoop default: 
+	LearnDehakaDetector/DehakaCoopClone default: 
 	MercMedic/Barracks default: B
 	MercMedic/MercCompound default: B
 	MorphtoHHRaven/HHRaven default: 
@@ -224,7 +224,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BuildTychusBar/TychusSCV default: 
 	DOMGhostPersonalDefensiveMatrix/Ghost default: 
 	DehakaAirAttack/DehakaCoop default: 
-	DehakaAirAttackUpgrade/DehakaCoop default: 
 	EvolveToBrutalisk/DefilerMP default: B
 	EvolveToBrutalisk/Queen default: B
 	EvolveToBrutalisk/QueenBurrowed default: B
@@ -241,7 +240,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	EvolveViperAbductImprovedStun/Viper default: T
 	Halt default: T
 	HiveMindEmulator/SCV default: I
-	LearnDehakaDetector/DehakaCoopClone default: 
+	LearnDehakaArmorUpgrade/DehakaCoop default: 
+	LearnDehakaArmorUpgrade/DehakaCoopClone default: 
 	Lift default: L
 	MassRoachDrop/ZagaraReviveCocoon default: D
 	MassRoachDrop/ZagaraVoidCoop default: D
@@ -349,9 +349,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ColossusHallucination/Nexus default:  copyof: ColossusHallucination/Sentry default: C
 	ColossusHallucination/Sentry default: C
 	ColossusHallucination/Voranor default:  copyof: ColossusHallucination/Sentry default: C
-	CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun default: 
-	CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig default: 
-	CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar default: 
+	CommanderPrestigeZagaraMaxSupplyScourgeSpawn/ScourgeNest default: 
 	CommanderPrestigeZagaraZagaraDeepTunnel/ZagaraVoidCoop default: 
 	Consume/GiantYeti default: W copyof: ParasiticInvasion/LarvalQueen default: Q
 	Consume/Lyote default: W copyof: ParasiticInvasion/LarvalQueen default: Q
@@ -421,6 +419,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	KerriganEpilogue03Heal/KerriganEpilogue03 default: C
 	KerriganVoidSpawnBanelings/KerriganVoidUlnar02 default: E
 	LearnDehakaMendingAura/DehakaCoop default: 
+	LearnDehakaMendingAura/DehakaCoopClone default: 
 	LoadOutSpray@11 default: 
 	LockOnUpgraded/Cyclone default: C
 	LurkerCancelHoldFire/LurkerBurrowed default: G copyof: LurkerCancelHoldFire/LurkerMPBurrowed default: G
@@ -613,8 +612,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	VoidRaySwarmDamageBoost/VoidRay default: E
 
 [INFO]: TheCore Lite: C,F   
+	BrutaliskDeepTunnel/Brutalisk default: D
 	DeploySpiderMines/SiegeTank default: R
 	DeploySpiderMines/SiegeTank_BlackOps default: 
+	GlevigTunnel/DehakaGlevig default: 
 	HunterSeekerMissile/Raven default: R
 	HunterSeekerMissile/SS_Plane default: R
 	InstantHunterSeekerMissile/Raven default: R
@@ -1089,6 +1090,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZagaraVoidCoopBanelingBarrage/ZagaraReviveCocoon default: Q
 	ZagaraVoidCoopBanelingBarrage/ZagaraVoidCoop default: Q
 	ZagaraVoidCoopBanelingBarrage/ZagaraVoidCoopBurrowed default: Q
+	ZeratulStructureBarrier/ZeratulKhaydarinMonolith default: 
+	ZeratulStructureBarrier/ZeratulPhotonCannon default: 
 	ZeratulStun/Zeratul default: V
 	ZeratulStun/ZeratulVoid default: V copyof: ZeratulStun/Zeratul default: V
 	ZeratulWarpPrismUnload/ZeratulWarpPrismPhasing default: 
@@ -1221,7 +1224,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BroodLord/VoidRiftUnselectable default: B
 	BroodLordStetmann/CorruptorStetmann default: 
 	BroodLordStetmannBombers/BroodLordStetmann default: 
-	BrutaliskDeepTunnel/Brutalisk default: D
 	BuildDehakaExtractor/DehakaHatchery default: 
 	BunkerDepotMengskRangeResearch/EngineeringBayMengsk default: 
 	BunkerMengskSalvage/BunkerDepotMengsk default: 
@@ -1247,7 +1249,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	DefensiveMatrix/MengskBC default: D
 	Defiler/Larva default: F
 	DehakaHydraliskImpalerMerge/DehakaHydraliskLevel2 default: 
-	DehakaLearnAbilities/DehakaCoopClone default: 
 	DehakaMurvarCreeperAir/DehakaMurvarStructure default: 
 	DehakaMurvarStructure/DehakaDrone default: 
 	DehakaRavasaurMerge/DehakaZerglingLevel2 default: 
@@ -1275,7 +1276,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ExtractorStetmann/DroneStetmann default: 
 	FenixArbiterCloakField/FenixArbiter default: 
 	FenixTalisAdeptDownloadUpgrade default: 
-	GlevigTunnel/DehakaGlevig default: 
 	GravitonBeamUrun/Urun default: F
 	GravitonPrison/HybridDestroyer default: G
 	GravitonPrison/HybridDominator default: G
@@ -1323,7 +1323,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Lair/Hatchery default: L
 	LairStetmann/HatcheryStetmann default: 
 	LearnDehakaMammothBreath/DehakaCoop default: 
-	LearnDehakaMendingAura/DehakaCoopClone default: 
+	LearnDehakaMammothBreath/DehakaCoopClone default: 
 	LeviathanSpawnMutalisk/Leviathan default: U
 	LeviathanSpawnMutalisk/SpacePlatformVentsUnit default: U
 	LoadOutSpray@7 default: 
@@ -1335,6 +1335,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	LurkerMP/Hydralisk default: E
 	LurkerStetmann/HydraliskStetmann default: 
 	MammothBreath/DehakaCoop default: 
+	MammothBreath/DehakaCoopClone default: 
 	MedicHeal/InfestedMedic default: E
 	MedicHeal/Medic default: E copyof: Heal/Medivac default: E
 	MedicHeal/Medivac_BlackOps default: 
@@ -1623,6 +1624,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	TransportTruckLoad/TransportTruck default: L
 
 [INFO]: TheCore Lite: M   
+	LoadOutSpray@14 default: 
 	MengskUnits/Barracks default: M
 	MengskUnits/Factory default: M
 	MengskUnits/Starport default: M
@@ -1635,7 +1637,7 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Archon/SuperWarpGate default: N
 	Liberator/VoidRift default: N
 	Liberator/VoidRiftUnselectable default: N
-	LoadOutSpray@14 default: 
+	LoadOutSpray@13 default: 
 	MercHellion/MercCompound default: N
 	ResearchAbathurImprovedToxicNest/EvolutionPit default: N
 	ResearchLiberatorAGMode/StarportTechLab default: N
@@ -1684,6 +1686,9 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	BurrowLurkerMP default: R
 	CarrierRepairDroneHeal/CarrierRepairDrone default: R
 	CommandCenterLoad default: O
+	CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun default: 
+	CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig default: 
+	CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar default: 
 	CyberneticsCore/Harvester default:  copyof: CyberneticsCore/Probe default: Y
 	CyberneticsCore/Probe default: Y
 	CycloneResearchLockOnDamageUpgrade/FactoryTechLab default: R
@@ -2243,10 +2248,10 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	ZeratulBlink/ZeratulCoop default: 
 	ZeratulBlink/ZeratulVoid default: B copyof: Blink/Stalker default: B
 	ZeratulBlink/ZeratulVoidAiur01 default: B copyof: Blink/Stalker default: B
+	ZeratulKhaydarinMonolithWarp/ZeratulKhaydarinMonolith default: 
 	ZeratulObserver/ZeratulRoboticsFacility default: 
+	ZeratulPhaseCannonProjectionPassive/ZeratulPhotonCannon default: 
 	ZeratulReflectionShield/ZeratulSentry default: 
-	ZeratulStructureBarrier/ZeratulKhaydarinMonolith default: 
-	ZeratulStructureBarrier/ZeratulPhotonCannon default: 
 	ZeratulWarpPrismAutoUnloadOn/ZeratulWarpPrismPhasing default: 
 	ZeratulXelNagaConstructDevolve/ZeratulXelNagaConstruct default: 
 	ZergFlyerArmorStetmann1 default: 
@@ -2324,6 +2329,8 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Banshee/Starport default: E
 	BansheeSpeed/StarportTechLab default: B
 	BuildCyclone/Factory default: N
+	DehakaAirAttackUpgrade/DehakaCoop default: 
+	DehakaAirAttackUpgrade/DehakaCoopClone default: 
 	DisruptorHallucination/Sentry default: D
 	EnergyNova/Artifact default: V
 	EvolveAberrationArmorAura/EvolutionChamber default: B
@@ -2333,7 +2340,6 @@ Start suggest inherit (log file: SuggestInheritance.log)
 	Firebat/Barracks default: F
 	Frostbat/Barracks default:  copyof: Firebat/Barracks default: F
 	HireDuskWing/MercCompound default: I
-	LearnDehakaDetector/DehakaCoop default: 
 	LoadOutSpray@12 default: 
 	MercHellion/Factory default: N
 	MorphToMutaliskBroodlord/Larva default: T copyof: Mutalisk/Larva default: T

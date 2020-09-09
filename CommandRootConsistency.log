@@ -4,16 +4,11 @@ Start Check key reuse over common CommandRoot (log file: CommandRootConsistency.
 [ERROR]: 'AbathurDeepTunnel' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'BrutaliskDeepTunnel' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'BuildCreepTumor' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'DehakaLearnAbilities' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'LearnDehakaDetector' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'LearnDehakaMammothBreath' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'LearnDehakaMendingAura' is not consistent in seed 'TheCore Lite'
-[ERROR]: 'MammothBreath' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'MutateintoLurkerDen' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'ResearchLurkerRange' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'SIRoot' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'SIUproot' is not consistent in seed 'TheCore Lite'
 [ERROR]: 'VoidRay' is not consistent in seed 'TheCore Lite'
 ----------------------------
-Finished (Check key reuse over common CommandRoot) - ERRORs: 13 
+Finished (Check key reuse over common CommandRoot) - ERRORs: 8 
 ============================

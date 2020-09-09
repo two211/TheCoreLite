@@ -224,13 +224,13 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =E
 
 [ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaDakrun not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =R
 
 [ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaGlevig not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =R
 
 [ERROR]: CommanderPrestigeDehakaPackLeadersRetreat/DehakaMurvar not related to a conflict
-in seed TheCore Lite, keys =C
+in seed TheCore Lite, keys =R
 
 [ERROR]: CommanderPrestigeZagaraZagaraDeepTunnel/ZagaraVoidCoop not related to a conflict
 in seed TheCore Lite, keys =C
@@ -272,7 +272,7 @@ in seed TheCore Lite, keys =Space
 in seed TheCore Lite, keys =5
 
 [ERROR]: DehakaAirAttackUpgrade/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =5
+in seed TheCore Lite, keys =V
 
 [ERROR]: DehakaBarracks/DehakaDrone not related to a conflict
 in seed TheCore Lite, keys =D
@@ -338,7 +338,7 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =4
 
 [ERROR]: DehakaLearnAbilities/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =4
 
 [ERROR]: DehakaLearnPrimalArmorLevel1/DehakaHatchery not related to a conflict
 in seed TheCore Lite, keys =R
@@ -614,7 +614,7 @@ in seed TheCore Lite, keys =
 in seed TheCore Lite, keys =E,Space
 
 [ERROR]: GlevigTunnel/DehakaGlevig not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =C,F
 
 [ERROR]: GreaterNydusDestroyerDeepTunnel/DehakaNydusDestroyerTimedNoFood not related to a conflict
 in seed TheCore Lite, keys =F
@@ -779,7 +779,7 @@ in seed TheCore Lite, keys =Space,D,R,T,G,C
 in seed TheCore Lite, keys =
 
 [ERROR]: LearnDehakaArmorUpgrade/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =5
 
 [ERROR]: LearnDehakaConsume/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =R
@@ -788,10 +788,10 @@ in seed TheCore Lite, keys =R
 in seed TheCore Lite, keys =R
 
 [ERROR]: LearnDehakaDetector/DehakaCoop not related to a conflict
-in seed TheCore Lite, keys =V
+in seed TheCore Lite, keys =4
 
 [ERROR]: LearnDehakaDetector/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =5
+in seed TheCore Lite, keys =4
 
 [ERROR]: LearnDehakaIntimidatingRoar/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -809,13 +809,13 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =F
 
 [ERROR]: LearnDehakaMammothBreath/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =F
 
 [ERROR]: LearnDehakaMendingAura/DehakaCoop not related to a conflict
 in seed TheCore Lite, keys =C
 
 [ERROR]: LearnDehakaMendingAura/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =F
+in seed TheCore Lite, keys =C
 
 [ERROR]: Liberator_BlackOpsMorphtoAA/Liberator_BlackOps not related to a conflict
 in seed TheCore Lite, keys =R
@@ -839,10 +839,10 @@ in seed TheCore Lite, keys =C
 in seed TheCore Lite, keys =V
 
 [ERROR]: LoadOutSpray@13 not related to a conflict
-in seed TheCore Lite, keys =B
+in seed TheCore Lite, keys =N
 
 [ERROR]: LoadOutSpray@14 not related to a conflict
-in seed TheCore Lite, keys =N
+in seed TheCore Lite, keys =M
 
 [ERROR]: LoadOutSpray@2 not related to a conflict
 in seed TheCore Lite, keys =R
@@ -902,7 +902,7 @@ in seed TheCore Lite, keys =E
 in seed TheCore Lite, keys =F
 
 [ERROR]: MammothBreath/DehakaCoopClone not related to a conflict
-in seed TheCore Lite, keys =4
+in seed TheCore Lite, keys =F
 
 [ERROR]: MarauderMengskAttackSpeedBoost/MarauderMengsk not related to a conflict
 in seed TheCore Lite, keys =Space
@@ -1855,6 +1855,12 @@ in seed TheCore Lite, keys =R
 [ERROR]: TychusArmory/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =C
 
+[ERROR]: TychusCommandCenter/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =E
+
+[ERROR]: TychusEngineeringBay/TychusSCV not related to a conflict
+in seed TheCore Lite, keys =4
+
 [ERROR]: TychusFirebat/TychusResearchCenter not related to a conflict
 in seed TheCore Lite, keys =D
 
@@ -1988,6 +1994,9 @@ in seed TheCore Lite, keys =G
 in seed TheCore Lite, keys =F
 
 [ERROR]: TychusSCV/TychusCommandCenter not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: TychusSCVAutoTurret/TychusSCV not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [ERROR]: TychusSpectre/TychusResearchCenter not related to a conflict
@@ -2150,10 +2159,10 @@ in seed TheCore Lite, keys =E,Space
 in seed TheCore Lite, keys =Space
 
 [ERROR]: ZeratulStructureBarrier/ZeratulKhaydarinMonolith not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =E
 
 [ERROR]: ZeratulStructureBarrier/ZeratulPhotonCannon not related to a conflict
-in seed TheCore Lite, keys =Space
+in seed TheCore Lite, keys =E
 
 [ERROR]: ZeratulSummonVoidSeeker/ZeratulCoop not related to a conflict
 in seed TheCore Lite, keys =R
@@ -2209,13 +2218,19 @@ in seed TheCore Lite, keys =D
 [ERROR]: ZerglingStetmannRespawn/SpawningPoolStetmann not related to a conflict
 in seed TheCore Lite, keys =G
 
-[ERROR]: TychusCommandCenter/TychusSCV not related to a conflict
-in seed TheCore Lite, keys =E
+[ERROR]: CommanderPrestigeZagaraMaxSupplyScourgeSpawn/ScourgeNest not related to a conflict
+in seed TheCore Lite, keys =C
 
-[ERROR]: TychusEngineeringBay/TychusSCV not related to a conflict
-in seed TheCore Lite, keys =4
+[ERROR]: DehakaAirAttackUpgrade/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =V
 
-[ERROR]: TychusSCVAutoTurret/TychusSCV not related to a conflict
+[ERROR]: LearnDehakaArmorUpgrade/DehakaCoopClone not related to a conflict
+in seed TheCore Lite, keys =5
+
+[ERROR]: ZeratulKhaydarinMonolithWarp/ZeratulKhaydarinMonolith not related to a conflict
+in seed TheCore Lite, keys =Space
+
+[ERROR]: ZeratulPhaseCannonProjectionPassive/ZeratulPhotonCannon not related to a conflict
 in seed TheCore Lite, keys =Space
 
 [WARN]: 330mmBarrageCannons/Thor not related to a conflict
@@ -2867,5 +2882,5 @@ but is inherited
 in seed TheCore Lite, keys =T
 
 ----------------------------
-Finished (commands with no attached conflict) - ERRORs: 739 WARNs: 144 
+Finished (commands with no attached conflict) - ERRORs: 744 WARNs: 144 
 ============================
